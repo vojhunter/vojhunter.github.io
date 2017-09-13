@@ -29948,13 +29948,33 @@ page-search ion-segment-button {
   border-color: #ffffff !important;
 }
 
-page-search .search-warning-message {
+page-search .search-message {
+  z-index: 1;
+  bottom: 5%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+page-search .search-warning-chip {
+  background-color: #f53d3d;
   color: #ffffff;
 }
 
-page-search .search-info-message {
+page-search .search-info-chip {
+  background-color: #14baa6;
   color: #ffffff;
-  text-align: center;
+}
+
+page-search #map {
+  position: relative;
+  height: 100%;
+}
+
+page-search .card-md {
+  height: 72%;
+  width: 100% !important;
+  margin: 0;
 }
 
 page-about ion-header {
