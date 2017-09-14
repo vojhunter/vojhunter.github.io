@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .ion-ios-add:before {
   content: "\f102";
 }
@@ -28527,12 +28528,17 @@ voj-form .inputfile {
 }
 
 voj-form .text-upload-field {
+  display: block;
   border: 1px solid #cccccc;
   height: 35px;
   padding: 5px;
-  font-size: 20px;
+  font-size: 18px;
   color: #999999;
   text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
 }
 
 voj-form .custom-upload-button {
@@ -28571,6 +28577,27 @@ voj-form .download-uploaded-item-btn ion-icon:before {
 
 voj-form .asterisk {
   color: red;
+}
+
+voj-form .custom-line {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 5px;
+  display: inline-block;
+  margin-left: calc(50% - 75px);
+  border-radius: 1px;
+  background-color: #55b7a6;
+  width: 150px;
+}
+
+voj-form .documents-title {
+  margin-top: 5px;
+}
+
+voj-form .documents-type {
+  text-align: left;
+  padding-left: 5px;
+  margin-top: 20px;
 }
 
 voj-header .generic {
@@ -28809,6 +28836,12 @@ voj-page-header .bar-button::after {
   z-index: 1;
 }
 
+voj-page-header .page-header-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 voj-page-header ion-navbar.toolbar {
   position: relative;
   text-align: center;
@@ -28931,6 +28964,18 @@ ion-app.platform-ios voj-page-header ion-navbar.toolbar .toolbar-content {
 ion-app.platform-ios voj-page-header ion-navbar.toolbar .toolbar-content .voj-page-header-buttons {
   top: 10px;
   padding-left: 10px;
+}
+
+ion-app.platform-ios voj-page-header .test1 {
+  white-space: nowrap;
+  /* Запрещаем перенос строк */
+  overflow: hidden;
+  /* Обрезаем все, что не помещается в область */
+  background: #fc0;
+  /* Цвет фона */
+  padding: 5px;
+  /* Поля вокруг текста */
+  text-overflow: ellipsis;
 }
 
 .ios voj-search-header ion-navbar.toolbar.mobile-header .toolbar-background-md,
@@ -29208,6 +29253,30 @@ enterprise-search-page .select-button {
   font-size: 16px;
   background-color: #14baa6;
   color: #ffffff;
+}
+
+enterprise-search-page .enterprise-search-input .text-input {
+  margin: 0;
+  text-align: center;
+}
+
+enterprise-search-page .enterprise-search-input {
+  border: 1px solid #cccccc;
+  font-size: 20px;
+  padding: 2px;
+}
+
+enterprise-search-page .search-btn {
+  font-size: 32px;
+}
+
+enterprise-search-page .enterprise-search-bar2 {
+  margin-top: 50px;
+  padding-left: 20px;
+}
+
+enterprise-search-page .enterprise-data {
+  padding-bottom: 40px;
 }
 
 identity-page {
@@ -29865,6 +29934,43 @@ page-details ion-content {
   background-color: #00c1a9 !important;
 }
 
+documents-page {
+  background-color: #ffffff;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+documents-page .documents-parent {
+  height: calc(100% - 230px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+documents-page .documents-child {
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  padding: 0 0 10px 0;
+}
+
+documents-page .documents-container {
+  padding: 15px;
+  background-color: #14baa6;
+  height: calc(100% - 120px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+documents-page .documents-child-container {
+  padding: 5px;
+  background-color: white !important;
+  position: relative;
+}
+
+documents-page .custom-select-btn-attachment {
+  padding-right: 10px !important;
+}
+
 find-job-page .voj-content {
   overflow-y: auto;
 }
@@ -29971,7 +30077,7 @@ page-search #map {
   height: 100%;
 }
 
-page-search .card-md {
+page-search ion-card.map.card.card-md {
   height: 72%;
   width: 100% !important;
   margin: 0;

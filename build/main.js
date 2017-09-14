@@ -1,75 +1,5 @@
 webpackJsonp([0],{
 
-/***/ 10:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Configuration; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environment__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_configuration_model__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_http_request_http_request__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_voj_tuple_model__ = __webpack_require__(833);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_voj_events_voj_events__ = __webpack_require__(45);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-var Configuration = (function () {
-    function Configuration(http, eventBus) {
-        this.http = http;
-        this.eventBus = eventBus;
-        this.configuration = new __WEBPACK_IMPORTED_MODULE_2__models_voj_configuration_model__["a" /* VojConfiguration */]();
-    }
-    Configuration.prototype.initialize = function () {
-        var _this = this;
-        var payload = {
-            "cid": __WEBPACK_IMPORTED_MODULE_1__environment__["a" /* envConfig */].cid
-        };
-        this.http.call(payload, __WEBPACK_IMPORTED_MODULE_1__environment__["a" /* envConfig */].server, "", true).subscribe(function (data) {
-            if (data && data.length > 0) {
-                _this.configuration.brand = data[0].brand;
-                _this.configuration.customer = data[0].customer;
-                _this.configuration.env = data[0].env;
-                _this.configuration.target = data[0].target;
-                _this.configuration.dlMode = data[0].dlmode;
-                _this.configuration.logo = data[0].logo;
-                _this.configuration.brand = data[0].brand;
-                _this.configuration.css = JSON.stringify(data[0].css);
-                _this.configuration.urls = [];
-                for (var key in data[0].urls) {
-                    var t = new __WEBPACK_IMPORTED_MODULE_4__models_voj_tuple_model__["a" /* VojTuple */]();
-                    t.key = key;
-                    t.value = data[0].urls[key];
-                    _this.configuration.urls.push(t);
-                }
-                _this.eventBus.publishAppHeader();
-            }
-        });
-    };
-    Configuration = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__providers_http_request_http_request__["a" /* HttpRequestProvider */],
-            __WEBPACK_IMPORTED_MODULE_5__providers_voj_events_voj_events__["a" /* EventBusProvider */]])
-    ], Configuration);
-    return Configuration;
-}());
-
-//# sourceMappingURL=voj-configuration.js.map
-
-/***/ }),
-
 /***/ 108:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -229,7 +159,7 @@ var LandingPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__personal_details_personal_details__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_navigation_service__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_utils__ = __webpack_require__(54);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -557,7 +487,7 @@ var MainAddressPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_masterdata_service_masterdata_service__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__personal_details_identity_personal_details_identity__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_profile_service_profile_service__ = __webpack_require__(86);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_navigation_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_storage__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_utils__ = __webpack_require__(54);
@@ -663,7 +593,7 @@ var PersonalDetailsPage = (function () {
                     required: !this.isInscription,
                     type: 'number',
                     value: '',
-                    label: 'Numéro de sécurité social',
+                    label: 'Numéro de sécurité sociale',
                     readonly: false,
                     visible: true,
                     //validationMsg: 'Social security number error',
@@ -772,7 +702,7 @@ var PersonalDetailsPage = (function () {
     PersonalDetailsPage.prototype.showWarningBirthDayMessage = function () {
         var warningDiv = document.createElement('div');
         warningDiv.setAttribute('id', 'voj-warning-msg');
-        warningDiv.innerHTML = '<p>Vous devez avoir plus que 18 ans</p>';
+        warningDiv.innerHTML = '<p>Vous devez avoir plus de 18 ans</p>';
         warningDiv.className = 'voj-warning-msg';
         var parentId = 'date-of-birth';
         document.getElementById(parentId).appendChild(warningDiv);
@@ -852,7 +782,7 @@ var PersonalDetailsPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PersonalDetailsIdentityPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_masterdata_service_masterdata_service__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bank_settings_bank_settings__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(17);
@@ -1190,7 +1120,7 @@ var PersonalDetailsIdentityPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BankSettingsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_profile_service_profile_service__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_voj_notification_voj_notification_service__ = __webpack_require__(87);
@@ -1611,7 +1541,7 @@ var AboutPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NavigationService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_landing_page_landing_page__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__modal_service__ = __webpack_require__(53);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1907,7 +1837,7 @@ var VojPageHeaderType = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_signup_service_signup_service__ = __webpack_require__(530);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__identity_identity__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__login_login__ = __webpack_require__(60);
@@ -2960,7 +2890,7 @@ var HomePage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__user_information_user_information__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__search_module_search_search__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__test_components_about_about__ = __webpack_require__(121);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__config_voj_configuration__ = __webpack_require__(9);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3037,7 +2967,7 @@ var AccountPage = (function () {
                     {
                         id: '',
                         icon: '',
-                        label: 'Se déconnecter',
+                        label: 'se déconnecter',
                         action: function () {
                             _this.logout();
                         }
@@ -3045,7 +2975,7 @@ var AccountPage = (function () {
                     {
                         id: '',
                         icon: 'information-circle',
-                        label: 'Mes informations',
+                        label: 'mes informations',
                         action: function () {
                             _this.gotoUserInformationPage();
                         }
@@ -3059,7 +2989,7 @@ var AccountPage = (function () {
                         },
                         subtitle: {
                             icon: '',
-                            label: 'Contrats en attente'
+                            label: 'Contrat(s) en attente'
                         },
                         action: function () {
                             console.log('Present Waiting Contracts page.');
@@ -3087,7 +3017,7 @@ var AccountPage = (function () {
                         },
                         subtitle: {
                             icon: '',
-                            label: 'Missions à clôturer'
+                            label: 'Mission(s) à clôturer'
                         },
                         action: function () {
                             console.log('Present Hours Validation Signature page.');
@@ -3142,7 +3072,7 @@ var AccountPage = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AvailabilitiesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__jobyer_availability_choice_jobyer_availability_choice__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_navigation_service__ = __webpack_require__(17);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -4806,7 +4736,7 @@ var VojMapModel = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchDTOFactory; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__search_dto_jobyer__ = __webpack_require__(836);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search_dto_employer__ = __webpack_require__(837);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(0);
@@ -4851,7 +4781,7 @@ var SearchDTOFactory = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(9);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4922,7 +4852,7 @@ var ModalService = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__http_request_http_request__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__ = __webpack_require__(9);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5483,7 +5413,7 @@ var ResetPasswordPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InformationResumePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(9);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6656,7 +6586,7 @@ var HomeModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AvailabilitiesAddDaysPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(9);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6965,7 +6895,7 @@ var OptionsPageModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__scripts_md5__ = __webpack_require__(532);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_masterdata_service_masterdata_service__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__reset_password_reset_password__ = __webpack_require__(533);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_navigation_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__search_module_search_search__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_voj_events_voj_events__ = __webpack_require__(45);
@@ -7251,7 +7181,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MasterdataService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__http_request_http_request__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -7412,11 +7342,11 @@ var MasterdataService = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_voj_notification_voj_notification_service__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_http_request_http_request__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_http__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_search_service_search_service__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_navigation_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ngx_translate_core__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ngx_translate_http_loader__ = __webpack_require__(915);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ngx_translate_http_loader__ = __webpack_require__(917);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__providers_voj_events_voj_events__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__models_voj_configuration_model__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__services_modal_service__ = __webpack_require__(53);
@@ -11861,7 +11791,7 @@ var VojMap = (function () {
     VojMap = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'voj-map',template:/*ion-inline-start:"/Users/tim/Documents/vitonjob/vitonjob-v2/src/components/voj-map/voj-map.html"*/'<ion-card [hidden]="hiddenMap">\n    <div #map id="map"></div>\n</ion-card>\n'/*ion-inline-end:"/Users/tim/Documents/vitonjob/vitonjob-v2/src/components/voj-map/voj-map.html"*/,
+            selector: 'voj-map',template:/*ion-inline-start:"/Users/tim/Documents/vitonjob/vitonjob-v2/src/components/voj-map/voj-map.html"*/'<ion-card [hidden]="hiddenMap" class="map">\n    <div #map id="map"></div>\n</ion-card>\n'/*ion-inline-end:"/Users/tim/Documents/vitonjob/vitonjob-v2/src/components/voj-map/voj-map.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_7__ionic_storage__["b" /* Storage */],
@@ -11920,7 +11850,7 @@ var Passenger = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__http_request_http_request__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dtos_search_result_dto__ = __webpack_require__(834);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__voj_events_voj_events__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_button_type_model__ = __webpack_require__(835);
@@ -12450,7 +12380,7 @@ var SearchDTOEmployer = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccountService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__http_request_http_request__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(9);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -12589,7 +12519,7 @@ var AccountService = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IdentityPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_account_service_account_service__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(23);
@@ -12828,7 +12758,7 @@ var IdentityPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojPageHeader; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_navigation_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_landing_page_landing_page__ = __webpack_require__(115);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -12882,7 +12812,7 @@ var VojPageHeader = (function () {
     ], VojPageHeader.prototype, "data", void 0);
     VojPageHeader = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'voj-page-header',template:/*ion-inline-start:"/Users/tim/Documents/vitonjob/vitonjob-v2/src/components/voj-page-header/voj-page-header.html"*/'<div *ngIf="showHeader">\n    <ion-navbar [ngClass]="config.isLargeScreen ? \'desktop-header\' : \'mobile-header\'">\n        <!-- Back button -->\n        <!--<button class="header-back" (click)="goToPreviousPage()" *ngIf="canGoBack">\n            <ion-icon name="arrow-round-back" ></ion-icon>\n        </button>-->\n    \n        <!-- Close button -->\n        <button class="header-back" (click)="closePage()" *ngIf="canClose">\n            <span>\n                <ion-icon name="close"></ion-icon>\n            </span>\n        </button>\n    \n        {{ data.title | translate }}\n\n        <ion-buttons end *ngFor="let button of data.actions">\n            <button ion-button color="danger" *ngIf="button.id === \'notification\' && config.isLargeScreen" (click)="button.action()">\n                <ion-badge  color="danger" *ngIf="button.id === \'notification\' && config.isLargeScreen ">{{button.label}}</ion-badge>\n                <!--ion-icon name="alert" style="font-size: x-large" icon-right></ion-icon-->\n            </button>\n        </ion-buttons>\n        \n        <!--<span *ngIf="!config.isLargeScreen" class="voj-page-header-buttons">  || button.id === \'notification\'-->\n        <ion-buttons end >\n            <span *ngFor="let button of data.actions">\n                <button class="page-header-button" *ngIf="!config.isLargeScreen"\n                        ion-button (click)="button.action()">\n                    <ion-badge class="fab-notification" *ngIf="!config.isLargeScreen" color="danger">{{button.label}}</ion-badge>\n                    <ion-icon name="{{button.icon}}" style="color:white; font-size: xx-large"></ion-icon>\n                </button>\n            </span>\n        </ion-buttons>\n    </ion-navbar>\n</div>\n'/*ion-inline-end:"/Users/tim/Documents/vitonjob/vitonjob-v2/src/components/voj-page-header/voj-page-header.html"*/,
+            selector: 'voj-page-header',template:/*ion-inline-start:"/Users/tim/Documents/vitonjob/vitonjob-v2/src/components/voj-page-header/voj-page-header.html"*/'<div *ngIf="showHeader">\n    <ion-navbar [ngClass]="config.isLargeScreen ? \'desktop-header\' : \'mobile-header\'">\n        <!-- Back button -->\n        <!--<button class="header-back" (click)="goToPreviousPage()" *ngIf="canGoBack">\n            <ion-icon name="arrow-round-back" ></ion-icon>\n        </button>-->\n    \n        <!-- Close button -->\n        <button class="header-back" (click)="closePage()" *ngIf="canClose">\n            <span>\n                <ion-icon name="close"></ion-icon>\n            </span>\n        </button>\n    \n        <div class="page-header-title">{{ data.title | translate }}</div>\n\n        <ion-buttons end *ngFor="let button of data.actions">\n            <button ion-button color="danger" *ngIf="button.id === \'notification\' && config.isLargeScreen" (click)="button.action()">\n                <ion-badge  color="danger" *ngIf="button.id === \'notification\' && config.isLargeScreen ">{{button.label}}</ion-badge>\n                <!--ion-icon name="alert" style="font-size: x-large" icon-right></ion-icon-->\n            </button>\n        </ion-buttons>\n        \n        <!--<span *ngIf="!config.isLargeScreen" class="voj-page-header-buttons">  || button.id === \'notification\'-->\n        <ion-buttons end >\n            <span *ngFor="let button of data.actions">\n                <button class="page-header-button" *ngIf="!config.isLargeScreen"\n                        ion-button (click)="button.action()">\n                    <ion-badge class="fab-notification" *ngIf="!config.isLargeScreen" color="danger">{{button.label}}</ion-badge>\n                    <ion-icon name="{{button.icon}}" style="color:white; font-size: xx-large"></ion-icon>\n                </button>\n            </span>\n        </ion-buttons>\n    </ion-navbar>\n</div>\n'/*ion-inline-end:"/Users/tim/Documents/vitonjob/vitonjob-v2/src/components/voj-page-header/voj-page-header.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_3__services_navigation_service__["a" /* NavigationService */],
@@ -12942,7 +12872,7 @@ var VojFooterModule = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojFooter; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(9);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13106,7 +13036,11 @@ var VojForm = (function () {
         this.selectedCustomItems = [];
         this.showList = false;
         this.submitAttempt = false; // Form validation
-        this.uploadedItems = [];
+        this.documents = {
+            uploadedFileName: '',
+            uploadedObj: {},
+            uploadedItems: []
+        };
     }
     VojForm.prototype.checkNgModel = function (action) {
         // Call action if exists
@@ -13269,9 +13203,8 @@ var VojForm = (function () {
     // Custom Select for Uploading items
     VojForm.prototype.fileEvent = function (selectedFile) {
         var files = selectedFile.srcElement.files;
-        var fileName;
         if (files[0]) {
-            fileName = files[0].name;
+            this.documents.uploadedFileName = files[0].name;
         }
         else {
             return false;
@@ -13280,17 +13213,60 @@ var VojForm = (function () {
         var reader = new FileReader();
         reader.readAsDataURL(files[0]);
         reader.onload = function () {
-            console.log('Current file in base64:', reader.result);
+            // console.log('Current file in base64:', reader.result);
         };
         reader.onerror = function (error) {
             console.log('Error: ', error);
         };
-        if (!__WEBPACK_IMPORTED_MODULE_3_lodash___default.a.find(this.uploadedItems, function (item) { return item == fileName; }) && files[0]) {
-            fileName ? this.uploadedItems.push(fileName) : false;
+        // if (!_.find(this.uploadedItems, item => item == this.uploadedFileName) && files[0]) {
+        //     this.uploadedFileName ? this.uploadedItems.push(this.uploadedFileName) : false;
+        // }
+    };
+    // Add file name to local Array with uploaded items
+    VojForm.prototype.pushFile = function () {
+        this.documents.uploadedObj = {};
+        this.documents.uploadedObj['name'] = this.documents.uploadedFileName;
+        this.documents.uploadedObj['type'] = this.getFieldName().type;
+        this.documents.uploadedFileName ? this.documents.uploadedItems.push(this.documents.uploadedObj) : false;
+    };
+    // Getting necessary value and message of the field
+    VojForm.prototype.getFieldName = function () {
+        if (!this.checkDocument('ID')) {
+            return {
+                title: 'You have to load your ID',
+                type: 'ID'
+            };
+        }
+        else if (!this.checkDocument('vital card')) {
+            return {
+                title: 'You must load your vital card',
+                type: 'vital card'
+            };
+        }
+        else if (!this.checkDocument('proof of domicile')) {
+            return {
+                title: 'You have to load your proof of residence',
+                type: 'proof of domicile'
+            };
+        }
+        else {
+            return {
+                title: 'You can load any other document',
+                type: 'document label'
+            };
         }
     };
-    VojForm.prototype.deleteUploadedItem = function (selectedValue) {
-        selectedValue ? __WEBPACK_IMPORTED_MODULE_3_lodash___default.a.pull(this.uploadedItems, selectedValue) : false;
+    VojForm.prototype.checkDocument = function (type) {
+        for (var i = 0; i < this.documents.uploadedItems.length; i++) {
+            if (this.documents.uploadedItems[i].type === type) {
+                return true;
+            }
+        }
+        return false;
+    };
+    VojForm.prototype.deleteUploadedItem = function (index) {
+        this.documents.uploadedItems.splice(index, 1);
+        // selectedValue ? _.pull(this.uploadedItems, selectedValue) : false;
     };
     VojForm.prototype.downloadUploadedItem = function (item) {
         console.log('Downloaded item:', item);
@@ -13302,7 +13278,7 @@ var VojForm = (function () {
     VojForm = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'voj-form',template:/*ion-inline-start:"/Users/tim/Documents/vitonjob/vitonjob-v2/src/components/voj-form/voj-form.html"*/'<!-- Generated template for the VojForm component -->\n<div class="calendar-container">\n    <h2 [innerHTML]="data.title" *ngIf="data.title && data.title.length > 0"></h2>\n    <form #formComponent="ngForm" [formGroup]="dynamicalForm" (ngSubmit)="onSubmit(formComponent, data.submit.action)" novalidate>\n\n        <div class="dynamical-form" id="{{ field.id }}" *ngFor="let field of data.fields; let fieldIndex = index">\n            <button ion-button class="custom-btn" *ngIf="field.type === \'button\'" [hidden]="!field.visible"\n                    (click)="field.action()" type="button">\n                {{ field.label | translate }}\n            </button>\n\n            <ion-list *ngIf="field.type === \'text\' || field.type === \'textarea\'\n							|| field.type === \'number\' || field.type === \'tel\'">\n                <ion-item class="custom-input" [hidden]="!field.visible">\n                    <ion-label stacked *ngIf="field.label && field.label.length > 0">{{field.label | translate}}\n                        <span class="asterisk" *ngIf="field.required">*</span></ion-label>\n                    <ion-input type="{{ field.type }}"\n                               [readonly]="field.readonly"\n                               required="{{field.required}}"\n                               placeholder="{{field.placeholder | translate}}"\n                               maxlength="{{field.max}}"\n                               [(ngModel)]="field.value"\n                               (ngModelChange)="field.value = $event; checkNgModel(field.action)"\n                               (keyup)="getItems($event, field.dataset)"\n                               formControlName="{{field.name}}"></ion-input>\n                </ion-item>\n                <div *ngIf="showList && field.dataset" class="input-autocomplete">\n                    <ion-list>\n                        <ion-item *ngFor="let item of itemsForAutocomplete" (click)="selectTip(item.value, field)">\n                            {{ item.value }}\n                        </ion-item>\n                    </ion-list>\n                </div>\n            </ion-list>\n\n            <ion-list *ngIf="field.type === \'week\' || field.type === \'url\' || field.type === \'time\'\n             || field.type === \'color\' || field.type === \'mail\' || field.type === \'month\'">\n                <ion-item class="custom-input">\n                    <ion-label stacked *ngIf="field.label && field.label.length > 0">{{ field.label | translate }}\n                        <span class="asterisk" *ngIf="field.required">*</span></ion-label>\n                    <ion-input type="text"\n                               autocomplete="on"\n                               [hidden]="!field.visible"\n                               [readonly]="field.readonly"\n                               placeholder="{{field.placeholder | translate}}"\n                               maxlength="{{field.max}}"\n                               [(ngModel)]="field.value"\n                               (ngModelChange)="field.value = $event; checkNgModel(field.action)"\n                               formControlName="{{field.name}}"></ion-input>\n                </ion-item>\n            </ion-list>\n\n            <ion-list *ngIf="field.type === \'date\'">\n                <ion-item class="custom-input">\n                    <ion-label stacked *ngIf="field.label && field.label.length > 0">{{ field.label | translate }}\n                        <span class="asterisk" *ngIf="field.required">*</span></ion-label>\n                    <ion-input type="date"\n                               [hidden]="!field.visible"\n                               [readonly]="field.readonly"\n                               [disabled]="field.disabled"\n                               [(ngModel)]="field.value"\n                               (ngModelChange)="field.value = $event; checkNgModel(field.action)"\n                               formControlName="{{field.name}}"\n                               min="{{field.min}}"\n                               max="{{field.max}}"></ion-input>\n                </ion-item>\n            </ion-list>\n\n            <ion-list *ngIf="field.type === \'password\' || field.type === \'password-visible\' || field.type === \'search\'">\n                <ion-item class="custom-input custom-input-password">\n                    <ion-label stacked>{{ field.label | translate }}\n                        <span class="asterisk" *ngIf="field.required">*</span></ion-label>\n                    <ion-input type="{{ (field.type === \'password\') ? \'password\' : \'text\' }}"\n                               autocomplete="on"\n                               [hidden]="!field.visible"\n                               [readonly]="field.readonly"\n                               placeholder="{{field.placeholder | translate}}"\n                               maxlength="{{field.max}}"\n                               [(ngModel)]="field.value"\n                               (ngModelChange)="field.value = $event"\n                               formControlName="{{field.name}}" #inputPass></ion-input>\n                    <button ion-button icon-only type="button" item-right\n                            (click)="managePassword(inputPass, fieldIndex)">\n                        <ion-icon name="{{ field.type === \'password\' ? \'ios-eye\' : field.type === \'password-visible\' ?\n                                        \'ios-eye-off\' : \'ios-search\'}}">\n                        </ion-icon>\n                    </button>\n                </ion-item>\n            </ion-list>\n\n            <ion-list *ngIf="field.type === \'range\'">\n                <ion-item>\n                    <ion-range min="{{field.min}}" max="{{field.max}}" [(ngModel)]="field.value" color="secondary"\n                               [hidden]="!field.visible" formControlName="{{field.name}}">\n                        <ion-label range-left>{{field.min}}</ion-label>\n                        <ion-label range-right>{{field.max}}</ion-label>\n                    </ion-range>\n                </ion-item>\n            </ion-list>\n\n            <ion-list *ngIf="field.type === \'select\'">\n                <ion-item class="custom-select">\n                    <ion-label>{{ field.label | translate }}\n                        <span class="asterisk" *ngIf="field.required">*</span></ion-label>\n                    <ion-select [(ngModel)]="field.value"\n                                cancelText="{{ \'FORM.CANCEL_BTN\' | translate }}"\n                                [hidden]="!field.visible"\n                                [disabled]="field.readonly"\n                                required="{{field.required}}"\n                                (ngModelChange)="field.value = $event; checkNgModel(field.action)"\n                                formControlName="{{field.name}}">\n                        <ion-option value="{{subSelect.value}}" *ngFor="let subSelect of field.dataset">\n                            {{ subSelect.key }}\n                        </ion-option>\n                    </ion-select>\n                </ion-item>\n            </ion-list>\n\n            <!-- Radio -->\n            <ion-list radio-group class="custom-radio" *ngIf="field.type === \'radio\'"\n                      [(ngModel)]="field.value" formControlName="{{field.name}}" (ngModelChange)="checkNgModel(field.action)">\n                <ion-list-header class="voj-radio-label" *ngIf="field.label && field.label.length > 0">\n                    {{ field.label | translate }}\n                </ion-list-header>\n                <ion-item class="voj-radio-button" *ngFor="let radioItem of field.dataset">\n                    <ion-label>{{ radioItem.key | translate }}</ion-label>\n                    <ion-radio value="{{radioItem.value}}"></ion-radio>\n                </ion-item>\n            </ion-list>\n\n            <!-- Radio with inputs -->\n            <ion-list radio-group class="custom-radio-with-inputs" *ngIf="field.type === \'radioWithInputs\'"\n                      formControlName="{{field.name}}"\n                      [(ngModel)]="field.value">\n                <div *ngFor="let radioItem of field.dataset3"\n                     (click)="field.value=radioItem.value" class="custom-radio-wrap">\n                    <div [ngClass]="field.value===radioItem.value ? \'\' : \'selectedItem\'" class="custom-radio-1">\n                        <ion-icon\n                                name="{{field.value===radioItem.value ? \'radio-button-on\' : \'radio-button-off\'}}"\n                        class="custom-radio-icon"></ion-icon>\n                        <label class="custom-radio-label-1">{{radioItem.key || \'\'}}</label>\n                    </div>\n                    <div *ngIf="radioItem.subdata" class="custom-radio-2"\n                         [ngClass]="field.value === radioItem.value ? \'\' : \'selectedItem\'">\n                            <div class="radio-field-wrap">\n                                <label class="custom-radio-label-2">{{radioItem.subdata.key1}}</label>\n                                <input class="custom-radio-input"\n                                       formControlName="{{radioItem.subdata.name1}}"\n                                       [(ngModel)]="radioItem.subdata.value1"\n                                       required="{{field.value===radioItem.value ? field.required : false}}"\n                                       pattern="{{field.regex}}" type="text"\n                                       placeholder="{{radioItem.subdata.placeholder1 | translate}}">\n                            </div>\n                            <div class="radio-field-wrap">\n                                <label class="custom-radio-label-2">{{radioItem.subdata.key2}}</label>\n                                <input class="custom-radio-input" [(ngModel)]="radioItem.subdata.value2"\n                                       formControlName="{{radioItem.subdata.name2}}"\n                                       required="{{field.value===radioItem.value ? field.required : false}}"\n                                       pattern="{{field.regex}}" type="text"\n                                       placeholder="{{radioItem.subdata.placeholder2 | translate}}">\n                            </div>\n                    </div>\n                </div>\n            </ion-list>\n\n            <!-- Custom Select -->\n            <div class="custom-select-container" *ngIf="field.type === \'customSelect\'">\n                <div>{{ field.label | translate }}</div>\n                <ion-list class="custom-select-btn">\n                    <ion-label stacked>{{ field.label | translate }}</ion-label>\n                    <ion-item class="custom-select">\n                        <ion-select [(ngModel)]="field.value"\n                                    (ngModelChange)="onChangeSelectedItems($event, fieldIndex)"\n                                    [hidden]="!field.visible"\n                                    formControlName="{{field.name}}">\n                            <ion-option value="{{subSelect.value}}" *ngFor="let subSelect of field.dataset">\n                                {{ subSelect.value }}\n                            </ion-option>\n                        </ion-select>\n                    </ion-item>\n                    <!--<button ion-button icon-right icon-only class="custom-select-btn-inner">-->\n                    <!--<ion-icon ios="md-add" md="md-add"></ion-icon>-->\n                    <!--</button>-->\n                </ion-list>\n\n                <div class="custom-select-btn-attachment" *ngFor="let item of selectedItems">\n                    <div>{{ item }}</div>\n                    <button ion-button icon-only class="custom-select-btn-attachment-inner" type="button"\n                            (click)="deleteSelectedItem(item)">\n                        <ion-icon ios="md-trash" md="md-trash"></ion-icon>\n                    </button>\n                </div>\n            </div>\n\n            <!-- Custom Two Selects -->\n            <div class="custom-select-container custom-select2" *ngIf="field.type === \'customTwoSelects\'">\n                <div>{{ field.label | translate }}</div>\n                <!--ion-list class="custom-select-btn"-->\n                <!--div class="custom-layer"-->\n                <ion-grid fixed no-padding>\n                    <ion-row align-items-center>\n                        <ion-col col-sm-10>\n                                <ion-row>\n\n                                    <ion-item class="custom-select" no-lines>\n                                        <ion-select [(ngModel)]="field.value"\n                                                    [hidden]="!field.visible"\n                                                    formControlName="{{field.name}}"\n                                                    required="{{field.required}}" #customSelect1>\n                                            <ion-option value="{{subSelect.value}}"\n                                                        *ngFor="let subSelect of field.dataset"\n                                                        (ionSelect)="onSelecteCustomItems(subSelect)">\n                                                {{ subSelect.value }}\n                                            </ion-option>\n                                        </ion-select>\n                                    </ion-item>\n                                </ion-row>\n                            <ion-row>\n                                <ion-item class="custom-select" no-lines>\n                                    <ion-select [(ngModel)]="field.value2"\n                                                [hidden]="!field.visible"\n                                                formControlName="{{field.name}}"\n                                                required="{{field.required}}" #customSelect2>\n                                        <ion-option value="{{subSelect.value}}" *ngFor="let subSelect of field.dataset2"\n                                                    (ionSelect)="onSelecteCustomItems(subSelect)">\n                                            {{ subSelect.value }}\n                                        </ion-option>\n                                    </ion-select>\n                                </ion-item>\n                            </ion-row>\n                        </ion-col>\n                        <ion-col col-2>\n                            <button ion-button icon-right icon-only class="custom-select-btn-inner" type="button"\n                                    (click)="addCustomSelect(customSelect1, customSelect2)">\n                                <ion-icon ios="md-add" md="md-add"></ion-icon>\n                            </button>\n                        </ion-col>\n                    </ion-row>\n\n                </ion-grid>\n\n                <!--/div-->\n\n                <!--/ion-list-->\n\n                <div class="custom-select-btn-attachment" *ngFor="let item of selectedCustomItems">\n                    <div>{{ item }}</div>\n                    <button ion-button icon-only small class="custom-select-btn-attachment-inner"\n                            (click)="deleteSelectedCustomItem(item)">\n                        <ion-icon ios="md-trash" md="md-trash"></ion-icon>\n                    </button>\n                </div>\n            </div>\n\n            <ion-list *ngIf="field.type === \'checkbox\'">\n                <ion-item [ngClass]="field.value ? \'\' : \'custom-checkbox-checked\'">\n                    <ion-label>{{field.label | translate}}</ion-label>\n                    <ion-checkbox [(ngModel)]="field.value" [ngModelOptions]="{standalone: true}"></ion-checkbox>\n                </ion-item>\n            </ion-list>\n\n            <!--Custom Select with Uploading files-->\n            <ion-grid *ngIf="field.type === \'customUploadSelect\'">\n                <ion-row align-items-center>\n                    <ion-col col-10>\n                        <p class="text-upload-field">{{field.label}}</p>\n                    </ion-col>\n                    <ion-col col-2 text-right>\n                        <input [(ngModel)]="field.value"\n                               [hidden]="!field.visible"\n                               formControlName="{{field.name}}"\n                               type="file" name="file" id="file" class="inputfile" (change)="fileEvent($event)"/>\n                        <label class="custom-upload-button" ion-button for="file">\n                            <ion-icon name="md-add"></ion-icon>\n                        </label>\n                    </ion-col>\n                </ion-row>\n\n                <ion-row text-left align-items-center class="uploaded-items" *ngFor="let item of uploadedItems">\n                    <ion-col col-8>\n                        <div class="uploaded-item">{{ item }}</div>\n                    </ion-col>\n                    <ion-col col-2>\n                        <button ion-button clear icon-only type="button" class="download-uploaded-item-btn"\n                                (click)="downloadUploadedItem(item)">\n                            <ion-icon name="ios-download-outline"></ion-icon>\n                        </button>\n                    </ion-col>\n                    <ion-col col-2>\n                        <button ion-button icon-only class="delete-uploaded-item-btn" type="button"\n                                (click)="deleteUploadedItem(item)">\n                            <ion-icon name="md-trash"></ion-icon>\n                        </button>\n                    </ion-col>\n                </ion-row>\n            </ion-grid>\n\n            <!-- Validation error message -->\n            <div class="voj-validation-error-msg" [hidden]="!(!dynamicalForm.controls[field.name].valid  && (dynamicalForm.controls[field.name].dirty || submitAttempt))">\n                <p>{{ field.validationMsg | translate }}</p>\n            </div>\n        </div>\n\n        <!-- Password identity error message -->\n        <div class="voj-validation-error-msg" *ngIf="!arePasswordsIdentical">\n            <p>{{ \'VALIDATION.PASSWORD_CONFIRMATION_MSG\' | translate }}</p>\n        </div>\n\n        <button *ngIf="data.submit" ion-button class="custom-btn" [disabled]="formComponent.invalid || customSelectValidation(formComponent.value)">\n            {{ data.submit.label | translate }}\n        </button>\n    </form>\n</div>\n'/*ion-inline-end:"/Users/tim/Documents/vitonjob/vitonjob-v2/src/components/voj-form/voj-form.html"*/
+            selector: 'voj-form',template:/*ion-inline-start:"/Users/tim/Documents/vitonjob/vitonjob-v2/src/components/voj-form/voj-form.html"*/'<!-- Generated template for the VojForm component -->\n<div class="calendar-container">\n    <h2 [innerHTML]="data.title" *ngIf="data.title && data.title.length > 0"></h2>\n    <form #formComponent="ngForm" [formGroup]="dynamicalForm" (ngSubmit)="onSubmit(formComponent, data.submit.action)" novalidate>\n\n        <div class="dynamical-form" id="{{ field.id }}" *ngFor="let field of data.fields; let fieldIndex = index">\n            <button ion-button class="custom-btn" *ngIf="field.type === \'button\'" [hidden]="!field.visible"\n                    (click)="field.action()" type="button">\n                {{ field.label | translate }}\n            </button>\n\n            <ion-list *ngIf="field.type === \'text\' || field.type === \'textarea\'\n							|| field.type === \'number\' || field.type === \'tel\'">\n                <ion-item class="custom-input" [hidden]="!field.visible">\n                    <ion-label stacked *ngIf="field.label && field.label.length > 0">{{field.label | translate}}\n                        <span class="asterisk" *ngIf="field.required">*</span></ion-label>\n                    <ion-input type="{{ field.type }}"\n                               [readonly]="field.readonly"\n                               required="{{field.required}}"\n                               placeholder="{{field.placeholder | translate}}"\n                               maxlength="{{field.max}}"\n                               [(ngModel)]="field.value"\n                               (ngModelChange)="field.value = $event; checkNgModel(field.action)"\n                               (keyup)="getItems($event, field.dataset)"\n                               formControlName="{{field.name}}"></ion-input>\n                </ion-item>\n                <div *ngIf="showList && field.dataset" class="input-autocomplete">\n                    <ion-list>\n                        <ion-item *ngFor="let item of itemsForAutocomplete" (click)="selectTip(item.value, field)">\n                            {{ item.value }}\n                        </ion-item>\n                    </ion-list>\n                </div>\n            </ion-list>\n\n            <ion-list *ngIf="field.type === \'week\' || field.type === \'url\' || field.type === \'time\'\n             || field.type === \'color\' || field.type === \'mail\' || field.type === \'month\'">\n                <ion-item class="custom-input">\n                    <ion-label stacked *ngIf="field.label && field.label.length > 0">{{ field.label | translate }}\n                        <span class="asterisk" *ngIf="field.required">*</span></ion-label>\n                    <ion-input type="text"\n                               autocomplete="on"\n                               [hidden]="!field.visible"\n                               [readonly]="field.readonly"\n                               placeholder="{{field.placeholder | translate}}"\n                               maxlength="{{field.max}}"\n                               [(ngModel)]="field.value"\n                               (ngModelChange)="field.value = $event; checkNgModel(field.action)"\n                               formControlName="{{field.name}}"></ion-input>\n                </ion-item>\n            </ion-list>\n\n            <ion-list *ngIf="field.type === \'date\'">\n                <ion-item class="custom-input">\n                    <ion-label stacked *ngIf="field.label && field.label.length > 0">{{ field.label | translate }}\n                        <span class="asterisk" *ngIf="field.required">*</span></ion-label>\n                    <ion-input type="date"\n                               [hidden]="!field.visible"\n                               [readonly]="field.readonly"\n                               [disabled]="field.disabled"\n                               [(ngModel)]="field.value"\n                               (ngModelChange)="field.value = $event; checkNgModel(field.action)"\n                               formControlName="{{field.name}}"\n                               min="{{field.min}}"\n                               max="{{field.max}}"></ion-input>\n                </ion-item>\n            </ion-list>\n\n            <ion-list *ngIf="field.type === \'password\' || field.type === \'password-visible\' || field.type === \'search\'">\n                <ion-item class="custom-input custom-input-password">\n                    <ion-label stacked>{{ field.label | translate }}\n                        <span class="asterisk" *ngIf="field.required">*</span></ion-label>\n                    <ion-input type="{{ (field.type === \'password\') ? \'password\' : \'text\' }}"\n                               autocomplete="on"\n                               clearOnEdit="false"\n                               [hidden]="!field.visible"\n                               [readonly]="field.readonly"\n                               placeholder="{{field.placeholder | translate}}"\n                               maxlength="{{field.max}}"\n                               [(ngModel)]="field.value"\n                               (ngModelChange)="field.value = $event"\n                               formControlName="{{field.name}}" #inputPass></ion-input>\n                    <button ion-button icon-only type="button" item-right\n                            (click)="managePassword(inputPass, fieldIndex)">\n                        <ion-icon name="{{ field.type === \'password\' ? \'ios-eye\' : field.type === \'password-visible\' ?\n                                        \'ios-eye-off\' : \'ios-search\'}}">\n                        </ion-icon>\n                    </button>\n                </ion-item>\n            </ion-list>\n\n            <ion-list *ngIf="field.type === \'range\'">\n                <ion-item>\n                    <ion-range min="{{field.min}}" max="{{field.max}}" [(ngModel)]="field.value" color="secondary"\n                               [hidden]="!field.visible" formControlName="{{field.name}}">\n                        <ion-label range-left>{{field.min}}</ion-label>\n                        <ion-label range-right>{{field.max}}</ion-label>\n                    </ion-range>\n                </ion-item>\n            </ion-list>\n\n            <ion-list *ngIf="field.type === \'select\'">\n                <ion-item class="custom-select">\n                    <ion-label>{{ field.label | translate }}\n                        <span class="asterisk" *ngIf="field.required">*</span></ion-label>\n                    <ion-select [(ngModel)]="field.value"\n                                cancelText="{{ \'FORM.CANCEL_BTN\' | translate }}"\n                                [hidden]="!field.visible"\n                                [disabled]="field.readonly"\n                                required="{{field.required}}"\n                                (ngModelChange)="field.value = $event; checkNgModel(field.action)"\n                                formControlName="{{field.name}}">\n                        <ion-option value="{{subSelect.value}}" *ngFor="let subSelect of field.dataset">\n                            {{ subSelect.key }}\n                        </ion-option>\n                    </ion-select>\n                </ion-item>\n            </ion-list>\n\n            <!-- Radio -->\n            <ion-list radio-group class="custom-radio" *ngIf="field.type === \'radio\'"\n                      [(ngModel)]="field.value" formControlName="{{field.name}}" (ngModelChange)="checkNgModel(field.action)">\n                <ion-list-header class="voj-radio-label" *ngIf="field.label && field.label.length > 0">\n                    {{ field.label | translate }}\n                </ion-list-header>\n                <ion-item class="voj-radio-button" *ngFor="let radioItem of field.dataset">\n                    <ion-label>{{ radioItem.key | translate }}</ion-label>\n                    <ion-radio value="{{radioItem.value}}"></ion-radio>\n                </ion-item>\n            </ion-list>\n\n            <!-- Radio with inputs -->\n            <ion-list radio-group class="custom-radio-with-inputs" *ngIf="field.type === \'radioWithInputs\'"\n                      formControlName="{{field.name}}"\n                      [(ngModel)]="field.value">\n                <div *ngFor="let radioItem of field.dataset3"\n                     (click)="field.value=radioItem.value" class="custom-radio-wrap">\n                    <div [ngClass]="field.value===radioItem.value ? \'\' : \'selectedItem\'" class="custom-radio-1">\n                        <ion-icon\n                                name="{{field.value===radioItem.value ? \'radio-button-on\' : \'radio-button-off\'}}"\n                        class="custom-radio-icon"></ion-icon>\n                        <label class="custom-radio-label-1">{{radioItem.key || \'\'}}</label>\n                    </div>\n                    <div *ngIf="radioItem.subdata" class="custom-radio-2"\n                         [ngClass]="field.value === radioItem.value ? \'\' : \'selectedItem\'">\n                            <div class="radio-field-wrap">\n                                <label class="custom-radio-label-2">{{radioItem.subdata.key1}}</label>\n                                <input class="custom-radio-input"\n                                       formControlName="{{radioItem.subdata.name1}}"\n                                       [(ngModel)]="radioItem.subdata.value1"\n                                       required="{{field.value===radioItem.value ? field.required : false}}"\n                                       pattern="{{field.regex}}" type="text"\n                                       placeholder="{{radioItem.subdata.placeholder1 | translate}}">\n                            </div>\n                            <div class="radio-field-wrap">\n                                <label class="custom-radio-label-2">{{radioItem.subdata.key2}}</label>\n                                <input class="custom-radio-input" [(ngModel)]="radioItem.subdata.value2"\n                                       formControlName="{{radioItem.subdata.name2}}"\n                                       required="{{field.value===radioItem.value ? field.required : false}}"\n                                       pattern="{{field.regex}}" type="text"\n                                       placeholder="{{radioItem.subdata.placeholder2 | translate}}">\n                            </div>\n                    </div>\n                </div>\n            </ion-list>\n\n            <!-- Custom Select -->\n            <div class="custom-select-container" *ngIf="field.type === \'customSelect\'">\n                <div>{{ field.label | translate }}</div>\n                <ion-list class="custom-select-btn">\n                    <ion-label stacked>{{ field.label | translate }}</ion-label>\n                    <ion-item class="custom-select">\n                        <ion-select [(ngModel)]="field.value"\n                                    (ngModelChange)="onChangeSelectedItems($event, fieldIndex)"\n                                    [hidden]="!field.visible"\n                                    formControlName="{{field.name}}">\n                            <ion-option value="{{subSelect.value}}" *ngFor="let subSelect of field.dataset">\n                                {{ subSelect.value }}\n                            </ion-option>\n                        </ion-select>\n                    </ion-item>\n                    <!--<button ion-button icon-right icon-only class="custom-select-btn-inner">-->\n                    <!--<ion-icon ios="md-add" md="md-add"></ion-icon>-->\n                    <!--</button>-->\n                </ion-list>\n\n                <div class="custom-select-btn-attachment" *ngFor="let item of selectedItems">\n                    <div>{{ item }}</div>\n                    <button ion-button icon-only class="custom-select-btn-attachment-inner" type="button"\n                            (click)="deleteSelectedItem(item)">\n                        <ion-icon ios="md-trash" md="md-trash"></ion-icon>\n                    </button>\n                </div>\n            </div>\n\n            <!-- Custom Two Selects -->\n            <div class="custom-select-container custom-select2" *ngIf="field.type === \'customTwoSelects\'">\n                <div>{{ field.label | translate }}</div>\n                <!--ion-list class="custom-select-btn"-->\n                <!--div class="custom-layer"-->\n                <ion-grid fixed no-padding>\n                    <ion-row align-items-center>\n                        <ion-col col-sm-10>\n                                <ion-row>\n\n                                    <ion-item class="custom-select" no-lines>\n                                        <ion-select [(ngModel)]="field.value"\n                                                    [hidden]="!field.visible"\n                                                    formControlName="{{field.name}}"\n                                                    required="{{field.required}}" #customSelect1>\n                                            <ion-option value="{{subSelect.value}}"\n                                                        *ngFor="let subSelect of field.dataset"\n                                                        (ionSelect)="onSelecteCustomItems(subSelect)">\n                                                {{ subSelect.value }}\n                                            </ion-option>\n                                        </ion-select>\n                                    </ion-item>\n                                </ion-row>\n                            <ion-row>\n                                <ion-item class="custom-select" no-lines>\n                                    <ion-select [(ngModel)]="field.value2"\n                                                [hidden]="!field.visible"\n                                                formControlName="{{field.name}}"\n                                                required="{{field.required}}" #customSelect2>\n                                        <ion-option value="{{subSelect.value}}" *ngFor="let subSelect of field.dataset2"\n                                                    (ionSelect)="onSelecteCustomItems(subSelect)">\n                                            {{ subSelect.value }}\n                                        </ion-option>\n                                    </ion-select>\n                                </ion-item>\n                            </ion-row>\n                        </ion-col>\n                        <ion-col col-2>\n                            <button ion-button icon-right icon-only class="custom-select-btn-inner" type="button"\n                                    (click)="addCustomSelect(customSelect1, customSelect2)">\n                                <ion-icon ios="md-add" md="md-add"></ion-icon>\n                            </button>\n                        </ion-col>\n                    </ion-row>\n\n                </ion-grid>\n\n                <!--/div-->\n\n                <!--/ion-list-->\n\n                <div class="custom-select-btn-attachment" *ngFor="let item of selectedCustomItems">\n                    <div>{{ item }}</div>\n                    <button ion-button icon-only small class="custom-select-btn-attachment-inner"\n                            (click)="deleteSelectedCustomItem(item)">\n                        <ion-icon ios="md-trash" md="md-trash"></ion-icon>\n                    </button>\n                </div>\n            </div>\n\n            <ion-list *ngIf="field.type === \'checkbox\'">\n                <ion-item [ngClass]="field.value ? \'\' : \'custom-checkbox-checked\'">\n                    <ion-label>{{field.label | translate}}</ion-label>\n                    <ion-checkbox [(ngModel)]="field.value" [ngModelOptions]="{standalone: true}"></ion-checkbox>\n                </ion-item>\n            </ion-list>\n\n            <!--Custom Select with Uploading files-->\n            <ion-grid *ngIf="field.type === \'customUploadSelect\'">\n                <ion-row align-items-center>\n                    <ion-col col-10>\n                        <input [(ngModel)]="field.value"\n                               [hidden]="!field.visible"\n                               formControlName="{{field.name}}"\n                               type="file" name="file" id="file" class="inputfile" (change)="fileEvent($event)"/>\n                        <label class="text-upload-field" for="file">{{documents.uploadedFileName || field.label}}</label>\n                    </ion-col>\n                    <ion-col col-2 text-right>\n                        <!--<input [(ngModel)]="field.value"-->\n                               <!--[hidden]="!field.visible"-->\n                               <!--formControlName="{{field.name}}"-->\n                               <!--type="file" name="file" id="file" class="inputfile" (change)="fileEvent($event)"/>-->\n                        <!--<label class="custom-upload-button" ion-button (click)="pushFile()">-->\n                            <!--<ion-icon name="md-add"></ion-icon>-->\n                        <!--</label>-->\n                        <button ion-button type="button" (click)="pushFile()" class="custom-upload-button">\n                            <ion-icon name="md-add"></ion-icon></button>\n                    </ion-col>\n                </ion-row>\n\n                <ion-row text-left align-items-center class="uploaded-items" *ngFor="let item of documents.uploadedItems; let i = index">\n                    <ion-col col-8>\n                        <div class="uploaded-item">{{ item.name }}</div>\n                    </ion-col>\n                    <ion-col col-2>\n                        <button ion-button clear icon-only type="button" class="download-uploaded-item-btn"\n                                (click)="downloadUploadedItem(item)">\n                            <ion-icon name="ios-download-outline"></ion-icon>\n                        </button>\n                    </ion-col>\n                    <ion-col col-2>\n                        <button ion-button icon-only class="delete-uploaded-item-btn" type="button"\n                                (click)="deleteUploadedItem(i)">\n                            <ion-icon name="md-trash"></ion-icon>\n                        </button>\n                    </ion-col>\n                </ion-row>\n            </ion-grid>\n\n            <!--Custom Select 2 with Uploading files-->\n            <ion-grid *ngIf="field.type === \'customUploadSelect2\'">\n                <ion-row text-left align-items-center class="uploaded-items" *ngFor="let item of documents.uploadedItems; let i = index">\n                    <ion-col col-8>\n                        <div class="uploaded-item">{{ item.name }}</div>\n                    </ion-col>\n                    <ion-col col-2>\n                        <button ion-button clear icon-only type="button" class="download-uploaded-item-btn"\n                                (click)="downloadUploadedItem(item)">\n                            <ion-icon name="ios-download-outline"></ion-icon>\n                        </button>\n                    </ion-col>\n                    <ion-col col-2>\n                        <button ion-button icon-only class="delete-uploaded-item-btn" type="button"\n                                (click)="deleteUploadedItem(i)">\n                            <ion-icon name="md-trash"></ion-icon>\n                        </button>\n                    </ion-col>\n                </ion-row>\n                <div class="custom-line"></div>\n                <label class="documents-title">{{getFieldName().title}}</label>\n                <label class="documents-type">{{getFieldName().type}}</label>\n                <ion-row align-items-center>\n                    <ion-col col-10>\n                        <input [(ngModel)]="field.value"\n                               [hidden]="!field.visible"\n                               formControlName="{{field.name}}"\n                               type="file" name="file2" id="file2" class="inputfile" (change)="fileEvent($event)"/>\n                        <label class="text-upload-field" for="file2">{{documents.uploadedFileName}}</label>\n                    </ion-col>\n                    <ion-col col-2 text-right>\n                        <button ion-button type="button" (click)="pushFile()" class="custom-upload-button">\n                            <ion-icon name="md-add"></ion-icon></button>\n                    </ion-col>\n                </ion-row>\n            </ion-grid>\n\n            <!-- Validation error message -->\n            <div class="voj-validation-error-msg" [hidden]="!(!dynamicalForm.controls[field.name].valid  && (dynamicalForm.controls[field.name].dirty || submitAttempt))">\n                <p>{{ field.validationMsg | translate }}</p>\n            </div>\n        </div>\n\n        <!-- Password identity error message -->\n        <div class="voj-validation-error-msg" *ngIf="!arePasswordsIdentical">\n            <p>{{ \'VALIDATION.PASSWORD_CONFIRMATION_MSG\' | translate }}</p>\n        </div>\n\n        <button *ngIf="data.submit" ion-button class="custom-btn" [disabled]="formComponent.invalid || customSelectValidation(formComponent.value)">\n            {{ data.submit.label | translate }}\n        </button>\n    </form>\n</div>\n'/*ion-inline-end:"/Users/tim/Documents/vitonjob/vitonjob-v2/src/components/voj-form/voj-form.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */]])
     ], VojForm);
@@ -13322,7 +13298,7 @@ var VojForm = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_search_header_model__ = __webpack_require__(860);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_search_query_model__ = __webpack_require__(861);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_voj_configuration__ = __webpack_require__(9);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13413,7 +13389,7 @@ var VojSearchHeader = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfileService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__http_request_http_request__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_utils__ = __webpack_require__(54);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -14225,7 +14201,7 @@ var VojNotificationService = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_voj_events_voj_events__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__details_details__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_modal_service__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_geolocation__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__information_resume_information_resume__ = __webpack_require__(534);
@@ -14273,7 +14249,7 @@ var SearchPage = (function () {
         this.badge = 0;
         this.eventsCards = [];
         this.eventsMode = false;
-        this.emptyResults = "Aucun résultat. Essayer avec la recherche multicritères";
+        this.emptyResults = "Aucun résultat. Essayez avec la recherche multicritères";
     }
     /**
      * This function patches the gmap synch issue
@@ -14302,7 +14278,7 @@ var SearchPage = (function () {
         else {
             this.mobileStyle = {};
             this.messageStyle = {
-                'bottom': '30%',
+                'bottom': '20%',
                 'position': 'fixed',
                 'z-index': 1,
                 'text-align': 'center',
@@ -14345,6 +14321,24 @@ var SearchPage = (function () {
                 action: function () {
                     if (!_this.configuration.configuration.isLargeScreen) {
                         _this.gmapView = !_this.gmapView;
+                        if (_this.gmapView) {
+                            _this.messageStyle = {
+                                'bottom': '5%',
+                                'position': 'absolute',
+                                'z-index': 1,
+                                'text-align': 'center',
+                                'width': '100%'
+                            };
+                        }
+                        else {
+                            _this.messageStyle = {
+                                'bottom': '12%',
+                                'position': 'fixed',
+                                'z-index': 1,
+                                'text-align': 'center',
+                                'width': '100%'
+                            };
+                        }
                         _this.pageHeader.actions[1].icon = _this.gmapView ? 'list' : 'pin';
                         if (_this.cards && _this.gmapView) {
                             setTimeout(function () {
@@ -14381,14 +14375,19 @@ var SearchPage = (function () {
                 var _loop_1 = function (i) {
                     var c = _this.cards[i];
                     c.scoreOrder = i;
+                    c.socialButtons.forEach(function (socialButton) {
+                        socialButton.action = function () { return _this.gotoDetails(c); };
+                    });
                     for (var j = 0; j < c.actions.length; j++) {
                         var action = c.actions[j];
-                        if (action.id == "details") {
-                            action.action = function () {
-                                _this.gotoDetails(c);
-                            };
-                            break;
-                        }
+                        // FIXME: temporarily removed due to https://app.asana.com/0/404438886620813/428613916108003 by nickpe
+                        // if (action.id == "details") {
+                        //     action.action = () => {
+                        //         this.gotoDetails(c);
+                        //     };
+                        //     break;
+                        // }
+                        action.action = function () { return _this.gotoDetails(c); };
                     }
                 };
                 for (var i = 0; i < _this.cards.length; i++) {
@@ -14617,7 +14616,7 @@ var SearchPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(602);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(559);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_test_components_about_about__ = __webpack_require__(121);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_search_module_search_search__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_core__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_home_home__ = __webpack_require__(213);
@@ -14888,9 +14887,14 @@ var MyApp = (function () {
         this.annoncesLabel = this.dataHeader.menu[1].label;
     };
     MyApp.prototype.updateWebMenu = function () {
+        var _this = this;
+        var navMock = function () {
+            var vojPageList = { page: __WEBPACK_IMPORTED_MODULE_15__pages_account_module_login_login__["a" /* LoginPage */], isRoot: true, isModal: true };
+            _this.navigationService.navigate("list", vojPageList);
+        };
         if (this.config && this.config.customer) {
             var s = this.config.customer == 'J' ? new __WEBPACK_IMPORTED_MODULE_21__startegy_jobyer__["a" /* JobyerStrategy */]() : new __WEBPACK_IMPORTED_MODULE_22__startegy_employer__["a" /* EmployerStrategy */]();
-            this.dataHeader = s.loadHeaderData(this, this.notificationFunction, this.navigateToSearch, this.mock, this.mock, this.goToAccount);
+            this.dataHeader = s.loadHeaderData(this, this.notificationFunction, this.navigateToSearch, navMock, navMock, this.goToAccount);
             this.annoncesLabel = this.dataHeader.menu[1].label;
         }
     };
@@ -14942,23 +14946,27 @@ var MyApp = (function () {
     (called only for small screens)
      */
     MyApp.prototype.tabChanged = function (e) {
-        switch (this.selectedTab) {
-            case ("searchTab"):
-                this.rootPageMain = __WEBPACK_IMPORTED_MODULE_7__pages_search_module_search_search__["a" /* SearchPage */];
-                break;
-            case ("advertTab"):
-                this.rootPageMain = __WEBPACK_IMPORTED_MODULE_9__pages_home_home__["a" /* HomePage */];
-                break;
-            case ("missionTab"):
-                this.rootPageMain = __WEBPACK_IMPORTED_MODULE_5__pages_test_components_about_about__["a" /* AboutPage */];
-                break;
-            case ("accountTab"):
-                this.rootPageMain = __WEBPACK_IMPORTED_MODULE_13__pages_landing_page_landing_page__["a" /* LandingPage */];
-                break;
-            default:
-                this.rootPageMain = __WEBPACK_IMPORTED_MODULE_7__pages_search_module_search_search__["a" /* SearchPage */];
-                break;
-        }
+        var _this = this;
+        this.storage.get("currentUser").then(function (sdata) {
+            var currentUser = JSON.parse(sdata);
+            switch (_this.selectedTab) {
+                case ("searchTab"):
+                    _this.rootPageMain = __WEBPACK_IMPORTED_MODULE_7__pages_search_module_search_search__["a" /* SearchPage */];
+                    break;
+                case ("advertTab"):
+                    _this.rootPageMain = __WEBPACK_IMPORTED_MODULE_9__pages_home_home__["a" /* HomePage */];
+                    break;
+                case ("missionTab"):
+                    _this.rootPageMain = __WEBPACK_IMPORTED_MODULE_5__pages_test_components_about_about__["a" /* AboutPage */];
+                    break;
+                case ("accountTab"):
+                    _this.rootPageMain = (!currentUser ? __WEBPACK_IMPORTED_MODULE_15__pages_account_module_login_login__["a" /* LoginPage */] : __WEBPACK_IMPORTED_MODULE_17__pages_account_module_account_account__["a" /* AccountPage */]);
+                    break;
+                default:
+                    _this.rootPageMain = __WEBPACK_IMPORTED_MODULE_7__pages_search_module_search_search__["a" /* SearchPage */];
+                    break;
+            }
+        });
     };
     /*
     Initializing navigation params and subscribing to events
@@ -15349,12 +15357,14 @@ var EmployerStrategy = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__account_module_jobs_list_jobs_list_module__ = __webpack_require__(911);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__availabilities_add_slot_availabilities_add_slot_page_module__ = __webpack_require__(913);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__calendar_calendar_module__ = __webpack_require__(560);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__documents_documents_module__ = __webpack_require__(915);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -15434,7 +15444,8 @@ var PagesModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_32__find_job_find_job_module__["a" /* FindJobPageModule */],
                 __WEBPACK_IMPORTED_MODULE_30__information_resume_information_resume_module__["a" /* InformationResumePageModule */],
                 __WEBPACK_IMPORTED_MODULE_34__availabilities_add_slot_availabilities_add_slot_page_module__["a" /* AvailabilitiesAddSlotPageModule */],
-                __WEBPACK_IMPORTED_MODULE_35__calendar_calendar_module__["CalendarPageModule"]
+                __WEBPACK_IMPORTED_MODULE_35__calendar_calendar_module__["CalendarPageModule"],
+                __WEBPACK_IMPORTED_MODULE_36__documents_documents_module__["a" /* DocumentsPageModule */]
             ]
         })
     ], PagesModule);
@@ -15452,7 +15463,7 @@ var PagesModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserInformationPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__strategy_employer__ = __webpack_require__(864);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__strategy_jobyer__ = __webpack_require__(865);
@@ -15512,14 +15523,14 @@ var UserInformationPage = (function () {
                 // JobyerStrategy
                 //name: this.currentUser.identity ? this.currentUser.identity.lastName : '',
                 //firstName: this.currentUser.identity ? this.currentUser.identity.firstName : '',
-                name: "Mon identité",
+                name: "Ma civilité",
                 identityPage: __WEBPACK_IMPORTED_MODULE_8__identity_identity__["a" /* IdentityPage */],
                 no: "Mon adresse",
                 addressPage: __WEBPACK_IMPORTED_MODULE_9__main_address_main_address__["a" /* MainAddressPage */],
-                birthDate: "Mes données de naissance",
+                birthDate: "Mes données sociales",
                 birthDataPage: __WEBPACK_IMPORTED_MODULE_10__personal_details_personal_details__["a" /* PersonalDetailsPage */],
                 placeOfBirth: "",
-                identityDocumentType: 'Mes données personnelles',
+                identityDocumentType: 'Mon identité',
                 identityCardPage: __WEBPACK_IMPORTED_MODULE_11__personal_details_identity_personal_details_identity__["a" /* PersonalDetailsIdentityPage */],
                 docNumber: "",
                 bankDetails: 'Mes coordonnées bancaires',
@@ -15967,6 +15978,76 @@ var AvailabilitiesPageModule = (function () {
 
 /***/ }),
 
+/***/ 9:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Configuration; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environment__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_configuration_model__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_http_request_http_request__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_voj_tuple_model__ = __webpack_require__(833);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_voj_events_voj_events__ = __webpack_require__(45);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var Configuration = (function () {
+    function Configuration(http, eventBus) {
+        this.http = http;
+        this.eventBus = eventBus;
+        this.configuration = new __WEBPACK_IMPORTED_MODULE_2__models_voj_configuration_model__["a" /* VojConfiguration */]();
+    }
+    Configuration.prototype.initialize = function () {
+        var _this = this;
+        var payload = {
+            "cid": __WEBPACK_IMPORTED_MODULE_1__environment__["a" /* envConfig */].cid
+        };
+        this.http.call(payload, __WEBPACK_IMPORTED_MODULE_1__environment__["a" /* envConfig */].server, "", true).subscribe(function (data) {
+            if (data && data.length > 0) {
+                _this.configuration.brand = data[0].brand;
+                _this.configuration.customer = data[0].customer;
+                _this.configuration.env = data[0].env;
+                _this.configuration.target = data[0].target;
+                _this.configuration.dlMode = data[0].dlmode;
+                _this.configuration.logo = data[0].logo;
+                _this.configuration.brand = data[0].brand;
+                _this.configuration.css = JSON.stringify(data[0].css);
+                _this.configuration.urls = [];
+                for (var key in data[0].urls) {
+                    var t = new __WEBPACK_IMPORTED_MODULE_4__models_voj_tuple_model__["a" /* VojTuple */]();
+                    t.key = key;
+                    t.value = data[0].urls[key];
+                    _this.configuration.urls.push(t);
+                }
+                _this.eventBus.publishAppHeader();
+            }
+        });
+    };
+    Configuration = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__providers_http_request_http_request__["a" /* HttpRequestProvider */],
+            __WEBPACK_IMPORTED_MODULE_5__providers_voj_events_voj_events__["a" /* EventBusProvider */]])
+    ], Configuration);
+    return Configuration;
+}());
+
+//# sourceMappingURL=voj-configuration.js.map
+
+/***/ }),
+
 /***/ 900:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -16013,7 +16094,7 @@ var LanguagesPageModule = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LanguagesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(9);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -16140,7 +16221,7 @@ var EnterpriseSearchPageModule = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EnterpriseSearchPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(9);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -16157,6 +16238,9 @@ var EnterpriseSearchPage = (function () {
         this.configurationService = configurationService;
         this.isMobile = false;
         this.searchInput = '';
+        this.input1 = '';
+        this.input2 = '';
+        this.input3 = '';
         this.config = this.configurationService.configuration;
         this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
         this.headerData = {
@@ -16220,6 +16304,9 @@ var EnterpriseSearchPage = (function () {
     };
     EnterpriseSearchPage.prototype.filterItems = function () {
         var _this = this;
+        if (this.segmentData.activeSegmentTab === 1) {
+            this.searchInput = this.input1 + this.input2 + this.input3;
+        }
         // Reset items back to all of the items
         this.initializeItems();
         // set val to the value of the searchbar
@@ -16255,13 +16342,16 @@ var EnterpriseSearchPage = (function () {
     EnterpriseSearchPage.prototype.clearEnterpriseData = function () {
         this.enterpriseData = [];
         this.searchInput = '';
+        this.input1 = '';
+        this.input2 = '';
+        this.input3 = '';
     };
     EnterpriseSearchPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad EnterpriseSearchPage');
     };
     EnterpriseSearchPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'enterprise-search-page',template:/*ion-inline-start:"/Users/tim/Documents/vitonjob/vitonjob-v2/src/pages/account-module/enterprise-search/enterprise-search.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<!--<ion-content>-->\n\n\n    <div [ngClass]="isMobile ? \'enterprise-search-container\' : \'\'" class="enterprise-search-parent">\n        <div [ngClass]="isMobile ? \'enterprise-search-child-container\' : \'\'" class="enterprise-search-child">\n            <voj-header-segment (enterpriseSearchEvent)="clearEnterpriseData($event)" [data]=\'segmentData\'\n                                [(activeTab)]="segmentData.activeSegmentTab"></voj-header-segment>\n            <ion-searchbar class="enterprise-search-bar" [(ngModel)]="searchInput" (ionInput)="filterItems()"></ion-searchbar>\n            <ion-list>\n                <ion-item *ngFor="let item of enterpriseData">\n                    <h2>{{item.companyname}}</h2>\n                    <h2>{{item.lastname}} {{item.firstname}}</h2>\n                    <h2>SIREN {{item.siren}}</h2>\n                    <button item-end class="select-button" (click)="selectedItem()">Sélectionner</button>\n                </ion-item>\n            </ion-list>\n        </div>\n    </div>\n<!--</ion-content>-->'/*ion-inline-end:"/Users/tim/Documents/vitonjob/vitonjob-v2/src/pages/account-module/enterprise-search/enterprise-search.html"*/,
+            selector: 'enterprise-search-page',template:/*ion-inline-start:"/Users/tim/Documents/vitonjob/vitonjob-v2/src/pages/account-module/enterprise-search/enterprise-search.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<!--<ion-content>-->\n\n\n    <div [ngClass]="isMobile ? \'enterprise-search-container\' : \'\'" class="enterprise-search-parent">\n        <div [ngClass]="isMobile ? \'enterprise-search-child-container\' : \'\'" class="enterprise-search-child">\n            <voj-header-segment (enterpriseSearchEvent)="clearEnterpriseData($event)" [data]=\'segmentData\'\n                                [(activeTab)]="segmentData.activeSegmentTab"></voj-header-segment>\n            <ion-searchbar *ngIf="segmentData.activeSegmentTab === 0" class="enterprise-search-bar" [(ngModel)]="searchInput" (ionInput)="filterItems()"></ion-searchbar>\n            <ion-grid *ngIf="segmentData.activeSegmentTab === 1" class="enterprise-search-bar2">\n                <ion-row align-items-center justify-content-center>\n                    <ion-col col-3><ion-input type="text" maxlength="3" [(ngModel)]="input1" class="enterprise-search-input"></ion-input></ion-col>\n                    <ion-col col-3><ion-input type="text" maxlength="3" [(ngModel)]="input2" class="enterprise-search-input"></ion-input></ion-col>\n                    <ion-col col-3><ion-input type="text" maxlength="3" [(ngModel)]="input3" class="enterprise-search-input"></ion-input></ion-col>\n                    <ion-col col-3 text-right><button clear ion-button (click)="filterItems()">\n                        <ion-icon class="search-btn" name="md-search"></ion-icon>\n                    </button></ion-col>\n                </ion-row>\n            </ion-grid>\n            <ion-list class="enterprise-data">\n                <ion-item *ngFor="let item of enterpriseData">\n                    <h2>{{item.companyname}}</h2>\n                    <h2>{{item.lastname}} {{item.firstname}}</h2>\n                    <h2>SIREN {{item.siren}}</h2>\n                    <button item-end class="select-button" (click)="selectedItem()">Sélectionner</button>\n                </ion-item>\n            </ion-list>\n        </div>\n    </div>\n<!--</ion-content>-->'/*ion-inline-end:"/Users/tim/Documents/vitonjob/vitonjob-v2/src/pages/account-module/enterprise-search/enterprise-search.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__["a" /* Configuration */]])
     ], EnterpriseSearchPage);
@@ -16361,7 +16451,7 @@ var MyCvPageModule = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyCvPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(9);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -16475,7 +16565,7 @@ var QualitiesPageModule = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QualitiesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(9);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -16680,7 +16770,7 @@ var JobsListPageModule = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobsListPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_modal_service__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__find_job_find_job__ = __webpack_require__(603);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -16809,7 +16899,7 @@ var AvailabilitiesAddSlotPageModule = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AvailabilitiesAddSlotPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_navigation_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cv_offer_module_availabilities_availabilities__ = __webpack_require__(215);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -16941,6 +17031,120 @@ var AvailabilitiesAddSlotPage = (function () {
 }());
 
 //# sourceMappingURL=availabilities-add-slot.js.map
+
+/***/ }),
+
+/***/ 915:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DocumentsPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__documents__ = __webpack_require__(916);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var DocumentsPageModule = (function () {
+    function DocumentsPageModule() {
+    }
+    DocumentsPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__documents__["a" /* DocumentsPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__documents__["a" /* DocumentsPage */]),
+                __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__["a" /* VojComponentsModule */]
+            ],
+        })
+    ], DocumentsPageModule);
+    return DocumentsPageModule;
+}());
+
+//# sourceMappingURL=documents.module.js.map
+
+/***/ }),
+
+/***/ 916:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DocumentsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(9);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var DocumentsPage = (function () {
+    function DocumentsPage(configurationService) {
+        this.configurationService = configurationService;
+        this.isMobile = false;
+        this.config = this.configurationService.configuration;
+        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
+        this.headerData = {
+            title: 'My documents',
+            style: 'any',
+            actions: [{
+                    id: 'xdcfgvyhubijnklbhvg',
+                    label: 'help',
+                    icon: 'help',
+                    action: function () {
+                        console.log('button works');
+                    }
+                }],
+            isCanceled: true
+        };
+        this.formData = {
+            fields: [
+                {
+                    type: 'customUploadSelect2',
+                    value: '',
+                    label: 'Add file',
+                    visible: true,
+                    id: '',
+                    name: 'documentsUploadSelect2'
+                },
+            ],
+            submit: {
+                id: 'xdcfgvyhubijnkfwlbhvg',
+                label: 'Validate',
+                icon: 'help',
+                action: function () {
+                    console.log('Navigation to J-S-CV-V1-01 Information Resume');
+                }
+            }
+        };
+    }
+    DocumentsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad DocumentsPage');
+    };
+    DocumentsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'documents-page',template:/*ion-inline-start:"/Users/tim/Documents/vitonjob/vitonjob-v2/src/pages/documents/documents.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n<div [ngClass]="isMobile ? \'documents-container\' : \'\'" class="documents-parent">\n    <div [ngClass]="isMobile ? \'documents-child-container\' : \'\'" class="documents-child">\n        <!--<div class="custom-line"></div>-->\n        <voj-form [data]=\'formData\'></voj-form>\n    </div>\n</div>\n'/*ion-inline-end:"/Users/tim/Documents/vitonjob/vitonjob-v2/src/pages/documents/documents.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__["a" /* Configuration */]])
+    ], DocumentsPage);
+    return DocumentsPage;
+}());
+
+//# sourceMappingURL=documents.js.map
 
 /***/ }),
 
