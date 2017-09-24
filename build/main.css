@@ -27494,6 +27494,9 @@ ion-navbar.toolbar {
   }
 }
 
+/*****************************************
+	Generic style for large screens
+ */
 @media screen and (min-width: 768px) {
   ion-nav {
     margin-top: 204px;
@@ -27506,11 +27509,35 @@ ion-navbar.toolbar {
   }
 }
 
-.mobile-parent-container {
-  padding: 15px;
-  background-color: #14baa6;
-  height: calc(100vh - 118px);
+@media screen and (max-width: 768px) {
+  .ion-page {
+    background-color: #14baa6;
+  }
+  .voj-content {
+    height: calc(100% - 118px);
+    padding: 15px;
+    background-color: #14baa6;
+    overflow-y: auto;
+  }
+  ion-content .voj-content {
+    height: calc(100% - 56px);
+  }
+  .voj-modal .ion-page {
+    background-color: #14baa6;
+  }
+  .modal-wrapper voj-content {
+    padding: 15px;
+    background-color: #14baa6;
+  }
+}
+
+.voj-content {
   overflow-y: auto;
+}
+
+.voj-content .voj-form-container {
+  background-color: #ffffff;
+  padding: 0 0 20px 0;
 }
 
 .mobile-child-container {
@@ -27520,6 +27547,9 @@ ion-navbar.toolbar {
   min-height: 90%;
 }
 
+/**************************************************************************
+Styles for the segments in the footer in small screens (the simulated tabs)
+ */
 .segment-tab {
   line-height: 1.5rem;
   padding-top: 5px;
@@ -28937,94 +28967,6 @@ voj-map #map {
   min-height: 250px;
 }
 
-.voj-notification-modal {
-  background: rgba(0, 0, 0, 0.7);
-}
-
-.voj-notification-modal .modal-wrapper {
-  border-radius: 2px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  min-height: 200px;
-  width: 300px;
-}
-
-voj-notification {
-  background-color: #fff;
-  padding: 25px;
-  border-radius: 2px;
-}
-
-voj-notification h1.voj-notification-title {
-  margin: 0 0 13px 0;
-  font-size: 24px;
-}
-
-voj-notification .voj-notification-message {
-  overflow-y: auto;
-  min-height: 50px;
-  margin-top: 5px;
-}
-
-voj-notification .voj-notification-message p {
-  font-size: 18px;
-  margin: 0 0 13px 0;
-}
-
-voj-notification .voj-notification-buttons {
-  position: absolute;
-  bottom: 0;
-  text-align: right;
-  left: 0;
-  right: 0;
-  padding: 0 2px;
-}
-
-voj-notification .voj-notification-buttons button {
-  font-weight: bold;
-  font-size: 14px;
-}
-
-voj-notification .voj-notification-buttons #sendAgainBtn {
-  color: #6e6e6e;
-  font-size: 11px;
-  border-bottom: 1px solid #6e6e6e;
-  border-radius: 0;
-  padding: 0;
-  height: 15px;
-  display: block;
-  margin: 0 auto 10px;
-  text-transform: none;
-}
-
-voj-notification .voj-notification-buttons #connectBtn {
-  background-color: #14baa6;
-  text-transform: capitalize;
-  color: #fff;
-  border-color: #14baa6;
-  border-radius: 4%;
-  padding: 0 10%;
-  display: block;
-  margin: 0 auto 10px;
-  height: 25px;
-}
-
-voj-notification .voj-notification-buttons #smsBtn, voj-notification .voj-notification-buttons #mailBtn {
-  background-color: #14baa6;
-  text-transform: none;
-  color: #fff;
-  border-color: #14baa6;
-  border-radius: 4%;
-  padding: 0;
-  margin: 0 10px 25px;
-  width: 43%;
-  height: 25px;
-}
-
 voj-page-header .bar-button::after {
   z-index: 1;
 }
@@ -29449,70 +29391,17 @@ voj-segment .voj-segments-container .voj-segment .voj-segment-subtitle-web {
   font-size: 16px;
 }
 
-account-page {
-  background-color: #55b7a6;
-}
-
 account-page .voj-button {
   text-transform: lowercase;
 }
 
-account-page .account-parent {
-  height: calc(100% - 56px);
-  overflow-y: auto;
-}
-
-account-page .account-child {
-  margin-bottom: 56px;
-  position: relative;
-  min-height: 80%;
+account-page .voj-form-container {
+  background: none !important;
 }
 
 bank-settings-page {
   background-color: #ffffff;
   overflow-y: auto;
-}
-
-bank-settings-page .banks-settings-container {
-  padding: 15px;
-  background-color: #14baa6;
-  overflow-y: auto;
-}
-
-bank-settings-page .banks-settings-child-container {
-  background-color: white !important;
-}
-
-bank-settings-page .voj-content {
-  overflow-y: auto;
-}
-
-bank-settings-page .voj-content .voj-form-container {
-  background-color: #ffffff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-bank-settings-page .bank-settings-parent {
-  height: calc(100% - 190px);
-  overflow-y: auto;
-}
-
-bank-settings-page .bank-settings-child {
-  margin-bottom: 56px;
-  position: relative;
-}
-
-bank-settings-page .bank-settings-container {
-  padding: 15px;
-  background-color: #14baa6;
-  height: calc(100% - 56px);
-  overflow-y: auto;
-}
-
-bank-settings-page .bank-settings-child-container {
-  background-color: white !important;
-  position: relative;
 }
 
 bank-settings-page .custom-btn {
@@ -29524,74 +29413,9 @@ company-page {
   overflow-y: auto;
 }
 
-company-page .company-parent-container {
-  height: calc(100% - 56px);
-  padding: 15px;
-  background-color: #14baa6;
-  overflow-y: auto;
-}
-
-company-page .company-child-container {
-  background-color: white !important;
-}
-
-company-page .voj-content {
-  overflow-y: auto;
-}
-
-company-page .voj-content .voj-form-container {
-  background-color: #ffffff;
-  padding: 0 0 20px 0;
-}
-
-page-enterprise-details .enterprise-details-container {
-  padding: 15px;
-  background-color: #14baa6;
-  height: calc(100% - 56px);
-}
-
-page-enterprise-details .enterprise-details-child-container {
-  background-color: white !important;
-}
-
 enterprise-search-page {
   background-color: #ffffff;
   overflow-y: auto;
-}
-
-enterprise-search-page .enterprise-search-parent {
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-enterprise-search-page .enterprise-search-container {
-  height: calc(100% - 56px);
-  padding: 15px;
-  background-color: #14baa6;
-  overflow-y: auto;
-}
-
-enterprise-search-page .enterprise-search-child-container {
-  background-color: white !important;
-}
-
-enterprise-search-page .enterprise-search-child {
-  background-color: #ffffff;
-  margin-bottom: 56px;
-  position: relative;
-}
-
-enterprise-search-page .enterprise-search-container {
-  background-color: #14baa6;
-  padding: 20px;
-  height: calc(100% - 56px);
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-enterprise-search-page .enterprise-search-child-container {
-  background-color: white !important;
-  position: relative;
 }
 
 enterprise-search-page ion-searchbar {
@@ -29646,26 +29470,6 @@ enterprise-search-page .enterprise-search-bar {
 identity-page {
   overflow-y: auto;
   background-color: #ffffff;
-}
-
-identity-page .voj-content {
-  overflow-y: auto;
-}
-
-identity-page .voj-content .voj-form-container {
-  background-color: #ffffff;
-  padding: 0 0 10px 0;
-}
-
-identity-page .identity-parent-container {
-  height: calc(100% - 56px);
-  padding: 15px;
-  background-color: #14baa6;
-  overflow-y: auto;
-}
-
-identity-page .identity-child-container {
-  background-color: white !important;
 }
 
 identity-page #civility .label.label-md {
@@ -29723,11 +29527,6 @@ jobs-list-page .jobs-list-container {
   height: 100%;
 }
 
-jobs-list-page .jobs-list-child-container {
-  padding: 5px;
-  background-color: white !important;
-}
-
 jobs-list-page .item-label-stacked .text-input-md {
   border: 2px solid #cccccc;
   padding: 2px;
@@ -29740,16 +29539,6 @@ jobs-list-page .item-label-stacked .jobs-list-label {
 
 login-page {
   background-color: #ffffff;
-}
-
-login-page .login-parent-container {
-  height: calc(100% - 118px);
-  padding: 15px;
-  background-color: #14baa6;
-}
-
-login-page .login-child-container {
-  background-color: white !important;
 }
 
 login-page .voj-content {
@@ -29884,6 +29673,10 @@ options-page {
   background-color: #55b7a6;
 }
 
+options-page .voj-form-container {
+  background: none !important;
+}
+
 options-page .voj-card-buttons button {
   margin-top: 15px;
   background-color: #55b7a6;
@@ -30012,17 +29805,6 @@ page-personal-details-identity .voj-content .voj-form-container {
 reset-password-page {
   background-color: #ffffff;
   overflow-y: auto;
-}
-
-reset-password-page .resset-password-parent-container {
-  height: calc(100% - 56px);
-  padding: 15px;
-  background-color: #14baa6;
-  overflow-y: auto;
-}
-
-reset-password-page .resset-password-child-container {
-  background-color: white !important;
 }
 
 reset-password-page .voj-content {
@@ -30171,31 +29953,6 @@ user-information-page .voj-user-info-list .voj-user-info-item-label {
   white-space: pre-wrap;
 }
 
-availabilities-add-slot-page .availabilities-add-slot-parent {
-  height: calc(100% - 190px);
-  overflow-y: auto;
-}
-
-availabilities-add-slot-page .availabilities-add-slot-child {
-  margin-bottom: 56px;
-  position: relative;
-  min-height: 80%;
-}
-
-availabilities-add-slot-page .availabilities-add-slot-container {
-  padding: 15px;
-  background-color: #14baa6;
-  height: calc(100vh - 62px);
-  overflow-y: auto;
-}
-
-availabilities-add-slot-page .availabilities-add-slot-child-container {
-  padding: 5px;
-  background-color: white !important;
-  position: relative;
-  min-height: 90%;
-}
-
 page-calendar .calendar-wrapper {
   height: 100%;
 }
@@ -30206,28 +29963,6 @@ page-calendar .calendar-wrapper.pad {
 
 page-calendar .full-height {
   height: calc(100% - 180px);
-}
-
-availabilities-page .availabilities-parent {
-  height: calc(100% - 190px);
-  overflow-y: auto;
-}
-
-availabilities-page .availabilities-child {
-  margin-bottom: 56px;
-  position: relative;
-}
-
-availabilities-page .availabilities-container {
-  padding: 15px;
-  background-color: #14baa6;
-  height: calc(100vh - 62px);
-  overflow-y: auto;
-}
-
-availabilities-page .availabilities-child-container {
-  background-color: white !important;
-  position: relative;
 }
 
 availabilities-page .availabilities-link {
@@ -30307,18 +30042,7 @@ availabilities-add-days-page .availabilities-add-days-parent {
 availabilities-add-days-page .availabilities-add-days-child {
   margin-bottom: 56px;
   position: relative;
-}
-
-availabilities-add-days-page .availabilities-add-days-container {
-  padding: 15px;
-  background-color: #14baa6;
-  height: calc(100vh - 62px);
-  overflow-y: auto;
-}
-
-availabilities-add-days-page .availabilities-add-days-child-container {
-  background-color: white !important;
-  position: relative;
+  background-color: #ffffff;
 }
 
 jobyer-availability-choice-page {
@@ -30342,10 +30066,6 @@ jobyer-availability-choice-page .voj-card-buttons button {
 
 jobyer-availability-choice-page .voj-card-buttons button:hover {
   background-color: #55b7a6;
-}
-
-page-keywords ion-content.content-md {
-  background-color: #14baa6;
 }
 
 page-keywords .keywords-card {
@@ -30381,31 +30101,6 @@ page-keywords voj-form form button.custom-btn {
   margin: 0 auto;
 }
 
-languages-page .languages-parent {
-  height: calc(100% - 190px);
-  overflow-y: auto;
-}
-
-languages-page .languages-child {
-  margin-bottom: 56px;
-  position: relative;
-  min-height: 80%;
-}
-
-languages-page .languages-container {
-  padding: 15px;
-  background-color: #14baa6;
-  height: calc(100vh - 62px);
-  overflow-y: auto;
-}
-
-languages-page .languages-child-container {
-  padding: 5px;
-  background-color: white !important;
-  position: relative;
-  min-height: 90%;
-}
-
 languages-page .custom-btn {
   position: absolute;
   bottom: 10px;
@@ -30417,31 +30112,8 @@ languages-page .custom-select-btn-attachment {
   padding-right: 10px !important;
 }
 
-qualities-page .qualities-parent {
-  height: calc(100% - 170px);
-  overflow-y: auto;
-}
-
-qualities-page .qualities-child {
-  margin-bottom: 56px;
-  position: relative;
-  padding-bottom: 50px;
+qualities-page .voj-form-container {
   min-height: 80%;
-}
-
-qualities-page .qualities-container {
-  padding: 15px;
-  background-color: #14baa6;
-  height: calc(100vh - 62px);
-  overflow-y: auto;
-}
-
-qualities-page .qualities-child-container {
-  padding: 5px 5px 50px 5px;
-  background-color: white !important;
-  margin-bottom: 56px;
-  position: relative;
-  min-height: 90%;
 }
 
 qualities-page .custom-btn {
@@ -30500,17 +30172,6 @@ documents-page .custom-select-btn-attachment {
   padding-right: 10px !important;
 }
 
-find-job-page .voj-content {
-  overflow-y: auto;
-}
-
-find-job-page .voj-content .voj-form-container {
-  background-color: #ffffff;
-  padding: 20px 0;
-  text-align: center;
-  margin: 40px;
-}
-
 page-home voj-map #map {
   height: 400px;
   width: calc(100% - 20px);
@@ -30526,19 +30187,6 @@ information-resume-page .information-resume-child {
   margin-bottom: 56px;
   position: relative;
   min-height: 80%;
-}
-
-information-resume-page .information-resume-container {
-  padding: 15px;
-  background-color: #14baa6;
-  height: calc(100vh - 62px);
-  overflow-y: auto;
-}
-
-information-resume-page .information-resume-child-container {
-  background-color: white !important;
-  position: relative;
-  min-height: 90%;
 }
 
 information-resume-page .information-resume-list .item-inner {
@@ -30558,27 +30206,6 @@ information-resume-page .information-resume-list .information-resume-edit-btn:ho
 information-resume-page .information-resume-list .information-resume-label {
   margin: 0;
   white-space: pre-wrap;
-}
-
-page-options .options-container {
-  padding: 15px;
-  background-color: #14baa6;
-  height: 100%;
-}
-
-page-options .options-child-container {
-  background-color: white !important;
-}
-
-registration-message-page .voj-content {
-  overflow-y: auto;
-}
-
-registration-message-page .voj-content .voj-form-container {
-  background-color: #ffffff;
-  padding: 20px 0;
-  text-align: center;
-  margin: 20px;
 }
 
 registration-message-page .registration-message-container {

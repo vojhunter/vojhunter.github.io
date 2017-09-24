@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 105:
+/***/ 103:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24,7 +24,7 @@ var LandingPage = (function () {
     LandingPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'landing-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/landing-page/landing-page.html"*/'<!DOCTYPE html>\n<html lang="en">\n<head>\n	<meta charset="UTF-8">\n	<title>Landing page</title>\n</head>\n<body>\nBienvenue à Vitonjob\n\n</body>\n</html>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/landing-page/landing-page.html"*/
+            selector: 'landing-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\landing-page\landing-page.html"*/'<!DOCTYPE html>\n\n<html lang="en">\n\n<head>\n\n	<meta charset="UTF-8">\n\n	<title>Landing page</title>\n\n</head>\n\n<body>\n\nBienvenue à Vitonjob\n\n\n\n</body>\n\n</html>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\landing-page\landing-page.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], LandingPage);
@@ -35,7 +35,7 @@ var LandingPage = (function () {
 
 /***/ }),
 
-/***/ 106:
+/***/ 104:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51,15 +51,15 @@ var VojPageHeaderType = (function () {
 
 /***/ }),
 
-/***/ 108:
+/***/ 106:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobyerAvailabilityChoicePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__availabilities_add_days_availabilities_add_days__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__availabilities_add_slot_availabilities_add_slot__ = __webpack_require__(314);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__availabilities_add_days_availabilities_add_days__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__availabilities_add_slot_availabilities_add_slot__ = __webpack_require__(313);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -99,7 +99,7 @@ var JobyerAvailabilityChoicePage = (function () {
     JobyerAvailabilityChoicePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'jobyer-availability-choice-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/cv-offer-module/jobyer-availability-choice/jobyer-availability-choice.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n<ion-card padding>\n    <ion-card-header class="voj-card-header">\n        Je suis disponible:\n    </ion-card-header>\n    <ion-card-content class="voj-card-buttons">\n        <button class="titlecase-btn" ion-button block small (click)="presentPage(\'Totally\')">Totallement</button>\n        <button class="titlecase-btn" ion-button block small (click)="presentPage(\'Partially\')">Partiellement</button>\n    </ion-card-content>\n</ion-card>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/cv-offer-module/jobyer-availability-choice/jobyer-availability-choice.html"*/
+            selector: 'jobyer-availability-choice-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\jobyer-availability-choice\jobyer-availability-choice.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n\n\n<div class="voj-content">\n\n    <div class="voj-form-container">\n\n        <ion-card padding>\n\n            <ion-card-header class="voj-card-header">\n\n                Je suis disponible:\n\n            </ion-card-header>\n\n            <ion-card-content class="voj-card-buttons">\n\n                <button class="titlecase-btn" ion-button block small (click)="presentPage(\'Totally\')">Totallement</button>\n\n                <button class="titlecase-btn" ion-button block small (click)="presentPage(\'Partially\')">Partiellement</button>\n\n            </ion-card-content>\n\n        </ion-card>\n\n    </div>\n\n</div>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\jobyer-availability-choice\jobyer-availability-choice.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */]])
     ], JobyerAvailabilityChoicePage);
@@ -110,7 +110,7 @@ var JobyerAvailabilityChoicePage = (function () {
 
 /***/ }),
 
-/***/ 117:
+/***/ 115:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -125,7 +125,7 @@ var MultiSelectTarget;
 
 /***/ }),
 
-/***/ 122:
+/***/ 121:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -133,11 +133,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VojCardModule", function() { return VojCardModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_card__ = __webpack_require__(856);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_menu_voj_menu_module__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__voj_segment_voj_segment_module__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__voj_map_voj_map_module__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__voj_page_header_voj_page_header_module__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_card__ = __webpack_require__(854);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_menu_voj_menu_module__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__voj_segment_voj_segment_module__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__voj_map_voj_map_module__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__voj_page_header_voj_page_header_module__ = __webpack_require__(221);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -178,7 +178,7 @@ var VojCardModule = (function () {
 
 /***/ }),
 
-/***/ 123:
+/***/ 122:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -186,7 +186,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VojMapModule", function() { return VojMapModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_map__ = __webpack_require__(858);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_map__ = __webpack_require__(856);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -220,7 +220,7 @@ var VojMapModule = (function () {
 
 /***/ }),
 
-/***/ 124:
+/***/ 123:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -235,22 +235,22 @@ var TextType = (function () {
 
 /***/ }),
 
-/***/ 125:
+/***/ 124:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainAddressPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__ = __webpack_require__(870);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__ = __webpack_require__(868);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_account_service_account_service__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_account_service_account_service__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__personal_details_personal_details__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__personal_details_personal_details__ = __webpack_require__(125);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_navigation_service__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_utils__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_utils__ = __webpack_require__(47);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -281,10 +281,8 @@ var MainAddressPage = (function () {
         this.viewCtrl = viewCtrl;
         this.navParams = navParams;
         this.navigationService = navigationService;
-        this.isMobile = false;
         this.isInscription = this.navParams.data.isInscription;
         this.config = this.configurationService.configuration;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
         // Set header data
         this.dataPageHeader = {
             title: 'Mon adresse',
@@ -549,7 +547,7 @@ var MainAddressPage = (function () {
     };
     MainAddressPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'main-address-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/main-address/main-address.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n<div [ngClass]="isMobile ? \'main-adresses-parent-container\' : \'\'" class="voj-content">\n  <div [ngClass]="isMobile ? \'main-adresses-child-container\' : \'\'" class="voj-form-container">\n    <voj-form [data]=\'formData\'></voj-form>\n  </div>\n</div>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/main-address/main-address.html"*/,
+            selector: 'main-address-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\account-module\main-address\main-address.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n\n\n  <div class="voj-content">\n\n    <div class="voj-form-container">\n\n      <voj-form [data]=\'formData\'></voj-form>\n\n    </div>\n\n  </div>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\account-module\main-address\main-address.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* LoadingController */],
@@ -567,7 +565,7 @@ var MainAddressPage = (function () {
 
 /***/ }),
 
-/***/ 126:
+/***/ 125:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -575,12 +573,12 @@ var MainAddressPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_masterdata_service_masterdata_service__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__personal_details_identity_personal_details_identity__ = __webpack_require__(127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_profile_service_profile_service__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__personal_details_identity_personal_details_identity__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_profile_service_profile_service__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_navigation_service__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_utils__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_utils__ = __webpack_require__(47);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -611,7 +609,6 @@ var PersonalDetailsPage = (function () {
         this.navigationService = navigationService;
         this.storage = storage;
         this.config = this.configuration.configuration;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
         this.isInscription = this.navParams.data.isInscription;
         this.headerData = {
             title: 'Mes données sociales',
@@ -683,7 +680,7 @@ var PersonalDetailsPage = (function () {
                 },
                 {
                     required: !this.isInscription,
-                    type: 'number',
+                    type: 'text',
                     value: '',
                     label: 'Numéro de sécurité sociale',
                     readonly: false,
@@ -847,7 +844,7 @@ var PersonalDetailsPage = (function () {
     PersonalDetailsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'personal-details-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/personal-details/personal-details.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<div [ngClass]="isMobile ? \'personal-details-container\' : \'\'" class="voj-content">\n    <div [ngClass]="isMobile ? \'personal-details-child-container\' : \'\'" class="voj-form-container">\n        <voj-form [data]=\'formData\'></voj-form>\n    </div>\n</div>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/personal-details/personal-details.html"*/,
+            selector: 'personal-details-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\account-module\personal-details\personal-details.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n\n\n<div class="voj-content">\n\n    <div class="voj-form-container">\n\n        <voj-form [data]=\'formData\'></voj-form>\n\n    </div>\n\n</div>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\account-module\personal-details\personal-details.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__config_voj_configuration__["a" /* Configuration */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */],
@@ -865,7 +862,7 @@ var PersonalDetailsPage = (function () {
 
 /***/ }),
 
-/***/ 127:
+/***/ 126:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -874,11 +871,11 @@ var PersonalDetailsPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_masterdata_service_masterdata_service__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bank_settings_bank_settings__ = __webpack_require__(128);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bank_settings_bank_settings__ = __webpack_require__(127);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_profile_service_profile_service__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_profile_service_profile_service__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_utils__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_utils__ = __webpack_require__(47);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -914,10 +911,8 @@ var PersonalDetailsIdentityPage = (function () {
         this.viewCtrl = viewCtrl;
         this.profileService = profileService;
         this.storage = storage;
-        this.isMobile = false;
         this.config = this.configurationService.configuration;
         this.isInscription = this.navParams.data.isInscription;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
         this.formData = {
             fields: [
                 {
@@ -948,7 +943,7 @@ var PersonalDetailsIdentityPage = (function () {
                     label: 'Numéro de pièce d\'identité',
                     required: !this.isInscription,
                     visible: true,
-                    regex: '^[A-Za-z0-9]*$',
+                    // regex: '^[A-Za-z0-9]*$',
                     validationMsg: 'Veuillez ne pas saisir de caractères spéciaux ou d\'espaces',
                     id: '',
                     name: 'cardNumber',
@@ -1125,7 +1120,7 @@ var PersonalDetailsIdentityPage = (function () {
             this.formData.fields[2].max = 12;
         }
         else if (this.formData.fields[1].value === '2') {
-            this.formData.fields[2].max = 9;
+            this.formData.fields[2].max = null;
         }
         else {
             this.formData.fields[2].max = null;
@@ -1202,7 +1197,7 @@ var PersonalDetailsIdentityPage = (function () {
     PersonalDetailsIdentityPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-personal-details-identity',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/personal-details-identity/personal-details-identity.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<div [ngClass]="isMobile ? \'personal-details-container\' : \'\'" class="voj-content">\n    <div [ngClass]="isMobile ? \'personal-details-child-container\' : \'\'" class="voj-form-container">\n      <voj-form [data]=\'formData\'></voj-form>\n  </div>\n</div>\n\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/personal-details-identity/personal-details-identity.html"*/,
+            selector: 'page-personal-details-identity',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\account-module\personal-details-identity\personal-details-identity.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n\n\n<div class="voj-content">\n\n    <div class="voj-form-container">\n\n        <voj-form [data]=\'formData\'></voj-form>\n\n    </div>\n\n</div>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\account-module\personal-details-identity\personal-details-identity.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__["a" /* Configuration */],
             __WEBPACK_IMPORTED_MODULE_3__providers_masterdata_service_masterdata_service__["a" /* MasterdataService */],
@@ -1220,7 +1215,7 @@ var PersonalDetailsIdentityPage = (function () {
 
 /***/ }),
 
-/***/ 128:
+/***/ 127:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1229,11 +1224,10 @@ var PersonalDetailsIdentityPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_profile_service_profile_service__ = __webpack_require__(93);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_voj_notification_voj_notification_service__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_navigation_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_utils__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__search_module_search_search__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_profile_service_profile_service__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_utils__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__search_module_search_search__ = __webpack_require__(56);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1252,22 +1246,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 var BankSettingsPage = (function () {
-    function BankSettingsPage(configurationService, platform, navParams, storage, profileService, vojNotification, navigationService, viewCtrl, toastCtrl) {
+    function BankSettingsPage(configurationService, platform, navParams, storage, profileService, navigationService, viewCtrl, toastCtrl) {
         var _this = this;
         this.configurationService = configurationService;
         this.platform = platform;
         this.navParams = navParams;
         this.storage = storage;
         this.profileService = profileService;
-        this.vojNotification = vojNotification;
         this.navigationService = navigationService;
         this.viewCtrl = viewCtrl;
         this.toastCtrl = toastCtrl;
-        this.isMobile = false;
         this.config = this.configurationService.configuration;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
         this.isInscription = this.navParams.data.isInscription;
         this.headerData = {
             title: 'Mes coordonnées bancaires',
@@ -1344,7 +1334,7 @@ var BankSettingsPage = (function () {
     BankSettingsPage.prototype.saveBankData = function () {
         var _this = this;
         //if all fields are empty, ignore this step and go to the next page
-        var ignoreThisStep = !__WEBPACK_IMPORTED_MODULE_7__utils_utils__["a" /* ObjectUtils */].isFormNotEmpty(this.formData.fields);
+        var ignoreThisStep = !__WEBPACK_IMPORTED_MODULE_6__utils_utils__["a" /* ObjectUtils */].isFormNotEmpty(this.formData.fields);
         if (ignoreThisStep) {
             this.navigationService.dismiss(this.viewCtrl);
             this.displaySuccessNotif();
@@ -1359,7 +1349,7 @@ var BankSettingsPage = (function () {
         this.profileService.saveBankSetting(this.currentUser.id, bankData).then(function (data) {
             if (data.status == "success") {
                 if (_this.isInscription) {
-                    var vojNav = { page: __WEBPACK_IMPORTED_MODULE_8__search_module_search_search__["a" /* SearchPage */], isRoot: true };
+                    var vojNav = { page: __WEBPACK_IMPORTED_MODULE_7__search_module_search_search__["a" /* SearchPage */], isRoot: true };
                     _this.config.isLargeScreen ? _this.navigationService.dismiss(_this.viewCtrl) : _this.navigationService.navigate('list', vojNav);
                     _this.displaySuccessNotif();
                 }
@@ -1383,15 +1373,14 @@ var BankSettingsPage = (function () {
     };
     BankSettingsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'bank-settings-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/bank-settings/bank-settings.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<div [ngClass]="isMobile ? \'bank-settings-container\' : \'\'" class="voj-content">\n    <div [ngClass]="isMobile ? \'bank-settings-child-container\' : \'\'" class="voj-form-container">\n        <voj-form [data]=\'formData\'></voj-form>\n    </div>\n</div>\n\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/bank-settings/bank-settings.html"*/,
+            selector: 'bank-settings-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\account-module\bank-settings\bank-settings.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n\n\n<div class="voj-content">\n\n    <div class="voj-form-container">\n\n        <voj-form [data]=\'formData\'></voj-form>\n\n    </div>\n\n</div>\n\n\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\account-module\bank-settings\bank-settings.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__["a" /* Configuration */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */],
             __WEBPACK_IMPORTED_MODULE_4__providers_profile_service_profile_service__["a" /* ProfileService */],
-            __WEBPACK_IMPORTED_MODULE_5__components_voj_notification_voj_notification_service__["a" /* VojNotificationService */],
-            __WEBPACK_IMPORTED_MODULE_6__services_navigation_service__["a" /* NavigationService */],
+            __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__["a" /* NavigationService */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["u" /* ViewController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* ToastController */]])
     ], BankSettingsPage);
@@ -1402,16 +1391,16 @@ var BankSettingsPage = (function () {
 
 /***/ }),
 
-/***/ 130:
+/***/ 129:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(234);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_voj_page_header_model__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_voj_configuration_model__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_voj_page_header_model__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_voj_configuration_model__ = __webpack_require__(165);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1621,7 +1610,7 @@ var AboutPage = (function () {
     AboutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-about',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/test-components/about/about.html"*/'<!--ion-header no-border>\n	<ion-navbar transparent>\n		<ion-title>\n			Géolocalisation\n		</ion-title>\n	</ion-navbar>\n</ion-header-->\n\n\n<ion-content padding>\n	<voj-page-header [data]="pageHeader"></voj-page-header>\n	<!--<button ion-button (click)="goToPage()">test Navigation</button>-->\n	<!--<voj-card title="Test" content="le contenu détaillé ici" action-name="Action 1" [buttons]="actions" thumbnail="assets/img/advance-card-bttf.png" date="12/06/2017"> </voj-card>-->\n	<!--<voj-card [title]="title" [content]="content" [action-name]="actionName" cover="assets/img/advance-card-bttf.png" thumbnail="assets/img/advance-card-bttf.png"> </voj-card>-->\n	<!--voj-card [data]="jobyerData"></voj-card-->\n	<!--voj-list [title]="listTitle" [cards]="cards"></voj-list-->\n\n	<voj-map [data]="cards"></voj-map>\n	<ion-footer>\n		test\n	</ion-footer>\n</ion-content>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/test-components/about/about.html"*/
+            selector: 'page-about',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\test-components\about\about.html"*/'<!--ion-header no-border>\n\n	<ion-navbar transparent>\n\n		<ion-title>\n\n			Géolocalisation\n\n		</ion-title>\n\n	</ion-navbar>\n\n</ion-header-->\n\n\n\n\n\n<ion-content padding>\n\n	<voj-page-header [data]="pageHeader"></voj-page-header>\n\n	<!--<button ion-button (click)="goToPage()">test Navigation</button>-->\n\n	<!--<voj-card title="Test" content="le contenu détaillé ici" action-name="Action 1" [buttons]="actions" thumbnail="assets/img/advance-card-bttf.png" date="12/06/2017"> </voj-card>-->\n\n	<!--<voj-card [title]="title" [content]="content" [action-name]="actionName" cover="assets/img/advance-card-bttf.png" thumbnail="assets/img/advance-card-bttf.png"> </voj-card>-->\n\n	<!--voj-card [data]="jobyerData"></voj-card-->\n\n	<!--voj-list [title]="listTitle" [cards]="cards"></voj-list-->\n\n\n\n	<voj-map [data]="cards"></voj-map>\n\n	<ion-footer>\n\n		test\n\n	</ion-footer>\n\n</ion-content>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\test-components\about\about.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* App */],
@@ -1644,8 +1633,8 @@ var AboutPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_landing_page_landing_page__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__modal_service__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_landing_page_landing_page__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__modal_service__ = __webpack_require__(51);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1741,7 +1730,7 @@ var NavigationService = (function () {
     };
     NavigationService.prototype.openNewPage = function (navName, vojPage) {
         var targetNav = this.getNavByName(navName);
-        if (vojPage.page != targetNav.last().component) {
+        if (vojPage.page != targetNav.last().component || targetNav.getViews().length == 1) {
             this.event.publish("navigate:" + navName, vojPage);
         }
     };
@@ -1786,7 +1775,7 @@ var NavigationService = (function () {
 
 /***/ }),
 
-/***/ 165:
+/***/ 164:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1802,7 +1791,7 @@ var envConfig = {
 
 /***/ }),
 
-/***/ 166:
+/***/ 165:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1817,7 +1806,7 @@ var VojConfiguration = (function () {
 
 /***/ }),
 
-/***/ 167:
+/***/ 166:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1846,9 +1835,7 @@ var AvailabilitiesAddDaysPage = (function () {
         this.configurationService = configurationService;
         this.platform = platform;
         this.navCtrl = navCtrl;
-        this.isMobile = false;
         this.config = this.configurationService.configuration;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
         this.headerData = {
             title: 'Ajouter une disponibilité',
             style: 'any',
@@ -1927,7 +1914,7 @@ var AvailabilitiesAddDaysPage = (function () {
     };
     AvailabilitiesAddDaysPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'availabilities-add-days-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/cv-offer-module/availabilities-add-days/availabilities-add-days.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n<div [ngClass]="isMobile ? \'availabilities-add-days-container\' : \'\'" class="availabilities-add-days-parent">\n    <div [ngClass]="isMobile ? \'availabilities-add-days-child-container\' : \'\'" class="availabilities-add-days-child" padding-top padding-bottom>\n        <voj-form [data]=\'formData\'></voj-form>\n    </div>\n</div>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/cv-offer-module/availabilities-add-days/availabilities-add-days.html"*/,
+            selector: 'availabilities-add-days-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\availabilities-add-days\availabilities-add-days.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<div class="voj-content availabilities-add-days-parent">\n\n    <div class="voj-form-containert availabilities-add-days-child" padding-top padding-bottom>\n\n        <voj-form [data]=\'formData\'></voj-form>\n\n    </div>\n\n</div>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\availabilities-add-days\availabilities-add-days.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__["a" /* Configuration */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */],
@@ -1940,14 +1927,14 @@ var AvailabilitiesAddDaysPage = (function () {
 
 /***/ }),
 
-/***/ 168:
+/***/ 167:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobsListPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_modal_service__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_modal_service__ = __webpack_require__(51);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1964,9 +1951,7 @@ var JobsListPage = (function () {
     function JobsListPage(configurationService, modalService) {
         this.configurationService = configurationService;
         this.modalService = modalService;
-        this.isMobile = false;
         this.config = this.configurationService.configuration;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
         this.headerData = {
             title: 'Mes jobs',
             style: 'any',
@@ -2023,7 +2008,7 @@ var JobsListPage = (function () {
     };
     JobsListPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'jobs-list-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/jobs-list/jobs-list.html"*/'<ion-content>\n    <voj-page-header [data]=\'headerData\'></voj-page-header>\n    <div [ngClass]="isMobile ? \'jobs-list-container\' : \'\'">\n        <div [ngClass]="isMobile ? \'jobs-list-child-container\' : \'\'">\n            <voj-form [data]=\'formData\'></voj-form>\n        </div>\n    </div>\n</ion-content>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/jobs-list/jobs-list.html"*/,
+            selector: 'jobs-list-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\account-module\jobs-list\jobs-list.html"*/'<ion-content>\n\n    <voj-page-header [data]=\'headerData\'></voj-page-header>\n\n    <div class="voj-content">\n\n        <div class="voj-form-container">\n\n            <voj-form [data]=\'formData\'></voj-form>\n\n        </div>\n\n    </div>\n\n</ion-content>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\account-module\jobs-list\jobs-list.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__["a" /* Configuration */],
             __WEBPACK_IMPORTED_MODULE_2__services_modal_service__["a" /* ModalService */]])
@@ -2035,7 +2020,7 @@ var JobsListPage = (function () {
 
 /***/ }),
 
-/***/ 213:
+/***/ 212:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2043,7 +2028,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VojMenuModule", function() { return VojMenuModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_menu__ = __webpack_require__(551);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_menu__ = __webpack_require__(550);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2076,7 +2061,7 @@ var VojMenuModule = (function () {
 
 /***/ }),
 
-/***/ 214:
+/***/ 213:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2086,8 +2071,8 @@ var VojMenuModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_card_model__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_voj_events_voj_events__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_navigation_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_voj_page_header_model__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_search_service_search_service__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_voj_page_header_model__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_search_service_search_service__ = __webpack_require__(89);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2152,7 +2137,7 @@ var DetailsPage = (function () {
     };
     DetailsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-details',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/details/details.html"*/'<!--<ion-header no-border>\n  <ion-navbar transparent>\n    <ion-title>\n\n    </ion-title>\n    <ion-buttons right>\n      <button ion-button icon-only (click)="hideDetailsView()">\n        <ion-icon name="close"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>-->\n<ion-header >\n  <voj-page-header [data]="headerData"></voj-page-header>\n</ion-header>\n<ion-content >\n  <voj-card [hidden]="noData()" [data]="card" mode="full" ></voj-card>\n</ion-content>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/details/details.html"*/,
+            selector: 'page-details',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\details\details.html"*/'<!--<ion-header no-border>\n\n  <ion-navbar transparent>\n\n    <ion-title>\n\n\n\n    </ion-title>\n\n    <ion-buttons right>\n\n      <button ion-button icon-only (click)="hideDetailsView()">\n\n        <ion-icon name="close"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>-->\n\n\n\n<voj-page-header [data]="headerData"></voj-page-header>\n\n\n\n<div class="voj-content">\n\n    <div class="voj-form-container">\n\n      <voj-card [hidden]="noData()" [data]="card" mode="full" ></voj-card>\n\n    </div>\n\n</div>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\details\details.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_6__providers_search_service_search_service__["a" /* SearchServiceProvider */],
@@ -2166,7 +2151,7 @@ var DetailsPage = (function () {
 
 /***/ }),
 
-/***/ 218:
+/***/ 217:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2175,13 +2160,13 @@ var DetailsPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_signup_service_signup_service__ = __webpack_require__(557);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__identity_identity__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_signup_service_signup_service__ = __webpack_require__(556);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__identity_identity__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__login_login__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__scripts_md5__ = __webpack_require__(559);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__scripts_md5__ = __webpack_require__(557);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_masterdata_service_masterdata_service__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_navigation_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__enterprise_search_enterprise_search__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__enterprise_search_enterprise_search__ = __webpack_require__(218);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2214,9 +2199,7 @@ var SignUpPage = (function () {
         this.masterdataService = masterdataService;
         this.navigationService = navigationService;
         this.navParams = navParams;
-        this.isMobile = false;
         this.config = this.configurationService.configuration;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
         this.formData = {
             fields: [
                 // Phone code
@@ -2399,7 +2382,7 @@ var SignUpPage = (function () {
     };
     SignUpPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'sign-up-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/sign-up/sign-up.html"*/'<voj-page-header [data]="headerData"></voj-page-header>\n<!--TODO: media queries should be used instead of using isMobile var-->\n<div [ngClass]="isMobile ? \'sign-up-container\' : \'\'" class="voj-content">\n    <div [ngClass]="isMobile ? \'languages-child-container\' : \'\'" class="voj-form-container">\n        <voj-form [data]="formData"></voj-form>\n\n        <div text-center class="connector">\n            <h5>{{\'SIGNUP.REGISTERED\' | translate}}</h5>\n\n            <button ion-button outline class="custom-btn" type="button" (click)="goToLogin()">\n                {{\'SIGNUP.LOGIN\' | translate}}\n            </button>\n        </div>\n    </div>\n</div>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/sign-up/sign-up.html"*/,
+            selector: 'sign-up-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\account-module\sign-up\sign-up.html"*/'<voj-page-header [data]="headerData"></voj-page-header>\n\n\n\n<div class="voj-content">\n\n    <div class="voj-form-container">\n\n        <voj-form [data]="formData"></voj-form>\n\n\n\n        <div text-center class="connector">\n\n            <h5>{{\'SIGNUP.REGISTERED\' | translate}}</h5>\n\n\n\n            <button ion-button outline class="custom-btn" type="button" (click)="goToLogin()">\n\n                {{\'SIGNUP.LOGIN\' | translate}}\n\n            </button>\n\n        </div>\n\n    </div>\n\n</div>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\account-module\sign-up\sign-up.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__["a" /* Configuration */],
@@ -2418,17 +2401,17 @@ var SignUpPage = (function () {
 
 /***/ }),
 
-/***/ 219:
+/***/ 218:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EnterpriseSearchPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_utils__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_enterprise_service_enterprise_service__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_utils__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_enterprise_service_enterprise_service__ = __webpack_require__(219);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_navigation_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__company_company__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__company_company__ = __webpack_require__(220);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ionic_angular__ = __webpack_require__(1);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2453,10 +2436,8 @@ var EnterpriseSearchPage = (function () {
         this.navigationService = navigationService;
         this.navParams = navParams;
         this.viewCtrl = viewCtrl;
-        this.isMobile = false;
         this.searchInput = '';
         this.config = this.configurationService.configuration;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
         this.isInscription = this.navParams.data.isInscription;
         this.headerData = {
             title: 'Rechercher mon entreprise',
@@ -2538,7 +2519,7 @@ var EnterpriseSearchPage = (function () {
     };
     EnterpriseSearchPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'enterprise-search-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/enterprise-search/enterprise-search.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<div [ngClass]="isMobile ? \'enterprise-search-container\' : \'\'" class="enterprise-search-parent">\n	<div [ngClass]="isMobile ? \'enterprise-search-child-container\' : \'\'" class="enterprise-search-child">\n\n		<!--DEFINITION OF SEGMENTS-->\n		<voj-header-segment (enterpriseSearchEvent)="clearEnterpriseData($event)" [data]=\'segmentData\'\n												[(activeTab)]="segmentData.activeSegmentTab"></voj-header-segment>\n		<!--<ion-searchbar *ngIf="segmentData.activeSegmentTab === 0" class="enterprise-search-bar" [(ngModel)]="searchInput" (ionInput)="filterItems()"></ion-searchbar>-->\n\n		<!--INPUT SEARCH FOR THE FIRST SEGMENT : SEARCH BY COMPANY NAME-->\n		<ion-grid *ngIf="segmentData.activeSegmentTab === 0" class="enterprise-search-bar">\n			<ion-row align-items-center justify-content-center>\n				<ion-col col-9 text-center>\n					<ion-input class="enterprise-search" type="text" [(ngModel)]="searchInput"></ion-input>\n				</ion-col>\n				<ion-col col-2 text-right>\n					<button clear ion-button (click)="getCompaniesByName()">\n						<ion-icon class="search-btn" name="md-search"></ion-icon>\n					</button>\n				</ion-col>\n			</ion-row>\n		</ion-grid>\n\n		<!--INPUT SEARCH FOR THE SECOND SEGMENT : SEARCH BY SIREN-->\n		<ion-grid *ngIf="segmentData.activeSegmentTab === 1" class="enterprise-search-bar2">\n			<ion-row align-items-center justify-content-center>\n				<ion-col col-3 text-center>\n					<ion-input type="number" maxlength="3" [(ngModel)]="siren1" class="enterprise-search-input"></ion-input>\n				</ion-col>\n				<ion-col col-3 text-center>\n					<ion-input type="number" maxlength="3" [(ngModel)]="siren2" class="enterprise-search-input"></ion-input>\n				</ion-col>\n				<ion-col col-3 text-center>\n					<ion-input type="number" maxlength="3" [(ngModel)]="siren3" class="enterprise-search-input"></ion-input>\n				</ion-col>\n				<ion-col col-3 text-right>\n					<button clear ion-button (click)="getCompanyBySIREN()">\n						<ion-icon class="search-btn" name="md-search"></ion-icon>\n					</button>\n				</ion-col>\n			</ion-row>\n		</ion-grid>\n\n		<!--RESULT LIST FOR THE FIRST SEGMENT : SEARCH BY COMPANY NAME-->\n		<ion-list class="enterprise-data" *ngIf="segmentData.activeSegmentTab === 0">\n			<ion-item *ngFor="let item of enterpriseData" text-wrap>\n				<h2>Nom: {{item.name}}</h2>\n				<h2>SIREN: {{item.siret}}</h2>\n				<h2>NAF: {{item.naf}}</h2>\n				<button item-end class="select-button" (click)="getCompanyBySIREN(item.siret)">Plus de détails</button>\n			</ion-item>\n		</ion-list>\n\n		<!--RESULT FOR THE SECOND SEGMENT : SEARCH BY SIREN-->\n		<ion-list class="enterprise-data" *ngIf="segmentData.activeSegmentTab === 1">\n			<ion-item *ngFor="let item of enterpriseData" text-wrap>\n				<h2>Nom: {{item.name}}</h2>\n				<h2>SIRET: {{item.siret}}</h2>\n				<h2>NAF: {{item.naf}}</h2>\n				<h2 *ngIf="!isEmpty(item.employer.identity.lastName)">Président:\n					{{preventNull(item.employer.identity.civility)}} {{preventNull(item.employer.identity.firstName)}}\n					{{preventNull(item.employer.identity.lastName)}}</h2>\n				<h2 *ngIf="item.adresses.length != 0">Adresse: {{preventNull(item.adresses[0].street)}} {{preventNull(item.adresses[0].zipCode)}}\n					{{preventNull(item.adresses[0].city)}}</h2>\n				<button item-end class="select-button" (click)="gotoCompanyPage(item)">Sélectionner</button>\n			</ion-item>\n		</ion-list>\n	</div>\n</div>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/enterprise-search/enterprise-search.html"*/,
+            selector: 'enterprise-search-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\account-module\enterprise-search\enterprise-search.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n\n\n<div class="voj-content">\n\n	<div class="voj-form-container">\n\n\n\n		<!--DEFINITION OF SEGMENTS-->\n\n		<voj-header-segment (enterpriseSearchEvent)="clearEnterpriseData($event)" [data]=\'segmentData\'\n\n												[(activeTab)]="segmentData.activeSegmentTab"></voj-header-segment>\n\n		<!--<ion-searchbar *ngIf="segmentData.activeSegmentTab === 0" class="enterprise-search-bar" [(ngModel)]="searchInput" (ionInput)="filterItems()"></ion-searchbar>-->\n\n\n\n		<!--INPUT SEARCH FOR THE FIRST SEGMENT : SEARCH BY COMPANY NAME-->\n\n		<ion-grid *ngIf="segmentData.activeSegmentTab === 0" class="enterprise-search-bar">\n\n			<ion-row align-items-center justify-content-center>\n\n				<ion-col col-9 text-center>\n\n					<ion-input class="enterprise-search" type="text" [(ngModel)]="searchInput"></ion-input>\n\n				</ion-col>\n\n				<ion-col col-2 text-right>\n\n					<button clear ion-button (click)="getCompaniesByName()">\n\n						<ion-icon class="search-btn" name="md-search"></ion-icon>\n\n					</button>\n\n				</ion-col>\n\n			</ion-row>\n\n		</ion-grid>\n\n\n\n		<!--INPUT SEARCH FOR THE SECOND SEGMENT : SEARCH BY SIREN-->\n\n		<ion-grid *ngIf="segmentData.activeSegmentTab === 1" class="enterprise-search-bar2">\n\n			<ion-row align-items-center justify-content-center>\n\n				<ion-col col-3 text-center>\n\n					<ion-input type="number" maxlength="3" [(ngModel)]="siren1" class="enterprise-search-input"></ion-input>\n\n				</ion-col>\n\n				<ion-col col-3 text-center>\n\n					<ion-input type="number" maxlength="3" [(ngModel)]="siren2" class="enterprise-search-input"></ion-input>\n\n				</ion-col>\n\n				<ion-col col-3 text-center>\n\n					<ion-input type="number" maxlength="3" [(ngModel)]="siren3" class="enterprise-search-input"></ion-input>\n\n				</ion-col>\n\n				<ion-col col-3 text-right>\n\n					<button clear ion-button (click)="getCompanyBySIREN()">\n\n						<ion-icon class="search-btn" name="md-search"></ion-icon>\n\n					</button>\n\n				</ion-col>\n\n			</ion-row>\n\n		</ion-grid>\n\n\n\n		<!--RESULT LIST FOR THE FIRST SEGMENT : SEARCH BY COMPANY NAME-->\n\n		<ion-list class="enterprise-data" *ngIf="segmentData.activeSegmentTab === 0">\n\n			<ion-item *ngFor="let item of enterpriseData" text-wrap>\n\n				<h2>Nom: {{item.name}}</h2>\n\n				<h2>SIREN: {{item.siret}}</h2>\n\n				<h2>NAF: {{item.naf}}</h2>\n\n				<button item-end class="select-button" (click)="getCompanyBySIREN(item.siret)">Plus de détails</button>\n\n			</ion-item>\n\n		</ion-list>\n\n\n\n		<!--RESULT FOR THE SECOND SEGMENT : SEARCH BY SIREN-->\n\n		<ion-list class="enterprise-data" *ngIf="segmentData.activeSegmentTab === 1">\n\n			<ion-item *ngFor="let item of enterpriseData" text-wrap>\n\n				<h2>Nom: {{item.name}}</h2>\n\n				<h2>SIRET: {{item.siret}}</h2>\n\n				<h2>NAF: {{item.naf}}</h2>\n\n				<h2 *ngIf="!isEmpty(item.employer.identity.lastName)">Président:\n\n					{{preventNull(item.employer.identity.civility)}} {{preventNull(item.employer.identity.firstName)}}\n\n					{{preventNull(item.employer.identity.lastName)}}</h2>\n\n				<h2 *ngIf="item.adresses.length != 0">Adresse: {{preventNull(item.adresses[0].street)}} {{preventNull(item.adresses[0].zipCode)}}\n\n					{{preventNull(item.adresses[0].city)}}</h2>\n\n				<button item-end class="select-button" (click)="gotoCompanyPage(item)">Sélectionner</button>\n\n			</ion-item>\n\n		</ion-list>\n\n	</div>\n\n</div>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\account-module\enterprise-search\enterprise-search.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__["a" /* Configuration */],
             __WEBPACK_IMPORTED_MODULE_3__providers_enterprise_service_enterprise_service__["a" /* EnterpriseService */],
@@ -2553,7 +2534,7 @@ var EnterpriseSearchPage = (function () {
 
 /***/ }),
 
-/***/ 220:
+/***/ 219:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2644,7 +2625,7 @@ var EnterpriseService = (function () {
 
 /***/ }),
 
-/***/ 221:
+/***/ 220:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2652,9 +2633,9 @@ var EnterpriseService = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dtos_enterprise_dto__ = __webpack_require__(872);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dtos_enterprise_dto__ = __webpack_require__(870);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_enterprise_service_enterprise_service__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_enterprise_service_enterprise_service__ = __webpack_require__(219);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2678,9 +2659,7 @@ var CompanyPage = (function () {
         this.storage = storage;
         this.enterpriseService = enterpriseService;
         this.viewCtrl = viewCtrl;
-        this.isMobile = false;
         this.config = this.configurationService.configuration;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
         this.isInscription = this.navParams.data.isInscription;
         this.enterprise = (!this.navParams.data.corporamaEnterprise ? new __WEBPACK_IMPORTED_MODULE_3__dtos_enterprise_dto__["a" /* EnterpriseDto */]() : this.navParams.data.corporamaEnterprise);
         // Header
@@ -2856,7 +2835,7 @@ var CompanyPage = (function () {
     CompanyPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'company-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/company/company.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n<div [ngClass]="isMobile ? \'company-parent-container\' : \'\'" class="voj-content">\n  <div [ngClass]="isMobile ? \'company-child-container\' : \'\'" class="voj-form-container">\n    <voj-form [data]=\'formData\'></voj-form>\n  </div>\n</div>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/company/company.html"*/,
+            selector: 'company-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\account-module\company\company.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n\n\n<div class="voj-content">\n\n  <div class="voj-form-container">\n\n    <voj-form [data]=\'formData\'></voj-form>\n\n  </div>\n\n</div>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\account-module\company\company.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__["a" /* Configuration */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
@@ -2871,7 +2850,7 @@ var CompanyPage = (function () {
 
 /***/ }),
 
-/***/ 222:
+/***/ 221:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2879,7 +2858,7 @@ var CompanyPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_page_header__ = __webpack_require__(878);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_page_header__ = __webpack_require__(876);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2914,7 +2893,7 @@ var VojPageHeaderModule = (function () {
 
 /***/ }),
 
-/***/ 227:
+/***/ 226:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2924,8 +2903,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__voj_form__ = __webpack_require__(883);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_material__ = __webpack_require__(884);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__voj_form__ = __webpack_require__(881);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_material__ = __webpack_require__(882);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2968,7 +2947,7 @@ var VojFormModule = (function () {
 
 /***/ }),
 
-/***/ 232:
+/***/ 231:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2976,8 +2955,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VojSearchHeaderModule", function() { return VojSearchHeaderModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_search_header__ = __webpack_require__(894);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_segment_voj_segment_module__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_search_header__ = __webpack_require__(892);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_segment_voj_segment_module__ = __webpack_require__(88);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3012,7 +2991,7 @@ var VojSearchHeaderModule = (function () {
 
 /***/ }),
 
-/***/ 233:
+/***/ 232:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3106,7 +3085,7 @@ var OptionsPage = (function () {
     OptionsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'options-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/options/options.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n<div [ngClass]="isMobile ? \'mobile-parent-container\' : \'\'" class="voj-content">\n    <div [ngClass]="isMobile ? \'mobile-child-container\' : \'\'" class="voj-form-container">\n        <ion-card>\n            <ion-card-content class="voj-card-buttons">\n                <button class="titlecase-btn" ion-button block small (click)="presentPage(\'Change Password\')">Change Password</button>\n                <button class="titlecase-btn" ion-button block small (click)="presentPage(\'Choose frequency of compensation\')">Choose frequency of compensation</button>\n                <button class="titlecase-btn" ion-button block small (click)="presentPage(\'Join a campaign\')">Join a campaign</button>\n                <button class="titlecase-btn" ion-button block small (click)="presentPage(\'Disconnect\')">Disconnect</button>\n            </ion-card-content>\n        </ion-card>\n    </div>\n</div>\n\n\n\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/options/options.html"*/
+            selector: 'options-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\account-module\options\options.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n\n\n<div class="voj-content">\n\n    <div class="voj-form-container">\n\n        <ion-card>\n\n            <ion-card-content class="voj-card-buttons">\n\n                <button class="titlecase-btn" ion-button block small (click)="presentPage(\'Change Password\')">Change Password</button>\n\n                <button class="titlecase-btn" ion-button block small (click)="presentPage(\'Choose frequency of compensation\')">Choose frequency of compensation</button>\n\n                <button class="titlecase-btn" ion-button block small (click)="presentPage(\'Join a campaign\')">Join a campaign</button>\n\n                <button class="titlecase-btn" ion-button block small (click)="presentPage(\'Disconnect\')">Disconnect</button>\n\n            </ion-card-content>\n\n        </ion-card>\n\n    </div>\n\n</div>\n\n\n\n\n\n\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\account-module\options\options.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */],
             __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__["a" /* Configuration */],
@@ -3120,16 +3099,16 @@ var OptionsPage = (function () {
 
 /***/ }),
 
-/***/ 234:
+/***/ 233:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cv_offer_module_jobyer_availability_choice_jobyer_availability_choice__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__account_module_user_information_user_information__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__account_module_options_options__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cv_offer_module_jobyer_availability_choice_jobyer_availability_choice__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__account_module_user_information_user_information__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__account_module_options_options__ = __webpack_require__(232);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3319,7 +3298,7 @@ var ContactPage = (function () {
     };
     ContactPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-contact',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/test-components/contact/contact.html"*/'<ion-header no-border>\n	<ion-navbar transparent>\n		<ion-title>\n			Contact\n		</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content>\n\n	<ion-list>\n		<ion-list-header>Follow us on Twitter</ion-list-header>\n		<ion-item>\n			<ion-icon name="ionic" item-left></ion-icon>\n			@ionicframework\n		</ion-item>\n	</ion-list>\n\n	<!-- Test form -->\n	<voj-form [data]=\'formData\'></voj-form>\n\n	<!-- Option page testing -->\n	<button ion-button (click)="presentOptionsPage()">Options page</button>\n	\n	<voj-footer [data]="contactButtonsData" [testVar]="testVar"></voj-footer>\n\n</ion-content>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/test-components/contact/contact.html"*/,
+            selector: 'page-contact',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\test-components\contact\contact.html"*/'<ion-header no-border>\n\n	<ion-navbar transparent>\n\n		<ion-title>\n\n			Contact\n\n		</ion-title>\n\n	</ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n	<ion-list>\n\n		<ion-list-header>Follow us on Twitter</ion-list-header>\n\n		<ion-item>\n\n			<ion-icon name="ionic" item-left></ion-icon>\n\n			@ionicframework\n\n		</ion-item>\n\n	</ion-list>\n\n\n\n	<!-- Test form -->\n\n	<voj-form [data]=\'formData\'></voj-form>\n\n\n\n	<!-- Option page testing -->\n\n	<button ion-button (click)="presentOptionsPage()">Options page</button>\n\n	\n\n	<voj-footer [data]="contactButtonsData" [testVar]="testVar"></voj-footer>\n\n\n\n</ion-content>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\test-components\contact\contact.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */]])
     ], ContactPage);
@@ -3330,7 +3309,7 @@ var ContactPage = (function () {
 
 /***/ }),
 
-/***/ 235:
+/***/ 234:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3338,29 +3317,28 @@ var ContactPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_card_model__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_voj_map_model__ = __webpack_require__(552);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_notification_voj_notification_service__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_text_type__ = __webpack_require__(124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_http_request_http_request__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__test_components_contact_contact__ = __webpack_require__(234);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_navigation_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__account_module_identity_identity__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__cv_offer_module_jobyer_availability_choice_jobyer_availability_choice__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__account_module_user_information_user_information__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__account_module_enterprise_details_enterprise_details__ = __webpack_require__(588);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__account_module_options_options__ = __webpack_require__(233);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__account_module_account_account__ = __webpack_require__(236);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__account_module_main_address_main_address__ = __webpack_require__(125);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__account_module_login_login__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__account_module_bank_settings_bank_settings__ = __webpack_require__(128);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__account_module_personal_details_identity_personal_details_identity__ = __webpack_require__(127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__account_module_sign_up_sign_up__ = __webpack_require__(218);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__services_modal_service__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__cv_offer_module_availabilities_add_days_availabilities_add_days__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__cv_offer_module_availabilities_availabilities__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__account_module_personal_details_personal_details__ = __webpack_require__(126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__account_module_company_company__ = __webpack_require__(221);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__account_module_enterprise_search_enterprise_search__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_voj_map_model__ = __webpack_require__(551);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_text_type__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_http_request_http_request__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__test_components_contact_contact__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_navigation_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__account_module_identity_identity__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__cv_offer_module_jobyer_availability_choice_jobyer_availability_choice__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__account_module_user_information_user_information__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__account_module_enterprise_details_enterprise_details__ = __webpack_require__(585);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__account_module_options_options__ = __webpack_require__(232);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__account_module_account_account__ = __webpack_require__(235);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__account_module_main_address_main_address__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__account_module_login_login__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__account_module_bank_settings_bank_settings__ = __webpack_require__(127);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__account_module_personal_details_identity_personal_details_identity__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__account_module_sign_up_sign_up__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__services_modal_service__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__cv_offer_module_availabilities_add_days_availabilities_add_days__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__cv_offer_module_availabilities_availabilities__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__account_module_personal_details_personal_details__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__account_module_company_company__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__account_module_enterprise_search_enterprise_search__ = __webpack_require__(218);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3395,9 +3373,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 var HomePage = (function () {
-    function HomePage(navCtrl, platform, appCtrl, viewCtrl, event, httpRequest, vojNotification, navigationService, modalService) {
+    function HomePage(navCtrl, platform, appCtrl, viewCtrl, event, httpRequest, navigationService, modalService) {
         // this.isWeb = !platform.is('cordova');
         var _this = this;
         this.navCtrl = navCtrl;
@@ -3406,7 +3383,6 @@ var HomePage = (function () {
         this.viewCtrl = viewCtrl;
         this.event = event;
         this.httpRequest = httpRequest;
-        this.vojNotification = vojNotification;
         this.navigationService = navigationService;
         this.modalService = modalService;
         this.isWeb = false;
@@ -3644,7 +3620,7 @@ var HomePage = (function () {
         };
         this.cardExample = new __WEBPACK_IMPORTED_MODULE_2__models_voj_card_model__["a" /* VojCardModel */]();
         this.cardExample.id = 1;
-        this.cardExample.title = new __WEBPACK_IMPORTED_MODULE_5__models_text_type__["a" /* TextType */]();
+        this.cardExample.title = new __WEBPACK_IMPORTED_MODULE_4__models_text_type__["a" /* TextType */]();
         this.cardExample.title.label = 'Don Rodrigue';
         this.cardExample.subtitles = [{
                 label: 'sous-titre',
@@ -3673,112 +3649,85 @@ var HomePage = (function () {
             //
         });
     };
-    HomePage.prototype.testNotification = function () {
-        var notificationData = {
-            icon: 'star',
-            title: 'My title My title My title My title My title My title',
-            message: 'My message. Hello. My message. Hello.My message. Hello.My message. Hello.My message. Hello.My message. Hello.My message. Hello.My message. Hello.My message. Hello.My message. Hello.My message. Hello.My message. Hello.My message. Hello.My message. Hello.My message. Hello.My message. Hello.My message. Hello.My message. Hello.My message. Hello.My message. Hello.My message. Hello.My message. Hello.My message. Hello.My message. Hello.',
-            backdropDismiss: true,
-            buttons: [
-                {
-                    id: 'cancel',
-                    label: 'Cancel',
-                    icon: 'alert',
-                    action: function () {
-                        console.log('Cancel clicked');
-                    }
-                },
-                {
-                    id: 'validate',
-                    label: 'OK',
-                    icon: 'checkmark-circle',
-                    action: function () {
-                        console.log('Ok clicked');
-                    }
-                }
-            ]
-        };
-        this.vojNotification.present(notificationData);
-    };
     HomePage.prototype.goToPage = function () {
-        var vojNav = { page: __WEBPACK_IMPORTED_MODULE_7__test_components_contact_contact__["a" /* ContactPage */], params: { num: 0, str: "amal" }, isRoot: false };
+        var vojNav = { page: __WEBPACK_IMPORTED_MODULE_6__test_components_contact_contact__["a" /* ContactPage */], params: { num: 0, str: "amal" }, isRoot: false };
         //this.navCtrl.parent.select(2);
         //this.navCtrl.push(ContactPage);
         //this.navigationService.navigate('details', vojNav);
         this.navigationService.hide('details');
     };
     HomePage.prototype.goToPage1 = function () {
-        var vojNav = { page: __WEBPACK_IMPORTED_MODULE_10__cv_offer_module_jobyer_availability_choice_jobyer_availability_choice__["a" /* JobyerAvailabilityChoicePage */], params: { num: 0, str: "amal" }, isRoot: false };
+        var vojNav = { page: __WEBPACK_IMPORTED_MODULE_9__cv_offer_module_jobyer_availability_choice_jobyer_availability_choice__["a" /* JobyerAvailabilityChoicePage */], params: { num: 0, str: "amal" }, isRoot: false };
         this.navigationService.navigate('details', vojNav);
     };
     HomePage.prototype.goToPage2 = function () {
-        var vojNav = { page: __WEBPACK_IMPORTED_MODULE_7__test_components_contact_contact__["a" /* ContactPage */], params: { num: 0, str: "amal" }, isRoot: false };
+        var vojNav = { page: __WEBPACK_IMPORTED_MODULE_6__test_components_contact_contact__["a" /* ContactPage */], params: { num: 0, str: "amal" }, isRoot: false };
         this.navigationService.navigate('list', vojNav);
     };
     HomePage.prototype.goToEnterpriseDetails = function () {
-        var vojNav = { page: __WEBPACK_IMPORTED_MODULE_12__account_module_enterprise_details_enterprise_details__["a" /* EnterpriseDetails */], isRoot: false };
+        var vojNav = { page: __WEBPACK_IMPORTED_MODULE_11__account_module_enterprise_details_enterprise_details__["a" /* EnterpriseDetails */], isRoot: false };
         this.navigationService.navigate('list', vojNav);
     };
     HomePage.prototype.presentUserInfoPage = function () {
         console.log('Present user info page.');
         // this.navCtrl.push(UserInformationPage);
-        var vojNav = { page: __WEBPACK_IMPORTED_MODULE_11__account_module_user_information_user_information__["a" /* UserInformationPage */], isRoot: false };
+        var vojNav = { page: __WEBPACK_IMPORTED_MODULE_10__account_module_user_information_user_information__["a" /* UserInformationPage */], isRoot: false };
         this.navigationService.navigate('list', vojNav);
     };
     HomePage.prototype.presentCompany = function () {
-        this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_24__account_module_company_company__["a" /* CompanyPage */] });
+        this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_23__account_module_company_company__["a" /* CompanyPage */] });
     };
     HomePage.prototype.presentJobyerAvailabilityChoicePage = function () {
         console.log('Present Jobyer Availability Choice Page.');
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_10__cv_offer_module_jobyer_availability_choice_jobyer_availability_choice__["a" /* JobyerAvailabilityChoicePage */]);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_9__cv_offer_module_jobyer_availability_choice_jobyer_availability_choice__["a" /* JobyerAvailabilityChoicePage */]);
     };
     HomePage.prototype.presentOptionsPage = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_13__account_module_options_options__["a" /* OptionsPage */]);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_12__account_module_options_options__["a" /* OptionsPage */]);
     };
     HomePage.prototype.presentIdentityPage = function () {
         // this.navCtrl.push(IdentityPage);
-        this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_9__account_module_identity_identity__["a" /* IdentityPage */] });
+        this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_8__account_module_identity_identity__["a" /* IdentityPage */] });
     };
     HomePage.prototype.goToAccountPage = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_14__account_module_account_account__["a" /* AccountPage */]);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_13__account_module_account_account__["a" /* AccountPage */]);
     };
     HomePage.prototype.goToSignUp = function () {
-        this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_19__account_module_sign_up_sign_up__["a" /* SignUpPage */] });
+        this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_18__account_module_sign_up_sign_up__["a" /* SignUpPage */] });
     };
     HomePage.prototype.presentAddressesPage = function () {
-        this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_15__account_module_main_address_main_address__["a" /* MainAddressPage */] });
+        this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_14__account_module_main_address_main_address__["a" /* MainAddressPage */] });
         // this.navCtrl.push(MainAddressPage);
     };
     HomePage.prototype.presentLoginPage = function () {
         // let vojNav: VojPage = { page: LoginPage, isRoot: false };
         // this.navigationService.navigate('list', vojNav);
-        this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_16__account_module_login_login__["a" /* LoginPage */] });
+        this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_15__account_module_login_login__["a" /* LoginPage */] });
     };
     HomePage.prototype.goToBankDetailsPage = function () {
         // let vojNav: VojPage = {page: BankSettingsPage, isRoot: false};
         // this.navigationService.navigate('list', vojNav);
-        this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_17__account_module_bank_settings_bank_settings__["a" /* BankSettingsPage */] });
+        this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_16__account_module_bank_settings_bank_settings__["a" /* BankSettingsPage */] });
     };
     HomePage.prototype.goToPersonalDetailsIdentity = function () {
-        this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_18__account_module_personal_details_identity_personal_details_identity__["a" /* PersonalDetailsIdentityPage */] });
+        this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_17__account_module_personal_details_identity_personal_details_identity__["a" /* PersonalDetailsIdentityPage */] });
         // let vojNav: VojPage = {page: PersonalDetailsIdentityPage, isRoot: false};
         // this.navigationService.navigate('list', vojNav);
     };
     HomePage.prototype.goToAvailabilitiesAddDays = function () {
-        var vojNav = { page: __WEBPACK_IMPORTED_MODULE_21__cv_offer_module_availabilities_add_days_availabilities_add_days__["a" /* AvailabilitiesAddDaysPage */], isRoot: false };
+        var vojNav = { page: __WEBPACK_IMPORTED_MODULE_20__cv_offer_module_availabilities_add_days_availabilities_add_days__["a" /* AvailabilitiesAddDaysPage */], isRoot: false };
         this.navigationService.navigate('list', vojNav);
     };
     HomePage.prototype.goToAvailabilities = function () {
-        var vojNav = { page: __WEBPACK_IMPORTED_MODULE_22__cv_offer_module_availabilities_availabilities__["a" /* AvailabilitiesPage */], isRoot: false };
+        var vojNav = { page: __WEBPACK_IMPORTED_MODULE_21__cv_offer_module_availabilities_availabilities__["a" /* AvailabilitiesPage */], isRoot: false };
         this.navigationService.navigate('list', vojNav);
     };
     HomePage.prototype.goToPersonalDetails = function () {
-        this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_23__account_module_personal_details_personal_details__["a" /* PersonalDetailsPage */] });
+        this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_22__account_module_personal_details_personal_details__["a" /* PersonalDetailsPage */] });
         // let vojNav: VojPage = {page: PersonalDetailsPage, isRoot: false};
         // this.navigationService.navigate('navigate:list', vojNav);
     };
     HomePage.prototype.goToEnterpriseSearchPage = function () {
-        this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_25__account_module_enterprise_search_enterprise_search__["a" /* EnterpriseSearchPage */] });
+        this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_24__account_module_enterprise_search_enterprise_search__["a" /* EnterpriseSearchPage */] });
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('contentMenu'),
@@ -3787,17 +3736,16 @@ var HomePage = (function () {
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/home/home.html"*/'<ion-content #mycontent fullscreen>\n\n	<h2>Welcome to Ionic!</h2>\n	<p>\n		This starter project comes with simple tabs-based layout for apps\n		that are going to primarily use a Tabbed UI.\n	</p>\n	<p>\n		Take a look at the <code>src/pages/</code> directory to add or change tabs,\n		update any existing page or create new pages.\n	</p>\n	\n	<button ion-button (click)="goToPage()">Click me</button>\n	<button ion-button (click)="goToPage1()">Click me1</button>\n	<button ion-button (click)="goToPage2()">Click me2</button>\n	<button ion-button (click)="goToOpenApplication()">goToOpenApplication</button>\n	<button ion-button (click)="goToSignUp()">goToSignUpPage</button>\n	<button ion-button (click)="goToEnterpriseDetails()">goToEnterpriseDetails</button>\n	<button ion-button (click)="goToBankDetailsPage()">goToBankDetailsPage</button>\n	<button ion-button (click)="goToPersonalDetailsIdentity()">goToPersonalDetailsIdentity</button>\n\n	<!--Test availabilities page-->\n	<button ion-button (click)="goToAvailabilities()">goToAvailabilitiesPage</button>\n\n	<!-- Notification testing -->\n	<button ion-button (click)="testNotification()">Test notification</button>\n	<button ion-button (click)="goToPersonalDetails()">goTopersonalDetails</button>\n\n	<!-- Availabilities Add Days Page testing -->\n	<button ion-button (click)="goToAvailabilitiesAddDays()">AvailabilitiesAddDaysPage</button>\n\n	<!-- Test translate service -->\n	<p>{{ \'HOME.TEST_TRANSLATION\' | translate}}</p>\n\n	<!-- Test account page -->\n	<button ion-button (click)="goToAccountPage()">Account page</button>\n\n	<!-- Option page testing -->\n	<button ion-button (click)="presentOptionsPage()">Options page</button>\n\n	<!-- Test jobyer-availability-choice page  -->\n	<button ion-button (click)="presentJobyerAvailabilityChoicePage()">Jobyer Availability Choice page</button>\n\n	<!-- Test user info page -->\n	<button ion-button (click)="presentUserInfoPage()">Present user info page</button>\n\n	<!-- Test identity page -->\n	<button ion-button (click)="presentIdentityPage()">Test identity page</button>\n\n	<button ion-button (click)="goToPage()">Click me</button>\n\n	<button ion-button (click)="presentAddressesPage()">Present addresses page</button>\n\n	<!-- Test login page -->\n	<button ion-button (click)="presentLoginPage()">Test login page</button>\n	<button ion-button (click)="presentCompany()">Present Company</button>\n\n	<!--Test EntrepriseSearchPage-->\n	<button ion-button (click)="goToEnterpriseSearchPage()">Open goToEnterpriseSearchPage Modal</button>\n\n	<!--<voj-card title="Mon titre" content="Ma description ici" action-name="Mon identité" subtitle1="Tél: 0669938121"\n			  subtitle1-icon="call" subtitle2="E-mail: test@compte.com" subtitle2-icon="mail"  thumbnail="assets/img/advance-card-bttf.png"></voj-card>-->\n	<voj-card [data]=\'jobyerData\' [vojData]="cards" ></voj-card>\n	<voj-form [data]=\'formData\'></voj-form>\n\n	<ion-fab bottom right>\n		<button ion-fab (click)="test()" color="vojgreen">\n			<ion-icon name="log-in"></ion-icon>\n		</button>\n	</ion-fab>\n	<!-- DEACTIVATE IN CASE OF NEEDING TO SHOW A MAP -->\n	<!-- <voj-map [data]="cards"></voj-map> -->\n</ion-content>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\home\home.html"*/'<ion-content #mycontent fullscreen>\n\n\n\n	<h2>Welcome to Ionic!</h2>\n\n	<p>\n\n		This starter project comes with simple tabs-based layout for apps\n\n		that are going to primarily use a Tabbed UI.\n\n	</p>\n\n	<p>\n\n		Take a look at the <code>src/pages/</code> directory to add or change tabs,\n\n		update any existing page or create new pages.\n\n	</p>\n\n	\n\n	<button ion-button (click)="goToPage()">Click me</button>\n\n	<button ion-button (click)="goToPage1()">Click me1</button>\n\n	<button ion-button (click)="goToPage2()">Click me2</button>\n\n	<button ion-button (click)="goToOpenApplication()">goToOpenApplication</button>\n\n	<button ion-button (click)="goToSignUp()">goToSignUpPage</button>\n\n	<button ion-button (click)="goToEnterpriseDetails()">goToEnterpriseDetails</button>\n\n	<button ion-button (click)="goToBankDetailsPage()">goToBankDetailsPage</button>\n\n	<button ion-button (click)="goToPersonalDetailsIdentity()">goToPersonalDetailsIdentity</button>\n\n\n\n	<!--Test availabilities page-->\n\n	<button ion-button (click)="goToAvailabilities()">goToAvailabilitiesPage</button>\n\n\n\n	<!-- Notification testing -->\n\n	<button ion-button (click)="testNotification()">Test notification</button>\n\n	<button ion-button (click)="goToPersonalDetails()">goTopersonalDetails</button>\n\n\n\n	<!-- Availabilities Add Days Page testing -->\n\n	<button ion-button (click)="goToAvailabilitiesAddDays()">AvailabilitiesAddDaysPage</button>\n\n\n\n	<!-- Test translate service -->\n\n	<p>{{ \'HOME.TEST_TRANSLATION\' | translate}}</p>\n\n\n\n	<!-- Test account page -->\n\n	<button ion-button (click)="goToAccountPage()">Account page</button>\n\n\n\n	<!-- Option page testing -->\n\n	<button ion-button (click)="presentOptionsPage()">Options page</button>\n\n\n\n	<!-- Test jobyer-availability-choice page  -->\n\n	<button ion-button (click)="presentJobyerAvailabilityChoicePage()">Jobyer Availability Choice page</button>\n\n\n\n	<!-- Test user info page -->\n\n	<button ion-button (click)="presentUserInfoPage()">Present user info page</button>\n\n\n\n	<!-- Test identity page -->\n\n	<button ion-button (click)="presentIdentityPage()">Test identity page</button>\n\n\n\n	<button ion-button (click)="goToPage()">Click me</button>\n\n\n\n	<button ion-button (click)="presentAddressesPage()">Present addresses page</button>\n\n\n\n	<!-- Test login page -->\n\n	<button ion-button (click)="presentLoginPage()">Test login page</button>\n\n	<button ion-button (click)="presentCompany()">Present Company</button>\n\n\n\n	<!--Test EntrepriseSearchPage-->\n\n	<button ion-button (click)="goToEnterpriseSearchPage()">Open goToEnterpriseSearchPage Modal</button>\n\n\n\n	<!--<voj-card title="Mon titre" content="Ma description ici" action-name="Mon identité" subtitle1="Tél: 0669938121"\n\n			  subtitle1-icon="call" subtitle2="E-mail: test@compte.com" subtitle2-icon="mail"  thumbnail="assets/img/advance-card-bttf.png"></voj-card>-->\n\n	<voj-card [data]=\'jobyerData\' [vojData]="cards" ></voj-card>\n\n	<voj-form [data]=\'formData\'></voj-form>\n\n\n\n	<ion-fab bottom right>\n\n		<button ion-fab (click)="test()" color="vojgreen">\n\n			<ion-icon name="log-in"></ion-icon>\n\n		</button>\n\n	</ion-fab>\n\n	<!-- DEACTIVATE IN CASE OF NEEDING TO SHOW A MAP -->\n\n	<!-- <voj-map [data]="cards"></voj-map> -->\n\n</ion-content>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* App */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["u" /* ViewController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Events */],
-            __WEBPACK_IMPORTED_MODULE_6__providers_http_request_http_request__["a" /* HttpRequestProvider */],
-            __WEBPACK_IMPORTED_MODULE_4__components_voj_notification_voj_notification_service__["a" /* VojNotificationService */],
-            __WEBPACK_IMPORTED_MODULE_8__services_navigation_service__["a" /* NavigationService */],
-            __WEBPACK_IMPORTED_MODULE_20__services_modal_service__["a" /* ModalService */]])
+            __WEBPACK_IMPORTED_MODULE_5__providers_http_request_http_request__["a" /* HttpRequestProvider */],
+            __WEBPACK_IMPORTED_MODULE_7__services_navigation_service__["a" /* NavigationService */],
+            __WEBPACK_IMPORTED_MODULE_19__services_modal_service__["a" /* ModalService */]])
     ], HomePage);
     return HomePage;
 }());
@@ -3806,19 +3754,19 @@ var HomePage = (function () {
 
 /***/ }),
 
-/***/ 236:
+/***/ 235:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccountPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_profile_service_profile_service__ = __webpack_require__(93);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_utils__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_profile_service_profile_service__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_utils__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_navigation_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__user_information_user_information__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__user_information_user_information__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__search_module_search_search__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__test_components_about_about__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__test_components_about_about__ = __webpack_require__(129);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__config_voj_configuration__ = __webpack_require__(7);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3845,9 +3793,7 @@ var AccountPage = (function () {
         this.profileService = profileService;
         this.navigationService = navigationService;
         this.configuration = configuration;
-        this.isMobile = false;
         this.config = this.configuration.configuration;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
         // Set page header
         this.dataPageHeader = {
             title: 'Mon compte',
@@ -3983,7 +3929,7 @@ var AccountPage = (function () {
     };
     AccountPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'account-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/account/account.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n<div [ngClass]="isMobile ? \'mobile-parent-container\' : \'\'" class="voj-content account-parent">\n    <div [ngClass]="isMobile ? \'mobile-child-container\' : \'\'" class="voj-form-container account-child">\n        <voj-card [data]="profileData" [mode]="\'reduced\'"></voj-card>\n    </div>\n</div>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/account/account.html"*/,
+            selector: 'account-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\account-module\account\account.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n<div class="voj-content">\n\n    <div class="voj-form-container">\n\n        <voj-card [data]="profileData" [mode]="\'reduced\'"></voj-card>\n\n    </div>\n\n</div>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\account-module\account\account.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ionic_storage__["b" /* Storage */],
             __WEBPACK_IMPORTED_MODULE_2__providers_profile_service_profile_service__["a" /* ProfileService */],
@@ -3997,7 +3943,7 @@ var AccountPage = (function () {
 
 /***/ }),
 
-/***/ 265:
+/***/ 264:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -4010,106 +3956,106 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 265;
+webpackEmptyAsyncContext.id = 264;
 
 /***/ }),
 
-/***/ 307:
+/***/ 306:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../components/voj-calendar/desktop-calendar/desktop-calendar.module": [
-		376
+		375
 	],
 	"../components/voj-calendar/smart-calendar/smart-calendar.module": [
-		320
-	],
-	"../components/voj-calendar/voj-calendar.module": [
 		319
 	],
+	"../components/voj-calendar/voj-calendar.module": [
+		318
+	],
 	"../components/voj-card/voj-card.module": [
-		122
+		121
 	],
 	"../components/voj-form/voj-form.module": [
-		227
+		226
 	],
 	"../components/voj-header-segment/voj-header-segment.module": [
-		574
+		572
 	],
 	"../components/voj-header-web/voj-header-web.module": [
-		573
+		571
 	],
 	"../components/voj-header/voj-header.module": [
-		565
+		563
 	],
 	"../components/voj-list/voj-list.module": [
-		566
+		564
 	],
 	"../components/voj-map/voj-map.module": [
-		123
+		122
 	],
 	"../components/voj-menu/voj-menu.module": [
-		213
+		212
 	],
 	"../components/voj-search-header/voj-search-header.module": [
-		232
+		231
 	],
 	"../components/voj-search-select/voj-search-select.module": [
-		575
+		573
 	],
 	"../components/voj-segment/voj-segment.module": [
-		89
+		88
 	],
 	"../pages/account-module/company/company.module": [
-		580
-	],
-	"../pages/account-module/enterprise-details/enterprise-details.module": [
-		587
-	],
-	"../pages/account-module/open-application/open-application.module": [
-		586
-	],
-	"../pages/account-module/options/options.module": [
-		584
-	],
-	"../pages/account-module/personal-details-identity/personal-details-identity.module": [
 		578
 	],
-	"../pages/account-module/personal-details/personal-details.module": [
-		579
+	"../pages/account-module/enterprise-details/enterprise-details.module": [
+		584
 	],
-	"../pages/account-module/user-information/user-information.module": [
-		582
-	],
-	"../pages/calendar/calendar.module": [
-		592
-	],
-	"../pages/cv-offer-module/jobyer-availability-choice/jobyer-availability-choice.module": [
-		581
-	],
-	"../pages/cv-offer-module/keywords/keywords.module": [
-		309
-	],
-	"../pages/home/home.module": [
-		589
-	],
-	"../pages/landing-page/landing-page.module": [
-		308
-	],
-	"../pages/options/options.module": [
-		593
-	],
-	"../pages/remuneration/remuneration.module": [
-		576
-	],
-	"../pages/search-module/search/search.module": [
-		577
-	],
-	"../pages/tabs/tabs.module": [
+	"../pages/account-module/open-application/open-application.module": [
 		590
 	],
+	"../pages/account-module/options/options.module": [
+		582
+	],
+	"../pages/account-module/personal-details-identity/personal-details-identity.module": [
+		576
+	],
+	"../pages/account-module/personal-details/personal-details.module": [
+		577
+	],
+	"../pages/account-module/user-information/user-information.module": [
+		580
+	],
+	"../pages/calendar/calendar.module": [
+		589
+	],
+	"../pages/cv-offer-module/jobyer-availability-choice/jobyer-availability-choice.module": [
+		579
+	],
+	"../pages/cv-offer-module/keywords/keywords.module": [
+		308
+	],
+	"../pages/home/home.module": [
+		586
+	],
+	"../pages/landing-page/landing-page.module": [
+		307
+	],
+	"../pages/options/options.module": [
+		591
+	],
+	"../pages/remuneration/remuneration.module": [
+		574
+	],
+	"../pages/search-module/search/search.module": [
+		575
+	],
+	"../pages/tabs/tabs.module": [
+		587
+	],
 	"../pages/test-components/about/about.module": [
-		585
+		583
 	]
 };
 function webpackAsyncContext(req) {
@@ -4123,12 +4069,12 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 307;
+webpackAsyncContext.id = 306;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 308:
+/***/ 307:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4136,7 +4082,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LandingPageModule", function() { return LandingPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__landing_page__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__landing_page__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4169,7 +4115,7 @@ var LandingPageModule = (function () {
 
 /***/ }),
 
-/***/ 309:
+/***/ 308:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4177,7 +4123,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "KeywordsPageModule", function() { return KeywordsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__keywords__ = __webpack_require__(310);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__keywords__ = __webpack_require__(309);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -4210,14 +4156,14 @@ var KeywordsPageModule = (function () {
 
 /***/ }),
 
-/***/ 310:
+/***/ 309:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return KeywordsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_page_header_model__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_page_header_model__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__information_resume_information_resume__ = __webpack_require__(74);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -4266,7 +4212,7 @@ var KeywordsPage = (function () {
     KeywordsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-keywords',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/cv-offer-module/keywords/keywords.html"*/'<ion-header>\n  <voj-page-header [data]="headerData"></voj-page-header>\n</ion-header>\n<ion-content padding>\n  <ion-card class="keywords-card" padding>\n    <voj-form [data]="formData"></voj-form>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/cv-offer-module/keywords/keywords.html"*/,
+            selector: 'page-keywords',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\keywords\keywords.html"*/'\n\n<voj-page-header [data]="headerData"></voj-page-header>\n\n\n\n<div class="voj-content">\n\n  <div class="voj-form-container">\n\n\n\n    <ion-content padding>\n\n      <ion-card class="keywords-card" padding>\n\n        <voj-form [data]="formData"></voj-form>\n\n      </ion-card>\n\n\n\n    </ion-content>\n\n  </div>\n\n</div>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\keywords\keywords.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
     ], KeywordsPage);
@@ -4277,7 +4223,7 @@ var KeywordsPage = (function () {
 
 /***/ }),
 
-/***/ 314:
+/***/ 313:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4304,9 +4250,7 @@ var AvailabilitiesAddSlotPage = (function () {
         var _this = this;
         this.configurationService = configurationService;
         this.navigationService = navigationService;
-        this.isMobile = false;
         this.config = this.configurationService.configuration;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
         this.headerData = {
             title: 'Ajouter une disponibilité',
             style: 'any',
@@ -4405,7 +4349,7 @@ var AvailabilitiesAddSlotPage = (function () {
     };
     AvailabilitiesAddSlotPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'availabilities-add-slot-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/availabilities-add-slot/availabilities-add-slot.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n<div [ngClass]="isMobile ? \'availabilities-add-slot-container\' : \'\'" class="availabilities-add-slot-parent">\n    <div [ngClass]="isMobile ? \'availabilities-add-slot-child-container\' : \'\'" class="availabilities-add-slot-child">\n        <voj-form [data]=\'formData\'></voj-form>\n    </div>\n</div>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/availabilities-add-slot/availabilities-add-slot.html"*/,
+            selector: 'availabilities-add-slot-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\availabilities-add-slot\availabilities-add-slot.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<div class="voj-content">\n\n    <div class="voj-form-container">\n\n        <voj-form [data]=\'formData\'></voj-form>\n\n    </div>\n\n</div>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\availabilities-add-slot\availabilities-add-slot.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__["a" /* Configuration */],
             __WEBPACK_IMPORTED_MODULE_2__services_navigation_service__["a" /* NavigationService */]])
@@ -4417,7 +4361,7 @@ var AvailabilitiesAddSlotPage = (function () {
 
 /***/ }),
 
-/***/ 315:
+/***/ 314:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4438,9 +4382,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var QualitiesPage = (function () {
     function QualitiesPage(configurationService) {
         this.configurationService = configurationService;
-        this.isMobile = false;
         this.config = this.configurationService.configuration;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
         this.headerData = {
             title: 'My qualities',
             style: 'any',
@@ -4491,7 +4433,7 @@ var QualitiesPage = (function () {
     };
     QualitiesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'qualities-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/cv-offer-module/qualities/qualities.html"*/'  <voj-page-header [data]=\'headerData\'></voj-page-header>\n  <div [ngClass]="isMobile ? \'qualities-container\' : \'\'" class="qualities-parent">\n    <div [ngClass]="isMobile ? \'qualities-child-container\' : \'\'" class="qualities-child">\n      <voj-form [data]=\'formData\'></voj-form>\n    </div>\n  </div>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/cv-offer-module/qualities/qualities.html"*/,
+            selector: 'qualities-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\qualities\qualities.html"*/'  <voj-page-header [data]=\'headerData\'></voj-page-header>\n\n  <div class="voj-content">\n\n    <div class="voj-form-container">\n\n      <voj-form [data]=\'formData\'></voj-form>\n\n    </div>\n\n  </div>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\qualities\qualities.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__["a" /* Configuration */]])
     ], QualitiesPage);
@@ -4502,7 +4444,7 @@ var QualitiesPage = (function () {
 
 /***/ }),
 
-/***/ 316:
+/***/ 315:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4523,9 +4465,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var LanguagesPage = (function () {
     function LanguagesPage(configurationService) {
         this.configurationService = configurationService;
-        this.isMobile = false;
         this.config = this.configurationService.configuration;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
         this.headerData = {
             title: 'My languages',
             style: 'any',
@@ -4578,7 +4518,7 @@ var LanguagesPage = (function () {
     };
     LanguagesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'languages-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/cv-offer-module/languages/languages.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n<div [ngClass]="isMobile ? \'languages-container\' : \'\'" class="languages-parent">\n    <div [ngClass]="isMobile ? \'languages-child-container\' : \'\'" class="languages-child">\n        <voj-form [data]=\'formData\'></voj-form>\n    </div>\n</div>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/cv-offer-module/languages/languages.html"*/,
+            selector: 'languages-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\languages\languages.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<div class="voj-content languages-parent">\n\n    <div class="voj-form-container languages-child">\n\n        <voj-form [data]=\'formData\'></voj-form>\n\n    </div>\n\n</div>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\languages\languages.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__["a" /* Configuration */]])
     ], LanguagesPage);
@@ -4589,7 +4529,7 @@ var LanguagesPage = (function () {
 
 /***/ }),
 
-/***/ 317:
+/***/ 316:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4616,9 +4556,7 @@ var MyCvPage = (function () {
         var _this = this;
         this.configurationService = configurationService;
         this.navCtrl = navCtrl;
-        this.isMobile = false;
         this.config = this.configurationService.configuration;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
         this.headerData = {
             title: 'Mon CV',
             style: 'any',
@@ -4649,7 +4587,7 @@ var MyCvPage = (function () {
     };
     MyCvPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'my-cv-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/my-cv/my-cv.html"*/'  <voj-page-header [data]=\'headerData\'></voj-page-header>\n  <div [ngClass]="isMobile ? \'my-cv-container\' : \'\'" class="my-cv-parent">\n    <div [ngClass]="isMobile ? \'my-cv-child-container\' : \'\'" class="my-cv-child">\n      <voj-form [data]=\'formData\'></voj-form>\n    </div>\n  </div>\n\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/my-cv/my-cv.html"*/,
+            selector: 'my-cv-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\account-module\my-cv\my-cv.html"*/'  <voj-page-header [data]=\'headerData\'></voj-page-header>\n\n  <div class="voj-content">\n\n    <div class="voj-form-container">\n\n      <voj-form [data]=\'formData\'></voj-form>\n\n    </div>\n\n  </div>\n\n\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\account-module\my-cv\my-cv.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__["a" /* Configuration */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */]])
     ], MyCvPage);
@@ -4660,7 +4598,7 @@ var MyCvPage = (function () {
 
 /***/ }),
 
-/***/ 318:
+/***/ 317:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4738,7 +4676,7 @@ var RemunerationPage = (function () {
     RemunerationPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-remuneration',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/remuneration/remuneration.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n<voj-form [data]=\'formData\'></voj-form>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/remuneration/remuneration.html"*/,
+            selector: 'page-remuneration',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\remuneration\remuneration.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n\n\n<div class="voj-content">\n\n    <div class="voj-form-container">\n\n        <voj-form [data]=\'formData\'></voj-form>\n\n    </div>\n\n</div>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\remuneration\remuneration.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
@@ -4750,7 +4688,7 @@ var RemunerationPage = (function () {
 
 /***/ }),
 
-/***/ 319:
+/***/ 318:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4759,10 +4697,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_calendar__ = __webpack_require__(675);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__smart_calendar_smart_calendar_module__ = __webpack_require__(320);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__desktop_calendar_desktop_calendar_module__ = __webpack_require__(376);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__full_calendar_full_calendar_module__ = __webpack_require__(849);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_calendar__ = __webpack_require__(673);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__smart_calendar_smart_calendar_module__ = __webpack_require__(319);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__desktop_calendar_desktop_calendar_module__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__full_calendar_full_calendar_module__ = __webpack_require__(847);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4804,7 +4742,7 @@ var VojCalendarModule = (function () {
 
 /***/ }),
 
-/***/ 320:
+/***/ 319:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4812,9 +4750,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SmartCalendarModule", function() { return SmartCalendarModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__calendar_calendar_module__ = __webpack_require__(676);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_popover_page__ = __webpack_require__(373);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__smart_calendar__ = __webpack_require__(804);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__calendar_calendar_module__ = __webpack_require__(674);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_popover_page__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__smart_calendar__ = __webpack_require__(802);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4857,269 +4795,7 @@ var SmartCalendarModule = (function () {
 
 /***/ }),
 
-/***/ 37:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HttpRequestProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_timeout__ = __webpack_require__(664);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_timeout___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_timeout__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(671);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_finally__ = __webpack_require__(672);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_finally___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_finally__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(1);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-var TIME_OUT_PERIOD = 120000;
-/*
-  Generated class for the HttpRequestProvider provider.
-
-  See https://angular.io/docs/ts/latest/guide/dependency-injection.html
-  for more info on providers and Angular DI.
-*/
-var HttpRequestProvider = (function () {
-    function HttpRequestProvider(http, toastCtrl, loadingCtrl) {
-        this.http = http;
-        this.toastCtrl = toastCtrl;
-        this.loadingCtrl = loadingCtrl;
-        console.log('Hello HttpRequestProvider Provider');
-        HttpRequestProvider_1.toastCtrl = this.toastCtrl;
-        HttpRequestProvider_1.loading = this.loadingCtrl;
-    }
-    HttpRequestProvider_1 = HttpRequestProvider;
-    /**
-     * Shows error message
-     * @param error
-     * @returns {Promise<any>}
-     */
-    HttpRequestProvider.prototype.handleError = function (error) {
-        console.error('An error occurred', error); // for demo purposes only
-        var vojMessage = HttpRequestProvider_1.getErrMessage(error, HttpRequestProvider_1.senderClassName);
-        HttpRequestProvider_1.presentErrToast(vojMessage);
-        //TODO send email to notify us
-        var errorObject = { success: false, error: error.message || error };
-        return Promise.reject(errorObject);
-    };
-    /**
-     * Send a callOut request via http post method
-     * @param payload
-     * @param classObject
-     * @param silentMode
-     * @returns {Observable<T>}
-     */
-    HttpRequestProvider.prototype.sendCallOut = function (payload, classObject, silentMode) {
-        var newTimeOutPeriod = 0;
-        var silentLadingToast = this.toastCtrl.create();
-        //
-        if (silentMode !== true) {
-            HttpRequestProvider_1.presentLoading();
-            newTimeOutPeriod = TIME_OUT_PERIOD;
-        }
-        else {
-            //silent mode : waiting for more time..
-            newTimeOutPeriod = TIME_OUT_PERIOD * 10;
-            silentLadingToast = HttpRequestProvider_1.presentSilentLoadingToast("En cours de chargement des données...", newTimeOutPeriod, 'top');
-        }
-        // Getting service class name
-        HttpRequestProvider_1.senderClassName = (classObject) ? classObject.constructor.name : "";
-        // Sending request
-        var options = HttpRequestProvider_1.getHttpJsonHeaders();
-        return this.http.post(HttpRequestProvider_1.calloutURL, JSON.stringify(payload), options)
-            .map(function (res) { return res.json(); })
-            .timeout(newTimeOutPeriod)
-            .catch(this.handleError)
-            .finally(function () {
-            try {
-                if (HttpRequestProvider_1.loaderComponent)
-                    HttpRequestProvider_1.loaderComponent.dismiss();
-                if (silentLadingToast)
-                    silentLadingToast.onDidDismiss(function () {
-                        console.log('Dismissed toast');
-                    });
-            }
-            catch (error) {
-                console.log(error);
-            }
-        });
-    };
-    /**
-     * Calls a specific web service given the URL and payload
-     * @param payload
-     * @param url
-     * @param classObject
-     * @param silentMode
-     * @returns {Observable<T>}
-     */
-    HttpRequestProvider.prototype.call = function (payload, url, classObject, silentMode) {
-        var newTimeOutPeriod = 0;
-        var silentLadingToast = this.toastCtrl.create();
-        if (silentMode !== true) {
-            HttpRequestProvider_1.presentLoading();
-            newTimeOutPeriod = TIME_OUT_PERIOD;
-        }
-        else {
-            //silent mode : waiting for more time..
-            newTimeOutPeriod = TIME_OUT_PERIOD * 10;
-            if (!HttpRequestProvider_1.isToastEntered) {
-                // TEL present new tost if and if only the last toast is dismissed..
-                silentLadingToast = HttpRequestProvider_1.presentSilentLoadingToast("En cours de chargement des données...", newTimeOutPeriod, 'top');
-                HttpRequestProvider_1.isToastEntered = true;
-            }
-        }
-        // Getting service class name
-        HttpRequestProvider_1.senderClassName = (classObject) ? classObject.constructor.name : "";
-        // Sending request
-        var options = HttpRequestProvider_1.getHttpJsonHeaders();
-        return this.http.post(url, JSON.stringify(payload), options)
-            .map(function (res) { return res.json(); })
-            .timeout(newTimeOutPeriod)
-            .catch(this.handleError)
-            .finally(function () {
-            if (HttpRequestProvider_1.loaderComponent)
-                HttpRequestProvider_1.loaderComponent.dismiss();
-            if (silentLadingToast) {
-                silentLadingToast.dismissAll();
-            }
-        });
-    };
-    HttpRequestProvider.getHttpJsonHeaders = function () {
-        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
-        var options = { headers: headers };
-        options.headers.append("Content-Type", 'application/json');
-        //if (GlobalConfigs.env === 'PROD')
-        options.headers.append("Authorization", 'Basic dm9qYWRtaW46NG5ncmFNNDFueXU=');
-        return options;
-    };
-    HttpRequestProvider.getHttpTextHeaders = function () {
-        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
-        headers.append("Content-Type", 'text/plain');
-        /*if (GlobalConfigs.env === 'PROD')
-            headers.append("Authorization", 'Basic aGFkZXM6NWV0Y2Fy');*/
-        return headers;
-    };
-    HttpRequestProvider.getHttpXmlHeaders = function () {
-        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
-        headers.append("Content-Type", 'text/xml');
-        /*if (GlobalConfigs.env === 'PROD')
-            headers.append("Authorization", 'Basic aGFkZXM6NWV0Y2Fy');*/
-        return headers;
-    };
-    /**
-     * Show a red toast that contains error message
-     * @param message
-     * @param duration
-     * @param position
-     */
-    HttpRequestProvider.presentErrToast = function (message, duration, position) {
-        if (!duration)
-            duration = 5;
-        var toast = this.toastCtrl.create({
-            message: message,
-            position: position,
-            dismissOnPageChange: true,
-            showCloseButton: true,
-            closeButtonText: "Ok",
-            duration: duration * 1000
-        });
-        toast.present();
-        // Change toast color to red
-        var toastElement = document.getElementsByClassName('toast-wrapper toast-bottom');
-        if (toastElement && toastElement.length > 0)
-            toastElement[0].style.background = "#E8384F";
-    };
-    /**
-     * Show a normal toast that contains silent loading message
-     * @param message
-     * @param duration
-     * @param position
-     */
-    HttpRequestProvider.presentSilentLoadingToast = function (message, duration, position) {
-        var toast = this.toastCtrl.create({
-            message: message,
-            position: position,
-            dismissOnPageChange: false,
-            showCloseButton: true,
-            closeButtonText: "Ok",
-            duration: duration
-        });
-        toast.present();
-        toast.onDidDismiss(function () {
-            console.log('Dismissed toast');
-            HttpRequestProvider_1.isToastEntered = false;
-        });
-        return toast;
-    };
-    /**
-     * Present Loading component while the treatment of request
-     */
-    HttpRequestProvider.presentLoading = function () {
-        try {
-            HttpRequestProvider_1.loaderComponent = HttpRequestProvider_1.loading.create({ content: "Merci de patienter..." });
-            HttpRequestProvider_1.loaderComponent.present();
-        }
-        catch (error) {
-            console.log(error);
-        }
-    };
-    /**
-     * Get error message from status code
-     * @param error
-     * @param senderClassName
-     * @returns {string}
-     */
-    HttpRequestProvider.getErrMessage = function (error, senderClassName) {
-        if (error.message === "timeout") {
-            error.status = -100;
-        }
-        switch (~~(error.status / 100)) {
-            case 0:
-                // General error with status 0: http://stackoverflow.com/a/26451773/2936049
-                return "0 • Problème sur serveur, merci de réessayer ultérieurement. (" + senderClassName + ")";
-            case 4:
-                // 4xx: client type error
-                return "4 • Merci de vérifier votre connexion internet et réessayer ultérieurement. (" + senderClassName + ")";
-            case 5:
-                // 5xx: server type error
-                return "5 • Problème sur serveur, merci de réessayer ultérieurement. (" + senderClassName + ")";
-            case -1:
-                // TimeOut error specified by us. See cont variable TIME_OUT_PERIOD
-                return "-1 • Merci de vérifier votre connexion internet et réessayer ultérieurement. (" + senderClassName + ")";
-            default:
-                // Other problems...
-                return "• Merci de vérifier votre connexion internet et réessayer ultérieurement. (" + senderClassName + ")";
-        }
-    };
-    HttpRequestProvider.isToastEntered = false;
-    HttpRequestProvider.calloutURL = "http://localhost:8000/search/";
-    HttpRequestProvider = HttpRequestProvider_1 = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */], __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["t" /* ToastController */], __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["j" /* LoadingController */]])
-    ], HttpRequestProvider);
-    return HttpRequestProvider;
-    var HttpRequestProvider_1;
-}());
-
-//# sourceMappingURL=http-request.js.map
-
-/***/ }),
-
-/***/ 370:
+/***/ 369:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5134,7 +4810,7 @@ var HttpRequestProvider = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Subject__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_merge__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_merge__ = __webpack_require__(184);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_merge__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__calendar_service__ = __webpack_require__(84);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -5798,7 +5474,7 @@ var WeekViewComponent = (function () {
     ], WeekViewComponent.prototype, "onTitleChanged", void 0);
     WeekViewComponent = WeekViewComponent_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["Component"])({
-            selector: 'weekview',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/calendar/weekview/weekview.html"*/'<ion-slides #weekSlider [loop]="true" [dir]="dir" (ionSlideDidChange)="onSlideChanged()">\n  <ion-slide [ngxOffsetContainer]="updateOffset$">\n    <div *ngIf="0===currentViewIndex">\n      <div\n        ngxOffsetSource="offsetHeight"\n        ngxOffsetValueType="px">\n        <weekview-header\n          [data]="views[0]"\n          (onSelect)="selectDay($event)">\n        </weekview-header>\n        <div class="weekview-allday-table voj-weekview-allday-table">\n          <div class="weekview-allday-label">{{allDayLabel}}</div>\n          <ion-scroll scrollY="true" class="weekview-allday-content-wrapper" zoom="false">\n            <table class="table table-fixed weekview-allday-content-table">\n              <tbody>\n                <tr>\n                  <td *ngFor="let day of views[0].dates" class="calendar-cell">\n                    <div [ngClass]="{\'calendar-event-wrap\': day.events}" *ngIf="day.events" [ngStyle]="{height: 25*day.events.length+\'px\'}">\n                      <div *ngFor="let displayEvent of day.events" class="calendar-event" tappable (click)="eventSelected(displayEvent.event)" [ngStyle]="{top: 25*displayEvent.position+\'px\', width: 100*(displayEvent.endIndex-displayEvent.startIndex)+\'%\', height: \'25px\'}">\n                        <template [ngTemplateOutlet]="weekviewAllDayEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n                        </template>\n                      </div>\n                    </div>\n                  </td>\n                </tr>\n              </tbody>\n            </table>\n          </ion-scroll>\n        </div>\n      </div>\n      <init-position-scroll\n        class="weekview-normal-event-container voj-normal-event-container"\n        [initPosition]="initScrollPosition"\n        [emitEvent]="preserveScrollPosition"\n        (onScroll)="setScrollPosition($event)"\n        ngxOffsetTarget="margin-top">\n        <table class="table table-bordered table-fixed weekview-normal-event-table table-striped-verticaly">\n          <tbody>\n            <tr *ngFor="let row of views[0].rows; let i = index">\n              <td class="calendar-hour-column text-center">\n                {{hourColumnLabels[i]}}\n              </td>\n              <td *ngFor="let tm of row; let rowIndex = index" class="calendar-cell" tappable (click)="select(tm.time, tm.events)">\n                <div [ngClass]="{\'calendar-event-wrap\': tm.events}" *ngIf="tm.events">\n                  <div *ngFor="let displayEvent of tm.events" class="calendar-event" tappable (click)="eventSelected(displayEvent.event)" [ngStyle]="{top: (37*displayEvent.startOffset/hourParts)+\'px\',left: 100/displayEvent.overlapNumber*displayEvent.position+\'%\', width: 100/displayEvent.overlapNumber+\'%\', height: 37*(displayEvent.endIndex -displayEvent.startIndex - (displayEvent.endOffset + displayEvent.startOffset)/hourParts)+\'px\'}">\n                    <template [ngTemplateOutlet]="weekviewNormalEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n                    </template>\n                  </div>\n                </div>\n              </td>\n            </tr>\n          </tbody>\n        </table>\n      </init-position-scroll>\n    </div>\n    <div *ngIf="0!==currentViewIndex">\n      <div class="weekview-allday-table voj-weekview-allday-table">\n        <div class="weekview-allday-label">{{allDayLabel}}</div>\n        <ion-scroll scrollY="true" class="weekview-allday-content-wrapper" zoom="false">\n          <table class="table table-fixed weekview-allday-content-table">\n            <tbody>\n              <tr>\n                <td *ngFor="let day of views[0].dates" class="calendar-cell">\n                </td>\n              </tr>\n            </tbody>\n          </table>\n        </ion-scroll>\n      </div>\n      <init-position-scroll class="weekview-normal-event-container voj-normal-event-container" [initPosition]="initScrollPosition">\n        <table class="table table-bordered table-fixed weekview-normal-event-table table-striped-verticaly">\n          <tbody>\n            <tr *ngFor="let row of views[0].rows; let i = index">\n              <td class="calendar-hour-column text-center">\n                {{hourColumnLabels[i]}}\n              </td>\n              <td *ngFor="let tm of row" class="calendar-cell">\n              </td>\n            </tr>\n          </tbody>\n        </table>\n      </init-position-scroll>\n    </div>\n  </ion-slide>\n  <ion-slide [ngxOffsetContainer]="updateOffset$">\n    <div *ngIf="1===currentViewIndex">\n      <div\n        ngxOffsetSource="offsetHeight"\n        ngxOffsetValueType="px">\n        <weekview-header\n          [data]="views[1]"\n          (onSelect)="selectDay($event)">\n        </weekview-header>\n        <div class="weekview-allday-table voj-weekview-allday-table">\n          <div class="weekview-allday-label">{{allDayLabel}}</div>\n          <ion-scroll scrollY="true" class="weekview-allday-content-wrapper" zoom="false">\n            <table class="table table-fixed weekview-allday-content-table">\n              <tbody>\n                <tr>\n                  <td *ngFor="let day of views[1].dates" class="calendar-cell">\n                    <div [ngClass]="{\'calendar-event-wrap\': day.events}" *ngIf="day.events" [ngStyle]="{height: 25*day.events.length+\'px\'}">\n                      <div *ngFor="let displayEvent of day.events" class="calendar-event" tappable (click)="eventSelected(displayEvent.event)" [ngStyle]="{top: 25*displayEvent.position+\'px\', width: 100*(displayEvent.endIndex-displayEvent.startIndex)+\'%\', height: \'25px\'}">\n                        <template [ngTemplateOutlet]="weekviewAllDayEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n                        </template>\n                      </div>\n                    </div>\n                  </td>\n                </tr>\n              </tbody>\n            </table>\n          </ion-scroll>\n        </div>\n      </div>\n      <init-position-scroll\n        class="weekview-normal-event-container voj-normal-event-container"\n        [initPosition]="initScrollPosition"\n        [emitEvent]="preserveScrollPosition"\n        (onScroll)="setScrollPosition($event)"\n        ngxOffsetTarget="margin-top">\n        <table class="table table-bordered table-fixed weekview-normal-event-table table-striped-verticaly">\n          <tbody>\n            <tr *ngFor="let row of views[1].rows; let i = index">\n              <td class="calendar-hour-column text-center">\n                {{hourColumnLabels[i]}}\n              </td>\n              <td *ngFor="let tm of row" class="calendar-cell" tappable (click)="select(tm.time, tm.events)">\n                <div [ngClass]="{\'calendar-event-wrap\': tm.events}" *ngIf="tm.events">\n                  <div *ngFor="let displayEvent of tm.events" class="calendar-event" tappable (click)="eventSelected(displayEvent.event)" [ngStyle]="{top: (37*displayEvent.startOffset/hourParts)+\'px\',left: 100/displayEvent.overlapNumber*displayEvent.position+\'%\', width: 100/displayEvent.overlapNumber+\'%\', height: 37*(displayEvent.endIndex -displayEvent.startIndex - (displayEvent.endOffset + displayEvent.startOffset)/hourParts)+\'px\'}">\n                    <template [ngTemplateOutlet]="weekviewNormalEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n                    </template>\n                  </div>\n                </div>\n              </td>\n            </tr>\n          </tbody>\n        </table>\n      </init-position-scroll>\n    </div>\n    <div *ngIf="1!==currentViewIndex">\n      <div class="weekview-allday-table voj-weekview-allday-table">\n        <div class="weekview-allday-label">{{allDayLabel}}</div>\n        <ion-scroll scrollY="true" class="weekview-allday-content-wrapper" zoom="false">\n          <table class="table table-fixed weekview-allday-content-table">\n            <tbody>\n              <tr>\n                <td *ngFor="let day of views[1].dates" class="calendar-cell">\n                </td>\n              </tr>\n            </tbody>\n          </table>\n        </ion-scroll>\n      </div>\n      <init-position-scroll class="weekview-normal-event-container voj-normal-event-container" [initPosition]="initScrollPosition">\n        <table class="table table-bordered table-fixed weekview-normal-event-table table-striped-verticaly">\n          <tbody>\n            <tr *ngFor="let row of views[1].rows; let i = index">\n              <td class="calendar-hour-column text-center">\n                {{hourColumnLabels[i]}}\n              </td>\n              <td *ngFor="let tm of row" class="calendar-cell">\n              </td>\n            </tr>\n          </tbody>\n        </table>\n      </init-position-scroll>\n    </div>\n  </ion-slide>\n  <ion-slide [ngxOffsetContainer]="updateOffset$">\n    <div *ngIf="2===currentViewIndex">\n      <div\n        ngxOffsetSource="offsetHeight"\n        ngxOffsetValueType="px">\n        <weekview-header\n          [data]="views[2]"\n          (onSelect)="selectDay($event)">\n        </weekview-header>\n        <div class="weekview-allday-table voj-weekview-allday-table">\n          <div class="weekview-allday-label">{{allDayLabel}}</div>\n          <ion-scroll scrollY="true" class="weekview-allday-content-wrapper" zoom="false">\n            <table class="table table-fixed weekview-allday-content-table">\n              <tbody>\n                <tr>\n                  <td *ngFor="let day of views[2].dates" class="calendar-cell">\n                    <div [ngClass]="{\'calendar-event-wrap\': day.events}" *ngIf="day.events" [ngStyle]="{height: 25*day.events.length+\'px\'}">\n                      <div *ngFor="let displayEvent of day.events" class="calendar-event" tappable (click)="eventSelected(displayEvent.event)" [ngStyle]="{top: 25*displayEvent.position+\'px\', width: 100*(displayEvent.endIndex-displayEvent.startIndex)+\'%\', height: \'25px\'}">\n                        <template [ngTemplateOutlet]="weekviewAllDayEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n                        </template>\n                      </div>\n                    </div>\n                  </td>\n                </tr>\n              </tbody>\n            </table>\n          </ion-scroll>\n        </div>\n      </div>\n      <init-position-scroll\n        class="weekview-normal-event-container voj-normal-event-container"\n        [initPosition]="initScrollPosition"\n        [emitEvent]="preserveScrollPosition"\n        (onScroll)="setScrollPosition($event)"\n        ngxOffsetTarget="margin-top">\n        <table class="table table-bordered table-fixed weekview-normal-event-table table-striped-verticaly">\n          <tbody>\n            <tr *ngFor="let row of views[2].rows; let i = index">\n              <td class="calendar-hour-column text-center">\n                {{hourColumnLabels[i]}}\n              </td>\n              <td *ngFor="let tm of row" class="calendar-cell" tappable (click)="select(tm.time, tm.events)">\n                <div [ngClass]="{\'calendar-event-wrap\': tm.events}" *ngIf="tm.events">\n                  <div *ngFor="let displayEvent of tm.events" class="calendar-event" tappable (click)="eventSelected(displayEvent.event)" [ngStyle]="{top: (37*displayEvent.startOffset/hourParts)+\'px\',left: 100/displayEvent.overlapNumber*displayEvent.position+\'%\', width: 100/displayEvent.overlapNumber+\'%\', height: 37*(displayEvent.endIndex -displayEvent.startIndex - (displayEvent.endOffset + displayEvent.startOffset)/hourParts)+\'px\'}">\n                    <template [ngTemplateOutlet]="weekviewNormalEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n                    </template>\n                  </div>\n                </div>\n              </td>\n            </tr>\n          </tbody>\n        </table>\n      </init-position-scroll>\n    </div>\n    <div *ngIf="2!==currentViewIndex">\n      <div class="weekview-allday-table voj-weekview-allday-table">\n        <div class="weekview-allday-label">{{allDayLabel}}</div>\n        <ion-scroll scrollY="true" class="weekview-allday-content-wrapper" zoom="false">\n          <table class="table table-fixed weekview-allday-content-table">\n            <tbody>\n              <tr>\n                <td *ngFor="let day of views[2].dates" class="calendar-cell">\n                </td>\n              </tr>\n            </tbody>\n          </table>\n        </ion-scroll>\n      </div>\n      <init-position-scroll\n        class="weekview-normal-event-container voj-normal-event-container"\n        [initPosition]="initScrollPosition"\n        ngxOffsetTarget="margin-top">\n        <table class="table table-bordered table-fixed weekview-normal-event-table table-striped-verticaly">\n          <tbody>\n            <tr *ngFor="let row of views[2].rows; let i = index">\n              <td class="calendar-hour-column text-center">\n                {{hourColumnLabels[i]}}\n              </td>\n              <td *ngFor="let tm of row" class="calendar-cell">\n              </td>\n            </tr>\n          </tbody>\n        </table>\n      </init-position-scroll>\n    </div>\n  </ion-slide>\n</ion-slides>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/calendar/weekview/weekview.html"*/,
+            selector: 'weekview',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\calendar\weekview\weekview.html"*/'<ion-slides #weekSlider [loop]="true" [dir]="dir" (ionSlideDidChange)="onSlideChanged()">\n\n  <ion-slide [ngxOffsetContainer]="updateOffset$">\n\n    <div *ngIf="0===currentViewIndex">\n\n      <div\n\n        ngxOffsetSource="offsetHeight"\n\n        ngxOffsetValueType="px">\n\n        <weekview-header\n\n          [data]="views[0]"\n\n          (onSelect)="selectDay($event)">\n\n        </weekview-header>\n\n        <div class="weekview-allday-table voj-weekview-allday-table">\n\n          <div class="weekview-allday-label">{{allDayLabel}}</div>\n\n          <ion-scroll scrollY="true" class="weekview-allday-content-wrapper" zoom="false">\n\n            <table class="table table-fixed weekview-allday-content-table">\n\n              <tbody>\n\n                <tr>\n\n                  <td *ngFor="let day of views[0].dates" class="calendar-cell">\n\n                    <div [ngClass]="{\'calendar-event-wrap\': day.events}" *ngIf="day.events" [ngStyle]="{height: 25*day.events.length+\'px\'}">\n\n                      <div *ngFor="let displayEvent of day.events" class="calendar-event" tappable (click)="eventSelected(displayEvent.event)" [ngStyle]="{top: 25*displayEvent.position+\'px\', width: 100*(displayEvent.endIndex-displayEvent.startIndex)+\'%\', height: \'25px\'}">\n\n                        <template [ngTemplateOutlet]="weekviewAllDayEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n\n                        </template>\n\n                      </div>\n\n                    </div>\n\n                  </td>\n\n                </tr>\n\n              </tbody>\n\n            </table>\n\n          </ion-scroll>\n\n        </div>\n\n      </div>\n\n      <init-position-scroll\n\n        class="weekview-normal-event-container voj-normal-event-container"\n\n        [initPosition]="initScrollPosition"\n\n        [emitEvent]="preserveScrollPosition"\n\n        (onScroll)="setScrollPosition($event)"\n\n        ngxOffsetTarget="margin-top">\n\n        <table class="table table-bordered table-fixed weekview-normal-event-table table-striped-verticaly">\n\n          <tbody>\n\n            <tr *ngFor="let row of views[0].rows; let i = index">\n\n              <td class="calendar-hour-column text-center">\n\n                {{hourColumnLabels[i]}}\n\n              </td>\n\n              <td *ngFor="let tm of row; let rowIndex = index" class="calendar-cell" tappable (click)="select(tm.time, tm.events)">\n\n                <div [ngClass]="{\'calendar-event-wrap\': tm.events}" *ngIf="tm.events">\n\n                  <div *ngFor="let displayEvent of tm.events" class="calendar-event" tappable (click)="eventSelected(displayEvent.event)" [ngStyle]="{top: (37*displayEvent.startOffset/hourParts)+\'px\',left: 100/displayEvent.overlapNumber*displayEvent.position+\'%\', width: 100/displayEvent.overlapNumber+\'%\', height: 37*(displayEvent.endIndex -displayEvent.startIndex - (displayEvent.endOffset + displayEvent.startOffset)/hourParts)+\'px\'}">\n\n                    <template [ngTemplateOutlet]="weekviewNormalEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n\n                    </template>\n\n                  </div>\n\n                </div>\n\n              </td>\n\n            </tr>\n\n          </tbody>\n\n        </table>\n\n      </init-position-scroll>\n\n    </div>\n\n    <div *ngIf="0!==currentViewIndex">\n\n      <div class="weekview-allday-table voj-weekview-allday-table">\n\n        <div class="weekview-allday-label">{{allDayLabel}}</div>\n\n        <ion-scroll scrollY="true" class="weekview-allday-content-wrapper" zoom="false">\n\n          <table class="table table-fixed weekview-allday-content-table">\n\n            <tbody>\n\n              <tr>\n\n                <td *ngFor="let day of views[0].dates" class="calendar-cell">\n\n                </td>\n\n              </tr>\n\n            </tbody>\n\n          </table>\n\n        </ion-scroll>\n\n      </div>\n\n      <init-position-scroll class="weekview-normal-event-container voj-normal-event-container" [initPosition]="initScrollPosition">\n\n        <table class="table table-bordered table-fixed weekview-normal-event-table table-striped-verticaly">\n\n          <tbody>\n\n            <tr *ngFor="let row of views[0].rows; let i = index">\n\n              <td class="calendar-hour-column text-center">\n\n                {{hourColumnLabels[i]}}\n\n              </td>\n\n              <td *ngFor="let tm of row" class="calendar-cell">\n\n              </td>\n\n            </tr>\n\n          </tbody>\n\n        </table>\n\n      </init-position-scroll>\n\n    </div>\n\n  </ion-slide>\n\n  <ion-slide [ngxOffsetContainer]="updateOffset$">\n\n    <div *ngIf="1===currentViewIndex">\n\n      <div\n\n        ngxOffsetSource="offsetHeight"\n\n        ngxOffsetValueType="px">\n\n        <weekview-header\n\n          [data]="views[1]"\n\n          (onSelect)="selectDay($event)">\n\n        </weekview-header>\n\n        <div class="weekview-allday-table voj-weekview-allday-table">\n\n          <div class="weekview-allday-label">{{allDayLabel}}</div>\n\n          <ion-scroll scrollY="true" class="weekview-allday-content-wrapper" zoom="false">\n\n            <table class="table table-fixed weekview-allday-content-table">\n\n              <tbody>\n\n                <tr>\n\n                  <td *ngFor="let day of views[1].dates" class="calendar-cell">\n\n                    <div [ngClass]="{\'calendar-event-wrap\': day.events}" *ngIf="day.events" [ngStyle]="{height: 25*day.events.length+\'px\'}">\n\n                      <div *ngFor="let displayEvent of day.events" class="calendar-event" tappable (click)="eventSelected(displayEvent.event)" [ngStyle]="{top: 25*displayEvent.position+\'px\', width: 100*(displayEvent.endIndex-displayEvent.startIndex)+\'%\', height: \'25px\'}">\n\n                        <template [ngTemplateOutlet]="weekviewAllDayEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n\n                        </template>\n\n                      </div>\n\n                    </div>\n\n                  </td>\n\n                </tr>\n\n              </tbody>\n\n            </table>\n\n          </ion-scroll>\n\n        </div>\n\n      </div>\n\n      <init-position-scroll\n\n        class="weekview-normal-event-container voj-normal-event-container"\n\n        [initPosition]="initScrollPosition"\n\n        [emitEvent]="preserveScrollPosition"\n\n        (onScroll)="setScrollPosition($event)"\n\n        ngxOffsetTarget="margin-top">\n\n        <table class="table table-bordered table-fixed weekview-normal-event-table table-striped-verticaly">\n\n          <tbody>\n\n            <tr *ngFor="let row of views[1].rows; let i = index">\n\n              <td class="calendar-hour-column text-center">\n\n                {{hourColumnLabels[i]}}\n\n              </td>\n\n              <td *ngFor="let tm of row" class="calendar-cell" tappable (click)="select(tm.time, tm.events)">\n\n                <div [ngClass]="{\'calendar-event-wrap\': tm.events}" *ngIf="tm.events">\n\n                  <div *ngFor="let displayEvent of tm.events" class="calendar-event" tappable (click)="eventSelected(displayEvent.event)" [ngStyle]="{top: (37*displayEvent.startOffset/hourParts)+\'px\',left: 100/displayEvent.overlapNumber*displayEvent.position+\'%\', width: 100/displayEvent.overlapNumber+\'%\', height: 37*(displayEvent.endIndex -displayEvent.startIndex - (displayEvent.endOffset + displayEvent.startOffset)/hourParts)+\'px\'}">\n\n                    <template [ngTemplateOutlet]="weekviewNormalEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n\n                    </template>\n\n                  </div>\n\n                </div>\n\n              </td>\n\n            </tr>\n\n          </tbody>\n\n        </table>\n\n      </init-position-scroll>\n\n    </div>\n\n    <div *ngIf="1!==currentViewIndex">\n\n      <div class="weekview-allday-table voj-weekview-allday-table">\n\n        <div class="weekview-allday-label">{{allDayLabel}}</div>\n\n        <ion-scroll scrollY="true" class="weekview-allday-content-wrapper" zoom="false">\n\n          <table class="table table-fixed weekview-allday-content-table">\n\n            <tbody>\n\n              <tr>\n\n                <td *ngFor="let day of views[1].dates" class="calendar-cell">\n\n                </td>\n\n              </tr>\n\n            </tbody>\n\n          </table>\n\n        </ion-scroll>\n\n      </div>\n\n      <init-position-scroll class="weekview-normal-event-container voj-normal-event-container" [initPosition]="initScrollPosition">\n\n        <table class="table table-bordered table-fixed weekview-normal-event-table table-striped-verticaly">\n\n          <tbody>\n\n            <tr *ngFor="let row of views[1].rows; let i = index">\n\n              <td class="calendar-hour-column text-center">\n\n                {{hourColumnLabels[i]}}\n\n              </td>\n\n              <td *ngFor="let tm of row" class="calendar-cell">\n\n              </td>\n\n            </tr>\n\n          </tbody>\n\n        </table>\n\n      </init-position-scroll>\n\n    </div>\n\n  </ion-slide>\n\n  <ion-slide [ngxOffsetContainer]="updateOffset$">\n\n    <div *ngIf="2===currentViewIndex">\n\n      <div\n\n        ngxOffsetSource="offsetHeight"\n\n        ngxOffsetValueType="px">\n\n        <weekview-header\n\n          [data]="views[2]"\n\n          (onSelect)="selectDay($event)">\n\n        </weekview-header>\n\n        <div class="weekview-allday-table voj-weekview-allday-table">\n\n          <div class="weekview-allday-label">{{allDayLabel}}</div>\n\n          <ion-scroll scrollY="true" class="weekview-allday-content-wrapper" zoom="false">\n\n            <table class="table table-fixed weekview-allday-content-table">\n\n              <tbody>\n\n                <tr>\n\n                  <td *ngFor="let day of views[2].dates" class="calendar-cell">\n\n                    <div [ngClass]="{\'calendar-event-wrap\': day.events}" *ngIf="day.events" [ngStyle]="{height: 25*day.events.length+\'px\'}">\n\n                      <div *ngFor="let displayEvent of day.events" class="calendar-event" tappable (click)="eventSelected(displayEvent.event)" [ngStyle]="{top: 25*displayEvent.position+\'px\', width: 100*(displayEvent.endIndex-displayEvent.startIndex)+\'%\', height: \'25px\'}">\n\n                        <template [ngTemplateOutlet]="weekviewAllDayEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n\n                        </template>\n\n                      </div>\n\n                    </div>\n\n                  </td>\n\n                </tr>\n\n              </tbody>\n\n            </table>\n\n          </ion-scroll>\n\n        </div>\n\n      </div>\n\n      <init-position-scroll\n\n        class="weekview-normal-event-container voj-normal-event-container"\n\n        [initPosition]="initScrollPosition"\n\n        [emitEvent]="preserveScrollPosition"\n\n        (onScroll)="setScrollPosition($event)"\n\n        ngxOffsetTarget="margin-top">\n\n        <table class="table table-bordered table-fixed weekview-normal-event-table table-striped-verticaly">\n\n          <tbody>\n\n            <tr *ngFor="let row of views[2].rows; let i = index">\n\n              <td class="calendar-hour-column text-center">\n\n                {{hourColumnLabels[i]}}\n\n              </td>\n\n              <td *ngFor="let tm of row" class="calendar-cell" tappable (click)="select(tm.time, tm.events)">\n\n                <div [ngClass]="{\'calendar-event-wrap\': tm.events}" *ngIf="tm.events">\n\n                  <div *ngFor="let displayEvent of tm.events" class="calendar-event" tappable (click)="eventSelected(displayEvent.event)" [ngStyle]="{top: (37*displayEvent.startOffset/hourParts)+\'px\',left: 100/displayEvent.overlapNumber*displayEvent.position+\'%\', width: 100/displayEvent.overlapNumber+\'%\', height: 37*(displayEvent.endIndex -displayEvent.startIndex - (displayEvent.endOffset + displayEvent.startOffset)/hourParts)+\'px\'}">\n\n                    <template [ngTemplateOutlet]="weekviewNormalEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n\n                    </template>\n\n                  </div>\n\n                </div>\n\n              </td>\n\n            </tr>\n\n          </tbody>\n\n        </table>\n\n      </init-position-scroll>\n\n    </div>\n\n    <div *ngIf="2!==currentViewIndex">\n\n      <div class="weekview-allday-table voj-weekview-allday-table">\n\n        <div class="weekview-allday-label">{{allDayLabel}}</div>\n\n        <ion-scroll scrollY="true" class="weekview-allday-content-wrapper" zoom="false">\n\n          <table class="table table-fixed weekview-allday-content-table">\n\n            <tbody>\n\n              <tr>\n\n                <td *ngFor="let day of views[2].dates" class="calendar-cell">\n\n                </td>\n\n              </tr>\n\n            </tbody>\n\n          </table>\n\n        </ion-scroll>\n\n      </div>\n\n      <init-position-scroll\n\n        class="weekview-normal-event-container voj-normal-event-container"\n\n        [initPosition]="initScrollPosition"\n\n        ngxOffsetTarget="margin-top">\n\n        <table class="table table-bordered table-fixed weekview-normal-event-table table-striped-verticaly">\n\n          <tbody>\n\n            <tr *ngFor="let row of views[2].rows; let i = index">\n\n              <td class="calendar-hour-column text-center">\n\n                {{hourColumnLabels[i]}}\n\n              </td>\n\n              <td *ngFor="let tm of row" class="calendar-cell">\n\n              </td>\n\n            </tr>\n\n          </tbody>\n\n        </table>\n\n      </init-position-scroll>\n\n    </div>\n\n  </ion-slide>\n\n</ion-slides>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\calendar\weekview\weekview.html"*/,
             styles: [
                 "\n      .table-fixed {\n        table-layout: fixed;\n      }\n      .table {\n        width: 100%;\n        max-width: 100%;\n        background-color: transparent;\n      }\n      .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td,\n      .table > tbody > tr > td, .table > tfoot > tr > td {\n        padding: 8px;\n        line-height: 20px;\n        vertical-align: top;\n      }\n      .table > thead > tr > th {\n        vertical-align: bottom;\n        border-bottom: 2px solid #ddd;\n      }\n      .table > thead:first-child > tr:first-child > th, .table > thead:first-child > tr:first-child > td {\n        border-top: 0\n      }\n      .table > tbody + tbody {\n        border-top: 2px solid #ddd;\n      }\n      .table-bordered {\n        border: 1px solid #ddd;\n      }\n      .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th,\n      .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {\n        border: 1px solid #ddd;\n      }\n      .table-bordered > thead > tr > th, .table-bordered > thead > tr > td {\n        border-bottom-width: 2px;\n      }\n      .table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {\n        background-color: #f9f9f9\n      }\n      .calendar-hour-column {\n        width: 50px;\n        white-space: nowrap;\n      }\n      .calendar-event-wrap {\n        position: relative;\n        width: 100%;\n        height: 100%;\n      }\n      .calendar-event {\n        position: absolute;\n        padding: 2px;\n        cursor: pointer;\n        z-index: 10000;\n      }\n      .calendar-cell {\n        padding: 0 !important;\n        height: 37px;\n      }\n      .weekview-allday-label {\n        float: left;\n        height: 100%;\n        line-height: 50px;\n        text-align: center;\n        width: 50px;\n      }\n      [dir=\"rtl\"] .weekview-allday-label {\n          float: right;\n          border-right: 1px solid #ddd;\n      }\n      .weekview-allday-content-wrapper {\n        margin-left: 50px;\n        overflow: hidden;\n        height: 51px;\n      }\n      [dir=\"rtl\"] .weekview-allday-content-wrapper {\n        margin-left: 0;\n        margin-right: 50px;\n      }\n      .weekview-allday-content-table {\n        min-height: 50px;\n      }\n      .weekview-allday-content-table td {\n        border-left: 1px solid #ddd;\n        border-right: 1px solid #ddd;\n      }\n      .weekview-header th {\n        overflow: hidden;\n        white-space: nowrap;\n        font-size: 14px;\n      }\n      .weekview-allday-table {\n        height: 50px;\n        position: relative;\n        border-bottom: 1px solid #ddd;\n        font-size: 14px;\n      }\n      .weekview-normal-event-container {\n        margin-top: 87px;\n        overflow: hidden;\n        left: 0;\n        right: 0;\n        top: 0;\n        bottom: 0;\n        position: absolute;\n        font-size: 14px;\n      }\n      .weekview .slide-zoom {\n        height: 100%;\n      }\n      .weekview-allday-content-wrapper scroll-content {\n        width: 100%;\n      }\n      ::-webkit-scrollbar,\n      *::-webkit-scrollbar {\n        display: none;\n      }\n      .table > tbody > tr > td.calendar-hour-column {\n        padding-left: 0;\n        padding-right: 0;\n        vertical-align: middle;\n      }\n      @media (max-width: 750px) {\n        .weekview-allday-label, .calendar-hour-column {\n          width: 31px;\n          font-size: 12px;\n        }\n        .weekview-allday-label {\n          padding-top: 4px;\n        }\n        .table > tbody > tr > td.calendar-hour-column {\n          padding-left: 0;\n          padding-right: 0;\n          vertical-align: middle;\n          line-height: 12px;\n        }\n        .table > thead > tr > th.weekview-header {\n          padding-left: 0;\n          padding-right: 0;\n          font-size: 12px;\n        }\n        .weekview-allday-label {\n          line-height: 20px;\n        }\n        .weekview-allday-content-wrapper {\n          margin-left: 31px;\n        }\n        [dir=\"rtl\"] .weekview-allday-content-wrapper {\n          margin-left: 0;\n          margin-right: 31px;\n        }\n      }\n    ",
                 "\n      calendar weekview init-position-scroll.weekview-normal-event-container.voj-normal-event-container {\n        margin-top: 72px;\n      }\n      .voj-normal-event-container .calendar-event {\n        padding: 0;\n      }\n      .voj-weekview-allday-table {\n        // border: none;\n      }\n    "
@@ -5817,7 +5493,269 @@ var WeekViewComponent = (function () {
 
 /***/ }),
 
-/***/ 371:
+/***/ 37:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HttpRequestProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_timeout__ = __webpack_require__(662);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_timeout___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_timeout__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(669);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_finally__ = __webpack_require__(670);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_finally___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_finally__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(1);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var TIME_OUT_PERIOD = 120000;
+/*
+  Generated class for the HttpRequestProvider provider.
+
+  See https://angular.io/docs/ts/latest/guide/dependency-injection.html
+  for more info on providers and Angular DI.
+*/
+var HttpRequestProvider = (function () {
+    function HttpRequestProvider(http, toastCtrl, loadingCtrl) {
+        this.http = http;
+        this.toastCtrl = toastCtrl;
+        this.loadingCtrl = loadingCtrl;
+        console.log('Hello HttpRequestProvider Provider');
+        HttpRequestProvider_1.toastCtrl = this.toastCtrl;
+        HttpRequestProvider_1.loading = this.loadingCtrl;
+    }
+    HttpRequestProvider_1 = HttpRequestProvider;
+    /**
+     * Shows error message
+     * @param error
+     * @returns {Promise<any>}
+     */
+    HttpRequestProvider.prototype.handleError = function (error) {
+        console.error('An error occurred', error); // for demo purposes only
+        var vojMessage = HttpRequestProvider_1.getErrMessage(error, HttpRequestProvider_1.senderClassName);
+        HttpRequestProvider_1.presentErrToast(vojMessage);
+        //TODO send email to notify us
+        var errorObject = { success: false, error: error.message || error };
+        return Promise.reject(errorObject);
+    };
+    /**
+     * Send a callOut request via http post method
+     * @param payload
+     * @param classObject
+     * @param silentMode
+     * @returns {Observable<T>}
+     */
+    HttpRequestProvider.prototype.sendCallOut = function (payload, classObject, silentMode) {
+        var newTimeOutPeriod = 0;
+        var silentLadingToast = this.toastCtrl.create();
+        //
+        if (silentMode !== true) {
+            HttpRequestProvider_1.presentLoading();
+            newTimeOutPeriod = TIME_OUT_PERIOD;
+        }
+        else {
+            //silent mode : waiting for more time..
+            newTimeOutPeriod = TIME_OUT_PERIOD * 10;
+            silentLadingToast = HttpRequestProvider_1.presentSilentLoadingToast("En cours de chargement des données...", newTimeOutPeriod, 'top');
+        }
+        // Getting service class name
+        HttpRequestProvider_1.senderClassName = (classObject) ? classObject.constructor.name : "";
+        // Sending request
+        var options = HttpRequestProvider_1.getHttpJsonHeaders();
+        return this.http.post(HttpRequestProvider_1.calloutURL, JSON.stringify(payload), options)
+            .map(function (res) { return res.json(); })
+            .timeout(newTimeOutPeriod)
+            .catch(this.handleError)
+            .finally(function () {
+            try {
+                if (HttpRequestProvider_1.loaderComponent)
+                    HttpRequestProvider_1.loaderComponent.dismiss();
+                if (silentLadingToast)
+                    silentLadingToast.onDidDismiss(function () {
+                        console.log('Dismissed toast');
+                    });
+            }
+            catch (error) {
+                console.log(error);
+            }
+        });
+    };
+    /**
+     * Calls a specific web service given the URL and payload
+     * @param payload
+     * @param url
+     * @param classObject
+     * @param silentMode
+     * @returns {Observable<T>}
+     */
+    HttpRequestProvider.prototype.call = function (payload, url, classObject, silentMode) {
+        var newTimeOutPeriod = 0;
+        var silentLadingToast = this.toastCtrl.create();
+        if (silentMode !== true) {
+            HttpRequestProvider_1.presentLoading();
+            newTimeOutPeriod = TIME_OUT_PERIOD;
+        }
+        else {
+            //silent mode : waiting for more time..
+            newTimeOutPeriod = TIME_OUT_PERIOD * 10;
+            if (!HttpRequestProvider_1.isToastEntered) {
+                // TEL present new tost if and if only the last toast is dismissed..
+                silentLadingToast = HttpRequestProvider_1.presentSilentLoadingToast("En cours de chargement des données...", newTimeOutPeriod, 'top');
+                HttpRequestProvider_1.isToastEntered = true;
+            }
+        }
+        // Getting service class name
+        HttpRequestProvider_1.senderClassName = (classObject) ? classObject.constructor.name : "";
+        // Sending request
+        var options = HttpRequestProvider_1.getHttpJsonHeaders();
+        return this.http.post(url, JSON.stringify(payload), options)
+            .map(function (res) { return res.json(); })
+            .timeout(newTimeOutPeriod)
+            .catch(this.handleError)
+            .finally(function () {
+            if (HttpRequestProvider_1.loaderComponent)
+                HttpRequestProvider_1.loaderComponent.dismiss();
+            if (silentLadingToast) {
+                silentLadingToast.dismissAll();
+            }
+        });
+    };
+    HttpRequestProvider.getHttpJsonHeaders = function () {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
+        var options = { headers: headers };
+        options.headers.append("Content-Type", 'application/json');
+        //if (GlobalConfigs.env === 'PROD')
+        options.headers.append("Authorization", 'Basic dm9qYWRtaW46NG5ncmFNNDFueXU=');
+        return options;
+    };
+    HttpRequestProvider.getHttpTextHeaders = function () {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
+        headers.append("Content-Type", 'text/plain');
+        /*if (GlobalConfigs.env === 'PROD')
+            headers.append("Authorization", 'Basic aGFkZXM6NWV0Y2Fy');*/
+        return headers;
+    };
+    HttpRequestProvider.getHttpXmlHeaders = function () {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
+        headers.append("Content-Type", 'text/xml');
+        /*if (GlobalConfigs.env === 'PROD')
+            headers.append("Authorization", 'Basic aGFkZXM6NWV0Y2Fy');*/
+        return headers;
+    };
+    /**
+     * Show a red toast that contains error message
+     * @param message
+     * @param duration
+     * @param position
+     */
+    HttpRequestProvider.presentErrToast = function (message, duration, position) {
+        if (!duration)
+            duration = 5;
+        var toast = this.toastCtrl.create({
+            message: message,
+            position: position,
+            dismissOnPageChange: true,
+            showCloseButton: true,
+            closeButtonText: "Ok",
+            duration: duration * 1000
+        });
+        toast.present();
+        // Change toast color to red
+        var toastElement = document.getElementsByClassName('toast-wrapper toast-bottom');
+        if (toastElement && toastElement.length > 0)
+            toastElement[0].style.background = "#E8384F";
+    };
+    /**
+     * Show a normal toast that contains silent loading message
+     * @param message
+     * @param duration
+     * @param position
+     */
+    HttpRequestProvider.presentSilentLoadingToast = function (message, duration, position) {
+        var toast = this.toastCtrl.create({
+            message: message,
+            position: position,
+            dismissOnPageChange: false,
+            showCloseButton: true,
+            closeButtonText: "Ok",
+            duration: duration
+        });
+        toast.present();
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+            HttpRequestProvider_1.isToastEntered = false;
+        });
+        return toast;
+    };
+    /**
+     * Present Loading component while the treatment of request
+     */
+    HttpRequestProvider.presentLoading = function () {
+        try {
+            HttpRequestProvider_1.loaderComponent = HttpRequestProvider_1.loading.create({ content: "Merci de patienter..." });
+            HttpRequestProvider_1.loaderComponent.present();
+        }
+        catch (error) {
+            console.log(error);
+        }
+    };
+    /**
+     * Get error message from status code
+     * @param error
+     * @param senderClassName
+     * @returns {string}
+     */
+    HttpRequestProvider.getErrMessage = function (error, senderClassName) {
+        if (error.message === "timeout") {
+            error.status = -100;
+        }
+        switch (~~(error.status / 100)) {
+            case 0:
+                // General error with status 0: http://stackoverflow.com/a/26451773/2936049
+                return "0 • Problème sur serveur, merci de réessayer ultérieurement. (" + senderClassName + ")";
+            case 4:
+                // 4xx: client type error
+                return "4 • Merci de vérifier votre connexion internet et réessayer ultérieurement. (" + senderClassName + ")";
+            case 5:
+                // 5xx: server type error
+                return "5 • Problème sur serveur, merci de réessayer ultérieurement. (" + senderClassName + ")";
+            case -1:
+                // TimeOut error specified by us. See cont variable TIME_OUT_PERIOD
+                return "-1 • Merci de vérifier votre connexion internet et réessayer ultérieurement. (" + senderClassName + ")";
+            default:
+                // Other problems...
+                return "• Merci de vérifier votre connexion internet et réessayer ultérieurement. (" + senderClassName + ")";
+        }
+    };
+    HttpRequestProvider.isToastEntered = false;
+    HttpRequestProvider.calloutURL = "http://localhost:8000/search/";
+    HttpRequestProvider = HttpRequestProvider_1 = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */], __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["t" /* ToastController */], __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["j" /* LoadingController */]])
+    ], HttpRequestProvider);
+    return HttpRequestProvider;
+    var HttpRequestProvider_1;
+}());
+
+//# sourceMappingURL=http-request.js.map
+
+/***/ }),
+
+/***/ 370:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5851,7 +5789,7 @@ var CalendarModePopoverPage = (function () {
         this.viewCtrl.dismiss({ mode: mode });
     };
     CalendarModePopoverPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/calendar/mode-popover/calendar-mode.popover.html"*/'<ng-container *ngIf="menuTemplate != null; else defaultTemplate">\n	<ng-container *ngTemplateOutlet="menuTemplate; context: menuTemplateContext">\n	</ng-container>\n</ng-container>\n<ng-template #defaultTemplate>\n	<ion-list>\n		<ion-list-header>Calendar mode</ion-list-header>\n		<button ion-item (click)="changeMode(\'month\')">Month view</button>\n		<button ion-item (click)="changeMode(\'week\')">Week view</button>\n		<button ion-item (click)="changeMode(\'day\')">Day view</button>\n	</ion-list>\n</ng-template>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/calendar/mode-popover/calendar-mode.popover.html"*/,
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\calendar\mode-popover\calendar-mode.popover.html"*/'<ng-container *ngIf="menuTemplate != null; else defaultTemplate">\n\n	<ng-container *ngTemplateOutlet="menuTemplate; context: menuTemplateContext">\n\n	</ng-container>\n\n</ng-container>\n\n<ng-template #defaultTemplate>\n\n	<ion-list>\n\n		<ion-list-header>Calendar mode</ion-list-header>\n\n		<button ion-item (click)="changeMode(\'month\')">Month view</button>\n\n		<button ion-item (click)="changeMode(\'week\')">Week view</button>\n\n		<button ion-item (click)="changeMode(\'day\')">Day view</button>\n\n	</ion-list>\n\n</ng-template>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\calendar\mode-popover\calendar-mode.popover.html"*/,
             styles: [
                 "\n\t\t\tion-list {\n\t\t\t\tmargin-bottom: 0;\n\t\t\t}\n\t\t\t.item-block:last-child {\n\t\t\t\tborder-bottom: none;\n\t\t\t}\n\t\t"
             ]
@@ -5866,7 +5804,7 @@ var CalendarModePopoverPage = (function () {
 
 /***/ }),
 
-/***/ 372:
+/***/ 371:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5881,7 +5819,7 @@ var Step;
 
 /***/ }),
 
-/***/ 373:
+/***/ 372:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5907,7 +5845,7 @@ var PopoverPage = (function () {
         this.viewCtrl.dismiss({ mode: mode });
     };
     PopoverPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/smart-calendar/components/voj-popover.page.html"*/'<ion-list>\n	<ion-list-header>Calendar component</ion-list-header>\n	<button ion-item (click)="changeMode(\'day\')">Day view</button>\n	<button ion-item (click)="changeMode(\'month\')">Month view</button>\n	<button ion-item (click)="changeMode(\'week\')">Week view</button>\n</ion-list>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/smart-calendar/components/voj-popover.page.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\smart-calendar\components\voj-popover.page.html"*/'<ion-list>\n\n	<ion-list-header>Calendar component</ion-list-header>\n\n	<button ion-item (click)="changeMode(\'day\')">Day view</button>\n\n	<button ion-item (click)="changeMode(\'month\')">Month view</button>\n\n	<button ion-item (click)="changeMode(\'week\')">Week view</button>\n\n</ion-list>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\smart-calendar\components\voj-popover.page.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["u" /* ViewController */]])
     ], PopoverPage);
@@ -5918,7 +5856,7 @@ var PopoverPage = (function () {
 
 /***/ }),
 
-/***/ 376:
+/***/ 375:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5926,14 +5864,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DesktopCalendarModule", function() { return DesktopCalendarModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__desktop_calendar__ = __webpack_require__(805);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular_calendar__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng_bootstrap_ng_bootstrap__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__desktop_calendar__ = __webpack_require__(803);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular_calendar__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng_bootstrap_ng_bootstrap__ = __webpack_require__(188);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_forms__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser_animations__ = __webpack_require__(845);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_custom_title_formatter__ = __webpack_require__(847);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_demo_utils_module__ = __webpack_require__(848);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser_animations__ = __webpack_require__(843);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_custom_title_formatter__ = __webpack_require__(845);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_demo_utils_module__ = __webpack_require__(846);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5995,7 +5933,7 @@ var DesktopCalendarModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EventBusProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_event_model__ = __webpack_require__(674);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_event_model__ = __webpack_require__(672);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6110,7 +6048,61 @@ var EventBusProvider = (function () {
 
 /***/ }),
 
-/***/ 44:
+/***/ 47:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return StringUtils; });
+/* unused harmony export ArrayUtils */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ObjectUtils; });
+var StringUtils = (function () {
+    function StringUtils() {
+    }
+    StringUtils.preventNull = function (str) {
+        if (ObjectUtils.isEmpty(str)) {
+            return "";
+        }
+        else {
+            return str;
+        }
+    };
+    return StringUtils;
+}());
+
+var ArrayUtils = (function () {
+    function ArrayUtils() {
+    }
+    return ArrayUtils;
+}());
+
+var ObjectUtils = (function () {
+    function ObjectUtils() {
+    }
+    ObjectUtils.isEmpty = function (obj) {
+        if (obj == "" || obj == null || !obj || obj.length == 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
+    /**
+     * Checking if at least one field is filled
+     */
+    ObjectUtils.isFormNotEmpty = function (fields) {
+        return fields.some(this.isFieldNotEmpty);
+    };
+    ObjectUtils.isFieldNotEmpty = function (element, index, array) {
+        return !ObjectUtils.isEmpty(element.value);
+    };
+    return ObjectUtils;
+}());
+
+//# sourceMappingURL=utils.js.map
+
+/***/ }),
+
+/***/ 51:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6179,61 +6171,7 @@ var ModalService = (function () {
 
 /***/ }),
 
-/***/ 48:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return StringUtils; });
-/* unused harmony export ArrayUtils */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ObjectUtils; });
-var StringUtils = (function () {
-    function StringUtils() {
-    }
-    StringUtils.preventNull = function (str) {
-        if (ObjectUtils.isEmpty(str)) {
-            return "";
-        }
-        else {
-            return str;
-        }
-    };
-    return StringUtils;
-}());
-
-var ArrayUtils = (function () {
-    function ArrayUtils() {
-    }
-    return ArrayUtils;
-}());
-
-var ObjectUtils = (function () {
-    function ObjectUtils() {
-    }
-    ObjectUtils.isEmpty = function (obj) {
-        if (obj == "" || obj == null || !obj || obj.length == 0) {
-            return true;
-        }
-        else {
-            return false;
-        }
-    };
-    /**
-     * Checking if at least one field is filled
-     */
-    ObjectUtils.isFormNotEmpty = function (fields) {
-        return fields.some(this.isFieldNotEmpty);
-    };
-    ObjectUtils.isFieldNotEmpty = function (element, index, array) {
-        return !ObjectUtils.isEmpty(element.value);
-    };
-    return ObjectUtils;
-}());
-
-//# sourceMappingURL=utils.js.map
-
-/***/ }),
-
-/***/ 551:
+/***/ 550:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6261,7 +6199,7 @@ var VojMenu = (function () {
     VojMenu = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'voj-menu',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-menu/voj-menu.html"*/'<ion-list>\n	<ion-list-header>Menu</ion-list-header>\n	<button full icon-left ion-item *ngFor="let item of paramsMenu" (click)="item.action()">\n		<ion-icon [name]="item.icon"></ion-icon>\n		{{ item.label }}\n	</button>\n</ion-list>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-menu/voj-menu.html"*/,
+            selector: 'voj-menu',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-menu\voj-menu.html"*/'<ion-list>\n\n	<ion-list-header>Menu</ion-list-header>\n\n	<button full icon-left ion-item *ngFor="let item of paramsMenu" (click)="item.action()">\n\n		<ion-icon [name]="item.icon"></ion-icon>\n\n		{{ item.label }}\n\n	</button>\n\n</ion-list>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-menu\voj-menu.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
     ], VojMenu);
@@ -6272,7 +6210,7 @@ var VojMenu = (function () {
 
 /***/ }),
 
-/***/ 552:
+/***/ 551:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6287,14 +6225,14 @@ var VojMapModel = (function () {
 
 /***/ }),
 
-/***/ 553:
+/***/ 552:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchDTOFactory; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__search_dto_jobyer__ = __webpack_require__(864);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search_dto_employer__ = __webpack_require__(865);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__search_dto_jobyer__ = __webpack_require__(862);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search_dto_employer__ = __webpack_require__(863);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -6330,7 +6268,7 @@ var SearchDTOFactory = (function () {
 
 /***/ }),
 
-/***/ 554:
+/***/ 553:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6345,7 +6283,7 @@ var SegmentType = (function () {
 
 /***/ }),
 
-/***/ 557:
+/***/ 556:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6409,58 +6347,7 @@ var SignupService = (function () {
 
 /***/ }),
 
-/***/ 558:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojNotification; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var VojNotification = (function () {
-    function VojNotification(params) {
-        this.params = params;
-        this.data = this.params.get('data');
-    }
-    VojNotification.prototype.setModalHeight = function () {
-        // Content window
-        var vojContents = document.getElementsByClassName('voj-content');
-        var modalContent = vojContents[vojContents.length - 1];
-        console.log(modalContent.clientHeight);
-        // Modal window
-        var modalWrapper = document.getElementsByClassName('modal-wrapper')[0];
-        console.log(modalWrapper.clientHeight);
-        // Set height and show modal
-        modalWrapper.style.display = 'block';
-        modalWrapper.style.height = modalContent.clientHeight + 60 + 'px';
-    };
-    VojNotification.prototype.ionViewDidLoad = function () {
-        this.setModalHeight();
-    };
-    VojNotification = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'voj-notification',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-notification/voj-notification.html"*/'<div class="voj-content">\n    <!-- Title -->\n    <h1 class="voj-notification-title" *ngIf="(data.icon && data.icon.length > 0) || (data.title && data.title.length > 0)">\n        <ion-icon name="{{ data.icon }}" *ngIf="data.icon && data.icon.length > 0"></ion-icon>\n        {{ data.title | translate }}\n    </h1>\n\n    <!-- Message -->\n    <div class="voj-notification-message">\n        <p>{{ data.message | translate }}</p>\n    </div>\n\n    <!-- Buttons -->\n    <div class="voj-notification-buttons">\n        <button id="{{ button.id }}" ion-button icon-left clear navPop *ngFor="let button of data.buttons" (click)="button.action()">\n            <ion-icon name="{{ button.icon }}"></ion-icon>\n            {{ button.label | translate }}\n        </button>\n    </div>\n</div>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-notification/voj-notification.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
-    ], VojNotification);
-    return VojNotification;
-}());
-
-//# sourceMappingURL=voj-notification.js.map
-
-/***/ }),
-
-/***/ 559:
+/***/ 557:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6671,6 +6558,236 @@ var md5 = function (string) {
 
 /***/ }),
 
+/***/ 558:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ResetPasswordPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_account_service_account_service__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_masterdata_service_masterdata_service__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(1);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var ResetPasswordPage = (function () {
+    function ResetPasswordPage(accountService, configurationService, masterdataService, viewCtrl, alertCtrl) {
+        var _this = this;
+        this.accountService = accountService;
+        this.configurationService = configurationService;
+        this.masterdataService = masterdataService;
+        this.viewCtrl = viewCtrl;
+        this.alertCtrl = alertCtrl;
+        this.config = this.configurationService.configuration;
+        this.dataPageHeader = {
+            title: 'Mot de passe oublié',
+            actions: [],
+            style: 'any',
+            isCanceled: true
+        };
+        // Set radio form data
+        this.radioFormData = {
+            title: '',
+            fields: [
+                {
+                    type: 'radio',
+                    value: 'sms',
+                    label: '',
+                    dataset: [
+                        { id: 1, key: 'RESET_PASSWORD.SMS_BTN', value: 'sms' },
+                        { id: 2, key: 'RESET_PASSWORD.MAIL_BTN', value: 'mail' }
+                    ],
+                    required: true,
+                    visible: true,
+                    id: '',
+                    name: 'radioType'
+                }
+            ]
+        };
+        // Phone
+        this.phoneFormData = {
+            title: '',
+            fields: [
+                // Phone code
+                {
+                    type: 'select',
+                    value: null,
+                    label: 'FORM.COUNTRY_CODE',
+                    dataset: [],
+                    required: true,
+                    visible: true,
+                    id: 'phone-code-field',
+                    name: 'code'
+                },
+                {
+                    //placeholder: 'PLACEHOLDER.ENTER_PHONE',
+                    type: 'tel',
+                    value: '',
+                    label: 'FORM.PHONE',
+                    required: true,
+                    readonly: false,
+                    visible: true,
+                    id: 'phone-field',
+                    min: 9,
+                    max: 10,
+                    regex: '^(06|07)[0-9]*$',
+                    name: 'userPhone',
+                    validationMsg: 'VALIDATION.PHONE_VALIDATION_MSG',
+                    action: function () {
+                        // Hide error
+                        _this.hideError();
+                    }
+                }
+            ],
+            submit: {
+                id: '',
+                icon: '',
+                label: 'RESET_PASSWORD.VALIDATE_BTN',
+                action: function () {
+                    console.log('Check user phone.');
+                    //this.checkUserData('telephone number');
+                    var code = _this.phoneFormData.fields.filter(function (f) { return f.name === "code"; })[0].value;
+                    var phone = _this.phoneFormData.fields.filter(function (f) { return f.name === "userPhone"; })[0].value;
+                    var phoneWithCode = "+" + code + phone.substr(phone.length - 9);
+                    _this.accountService.sendPassword(phoneWithCode, "").then(function (data) {
+                        if (data.status == "success") {
+                            _this.viewCtrl.dismiss().then(function () {
+                                _this.presentConfirmation("sms");
+                            });
+                        }
+                        else {
+                            _this.presentError(data.code, "sms");
+                        }
+                    });
+                }
+            }
+        };
+        // Mail
+        this.mailFormData = {
+            title: '',
+            fields: [
+                {
+                    //placeholder: 'PLACEHOLDER.ENTER_MAIL',
+                    type: 'mail',
+                    value: '',
+                    label: 'FORM.EMAIL',
+                    required: true,
+                    readonly: false,
+                    visible: true,
+                    name: 'userEmail',
+                    id: 'user-mail',
+                    min: 5,
+                    validationMsg: 'VALIDATION.EMAIL_VALIDATION_MSG',
+                    regex: '^(([^<>()\\[\\]\\\\.,;:\\s@"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@"]+)*)|(".+"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$',
+                    action: function () {
+                        // Hide error
+                        _this.hideError();
+                    }
+                }
+            ],
+            submit: {
+                id: '',
+                icon: '',
+                label: 'RESET_PASSWORD.VALIDATE_BTN',
+                action: function () {
+                    console.log('Check user email.');
+                    //this.checkUserData('e-mail address');
+                    _this.accountService.sendPassword("", _this.mailFormData.fields[0].value).then(function (data) {
+                        if (data.status == "success") {
+                            _this.viewCtrl.dismiss().then(function () {
+                                _this.presentConfirmation("mail");
+                            });
+                        }
+                        else {
+                            _this.presentError(data.code, "mail");
+                        }
+                    });
+                }
+            }
+        };
+        // Error init
+        this.isErrorShown = false;
+    }
+    ResetPasswordPage.prototype.ngOnInit = function () {
+        var _this = this;
+        //load phone code list
+        this.masterdataService.loadCountriesList().then(function (data) {
+            //set dataset of phone codes of the form
+            _this.phoneFormData.fields.filter(function (f) { return f.name === "code"; })[0].dataset = _this.masterdataService.convertCountriesListToDataset(data);
+            //the default phone code is France code (33)
+            _this.phoneFormData.fields.filter(function (f) { return f.name === "code"; })[0].value = "33";
+        });
+    };
+    ResetPasswordPage.prototype.checkUserData = function (type) {
+        // Hide error if shown
+        if (this.isErrorShown === true) {
+            this.hideError();
+        }
+        // Show error
+        //this.presentError(type);
+    };
+    ResetPasswordPage.prototype.presentError = function (msg, type) {
+        // Show only one error message
+        if (this.isErrorShown === true) {
+            return;
+        }
+        this.isErrorShown = true;
+        var errorDiv = document.createElement('div');
+        errorDiv.setAttribute('id', 'voj-error-msg');
+        errorDiv.innerHTML = '<p>' + msg + '</p>';
+        errorDiv.className = 'voj-validation-error-msg';
+        var parentId = (type === 'sms' ? '2' : '3');
+        document.getElementById(parentId).appendChild(errorDiv);
+    };
+    ResetPasswordPage.prototype.hideError = function () {
+        // Hide error if it exists
+        if (this.isErrorShown === false) {
+            return;
+        }
+        if (document.getElementById('voj-error-msg')) {
+            document.getElementById('voj-error-msg').remove();
+        }
+        this.isErrorShown = false;
+    };
+    ResetPasswordPage.prototype.presentConfirmation = function (method) {
+        console.log('Show Present Confirmation modal.');
+        //TODO: this should be translated
+        var alert = this.alertCtrl.create({
+            subTitle: 'Votre mot de passe a bien été réinitialisé. Dans quelques minutes, vous recevrez un mot de passe temporaire.',
+            cssClass: '',
+            buttons: ['OK']
+        });
+        alert.present();
+    };
+    ResetPasswordPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'reset-password-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\account-module\reset-password\reset-password.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n\n\n<div class="voj-content">\n\n  <div class="voj-form-container">\n\n\n\n    <h2>{{ \'RESET_PASSWORD.MESSAGE\' | translate }}</h2>\n\n\n\n    <!-- Form for radio -->\n\n    <voj-form [data]=\'radioFormData\'></voj-form>\n\n\n\n    <!-- Form for phone -->\n\n    <voj-form [data]=\'phoneFormData\' *ngIf="radioFormData.fields[0].value === \'sms\'"></voj-form>\n\n\n\n    <!-- Form for mail -->\n\n    <voj-form [data]=\'mailFormData\' *ngIf="radioFormData.fields[0].value === \'mail\'"></voj-form>\n\n\n\n  </div>\n\n</div>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\account-module\reset-password\reset-password.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_account_service_account_service__["a" /* AccountService */],
+            __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__["a" /* Configuration */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_masterdata_service_masterdata_service__["a" /* MasterdataService */],
+            __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["u" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["b" /* AlertController */]])
+    ], ResetPasswordPage);
+    return ResetPasswordPage;
+}());
+
+//# sourceMappingURL=reset-password.js.map
+
+/***/ }),
+
 /***/ 56:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -6678,16 +6795,16 @@ var md5 = function (string) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_page_header_model__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_search_service_search_service__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_page_header_model__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_search_service_search_service__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_voj_events_voj_events__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__details_details__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__details_details__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_modal_service__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_geolocation__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_modal_service__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_geolocation__ = __webpack_require__(214);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__information_resume_information_resume__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__config_environment__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__config_environment__ = __webpack_require__(164);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__account_module_login_login__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_storage__ = __webpack_require__(21);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -7260,7 +7377,7 @@ var SearchPage = (function () {
     SearchPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-search',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/search-module/search/search.html"*/'<ion-header no-border>\n  <voj-page-header [data]="pageHeader"></voj-page-header>\n</ion-header>\n<ion-content padding class="search-page-content">\n  <voj-search-header (searchType)="handleSearchType($event)" [criteria-mode]="false" [data]="searchHeaderData"></voj-search-header>\n  <ion-segment [(ngModel)]="sortType" color="primary" (ionChange)="doSort($event)"  [ngStyle]="mobileStyle">\n    <ion-segment-button value="pertinence">\n      Pertinence\n    </ion-segment-button>\n    <ion-segment-button value="distance">\n      Proximité\n    </ion-segment-button>\n  </ion-segment>\n  <voj-map [data]="cards" *ngIf="gmapView"></voj-map>\n  <div class="search-warning-message" padding *ngIf="cards && !cards.length>0">{{emptyResults}}</div>\n  <div class="search-info-message" padding *ngIf="cards && cards.length>0">{{cards.length}} résultat(s) trouvé(s)</div>\n\n  <voj-card [hidden]="gmapView" *ngFor="let c of cards" [data]="c" [vojData]="cards" mode="reduced" ></voj-card>\n\n  <ion-infinite-scroll (ionInfinite)="loadMoreCards($event)">\n    <ion-infinite-scroll-content></ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/search-module/search/search.html"*/,
+            selector: 'page-search',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\search-module\search\search.html"*/'<ion-header no-border>\n\n  <voj-page-header [data]="pageHeader"></voj-page-header>\n\n</ion-header>\n\n<ion-content padding class="search-page-content">\n\n  <voj-search-header (searchType)="handleSearchType($event)" [criteria-mode]="false" [data]="searchHeaderData"></voj-search-header>\n\n  <ion-segment [(ngModel)]="sortType" color="primary" (ionChange)="doSort($event)"  [ngStyle]="mobileStyle">\n\n    <ion-segment-button value="pertinence">\n\n      Pertinence\n\n    </ion-segment-button>\n\n    <ion-segment-button value="distance">\n\n      Proximité\n\n    </ion-segment-button>\n\n  </ion-segment>\n\n  <voj-map [data]="cards" *ngIf="gmapView"></voj-map>\n\n  <div class="search-warning-message" padding *ngIf="cards && !cards.length>0">{{emptyResults}}</div>\n\n  <div class="search-info-message" padding *ngIf="cards && cards.length>0">{{cards.length}} résultat(s) trouvé(s)</div>\n\n\n\n  <voj-card [hidden]="gmapView" *ngFor="let c of cards" [data]="c" [vojData]="cards" mode="reduced" ></voj-card>\n\n\n\n  <ion-infinite-scroll (ionInfinite)="loadMoreCards($event)">\n\n    <ion-infinite-scroll-content></ion-infinite-scroll-content>\n\n  </ion-infinite-scroll>\n\n</ion-content>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\search-module\search\search.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
@@ -7279,251 +7396,7 @@ var SearchPage = (function () {
 
 /***/ }),
 
-/***/ 560:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ResetPasswordPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_account_service_account_service__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_voj_notification_voj_notification_service__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_masterdata_service_masterdata_service__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(1);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-var ResetPasswordPage = (function () {
-    function ResetPasswordPage(accountService, configurationService, vojNotification, masterdataService, viewCtrl) {
-        var _this = this;
-        this.accountService = accountService;
-        this.configurationService = configurationService;
-        this.vojNotification = vojNotification;
-        this.masterdataService = masterdataService;
-        this.viewCtrl = viewCtrl;
-        this.isMobile = false;
-        this.config = this.configurationService.configuration;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
-        this.dataPageHeader = {
-            title: 'Mot de passe oublié',
-            actions: [],
-            style: 'any',
-            isCanceled: true
-        };
-        // Set radio form data
-        this.radioFormData = {
-            title: '',
-            fields: [
-                {
-                    type: 'radio',
-                    value: 'sms',
-                    label: '',
-                    dataset: [
-                        { id: 1, key: 'RESET_PASSWORD.SMS_BTN', value: 'sms' },
-                        { id: 2, key: 'RESET_PASSWORD.MAIL_BTN', value: 'mail' }
-                    ],
-                    required: true,
-                    visible: true,
-                    id: '',
-                    name: 'radioType'
-                }
-            ]
-        };
-        // Phone
-        this.phoneFormData = {
-            title: '',
-            fields: [
-                // Phone code
-                {
-                    type: 'select',
-                    value: null,
-                    label: 'FORM.COUNTRY_CODE',
-                    dataset: [],
-                    required: true,
-                    visible: true,
-                    id: 'phone-code-field',
-                    name: 'code'
-                },
-                {
-                    //placeholder: 'PLACEHOLDER.ENTER_PHONE',
-                    type: 'tel',
-                    value: '',
-                    label: 'FORM.PHONE',
-                    required: true,
-                    readonly: false,
-                    visible: true,
-                    id: 'phone-field',
-                    min: 9,
-                    max: 10,
-                    regex: '^(06|07)[0-9]*$',
-                    name: 'userPhone',
-                    validationMsg: 'VALIDATION.PHONE_VALIDATION_MSG',
-                    action: function () {
-                        // Hide error
-                        _this.hideError();
-                    }
-                }
-            ],
-            submit: {
-                id: '',
-                icon: '',
-                label: 'RESET_PASSWORD.VALIDATE_BTN',
-                action: function () {
-                    console.log('Check user phone.');
-                    //this.checkUserData('telephone number');
-                    var code = _this.phoneFormData.fields.filter(function (f) { return f.name === "code"; })[0].value;
-                    var phone = _this.phoneFormData.fields.filter(function (f) { return f.name === "userPhone"; })[0].value;
-                    var phoneWithCode = "+" + code + phone.substr(phone.length - 9);
-                    _this.accountService.sendPassword(phoneWithCode, "").then(function (data) {
-                        if (data.status == "success") {
-                            _this.viewCtrl.dismiss().then(function () {
-                                _this.presentConfirmation("sms");
-                            });
-                        }
-                        else {
-                            _this.presentError(data.code, "sms");
-                        }
-                    });
-                }
-            }
-        };
-        // Mail
-        this.mailFormData = {
-            title: '',
-            fields: [
-                {
-                    //placeholder: 'PLACEHOLDER.ENTER_MAIL',
-                    type: 'mail',
-                    value: '',
-                    label: 'FORM.EMAIL',
-                    required: true,
-                    readonly: false,
-                    visible: true,
-                    name: 'userEmail',
-                    id: 'user-mail',
-                    min: 5,
-                    validationMsg: 'VALIDATION.EMAIL_VALIDATION_MSG',
-                    regex: '^(([^<>()\\[\\]\\\\.,;:\\s@"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@"]+)*)|(".+"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$',
-                    action: function () {
-                        // Hide error
-                        _this.hideError();
-                    }
-                }
-            ],
-            submit: {
-                id: '',
-                icon: '',
-                label: 'RESET_PASSWORD.VALIDATE_BTN',
-                action: function () {
-                    console.log('Check user email.');
-                    //this.checkUserData('e-mail address');
-                    _this.accountService.sendPassword("", _this.mailFormData.fields[0].value).then(function (data) {
-                        if (data.status == "success") {
-                            _this.viewCtrl.dismiss().then(function () {
-                                _this.presentConfirmation("mail");
-                            });
-                        }
-                        else {
-                            _this.presentError(data.code, "mail");
-                        }
-                    });
-                }
-            }
-        };
-        // Error init
-        this.isErrorShown = false;
-    }
-    ResetPasswordPage.prototype.ngOnInit = function () {
-        var _this = this;
-        //load phone code list
-        this.masterdataService.loadCountriesList().then(function (data) {
-            //set dataset of phone codes of the form
-            _this.phoneFormData.fields.filter(function (f) { return f.name === "code"; })[0].dataset = _this.masterdataService.convertCountriesListToDataset(data);
-            //the default phone code is France code (33)
-            _this.phoneFormData.fields.filter(function (f) { return f.name === "code"; })[0].value = "33";
-        });
-    };
-    ResetPasswordPage.prototype.checkUserData = function (type) {
-        // Hide error if shown
-        if (this.isErrorShown === true) {
-            this.hideError();
-        }
-        // Show error
-        //this.presentError(type);
-    };
-    ResetPasswordPage.prototype.presentError = function (msg, type) {
-        // Show only one error message
-        if (this.isErrorShown === true) {
-            return;
-        }
-        this.isErrorShown = true;
-        var errorDiv = document.createElement('div');
-        errorDiv.setAttribute('id', 'voj-error-msg');
-        errorDiv.innerHTML = '<p>' + msg + '</p>';
-        errorDiv.className = 'voj-validation-error-msg';
-        var parentId = (type === 'sms' ? '2' : '3');
-        document.getElementById(parentId).appendChild(errorDiv);
-    };
-    ResetPasswordPage.prototype.hideError = function () {
-        // Hide error if it exists
-        if (this.isErrorShown === false) {
-            return;
-        }
-        if (document.getElementById('voj-error-msg')) {
-            document.getElementById('voj-error-msg').remove();
-        }
-        this.isErrorShown = false;
-    };
-    ResetPasswordPage.prototype.presentConfirmation = function (method) {
-        console.log('Show Present Confirmation modal.');
-        var notificationData = {
-            icon: '',
-            title: '',
-            message: (method == 'sms' ? 'RESET_PASSWORD.CONFIRMATION_MESSAGE' : 'RESET_PASSWORD.CONFIRMATION_MESSAGE'),
-            backdropDismiss: true,
-            buttons: [
-                {
-                    id: 'connectBtn',
-                    label: 'RESET_PASSWORD.VALIDATE_BTN',
-                    icon: '',
-                    action: function () {
-                        console.log('Connect was clicked');
-                    }
-                },
-            ]
-        };
-        this.vojNotification.present(notificationData);
-    };
-    ResetPasswordPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'reset-password-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/reset-password/reset-password.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n<div [ngClass]="isMobile ? \'resset-password-parent-container\' : \'\'" class="voj-content">\n  <div [ngClass]="isMobile ? \'resset-password-child-container\' : \'\'" class="voj-form-container">\n\n    <h2>{{ \'RESET_PASSWORD.MESSAGE\' | translate }}</h2>\n\n    <!-- Form for radio -->\n    <voj-form [data]=\'radioFormData\'></voj-form>\n\n    <!-- Form for phone -->\n    <voj-form [data]=\'phoneFormData\' *ngIf="radioFormData.fields[0].value === \'sms\'"></voj-form>\n\n    <!-- Form for mail -->\n    <voj-form [data]=\'mailFormData\' *ngIf="radioFormData.fields[0].value === \'mail\'"></voj-form>\n\n  </div>\n</div>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/reset-password/reset-password.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_account_service_account_service__["a" /* AccountService */],
-            __WEBPACK_IMPORTED_MODULE_4__config_voj_configuration__["a" /* Configuration */],
-            __WEBPACK_IMPORTED_MODULE_2__components_voj_notification_voj_notification_service__["a" /* VojNotificationService */],
-            __WEBPACK_IMPORTED_MODULE_3__providers_masterdata_service_masterdata_service__["a" /* MasterdataService */],
-            __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["u" /* ViewController */]])
-    ], ResetPasswordPage);
-    return ResetPasswordPage;
-}());
-
-//# sourceMappingURL=reset-password.js.map
-
-/***/ }),
-
-/***/ 565:
+/***/ 563:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7531,7 +7404,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VojHeaderModule", function() { return VojHeaderModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_header__ = __webpack_require__(881);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_header__ = __webpack_require__(879);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7564,7 +7437,7 @@ var VojHeaderModule = (function () {
 
 /***/ }),
 
-/***/ 566:
+/***/ 564:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7572,8 +7445,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VojListModule", function() { return VojListModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_list__ = __webpack_require__(882);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_card_voj_card_module__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_list__ = __webpack_require__(880);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_card_voj_card_module__ = __webpack_require__(121);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7608,7 +7481,7 @@ var VojListModule = (function () {
 
 /***/ }),
 
-/***/ 567:
+/***/ 565:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7699,7 +7572,7 @@ var VojSearchSelect = (function () {
     VojSearchSelect = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'voj-search-select',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-search-select/voj-search-select.html"*/'<div class="voj-content">\n	<div class="voj-form-container">\n		<h2>Country code</h2>\n\n		<div class="voj-form-wrapper">\n			<voj-form class="search-select" [data]="formData"></voj-form>\n			<ion-icon name="search"></ion-icon>\n		</div>\n\n		<ion-list class="search-select-list" radio-group [(ngModel)]="selectedItem" *ngIf="searchSelectData.length">\n\n			<ion-item class="select-item" *ngFor="let selectItem of searchSelectData">\n				<ion-label>{{ selectItem.key }}</ion-label>\n				<ion-radio value="{{ selectItem.id }}" (click)="setSearchValue(selectItem)"></ion-radio>\n			</ion-item>\n\n		</ion-list>\n\n		<div class="select-search-control">\n			<button ion-button clear (click)="cancelSelect()">{{ \'FORM.CANCEL_BTN\' | translate }}</button>\n			<button ion-button clear (click)="confirmSelect()">{{ \'FORM.OK_BTN\' | translate }}</button>\n		</div>\n	</div>\n</div>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-search-select/voj-search-select.html"*/,
+            selector: 'voj-search-select',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-search-select\voj-search-select.html"*/'<div class="voj-content">\n\n	<div class="voj-form-container">\n\n		<h2>Indicatif</h2>\n\n\n\n		<div class="voj-form-wrapper">\n\n			<voj-form class="search-select" [data]="formData"></voj-form>\n\n			<ion-icon name="search"></ion-icon>\n\n		</div>\n\n\n\n		<ion-list class="search-select-list" radio-group [(ngModel)]="selectedItem" *ngIf="searchSelectData.length">\n\n\n\n			<ion-item class="select-item" *ngFor="let selectItem of searchSelectData">\n\n				<ion-label>{{ selectItem.key }}</ion-label>\n\n				<ion-radio value="{{ selectItem.id }}" (click)="setSearchValue(selectItem)"></ion-radio>\n\n			</ion-item>\n\n\n\n		</ion-list>\n\n\n\n		<div class="select-search-control">\n\n			<button ion-button clear (click)="cancelSelect()">{{ \'FORM.CANCEL_BTN\' | translate }}</button>\n\n			<button ion-button clear (click)="confirmSelect()">{{ \'FORM.OK_BTN\' | translate }}</button>\n\n		</div>\n\n	</div>\n\n</div>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-search-select\voj-search-select.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["u" /* ViewController */]])
@@ -7711,7 +7584,7 @@ var VojSearchSelect = (function () {
 
 /***/ }),
 
-/***/ 573:
+/***/ 571:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7719,8 +7592,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VojHeaderWebModule", function() { return VojHeaderWebModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_header_web__ = __webpack_require__(897);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_segment_voj_segment_module__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_header_web__ = __webpack_require__(895);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_segment_voj_segment_module__ = __webpack_require__(88);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7755,7 +7628,7 @@ var VojHeaderWebModule = (function () {
 
 /***/ }),
 
-/***/ 574:
+/***/ 572:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7763,7 +7636,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VojHeaderSegmentModule", function() { return VojHeaderSegmentModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_header_segment__ = __webpack_require__(898);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_header_segment__ = __webpack_require__(896);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7796,7 +7669,7 @@ var VojHeaderSegmentModule = (function () {
 
 /***/ }),
 
-/***/ 575:
+/***/ 573:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7804,9 +7677,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VojSearchSelectModule", function() { return VojSearchSelectModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_search_select__ = __webpack_require__(567);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_search_select__ = __webpack_require__(565);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_form_voj_form_module__ = __webpack_require__(227);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_form_voj_form_module__ = __webpack_require__(226);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7843,7 +7716,7 @@ var VojSearchSelectModule = (function () {
 
 /***/ }),
 
-/***/ 576:
+/***/ 574:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7851,7 +7724,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RemunerationPageModule", function() { return RemunerationPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__remuneration__ = __webpack_require__(318);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__remuneration__ = __webpack_require__(317);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -7884,7 +7757,7 @@ var RemunerationPageModule = (function () {
 
 /***/ }),
 
-/***/ 577:
+/***/ 575:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7893,10 +7766,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_page_header_voj_page_header_module__ = __webpack_require__(222);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_search_header_voj_search_header_module__ = __webpack_require__(232);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_voj_card_voj_card_module__ = __webpack_require__(122);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_voj_map_voj_map_module__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_page_header_voj_page_header_module__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_search_header_voj_search_header_module__ = __webpack_require__(231);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_voj_card_voj_card_module__ = __webpack_require__(121);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_voj_map_voj_map_module__ = __webpack_require__(122);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7937,7 +7810,7 @@ var SearchPageModule = (function () {
 
 /***/ }),
 
-/***/ 578:
+/***/ 576:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7945,7 +7818,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PersonalDetailsIdentityPageModule", function() { return PersonalDetailsIdentityPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__personal_details_identity__ = __webpack_require__(127);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__personal_details_identity__ = __webpack_require__(126);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -7978,7 +7851,7 @@ var PersonalDetailsIdentityPageModule = (function () {
 
 /***/ }),
 
-/***/ 579:
+/***/ 577:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7986,7 +7859,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PersonalDetailsPageModule", function() { return PersonalDetailsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__personal_details__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__personal_details__ = __webpack_require__(125);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -8019,7 +7892,7 @@ var PersonalDetailsPageModule = (function () {
 
 /***/ }),
 
-/***/ 580:
+/***/ 578:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8028,7 +7901,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__company__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__company__ = __webpack_require__(220);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -8063,7 +7936,7 @@ var CompanyModule = (function () {
 
 /***/ }),
 
-/***/ 581:
+/***/ 579:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8071,7 +7944,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JobyerAvailabilityChoiceModule", function() { return JobyerAvailabilityChoiceModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__jobyer_availability_choice__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__jobyer_availability_choice__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -8107,7 +7980,7 @@ var JobyerAvailabilityChoiceModule = (function () {
 
 /***/ }),
 
-/***/ 582:
+/***/ 580:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8115,7 +7988,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserInformationModule", function() { return UserInformationModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user_information__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user_information__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -8151,7 +8024,7 @@ var UserInformationModule = (function () {
 
 /***/ }),
 
-/***/ 583:
+/***/ 581:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8169,7 +8042,7 @@ var Context = (function () {
 
 /***/ }),
 
-/***/ 584:
+/***/ 582:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8177,7 +8050,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OptionsModule", function() { return OptionsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__options__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__options__ = __webpack_require__(232);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -8213,7 +8086,7 @@ var OptionsModule = (function () {
 
 /***/ }),
 
-/***/ 585:
+/***/ 583:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8221,7 +8094,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AboutModule", function() { return AboutModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__about__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__about__ = __webpack_require__(129);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -8257,48 +8130,7 @@ var AboutModule = (function () {
 
 /***/ }),
 
-/***/ 586:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OpenApplicationModule", function() { return OpenApplicationModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__open_application__ = __webpack_require__(901);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var OpenApplicationModule = (function () {
-    function OpenApplicationModule() {
-    }
-    OpenApplicationModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__open_application__["a" /* OpenApplication */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__open_application__["a" /* OpenApplication */]),
-                __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__["a" /* VojComponentsModule */]
-            ],
-        })
-    ], OpenApplicationModule);
-    return OpenApplicationModule;
-}());
-
-//# sourceMappingURL=open-application.module.js.map
-
-/***/ }),
-
-/***/ 587:
+/***/ 584:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8306,7 +8138,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EnterpriseDetailsModule", function() { return EnterpriseDetailsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enterprise_details__ = __webpack_require__(588);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enterprise_details__ = __webpack_require__(585);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -8339,7 +8171,7 @@ var EnterpriseDetailsModule = (function () {
 
 /***/ }),
 
-/***/ 588:
+/***/ 585:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8437,7 +8269,7 @@ var EnterpriseDetails = (function () {
     EnterpriseDetails = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-enterprise-details',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/enterprise-details/enterprise-details.html"*/'<ion-content>\n    <voj-page-header [data]=\'headerData\'></voj-page-header>\n    <div [ngClass]="isMobile ? \'enterprise-details-container\' : \'\'">\n        <div [ngClass]="isMobile ? \'enterprise-details-child-container\' : \'\'">\n            <voj-form [data]=\'formData\'></voj-form>\n        </div>\n    </div>\n</ion-content>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/enterprise-details/enterprise-details.html"*/,
+            selector: 'page-enterprise-details',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\account-module\enterprise-details\enterprise-details.html"*/'<ion-content>\n\n    <voj-page-header [data]=\'headerData\'></voj-page-header>\n\n    <div class="voj-content">\n\n        <div class="voj-form-container">\n\n            <voj-form [data]=\'formData\'></voj-form>\n\n        </div>\n\n    </div>\n\n</ion-content>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\account-module\enterprise-details\enterprise-details.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
@@ -8450,7 +8282,7 @@ var EnterpriseDetails = (function () {
 
 /***/ }),
 
-/***/ 589:
+/***/ 586:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8458,7 +8290,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeModule", function() { return HomeModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home__ = __webpack_require__(235);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home__ = __webpack_require__(234);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -8497,7 +8329,7 @@ var HomeModule = (function () {
 
 /***/ }),
 
-/***/ 590:
+/***/ 587:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8505,7 +8337,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TabsModule", function() { return TabsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs__ = __webpack_require__(591);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs__ = __webpack_require__(588);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8538,15 +8370,15 @@ var TabsModule = (function () {
 
 /***/ }),
 
-/***/ 591:
+/***/ 588:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__test_components_about_about__ = __webpack_require__(130);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(235);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__test_components_about_about__ = __webpack_require__(129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(234);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__search_module_search_search__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(16);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -8585,7 +8417,7 @@ var TabsPage = (function () {
     };
     TabsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/tabs/tabs.html"*/'<ion-tabs id="tabs">\n  <ion-tab [root]="tab1Root" tabTitle="Recherche" tabIcon="search"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Annonces" tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Missions" tabIcon="contacts"></ion-tab>\n  <ion-tab [root]="tab4Root" tabTitle="Compte" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n\n\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/tabs/tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\tabs\tabs.html"*/'<ion-tabs id="tabs">\n\n  <ion-tab [root]="tab1Root" tabTitle="Recherche" tabIcon="search"></ion-tab>\n\n  <ion-tab [root]="tab2Root" tabTitle="Annonces" tabIcon="information-circle"></ion-tab>\n\n  <ion-tab [root]="tab3Root" tabTitle="Missions" tabIcon="contacts"></ion-tab>\n\n  <ion-tab [root]="tab4Root" tabTitle="Compte" tabIcon="contacts"></ion-tab>\n\n</ion-tabs>\n\n\n\n\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\tabs\tabs.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
@@ -8598,7 +8430,7 @@ var TabsPage = (function () {
 
 /***/ }),
 
-/***/ 592:
+/***/ 589:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8607,7 +8439,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_voj_components_module__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__calendar__ = __webpack_require__(902);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__calendar__ = __webpack_require__(899);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8639,7 +8471,48 @@ var CalendarPageModule = (function () {
 
 /***/ }),
 
-/***/ 593:
+/***/ 590:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OpenApplicationModule", function() { return OpenApplicationModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__open_application__ = __webpack_require__(900);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var OpenApplicationModule = (function () {
+    function OpenApplicationModule() {
+    }
+    OpenApplicationModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__open_application__["a" /* OpenApplication */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__open_application__["a" /* OpenApplication */]),
+                __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__["a" /* VojComponentsModule */]
+            ],
+        })
+    ], OpenApplicationModule);
+    return OpenApplicationModule;
+}());
+
+//# sourceMappingURL=open-application.module.js.map
+
+/***/ }),
+
+/***/ 591:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8647,7 +8520,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OptionsPageModule", function() { return OptionsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__options__ = __webpack_require__(903);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__options__ = __webpack_require__(901);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -8686,14 +8559,14 @@ var OptionsPageModule = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_account_service_account_service__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_account_service_account_service__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_modal_service__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sign_up_sign_up__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_modal_service__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sign_up_sign_up__ = __webpack_require__(217);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__scripts_md5__ = __webpack_require__(559);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__scripts_md5__ = __webpack_require__(557);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_masterdata_service_masterdata_service__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__reset_password_reset_password__ = __webpack_require__(560);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__reset_password_reset_password__ = __webpack_require__(558);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_navigation_service__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__search_module_search_search__ = __webpack_require__(56);
@@ -8733,9 +8606,7 @@ var LoginPage = (function () {
         this.configuration = configuration;
         this.navigationService = navigationService;
         this.toastCtrl = toastCtrl;
-        this.isMobile = false;
         this.config = this.configuration.configuration;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
         // Set form data
         this.formData = {
             title: '',
@@ -8875,7 +8746,10 @@ var LoginPage = (function () {
     };
     LoginPage.prototype.gotoPasswordForgotten = function () {
         this.navigationService.dismiss(this.viewCtrl);
-        this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_8__reset_password_reset_password__["a" /* ResetPasswordPage */] }, true);
+        // this.modalService.present({page: ResetPasswordPage}, true);
+        var vojNav = { page: __WEBPACK_IMPORTED_MODULE_8__reset_password_reset_password__["a" /* ResetPasswordPage */], isRoot: false };
+        // this.navigationService.navigate('list', vojNav);
+        this.config.isLargeScreen ? this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_8__reset_password_reset_password__["a" /* ResetPasswordPage */] }, true) : this.navigationService.navigate('list', vojNav);
     };
     LoginPage.prototype.goToSignup = function () {
         if (this.config.isLargeScreen) {
@@ -8898,7 +8772,7 @@ var LoginPage = (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'login-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/login/login.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n<div [ngClass]="isMobile ? \'login-parent-container\' : \'\'" class="voj-content">\n  <div [ngClass]="isMobile ? \'login-child-container\' : \'\'" class="voj-form-container">\n    <voj-form [data]=\'formData\'></voj-form>\n\n    <!-- Create an account -->\n    <h2 class="voj-not-registered-title">{{ \'LOGIN.NOT_REGISTERED\' | translate }}</h2>\n    <button ion-button class="custom-btn" (click)="goToSignup()">\n      {{ \'LOGIN.CREATE_ACCOUNT\' | translate }}\n    </button>\n  </div>\n</div>\n\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/login/login.html"*/,
+            selector: 'login-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\account-module\login\login.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n\n\n<div class="voj-content">\n\n  <div class="voj-form-container">\n\n    <voj-form [data]=\'formData\'></voj-form>\n\n\n\n    <!-- Create an account -->\n\n    <h2 class="voj-not-registered-title">{{ \'LOGIN.NOT_REGISTERED\' | translate }}</h2>\n\n    <button ion-button class="custom-btn" (click)="goToSignup()">\n\n      {{ \'LOGIN.CREATE_ACCOUNT\' | translate }}\n\n    </button>\n\n  </div>\n\n</div>\n\n\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\account-module\login\login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_account_service_account_service__["a" /* AccountService */],
             __WEBPACK_IMPORTED_MODULE_12__providers_voj_events_voj_events__["a" /* EventBusProvider */],
@@ -9065,13 +8939,13 @@ var MasterdataService = (function () {
 
 /***/ }),
 
-/***/ 635:
+/***/ 633:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(636);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(644);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(634);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(642);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -9079,7 +8953,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 644:
+/***/ 642:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9088,33 +8962,31 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(921);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(633);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(634);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(919);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(631);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(632);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_voj_components_module__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_pages_module__ = __webpack_require__(924);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_angular_calendar__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_voj_notification_voj_notification__ = __webpack_require__(558);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_voj_notification_voj_notification_service__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_http_request_http_request__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_http__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_search_service_search_service__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_navigation_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ngx_translate_core__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ngx_translate_http_loader__ = __webpack_require__(949);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__providers_voj_events_voj_events__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__models_voj_configuration_model__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__services_modal_service__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_signup_service_signup_service__ = __webpack_require__(557);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__providers_account_service_account_service__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_geolocation__ = __webpack_require__(215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__providers_masterdata_service_masterdata_service__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_profile_service_profile_service__ = __webpack_require__(93);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_account_module_user_information_strategy_context__ = __webpack_require__(583);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__dtos_dto_strategy_search_search_dto_factory__ = __webpack_require__(553);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__providers_enterprise_service_enterprise_service__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_pages_module__ = __webpack_require__(922);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_angular_calendar__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_http_request_http_request__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_http__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__config_voj_configuration__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_search_service_search_service__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_navigation_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ngx_translate_core__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ngx_translate_http_loader__ = __webpack_require__(947);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_voj_events_voj_events__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__models_voj_configuration_model__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__services_modal_service__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_signup_service_signup_service__ = __webpack_require__(556);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_storage__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_account_service_account_service__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_native_geolocation__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__providers_masterdata_service_masterdata_service__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__providers_profile_service_profile_service__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_account_module_user_information_strategy_context__ = __webpack_require__(581);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__dtos_dto_strategy_search_search_dto_factory__ = __webpack_require__(552);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__providers_enterprise_service_enterprise_service__ = __webpack_require__(219);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -9151,10 +9023,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-
 function HttpLoaderFactory(http) {
-    return new __WEBPACK_IMPORTED_MODULE_17__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](http, './assets/i18n/', '.json');
+    return new __WEBPACK_IMPORTED_MODULE_15__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](http, './assets/i18n/', '.json');
 }
 var AppModule = (function () {
     function AppModule() {
@@ -9162,14 +9032,13 @@ var AppModule = (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_9__components_voj_notification_voj_notification__["a" /* VojNotification */]
+                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_6__components_voj_components_module__["a" /* VojComponentsModule */],
                 __WEBPACK_IMPORTED_MODULE_7__pages_pages_module__["a" /* PagesModule */],
-                __WEBPACK_IMPORTED_MODULE_12__angular_http__["c" /* HttpModule */],
+                __WEBPACK_IMPORTED_MODULE_10__angular_http__["c" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_8_angular_calendar__["b" /* CalendarModule */].forRoot(),
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {
                     mode: 'md'
@@ -9189,7 +9058,6 @@ var AppModule = (function () {
                         { loadChildren: '../pages/account-module/user-information/user-information.module#UserInformationModule', name: 'UserInformationPage', segment: 'user-information', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/account-module/options/options.module#OptionsModule', name: 'OptionsPage', segment: 'options', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/test-components/about/about.module#AboutModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/account-module/open-application/open-application.module#OpenApplicationModule', name: 'OpenApplication', segment: 'open-application', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/account-module/enterprise-details/enterprise-details.module#EnterpriseDetailsModule', name: 'EnterpriseDetails', segment: 'enterprise-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home/home.module#HomeModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tabs/tabs.module#TabsModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] },
@@ -9205,44 +9073,42 @@ var AppModule = (function () {
                         { loadChildren: '../components/voj-search-header/voj-search-header.module#VojSearchHeaderModule', name: 'VojSearchHeader', segment: 'voj-search-header', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/voj-header-web/voj-header-web.module#VojHeaderWebModule', name: 'VojHeaderWeb', segment: 'voj-header-web', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/voj-header-segment/voj-header-segment.module#VojHeaderSegmentModule', name: 'VojHeaderSegment', segment: 'voj-header-segment', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/account-module/open-application/open-application.module#OpenApplicationModule', name: 'OpenApplication', segment: 'open-application', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/options/options.module#OptionsPageModule', name: 'OptionsPage', segment: 'options', priority: 'low', defaultHistory: [] }
                     ]
                 }),
-                __WEBPACK_IMPORTED_MODULE_22__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_16__ngx_translate_core__["b" /* TranslateModule */].forRoot({
+                __WEBPACK_IMPORTED_MODULE_20__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_14__ngx_translate_core__["b" /* TranslateModule */].forRoot({
                     loader: {
-                        provide: __WEBPACK_IMPORTED_MODULE_16__ngx_translate_core__["a" /* TranslateLoader */],
+                        provide: __WEBPACK_IMPORTED_MODULE_14__ngx_translate_core__["a" /* TranslateLoader */],
                         useFactory: HttpLoaderFactory,
-                        deps: [__WEBPACK_IMPORTED_MODULE_12__angular_http__["b" /* Http */]]
+                        deps: [__WEBPACK_IMPORTED_MODULE_10__angular_http__["b" /* Http */]]
                     }
                 }),
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicApp */]],
             entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_9__components_voj_notification_voj_notification__["a" /* VojNotification */]
+                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
                 __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__["a" /* SplashScreen */],
-                __WEBPACK_IMPORTED_MODULE_10__components_voj_notification_voj_notification_service__["a" /* VojNotificationService */],
-                __WEBPACK_IMPORTED_MODULE_15__services_navigation_service__["a" /* NavigationService */],
+                __WEBPACK_IMPORTED_MODULE_13__services_navigation_service__["a" /* NavigationService */],
                 { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ErrorHandler"], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* IonicErrorHandler */] },
-                __WEBPACK_IMPORTED_MODULE_13__config_voj_configuration__["a" /* Configuration */],
-                { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ErrorHandler"], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* IonicErrorHandler */] },
-                __WEBPACK_IMPORTED_MODULE_11__providers_http_request_http_request__["a" /* HttpRequestProvider */],
-                __WEBPACK_IMPORTED_MODULE_14__providers_search_service_search_service__["a" /* SearchServiceProvider */],
-                __WEBPACK_IMPORTED_MODULE_18__providers_voj_events_voj_events__["a" /* EventBusProvider */],
-                __WEBPACK_IMPORTED_MODULE_19__models_voj_configuration_model__["a" /* VojConfiguration */],
-                __WEBPACK_IMPORTED_MODULE_20__services_modal_service__["a" /* ModalService */],
-                __WEBPACK_IMPORTED_MODULE_21__providers_signup_service_signup_service__["a" /* SignupService */],
-                __WEBPACK_IMPORTED_MODULE_23__providers_account_service_account_service__["a" /* AccountService */],
-                __WEBPACK_IMPORTED_MODULE_24__ionic_native_geolocation__["a" /* Geolocation */],
-                __WEBPACK_IMPORTED_MODULE_25__providers_masterdata_service_masterdata_service__["a" /* MasterdataService */],
-                __WEBPACK_IMPORTED_MODULE_26__providers_profile_service_profile_service__["a" /* ProfileService */],
-                __WEBPACK_IMPORTED_MODULE_27__pages_account_module_user_information_strategy_context__["a" /* Context */],
-                __WEBPACK_IMPORTED_MODULE_28__dtos_dto_strategy_search_search_dto_factory__["a" /* SearchDTOFactory */],
-                __WEBPACK_IMPORTED_MODULE_29__providers_enterprise_service_enterprise_service__["a" /* EnterpriseService */]
+                __WEBPACK_IMPORTED_MODULE_11__config_voj_configuration__["a" /* Configuration */],
+                __WEBPACK_IMPORTED_MODULE_9__providers_http_request_http_request__["a" /* HttpRequestProvider */],
+                __WEBPACK_IMPORTED_MODULE_12__providers_search_service_search_service__["a" /* SearchServiceProvider */],
+                __WEBPACK_IMPORTED_MODULE_16__providers_voj_events_voj_events__["a" /* EventBusProvider */],
+                __WEBPACK_IMPORTED_MODULE_17__models_voj_configuration_model__["a" /* VojConfiguration */],
+                __WEBPACK_IMPORTED_MODULE_18__services_modal_service__["a" /* ModalService */],
+                __WEBPACK_IMPORTED_MODULE_19__providers_signup_service_signup_service__["a" /* SignupService */],
+                __WEBPACK_IMPORTED_MODULE_21__providers_account_service_account_service__["a" /* AccountService */],
+                __WEBPACK_IMPORTED_MODULE_22__ionic_native_geolocation__["a" /* Geolocation */],
+                __WEBPACK_IMPORTED_MODULE_23__providers_masterdata_service_masterdata_service__["a" /* MasterdataService */],
+                __WEBPACK_IMPORTED_MODULE_24__providers_profile_service_profile_service__["a" /* ProfileService */],
+                __WEBPACK_IMPORTED_MODULE_25__pages_account_module_user_information_strategy_context__["a" /* Context */],
+                __WEBPACK_IMPORTED_MODULE_26__dtos_dto_strategy_search_search_dto_factory__["a" /* SearchDTOFactory */],
+                __WEBPACK_IMPORTED_MODULE_27__providers_enterprise_service_enterprise_service__["a" /* EnterpriseService */]
             ]
         })
     ], AppModule);
@@ -9253,7 +9119,7 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 673:
+/***/ 671:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9268,7 +9134,7 @@ var VojTuple = (function () {
 
 /***/ }),
 
-/***/ 674:
+/***/ 672:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9302,7 +9168,7 @@ var Passenger = (function () {
 
 /***/ }),
 
-/***/ 675:
+/***/ 673:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9370,7 +9236,7 @@ var VojCalendar = (function () {
     VojCalendar = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'voj-calendar',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/voj-calendar.html"*/'<smart-calendar\n	*ngIf="!desktopPlatform"\n	[data]="data">\n</smart-calendar>\n<full-calendar\n	*ngIf="desktopPlatform"\n	[mode]="calendarType"\n	[data]="data"\n	(onWeekSelect)="handleWeekSelect($event)"\n	(onMultiSelect)="handleonMultiSelect($event)"\n	(onRangeSelect)="handleonRangeSelect($event)">\n</full-calendar>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/voj-calendar.html"*/
+            selector: 'voj-calendar',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\voj-calendar.html"*/'<smart-calendar\n\n	*ngIf="!desktopPlatform"\n\n	[data]="data">\n\n</smart-calendar>\n\n<full-calendar\n\n	*ngIf="desktopPlatform"\n\n	[mode]="calendarType"\n\n	[data]="data"\n\n	(onWeekSelect)="handleWeekSelect($event)"\n\n	(onMultiSelect)="handleonMultiSelect($event)"\n\n	(onRangeSelect)="handleonRangeSelect($event)">\n\n</full-calendar>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\voj-calendar.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */],
             __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"],
@@ -9383,26 +9249,26 @@ var VojCalendar = (function () {
 
 /***/ }),
 
-/***/ 676:
+/***/ 674:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NgCalendarModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ngx_offset__ = __webpack_require__(677);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_intl__ = __webpack_require__(678);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ngx_offset__ = __webpack_require__(675);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_intl__ = __webpack_require__(676);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_intl___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_intl__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_intl_locale_data_jsonp_fr__ = __webpack_require__(681);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_intl_locale_data_jsonp_fr__ = __webpack_require__(679);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_intl_locale_data_jsonp_fr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_intl_locale_data_jsonp_fr__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__monthview_monthview__ = __webpack_require__(682);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__weekview_weekview__ = __webpack_require__(370);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__weekview_header_weekview_header__ = __webpack_require__(792);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__dayview_dayview__ = __webpack_require__(793);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__calendar__ = __webpack_require__(794);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__init_position_scroll__ = __webpack_require__(797);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__mode_popover_calendar_mode_popover__ = __webpack_require__(371);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pipes__ = __webpack_require__(798);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__monthview_monthview__ = __webpack_require__(680);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__weekview_weekview__ = __webpack_require__(369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__weekview_header_weekview_header__ = __webpack_require__(790);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__dayview_dayview__ = __webpack_require__(791);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__calendar__ = __webpack_require__(792);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__init_position_scroll__ = __webpack_require__(795);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__mode_popover_calendar_mode_popover__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pipes__ = __webpack_require__(796);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -9449,14 +9315,14 @@ var NgCalendarModule = (function () {
 
 /***/ }),
 
-/***/ 680:
+/***/ 678:
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
 
-/***/ 682:
+/***/ 680:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9472,35 +9338,35 @@ var NgCalendarModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_date_fns__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_date_fns___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_date_fns__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_empty__ = __webpack_require__(768);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_empty__ = __webpack_require__(766);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_empty___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_empty__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_of__ = __webpack_require__(361);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_of__ = __webpack_require__(360);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_observable_fromEvent__ = __webpack_require__(363);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_observable_fromEvent__ = __webpack_require__(362);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_observable_fromEvent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_add_observable_fromEvent__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_observable_from__ = __webpack_require__(771);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_observable_from__ = __webpack_require__(769);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_observable_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_rxjs_add_observable_from__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_add_observable_timer__ = __webpack_require__(778);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_add_observable_timer__ = __webpack_require__(776);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_add_observable_timer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_rxjs_add_observable_timer__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_distinctuntilchanged__ = __webpack_require__(781);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_distinctuntilchanged__ = __webpack_require__(779);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_distinctuntilchanged___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_distinctuntilchanged__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_add_operator_switchMap__ = __webpack_require__(366);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_add_operator_switchMap__ = __webpack_require__(365);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_add_operator_switchMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_rxjs_add_operator_switchMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_add_operator_concatMap__ = __webpack_require__(367);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_add_operator_concatMap__ = __webpack_require__(366);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_add_operator_concatMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_rxjs_add_operator_concatMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_add_operator_debounceTime__ = __webpack_require__(783);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_add_operator_debounceTime__ = __webpack_require__(781);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_rxjs_add_operator_debounceTime__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_add_operator_buffer__ = __webpack_require__(784);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_add_operator_buffer__ = __webpack_require__(782);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_add_operator_buffer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16_rxjs_add_operator_buffer__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_rxjs_add_operator_pluck__ = __webpack_require__(786);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_rxjs_add_operator_pluck__ = __webpack_require__(784);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_rxjs_add_operator_pluck___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_rxjs_add_operator_pluck__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_add_operator_bufferCount__ = __webpack_require__(788);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_add_operator_bufferCount__ = __webpack_require__(786);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_add_operator_bufferCount___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18_rxjs_add_operator_bufferCount__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_rxjs_add_operator_takeUntil__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_rxjs_add_operator_takeUntil___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19_rxjs_add_operator_takeUntil__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_rxjs_add_operator_withLatestFrom__ = __webpack_require__(790);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_rxjs_add_operator_withLatestFrom__ = __webpack_require__(788);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_rxjs_add_operator_withLatestFrom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20_rxjs_add_operator_withLatestFrom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__models_shared__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__models_shared__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__calendar_service__ = __webpack_require__(84);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -10331,7 +10197,7 @@ var MonthViewComponent = (function () {
     ], MonthViewComponent.prototype, "onWeekSelect", void 0);
     MonthViewComponent = MonthViewComponent_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'monthview',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/calendar/monthview/monthview.html"*/'<div>\n  <ion-slides\n    #monthSlider\n    [loop]="true"\n    [dir]="dir"\n    (ionSlideDidChange)="onSlideChanged()">\n    <ion-slide class="monthview-slide">\n      <table *ngIf="0===currentViewIndex" class="table table-fixed monthview-datetable">\n        <thead>\n          <tr>\n            <th *ngFor="let dayHeader of views[0].dayHeaders" class="monthview-week-title">\n              <small>{{dayHeader}}</small>\n            </th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr *ngFor="let row of [0,1,2,3,4,5]">\n            <td\n              *ngFor="let col of [0,1,2,3,4,5,6]"\n              tappable\n              [id]="[0, row, col].join(\'-\')"\n              (click)="select($event, views[0].dates[row*7+col])"\n              [ngClass]="getHighlightClass(views[0].dates[row*7+col])"\n              [attr.data-clickable-target]="!(views[0].dates[row*7+col] | isPast)"\n              [attr.data-clickable-date]="views[0].dates[row*7+col].date"\n              [class.weekend]="col > 4">\n              <template\n                [ngTemplateOutlet]="monthviewDisplayEventTemplate"\n                [ngOutletContext]="{view: views[0], row: row, col: col}">\n              </template>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n      <table *ngIf="0!==currentViewIndex" class="table table-fixed monthview-datetable">\n        <thead>\n          <tr class="text-center">\n            <th *ngFor="let dayHeader of views[0].dayHeaders">\n              <small>{{dayHeader}}</small>\n            </th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr *ngFor="let row of [0,1,2,3,4,5]">\n            <td *ngFor="let col of [0,1,2,3,4,5,6]">\n              <template\n                [ngTemplateOutlet]="monthviewInactiveDisplayEventTemplate"\n                [ngOutletContext]="{view: views[0], row: row, col: col}">\n              </template>\n            </td>\n            <tr>\n        </tbody>\n      </table>\n    </ion-slide>\n    <ion-slide class="monthview-slide">\n      <table *ngIf="1===currentViewIndex" class="table table-fixed monthview-datetable">\n        <thead>\n          <tr>\n            <th *ngFor="let dayHeader of views[1].dayHeaders" class="monthview-week-title">\n              <small>{{dayHeader}}</small>\n            </th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr *ngFor="let row of [0,1,2,3,4,5]">\n            <td\n              *ngFor="let col of [0,1,2,3,4,5,6]"\n              tappable\n              [id]="[1, row, col].join(\'-\')"\n              (click)="select($event, views[1].dates[row*7+col])"\n              [ngClass]="getHighlightClass(views[1].dates[row*7+col])"\n              [attr.data-clickable-target]="!(views[1].dates[row*7+col] | isPast)"\n              [attr.data-clickable-date]="views[1].dates[row*7+col].date"\n              [class.weekend]="col > 4">\n              <template [ngTemplateOutlet]="monthviewDisplayEventTemplate" [ngOutletContext]="{view: views[1], row: row, col: col}">\n              </template>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n      <table *ngIf="1!==currentViewIndex" class="table table-fixed monthview-datetable">\n        <thead>\n          <tr class="text-center">\n            <th *ngFor="let dayHeader of views[1].dayHeaders">\n              <small>{{dayHeader}}</small>\n            </th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr *ngFor="let row of [0,1,2,3,4,5]">\n            <td *ngFor="let col of [0,1,2,3,4,5,6]">\n              <template [ngTemplateOutlet]="monthviewInactiveDisplayEventTemplate" [ngOutletContext]="{view: views[1], row: row, col: col}">\n              </template>\n            </td>\n            <tr>\n        </tbody>\n      </table>\n    </ion-slide>\n    <ion-slide class="monthview-slide">\n      <table *ngIf="2===currentViewIndex" class="table table-fixed monthview-datetable">\n        <thead>\n          <tr>\n            <th *ngFor="let dayHeader of views[2].dayHeaders" class="monthview-week-title">\n              <small>{{dayHeader}}</small>\n            </th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr *ngFor="let row of [0,1,2,3,4,5]">\n            <td\n              *ngFor="let col of [0,1,2,3,4,5,6]"\n              tappable\n              [id]="[2, row, col].join(\'-\')"\n              (click)="select($event, views[2].dates[row*7+col])"\n              [ngClass]="getHighlightClass(views[2].dates[row*7+col])"\n              [attr.data-clickable-target]="!(views[2].dates[row*7+col] | isPast)"\n              [attr.data-clickable-date]="views[2].dates[row*7+col].date"\n              [class.weekend]="col > 4">\n              <template [ngTemplateOutlet]="monthviewDisplayEventTemplate" [ngOutletContext]="{view: views[2], row: row, col: col}">\n              </template>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n      <table *ngIf="2!==currentViewIndex" class="table table-fixed monthview-datetable">\n        <thead>\n          <tr class="text-center">\n            <th *ngFor="let dayHeader of views[2].dayHeaders">\n              <small>{{dayHeader}}</small>\n            </th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr *ngFor="let row of [0,1,2,3,4,5]">\n            <td *ngFor="let col of [0,1,2,3,4,5,6]">\n              <template [ngTemplateOutlet]="monthviewInactiveDisplayEventTemplate" [ngOutletContext]="{view: views[2], row: row, col: col}">\n              </template>\n            </td>\n            <tr>\n        </tbody>\n      </table>\n    </ion-slide>\n  </ion-slides>\n  <template [ngTemplateOutlet]="monthviewEventDetailTemplate" [ngOutletContext]="{showEventDetail:showEventDetail, selectedDate: selectedDate, noEventsLabel: noEventsLabel}">\n  </template>\n</div>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/calendar/monthview/monthview.html"*/,
+            selector: 'monthview',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\calendar\monthview\monthview.html"*/'<div>\n\n  <ion-slides\n\n    #monthSlider\n\n    [loop]="true"\n\n    [dir]="dir"\n\n    (ionSlideDidChange)="onSlideChanged()">\n\n    <ion-slide class="monthview-slide">\n\n      <table *ngIf="0===currentViewIndex" class="table table-fixed monthview-datetable">\n\n        <thead>\n\n          <tr>\n\n            <th *ngFor="let dayHeader of views[0].dayHeaders" class="monthview-week-title">\n\n              <small>{{dayHeader}}</small>\n\n            </th>\n\n          </tr>\n\n        </thead>\n\n        <tbody>\n\n          <tr *ngFor="let row of [0,1,2,3,4,5]">\n\n            <td\n\n              *ngFor="let col of [0,1,2,3,4,5,6]"\n\n              tappable\n\n              [id]="[0, row, col].join(\'-\')"\n\n              (click)="select($event, views[0].dates[row*7+col])"\n\n              [ngClass]="getHighlightClass(views[0].dates[row*7+col])"\n\n              [attr.data-clickable-target]="!(views[0].dates[row*7+col] | isPast)"\n\n              [attr.data-clickable-date]="views[0].dates[row*7+col].date"\n\n              [class.weekend]="col > 4">\n\n              <template\n\n                [ngTemplateOutlet]="monthviewDisplayEventTemplate"\n\n                [ngOutletContext]="{view: views[0], row: row, col: col}">\n\n              </template>\n\n            </td>\n\n          </tr>\n\n        </tbody>\n\n      </table>\n\n      <table *ngIf="0!==currentViewIndex" class="table table-fixed monthview-datetable">\n\n        <thead>\n\n          <tr class="text-center">\n\n            <th *ngFor="let dayHeader of views[0].dayHeaders">\n\n              <small>{{dayHeader}}</small>\n\n            </th>\n\n          </tr>\n\n        </thead>\n\n        <tbody>\n\n          <tr *ngFor="let row of [0,1,2,3,4,5]">\n\n            <td *ngFor="let col of [0,1,2,3,4,5,6]">\n\n              <template\n\n                [ngTemplateOutlet]="monthviewInactiveDisplayEventTemplate"\n\n                [ngOutletContext]="{view: views[0], row: row, col: col}">\n\n              </template>\n\n            </td>\n\n            <tr>\n\n        </tbody>\n\n      </table>\n\n    </ion-slide>\n\n    <ion-slide class="monthview-slide">\n\n      <table *ngIf="1===currentViewIndex" class="table table-fixed monthview-datetable">\n\n        <thead>\n\n          <tr>\n\n            <th *ngFor="let dayHeader of views[1].dayHeaders" class="monthview-week-title">\n\n              <small>{{dayHeader}}</small>\n\n            </th>\n\n          </tr>\n\n        </thead>\n\n        <tbody>\n\n          <tr *ngFor="let row of [0,1,2,3,4,5]">\n\n            <td\n\n              *ngFor="let col of [0,1,2,3,4,5,6]"\n\n              tappable\n\n              [id]="[1, row, col].join(\'-\')"\n\n              (click)="select($event, views[1].dates[row*7+col])"\n\n              [ngClass]="getHighlightClass(views[1].dates[row*7+col])"\n\n              [attr.data-clickable-target]="!(views[1].dates[row*7+col] | isPast)"\n\n              [attr.data-clickable-date]="views[1].dates[row*7+col].date"\n\n              [class.weekend]="col > 4">\n\n              <template [ngTemplateOutlet]="monthviewDisplayEventTemplate" [ngOutletContext]="{view: views[1], row: row, col: col}">\n\n              </template>\n\n            </td>\n\n          </tr>\n\n        </tbody>\n\n      </table>\n\n      <table *ngIf="1!==currentViewIndex" class="table table-fixed monthview-datetable">\n\n        <thead>\n\n          <tr class="text-center">\n\n            <th *ngFor="let dayHeader of views[1].dayHeaders">\n\n              <small>{{dayHeader}}</small>\n\n            </th>\n\n          </tr>\n\n        </thead>\n\n        <tbody>\n\n          <tr *ngFor="let row of [0,1,2,3,4,5]">\n\n            <td *ngFor="let col of [0,1,2,3,4,5,6]">\n\n              <template [ngTemplateOutlet]="monthviewInactiveDisplayEventTemplate" [ngOutletContext]="{view: views[1], row: row, col: col}">\n\n              </template>\n\n            </td>\n\n            <tr>\n\n        </tbody>\n\n      </table>\n\n    </ion-slide>\n\n    <ion-slide class="monthview-slide">\n\n      <table *ngIf="2===currentViewIndex" class="table table-fixed monthview-datetable">\n\n        <thead>\n\n          <tr>\n\n            <th *ngFor="let dayHeader of views[2].dayHeaders" class="monthview-week-title">\n\n              <small>{{dayHeader}}</small>\n\n            </th>\n\n          </tr>\n\n        </thead>\n\n        <tbody>\n\n          <tr *ngFor="let row of [0,1,2,3,4,5]">\n\n            <td\n\n              *ngFor="let col of [0,1,2,3,4,5,6]"\n\n              tappable\n\n              [id]="[2, row, col].join(\'-\')"\n\n              (click)="select($event, views[2].dates[row*7+col])"\n\n              [ngClass]="getHighlightClass(views[2].dates[row*7+col])"\n\n              [attr.data-clickable-target]="!(views[2].dates[row*7+col] | isPast)"\n\n              [attr.data-clickable-date]="views[2].dates[row*7+col].date"\n\n              [class.weekend]="col > 4">\n\n              <template [ngTemplateOutlet]="monthviewDisplayEventTemplate" [ngOutletContext]="{view: views[2], row: row, col: col}">\n\n              </template>\n\n            </td>\n\n          </tr>\n\n        </tbody>\n\n      </table>\n\n      <table *ngIf="2!==currentViewIndex" class="table table-fixed monthview-datetable">\n\n        <thead>\n\n          <tr class="text-center">\n\n            <th *ngFor="let dayHeader of views[2].dayHeaders">\n\n              <small>{{dayHeader}}</small>\n\n            </th>\n\n          </tr>\n\n        </thead>\n\n        <tbody>\n\n          <tr *ngFor="let row of [0,1,2,3,4,5]">\n\n            <td *ngFor="let col of [0,1,2,3,4,5,6]">\n\n              <template [ngTemplateOutlet]="monthviewInactiveDisplayEventTemplate" [ngOutletContext]="{view: views[2], row: row, col: col}">\n\n              </template>\n\n            </td>\n\n            <tr>\n\n        </tbody>\n\n      </table>\n\n    </ion-slide>\n\n  </ion-slides>\n\n  <template [ngTemplateOutlet]="monthviewEventDetailTemplate" [ngOutletContext]="{showEventDetail:showEventDetail, selectedDate: selectedDate, noEventsLabel: noEventsLabel}">\n\n  </template>\n\n</div>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\calendar\monthview\monthview.html"*/,
             styles: [
                 "\n      .text-muted {\n        color: #999;\n      }\n\n      .table-fixed {\n        table-layout: fixed;\n      }\n\n      .table {\n        width: 100%;\n        max-width: 100%;\n        background-color: transparent;\n        border: none !important;\n      }\n\n      .table > thead > tr > th,\n      .table > tbody > tr > th,\n      .table > tfoot > tr > th,\n      .table > thead > tr > td,\n      .table > tbody > tr > td,\n      .table > tfoot > tr > td {\n        padding: 8px;\n        line-height: 20px;\n        vertical-align: top;\n      }\n\n      .table > thead > tr > th {\n        vertical-align: bottom;\n        border-bottom: 2px solid #ddd;\n      }\n\n      .table > thead:first-child > tr:first-child > th, .table > thead:first-child > tr:first-child > td {\n        border-top: 0\n      }\n\n      .table > tbody + tbody {\n        border-top: 2px solid #ddd;\n      }\n\n      .table-bordered {\n        border: 1px solid #ddd;\n      }\n\n      .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th,\n      .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {\n        border: 1px solid #ddd;\n      }\n\n      .table-bordered > thead > tr > th, .table-bordered > thead > tr > td {\n        border-bottom-width: 2px;\n      }\n\n      .table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {\n        background-color: #f9f9f9\n      }\n\n      .monthview-primary-with-event {\n        background-color: #3a87ad;\n        color: white;\n      }\n\n      .monthview-current {\n        background-color: #f0f0f0;\n      }\n\n      .monthview-selected {\n        background-color: #009900;\n        color: white;\n      }\n\n      .monthview-datetable td.monthview-disabled {\n        color: lightgrey;\n        cursor: default;\n      }\n\n      .monthview-datetable th {\n        text-align: center;\n      }\n\n      .monthview-datetable td {\n        cursor: pointer;\n        text-align: center;\n      }\n\n      .monthview-secondary-with-event {\n        background-color: #d9edf7;\n      }\n\n      ::-webkit-scrollbar,\n      *::-webkit-scrollbar {\n        display: none;\n      }\n    ",
                 "\n      .monthview-week-title {\n        border-bottom: none !important;\n      }\n\n      .monthview-slide {\n        padding-top: 40px;\n        align-items: flex-start;\n      }\n\n      .monthview-slide table thead {\n        position: absolute;\n        top: 0;\n        left: 0;\n        right: 0;\n        background: #fff;\n        z-index: 24810;\n      }\n\n      .monthview-slide table thead tr {\n        height: 40px;\n        display: flex;\n        justify-content: space-around;\n      }\n\n      .monthview-slide table tbody td {\n        height: 40px;\n        transition: color 100ms ease-in-out;\n      }\n\n      .monthview-slide table tbody td.weekend,\n      .monthview-week-title:last-child,\n      .monthview-week-title:nth-last-child(2) {\n        color: red;\n      }\n\n      .monthview-slide table tbody {\n        transform: translateY(0px);\n      }\n\n      .monthview-current,\n      .monthview-selected {\n        border-radius: 100%;\n        transition: border-radius 200ms ease-in-out;\n      }\n\n      .monthview-selected {\n        background-color: #139dea !important;\n        color: #fff !important;\n      }\n\n      .monthview-slide table tbody td.text-muted.weekend {\n        color: #ad4a4a;\n      }\n\n      .monthview-primary-with-event,\n      .monthview-secondary-with-event {\n        background-color: transparent;\n        color: #333;\n      }\n\n      .monthview-secondary-with-event {\n        color: #888;\n      }\n\n      .selected-week td,\n      .multiselect-col {\n        background-color: #139dea !important;\n        color: #fff !important;\n        font-weight: bold;\n        border-radius: 0;\n        border: 1px solid #139dea;\n      }\n    "
@@ -10353,10 +10219,10 @@ var MonthViewComponent = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Configuration; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environment__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_configuration_model__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environment__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_configuration_model__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_http_request_http_request__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_voj_tuple_model__ = __webpack_require__(673);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_voj_tuple_model__ = __webpack_require__(671);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_voj_events_voj_events__ = __webpack_require__(43);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -10427,12 +10293,12 @@ var Configuration = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_navigation_service__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__cv_offer_module_availabilities_availabilities__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__account_module_jobs_list_jobs_list__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__cv_offer_module_qualities_qualities__ = __webpack_require__(315);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__cv_offer_module_languages_languages__ = __webpack_require__(316);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__account_module_my_cv_my_cv__ = __webpack_require__(317);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__cv_offer_module_keywords_keywords__ = __webpack_require__(310);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__remuneration_remuneration__ = __webpack_require__(318);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__account_module_jobs_list_jobs_list__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__cv_offer_module_qualities_qualities__ = __webpack_require__(314);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__cv_offer_module_languages_languages__ = __webpack_require__(315);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__account_module_my_cv_my_cv__ = __webpack_require__(316);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__cv_offer_module_keywords_keywords__ = __webpack_require__(309);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__remuneration_remuneration__ = __webpack_require__(317);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -10460,9 +10326,7 @@ var InformationResumePage = (function () {
         this.platform = platform;
         this.navCtrl = navCtrl;
         this.navService = navService;
-        this.isMobile = false;
         this.config = this.configurationService.configuration;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
         this.headerData = {
             title: 'My CV',
             style: 'any',
@@ -10521,7 +10385,7 @@ var InformationResumePage = (function () {
     };
     InformationResumePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'information-resume-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/information-resume/information-resume.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n<div [ngClass]="isMobile ? \'information-resume-container\' : \'\'" class="information-resume-parent">\n    <div [ngClass]="isMobile ? \'information-resume-child-container\' : \'\'" class="information-resume-child">\n        <ion-list padding class="information-resume-list">\n            <ion-item *ngFor="let item of informationResumeData">\n                <span class="information-resume-label">{{item.label}}</span>\n                <button class="information-resume-edit-btn" ion-button icon-only item-end\n                        (click)="item.action()">\n                    <ion-icon name="md-create"></ion-icon>\n                </button>\n            </ion-item>\n        </ion-list>\n    </div>\n</div>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/information-resume/information-resume.html"*/,
+            selector: 'information-resume-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\information-resume\information-resume.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<div class="voj-content">\n\n    <div class="voj-form-container">\n\n        <ion-list padding class="information-resume-list">\n\n            <ion-item *ngFor="let item of informationResumeData">\n\n                <span class="information-resume-label">{{item.label}}</span>\n\n                <button class="information-resume-edit-btn" ion-button icon-only item-end\n\n                        (click)="item.action()">\n\n                    <ion-icon name="md-create"></ion-icon>\n\n                </button>\n\n            </ion-item>\n\n        </ion-list>\n\n    </div>\n\n</div>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\information-resume\information-resume.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__["a" /* Configuration */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */],
@@ -10557,7 +10421,7 @@ var VojCardModel = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AvailabilitiesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__jobyer_availability_choice_jobyer_availability_choice__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__jobyer_availability_choice_jobyer_availability_choice__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_navigation_service__ = __webpack_require__(16);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -10577,9 +10441,7 @@ var AvailabilitiesPage = (function () {
     function AvailabilitiesPage(configurationService, navigationService) {
         this.configurationService = configurationService;
         this.navigationService = navigationService;
-        this.isMobile = false;
         this.config = this.configurationService.configuration;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
         this.headerData = {
             title: 'Mes disponibilités',
             style: 'any',
@@ -10622,7 +10484,7 @@ var AvailabilitiesPage = (function () {
     };
     AvailabilitiesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'availabilities-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/cv-offer-module/availabilities/availabilities.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n<div [ngClass]="isMobile ? \'availabilities-container\' : \'\'" class="availabilities-parent">\n    <div [ngClass]="isMobile ? \'availabilities-child-container\' : \'\'" class="availabilities-child">\n\n        <p\n            (click)="goToJobyerAvailabilityChoice()"\n            class="availabilities-link">\n            Ajouter une disponibilité\n        </p>\n\n        <ion-list padding class="availability-list">\n            <ion-item *ngFor="let item of testAvailabilitiesData let i = index">\n                <span class="availability-label">From {{item.fromDay | date: \'dd/MM/y\'}} to {{item.toDay | date: \'dd/MM/y\'}}</span>\n                <br>\n                <span class="availability-label">From {{item.fromHour}} to {{item.toHour}}</span>\n                <voj-form class="availability-toggle" [data]="{\n                    fields: [\n                        {\n                            type: \'checkbox\',\n                            value: \'radio 1\',\n                            label: \'Ajouter à mes alertes\',\n                            required: true,\n                            visible: true,\n                            id: \'\',\n                            name: \'radioTest\'\n                        }\n                    ]\n                }"></voj-form>\n\n                <button class="availability-delete-btn" ion-button icon-only item-end (click)="deleteAvailability(i)">\n                    <ion-icon name="ios-trash"></ion-icon>\n                </button>\n            </ion-item>\n        </ion-list>\n\n        <div class="availabilities-validate-button">\n            <button ion-button class="validate-btn titlecase-btn">Valider</button>\n        </div>\n\n    </div>\n</div>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/cv-offer-module/availabilities/availabilities.html"*/,
+            selector: 'availabilities-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\availabilities\availabilities.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<div class="voj-content">\n\n    <div class="voj-form-container">\n\n\n\n        <p\n\n            (click)="goToJobyerAvailabilityChoice()"\n\n            class="availabilities-link">\n\n            Ajouter une disponibilité\n\n        </p>\n\n\n\n        <ion-list padding class="availability-list">\n\n            <ion-item *ngFor="let item of testAvailabilitiesData let i = index">\n\n                <span class="availability-label">From {{item.fromDay | date: \'dd/MM/y\'}} to {{item.toDay | date: \'dd/MM/y\'}}</span>\n\n                <br>\n\n                <span class="availability-label">From {{item.fromHour}} to {{item.toHour}}</span>\n\n                <voj-form class="availability-toggle" [data]="{\n\n                    fields: [\n\n                        {\n\n                            type: \'checkbox\',\n\n                            value: \'radio 1\',\n\n                            label: \'Ajouter à mes alertes\',\n\n                            required: true,\n\n                            visible: true,\n\n                            id: \'\',\n\n                            name: \'radioTest\'\n\n                        }\n\n                    ]\n\n                }"></voj-form>\n\n\n\n                <button class="availability-delete-btn" ion-button icon-only item-end (click)="deleteAvailability(i)">\n\n                    <ion-icon name="ios-trash"></ion-icon>\n\n                </button>\n\n            </ion-item>\n\n        </ion-list>\n\n\n\n        <div class="availabilities-validate-button">\n\n            <button ion-button class="validate-btn titlecase-btn">Valider</button>\n\n        </div>\n\n\n\n    </div>\n\n</div>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\availabilities\availabilities.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__["a" /* Configuration */],
             __WEBPACK_IMPORTED_MODULE_3__services_navigation_service__["a" /* NavigationService */]])
@@ -10634,7 +10496,7 @@ var AvailabilitiesPage = (function () {
 
 /***/ }),
 
-/***/ 792:
+/***/ 790:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10667,7 +10529,7 @@ var WeekViewHeaderComponent = (function () {
     ], WeekViewHeaderComponent.prototype, "onSelect", void 0);
     WeekViewHeaderComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'weekview-header',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/calendar/weekview-header/weekview-header.html"*/'<table class="table table-fixed weekview-header table-weekview-header">\n  <thead>\n    <tr>\n      <th class="calendar-hour-column"></th>\n      <th\n        *ngFor="let dayHeader of data.dayHeaders | markCurrent: currentDate"\n        [class.weekend]="dayHeader.isWeekend"\n        class="weekview-header text-center">\n        {{ dayHeader.day }}\n      </th>\n    </tr>\n    <tr>\n      <th class="calendar-hour-column">\n        <span class="calendar-hour-column-icon"></span>\n      </th>\n      <th\n        *ngFor="let dayHeader of data.dayHeaders | markCurrent: currentDate; let dayIndex = index"\n        [class.weekend]="dayHeader.isWeekend"\n        [class.current]="dayHeader.isCurrent"\n        [class.has-events]="data | hasEvents: dayIndex"\n        class="weekview-header text-center">\n        <button\n          (click)="select(dayHeader.date)"\n          class="day-button"\n          ion-button\n          clear>\n          <div>\n            {{ dayHeader.week }}\n          </div>\n          <div class="has-events-dot">•</div>\n        </button>\n      </th>\n    </tr>\n  </thead>\n</table>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/calendar/weekview-header/weekview-header.html"*/,
+            selector: 'weekview-header',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\calendar\weekview-header\weekview-header.html"*/'<table class="table table-fixed weekview-header table-weekview-header">\n\n  <thead>\n\n    <tr>\n\n      <th class="calendar-hour-column"></th>\n\n      <th\n\n        *ngFor="let dayHeader of data.dayHeaders | markCurrent: currentDate"\n\n        [class.weekend]="dayHeader.isWeekend"\n\n        class="weekview-header text-center">\n\n        {{ dayHeader.day }}\n\n      </th>\n\n    </tr>\n\n    <tr>\n\n      <th class="calendar-hour-column">\n\n        <span class="calendar-hour-column-icon"></span>\n\n      </th>\n\n      <th\n\n        *ngFor="let dayHeader of data.dayHeaders | markCurrent: currentDate; let dayIndex = index"\n\n        [class.weekend]="dayHeader.isWeekend"\n\n        [class.current]="dayHeader.isCurrent"\n\n        [class.has-events]="data | hasEvents: dayIndex"\n\n        class="weekview-header text-center">\n\n        <button\n\n          (click)="select(dayHeader.date)"\n\n          class="day-button"\n\n          ion-button\n\n          clear>\n\n          <div>\n\n            {{ dayHeader.week }}\n\n          </div>\n\n          <div class="has-events-dot">•</div>\n\n        </button>\n\n      </th>\n\n    </tr>\n\n  </thead>\n\n</table>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\calendar\weekview-header\weekview-header.html"*/,
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
             styles: [
                 "\n      .table-weekview-header {\n        box-shadow: 0 1px 10px rgba(0,0,0,0.2);\n        position: relative;\n        z-index: 2;\n      }\n      .table-weekview-header > thead > tr:first-child {\n        font-size: 12px;\n      }\n      .table-weekview-header > thead > tr:last-child .calendar-hour-column-icon {\n        background-image: url('/assets/delivery.svg');\n        background-repeat: no-repeat;\n        background-position: center;\n        background-size: cover;\n        display: inline-block;\n        width: 75%;\n        padding-top: 75%;\n      }\n      .table-weekview-header > thead > tr > th {\n        padding: 0 !important;\n        vertical-align: middle !important;\n      }\n      .table-weekview-header > thead > tr > th .day-button .button-inner {\n        position: relative;\n      }\n      .table-weekview-header > thead > tr > th .has-events-dot {\n        display: none;\n        position: absolute;\n        bottom: -15px;\n      }\n      .table-weekview-header > thead > tr > th.current .has-events-dot {\n        bottom: -5px;\n      }\n      .table-weekview-header > thead > tr > th.has-events .has-events-dot {\n        display: block;\n      }\n      .table-weekview-header > thead > tr > th.current {\n        color: #488aff;\n      }\n      .table-weekview-header > thead > tr > th.current .day-button .button-inner {\n        border: 1px solid #488aff;\n        border-radius: 50%;\n        background-color: #488aff;\n        color: #fff;\n        min-height: 42px;\n      }\n      .table-weekview-header > thead > tr > th.current .has-events-dot {\n        color: #fff;\n      }\n      .table-weekview-header > thead > tr > th.weekend,\n      .table-weekview-header > thead > tr > th.weekend .day-button {\n        color: red;\n      }\n      .table-weekview-header > thead > tr > th .day-button {\n        color: #222;\n        height: auto;\n        margin: 0;\n        padding: 14px 0;\n        width: 100%;\n      }\n      .table-weekview-header > thead > tr > th .day-button .button-inner {\n        flex-direction: column;\n        font-size: 2rem;\n      }\n      .table-weekview-header > thead > tr:first-child > th {\n        padding: 0;\n        border-bottom-width: 1px;\n      }\n      .table-weekview-header > thead > tr > th {\n        vertical-align: top;\n      }\n    "
@@ -10682,7 +10544,7 @@ var WeekViewHeaderComponent = (function () {
 
 /***/ }),
 
-/***/ 793:
+/***/ 791:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10694,12 +10556,12 @@ var WeekViewHeaderComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_merge__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_merge__ = __webpack_require__(184);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_merge__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_date_fns__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_date_fns___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_date_fns__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__calendar_service__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__weekview_weekview__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__weekview_weekview__ = __webpack_require__(369);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -11242,7 +11104,7 @@ var DayViewComponent = (function () {
     ], DayViewComponent.prototype, "onTitleChanged", void 0);
     DayViewComponent = DayViewComponent_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["Component"])({
-            selector: 'dayview',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/calendar/dayview/dayview.html"*/'<ion-slides\n  #daySlider\n  [loop]="true"\n  [dir]="dir"\n  (ionSlideDidChange)="onSlideChanged()">\n  <ion-slide [ngxOffsetContainer]="updateOffset$">\n    <div>\n      <div ngxOffsetSource="offsetHeight" ngxOffsetValueType="px">\n        <weekview-header [data]="views[0]" (onSelect)="selectDay($event)">\n        </weekview-header>\n        <div class="dayview-allday-table">\n          <div class="dayview-allday-label">{{ allDayLabel }}</div>\n          <ion-scroll\n            scrollY="true"\n            zoom="false"\n            class="dayview-allday-content-wrapper">\n            <table class="table dayview-allday-content-table">\n              <tbody>\n                <tr>\n                  <td\n                    *ngIf="0===currentViewIndex"\n                    class="calendar-cell"\n                    [ngClass]="{\'calendar-event-wrap\':views[0].allDayEvents.length>0}"\n                    [ngStyle]="{height: 25*views[0].allDayEvents.length+\'px\'}">\n                    <div\n                      *ngFor="let displayEvent of views[0].allDayEvents; let eventIndex=index"\n                      class="calendar-event"\n                      tappable\n                      (click)="eventSelected(displayEvent.event)"\n                      [ngStyle]="{top: 25*eventIndex+\'px\',width: \'100%\',height:\'25px\'}">\n                      <ng-template [ngTemplateOutlet]="dayviewAllDayEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n                      </ng-template>\n                    </div>\n                  </td>\n                  <td class="calendar-cell" *ngIf="0!==currentViewIndex">\n                  </td>\n                </tr>\n              </tbody>\n            </table>\n          </ion-scroll>\n        </div>\n      </div>\n      <init-position-scroll\n        *ngIf="0===currentViewIndex"\n        class="dayview-normal-event-container"\n        ngxOffsetTarget="margin-top"\n        [initPosition]="initScrollPosition"\n        [emitEvent]="preserveScrollPosition"\n        (onScroll)="setScrollPosition($event)">\n        <table class="table table-bordered table-fixed dayview-normal-event-table">\n          <tbody>\n            <tr *ngFor="let tm of views[0].rows; let i = index">\n              <td class="calendar-hour-column text-center">\n                {{hourColumnLabels[i]}}\n              </td>\n              <td\n                class="calendar-cell"\n                tappable\n                (click)="select(tm.time, tm.events)">\n                <div\n                  [ngClass]="{\'calendar-event-wrap\': tm.events}"\n                  *ngIf="tm.events">\n                  <div\n                    *ngFor="let displayEvent of tm.events"\n                    class="calendar-event"\n                    tappable\n                    (click)="eventSelected(displayEvent.event)"\n                    [ngStyle]="{\n                      top: (37*displayEvent.startOffset/hourParts)+\'px\',\n                      left: 100/displayEvent.overlapNumber*displayEvent.position+\'%\',\n                      width: 100/displayEvent.overlapNumber+\'%\',\n                      height: 37*(displayEvent.endIndex -displayEvent.startIndex - (displayEvent.endOffset + displayEvent.startOffset)/hourParts)+\'px\'}">\n                    <template [ngTemplateOutlet]="dayviewNormalEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n                    </template>\n                  </div>\n                </div>\n              </td>\n            </tr>\n          </tbody>\n        </table>\n      </init-position-scroll>\n      <init-position-scroll\n        *ngIf="0!==currentViewIndex"\n        class="dayview-normal-event-container"\n        ngxOffsetTarget="margin-top"\n        [initPosition]="initScrollPosition">\n        <table class="table table-bordered table-fixed dayview-normal-event-table">\n          <tbody>\n            <tr *ngFor="let tm of views[0].rows; let i = index">\n              <td class="calendar-hour-column text-center">\n                {{hourColumnLabels[i]}}\n              </td>\n              <td class="calendar-cell">\n              </td>\n            </tr>\n          </tbody>\n        </table>\n      </init-position-scroll>\n    </div>\n  </ion-slide>\n  <ion-slide [ngxOffsetContainer]="updateOffset$">\n    <div>\n      <div ngxOffsetSource="offsetHeight" ngxOffsetValueType="px">\n        <weekview-header [data]="views[1]" (onSelect)="selectDay($event)">\n        </weekview-header>\n        <div class="dayview-allday-table">\n          <div class="dayview-allday-label">{{ allDayLabel }}</div>\n          <ion-scroll\n            scrollY="true"\n            zoom="false"\n            class="dayview-allday-content-wrapper">\n            <table class="table dayview-allday-content-table">\n              <tbody>\n                <tr>\n                  <td\n                    *ngIf="1===currentViewIndex"\n                    class="calendar-cell"\n                    [ngClass]="{\'calendar-event-wrap\':views[1].allDayEvents.length>0}"\n                    [ngStyle]="{height: 25*views[1].allDayEvents.length+\'px\'}">\n                    <div\n                      *ngFor="let displayEvent of views[1].allDayEvents; let eventIndex=index"\n                      class="calendar-event"\n                      tappable\n                      (click)="eventSelected(displayEvent.event)"\n                      [ngStyle]="{top: 25*eventIndex+\'px\',width: \'100%\',height:\'25px\'}">\n                      <ng-template [ngTemplateOutlet]="dayviewAllDayEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n                      </ng-template>\n                    </div>\n                  </td>\n                  <td class="calendar-cell" *ngIf="1!==currentViewIndex">\n                  </td>\n                </tr>\n              </tbody>\n            </table>\n          </ion-scroll>\n        </div>\n      </div>\n      <init-position-scroll\n        *ngIf="1===currentViewIndex"\n        class="dayview-normal-event-container"\n        ngxOffsetTarget="margin-top"\n        [initPosition]="initScrollPosition"\n        [emitEvent]="preserveScrollPosition"\n        (onScroll)="setScrollPosition($event)">\n        <table class="table table-bordered table-fixed dayview-normal-event-table">\n          <tbody>\n            <tr *ngFor="let tm of views[1].rows; let i = index">\n              <td class="calendar-hour-column text-center">\n                {{hourColumnLabels[i]}}\n              </td>\n              <td\n                class="calendar-cell"\n                tappable\n                (click)="select(tm.time, tm.events)">\n                <div\n                  [ngClass]="{\'calendar-event-wrap\': tm.events}"\n                  *ngIf="tm.events">\n                  <div\n                    *ngFor="let displayEvent of tm.events"\n                    class="calendar-event"\n                    tappable\n                    (click)="eventSelected(displayEvent.event)"\n                    [ngStyle]="{\n                      top: (37*displayEvent.startOffset/hourParts)+\'px\',\n                      left: 100/displayEvent.overlapNumber*displayEvent.position+\'%\',\n                      width: 100/displayEvent.overlapNumber+\'%\',\n                      height: 37*(displayEvent.endIndex -displayEvent.startIndex - (displayEvent.endOffset + displayEvent.startOffset)/hourParts)+\'px\'}">\n                    <template [ngTemplateOutlet]="dayviewNormalEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n                    </template>\n                  </div>\n                </div>\n              </td>\n            </tr>\n          </tbody>\n        </table>\n      </init-position-scroll>\n      <init-position-scroll\n        *ngIf="1!==currentViewIndex"\n        class="dayview-normal-event-container"\n        ngxOffsetTarget="margin-top"\n        [initPosition]="initScrollPosition">\n        <table class="table table-bordered table-fixed dayview-normal-event-table">\n          <tbody>\n            <tr *ngFor="let tm of views[1].rows; let i = index">\n              <td class="calendar-hour-column text-center">\n                {{hourColumnLabels[i]}}\n              </td>\n              <td class="calendar-cell">\n              </td>\n            </tr>\n          </tbody>\n        </table>\n      </init-position-scroll>\n    </div>\n  </ion-slide>\n  <ion-slide [ngxOffsetContainer]="updateOffset$">\n    <div>\n      <div ngxOffsetSource="offsetHeight" ngxOffsetValueType="px">\n        <weekview-header [data]="views[0]" (onSelect)="selectDay($event)">\n        </weekview-header>\n        <div class="dayview-allday-table">\n          <div class="dayview-allday-label">{{ allDayLabel }}</div>\n          <ion-scroll\n            scrollY="true"\n            zoom="false"\n            class="dayview-allday-content-wrapper">\n            <table class="table dayview-allday-content-table">\n              <tbody>\n                <tr>\n                  <td\n                    *ngIf="2===currentViewIndex"\n                    class="calendar-cell"\n                    [ngClass]="{\'calendar-event-wrap\':views[2].allDayEvents.length>0}"\n                    [ngStyle]="{height: 25*views[2].allDayEvents.length+\'px\'}">\n                    <div\n                      *ngFor="let displayEvent of views[2].allDayEvents; let eventIndex=index"\n                      class="calendar-event"\n                      tappable\n                      (click)="eventSelected(displayEvent.event)"\n                      [ngStyle]="{top: 25*eventIndex+\'px\',width: \'100%\',height:\'25px\'}">\n                      <ng-template [ngTemplateOutlet]="dayviewAllDayEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n                      </ng-template>\n                    </div>\n                  </td>\n                  <td class="calendar-cell" *ngIf="2!==currentViewIndex">\n                  </td>\n                </tr>\n              </tbody>\n            </table>\n          </ion-scroll>\n        </div>\n      </div>\n      <init-position-scroll\n        *ngIf="2===currentViewIndex"\n        class="dayview-normal-event-container"\n        ngxOffsetTarget="margin-top"\n        [initPosition]="initScrollPosition"\n        [emitEvent]="preserveScrollPosition"\n        (onScroll)="setScrollPosition($event)">\n        <table class="table table-bordered table-fixed dayview-normal-event-table">\n          <tbody>\n            <tr *ngFor="let tm of views[2].rows; let i = index">\n              <td class="calendar-hour-column text-center">\n                {{hourColumnLabels[i]}}\n              </td>\n              <td\n                class="calendar-cell"\n                tappable\n                (click)="select(tm.time, tm.events)">\n                <div\n                  [ngClass]="{\'calendar-event-wrap\': tm.events}"\n                  *ngIf="tm.events">\n                  <div\n                    *ngFor="let displayEvent of tm.events"\n                    class="calendar-event"\n                    tappable\n                    (click)="eventSelected(displayEvent.event)"\n                    [ngStyle]="{\n                      top: (37*displayEvent.startOffset/hourParts)+\'px\',\n                      left: 100/displayEvent.overlapNumber*displayEvent.position+\'%\',\n                      width: 100/displayEvent.overlapNumber+\'%\',\n                      height: 37*(displayEvent.endIndex -displayEvent.startIndex - (displayEvent.endOffset + displayEvent.startOffset)/hourParts)+\'px\'}">\n                    <template [ngTemplateOutlet]="dayviewNormalEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n                    </template>\n                  </div>\n                </div>\n              </td>\n            </tr>\n          </tbody>\n        </table>\n      </init-position-scroll>\n      <init-position-scroll\n        *ngIf="2!==currentViewIndex"\n        class="dayview-normal-event-container"\n        ngxOffsetTarget="margin-top"\n        [initPosition]="initScrollPosition">\n        <table class="table table-bordered table-fixed dayview-normal-event-table">\n          <tbody>\n            <tr *ngFor="let tm of views[2].rows; let i = index">\n              <td class="calendar-hour-column text-center">\n                {{hourColumnLabels[i]}}\n              </td>\n              <td class="calendar-cell">\n              </td>\n            </tr>\n          </tbody>\n        </table>\n      </init-position-scroll>\n    </div>\n  </ion-slide>\n</ion-slides>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/calendar/dayview/dayview.html"*/,
+            selector: 'dayview',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\calendar\dayview\dayview.html"*/'<ion-slides\n\n  #daySlider\n\n  [loop]="true"\n\n  [dir]="dir"\n\n  (ionSlideDidChange)="onSlideChanged()">\n\n  <ion-slide [ngxOffsetContainer]="updateOffset$">\n\n    <div>\n\n      <div ngxOffsetSource="offsetHeight" ngxOffsetValueType="px">\n\n        <weekview-header [data]="views[0]" (onSelect)="selectDay($event)">\n\n        </weekview-header>\n\n        <div class="dayview-allday-table">\n\n          <div class="dayview-allday-label">{{ allDayLabel }}</div>\n\n          <ion-scroll\n\n            scrollY="true"\n\n            zoom="false"\n\n            class="dayview-allday-content-wrapper">\n\n            <table class="table dayview-allday-content-table">\n\n              <tbody>\n\n                <tr>\n\n                  <td\n\n                    *ngIf="0===currentViewIndex"\n\n                    class="calendar-cell"\n\n                    [ngClass]="{\'calendar-event-wrap\':views[0].allDayEvents.length>0}"\n\n                    [ngStyle]="{height: 25*views[0].allDayEvents.length+\'px\'}">\n\n                    <div\n\n                      *ngFor="let displayEvent of views[0].allDayEvents; let eventIndex=index"\n\n                      class="calendar-event"\n\n                      tappable\n\n                      (click)="eventSelected(displayEvent.event)"\n\n                      [ngStyle]="{top: 25*eventIndex+\'px\',width: \'100%\',height:\'25px\'}">\n\n                      <ng-template [ngTemplateOutlet]="dayviewAllDayEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n\n                      </ng-template>\n\n                    </div>\n\n                  </td>\n\n                  <td class="calendar-cell" *ngIf="0!==currentViewIndex">\n\n                  </td>\n\n                </tr>\n\n              </tbody>\n\n            </table>\n\n          </ion-scroll>\n\n        </div>\n\n      </div>\n\n      <init-position-scroll\n\n        *ngIf="0===currentViewIndex"\n\n        class="dayview-normal-event-container"\n\n        ngxOffsetTarget="margin-top"\n\n        [initPosition]="initScrollPosition"\n\n        [emitEvent]="preserveScrollPosition"\n\n        (onScroll)="setScrollPosition($event)">\n\n        <table class="table table-bordered table-fixed dayview-normal-event-table">\n\n          <tbody>\n\n            <tr *ngFor="let tm of views[0].rows; let i = index">\n\n              <td class="calendar-hour-column text-center">\n\n                {{hourColumnLabels[i]}}\n\n              </td>\n\n              <td\n\n                class="calendar-cell"\n\n                tappable\n\n                (click)="select(tm.time, tm.events)">\n\n                <div\n\n                  [ngClass]="{\'calendar-event-wrap\': tm.events}"\n\n                  *ngIf="tm.events">\n\n                  <div\n\n                    *ngFor="let displayEvent of tm.events"\n\n                    class="calendar-event"\n\n                    tappable\n\n                    (click)="eventSelected(displayEvent.event)"\n\n                    [ngStyle]="{\n\n                      top: (37*displayEvent.startOffset/hourParts)+\'px\',\n\n                      left: 100/displayEvent.overlapNumber*displayEvent.position+\'%\',\n\n                      width: 100/displayEvent.overlapNumber+\'%\',\n\n                      height: 37*(displayEvent.endIndex -displayEvent.startIndex - (displayEvent.endOffset + displayEvent.startOffset)/hourParts)+\'px\'}">\n\n                    <template [ngTemplateOutlet]="dayviewNormalEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n\n                    </template>\n\n                  </div>\n\n                </div>\n\n              </td>\n\n            </tr>\n\n          </tbody>\n\n        </table>\n\n      </init-position-scroll>\n\n      <init-position-scroll\n\n        *ngIf="0!==currentViewIndex"\n\n        class="dayview-normal-event-container"\n\n        ngxOffsetTarget="margin-top"\n\n        [initPosition]="initScrollPosition">\n\n        <table class="table table-bordered table-fixed dayview-normal-event-table">\n\n          <tbody>\n\n            <tr *ngFor="let tm of views[0].rows; let i = index">\n\n              <td class="calendar-hour-column text-center">\n\n                {{hourColumnLabels[i]}}\n\n              </td>\n\n              <td class="calendar-cell">\n\n              </td>\n\n            </tr>\n\n          </tbody>\n\n        </table>\n\n      </init-position-scroll>\n\n    </div>\n\n  </ion-slide>\n\n  <ion-slide [ngxOffsetContainer]="updateOffset$">\n\n    <div>\n\n      <div ngxOffsetSource="offsetHeight" ngxOffsetValueType="px">\n\n        <weekview-header [data]="views[1]" (onSelect)="selectDay($event)">\n\n        </weekview-header>\n\n        <div class="dayview-allday-table">\n\n          <div class="dayview-allday-label">{{ allDayLabel }}</div>\n\n          <ion-scroll\n\n            scrollY="true"\n\n            zoom="false"\n\n            class="dayview-allday-content-wrapper">\n\n            <table class="table dayview-allday-content-table">\n\n              <tbody>\n\n                <tr>\n\n                  <td\n\n                    *ngIf="1===currentViewIndex"\n\n                    class="calendar-cell"\n\n                    [ngClass]="{\'calendar-event-wrap\':views[1].allDayEvents.length>0}"\n\n                    [ngStyle]="{height: 25*views[1].allDayEvents.length+\'px\'}">\n\n                    <div\n\n                      *ngFor="let displayEvent of views[1].allDayEvents; let eventIndex=index"\n\n                      class="calendar-event"\n\n                      tappable\n\n                      (click)="eventSelected(displayEvent.event)"\n\n                      [ngStyle]="{top: 25*eventIndex+\'px\',width: \'100%\',height:\'25px\'}">\n\n                      <ng-template [ngTemplateOutlet]="dayviewAllDayEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n\n                      </ng-template>\n\n                    </div>\n\n                  </td>\n\n                  <td class="calendar-cell" *ngIf="1!==currentViewIndex">\n\n                  </td>\n\n                </tr>\n\n              </tbody>\n\n            </table>\n\n          </ion-scroll>\n\n        </div>\n\n      </div>\n\n      <init-position-scroll\n\n        *ngIf="1===currentViewIndex"\n\n        class="dayview-normal-event-container"\n\n        ngxOffsetTarget="margin-top"\n\n        [initPosition]="initScrollPosition"\n\n        [emitEvent]="preserveScrollPosition"\n\n        (onScroll)="setScrollPosition($event)">\n\n        <table class="table table-bordered table-fixed dayview-normal-event-table">\n\n          <tbody>\n\n            <tr *ngFor="let tm of views[1].rows; let i = index">\n\n              <td class="calendar-hour-column text-center">\n\n                {{hourColumnLabels[i]}}\n\n              </td>\n\n              <td\n\n                class="calendar-cell"\n\n                tappable\n\n                (click)="select(tm.time, tm.events)">\n\n                <div\n\n                  [ngClass]="{\'calendar-event-wrap\': tm.events}"\n\n                  *ngIf="tm.events">\n\n                  <div\n\n                    *ngFor="let displayEvent of tm.events"\n\n                    class="calendar-event"\n\n                    tappable\n\n                    (click)="eventSelected(displayEvent.event)"\n\n                    [ngStyle]="{\n\n                      top: (37*displayEvent.startOffset/hourParts)+\'px\',\n\n                      left: 100/displayEvent.overlapNumber*displayEvent.position+\'%\',\n\n                      width: 100/displayEvent.overlapNumber+\'%\',\n\n                      height: 37*(displayEvent.endIndex -displayEvent.startIndex - (displayEvent.endOffset + displayEvent.startOffset)/hourParts)+\'px\'}">\n\n                    <template [ngTemplateOutlet]="dayviewNormalEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n\n                    </template>\n\n                  </div>\n\n                </div>\n\n              </td>\n\n            </tr>\n\n          </tbody>\n\n        </table>\n\n      </init-position-scroll>\n\n      <init-position-scroll\n\n        *ngIf="1!==currentViewIndex"\n\n        class="dayview-normal-event-container"\n\n        ngxOffsetTarget="margin-top"\n\n        [initPosition]="initScrollPosition">\n\n        <table class="table table-bordered table-fixed dayview-normal-event-table">\n\n          <tbody>\n\n            <tr *ngFor="let tm of views[1].rows; let i = index">\n\n              <td class="calendar-hour-column text-center">\n\n                {{hourColumnLabels[i]}}\n\n              </td>\n\n              <td class="calendar-cell">\n\n              </td>\n\n            </tr>\n\n          </tbody>\n\n        </table>\n\n      </init-position-scroll>\n\n    </div>\n\n  </ion-slide>\n\n  <ion-slide [ngxOffsetContainer]="updateOffset$">\n\n    <div>\n\n      <div ngxOffsetSource="offsetHeight" ngxOffsetValueType="px">\n\n        <weekview-header [data]="views[0]" (onSelect)="selectDay($event)">\n\n        </weekview-header>\n\n        <div class="dayview-allday-table">\n\n          <div class="dayview-allday-label">{{ allDayLabel }}</div>\n\n          <ion-scroll\n\n            scrollY="true"\n\n            zoom="false"\n\n            class="dayview-allday-content-wrapper">\n\n            <table class="table dayview-allday-content-table">\n\n              <tbody>\n\n                <tr>\n\n                  <td\n\n                    *ngIf="2===currentViewIndex"\n\n                    class="calendar-cell"\n\n                    [ngClass]="{\'calendar-event-wrap\':views[2].allDayEvents.length>0}"\n\n                    [ngStyle]="{height: 25*views[2].allDayEvents.length+\'px\'}">\n\n                    <div\n\n                      *ngFor="let displayEvent of views[2].allDayEvents; let eventIndex=index"\n\n                      class="calendar-event"\n\n                      tappable\n\n                      (click)="eventSelected(displayEvent.event)"\n\n                      [ngStyle]="{top: 25*eventIndex+\'px\',width: \'100%\',height:\'25px\'}">\n\n                      <ng-template [ngTemplateOutlet]="dayviewAllDayEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n\n                      </ng-template>\n\n                    </div>\n\n                  </td>\n\n                  <td class="calendar-cell" *ngIf="2!==currentViewIndex">\n\n                  </td>\n\n                </tr>\n\n              </tbody>\n\n            </table>\n\n          </ion-scroll>\n\n        </div>\n\n      </div>\n\n      <init-position-scroll\n\n        *ngIf="2===currentViewIndex"\n\n        class="dayview-normal-event-container"\n\n        ngxOffsetTarget="margin-top"\n\n        [initPosition]="initScrollPosition"\n\n        [emitEvent]="preserveScrollPosition"\n\n        (onScroll)="setScrollPosition($event)">\n\n        <table class="table table-bordered table-fixed dayview-normal-event-table">\n\n          <tbody>\n\n            <tr *ngFor="let tm of views[2].rows; let i = index">\n\n              <td class="calendar-hour-column text-center">\n\n                {{hourColumnLabels[i]}}\n\n              </td>\n\n              <td\n\n                class="calendar-cell"\n\n                tappable\n\n                (click)="select(tm.time, tm.events)">\n\n                <div\n\n                  [ngClass]="{\'calendar-event-wrap\': tm.events}"\n\n                  *ngIf="tm.events">\n\n                  <div\n\n                    *ngFor="let displayEvent of tm.events"\n\n                    class="calendar-event"\n\n                    tappable\n\n                    (click)="eventSelected(displayEvent.event)"\n\n                    [ngStyle]="{\n\n                      top: (37*displayEvent.startOffset/hourParts)+\'px\',\n\n                      left: 100/displayEvent.overlapNumber*displayEvent.position+\'%\',\n\n                      width: 100/displayEvent.overlapNumber+\'%\',\n\n                      height: 37*(displayEvent.endIndex -displayEvent.startIndex - (displayEvent.endOffset + displayEvent.startOffset)/hourParts)+\'px\'}">\n\n                    <template [ngTemplateOutlet]="dayviewNormalEventTemplate" [ngOutletContext]="{displayEvent:displayEvent}">\n\n                    </template>\n\n                  </div>\n\n                </div>\n\n              </td>\n\n            </tr>\n\n          </tbody>\n\n        </table>\n\n      </init-position-scroll>\n\n      <init-position-scroll\n\n        *ngIf="2!==currentViewIndex"\n\n        class="dayview-normal-event-container"\n\n        ngxOffsetTarget="margin-top"\n\n        [initPosition]="initScrollPosition">\n\n        <table class="table table-bordered table-fixed dayview-normal-event-table">\n\n          <tbody>\n\n            <tr *ngFor="let tm of views[2].rows; let i = index">\n\n              <td class="calendar-hour-column text-center">\n\n                {{hourColumnLabels[i]}}\n\n              </td>\n\n              <td class="calendar-cell">\n\n              </td>\n\n            </tr>\n\n          </tbody>\n\n        </table>\n\n      </init-position-scroll>\n\n    </div>\n\n  </ion-slide>\n\n</ion-slides>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\calendar\dayview\dayview.html"*/,
             styles: [
                 "\n      .table-fixed {\n        table-layout: fixed;\n      }\n\n      .table {\n        width: 100%;\n        max-width: 100%;\n        background-color: transparent;\n      }\n\n      .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td,\n      .table > tbody > tr > td, .table > tfoot > tr > td {\n        padding: 8px;\n        line-height: 20px;\n        vertical-align: top;\n      }\n\n      .table > thead > tr > th {\n        vertical-align: bottom;\n        border-bottom: 2px solid #ddd;\n      }\n\n      .table > thead:first-child > tr:first-child > th, .table > thead:first-child > tr:first-child > td {\n        border-top: 0\n      }\n\n      .table > tbody + tbody {\n        border-top: 2px solid #ddd;\n      }\n\n      .table-bordered {\n        border: 1px solid #ddd;\n      }\n\n      .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th,\n      .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {\n        border: 1px solid #ddd;\n      }\n\n      .table-bordered > thead > tr > th, .table-bordered > thead > tr > td {\n        border-bottom-width: 2px;\n      }\n\n      .table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {\n        background-color: #f9f9f9\n      }\n\n      .calendar-hour-column {\n        width: 50px;\n        white-space: nowrap;\n      }\n\n      .calendar-event-wrap {\n        position: relative;\n        width: 100%;\n        height: 100%;\n      }\n\n      .calendar-event {\n        position: absolute;\n        padding: 2px;\n        cursor: pointer;\n        z-index: 10000;\n      }\n\n      .calendar-cell {\n        padding: 0 !important;\n        height: 37px;\n      }\n\n      .dayview-allday-label {\n        float: left;\n        height: 100%;\n        line-height: 50px;\n        text-align: center;\n        width: 50px;\n      }\n\n      [dir=\"rtl\"] .dayview-allday-label {\n          border-right: 1px solid #ddd;\n          float: right;\n      }\n\n      .dayview-allday-content-wrapper {\n        margin-left: 50px;\n        overflow: hidden;\n        height: 51px;\n      }\n\n      [dir=\"rtl\"] .dayview-allday-content-wrapper {\n        margin-left: 0;\n        margin-right: 50px;\n      }\n\n      .dayview-allday-content-table {\n        min-height: 50px;\n      }\n\n      .dayview-allday-content-table td {\n        border-left: 1px solid #ddd;\n        border-right: 1px solid #ddd;\n      }\n\n      .dayview-allday-table {\n        height: 50px;\n        position: relative;\n        border-bottom: 1px solid #ddd;\n        font-size: 14px;\n      }\n\n      .dayview-normal-event-container {\n        margin-top: 50px;\n        overflow: hidden;\n        left: 0;\n        right: 0;\n        top: 0;\n        bottom: 0;\n        position: absolute;\n        font-size: 14px;\n      }\n\n      .dayview .slide-zoom {\n        height: 100%;\n      }\n\n      .dayview-allday-content-wrapper scroll-content {\n        width: 100%;\n      }\n\n      ::-webkit-scrollbar,\n      *::-webkit-scrollbar {\n        display: none;\n      }\n\n      .table > tbody > tr > td.calendar-hour-column {\n        padding-left: 0;\n        padding-right: 0;\n        vertical-align: middle;\n      }\n\n      @media (max-width: 750px) {\n        .dayview-allday-label, .calendar-hour-column {\n          width: 31px;\n          font-size: 12px;\n        }\n\n        .dayview-allday-label {\n          padding-top: 4px;\n        }\n\n        .table > tbody > tr > td.calendar-hour-column {\n          padding-left: 0;\n          padding-right: 0;\n          vertical-align: middle;\n          line-height: 12px;\n        }\n\n        .dayview-allday-label {\n          line-height: 20px;\n        }\n\n        .dayview-allday-content-wrapper {\n          margin-left: 31px;\n        }\n\n        [dir=\"rtl\"] .dayview-allday-content-wrapper {\n          margin-left: 0;\n          margin-right: 31px;\n        }\n      }\n    ",
                 "\n      .dayview-allday-table {\n        border: none;\n      }\n    "
@@ -11259,7 +11121,7 @@ var DayViewComponent = (function () {
 
 /***/ }),
 
-/***/ 794:
+/***/ 792:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11270,22 +11132,22 @@ var DayViewComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_do__ = __webpack_require__(795);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_do__ = __webpack_require__(793);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_do__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_pairwise__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_pairwise__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_pairwise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_pairwise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_filter__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_filter__ = __webpack_require__(186);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_filter__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_map__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_concatMap__ = __webpack_require__(367);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_concatMap__ = __webpack_require__(366);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_concatMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_concatMap__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_takeUntil__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_takeUntil___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_takeUntil__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__calendar_service__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__mode_popover_calendar_mode_popover__ = __webpack_require__(371);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__calendar_models__ = __webpack_require__(372);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__models_shared__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__mode_popover_calendar_mode_popover__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__calendar_models__ = __webpack_require__(371);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__models_shared__ = __webpack_require__(115);
 /* unused harmony namespace reexport */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -11726,7 +11588,7 @@ var CalendarComponent = (function () {
     ], CalendarComponent.prototype, "toolbar", void 0);
     CalendarComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'calendar',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/calendar/calendar.html"*/'<template\n  #monthviewDefaultDisplayEventTemplate\n  let-view="view"\n  let-row="row"\n  let-col="col">\n  {{view.dates[row*7+col].label}}\n  <div *ngIf="view.dates[row*7+col].events.length > 0">•</div>\n</template>\n<template\n  #monthviewDefaultEventDetailTemplate\n  let-showEventDetail="showEventDetail"\n  let-selectedDate="selectedDate"\n  let-noEventsLabel="noEventsLabel">\n  <ion-list\n    *ngIf="showEventDetail"\n    overflow-scroll="false"\n    class="event-detail-container"\n    has-bouncing="false">\n    <ion-item\n      *ngFor="let event of selectedDate?.events"\n      (click)="eventSelected(event)">\n      <span *ngIf="!event.allDay" class="monthview-eventdetail-timecolumn">\n        {{event.startTime|date: \'HH:mm\'}}\n        -\n        {{event.endTime|date: \'HH:mm\'}}\n      </span>\n      <span *ngIf="event.allDay" class="monthview-eventdetail-timecolumn">\n        {{allDayLabel}}\n      </span>\n      <span class="event-detail">  |  {{event.title}}</span>\n    </ion-item>\n    <ion-item *ngIf="selectedDate?.events.length==0">\n      <div class="no-events-label">{{noEventsLabel}}</div>\n    </ion-item>\n  </ion-list>\n</template>\n<template #defaultAllDayEventTemplate let-displayEvent="displayEvent">\n  <div class="calendar-event-inner">{{displayEvent.event.title}}</div>\n</template>\n<template #defaultNormalEventTemplate let-displayEvent="displayEvent">\n  <div class="calendar-event-inner">{{displayEvent.event.title}}</div>\n</template>\n\n<div [ngSwitch]="multipleSelectMenuActive$ | async" #calendarToolbar>\n  <ion-toolbar *ngSwitchCase="false" color="primary">\n    <ion-title [ngSwitch]="calendarMode" class="month-view-toolbar-title">\n      <div *ngSwitchCase="\'month\'" class="month-view-select-container">\n        <ion-select\n          [selectOptions]="{ cssClass: \'calendar-header-select-popover\' }"\n          [ngModel]="currentMonth"\n          (ngModelChange)="handleMonthChange($event)"\n          class="month-view-date-select"\n          interface="popover"\n          color="white">\n          <ion-option *ngFor="let option of months" [value]="option.value">\n            {{ option.label }}\n          </ion-option>\n        </ion-select>\n        <ion-select\n          [selectOptions]="{ cssClass: \'calendar-header-select-popover\' }"\n          [ngModel]="currentYear"\n          (ngModelChange)="handleYearChange($event)"\n          class="month-view-date-select"\n          interface="popover"\n          color="white">\n          <ion-option *ngFor="let option of years" [value]="option.value">\n            {{ option.label }}\n          </ion-option>\n        </ion-select>\n      </div>\n      <div *ngSwitchCase="\'week\'" text-center>\n        <h3 class="week-view-title" style="margin-bottom: 0">{{ currentDate | date: \'MMMM y\' }}</h3>\n        <div>semaine {{ currentDate | dateFormat: \'W\' }}</div>\n      </div>\n      <div *ngSwitchCase="\'day\'" text-center>\n        <div>{{ currentDate | date: \'MMMM d y\' }}</div>\n      </div>\n    </ion-title>\n  \n    <ion-buttons class="menu-toggle-wrapper" end>\n      <button (click)="presentPopover($event)" ion-button clear icon-only>\n        <ion-icon name="more"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n  <ion-toolbar *ngSwitchCase="true" color="primary">\n    <ion-buttons end>\n      <button\n        (click)="acceptSelectedRange()"\n        color="white"\n        ion-button\n        clear icon-only>\n        <ion-icon name="checkmark"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>\n      Select a range\n    </ion-title>\n    <ion-buttons start>\n      <button\n        (click)="discardSelectedRange()"\n        color="white"\n        ion-button\n        clear\n        icon-only>\n        <ion-icon name="close"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</div>\n\n<div class="calendar-wrapper">\n  <div [ngSwitch]="calendarMode" class="{{calendarMode}}view-container">\n    <div #scrollableWrapper>\n      <div *ngSwitchCase="\'month\'">\n        <div class="scrollable-wrapper">\n          <div\n            class="scrollable-area"\n            id="monthViewHost"\n            #monthViewHost>\n            <monthview\n              [formatDay]="formatDay"\n              [formatDayHeader]="formatDayHeader"\n              [formatMonthTitle]="formatMonthTitle"\n              [startingDayMonth]="startingDayMonth"\n              [showEventDetail]="false"\n              [noEventsLabel]="noEventsLabel"\n              [autoSelect]="autoSelect"\n              [eventSource]="eventSource"\n              [markDisabled]="markDisabled"\n              [monthviewDisplayEventTemplate]="monthviewDisplayEventTemplate||monthviewDefaultDisplayEventTemplate"\n              [monthviewInactiveDisplayEventTemplate]="monthviewInactiveDisplayEventTemplate||monthviewDefaultDisplayEventTemplate"\n              [monthviewEventDetailTemplate]="monthviewEventDetailTemplate||monthviewDefaultEventDetailTemplate"\n              [locale]="locale"\n              [dateFormatter]="dateFormatter"\n              [dir]="dir"\n              [lockSwipeToPrev]="lockSwipeToPrev"\n              [lockSwipes]="lockSwipes"\n              [focusOffset]="focusOffset$"\n              (onRangeChanged)="rangeChanged($event)"\n              (onEventSelected)="eventSelected($event)"\n              (onTimeSelected)="timeSelected($event)"\n              (onTitleChanged)="titleChanged($event)"\n              (scoll)="handleMonthViewScroll($event)"\n              (onMultiSelectActive)="handleMultiSelect($event)"\n              (onMultiSelect)="handleMultiSelectRange($event)"\n              (onWeekSelect)="handleWeekSelectRange($event)"\n              [acceptSelectedRange]="acceptSelectedRange$.asObservable()"\n              [activateMultiSelect]="activateMultiSelect$.asObservable()">\n            </monthview>\n          </div>\n        </div>\n      </div>\n    </div>\n    <weekview\n      *ngSwitchCase="\'week\'"\n      [currentDate]="currentDateStream | async"\n      [formatWeekTitle]="formatWeekTitle"\n      [formatWeekViewDayHeader]="formatWeekViewDayHeader"\n      [formatWeelViewWeekDayHeader]="formatWeelViewWeekDayHeader"\n      [formatHourColumn]="formatHourColumn"\n      [formatWeekViewHourColumn]="formatWeekViewHourColumn"\n      [startingDayWeek]="startingDayWeek"\n      [allDayLabel]="allDayLabel"\n      [hourParts]="hourParts"\n      [eventSource]="eventSource"\n      [markDisabled]="markDisabled"\n      [weekviewAllDayEventTemplate]="weekviewAllDayEventTemplate||defaultAllDayEventTemplate"\n      [weekviewNormalEventTemplate]="weekviewNormalEventTemplate||defaultNormalEventTemplate"\n      [locale]="locale"\n      [dateFormatter]="dateFormatter"\n      [dir]="dir"\n      [scrollToHour]="scrollToHour"\n      [preserveScrollPosition]="preserveScrollPosition"\n      [lockSwipeToPrev]="lockSwipeToPrev"\n      [lockSwipes]="lockSwipes"\n      (onRangeChanged)="rangeChanged($event)"\n      (onEventSelected)="eventSelected($event)"\n      (onTimeSelected)="timeSelected($event)"\n      (onTitleChanged)="titleChanged($event)">\n    </weekview>\n    <dayview\n      *ngSwitchCase="\'day\'"\n      [formatDayTitle]="formatDayTitle"\n      [formatHourColumn]="formatHourColumn"\n      [formatWeekViewDayHeader]="formatWeekViewDayHeader"\n      [formatWeelViewWeekDayHeader]="formatWeelViewWeekDayHeader"\n      [startingDayWeek]="startingDayWeek"\n      [allDayLabel]="allDayLabel"\n      [hourParts]="hourParts"\n      [eventSource]="eventSource"\n      [markDisabled]="markDisabled"\n      [dayviewAllDayEventTemplate]="dayviewAllDayEventTemplate||defaultAllDayEventTemplate"\n      [dayviewNormalEventTemplate]="dayviewNormalEventTemplate||defaultNormalEventTemplate"\n      [locale]="locale"\n      [dateFormatter]="dateFormatter"\n      [dir]="dir"\n      [scrollToHour]="scrollToHour"\n      [preserveScrollPosition]="preserveScrollPosition"\n      [lockSwipeToPrev]="lockSwipeToPrev"\n      [lockSwipes]="lockSwipes"\n      (onRangeChanged)="rangeChanged($event)"\n      (onEventSelected)="eventSelected($event)"\n      (onTimeSelected)="timeSelected($event)"\n      (onTitleChanged)="titleChanged($event)">\n    </dayview>\n  </div>\n</div>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/calendar/calendar.html"*/,
+            selector: 'calendar',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\calendar\calendar.html"*/'<template\n\n  #monthviewDefaultDisplayEventTemplate\n\n  let-view="view"\n\n  let-row="row"\n\n  let-col="col">\n\n  {{view.dates[row*7+col].label}}\n\n  <div *ngIf="view.dates[row*7+col].events.length > 0">•</div>\n\n</template>\n\n<template\n\n  #monthviewDefaultEventDetailTemplate\n\n  let-showEventDetail="showEventDetail"\n\n  let-selectedDate="selectedDate"\n\n  let-noEventsLabel="noEventsLabel">\n\n  <ion-list\n\n    *ngIf="showEventDetail"\n\n    overflow-scroll="false"\n\n    class="event-detail-container"\n\n    has-bouncing="false">\n\n    <ion-item\n\n      *ngFor="let event of selectedDate?.events"\n\n      (click)="eventSelected(event)">\n\n      <span *ngIf="!event.allDay" class="monthview-eventdetail-timecolumn">\n\n        {{event.startTime|date: \'HH:mm\'}}\n\n        -\n\n        {{event.endTime|date: \'HH:mm\'}}\n\n      </span>\n\n      <span *ngIf="event.allDay" class="monthview-eventdetail-timecolumn">\n\n        {{allDayLabel}}\n\n      </span>\n\n      <span class="event-detail">  |  {{event.title}}</span>\n\n    </ion-item>\n\n    <ion-item *ngIf="selectedDate?.events.length==0">\n\n      <div class="no-events-label">{{noEventsLabel}}</div>\n\n    </ion-item>\n\n  </ion-list>\n\n</template>\n\n<template #defaultAllDayEventTemplate let-displayEvent="displayEvent">\n\n  <div class="calendar-event-inner">{{displayEvent.event.title}}</div>\n\n</template>\n\n<template #defaultNormalEventTemplate let-displayEvent="displayEvent">\n\n  <div class="calendar-event-inner">{{displayEvent.event.title}}</div>\n\n</template>\n\n\n\n<div [ngSwitch]="multipleSelectMenuActive$ | async" #calendarToolbar>\n\n  <ion-toolbar *ngSwitchCase="false" color="primary">\n\n    <ion-title [ngSwitch]="calendarMode" class="month-view-toolbar-title">\n\n      <div *ngSwitchCase="\'month\'" class="month-view-select-container">\n\n        <ion-select\n\n          [selectOptions]="{ cssClass: \'calendar-header-select-popover\' }"\n\n          [ngModel]="currentMonth"\n\n          (ngModelChange)="handleMonthChange($event)"\n\n          class="month-view-date-select"\n\n          interface="popover"\n\n          color="white">\n\n          <ion-option *ngFor="let option of months" [value]="option.value">\n\n            {{ option.label }}\n\n          </ion-option>\n\n        </ion-select>\n\n        <ion-select\n\n          [selectOptions]="{ cssClass: \'calendar-header-select-popover\' }"\n\n          [ngModel]="currentYear"\n\n          (ngModelChange)="handleYearChange($event)"\n\n          class="month-view-date-select"\n\n          interface="popover"\n\n          color="white">\n\n          <ion-option *ngFor="let option of years" [value]="option.value">\n\n            {{ option.label }}\n\n          </ion-option>\n\n        </ion-select>\n\n      </div>\n\n      <div *ngSwitchCase="\'week\'" text-center>\n\n        <h3 class="week-view-title" style="margin-bottom: 0">{{ currentDate | date: \'MMMM y\' }}</h3>\n\n        <div>semaine {{ currentDate | dateFormat: \'W\' }}</div>\n\n      </div>\n\n      <div *ngSwitchCase="\'day\'" text-center>\n\n        <div>{{ currentDate | date: \'MMMM d y\' }}</div>\n\n      </div>\n\n    </ion-title>\n\n  \n\n    <ion-buttons class="menu-toggle-wrapper" end>\n\n      <button (click)="presentPopover($event)" ion-button clear icon-only>\n\n        <ion-icon name="more"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-toolbar>\n\n  <ion-toolbar *ngSwitchCase="true" color="primary">\n\n    <ion-buttons end>\n\n      <button\n\n        (click)="acceptSelectedRange()"\n\n        color="white"\n\n        ion-button\n\n        clear icon-only>\n\n        <ion-icon name="checkmark"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>\n\n      Select a range\n\n    </ion-title>\n\n    <ion-buttons start>\n\n      <button\n\n        (click)="discardSelectedRange()"\n\n        color="white"\n\n        ion-button\n\n        clear\n\n        icon-only>\n\n        <ion-icon name="close"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-toolbar>\n\n</div>\n\n\n\n<div class="calendar-wrapper">\n\n  <div [ngSwitch]="calendarMode" class="{{calendarMode}}view-container">\n\n    <div #scrollableWrapper>\n\n      <div *ngSwitchCase="\'month\'">\n\n        <div class="scrollable-wrapper">\n\n          <div\n\n            class="scrollable-area"\n\n            id="monthViewHost"\n\n            #monthViewHost>\n\n            <monthview\n\n              [formatDay]="formatDay"\n\n              [formatDayHeader]="formatDayHeader"\n\n              [formatMonthTitle]="formatMonthTitle"\n\n              [startingDayMonth]="startingDayMonth"\n\n              [showEventDetail]="false"\n\n              [noEventsLabel]="noEventsLabel"\n\n              [autoSelect]="autoSelect"\n\n              [eventSource]="eventSource"\n\n              [markDisabled]="markDisabled"\n\n              [monthviewDisplayEventTemplate]="monthviewDisplayEventTemplate||monthviewDefaultDisplayEventTemplate"\n\n              [monthviewInactiveDisplayEventTemplate]="monthviewInactiveDisplayEventTemplate||monthviewDefaultDisplayEventTemplate"\n\n              [monthviewEventDetailTemplate]="monthviewEventDetailTemplate||monthviewDefaultEventDetailTemplate"\n\n              [locale]="locale"\n\n              [dateFormatter]="dateFormatter"\n\n              [dir]="dir"\n\n              [lockSwipeToPrev]="lockSwipeToPrev"\n\n              [lockSwipes]="lockSwipes"\n\n              [focusOffset]="focusOffset$"\n\n              (onRangeChanged)="rangeChanged($event)"\n\n              (onEventSelected)="eventSelected($event)"\n\n              (onTimeSelected)="timeSelected($event)"\n\n              (onTitleChanged)="titleChanged($event)"\n\n              (scoll)="handleMonthViewScroll($event)"\n\n              (onMultiSelectActive)="handleMultiSelect($event)"\n\n              (onMultiSelect)="handleMultiSelectRange($event)"\n\n              (onWeekSelect)="handleWeekSelectRange($event)"\n\n              [acceptSelectedRange]="acceptSelectedRange$.asObservable()"\n\n              [activateMultiSelect]="activateMultiSelect$.asObservable()">\n\n            </monthview>\n\n          </div>\n\n        </div>\n\n      </div>\n\n    </div>\n\n    <weekview\n\n      *ngSwitchCase="\'week\'"\n\n      [currentDate]="currentDateStream | async"\n\n      [formatWeekTitle]="formatWeekTitle"\n\n      [formatWeekViewDayHeader]="formatWeekViewDayHeader"\n\n      [formatWeelViewWeekDayHeader]="formatWeelViewWeekDayHeader"\n\n      [formatHourColumn]="formatHourColumn"\n\n      [formatWeekViewHourColumn]="formatWeekViewHourColumn"\n\n      [startingDayWeek]="startingDayWeek"\n\n      [allDayLabel]="allDayLabel"\n\n      [hourParts]="hourParts"\n\n      [eventSource]="eventSource"\n\n      [markDisabled]="markDisabled"\n\n      [weekviewAllDayEventTemplate]="weekviewAllDayEventTemplate||defaultAllDayEventTemplate"\n\n      [weekviewNormalEventTemplate]="weekviewNormalEventTemplate||defaultNormalEventTemplate"\n\n      [locale]="locale"\n\n      [dateFormatter]="dateFormatter"\n\n      [dir]="dir"\n\n      [scrollToHour]="scrollToHour"\n\n      [preserveScrollPosition]="preserveScrollPosition"\n\n      [lockSwipeToPrev]="lockSwipeToPrev"\n\n      [lockSwipes]="lockSwipes"\n\n      (onRangeChanged)="rangeChanged($event)"\n\n      (onEventSelected)="eventSelected($event)"\n\n      (onTimeSelected)="timeSelected($event)"\n\n      (onTitleChanged)="titleChanged($event)">\n\n    </weekview>\n\n    <dayview\n\n      *ngSwitchCase="\'day\'"\n\n      [formatDayTitle]="formatDayTitle"\n\n      [formatHourColumn]="formatHourColumn"\n\n      [formatWeekViewDayHeader]="formatWeekViewDayHeader"\n\n      [formatWeelViewWeekDayHeader]="formatWeelViewWeekDayHeader"\n\n      [startingDayWeek]="startingDayWeek"\n\n      [allDayLabel]="allDayLabel"\n\n      [hourParts]="hourParts"\n\n      [eventSource]="eventSource"\n\n      [markDisabled]="markDisabled"\n\n      [dayviewAllDayEventTemplate]="dayviewAllDayEventTemplate||defaultAllDayEventTemplate"\n\n      [dayviewNormalEventTemplate]="dayviewNormalEventTemplate||defaultNormalEventTemplate"\n\n      [locale]="locale"\n\n      [dateFormatter]="dateFormatter"\n\n      [dir]="dir"\n\n      [scrollToHour]="scrollToHour"\n\n      [preserveScrollPosition]="preserveScrollPosition"\n\n      [lockSwipeToPrev]="lockSwipeToPrev"\n\n      [lockSwipes]="lockSwipes"\n\n      (onRangeChanged)="rangeChanged($event)"\n\n      (onEventSelected)="eventSelected($event)"\n\n      (onTimeSelected)="timeSelected($event)"\n\n      (onTitleChanged)="titleChanged($event)">\n\n    </dayview>\n\n  </div>\n\n</div>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\calendar\calendar.html"*/,
             styles: [
                 "\n    .calendar-wrapper,\n    .weekview-container,\n    .dayview-container {\n      height: 100%;\n    }\n\n    .menu-toggle-wrapper {\n      position: absolute;\n      right: 4px;\n      top: 50%;\n      transform: translateY(-50%);\n    }\n\n    .event-detail-container {\n      border-top: 2px darkgrey solid;\n    }\n\n    .no-events-label {\n      font-weight: bold;\n      color: darkgrey;\n      text-align: center;\n    }\n\n    .event-detail {\n      cursor: pointer;\n      white-space: nowrap;\n      text-overflow: ellipsis;\n    }\n\n    .week-view-title {\n      margin-top: 0;\n    }\n\n    .monthview-eventdetail-timecolumn {\n      width: 110px;\n      overflow: hidden;\n    }\n\n    .calendar-event-inner {\n      overflow: hidden;\n      background-color: rgba(150, 225, 194, .5);\n      border-radius: 6px;\n      color: white;\n      height: 100%;\n      width: 100%;\n      padding: 8px 2px;\n      line-height: 15px;\n      font-weight: 700;\n    }\n\n    @media (max-width: 750px) {\n      .calendar-event-inner {\n        font-size: 24px;\n      }\n      weekview .calendar-event-inner {\n        font-size: 14px;\n      }\n    }\n  ",
                 "\n    .month-view-select-container {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n    }\n    .month-view-toolbar-title.title-ios {\n      padding: 0 60px 1px;\n    }\n    .month-view-date-select {\n      position: relative;\n      // margin: auto;\n      color: #fff;\n      font-size: 1.8rem;\n      font-weight: 500;\n      vertical-align: middle;\n    }\n\n    /deep/ .month-view-date-select .select-icon {\n      height: 2.3rem;\n    }\n\n    /deep/ .month-view-date-select .select-icon .select-icon-inner {\n      color: #fff;\n    }\n    .month-view-date-select.select-ios {\n      max-width: 90%;\n    }\n    .month-view-date-select .select-text {\n      text-align: center;\n    }\n  "
@@ -11745,7 +11607,7 @@ var CalendarComponent = (function () {
 
 /***/ }),
 
-/***/ 797:
+/***/ 795:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11833,16 +11695,16 @@ var initPositionScrollComponent = (function (_super) {
 
 /***/ }),
 
-/***/ 798:
+/***/ 796:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Pipes; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__date_format_pipe__ = __webpack_require__(799);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__hasEvents_pipe__ = __webpack_require__(800);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mark_current_pipe__ = __webpack_require__(801);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__trace_pipe__ = __webpack_require__(802);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__is_past_pipe__ = __webpack_require__(803);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__date_format_pipe__ = __webpack_require__(797);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__hasEvents_pipe__ = __webpack_require__(798);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mark_current_pipe__ = __webpack_require__(799);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__trace_pipe__ = __webpack_require__(800);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__is_past_pipe__ = __webpack_require__(801);
 
 
 
@@ -11859,7 +11721,7 @@ var Pipes = [
 
 /***/ }),
 
-/***/ 799:
+/***/ 797:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11893,26 +11755,102 @@ var DateFormatPipe = (function () {
 
 /***/ }),
 
+/***/ 798:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HasEventsPipe; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var HasEventsPipe = (function () {
+    function HasEventsPipe() {
+    }
+    HasEventsPipe.prototype.transform = function (week, dayIndex /*, weekIndex: number*/) {
+        if (Array.isArray(week.rows[0])) {
+            return week.rows.some(function (row) { return row[dayIndex].events.length > 0; });
+        }
+        return week.rows[dayIndex].events.length > 0;
+    };
+    HasEventsPipe = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({
+            name: 'hasEvents',
+            pure: true
+        })
+    ], HasEventsPipe);
+    return HasEventsPipe;
+}());
+
+//# sourceMappingURL=hasEvents.pipe.js.map
+
+/***/ }),
+
+/***/ 799:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MarkCurrentPipe; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__calendar_service__ = __webpack_require__(84);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var MarkCurrentPipe = (function () {
+    function MarkCurrentPipe(calendarService) {
+        this.calendarService = calendarService;
+    }
+    MarkCurrentPipe.prototype.transform = function (week, currentDate) {
+        var _this = this;
+        return week.map(function (day) { return Object.assign({}, day, {
+            isCurrent: day.date.toISOString().substring(0, 10) === _this.calendarService.currentDate.toISOString().substring(0, 10)
+        }); });
+    };
+    MarkCurrentPipe = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({
+            name: 'markCurrent'
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__calendar_service__["a" /* CalendarService */]])
+    ], MarkCurrentPipe);
+    return MarkCurrentPipe;
+}());
+
+//# sourceMappingURL=mark-current.pipe.js.map
+
+/***/ }),
+
 /***/ 8:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojComponentsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__voj_calendar_voj_calendar_module__ = __webpack_require__(319);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_card_voj_card_module__ = __webpack_require__(122);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_footer_voj_footer_module__ = __webpack_require__(879);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__voj_header_voj_header_module__ = __webpack_require__(565);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__voj_list_voj_list_module__ = __webpack_require__(566);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__voj_form_voj_form_module__ = __webpack_require__(227);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__voj_map_voj_map_module__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__voj_menu_voj_menu_module__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__voj_search_header_voj_search_header_module__ = __webpack_require__(232);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__voj_segment_voj_segment_module__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__voj_header_web_voj_header_web_module__ = __webpack_require__(573);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__voj_page_header_voj_page_header_module__ = __webpack_require__(222);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__voj_header_segment_voj_header_segment_module__ = __webpack_require__(574);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__voj_search_select_voj_search_select_module__ = __webpack_require__(575);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__voj_calendar_voj_calendar_module__ = __webpack_require__(318);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_card_voj_card_module__ = __webpack_require__(121);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_footer_voj_footer_module__ = __webpack_require__(877);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__voj_header_voj_header_module__ = __webpack_require__(563);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__voj_list_voj_list_module__ = __webpack_require__(564);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__voj_form_voj_form_module__ = __webpack_require__(226);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__voj_map_voj_map_module__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__voj_menu_voj_menu_module__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__voj_search_header_voj_search_header_module__ = __webpack_require__(231);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__voj_segment_voj_segment_module__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__voj_header_web_voj_header_web_module__ = __webpack_require__(571);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__voj_page_header_voj_page_header_module__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__voj_header_segment_voj_header_segment_module__ = __webpack_require__(572);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__voj_search_select_voj_search_select_module__ = __webpack_require__(573);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -11970,82 +11908,6 @@ var VojComponentsModule = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HasEventsPipe; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var HasEventsPipe = (function () {
-    function HasEventsPipe() {
-    }
-    HasEventsPipe.prototype.transform = function (week, dayIndex /*, weekIndex: number*/) {
-        if (Array.isArray(week.rows[0])) {
-            return week.rows.some(function (row) { return row[dayIndex].events.length > 0; });
-        }
-        return week.rows[dayIndex].events.length > 0;
-    };
-    HasEventsPipe = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({
-            name: 'hasEvents',
-            pure: true
-        })
-    ], HasEventsPipe);
-    return HasEventsPipe;
-}());
-
-//# sourceMappingURL=hasEvents.pipe.js.map
-
-/***/ }),
-
-/***/ 801:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MarkCurrentPipe; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__calendar_service__ = __webpack_require__(84);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var MarkCurrentPipe = (function () {
-    function MarkCurrentPipe(calendarService) {
-        this.calendarService = calendarService;
-    }
-    MarkCurrentPipe.prototype.transform = function (week, currentDate) {
-        var _this = this;
-        return week.map(function (day) { return Object.assign({}, day, {
-            isCurrent: day.date.toISOString().substring(0, 10) === _this.calendarService.currentDate.toISOString().substring(0, 10)
-        }); });
-    };
-    MarkCurrentPipe = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({
-            name: 'markCurrent'
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__calendar_service__["a" /* CalendarService */]])
-    ], MarkCurrentPipe);
-    return MarkCurrentPipe;
-}());
-
-//# sourceMappingURL=mark-current.pipe.js.map
-
-/***/ }),
-
-/***/ 802:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TracePipe; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -12074,7 +11936,7 @@ var TracePipe = (function () {
 
 /***/ }),
 
-/***/ 803:
+/***/ 801:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12108,16 +11970,16 @@ var IsPastPipe = (function () {
 
 /***/ }),
 
-/***/ 804:
+/***/ 802:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SmartCalendar; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash__ = __webpack_require__(373);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_lodash__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_popover_page__ = __webpack_require__(373);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_popover_page__ = __webpack_require__(372);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -12245,7 +12107,7 @@ var SmartCalendar = (function () {
     SmartCalendar = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'smart-calendar',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/smart-calendar/smart-calendar.html"*/'<ng-template\n	let-changeViewHandler="changeViewHandler"\n	#customMenuTemplate>\n	<ion-list>\n		<ion-item-group>\n			<button (click)="changeViewHandler(\'month\')" ion-item>\n				Month view\n			</button>\n			<button (click)="changeViewHandler(\'week\')" ion-item>\n				Week view\n			</button>\n			<button (click)="changeViewHandler(\'day\')" ion-item>\n				Day view\n			</button>\n		</ion-item-group>\n		<ion-item-group>\n			<button (click)="changeViewHandler(\'today\')" ion-item>\n				Today\n			</button>\n			<button (click)="changeViewHandler(\'weekSelect\')" ion-item>\n				Select week\n			</button>\n			<button (click)="changeViewHandler(\'multiSelect\')" ion-item>\n				Multiple selection\n			</button>\n		</ion-item-group>\n	</ion-list>\n</ng-template>\n\n<div class="container-calendar">\n	<calendar\n		[eventSource]="events"\n		[startingDayWeek]="1"\n		[startingDayMonth]="1"\n		[menuTemplate]="customMenuTemplate"\n		(onMultiSelect)="handleMultiSelectRange($event)"\n		(onWeekSelect)="handleWeekSelect($event)"\n		locale="fr-FR"\n		formatDayHeader="E">\n	</calendar>\n</div>\n\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/smart-calendar/smart-calendar.html"*/
+            selector: 'smart-calendar',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\smart-calendar\smart-calendar.html"*/'<ng-template\n\n	let-changeViewHandler="changeViewHandler"\n\n	#customMenuTemplate>\n\n	<ion-list>\n\n		<ion-item-group>\n\n			<button (click)="changeViewHandler(\'month\')" ion-item>\n\n				Month view\n\n			</button>\n\n			<button (click)="changeViewHandler(\'week\')" ion-item>\n\n				Week view\n\n			</button>\n\n			<button (click)="changeViewHandler(\'day\')" ion-item>\n\n				Day view\n\n			</button>\n\n		</ion-item-group>\n\n		<ion-item-group>\n\n			<button (click)="changeViewHandler(\'today\')" ion-item>\n\n				Today\n\n			</button>\n\n			<button (click)="changeViewHandler(\'weekSelect\')" ion-item>\n\n				Select week\n\n			</button>\n\n			<button (click)="changeViewHandler(\'multiSelect\')" ion-item>\n\n				Multiple selection\n\n			</button>\n\n		</ion-item-group>\n\n	</ion-list>\n\n</ng-template>\n\n\n\n<div class="container-calendar">\n\n	<calendar\n\n		[eventSource]="events"\n\n		[startingDayWeek]="1"\n\n		[startingDayMonth]="1"\n\n		[menuTemplate]="customMenuTemplate"\n\n		(onMultiSelect)="handleMultiSelectRange($event)"\n\n		(onWeekSelect)="handleWeekSelect($event)"\n\n		locale="fr-FR"\n\n		formatDayHeader="E">\n\n	</calendar>\n\n</div>\n\n\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\smart-calendar\smart-calendar.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["p" /* PopoverController */],
@@ -12258,7 +12120,7 @@ var SmartCalendar = (function () {
 
 /***/ }),
 
-/***/ 805:
+/***/ 803:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12268,7 +12130,7 @@ var SmartCalendar = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_date_fns___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_date_fns__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ng_bootstrap_ng_bootstrap__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ng_bootstrap_ng_bootstrap__ = __webpack_require__(188);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(1);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -12398,7 +12260,7 @@ var DesktopCalendar = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_4_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'desktop-calendar',
-            changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectionStrategy"].OnPush,template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/desktop-calendar/desktop-calendar.html"*/'<!--<ng-template #modalContent let-close="close">-->\n<!--<div class="modal-header">-->\n<!--<h5 class="modal-title">Event action occurred</h5>-->\n<!--<button type="button" class="close" (click)="close()">-->\n<!--<span aria-hidden="true">&times;</span>-->\n<!--</button>-->\n<!--</div>-->\n<!--<div class="modal-body">-->\n<!--<div>-->\n<!--Action:-->\n<!--<pre>{{ modalData?.action }}</pre>-->\n<!--</div>-->\n<!--<div>-->\n<!--Event:-->\n<!--<pre>{{ modalData?.event | json }}</pre>-->\n<!--</div>-->\n<!--</div>-->\n<!--<div class="modal-footer">-->\n<!--<button type="button" class="btn btn-secondary" (click)="close()">OK</button>-->\n<!--</div>-->\n<!--</ng-template>-->\n<div class="desktop-calendar-container">\n\n	<!--<div class="col-md-4">-->\n	<!--<div class="btn-group">-->\n	<!--<div-->\n	<!--class="btn btn-primary"-->\n	<!--mwlCalendarPreviousView-->\n	<!--[view]="view"-->\n	<!--[(viewDate)]="viewDate">-->\n	<!--Previous-->\n	<!--</div>-->\n	<!--<div-->\n	<!--class="btn btn-secondary"-->\n	<!--mwlCalendarToday-->\n	<!--[(viewDate)]="viewDate">-->\n	<!--Today-->\n	<!--</div>-->\n	<!--<div-->\n	<!--class="btn btn-primary"-->\n	<!--mwlCalendarNextView-->\n	<!--[view]="view"-->\n	<!--[(viewDate)]="viewDate">-->\n	<!--Next-->\n	<!--</div>-->\n	<!--</div>-->\n	<!--</div>-->\n\n	<div class="desktop-calendar-container-header-buttons">\n		<button (click)="view = \'month\'" [class.active]="view === \'month\'">Mois</button>\n		<button (click)="view = \'week\'" [class.active]="view === \'week\'">Semaine</button>\n		<button (click)="view = \'day\'" [class.active]="view === \'day\'">Jour</button>\n	</div>\n\n	<div [ngSwitch]="view" class="desktop-calendar-container-inside">\n		<h3 [ngStyle]="{\'text-transform\' : \'none\'}">\n			{{ viewDate | calendarDate:(view + \'ViewTitle\'):\'fr\' }}\n		</h3>\n		<mwl-calendar-month-view\n			*ngSwitchCase="\'month\'"\n			[viewDate]="viewDate"\n			[locale]="locale"\n			[events]="events"\n			[refresh]="refresh"\n			(dayClicked)="dayClicked($event.day)"\n			(eventClicked)="handleEvent(\'Clicked\', $event.event)"\n			(eventTimesChanged)="eventTimesChanged($event)">\n		</mwl-calendar-month-view>\n		<mwl-calendar-week-view\n			*ngSwitchCase="\'week\'"\n			[viewDate]="viewDate"\n			[events]="events"\n			[locale]="locale"\n			[refresh]="refresh"\n			(eventClicked)="handleEvent(\'Clicked\', $event.event)"\n			(eventTimesChanged)="eventTimesChanged($event)">\n		</mwl-calendar-week-view>\n		<mwl-calendar-day-view\n			*ngSwitchCase="\'day\'"\n			[viewDate]="viewDate"\n			[events]="events"\n			[locale]="locale"\n			[refresh]="refresh"\n			(eventClicked)="handleEvent(\'Clicked\', $event.event)"\n			(eventTimesChanged)="eventTimesChanged($event)">\n		</mwl-calendar-day-view>\n	</div>\n\n	<!--<h3>-->\n	<!--Edit events-->\n	<!--<button-->\n	<!--class="btn btn-primary pull-right"-->\n	<!--(click)="addEvent()">-->\n	<!--Add new-->\n	<!--</button>-->\n	<!--<div class="clearfix"></div>-->\n	<!--</h3>-->\n\n	<!--<table class="table table-bordered">-->\n\n	<!--<thead>-->\n	<!--<tr>-->\n	<!--<th>Title</th>-->\n	<!--<th>Primary color</th>-->\n	<!--<th>Secondary color</th>-->\n	<!--<th>Starts at</th>-->\n	<!--<th>Ends at</th>-->\n	<!--<th>Remove</th>-->\n	<!--</tr>-->\n	<!--</thead>-->\n\n	<!--<tbody>-->\n	<!--<tr *ngFor="let event of events; let index = index">-->\n	<!--<td>-->\n	<!--<input-->\n	<!--type="text"-->\n	<!--class="form-control"-->\n	<!--[(ngModel)]="event.title"-->\n	<!--(keyup)="refresh.next()">-->\n	<!--</td>-->\n	<!--<td>-->\n	<!--<input-->\n	<!--type="color"-->\n	<!--[(ngModel)]="event.color.primary"-->\n	<!--(change)="refresh.next()">-->\n	<!--</td>-->\n	<!--<td>-->\n	<!--<input-->\n	<!--type="color"-->\n	<!--[(ngModel)]="event.color.secondary"-->\n	<!--(change)="refresh.next()">-->\n	<!--</td>-->\n	<!--<td>-->\n	<!--<mwl-demo-utils-date-time-picker-->\n	<!--[(date)]="event.start"-->\n	<!--(dateChange)="refresh.next()"-->\n	<!--placeholder="Not set">-->\n	<!--</mwl-demo-utils-date-time-picker>-->\n	<!--</td>-->\n	<!--<td>-->\n	<!--<mwl-demo-utils-date-time-picker-->\n	<!--[(date)]="event.end"-->\n	<!--(dateChange)="refresh.next()"-->\n	<!--placeholder="Not set">-->\n	<!--</mwl-demo-utils-date-time-picker>-->\n	<!--</td>-->\n	<!--<td>-->\n	<!--<button-->\n	<!--class="btn btn-danger"-->\n	<!--(click)="events.splice(index, 1); refresh.next()">-->\n	<!--Delete-->\n	<!--</button>-->\n	<!--</td>-->\n	<!--</tr>-->\n	<!--</tbody>-->\n\n	<!--</table>-->\n</div>\n<div class="desktop-calendar-footer">\n	<button>Creer une annouce</button>\n</div>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/desktop-calendar/desktop-calendar.html"*/
+            changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectionStrategy"].OnPush,template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\desktop-calendar\desktop-calendar.html"*/'<!--<ng-template #modalContent let-close="close">-->\n\n<!--<div class="modal-header">-->\n\n<!--<h5 class="modal-title">Event action occurred</h5>-->\n\n<!--<button type="button" class="close" (click)="close()">-->\n\n<!--<span aria-hidden="true">&times;</span>-->\n\n<!--</button>-->\n\n<!--</div>-->\n\n<!--<div class="modal-body">-->\n\n<!--<div>-->\n\n<!--Action:-->\n\n<!--<pre>{{ modalData?.action }}</pre>-->\n\n<!--</div>-->\n\n<!--<div>-->\n\n<!--Event:-->\n\n<!--<pre>{{ modalData?.event | json }}</pre>-->\n\n<!--</div>-->\n\n<!--</div>-->\n\n<!--<div class="modal-footer">-->\n\n<!--<button type="button" class="btn btn-secondary" (click)="close()">OK</button>-->\n\n<!--</div>-->\n\n<!--</ng-template>-->\n\n<div class="desktop-calendar-container">\n\n\n\n	<!--<div class="col-md-4">-->\n\n	<!--<div class="btn-group">-->\n\n	<!--<div-->\n\n	<!--class="btn btn-primary"-->\n\n	<!--mwlCalendarPreviousView-->\n\n	<!--[view]="view"-->\n\n	<!--[(viewDate)]="viewDate">-->\n\n	<!--Previous-->\n\n	<!--</div>-->\n\n	<!--<div-->\n\n	<!--class="btn btn-secondary"-->\n\n	<!--mwlCalendarToday-->\n\n	<!--[(viewDate)]="viewDate">-->\n\n	<!--Today-->\n\n	<!--</div>-->\n\n	<!--<div-->\n\n	<!--class="btn btn-primary"-->\n\n	<!--mwlCalendarNextView-->\n\n	<!--[view]="view"-->\n\n	<!--[(viewDate)]="viewDate">-->\n\n	<!--Next-->\n\n	<!--</div>-->\n\n	<!--</div>-->\n\n	<!--</div>-->\n\n\n\n	<div class="desktop-calendar-container-header-buttons">\n\n		<button (click)="view = \'month\'" [class.active]="view === \'month\'">Mois</button>\n\n		<button (click)="view = \'week\'" [class.active]="view === \'week\'">Semaine</button>\n\n		<button (click)="view = \'day\'" [class.active]="view === \'day\'">Jour</button>\n\n	</div>\n\n\n\n	<div [ngSwitch]="view" class="desktop-calendar-container-inside">\n\n		<h3 [ngStyle]="{\'text-transform\' : \'none\'}">\n\n			{{ viewDate | calendarDate:(view + \'ViewTitle\'):\'fr\' }}\n\n		</h3>\n\n		<mwl-calendar-month-view\n\n			*ngSwitchCase="\'month\'"\n\n			[viewDate]="viewDate"\n\n			[locale]="locale"\n\n			[events]="events"\n\n			[refresh]="refresh"\n\n			(dayClicked)="dayClicked($event.day)"\n\n			(eventClicked)="handleEvent(\'Clicked\', $event.event)"\n\n			(eventTimesChanged)="eventTimesChanged($event)">\n\n		</mwl-calendar-month-view>\n\n		<mwl-calendar-week-view\n\n			*ngSwitchCase="\'week\'"\n\n			[viewDate]="viewDate"\n\n			[events]="events"\n\n			[locale]="locale"\n\n			[refresh]="refresh"\n\n			(eventClicked)="handleEvent(\'Clicked\', $event.event)"\n\n			(eventTimesChanged)="eventTimesChanged($event)">\n\n		</mwl-calendar-week-view>\n\n		<mwl-calendar-day-view\n\n			*ngSwitchCase="\'day\'"\n\n			[viewDate]="viewDate"\n\n			[events]="events"\n\n			[locale]="locale"\n\n			[refresh]="refresh"\n\n			(eventClicked)="handleEvent(\'Clicked\', $event.event)"\n\n			(eventTimesChanged)="eventTimesChanged($event)">\n\n		</mwl-calendar-day-view>\n\n	</div>\n\n\n\n	<!--<h3>-->\n\n	<!--Edit events-->\n\n	<!--<button-->\n\n	<!--class="btn btn-primary pull-right"-->\n\n	<!--(click)="addEvent()">-->\n\n	<!--Add new-->\n\n	<!--</button>-->\n\n	<!--<div class="clearfix"></div>-->\n\n	<!--</h3>-->\n\n\n\n	<!--<table class="table table-bordered">-->\n\n\n\n	<!--<thead>-->\n\n	<!--<tr>-->\n\n	<!--<th>Title</th>-->\n\n	<!--<th>Primary color</th>-->\n\n	<!--<th>Secondary color</th>-->\n\n	<!--<th>Starts at</th>-->\n\n	<!--<th>Ends at</th>-->\n\n	<!--<th>Remove</th>-->\n\n	<!--</tr>-->\n\n	<!--</thead>-->\n\n\n\n	<!--<tbody>-->\n\n	<!--<tr *ngFor="let event of events; let index = index">-->\n\n	<!--<td>-->\n\n	<!--<input-->\n\n	<!--type="text"-->\n\n	<!--class="form-control"-->\n\n	<!--[(ngModel)]="event.title"-->\n\n	<!--(keyup)="refresh.next()">-->\n\n	<!--</td>-->\n\n	<!--<td>-->\n\n	<!--<input-->\n\n	<!--type="color"-->\n\n	<!--[(ngModel)]="event.color.primary"-->\n\n	<!--(change)="refresh.next()">-->\n\n	<!--</td>-->\n\n	<!--<td>-->\n\n	<!--<input-->\n\n	<!--type="color"-->\n\n	<!--[(ngModel)]="event.color.secondary"-->\n\n	<!--(change)="refresh.next()">-->\n\n	<!--</td>-->\n\n	<!--<td>-->\n\n	<!--<mwl-demo-utils-date-time-picker-->\n\n	<!--[(date)]="event.start"-->\n\n	<!--(dateChange)="refresh.next()"-->\n\n	<!--placeholder="Not set">-->\n\n	<!--</mwl-demo-utils-date-time-picker>-->\n\n	<!--</td>-->\n\n	<!--<td>-->\n\n	<!--<mwl-demo-utils-date-time-picker-->\n\n	<!--[(date)]="event.end"-->\n\n	<!--(dateChange)="refresh.next()"-->\n\n	<!--placeholder="Not set">-->\n\n	<!--</mwl-demo-utils-date-time-picker>-->\n\n	<!--</td>-->\n\n	<!--<td>-->\n\n	<!--<button-->\n\n	<!--class="btn btn-danger"-->\n\n	<!--(click)="events.splice(index, 1); refresh.next()">-->\n\n	<!--Delete-->\n\n	<!--</button>-->\n\n	<!--</td>-->\n\n	<!--</tr>-->\n\n	<!--</tbody>-->\n\n\n\n	<!--</table>-->\n\n</div>\n\n<div class="desktop-calendar-footer">\n\n	<button>Creer une annouce</button>\n\n</div>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\desktop-calendar\desktop-calendar.html"*/
         }),
         __param(1, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_0__angular_core__["LOCALE_ID"])),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ng_bootstrap_ng_bootstrap__["b" /* NgbModal */], String])
@@ -12552,13 +12414,13 @@ var CalendarService = (function () {
 
 /***/ }),
 
-/***/ 847:
+/***/ 845:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomEventTitleFormatter; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angular_calendar__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angular_calendar__ = __webpack_require__(119);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -12620,7 +12482,7 @@ var CustomEventTitleFormatter = (function (_super) {
 
 /***/ }),
 
-/***/ 848:
+/***/ 846:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12628,8 +12490,8 @@ var CustomEventTitleFormatter = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ng_bootstrap_ng_bootstrap__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular_calendar__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ng_bootstrap_ng_bootstrap__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular_calendar__ = __webpack_require__(119);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -12664,17 +12526,17 @@ var DemoUtilsModule = (function () {
 
 /***/ }),
 
-/***/ 849:
+/***/ 847:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FullCalendarComponentModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__full_calendar__ = __webpack_require__(850);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ap_angular2_fullcalendar__ = __webpack_require__(434);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__full_calendar__ = __webpack_require__(848);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ap_angular2_fullcalendar__ = __webpack_require__(433);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ap_angular2_fullcalendar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ap_angular2_fullcalendar__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_fullcalendar_dist_locale_fr__ = __webpack_require__(855);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_fullcalendar_dist_locale_fr__ = __webpack_require__(853);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_fullcalendar_dist_locale_fr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_fullcalendar_dist_locale_fr__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -12711,13 +12573,13 @@ var FullCalendarComponentModule = (function () {
 
 /***/ }),
 
-/***/ 850:
+/***/ 848:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FullCalendarComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ap_angular2_fullcalendar__ = __webpack_require__(434);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ap_angular2_fullcalendar__ = __webpack_require__(433);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ap_angular2_fullcalendar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_ap_angular2_fullcalendar__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
@@ -12727,10 +12589,10 @@ var FullCalendarComponentModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_moment__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_date_fns__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_date_fns___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_date_fns__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__full_calendar_service__ = __webpack_require__(854);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_shared__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__full_calendar_service__ = __webpack_require__(852);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_shared__ = __webpack_require__(115);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13013,7 +12875,7 @@ var FullCalendarComponent = (function () {
     ], FullCalendarComponent.prototype, "onRangeSelect", void 0);
     FullCalendarComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'full-calendar',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/full-calendar/full-calendar.html"*/'<angular2-fullcalendar [options]="calendarOptions | async"></angular2-fullcalendar>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-calendar/full-calendar/full-calendar.html"*/,
+            selector: 'full-calendar',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\full-calendar\full-calendar.html"*/'<angular2-fullcalendar [options]="calendarOptions | async"></angular2-fullcalendar>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-calendar\full-calendar\full-calendar.html"*/,
             providers: [__WEBPACK_IMPORTED_MODULE_7__full_calendar_service__["a" /* FullCalendarService */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_7__full_calendar_service__["a" /* FullCalendarService */]])
@@ -13025,240 +12887,240 @@ var FullCalendarComponent = (function () {
 
 /***/ }),
 
-/***/ 852:
+/***/ 850:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./af": 436,
-	"./af.js": 436,
-	"./ar": 437,
-	"./ar-dz": 438,
-	"./ar-dz.js": 438,
-	"./ar-kw": 439,
-	"./ar-kw.js": 439,
-	"./ar-ly": 440,
-	"./ar-ly.js": 440,
-	"./ar-ma": 441,
-	"./ar-ma.js": 441,
-	"./ar-sa": 442,
-	"./ar-sa.js": 442,
-	"./ar-tn": 443,
-	"./ar-tn.js": 443,
-	"./ar.js": 437,
-	"./az": 444,
-	"./az.js": 444,
-	"./be": 445,
-	"./be.js": 445,
-	"./bg": 446,
-	"./bg.js": 446,
-	"./bn": 447,
-	"./bn.js": 447,
-	"./bo": 448,
-	"./bo.js": 448,
-	"./br": 449,
-	"./br.js": 449,
-	"./bs": 450,
-	"./bs.js": 450,
-	"./ca": 451,
-	"./ca.js": 451,
-	"./cs": 452,
-	"./cs.js": 452,
-	"./cv": 453,
-	"./cv.js": 453,
-	"./cy": 454,
-	"./cy.js": 454,
-	"./da": 455,
-	"./da.js": 455,
-	"./de": 456,
-	"./de-at": 457,
-	"./de-at.js": 457,
-	"./de-ch": 458,
-	"./de-ch.js": 458,
-	"./de.js": 456,
-	"./dv": 459,
-	"./dv.js": 459,
-	"./el": 460,
-	"./el.js": 460,
-	"./en-au": 461,
-	"./en-au.js": 461,
-	"./en-ca": 462,
-	"./en-ca.js": 462,
-	"./en-gb": 463,
-	"./en-gb.js": 463,
-	"./en-ie": 464,
-	"./en-ie.js": 464,
-	"./en-nz": 465,
-	"./en-nz.js": 465,
-	"./eo": 466,
-	"./eo.js": 466,
-	"./es": 467,
-	"./es-do": 468,
-	"./es-do.js": 468,
-	"./es.js": 467,
-	"./et": 469,
-	"./et.js": 469,
-	"./eu": 470,
-	"./eu.js": 470,
-	"./fa": 471,
-	"./fa.js": 471,
-	"./fi": 472,
-	"./fi.js": 472,
-	"./fo": 473,
-	"./fo.js": 473,
-	"./fr": 474,
-	"./fr-ca": 475,
-	"./fr-ca.js": 475,
-	"./fr-ch": 476,
-	"./fr-ch.js": 476,
-	"./fr.js": 474,
-	"./fy": 477,
-	"./fy.js": 477,
-	"./gd": 478,
-	"./gd.js": 478,
-	"./gl": 479,
-	"./gl.js": 479,
-	"./gom-latn": 480,
-	"./gom-latn.js": 480,
-	"./he": 481,
-	"./he.js": 481,
-	"./hi": 482,
-	"./hi.js": 482,
-	"./hr": 483,
-	"./hr.js": 483,
-	"./hu": 484,
-	"./hu.js": 484,
-	"./hy-am": 485,
-	"./hy-am.js": 485,
-	"./id": 486,
-	"./id.js": 486,
-	"./is": 487,
-	"./is.js": 487,
-	"./it": 488,
-	"./it.js": 488,
-	"./ja": 489,
-	"./ja.js": 489,
-	"./jv": 490,
-	"./jv.js": 490,
-	"./ka": 491,
-	"./ka.js": 491,
-	"./kk": 492,
-	"./kk.js": 492,
-	"./km": 493,
-	"./km.js": 493,
-	"./kn": 494,
-	"./kn.js": 494,
-	"./ko": 495,
-	"./ko.js": 495,
-	"./ky": 496,
-	"./ky.js": 496,
-	"./lb": 497,
-	"./lb.js": 497,
-	"./lo": 498,
-	"./lo.js": 498,
-	"./lt": 499,
-	"./lt.js": 499,
-	"./lv": 500,
-	"./lv.js": 500,
-	"./me": 501,
-	"./me.js": 501,
-	"./mi": 502,
-	"./mi.js": 502,
-	"./mk": 503,
-	"./mk.js": 503,
-	"./ml": 504,
-	"./ml.js": 504,
-	"./mr": 505,
-	"./mr.js": 505,
-	"./ms": 506,
-	"./ms-my": 507,
-	"./ms-my.js": 507,
-	"./ms.js": 506,
-	"./my": 508,
-	"./my.js": 508,
-	"./nb": 509,
-	"./nb.js": 509,
-	"./ne": 510,
-	"./ne.js": 510,
-	"./nl": 511,
-	"./nl-be": 512,
-	"./nl-be.js": 512,
-	"./nl.js": 511,
-	"./nn": 513,
-	"./nn.js": 513,
-	"./pa-in": 514,
-	"./pa-in.js": 514,
-	"./pl": 515,
-	"./pl.js": 515,
-	"./pt": 516,
-	"./pt-br": 517,
-	"./pt-br.js": 517,
-	"./pt.js": 516,
-	"./ro": 518,
-	"./ro.js": 518,
-	"./ru": 519,
-	"./ru.js": 519,
-	"./sd": 520,
-	"./sd.js": 520,
-	"./se": 521,
-	"./se.js": 521,
-	"./si": 522,
-	"./si.js": 522,
-	"./sk": 523,
-	"./sk.js": 523,
-	"./sl": 524,
-	"./sl.js": 524,
-	"./sq": 525,
-	"./sq.js": 525,
-	"./sr": 526,
-	"./sr-cyrl": 527,
-	"./sr-cyrl.js": 527,
-	"./sr.js": 526,
-	"./ss": 528,
-	"./ss.js": 528,
-	"./sv": 529,
-	"./sv.js": 529,
-	"./sw": 530,
-	"./sw.js": 530,
-	"./ta": 531,
-	"./ta.js": 531,
-	"./te": 532,
-	"./te.js": 532,
-	"./tet": 533,
-	"./tet.js": 533,
-	"./th": 534,
-	"./th.js": 534,
-	"./tl-ph": 535,
-	"./tl-ph.js": 535,
-	"./tlh": 536,
-	"./tlh.js": 536,
-	"./tr": 537,
-	"./tr.js": 537,
-	"./tzl": 538,
-	"./tzl.js": 538,
-	"./tzm": 539,
-	"./tzm-latn": 540,
-	"./tzm-latn.js": 540,
-	"./tzm.js": 539,
-	"./uk": 541,
-	"./uk.js": 541,
-	"./ur": 542,
-	"./ur.js": 542,
-	"./uz": 543,
-	"./uz-latn": 544,
-	"./uz-latn.js": 544,
-	"./uz.js": 543,
-	"./vi": 545,
-	"./vi.js": 545,
-	"./x-pseudo": 546,
-	"./x-pseudo.js": 546,
-	"./yo": 547,
-	"./yo.js": 547,
-	"./zh-cn": 548,
-	"./zh-cn.js": 548,
-	"./zh-hk": 549,
-	"./zh-hk.js": 549,
-	"./zh-tw": 550,
-	"./zh-tw.js": 550
+	"./af": 435,
+	"./af.js": 435,
+	"./ar": 436,
+	"./ar-dz": 437,
+	"./ar-dz.js": 437,
+	"./ar-kw": 438,
+	"./ar-kw.js": 438,
+	"./ar-ly": 439,
+	"./ar-ly.js": 439,
+	"./ar-ma": 440,
+	"./ar-ma.js": 440,
+	"./ar-sa": 441,
+	"./ar-sa.js": 441,
+	"./ar-tn": 442,
+	"./ar-tn.js": 442,
+	"./ar.js": 436,
+	"./az": 443,
+	"./az.js": 443,
+	"./be": 444,
+	"./be.js": 444,
+	"./bg": 445,
+	"./bg.js": 445,
+	"./bn": 446,
+	"./bn.js": 446,
+	"./bo": 447,
+	"./bo.js": 447,
+	"./br": 448,
+	"./br.js": 448,
+	"./bs": 449,
+	"./bs.js": 449,
+	"./ca": 450,
+	"./ca.js": 450,
+	"./cs": 451,
+	"./cs.js": 451,
+	"./cv": 452,
+	"./cv.js": 452,
+	"./cy": 453,
+	"./cy.js": 453,
+	"./da": 454,
+	"./da.js": 454,
+	"./de": 455,
+	"./de-at": 456,
+	"./de-at.js": 456,
+	"./de-ch": 457,
+	"./de-ch.js": 457,
+	"./de.js": 455,
+	"./dv": 458,
+	"./dv.js": 458,
+	"./el": 459,
+	"./el.js": 459,
+	"./en-au": 460,
+	"./en-au.js": 460,
+	"./en-ca": 461,
+	"./en-ca.js": 461,
+	"./en-gb": 462,
+	"./en-gb.js": 462,
+	"./en-ie": 463,
+	"./en-ie.js": 463,
+	"./en-nz": 464,
+	"./en-nz.js": 464,
+	"./eo": 465,
+	"./eo.js": 465,
+	"./es": 466,
+	"./es-do": 467,
+	"./es-do.js": 467,
+	"./es.js": 466,
+	"./et": 468,
+	"./et.js": 468,
+	"./eu": 469,
+	"./eu.js": 469,
+	"./fa": 470,
+	"./fa.js": 470,
+	"./fi": 471,
+	"./fi.js": 471,
+	"./fo": 472,
+	"./fo.js": 472,
+	"./fr": 473,
+	"./fr-ca": 474,
+	"./fr-ca.js": 474,
+	"./fr-ch": 475,
+	"./fr-ch.js": 475,
+	"./fr.js": 473,
+	"./fy": 476,
+	"./fy.js": 476,
+	"./gd": 477,
+	"./gd.js": 477,
+	"./gl": 478,
+	"./gl.js": 478,
+	"./gom-latn": 479,
+	"./gom-latn.js": 479,
+	"./he": 480,
+	"./he.js": 480,
+	"./hi": 481,
+	"./hi.js": 481,
+	"./hr": 482,
+	"./hr.js": 482,
+	"./hu": 483,
+	"./hu.js": 483,
+	"./hy-am": 484,
+	"./hy-am.js": 484,
+	"./id": 485,
+	"./id.js": 485,
+	"./is": 486,
+	"./is.js": 486,
+	"./it": 487,
+	"./it.js": 487,
+	"./ja": 488,
+	"./ja.js": 488,
+	"./jv": 489,
+	"./jv.js": 489,
+	"./ka": 490,
+	"./ka.js": 490,
+	"./kk": 491,
+	"./kk.js": 491,
+	"./km": 492,
+	"./km.js": 492,
+	"./kn": 493,
+	"./kn.js": 493,
+	"./ko": 494,
+	"./ko.js": 494,
+	"./ky": 495,
+	"./ky.js": 495,
+	"./lb": 496,
+	"./lb.js": 496,
+	"./lo": 497,
+	"./lo.js": 497,
+	"./lt": 498,
+	"./lt.js": 498,
+	"./lv": 499,
+	"./lv.js": 499,
+	"./me": 500,
+	"./me.js": 500,
+	"./mi": 501,
+	"./mi.js": 501,
+	"./mk": 502,
+	"./mk.js": 502,
+	"./ml": 503,
+	"./ml.js": 503,
+	"./mr": 504,
+	"./mr.js": 504,
+	"./ms": 505,
+	"./ms-my": 506,
+	"./ms-my.js": 506,
+	"./ms.js": 505,
+	"./my": 507,
+	"./my.js": 507,
+	"./nb": 508,
+	"./nb.js": 508,
+	"./ne": 509,
+	"./ne.js": 509,
+	"./nl": 510,
+	"./nl-be": 511,
+	"./nl-be.js": 511,
+	"./nl.js": 510,
+	"./nn": 512,
+	"./nn.js": 512,
+	"./pa-in": 513,
+	"./pa-in.js": 513,
+	"./pl": 514,
+	"./pl.js": 514,
+	"./pt": 515,
+	"./pt-br": 516,
+	"./pt-br.js": 516,
+	"./pt.js": 515,
+	"./ro": 517,
+	"./ro.js": 517,
+	"./ru": 518,
+	"./ru.js": 518,
+	"./sd": 519,
+	"./sd.js": 519,
+	"./se": 520,
+	"./se.js": 520,
+	"./si": 521,
+	"./si.js": 521,
+	"./sk": 522,
+	"./sk.js": 522,
+	"./sl": 523,
+	"./sl.js": 523,
+	"./sq": 524,
+	"./sq.js": 524,
+	"./sr": 525,
+	"./sr-cyrl": 526,
+	"./sr-cyrl.js": 526,
+	"./sr.js": 525,
+	"./ss": 527,
+	"./ss.js": 527,
+	"./sv": 528,
+	"./sv.js": 528,
+	"./sw": 529,
+	"./sw.js": 529,
+	"./ta": 530,
+	"./ta.js": 530,
+	"./te": 531,
+	"./te.js": 531,
+	"./tet": 532,
+	"./tet.js": 532,
+	"./th": 533,
+	"./th.js": 533,
+	"./tl-ph": 534,
+	"./tl-ph.js": 534,
+	"./tlh": 535,
+	"./tlh.js": 535,
+	"./tr": 536,
+	"./tr.js": 536,
+	"./tzl": 537,
+	"./tzl.js": 537,
+	"./tzm": 538,
+	"./tzm-latn": 539,
+	"./tzm-latn.js": 539,
+	"./tzm.js": 538,
+	"./uk": 540,
+	"./uk.js": 540,
+	"./ur": 541,
+	"./ur.js": 541,
+	"./uz": 542,
+	"./uz-latn": 543,
+	"./uz-latn.js": 543,
+	"./uz.js": 542,
+	"./vi": 544,
+	"./vi.js": 544,
+	"./x-pseudo": 545,
+	"./x-pseudo.js": 545,
+	"./yo": 546,
+	"./yo.js": 546,
+	"./zh-cn": 547,
+	"./zh-cn.js": 547,
+	"./zh-hk": 548,
+	"./zh-hk.js": 548,
+	"./zh-tw": 549,
+	"./zh-tw.js": 549
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -13274,11 +13136,11 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 852;
+webpackContext.id = 850;
 
 /***/ }),
 
-/***/ 854:
+/***/ 852:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13289,9 +13151,9 @@ webpackContext.id = 852;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_shared__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_shared__ = __webpack_require__(115);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -13483,14 +13345,14 @@ var FullCalendarService = (function () {
 
 /***/ }),
 
-/***/ 856:
+/***/ 854:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojCard; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_menu_voj_menu__ = __webpack_require__(551);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_menu_voj_menu__ = __webpack_require__(550);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_voj_card_model__ = __webpack_require__(76);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -13571,7 +13433,7 @@ var VojCard = (function () {
     VojCard = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
-            selector: 'voj-card',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-card/voj-card.html"*/'<!-- Generated template for the VojCard component -->\n<div *ngIf="data">\n	<!-- DEACTIVATE IN CASE OF NEEDING TO SHOW A MAP -->\n	<!-- <voj-map [data]="vojData"></voj-map> -->\n\n	<!-- Card -->\n	<ion-card>\n		<div class="voj-style">\n			<div class="badges-container" [ngClass]="setClasses(data)">\n				<!-- Menu button -->\n				<button *ngIf="data.menu && data.menu.length > 0"\n						class="menu-button" \n						ion-button \n						icon-left \n						clear \n						round \n						small\n						(click)="openMenu($event)">\n						<ion-icon name="menu"></ion-icon>\n				</button>\n\n				<!-- Badges -->\n				<ion-item text-right *ngIf="data.badges && data.badges.length > 0" class="{{reduced?\'reduced-badge-style\':\'\'}}">\n					<!-- Buttons for badges -->\n					<button ion-button icon-only round outline class="voj-badge-button" *ngFor="let badge of data.badges">\n						<ion-icon name="{{ badge.icon }}" (click)="badge.action()"></ion-icon>\n					</button>\n				</ion-item>\n\n				<!-- Cover -->\n				<img [src]="data.cover" *ngIf="data.cover && !reduced" class="{{reduced?\'cover-50\':\'\'}}"/>\n				<div [ngStyle]="{\'background-image\': \'url(\' + data.cover + \')\', \'background-repeat\':\'no-repeat\', \'background-position\':\'center\', \'background-size\':\'100%\'}"\n					 class="cover-div" *ngIf="data.cover && reduced">\n\n				</div>\n				<!-- Thumbnail -->\n				<ion-avatar item-left *ngIf="data.thumbnail">\n					<img [src]="data.thumbnail">\n				</ion-avatar>\n			</div>\n\n			<!-- Title -->\n			<div class="voj-style-header {{reduced?\'voj-card-title-reduced\':\'\'}}" *ngIf="data.title" >\n				<h2 [innerHtml]="data.title.label"></h2>\n			</div>\n\n			<!-- Segments -->\n			<voj-segment [data]="data.segments"></voj-segment>\n			<!-- Subtitles -->\n			<div *ngIf="data.subtitles && data.subtitles.length > 0">\n				<ion-item text-wrap no-lines *ngFor="let title of data.subtitles"\n						  [hidden]="title.rendered === false && reduced"\n						  class="voj-subtitle">\n					<ion-icon [name]="title.icon" item-start small class="subtitle-icon"></ion-icon>\n					<h4 [innerHtml]="title.label" ></h4>\n				</ion-item>\n			</div>\n\n			<!-- Content -->\n			<ion-card-content class="voj-content" no-margin no-lines *ngIf="data.content">{{data.content}}</ion-card-content>\n		</div>\n\n		<!-- Buttons -->\n		<ion-grid *ngIf="data.actions && data.actions.length > 0" style="padding-top: 0px;padding-bottom: 0px;">\n			<ion-row>\n				<ion-col text-center *ngFor="let button of data.actions">\n					<button small ion-button icon-left class="voj-button titlecase-btn"\n							[ngStyle]="button.style" (click)="button.action($event)">\n						<ion-icon [name]="button.icon"></ion-icon>\n						{{button.label}}\n					</button>\n				</ion-col>\n			</ion-row>\n		</ion-grid>\n\n		<!-- Social buttons -->\n		<ion-row>\n			<ion-col >\n\n				<button\n					*ngFor="let button of data.socialButtons"\n					class="social-buttons"\n					left\n					ion-button\n					clear\n					large\n					(click)="button.action($event)">\n					<ion-icon [name]="button.icon">\n					</ion-icon>\n				</button>\n			</ion-col>\n		</ion-row>\n	</ion-card>\n</div>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-card/voj-card.html"*/,
+            selector: 'voj-card',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-card\voj-card.html"*/'<!-- Generated template for the VojCard component -->\n\n<div *ngIf="data">\n\n	<!-- DEACTIVATE IN CASE OF NEEDING TO SHOW A MAP -->\n\n	<!-- <voj-map [data]="vojData"></voj-map> -->\n\n\n\n	<!-- Card -->\n\n	<ion-card>\n\n		<div class="voj-style">\n\n			<div class="badges-container" [ngClass]="setClasses(data)">\n\n				<!-- Menu button -->\n\n				<button *ngIf="data.menu && data.menu.length > 0"\n\n						class="menu-button" \n\n						ion-button \n\n						icon-left \n\n						clear \n\n						round \n\n						small\n\n						(click)="openMenu($event)">\n\n						<ion-icon name="menu"></ion-icon>\n\n				</button>\n\n\n\n				<!-- Badges -->\n\n				<ion-item text-right *ngIf="data.badges && data.badges.length > 0" class="{{reduced?\'reduced-badge-style\':\'\'}}">\n\n					<!-- Buttons for badges -->\n\n					<button ion-button icon-only round outline class="voj-badge-button" *ngFor="let badge of data.badges">\n\n						<ion-icon name="{{ badge.icon }}" (click)="badge.action()"></ion-icon>\n\n					</button>\n\n				</ion-item>\n\n\n\n				<!-- Cover -->\n\n				<img [src]="data.cover" *ngIf="data.cover && !reduced" class="{{reduced?\'cover-50\':\'\'}}"/>\n\n				<div [ngStyle]="{\'background-image\': \'url(\' + data.cover + \')\', \'background-repeat\':\'no-repeat\', \'background-position\':\'center\', \'background-size\':\'100%\'}"\n\n					 class="cover-div" *ngIf="data.cover && reduced">\n\n\n\n				</div>\n\n				<!-- Thumbnail -->\n\n				<ion-avatar item-left *ngIf="data.thumbnail">\n\n					<img [src]="data.thumbnail">\n\n				</ion-avatar>\n\n			</div>\n\n\n\n			<!-- Title -->\n\n			<div class="voj-style-header {{reduced?\'voj-card-title-reduced\':\'\'}}" *ngIf="data.title" >\n\n				<h2 [innerHtml]="data.title.label"></h2>\n\n			</div>\n\n\n\n			<!-- Segments -->\n\n			<voj-segment [data]="data.segments"></voj-segment>\n\n			<!-- Subtitles -->\n\n			<div *ngIf="data.subtitles && data.subtitles.length > 0">\n\n				<ion-item text-wrap no-lines *ngFor="let title of data.subtitles"\n\n						  [hidden]="title.rendered === false && reduced"\n\n						  class="voj-subtitle">\n\n					<ion-icon [name]="title.icon" item-start small class="subtitle-icon"></ion-icon>\n\n					<h4 [innerHtml]="title.label" ></h4>\n\n				</ion-item>\n\n			</div>\n\n\n\n			<!-- Content -->\n\n			<ion-card-content class="voj-content" no-margin no-lines *ngIf="data.content">{{data.content}}</ion-card-content>\n\n		</div>\n\n\n\n		<!-- Buttons -->\n\n		<ion-grid *ngIf="data.actions && data.actions.length > 0" style="padding-top: 0px;padding-bottom: 0px;">\n\n			<ion-row>\n\n				<ion-col text-center *ngFor="let button of data.actions">\n\n					<button small ion-button icon-left class="voj-button titlecase-btn"\n\n							[ngStyle]="button.style" (click)="button.action($event)">\n\n						<ion-icon [name]="button.icon"></ion-icon>\n\n						{{button.label}}\n\n					</button>\n\n				</ion-col>\n\n			</ion-row>\n\n		</ion-grid>\n\n\n\n		<!-- Social buttons -->\n\n		<ion-row>\n\n			<ion-col >\n\n\n\n				<button\n\n					*ngFor="let button of data.socialButtons"\n\n					class="social-buttons"\n\n					left\n\n					ion-button\n\n					clear\n\n					large\n\n					(click)="button.action($event)">\n\n					<ion-icon [name]="button.icon">\n\n					</ion-icon>\n\n				</button>\n\n			</ion-col>\n\n		</ion-row>\n\n	</ion-card>\n\n</div>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-card\voj-card.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["a" /* ActionSheetController */],
             __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["p" /* PopoverController */]])
@@ -13583,7 +13445,7 @@ var VojCard = (function () {
 
 /***/ }),
 
-/***/ 857:
+/***/ 855:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13626,7 +13488,7 @@ var VojSegment = (function () {
     VojSegment = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'voj-segment',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-segment/voj-segment.html"*/'<div class="voj-segments-container">\n	<div class="voj-segment" *ngFor="let segment of data"\n		 [ngStyle]="{\'color\': segment.style === \'style2\' ? \'#fff\':\'#000\'}" (click)="segment.action()">\n		<div [className]="(isStats)? \'voj-segment-title-web\': \'voj-segment-title\'">{{segment.title.label}}</div>\n		<div [ngStyle]="{\'border-bottom\':segment.stateful===true?\'1px solid #000000\':\'0px solid #000000\'}"\n			 	[className]="(isStats)? \'voj-segment-subtitle-web\': \'voj-segment-subtitle\'">{{segment.subtitle.label}}</div>\n\n	</div>\n</div>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-segment/voj-segment.html"*/,
+            selector: 'voj-segment',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-segment\voj-segment.html"*/'<div class="voj-segments-container">\n\n	<div class="voj-segment" *ngFor="let segment of data"\n\n		 [ngStyle]="{\'color\': segment.style === \'style2\' ? \'#fff\':\'#000\'}" (click)="segment.action()">\n\n		<div [className]="(isStats)? \'voj-segment-title-web\': \'voj-segment-title\'">{{segment.title.label}}</div>\n\n		<div [ngStyle]="{\'border-bottom\':segment.stateful===true?\'1px solid #000000\':\'0px solid #000000\'}"\n\n			 	[className]="(isStats)? \'voj-segment-subtitle-web\': \'voj-segment-subtitle\'">{{segment.subtitle.label}}</div>\n\n\n\n	</div>\n\n</div>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-segment\voj-segment.html"*/,
         }),
         __metadata("design:paramtypes", [])
     ], VojSegment);
@@ -13637,7 +13499,7 @@ var VojSegment = (function () {
 
 /***/ }),
 
-/***/ 858:
+/***/ 856:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13645,10 +13507,10 @@ var VojSegment = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_voj_events_voj_events__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_search_service_search_service__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_details_details__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_search_service_search_service__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_details_details__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_geolocation__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_geolocation__ = __webpack_require__(214);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_storage__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_account_module_login_login__ = __webpack_require__(62);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -13837,7 +13699,7 @@ var VojMap = (function () {
     VojMap = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'voj-map',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-map/voj-map.html"*/'<ion-card [hidden]="hiddenMap" class="map">\n    <div #map id="map"></div>\n</ion-card>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-map/voj-map.html"*/,
+            selector: 'voj-map',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-map\voj-map.html"*/'<ion-card [hidden]="hiddenMap" class="map">\n\n    <div #map id="map"></div>\n\n</ion-card>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-map\voj-map.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_7__ionic_storage__["b" /* Storage */],
@@ -13853,14 +13715,14 @@ var VojMap = (function () {
 
 /***/ }),
 
-/***/ 862:
+/***/ 860:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchResultDTO; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_voj_card_model__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_text_type__ = __webpack_require__(124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_map_model__ = __webpack_require__(552);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_text_type__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_map_model__ = __webpack_require__(551);
 
 
 
@@ -14005,7 +13867,7 @@ var SearchResultDTO = (function () {
 
 /***/ }),
 
-/***/ 863:
+/***/ 861:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14020,13 +13882,13 @@ var ButtonType = (function () {
 
 /***/ }),
 
-/***/ 864:
+/***/ 862:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchDTOJobyer; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_text_type__ = __webpack_require__(124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_segment_type__ = __webpack_require__(554);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_text_type__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_segment_type__ = __webpack_require__(553);
 
 
 var SearchDTOJobyer = (function () {
@@ -14179,13 +14041,13 @@ var SearchDTOJobyer = (function () {
 
 /***/ }),
 
-/***/ 865:
+/***/ 863:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchDTOEmployer; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_text_type__ = __webpack_require__(124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_segment_type__ = __webpack_require__(554);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_text_type__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_segment_type__ = __webpack_require__(553);
 
 
 var SearchDTOEmployer = (function () {
@@ -14296,12 +14158,12 @@ var SearchDTOEmployer = (function () {
 
 /***/ }),
 
-/***/ 872:
+/***/ 870:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EnterpriseDto; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__employer_dto__ = __webpack_require__(873);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__employer_dto__ = __webpack_require__(871);
 
 var EnterpriseDto = (function () {
     function EnterpriseDto() {
@@ -14319,7 +14181,7 @@ var EnterpriseDto = (function () {
 
 /***/ }),
 
-/***/ 873:
+/***/ 871:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14334,7 +14196,7 @@ var EmployerDto = (function () {
 
 /***/ }),
 
-/***/ 878:
+/***/ 876:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14343,7 +14205,7 @@ var EmployerDto = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_navigation_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_landing_page_landing_page__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_landing_page_landing_page__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -14395,7 +14257,7 @@ var VojPageHeader = (function () {
     ], VojPageHeader.prototype, "data", void 0);
     VojPageHeader = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'voj-page-header',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-page-header/voj-page-header.html"*/'<div *ngIf="showHeader">\n    <ion-navbar [ngClass]="config.isLargeScreen ? \'desktop-header\' : \'mobile-header\'">\n        <!-- Back button -->\n        <!--<button class="header-back" (click)="goToPreviousPage()" *ngIf="canGoBack">\n            <ion-icon name="arrow-round-back" ></ion-icon>\n        </button>-->\n    \n        <!-- Close button -->\n        <button class="header-back" (click)="closePage()" *ngIf="canClose">\n            <span>\n                <ion-icon name="close"></ion-icon>\n            </span>\n        </button>\n    \n        <div class="page-header-title">{{ data.title | translate }}</div>\n\n        <!-- ion-buttons first host -->\n        <ion-buttons end *ngFor="let button of data.actions">\n            <button ion-button color="danger" *ngIf="button.id === \'notification\' && config.isLargeScreen" (click)="button.action()">\n                <ion-badge  color="danger" *ngIf="button.id === \'notification\' && config.isLargeScreen ">{{button.label}}</ion-badge>\n                <!--ion-icon name="alert" style="font-size: x-large" icon-right></ion-icon-->\n            </button>\n        </ion-buttons>\n        \n        <!--<span *ngIf="!config.isLargeScreen" class="voj-page-header-buttons">  || button.id === \'notification\'-->\n        <!-- ion-buttons second host -->\n        <ion-buttons end >\n            <span *ngFor="let button of data.actions">\n                <button\n                    *ngIf="!config.isLargeScreen"\n                    [attr.data-icon]="button.icon"\n                    (click)="button.action()"\n                    class="page-header-button"\n                    ion-button>\n                    <!-- <ion-badge\n                        *ngIf="!config.isLargeScreen"\n                        class="fab-notification"\n                        color="danger">\n                        {{button.label}}\n                    </ion-badge> -->\n                    <ion-icon\n                        [name]="button.icon"\n                        style="color:white; font-size: xx-large">\n                    </ion-icon>\n                </button>\n            </span>\n        </ion-buttons>\n    </ion-navbar>\n</div>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-page-header/voj-page-header.html"*/,
+            selector: 'voj-page-header',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-page-header\voj-page-header.html"*/'<div *ngIf="showHeader">\n\n    <ion-navbar [ngClass]="config.isLargeScreen ? \'desktop-header\' : \'mobile-header\'">\n\n        <!-- Back button -->\n\n        <!--<button class="header-back" (click)="goToPreviousPage()" *ngIf="canGoBack">\n\n            <ion-icon name="arrow-round-back" ></ion-icon>\n\n        </button>-->\n\n    \n\n        <!-- Close button -->\n\n        <button class="header-back" (click)="closePage()" *ngIf="canClose">\n\n            <span>\n\n                <ion-icon name="close"></ion-icon>\n\n            </span>\n\n        </button>\n\n    \n\n        <div class="page-header-title">{{ data.title | translate }}</div>\n\n\n\n        <!-- ion-buttons first host -->\n\n        <ion-buttons end *ngFor="let button of data.actions">\n\n            <button ion-button color="danger" *ngIf="button.id === \'notification\' && config.isLargeScreen" (click)="button.action()">\n\n                <ion-badge  color="danger" *ngIf="button.id === \'notification\' && config.isLargeScreen ">{{button.label}}</ion-badge>\n\n                <!--ion-icon name="alert" style="font-size: x-large" icon-right></ion-icon-->\n\n            </button>\n\n        </ion-buttons>\n\n        \n\n        <!--<span *ngIf="!config.isLargeScreen" class="voj-page-header-buttons">  || button.id === \'notification\'-->\n\n        <!-- ion-buttons second host -->\n\n        <ion-buttons end >\n\n            <span *ngFor="let button of data.actions">\n\n                <button\n\n                    *ngIf="!config.isLargeScreen"\n\n                    [attr.data-icon]="button.icon"\n\n                    (click)="button.action()"\n\n                    class="page-header-button"\n\n                    ion-button>\n\n                    <!-- <ion-badge\n\n                        *ngIf="!config.isLargeScreen"\n\n                        class="fab-notification"\n\n                        color="danger">\n\n                        {{button.label}}\n\n                    </ion-badge> -->\n\n                    <ion-icon\n\n                        [name]="button.icon"\n\n                        style="color:white; font-size: xx-large">\n\n                    </ion-icon>\n\n                </button>\n\n            </span>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n</div>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-page-header\voj-page-header.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_3__services_navigation_service__["a" /* NavigationService */],
@@ -14409,14 +14271,14 @@ var VojPageHeader = (function () {
 
 /***/ }),
 
-/***/ 879:
+/***/ 877:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojFooterModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_footer__ = __webpack_require__(880);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_footer__ = __webpack_require__(878);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -14449,7 +14311,7 @@ var VojFooterModule = (function () {
 
 /***/ }),
 
-/***/ 880:
+/***/ 878:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14483,7 +14345,7 @@ var VojFooter = (function () {
     ], VojFooter.prototype, "testVar", void 0);
     VojFooter = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'voj-footer',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-footer/voj-footer.html"*/'<!-- Generated template for the VojFooter component -->\n<!--div-->\n<ion-footer *ngIf="config.isLargeScreen" >\n	<ion-toolbar>\n\n		<ion-buttons end *ngIf="data">\n			<button ion-button icon-left *ngFor="let btn of data.actions" (click)="btn.action()" [ngStyle]="data.style">\n				<ion-icon name="{{btn.icon}}"></ion-icon>\n				{{btn.label}}\n			</button>\n		</ion-buttons>\n\n		{{testVar}}\n	</ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-footer/voj-footer.html"*/
+            selector: 'voj-footer',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-footer\voj-footer.html"*/'<!-- Generated template for the VojFooter component -->\n\n<!--div-->\n\n<ion-footer *ngIf="config.isLargeScreen" >\n\n	<ion-toolbar>\n\n\n\n		<ion-buttons end *ngIf="data">\n\n			<button ion-button icon-left *ngFor="let btn of data.actions" (click)="btn.action()" [ngStyle]="data.style">\n\n				<ion-icon name="{{btn.icon}}"></ion-icon>\n\n				{{btn.label}}\n\n			</button>\n\n		</ion-buttons>\n\n\n\n		{{testVar}}\n\n	</ion-toolbar>\n\n</ion-footer>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-footer\voj-footer.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__["a" /* Configuration */]])
     ], VojFooter);
@@ -14494,7 +14356,7 @@ var VojFooter = (function () {
 
 /***/ }),
 
-/***/ 881:
+/***/ 879:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14523,7 +14385,7 @@ var VojHeader = (function () {
     VojHeader = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'voj-header',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-header/voj-header.html"*/'<!-- Generated template for the VojHeader component -->\n<ion-header no-border>\n	<ion-navbar *ngIf="isWeb" class="generic">\n		<ion-item class="voj-style" no-lines>\n			<button ion-button icon-right outline item-end>\n				{{searchButtonTitle}}\n				<!--ion-icon name="search"></ion-icon-->\n			</button>\n			<button ion-button icon-right outline item-end>\n				{{offerButtonTitle}}\n				<!--ion-icon name="search"></ion-icon-->\n			</button>\n			<button ion-button icon-right outline item-end>\n				{{missionButtonTitle}}\n				<!--ion-icon name="search"></ion-icon-->\n			</button>\n			<button ion-button icon-right outline item-end>\n				{{accountButtonTitle}}\n				<!--ion-icon name="person"></ion-icon-->\n			</button>\n		</ion-item>\n		<div padding>\n			<ion-segment>\n				<ion-segment-button value="1" class="voj-style">\n					<span ion-text class="voj-style">8</span> Contrats en attente\n				</ion-segment-button>\n				<ion-segment-button value="3" class="voj-style">\n					<span ion-text class="voj-style">3</span>\n					Pointages à valider\n				</ion-segment-button>\n				<ion-segment-button value="4" class="voj-style">\n					<span ion-text class="voj-style">0</span>\n					Missions à clôturer\n				</ion-segment-button>\n			</ion-segment>\n		</div>\n	</ion-navbar>\n\n	<!--ion-navbar *ngIf="isViewNavbar && isWeb" >\n	  <!-- Sub navigation bar, content depends on every view -->\n	<!--ion-title>test</ion-title>\n  </ion-navbar-->\n\n\n	<ion-navbar *ngIf="!isWeb">\n		<ion-segment [(ngModel)]="icons" color="secondary">\n			<ion-segment-button value="camera">\n				<!--ion-icon name="camera"></ion-icon-->\n				{{firstSegment}}\n			</ion-segment-button>\n			<ion-segment-button value="bookmark">\n				<!--ion-icon name="bookmark"></ion-icon-->\n				{{secondSegment}}\n			</ion-segment-button>\n		</ion-segment>\n		<ion-buttons start>\n			<button ion-fab icon-only>\n				<ion-icon name="search"></ion-icon>\n			</button>\n		</ion-buttons>\n	</ion-navbar>\n\n	<ion-navbar *ngIf="!isWeb">\n		<ion-searchbar></ion-searchbar>\n		<ion-searchbar></ion-searchbar>\n	</ion-navbar>\n</ion-header>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-header/voj-header.html"*/
+            selector: 'voj-header',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-header\voj-header.html"*/'<!-- Generated template for the VojHeader component -->\n\n<ion-header no-border>\n\n	<ion-navbar *ngIf="isWeb" class="generic">\n\n		<ion-item class="voj-style" no-lines>\n\n			<button ion-button icon-right outline item-end>\n\n				{{searchButtonTitle}}\n\n				<!--ion-icon name="search"></ion-icon-->\n\n			</button>\n\n			<button ion-button icon-right outline item-end>\n\n				{{offerButtonTitle}}\n\n				<!--ion-icon name="search"></ion-icon-->\n\n			</button>\n\n			<button ion-button icon-right outline item-end>\n\n				{{missionButtonTitle}}\n\n				<!--ion-icon name="search"></ion-icon-->\n\n			</button>\n\n			<button ion-button icon-right outline item-end>\n\n				{{accountButtonTitle}}\n\n				<!--ion-icon name="person"></ion-icon-->\n\n			</button>\n\n		</ion-item>\n\n		<div padding>\n\n			<ion-segment>\n\n				<ion-segment-button value="1" class="voj-style">\n\n					<span ion-text class="voj-style">8</span> Contrats en attente\n\n				</ion-segment-button>\n\n				<ion-segment-button value="3" class="voj-style">\n\n					<span ion-text class="voj-style">3</span>\n\n					Pointages à valider\n\n				</ion-segment-button>\n\n				<ion-segment-button value="4" class="voj-style">\n\n					<span ion-text class="voj-style">0</span>\n\n					Missions à clôturer\n\n				</ion-segment-button>\n\n			</ion-segment>\n\n		</div>\n\n	</ion-navbar>\n\n\n\n	<!--ion-navbar *ngIf="isViewNavbar && isWeb" >\n\n	  <!-- Sub navigation bar, content depends on every view -->\n\n	<!--ion-title>test</ion-title>\n\n  </ion-navbar-->\n\n\n\n\n\n	<ion-navbar *ngIf="!isWeb">\n\n		<ion-segment [(ngModel)]="icons" color="secondary">\n\n			<ion-segment-button value="camera">\n\n				<!--ion-icon name="camera"></ion-icon-->\n\n				{{firstSegment}}\n\n			</ion-segment-button>\n\n			<ion-segment-button value="bookmark">\n\n				<!--ion-icon name="bookmark"></ion-icon-->\n\n				{{secondSegment}}\n\n			</ion-segment-button>\n\n		</ion-segment>\n\n		<ion-buttons start>\n\n			<button ion-fab icon-only>\n\n				<ion-icon name="search"></ion-icon>\n\n			</button>\n\n		</ion-buttons>\n\n	</ion-navbar>\n\n\n\n	<ion-navbar *ngIf="!isWeb">\n\n		<ion-searchbar></ion-searchbar>\n\n		<ion-searchbar></ion-searchbar>\n\n	</ion-navbar>\n\n</ion-header>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-header\voj-header.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], VojHeader);
@@ -14534,7 +14396,48 @@ var VojHeader = (function () {
 
 /***/ }),
 
-/***/ 882:
+/***/ 88:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VojSegmentModule", function() { return VojSegmentModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_segment__ = __webpack_require__(855);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var VojSegmentModule = (function () {
+    function VojSegmentModule() {
+    }
+    VojSegmentModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__voj_segment__["a" /* VojSegment */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__voj_segment__["a" /* VojSegment */]),
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__voj_segment__["a" /* VojSegment */]
+            ]
+        })
+    ], VojSegmentModule);
+    return VojSegmentModule;
+}());
+
+//# sourceMappingURL=voj-segment.module.js.map
+
+/***/ }),
+
+/***/ 880:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14573,7 +14476,7 @@ var VojList = (function () {
     VojList = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'voj-list',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-list/voj-list.html"*/'<!-- Generated template for the VojList component -->\n<div>\n	<ion-list-header>{{title}}</ion-list-header>\n	<ion-list>\n		<div *ngFor="let card of cards">\n			<!--<voj-card [title]="card.title" [content]="card.content" [action-name]="card.actionName"> </voj-card>-->\n		</div>\n	</ion-list>\n</div>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-list/voj-list.html"*/
+            selector: 'voj-list',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-list\voj-list.html"*/'<!-- Generated template for the VojList component -->\n\n<div>\n\n	<ion-list-header>{{title}}</ion-list-header>\n\n	<ion-list>\n\n		<div *ngFor="let card of cards">\n\n			<!--<voj-card [title]="card.title" [content]="card.content" [action-name]="card.actionName"> </voj-card>-->\n\n		</div>\n\n	</ion-list>\n\n</div>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-list\voj-list.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], VojList);
@@ -14584,7 +14487,7 @@ var VojList = (function () {
 
 /***/ }),
 
-/***/ 883:
+/***/ 881:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14592,9 +14495,9 @@ var VojList = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(373);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_lodash__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_search_select_voj_search_select__ = __webpack_require__(567);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_search_select_voj_search_select__ = __webpack_require__(565);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -14896,7 +14799,7 @@ var VojForm = (function () {
     VojForm = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'voj-form',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-form/voj-form.html"*/'<!-- Generated template for the VojForm component -->\n<div class="calendar-container">\n    <h2 [innerHTML]="data.title" *ngIf="data.title && data.title.length > 0"></h2>\n    <form #formComponent="ngForm" [formGroup]="dynamicalForm" (ngSubmit)="onSubmit(formComponent, data.submit.action)" novalidate>\n\n        <div class="dynamical-form" id="{{ field.id }}" *ngFor="let field of data.fields; let fieldIndex = index">\n            <button ion-button class="custom-btn" *ngIf="field.type === \'button\'" [hidden]="!field.visible"\n                    (click)="field.action()" type="button">\n                {{ field.label | translate }}\n            </button>\n\n            <ion-list *ngIf="field.type === \'text\' || field.type === \'textarea\'\n							|| field.type === \'number\' || field.type === \'tel\'">\n                <ion-item class="custom-input" [hidden]="!field.visible">\n                    <ion-label stacked *ngIf="field.label && field.label.length > 0">{{field.label | translate}}\n                        <span class="asterisk" *ngIf="field.required">*</span></ion-label>\n                    <ion-input type="{{ field.type }}"\n                               [readonly]="field.readonly"\n                               required="{{field.required}}"\n                               placeholder="{{field.placeholder | translate}}"\n                               maxlength="{{field.max}}"\n                               [(ngModel)]="field.value"\n                               (ngModelChange)="field.value = $event; checkNgModel(field.action)"\n                               (keyup)="getItems($event, field.dataset)"\n                               formControlName="{{field.name}}"></ion-input>\n                </ion-item>\n                <div *ngIf="showList && field.dataset" class="input-autocomplete">\n                    <ion-list>\n                        <ion-item *ngFor="let item of itemsForAutocomplete" (click)="selectTip(item.value, field)">\n                            {{ item.value }}\n                        </ion-item>\n                    </ion-list>\n                </div>\n            </ion-list>\n\n            <ion-list *ngIf="field.type === \'week\' || field.type === \'url\' || field.type === \'time\'\n             || field.type === \'color\' || field.type === \'mail\' || field.type === \'month\'">\n                <ion-item class="custom-input">\n                    <ion-label stacked *ngIf="field.label && field.label.length > 0">{{ field.label | translate }}\n                        <span class="asterisk" *ngIf="field.required">*</span></ion-label>\n                    <ion-input type="text"\n                               autocomplete="on"\n                               [hidden]="!field.visible"\n                               [readonly]="field.readonly"\n                               placeholder="{{field.placeholder | translate}}"\n                               maxlength="{{field.max}}"\n                               [(ngModel)]="field.value"\n                               (ngModelChange)="field.value = $event; checkNgModel(field.action)"\n                               formControlName="{{field.name}}"></ion-input>\n                </ion-item>\n            </ion-list>\n\n            <ion-list *ngIf="field.type === \'date\'">\n                <ion-label class="date-label" *ngIf="field.label && field.label.length > 0">{{ field.label | translate }}\n                    <span class="asterisk" *ngIf="field.required">*</span></ion-label>\n                <ion-item class="custom-input" (click)="picker.open()">\n                    <md-form-field>\n                        <input type="text" mdInput [mdDatepicker]="picker"\n                               [hidden]="!field.visible"\n                               [readonly]="field.readonly"\n                               disabled="{{field.disabled}}"\n                               [(ngModel)]="field.value"\n                               (dateChange)="checkNgModel(field.action)"\n                               [max]="field.max"\n                               [min]="field.min"\n                               placeholder="{{field.placeholder | translate}}"\n                               formControlName="{{field.name}}">\n                        <md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>\n                        <md-datepicker touchUi="true" #picker></md-datepicker>\n                    </md-form-field>\n                </ion-item>\n            </ion-list>\n\n            <ion-list *ngIf="field.type === \'password\' || field.type === \'password-visible\' || field.type === \'search\'">\n                <ion-item class="custom-input custom-input-password">\n                    <ion-label stacked>{{ field.label | translate }}\n                        <span class="asterisk" *ngIf="field.required">*</span></ion-label>\n                    <ion-input type="{{ (field.type === \'password\') ? \'password\' : \'text\' }}"\n                               autocomplete="on"\n                               clearOnEdit="false"\n                               [hidden]="!field.visible"\n                               [readonly]="field.readonly"\n                               placeholder="{{field.placeholder | translate}}"\n                               maxlength="{{field.max}}"\n                               [(ngModel)]="field.value"\n                               (ngModelChange)="field.value = $event"\n                               formControlName="{{field.name}}" #inputPass></ion-input>\n                    <button ion-button icon-only type="button" item-right\n                            (click)="managePassword(inputPass, fieldIndex)">\n                        <ion-icon name="{{ field.type === \'password\' ? \'ios-eye\' : field.type === \'password-visible\' ?\n                                        \'ios-eye-off\' : \'ios-search\'}}">\n                        </ion-icon>\n                    </button>\n                </ion-item>\n            </ion-list>\n\n            <ion-list *ngIf="field.type === \'range\'">\n                <ion-item>\n                    <ion-range min="{{field.min}}" max="{{field.max}}" [(ngModel)]="field.value" color="secondary"\n                               [hidden]="!field.visible" formControlName="{{field.name}}">\n                        <ion-label range-left>{{field.min}}</ion-label>\n                        <ion-label range-right>{{field.max}}</ion-label>\n                    </ion-range>\n                </ion-item>\n            </ion-list>\n\n            <ion-list *ngIf="field.type === \'select\'">\n                <ion-item class="custom-select">\n                    <ion-label>{{ field.label | translate }}\n                        <span class="asterisk" *ngIf="field.required">*</span></ion-label>\n                    <ion-select [(ngModel)]="field.value"\n                                cancelText="{{ \'FORM.CANCEL_BTN\' | translate }}"\n                                [hidden]="!field.visible"\n                                [disabled]="field.readonly"\n                                required="{{field.required}}"\n                                (ngModelChange)="field.value = $event; checkNgModel(field.action)"\n                                formControlName="{{field.name}}">\n                        <ion-option value="{{subSelect.value}}" *ngFor="let subSelect of field.dataset">\n                            {{ subSelect.key }}\n                        </ion-option>\n                    </ion-select>\n                </ion-item>\n            </ion-list>\n\n            <!-- Search select -->\n            <ion-list *ngIf="field.type === \'search-select\'">\n                <ion-item class="custom-input select-search">\n                    <ion-label stacked>{{ field.label | translate }}</ion-label>\n                    <ion-input type="text"\n                               id="{{field.id}}"\n                               [readonly]="true"\n                               [(ngModel)]="field.value"\n                               (ngModelChange)="field.value = $event; checkNgModel(field.action)"\n                               (keyup)="getItems($event, field.dataset)"\n                               formControlName="{{field.name}}"\n                               (click)="openSearchSelect(field.dataset, fieldIndex, field.value)"></ion-input>\n                </ion-item>\n            </ion-list>\n\n            <!-- Search select list -->\n            <div *ngIf="field.type === \'search-select-list\'">\n                <ion-item class="search-select-list-wrapper custom-input select-search">\n                    <ion-label stacked>{{ field.label | translate }}</ion-label>\n                    <ion-input type="text"\n                        id="{{field.id}}"\n                        [readonly]="true"\n                        [(ngModel)]="field.value"\n                        (ngModelChange)="field.value = $event; checkNgModel(field.action)"\n                        (keyup)="getItems($event, field.dataset)"\n                        formControlName="{{field.name}}"\n                        (click)="openSearchSelect(field.dataset, fieldIndex, field.value)">\n                    </ion-input>\n                    <button\n                        (click)="addSelectListItem(field)"\n                        ion-button\n                        icon-only\n                        item-end\n                        class="select-btn-attachment-inner"\n                        type="button">\n                        <ion-icon ios="md-add" md="md-add"></ion-icon>\n                    </button>\n                </ion-item>\n                <div\n                    *ngFor="let item of field.selected; let itemIndex = index"\n                    class="custom-select-btn-attachment"\n                    ion-row>\n                    <ion-col col-10>\n                        <div class="selected-item">{{ item.value }}</div>\n                        <ion-item\n                            *ngIf="field.customSelectCheckable"\n                            [ngClass]="item.checked ? \'\' : \'custom-checkbox-checked\'"\n                            class="custom-select-checkbox-addon">\n                            <ion-label>\n                                {{field.customSelectCheckableLabel | translate}}\n                            </ion-label>\n                            <ion-checkbox></ion-checkbox>\n                        </ion-item>\n                    </ion-col>\n                    <ion-col class="custom-select-btn-attachment-wrapper" col-2 style="justify-content: flex-end">\n                        <button\n                            (click)="deleteSelectedListItem(field, itemIndex)"\n                            ion-button\n                            icon-only\n                            class="custom-select-btn-attachment-inner"\n                            type="button">\n                            <ion-icon ios="md-trash" md="md-trash"></ion-icon>\n                        </button>\n                    </ion-col>\n                </div>\n            </div>\n\n            <!-- Radio -->\n            <ion-list radio-group class="custom-radio" *ngIf="field.type === \'radio\'"\n                      [(ngModel)]="field.value" formControlName="{{field.name}}" (ngModelChange)="checkNgModel(field.action)">\n                <ion-list-header class="voj-radio-label" *ngIf="field.label && field.label.length > 0">\n                    {{ field.label | translate }}\n                </ion-list-header>\n                <ion-item class="voj-radio-button" *ngFor="let radioItem of field.dataset">\n                    <ion-label>{{ radioItem.key | translate }}</ion-label>\n                    <ion-radio value="{{radioItem.value}}"></ion-radio>\n                </ion-item>\n            </ion-list>\n\n            <!-- Radio with inputs -->\n            <ion-list radio-group class="custom-radio-with-inputs" *ngIf="field.type === \'radioWithInputs\'"\n                      formControlName="{{field.name}}"\n                      [(ngModel)]="field.value">\n                <div *ngFor="let radioItem of field.dataset3"\n                     (click)="field.value=radioItem.value" class="custom-radio-wrap">\n                    <div [ngClass]="field.value===radioItem.value ? \'\' : \'selectedItem\'" class="custom-radio-1">\n                        <ion-icon\n                                name="{{field.value===radioItem.value ? \'radio-button-on\' : \'radio-button-off\'}}"\n                        class="custom-radio-icon"></ion-icon>\n                        <label class="custom-radio-label-1">{{radioItem.key || \'\'}}</label>\n                    </div>\n                    <div *ngIf="radioItem.subdata" class="custom-radio-2"\n                         [ngClass]="field.value === radioItem.value ? \'\' : \'selectedItem\'">\n                            <div class="radio-field-wrap">\n                                <label class="custom-radio-label-2">{{radioItem.subdata.key1}}</label>\n                                <input class="custom-radio-input"\n                                       formControlName="{{radioItem.subdata.name1}}"\n                                       [(ngModel)]="radioItem.subdata.value1"\n                                       required="{{field.value===radioItem.value ? field.required : false}}"\n                                       pattern="{{field.regex}}" type="text"\n                                       placeholder="{{radioItem.subdata.placeholder1 | translate}}">\n                            </div>\n                            <div class="radio-field-wrap">\n                                <label class="custom-radio-label-2">{{radioItem.subdata.key2}}</label>\n                                <input class="custom-radio-input" [(ngModel)]="radioItem.subdata.value2"\n                                       formControlName="{{radioItem.subdata.name2}}"\n                                       required="{{field.value===radioItem.value ? field.required : false}}"\n                                       pattern="{{field.regex}}" type="text"\n                                       placeholder="{{radioItem.subdata.placeholder2 | translate}}">\n                            </div>\n                    </div>\n                </div>\n            </ion-list>\n\n            <!-- Custom Select -->\n            <div class="custom-select-container" *ngIf="field.type === \'customSelect\'" no-margin>\n                <div>{{ field.label | translate }}</div>\n                <ion-list class="custom-select-btn" no-margin>\n                    <ion-label stacked>{{ field.label | translate }}</ion-label>\n                    <ion-item class="custom-select">\n                        <ion-select [(ngModel)]="field.value"\n                                    (ngModelChange)="onChangeSelectedItems($event, fieldIndex)"\n                                    [hidden]="!field.visible"\n                                    formControlName="{{field.name}}">\n                            <ion-option value="{{subSelect.value}}" *ngFor="let subSelect of field.dataset">\n                                {{ subSelect.value }}\n                            </ion-option>\n                        </ion-select>\n                    </ion-item>\n                    <!--<button ion-button icon-right icon-only class="custom-select-btn-inner">-->\n                    <!--<ion-icon ios="md-add" md="md-add"></ion-icon>-->\n                    <!--</button>-->\n                </ion-list>\n\n                <div\n                    *ngFor="let item of selectedItems"\n                    class="custom-select-btn-attachment"\n                    ion-row>\n                    <ion-col col-10>\n                        <div class="selected-item">{{ item }}</div>\n                        <ion-item\n                            *ngIf="field.customSelectCheckable"\n                            [ngClass]="field.value ? \'\' : \'custom-checkbox-checked\'"\n                            class="custom-select-checkbox-addon">\n                            <ion-label>{{field.customSelectCheckableLabel | translate}}</ion-label>\n                            <ion-checkbox>\n                            </ion-checkbox>\n                        </ion-item>\n                    </ion-col>\n                    <ion-col class="custom-select-btn-attachment-wrapper" col-2>\n                        <button\n                            (click)="deleteSelectedItem(item)"\n                            ion-button\n                            icon-only\n                            class="custom-select-btn-attachment-inner"\n                            type="button">\n                            <ion-icon ios="md-trash" md="md-trash"></ion-icon>\n                        </button>\n                    </ion-col>\n                </div>\n            </div>\n\n            <!-- Custom Two Selects -->\n            <div class="custom-select-container custom-select2" *ngIf="field.type === \'customTwoSelects\'">\n                <div>{{ field.label | translate }}</div>\n                <!--ion-list class="custom-select-btn"-->\n                <!--div class="custom-layer"-->\n                <ion-grid fixed no-padding>\n                    <ion-row align-items-center>\n                        <ion-col col-sm-10>\n                                <ion-row>\n\n                                    <ion-item class="custom-select" no-lines>\n                                        <ion-select [(ngModel)]="field.value"\n                                                    [hidden]="!field.visible"\n                                                    formControlName="{{field.name}}"\n                                                    required="{{field.required}}" #customSelect1>\n                                            <ion-option value="{{subSelect.value}}"\n                                                        *ngFor="let subSelect of field.dataset"\n                                                        (ionSelect)="onSelecteCustomItems(subSelect)">\n                                                {{ subSelect.value }}\n                                            </ion-option>\n                                        </ion-select>\n                                    </ion-item>\n                                </ion-row>\n                            <ion-row>\n                                <ion-item class="custom-select" no-lines>\n                                    <ion-select [(ngModel)]="field.value2"\n                                                [hidden]="!field.visible"\n                                                formControlName="{{field.name}}"\n                                                required="{{field.required}}" #customSelect2>\n                                        <ion-option value="{{subSelect.value}}" *ngFor="let subSelect of field.dataset2"\n                                                    (ionSelect)="onSelecteCustomItems(subSelect)">\n                                            {{ subSelect.value }}\n                                        </ion-option>\n                                    </ion-select>\n                                </ion-item>\n                            </ion-row>\n                        </ion-col>\n                        <ion-col col-2>\n                            <button ion-button icon-right icon-only class="custom-select-btn-inner" type="button"\n                                    (click)="addCustomSelect(customSelect1, customSelect2)">\n                                <ion-icon ios="md-add" md="md-add"></ion-icon>\n                            </button>\n                        </ion-col>\n                    </ion-row>\n\n                </ion-grid>\n\n                <!--/div-->\n\n                <!--/ion-list-->\n\n                <div\n                    *ngFor="let item of selectedCustomItems"\n                    class="custom-select-btn-attachment"\n                    ion-row>\n                    <ion-col col-10>\n                        <div>{{ item }}</div>\n                        <ion-item\n                            *ngIf="field.customTwoSelectCheckable"\n                            [ngClass]="field.value ? \'\' : \'custom-checkbox-checked\'"\n                            class="custom-select-checkbox-addon">\n                            <ion-label>{{field.customTwoSelectCheckableLabel | translate}}</ion-label>\n                            <ion-checkbox>\n                            </ion-checkbox>\n                        </ion-item>\n                    </ion-col>\n                    <ion-col class="custom-select-btn-attachment-wrapper" col-2>\n                        <button\n                            ion-button\n                            icon-only\n                            small\n                            class="custom-select-btn-attachment-inner"\n                            (click)="deleteSelectedCustomItem(item)">\n                            <ion-icon ios="md-trash" md="md-trash"></ion-icon>\n                        </button>\n                    </ion-col>\n                </div>\n            </div>\n\n            <ion-list *ngIf="field.type === \'checkbox\'" class="custom-checkbox">\n                <ion-item [ngClass]="field.value ? \'\' : \'custom-checkbox-checked\'">\n                    <ion-label>{{field.label | translate}}</ion-label>\n                    <ion-checkbox [(ngModel)]="field.value" [ngModelOptions]="{standalone: true}"></ion-checkbox>\n                </ion-item>\n            </ion-list>\n\n            <!--Custom Select with Uploading files-->\n            <ion-grid *ngIf="field.type === \'customUploadSelect\'">\n                <ion-row align-items-center>\n                    <ion-col col-10>\n                        <input [(ngModel)]="field.value"\n                               [hidden]="!field.visible"\n                               formControlName="{{field.name}}"\n                               type="file" name="file" id="file" class="inputfile" (change)="fileEvent($event)"/>\n                        <label class="text-upload-field" for="file">{{documents.uploadedFileName || field.label}}</label>\n                    </ion-col>\n                    <ion-col col-2 text-right>\n                        <!--<input [(ngModel)]="field.value"-->\n                               <!--[hidden]="!field.visible"-->\n                               <!--formControlName="{{field.name}}"-->\n                               <!--type="file" name="file" id="file" class="inputfile" (change)="fileEvent($event)"/>-->\n                        <!--<label class="custom-upload-button" ion-button (click)="pushFile()">-->\n                            <!--<ion-icon name="md-add"></ion-icon>-->\n                        <!--</label>-->\n                        <button ion-button type="button" (click)="pushFile()" class="custom-upload-button">\n                            <ion-icon name="md-add"></ion-icon></button>\n                    </ion-col>\n                </ion-row>\n\n                <ion-row text-left align-items-center class="uploaded-items" *ngFor="let item of documents.uploadedItems; let i = index">\n                    <ion-col col-8>\n                        <div class="uploaded-item">{{ item.name }}</div>\n                    </ion-col>\n                    <ion-col col-2>\n                        <button ion-button clear icon-only type="button" class="download-uploaded-item-btn"\n                                (click)="downloadUploadedItem(item)">\n                            <ion-icon name="ios-download-outline"></ion-icon>\n                        </button>\n                    </ion-col>\n                    <ion-col col-2>\n                        <button ion-button icon-only class="delete-uploaded-item-btn" type="button"\n                                (click)="deleteUploadedItem(i)">\n                            <ion-icon name="md-trash"></ion-icon>\n                        </button>\n                    </ion-col>\n                </ion-row>\n            </ion-grid>\n\n            <!--Custom Select 2 with Uploading files-->\n            <ion-grid *ngIf="field.type === \'customUploadSelect2\'">\n                <ion-row text-left align-items-center class="uploaded-items" *ngFor="let item of documents.uploadedItems; let i = index">\n                    <ion-col col-8>\n                        <div class="uploaded-item">{{ item.name }}</div>\n                    </ion-col>\n                    <ion-col col-2>\n                        <button ion-button clear icon-only type="button" class="download-uploaded-item-btn"\n                                (click)="downloadUploadedItem(item)">\n                            <ion-icon name="ios-download-outline"></ion-icon>\n                        </button>\n                    </ion-col>\n                    <ion-col col-2>\n                        <button ion-button icon-only class="delete-uploaded-item-btn" type="button"\n                                (click)="deleteUploadedItem(i)">\n                            <ion-icon name="md-trash"></ion-icon>\n                        </button>\n                    </ion-col>\n                </ion-row>\n                <div class="custom-line"></div>\n                <label class="documents-title">{{getFieldName().title}}</label>\n                <label class="documents-type">{{getFieldName().type}}</label>\n                <ion-row align-items-center>\n                    <ion-col col-10>\n                        <input [(ngModel)]="field.value"\n                               [hidden]="!field.visible"\n                               formControlName="{{field.name}}"\n                               type="file" name="file2" id="file2" class="inputfile" (change)="fileEvent($event)"/>\n                        <label class="text-upload-field" for="file2">{{documents.uploadedFileName}}</label>\n                    </ion-col>\n                    <ion-col col-2 text-right>\n                        <button ion-button type="button" (click)="pushFile()" class="custom-upload-button">\n                            <ion-icon name="md-add"></ion-icon></button>\n                    </ion-col>\n                </ion-row>\n            </ion-grid>\n\n            <!-- Validation error message -->\n            <div class="voj-validation-error-msg" [hidden]="!(!dynamicalForm.controls[field.name].valid  && (dynamicalForm.controls[field.name].dirty || submitAttempt))">\n                <p>{{ field.validationMsg | translate }}</p>\n            </div>\n        </div>\n\n        <!-- Password identity error message -->\n        <div class="voj-validation-error-msg" *ngIf="!arePasswordsIdentical">\n            <p>{{ \'VALIDATION.PASSWORD_CONFIRMATION_MSG\' | translate }}</p>\n        </div>\n\n        <button *ngIf="data.submit" ion-button class="custom-btn titlecase-btn" [disabled]="formComponent.invalid || customSelectValidation(formComponent.value)">\n            {{ data.submit.label | translate }}\n        </button>\n    </form>\n</div>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-form/voj-form.html"*/
+            selector: 'voj-form',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-form\voj-form.html"*/'<!-- Generated template for the VojForm component -->\n\n<div class="calendar-container">\n\n    <h2 [innerHTML]="data.title" *ngIf="data.title && data.title.length > 0"></h2>\n\n    <form #formComponent="ngForm" [formGroup]="dynamicalForm" (ngSubmit)="onSubmit(formComponent, data.submit.action)" novalidate>\n\n\n\n        <div class="dynamical-form" id="{{ field.id }}" *ngFor="let field of data.fields; let fieldIndex = index">\n\n            <button ion-button class="custom-btn" *ngIf="field.type === \'button\'" [hidden]="!field.visible"\n\n                    (click)="field.action()" type="button">\n\n                {{ field.label | translate }}\n\n            </button>\n\n\n\n            <ion-list *ngIf="field.type === \'text\' || field.type === \'textarea\'\n\n							|| field.type === \'number\' || field.type === \'tel\'">\n\n                <ion-item class="custom-input" [hidden]="!field.visible">\n\n                    <ion-label stacked *ngIf="field.label && field.label.length > 0">{{field.label | translate}}\n\n                        <span class="asterisk" *ngIf="field.required">*</span></ion-label>\n\n                    <ion-input type="{{ field.type }}"\n\n                               [readonly]="field.readonly"\n\n                               required="{{field.required}}"\n\n                               placeholder="{{field.placeholder | translate}}"\n\n                               maxlength="{{field.max}}"\n\n                               [(ngModel)]="field.value"\n\n                               (ngModelChange)="field.value = $event; checkNgModel(field.action)"\n\n                               (keyup)="getItems($event, field.dataset)"\n\n                               formControlName="{{field.name}}"></ion-input>\n\n                </ion-item>\n\n                <div *ngIf="showList && field.dataset" class="input-autocomplete">\n\n                    <ion-list>\n\n                        <ion-item *ngFor="let item of itemsForAutocomplete" (click)="selectTip(item.value, field)">\n\n                            {{ item.value }}\n\n                        </ion-item>\n\n                    </ion-list>\n\n                </div>\n\n            </ion-list>\n\n\n\n            <ion-list *ngIf="field.type === \'week\' || field.type === \'url\' || field.type === \'time\'\n\n             || field.type === \'color\' || field.type === \'mail\' || field.type === \'month\'">\n\n                <ion-item class="custom-input">\n\n                    <ion-label stacked *ngIf="field.label && field.label.length > 0">{{ field.label | translate }}\n\n                        <span class="asterisk" *ngIf="field.required">*</span></ion-label>\n\n                    <ion-input type="text"\n\n                               autocomplete="on"\n\n                               [hidden]="!field.visible"\n\n                               [readonly]="field.readonly"\n\n                               placeholder="{{field.placeholder | translate}}"\n\n                               maxlength="{{field.max}}"\n\n                               [(ngModel)]="field.value"\n\n                               (ngModelChange)="field.value = $event; checkNgModel(field.action)"\n\n                               formControlName="{{field.name}}"></ion-input>\n\n                </ion-item>\n\n            </ion-list>\n\n\n\n            <ion-list *ngIf="field.type === \'date\'">\n\n                <ion-label class="date-label" *ngIf="field.label && field.label.length > 0">{{ field.label | translate }}\n\n                    <span class="asterisk" *ngIf="field.required">*</span></ion-label>\n\n                <ion-item class="custom-input" (click)="picker.open()">\n\n                    <md-form-field>\n\n                        <input type="text" mdInput [mdDatepicker]="picker"\n\n                               [hidden]="!field.visible"\n\n                               [readonly]="field.readonly"\n\n                               disabled="{{field.disabled}}"\n\n                               [(ngModel)]="field.value"\n\n                               (dateChange)="checkNgModel(field.action)"\n\n                               [max]="field.max"\n\n                               [min]="field.min"\n\n                               placeholder="{{field.placeholder | translate}}"\n\n                               formControlName="{{field.name}}">\n\n                        <md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>\n\n                        <md-datepicker touchUi="true" #picker></md-datepicker>\n\n                    </md-form-field>\n\n                </ion-item>\n\n            </ion-list>\n\n\n\n            <ion-list *ngIf="field.type === \'password\' || field.type === \'password-visible\' || field.type === \'search\'">\n\n                <ion-item class="custom-input custom-input-password">\n\n                    <ion-label stacked>{{ field.label | translate }}\n\n                        <span class="asterisk" *ngIf="field.required">*</span></ion-label>\n\n                    <ion-input type="{{ (field.type === \'password\') ? \'password\' : \'text\' }}"\n\n                               autocomplete="on"\n\n                               clearOnEdit="false"\n\n                               [hidden]="!field.visible"\n\n                               [readonly]="field.readonly"\n\n                               placeholder="{{field.placeholder | translate}}"\n\n                               maxlength="{{field.max}}"\n\n                               [(ngModel)]="field.value"\n\n                               (ngModelChange)="field.value = $event"\n\n                               formControlName="{{field.name}}" #inputPass></ion-input>\n\n                    <button ion-button icon-only type="button" item-right\n\n                            (click)="managePassword(inputPass, fieldIndex)">\n\n                        <ion-icon name="{{ field.type === \'password\' ? \'ios-eye\' : field.type === \'password-visible\' ?\n\n                                        \'ios-eye-off\' : \'ios-search\'}}">\n\n                        </ion-icon>\n\n                    </button>\n\n                </ion-item>\n\n            </ion-list>\n\n\n\n            <ion-list *ngIf="field.type === \'range\'">\n\n                <ion-item>\n\n                    <ion-range min="{{field.min}}" max="{{field.max}}" [(ngModel)]="field.value" color="secondary"\n\n                               [hidden]="!field.visible" formControlName="{{field.name}}">\n\n                        <ion-label range-left>{{field.min}}</ion-label>\n\n                        <ion-label range-right>{{field.max}}</ion-label>\n\n                    </ion-range>\n\n                </ion-item>\n\n            </ion-list>\n\n\n\n            <ion-list *ngIf="field.type === \'select\'">\n\n                <ion-item class="custom-select">\n\n                    <ion-label>{{ field.label | translate }}\n\n                        <span class="asterisk" *ngIf="field.required">*</span></ion-label>\n\n                    <ion-select [(ngModel)]="field.value"\n\n                                cancelText="{{ \'FORM.CANCEL_BTN\' | translate }}"\n\n                                [hidden]="!field.visible"\n\n                                [disabled]="field.readonly"\n\n                                required="{{field.required}}"\n\n                                (ngModelChange)="field.value = $event; checkNgModel(field.action)"\n\n                                formControlName="{{field.name}}">\n\n                        <ion-option value="{{subSelect.value}}" *ngFor="let subSelect of field.dataset">\n\n                            {{ subSelect.key }}\n\n                        </ion-option>\n\n                    </ion-select>\n\n                </ion-item>\n\n            </ion-list>\n\n\n\n            <!-- Search select -->\n\n            <ion-list *ngIf="field.type === \'search-select\'">\n\n                <ion-item class="custom-input select-search">\n\n                    <ion-label stacked>{{ field.label | translate }}</ion-label>\n\n                    <ion-input type="text"\n\n                               id="{{field.id}}"\n\n                               [readonly]="true"\n\n                               [(ngModel)]="field.value"\n\n                               (ngModelChange)="field.value = $event; checkNgModel(field.action)"\n\n                               (keyup)="getItems($event, field.dataset)"\n\n                               formControlName="{{field.name}}"\n\n                               (click)="openSearchSelect(field.dataset, fieldIndex, field.value)"></ion-input>\n\n                </ion-item>\n\n            </ion-list>\n\n\n\n            <!-- Search select list -->\n\n            <div *ngIf="field.type === \'search-select-list\'">\n\n                <ion-item class="search-select-list-wrapper custom-input select-search">\n\n                    <ion-label stacked>{{ field.label | translate }}</ion-label>\n\n                    <ion-input type="text"\n\n                        id="{{field.id}}"\n\n                        [readonly]="true"\n\n                        [(ngModel)]="field.value"\n\n                        (ngModelChange)="field.value = $event; checkNgModel(field.action)"\n\n                        (keyup)="getItems($event, field.dataset)"\n\n                        formControlName="{{field.name}}"\n\n                        (click)="openSearchSelect(field.dataset, fieldIndex, field.value)">\n\n                    </ion-input>\n\n                    <button\n\n                        (click)="addSelectListItem(field)"\n\n                        ion-button\n\n                        icon-only\n\n                        item-end\n\n                        class="select-btn-attachment-inner"\n\n                        type="button">\n\n                        <ion-icon ios="md-add" md="md-add"></ion-icon>\n\n                    </button>\n\n                </ion-item>\n\n                <div\n\n                    *ngFor="let item of field.selected; let itemIndex = index"\n\n                    class="custom-select-btn-attachment"\n\n                    ion-row>\n\n                    <ion-col col-10>\n\n                        <div class="selected-item">{{ item.value }}</div>\n\n                        <ion-item\n\n                            *ngIf="field.customSelectCheckable"\n\n                            [ngClass]="item.checked ? \'\' : \'custom-checkbox-checked\'"\n\n                            class="custom-select-checkbox-addon">\n\n                            <ion-label>\n\n                                {{field.customSelectCheckableLabel | translate}}\n\n                            </ion-label>\n\n                            <ion-checkbox></ion-checkbox>\n\n                        </ion-item>\n\n                    </ion-col>\n\n                    <ion-col class="custom-select-btn-attachment-wrapper" col-2 style="justify-content: flex-end">\n\n                        <button\n\n                            (click)="deleteSelectedListItem(field, itemIndex)"\n\n                            ion-button\n\n                            icon-only\n\n                            class="custom-select-btn-attachment-inner"\n\n                            type="button">\n\n                            <ion-icon ios="md-trash" md="md-trash"></ion-icon>\n\n                        </button>\n\n                    </ion-col>\n\n                </div>\n\n            </div>\n\n\n\n            <!-- Radio -->\n\n            <ion-list radio-group class="custom-radio" *ngIf="field.type === \'radio\'"\n\n                      [(ngModel)]="field.value" formControlName="{{field.name}}" (ngModelChange)="checkNgModel(field.action)">\n\n                <ion-list-header class="voj-radio-label" *ngIf="field.label && field.label.length > 0">\n\n                    {{ field.label | translate }}\n\n                </ion-list-header>\n\n                <ion-item class="voj-radio-button" *ngFor="let radioItem of field.dataset">\n\n                    <ion-label>{{ radioItem.key | translate }}</ion-label>\n\n                    <ion-radio value="{{radioItem.value}}"></ion-radio>\n\n                </ion-item>\n\n            </ion-list>\n\n\n\n            <!-- Radio with inputs -->\n\n            <ion-list radio-group class="custom-radio-with-inputs" *ngIf="field.type === \'radioWithInputs\'"\n\n                      formControlName="{{field.name}}"\n\n                      [(ngModel)]="field.value">\n\n                <div *ngFor="let radioItem of field.dataset3"\n\n                     (click)="field.value=radioItem.value" class="custom-radio-wrap">\n\n                    <div [ngClass]="field.value===radioItem.value ? \'\' : \'selectedItem\'" class="custom-radio-1">\n\n                        <ion-icon\n\n                                name="{{field.value===radioItem.value ? \'radio-button-on\' : \'radio-button-off\'}}"\n\n                        class="custom-radio-icon"></ion-icon>\n\n                        <label class="custom-radio-label-1">{{radioItem.key || \'\'}}</label>\n\n                    </div>\n\n                    <div *ngIf="radioItem.subdata" class="custom-radio-2"\n\n                         [ngClass]="field.value === radioItem.value ? \'\' : \'selectedItem\'">\n\n                            <div class="radio-field-wrap">\n\n                                <label class="custom-radio-label-2">{{radioItem.subdata.key1}}</label>\n\n                                <input class="custom-radio-input"\n\n                                       formControlName="{{radioItem.subdata.name1}}"\n\n                                       [(ngModel)]="radioItem.subdata.value1"\n\n                                       required="{{field.value===radioItem.value ? field.required : false}}"\n\n                                       pattern="{{field.regex}}" type="text"\n\n                                       placeholder="{{radioItem.subdata.placeholder1 | translate}}">\n\n                            </div>\n\n                            <div class="radio-field-wrap">\n\n                                <label class="custom-radio-label-2">{{radioItem.subdata.key2}}</label>\n\n                                <input class="custom-radio-input" [(ngModel)]="radioItem.subdata.value2"\n\n                                       formControlName="{{radioItem.subdata.name2}}"\n\n                                       required="{{field.value===radioItem.value ? field.required : false}}"\n\n                                       pattern="{{field.regex}}" type="text"\n\n                                       placeholder="{{radioItem.subdata.placeholder2 | translate}}">\n\n                            </div>\n\n                    </div>\n\n                </div>\n\n            </ion-list>\n\n\n\n            <!-- Custom Select -->\n\n            <div class="custom-select-container" *ngIf="field.type === \'customSelect\'" no-margin>\n\n                <div>{{ field.label | translate }}</div>\n\n                <ion-list class="custom-select-btn" no-margin>\n\n                    <ion-label stacked>{{ field.label | translate }}</ion-label>\n\n                    <ion-item class="custom-select">\n\n                        <ion-select [(ngModel)]="field.value"\n\n                                    (ngModelChange)="onChangeSelectedItems($event, fieldIndex)"\n\n                                    [hidden]="!field.visible"\n\n                                    formControlName="{{field.name}}">\n\n                            <ion-option value="{{subSelect.value}}" *ngFor="let subSelect of field.dataset">\n\n                                {{ subSelect.value }}\n\n                            </ion-option>\n\n                        </ion-select>\n\n                    </ion-item>\n\n                    <!--<button ion-button icon-right icon-only class="custom-select-btn-inner">-->\n\n                    <!--<ion-icon ios="md-add" md="md-add"></ion-icon>-->\n\n                    <!--</button>-->\n\n                </ion-list>\n\n\n\n                <div\n\n                    *ngFor="let item of selectedItems"\n\n                    class="custom-select-btn-attachment"\n\n                    ion-row>\n\n                    <ion-col col-10>\n\n                        <div class="selected-item">{{ item }}</div>\n\n                        <ion-item\n\n                            *ngIf="field.customSelectCheckable"\n\n                            [ngClass]="field.value ? \'\' : \'custom-checkbox-checked\'"\n\n                            class="custom-select-checkbox-addon">\n\n                            <ion-label>{{field.customSelectCheckableLabel | translate}}</ion-label>\n\n                            <ion-checkbox>\n\n                            </ion-checkbox>\n\n                        </ion-item>\n\n                    </ion-col>\n\n                    <ion-col class="custom-select-btn-attachment-wrapper" col-2>\n\n                        <button\n\n                            (click)="deleteSelectedItem(item)"\n\n                            ion-button\n\n                            icon-only\n\n                            class="custom-select-btn-attachment-inner"\n\n                            type="button">\n\n                            <ion-icon ios="md-trash" md="md-trash"></ion-icon>\n\n                        </button>\n\n                    </ion-col>\n\n                </div>\n\n            </div>\n\n\n\n            <!-- Custom Two Selects -->\n\n            <div class="custom-select-container custom-select2" *ngIf="field.type === \'customTwoSelects\'">\n\n                <div>{{ field.label | translate }}</div>\n\n                <!--ion-list class="custom-select-btn"-->\n\n                <!--div class="custom-layer"-->\n\n                <ion-grid fixed no-padding>\n\n                    <ion-row align-items-center>\n\n                        <ion-col col-sm-10>\n\n                                <ion-row>\n\n\n\n                                    <ion-item class="custom-select" no-lines>\n\n                                        <ion-select [(ngModel)]="field.value"\n\n                                                    [hidden]="!field.visible"\n\n                                                    formControlName="{{field.name}}"\n\n                                                    required="{{field.required}}" #customSelect1>\n\n                                            <ion-option value="{{subSelect.value}}"\n\n                                                        *ngFor="let subSelect of field.dataset"\n\n                                                        (ionSelect)="onSelecteCustomItems(subSelect)">\n\n                                                {{ subSelect.value }}\n\n                                            </ion-option>\n\n                                        </ion-select>\n\n                                    </ion-item>\n\n                                </ion-row>\n\n                            <ion-row>\n\n                                <ion-item class="custom-select" no-lines>\n\n                                    <ion-select [(ngModel)]="field.value2"\n\n                                                [hidden]="!field.visible"\n\n                                                formControlName="{{field.name}}"\n\n                                                required="{{field.required}}" #customSelect2>\n\n                                        <ion-option value="{{subSelect.value}}" *ngFor="let subSelect of field.dataset2"\n\n                                                    (ionSelect)="onSelecteCustomItems(subSelect)">\n\n                                            {{ subSelect.value }}\n\n                                        </ion-option>\n\n                                    </ion-select>\n\n                                </ion-item>\n\n                            </ion-row>\n\n                        </ion-col>\n\n                        <ion-col col-2>\n\n                            <button ion-button icon-right icon-only class="custom-select-btn-inner" type="button"\n\n                                    (click)="addCustomSelect(customSelect1, customSelect2)">\n\n                                <ion-icon ios="md-add" md="md-add"></ion-icon>\n\n                            </button>\n\n                        </ion-col>\n\n                    </ion-row>\n\n\n\n                </ion-grid>\n\n\n\n                <!--/div-->\n\n\n\n                <!--/ion-list-->\n\n\n\n                <div\n\n                    *ngFor="let item of selectedCustomItems"\n\n                    class="custom-select-btn-attachment"\n\n                    ion-row>\n\n                    <ion-col col-10>\n\n                        <div>{{ item }}</div>\n\n                        <ion-item\n\n                            *ngIf="field.customTwoSelectCheckable"\n\n                            [ngClass]="field.value ? \'\' : \'custom-checkbox-checked\'"\n\n                            class="custom-select-checkbox-addon">\n\n                            <ion-label>{{field.customTwoSelectCheckableLabel | translate}}</ion-label>\n\n                            <ion-checkbox>\n\n                            </ion-checkbox>\n\n                        </ion-item>\n\n                    </ion-col>\n\n                    <ion-col class="custom-select-btn-attachment-wrapper" col-2>\n\n                        <button\n\n                            ion-button\n\n                            icon-only\n\n                            small\n\n                            class="custom-select-btn-attachment-inner"\n\n                            (click)="deleteSelectedCustomItem(item)">\n\n                            <ion-icon ios="md-trash" md="md-trash"></ion-icon>\n\n                        </button>\n\n                    </ion-col>\n\n                </div>\n\n            </div>\n\n\n\n            <ion-list *ngIf="field.type === \'checkbox\'" class="custom-checkbox">\n\n                <ion-item [ngClass]="field.value ? \'\' : \'custom-checkbox-checked\'">\n\n                    <ion-label>{{field.label | translate}}</ion-label>\n\n                    <ion-checkbox [(ngModel)]="field.value" [ngModelOptions]="{standalone: true}"></ion-checkbox>\n\n                </ion-item>\n\n            </ion-list>\n\n\n\n            <!--Custom Select with Uploading files-->\n\n            <ion-grid *ngIf="field.type === \'customUploadSelect\'">\n\n                <ion-row align-items-center>\n\n                    <ion-col col-10>\n\n                        <input [(ngModel)]="field.value"\n\n                               [hidden]="!field.visible"\n\n                               formControlName="{{field.name}}"\n\n                               type="file" name="file" id="file" class="inputfile" (change)="fileEvent($event)"/>\n\n                        <label class="text-upload-field" for="file">{{documents.uploadedFileName || field.label}}</label>\n\n                    </ion-col>\n\n                    <ion-col col-2 text-right>\n\n                        <!--<input [(ngModel)]="field.value"-->\n\n                               <!--[hidden]="!field.visible"-->\n\n                               <!--formControlName="{{field.name}}"-->\n\n                               <!--type="file" name="file" id="file" class="inputfile" (change)="fileEvent($event)"/>-->\n\n                        <!--<label class="custom-upload-button" ion-button (click)="pushFile()">-->\n\n                            <!--<ion-icon name="md-add"></ion-icon>-->\n\n                        <!--</label>-->\n\n                        <button ion-button type="button" (click)="pushFile()" class="custom-upload-button">\n\n                            <ion-icon name="md-add"></ion-icon></button>\n\n                    </ion-col>\n\n                </ion-row>\n\n\n\n                <ion-row text-left align-items-center class="uploaded-items" *ngFor="let item of documents.uploadedItems; let i = index">\n\n                    <ion-col col-8>\n\n                        <div class="uploaded-item">{{ item.name }}</div>\n\n                    </ion-col>\n\n                    <ion-col col-2>\n\n                        <button ion-button clear icon-only type="button" class="download-uploaded-item-btn"\n\n                                (click)="downloadUploadedItem(item)">\n\n                            <ion-icon name="ios-download-outline"></ion-icon>\n\n                        </button>\n\n                    </ion-col>\n\n                    <ion-col col-2>\n\n                        <button ion-button icon-only class="delete-uploaded-item-btn" type="button"\n\n                                (click)="deleteUploadedItem(i)">\n\n                            <ion-icon name="md-trash"></ion-icon>\n\n                        </button>\n\n                    </ion-col>\n\n                </ion-row>\n\n            </ion-grid>\n\n\n\n            <!--Custom Select 2 with Uploading files-->\n\n            <ion-grid *ngIf="field.type === \'customUploadSelect2\'">\n\n                <ion-row text-left align-items-center class="uploaded-items" *ngFor="let item of documents.uploadedItems; let i = index">\n\n                    <ion-col col-8>\n\n                        <div class="uploaded-item">{{ item.name }}</div>\n\n                    </ion-col>\n\n                    <ion-col col-2>\n\n                        <button ion-button clear icon-only type="button" class="download-uploaded-item-btn"\n\n                                (click)="downloadUploadedItem(item)">\n\n                            <ion-icon name="ios-download-outline"></ion-icon>\n\n                        </button>\n\n                    </ion-col>\n\n                    <ion-col col-2>\n\n                        <button ion-button icon-only class="delete-uploaded-item-btn" type="button"\n\n                                (click)="deleteUploadedItem(i)">\n\n                            <ion-icon name="md-trash"></ion-icon>\n\n                        </button>\n\n                    </ion-col>\n\n                </ion-row>\n\n                <div class="custom-line"></div>\n\n                <label class="documents-title">{{getFieldName().title}}</label>\n\n                <label class="documents-type">{{getFieldName().type}}</label>\n\n                <ion-row align-items-center>\n\n                    <ion-col col-10>\n\n                        <input [(ngModel)]="field.value"\n\n                               [hidden]="!field.visible"\n\n                               formControlName="{{field.name}}"\n\n                               type="file" name="file2" id="file2" class="inputfile" (change)="fileEvent($event)"/>\n\n                        <label class="text-upload-field" for="file2">{{documents.uploadedFileName}}</label>\n\n                    </ion-col>\n\n                    <ion-col col-2 text-right>\n\n                        <button ion-button type="button" (click)="pushFile()" class="custom-upload-button">\n\n                            <ion-icon name="md-add"></ion-icon></button>\n\n                    </ion-col>\n\n                </ion-row>\n\n            </ion-grid>\n\n\n\n            <!-- Validation error message -->\n\n            <div class="voj-validation-error-msg" [hidden]="!(!dynamicalForm.controls[field.name].valid  && (dynamicalForm.controls[field.name].dirty || submitAttempt))">\n\n                <p>{{ field.validationMsg | translate }}</p>\n\n            </div>\n\n        </div>\n\n\n\n        <!-- Password identity error message -->\n\n        <div class="voj-validation-error-msg" *ngIf="!arePasswordsIdentical">\n\n            <p>{{ \'VALIDATION.PASSWORD_CONFIRMATION_MSG\' | translate }}</p>\n\n        </div>\n\n\n\n        <button *ngIf="data.submit" ion-button class="custom-btn titlecase-btn" [disabled]="formComponent.invalid || customSelectValidation(formComponent.value)">\n\n            {{ data.submit.label | translate }}\n\n        </button>\n\n    </form>\n\n</div>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-form\voj-form.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* ModalController */]])
     ], VojForm);
@@ -14911,362 +14814,6 @@ var VojForm = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VojSegmentModule", function() { return VojSegmentModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_segment__ = __webpack_require__(857);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var VojSegmentModule = (function () {
-    function VojSegmentModule() {
-    }
-    VojSegmentModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__voj_segment__["a" /* VojSegment */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__voj_segment__["a" /* VojSegment */]),
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_2__voj_segment__["a" /* VojSegment */]
-            ]
-        })
-    ], VojSegmentModule);
-    return VojSegmentModule;
-}());
-
-//# sourceMappingURL=voj-segment.module.js.map
-
-/***/ }),
-
-/***/ 894:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojSearchHeader; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_search_header_model__ = __webpack_require__(895);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_search_query_model__ = __webpack_require__(896);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_voj_configuration__ = __webpack_require__(7);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-var VojSearchHeader = (function () {
-    function VojSearchHeader(element, renderer, platform, confService) {
-        this.element = element;
-        this.renderer = renderer;
-        this.confService = confService;
-        this.criteriaMode = false;
-        this.searchType = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-        this.headerSegment = 'liste';
-        this.isWeb = false;
-        this.platform = platform;
-        this.isWeb = !this.platform.is('cordova');
-        this.config = this.confService.configuration;
-    }
-    VojSearchHeader.prototype.ngOnInit = function () {
-        this.searchType.emit(this.criteriaMode);
-        this.searchModeLabel = this.criteriaMode ? "- Moins de critères" : "+ Plus de critères";
-    };
-    /**
-     * trigger the search process, this proxy method will pass down the search arguments to
-     * the calling controller in order to perform the search
-     * @returns {any}
-     */
-    VojSearchHeader.prototype.triggerSearch = function () {
-        var query = new __WEBPACK_IMPORTED_MODULE_3__models_search_query_model__["a" /* SearchQuery */]();
-        query.freeText = this.fullText;
-        query.job = this.job;
-        query.location = this.location;
-        query.timeslot = this.timeslot;
-        query.name = this.name;
-        query.queryType = this.criteriaMode ? 'criteria' : 'full_text';
-        return this.searchHeaderData.action(query);
-    };
-    /**
-     * Change search mode from full text search to criteria search
-     */
-    VojSearchHeader.prototype.toggleSearchMode = function () {
-        if (this.criteriaMode && this.job) {
-            this.fullText = this.job;
-        }
-        if (!this.criteriaMode && this.fullText) {
-            this.job = this.fullText;
-        }
-        this.criteriaMode = !this.criteriaMode;
-        this.searchModeLabel = this.criteriaMode ? "- Moins de critères" : "+ Plus de critères";
-        this.searchType.emit(this.criteriaMode);
-    };
-    VojSearchHeader.prototype.searchEvent = function (event) {
-        if (event.keyCode === 13) {
-            this.triggerSearch();
-        }
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('data'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2__models_search_header_model__["a" /* SearchHeaderData */])
-    ], VojSearchHeader.prototype, "searchHeaderData", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('criteria-mode'),
-        __metadata("design:type", Boolean)
-    ], VojSearchHeader.prototype, "criteriaMode", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
-        __metadata("design:type", Object)
-    ], VojSearchHeader.prototype, "searchType", void 0);
-    VojSearchHeader = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'voj-search-header',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-search-header/voj-search-header.html"*/'<ion-header no-border [ngStyle]="{\'backgroundColor\' : config.isLargeScreen ? \'\' : \'#4c545d\'}">\n	<div class="search-header-container" >\n		<ion-item *ngIf="!criteriaMode">\n			<ion-input type="text" placeholder="{{searchHeaderData.placeholders.main}}"\n					   [(ngModel)]="fullText" (keyup)="searchEvent($event)"></ion-input>\n		</ion-item>\n\n		<ion-item *ngIf="criteriaMode">\n			<ion-input type="text" placeholder="{{searchHeaderData.placeholders.what}}"\n					   [(ngModel)]="job" (keyup)="searchEvent($event)"></ion-input>\n		</ion-item>\n\n		<ion-item *ngIf="criteriaMode">\n			<ion-input type="text" placeholder="{{searchHeaderData.placeholders.where}}"\n					   [(ngModel)]="location" (keyup)="searchEvent($event)"></ion-input>\n		</ion-item>\n\n		<ion-item *ngIf="criteriaMode">\n			<ion-input type="text" onfocus="(this.type = \'date\')"\n					   placeholder="{{searchHeaderData.placeholders.when}}"\n					   [(ngModel)]="timeslot" (keyup)="searchEvent($event)"></ion-input>\n		</ion-item>\n\n		<ion-item  *ngIf="criteriaMode">\n			<ion-input type="text" placeholder="{{searchHeaderData.placeholders.who}}"\n					   [(ngModel)]="name" (keyup)="searchEvent($event)"></ion-input>\n		</ion-item>\n\n		<ion-item item class="toggler-text"  >\n			<span (click)="toggleSearchMode()">\n				{{searchModeLabel}}\n			</span>\n\n		</ion-item>\n\n		<button ion-button icon-only class="search-header-btn" (click)="triggerSearch()">\n			<ion-icon ios="ios-search" md="md-search"></ion-icon>\n		</button>\n\n	</div>\n\n</ion-header>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-search-header/voj-search-header.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */], __WEBPACK_IMPORTED_MODULE_4__config_voj_configuration__["a" /* Configuration */]])
-    ], VojSearchHeader);
-    return VojSearchHeader;
-}());
-
-//# sourceMappingURL=voj-search-header.js.map
-
-/***/ }),
-
-/***/ 895:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchHeaderData; });
-/**
- * Search header data is an input model specifying placeholders and the function performing actual search
- */
-var SearchHeaderData = (function () {
-    function SearchHeaderData() {
-    }
-    return SearchHeaderData;
-}());
-
-//# sourceMappingURL=search-header.model.js.map
-
-/***/ }),
-
-/***/ 896:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchQuery; });
-/**
- * Encapsulating search arguments
- */
-var SearchQuery = (function () {
-    function SearchQuery() {
-        this.queryType = '';
-        this.freeText = '';
-        this.job = '';
-        this.location = '';
-        this.timeslot = '';
-        this.name = '';
-    }
-    return SearchQuery;
-}());
-
-//# sourceMappingURL=search-query.model.js.map
-
-/***/ }),
-
-/***/ 897:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojHeaderWeb; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(21);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var VojHeaderWeb = (function () {
-    function VojHeaderWeb(event, platform, storage) {
-        this.event = event;
-        this.platform = platform;
-        this.storage = storage;
-        this.showHeader = false;
-        this.showUserInfo = false;
-        platform.is('core') ? this.showHeader = true : this.showHeader = false;
-        this.getProfileInfo();
-        this.updateUserInfo();
-    }
-    VojHeaderWeb.prototype.getProfileInfo = function () {
-        var _this = this;
-        this.storage.get("currentUser").then(function (data) {
-            if (data !== null) {
-                var parseData = JSON.parse(data);
-                _this.showUserInfo = true;
-                _this.profileInfo = {
-                    firstName: parseData.identity.firstName,
-                    lastName: parseData.identity.lastName,
-                    thumbnail: 'http://www.tii.org/public/plugins/organisations/organsiations/images/default_avatar_male.jpg'
-                };
-            }
-        });
-    };
-    // update information when user update
-    VojHeaderWeb.prototype.updateUserInfo = function () {
-        var _this = this;
-        this.event.subscribe('user:update', function (userUpdate) {
-            _this.profileInfo = {
-                firstName: userUpdate.identity.firstName,
-                lastName: userUpdate.identity.lastName,
-                thumbnail: 'http://www.tii.org/public/plugins/organisations/organsiations/images/default_avatar_male.jpg'
-            };
-        });
-    };
-    VojHeaderWeb.prototype.ngOnInit = function () {
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('data'),
-        __metadata("design:type", Object)
-    ], VojHeaderWeb.prototype, "data", void 0);
-    VojHeaderWeb = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'voj-header-web',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-header-web/voj-header-web.html"*/'<ion-header class="generic voj-web-header" *ngIf="showHeader">\n	<ion-row no-padding>\n		<ion-col col-5>\n			<img *ngIf="data.logo" [src]="data.logo">\n		</ion-col>\n		<ion-col col-7>\n			<!--ion-fab class="fab-notification" >\n				<button ion-fab *ngFor="let item of data.menu"\n						(click)="item.notificationFunction()" [hidden]="item.badge < 0" >\n					{{item.badge}}\n				</button>\n			</ion-fab-->\n			<ion-badge color="danger" *ngFor="let item of data.menu" class="fab-notification" [hidden]="item.badge <= 0">{{item.badge}}</ion-badge>\n			<button *ngFor="let item of data.menu" class="top-buttons notifications-button" (click)="item.action()" ion-button icon-right outline item-end>\n				{{ item.label }}\n			</button>\n\n\n		</ion-col>\n	</ion-row>\n	<ion-row no-padding>\n		<ion-col col-5>\n            <div class="user-information" *ngIf="showUserInfo">\n                <img src="{{ profileInfo.thumbnail }}" alt="">\n                <p class="user-name">{{ profileInfo.lastName.toUpperCase() }} {{ profileInfo.firstName }}</p>\n            </div>\n        </ion-col>\n		<ion-col col-7 vertical-align-top>\n			<voj-segment [data]="data.segments" isStats="true"></voj-segment>\n		</ion-col>\n	</ion-row>\n</ion-header>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-header-web/voj-header-web.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Events */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */],
-            __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]])
-    ], VojHeaderWeb);
-    return VojHeaderWeb;
-}());
-
-//# sourceMappingURL=voj-header-web.js.map
-
-/***/ }),
-
-/***/ 898:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojHeaderSegment; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var VojHeaderSegment = (function () {
-    function VojHeaderSegment() {
-        this.activeTabChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-        this.enterpriseSearchEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-    }
-    VojHeaderSegment.prototype.setTab = function (tabNam) {
-        this.callEnterpriseSearchPage();
-        this.activeTab = tabNam;
-        this.activeTabChange.emit(tabNam);
-    };
-    VojHeaderSegment.prototype.callEnterpriseSearchPage = function () {
-        this.enterpriseSearchEvent.next();
-    };
-    VojHeaderSegment.prototype.ngOnInit = function () { };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('data'),
-        __metadata("design:type", Object)
-    ], VojHeaderSegment.prototype, "data", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Number)
-    ], VojHeaderSegment.prototype, "activeTab", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
-        __metadata("design:type", Object)
-    ], VojHeaderSegment.prototype, "activeTabChange", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
-        __metadata("design:type", Object)
-    ], VojHeaderSegment.prototype, "enterpriseSearchEvent", void 0);
-    VojHeaderSegment = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'voj-header-segment',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-header-segment/voj-header-segment.html"*/'<section class="segmentSection">\n    <div class="form-wrap">\n        <ul class="segmentList">\n            <li *ngFor="let segment of data.segmentsList let i = index" class="segmentListItem"\n                [ngClass]="{active:activeTab === i }"\n                (click)="setTab(i)">{{segment.title}}\n            </li>\n        </ul>\n    </div>\n</section>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/components/voj-header-segment/voj-header-segment.html"*/,
-        }),
-        __metadata("design:paramtypes", [])
-    ], VojHeaderSegment);
-    return VojHeaderSegment;
-}());
-
-//# sourceMappingURL=voj-header-segment.js.map
-
-/***/ }),
-
-/***/ 899:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EmployerStrategy; });
-var EmployerStrategy = (function () {
-    function EmployerStrategy() {
-    }
-    EmployerStrategy.prototype.loadHeaderData = function () {
-        return {
-            title: 'USER_INFORMATION.TITLE_EMPLOYER',
-            actions: [
-                {
-                    id: 'help',
-                    label: '',
-                    icon: 'help',
-                    action: function () {
-                        console.log('Click help button.');
-                    }
-                }
-            ],
-            style: 'any',
-            isCanceled: true
-        };
-    };
-    return EmployerStrategy;
-}());
-
-//# sourceMappingURL=employer.js.map
-
-/***/ }),
-
-/***/ 90:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchServiceProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_storage__ = __webpack_require__(21);
@@ -15274,10 +14821,10 @@ var EmployerStrategy = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__http_request_http_request__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dtos_search_result_dto__ = __webpack_require__(862);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dtos_search_result_dto__ = __webpack_require__(860);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__voj_events_voj_events__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_button_type_model__ = __webpack_require__(863);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__dtos_dto_strategy_search_search_dto_factory__ = __webpack_require__(553);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_button_type_model__ = __webpack_require__(861);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__dtos_dto_strategy_search_search_dto_factory__ = __webpack_require__(552);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -15555,7 +15102,322 @@ var SearchServiceProvider = (function () {
 
 /***/ }),
 
-/***/ 900:
+/***/ 892:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojSearchHeader; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_search_header_model__ = __webpack_require__(893);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_search_query_model__ = __webpack_require__(894);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_voj_configuration__ = __webpack_require__(7);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var VojSearchHeader = (function () {
+    function VojSearchHeader(element, renderer, platform, confService) {
+        this.element = element;
+        this.renderer = renderer;
+        this.confService = confService;
+        this.criteriaMode = false;
+        this.searchType = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.headerSegment = 'liste';
+        this.isWeb = false;
+        this.platform = platform;
+        this.isWeb = !this.platform.is('cordova');
+        this.config = this.confService.configuration;
+    }
+    VojSearchHeader.prototype.ngOnInit = function () {
+        this.searchType.emit(this.criteriaMode);
+        this.searchModeLabel = this.criteriaMode ? "- Moins de critères" : "+ Plus de critères";
+    };
+    /**
+     * trigger the search process, this proxy method will pass down the search arguments to
+     * the calling controller in order to perform the search
+     * @returns {any}
+     */
+    VojSearchHeader.prototype.triggerSearch = function () {
+        var query = new __WEBPACK_IMPORTED_MODULE_3__models_search_query_model__["a" /* SearchQuery */]();
+        query.freeText = this.fullText;
+        query.job = this.job;
+        query.location = this.location;
+        query.timeslot = this.timeslot;
+        query.name = this.name;
+        query.queryType = this.criteriaMode ? 'criteria' : 'full_text';
+        return this.searchHeaderData.action(query);
+    };
+    /**
+     * Change search mode from full text search to criteria search
+     */
+    VojSearchHeader.prototype.toggleSearchMode = function () {
+        if (this.criteriaMode && this.job) {
+            this.fullText = this.job;
+        }
+        if (!this.criteriaMode && this.fullText) {
+            this.job = this.fullText;
+        }
+        this.criteriaMode = !this.criteriaMode;
+        this.searchModeLabel = this.criteriaMode ? "- Moins de critères" : "+ Plus de critères";
+        this.searchType.emit(this.criteriaMode);
+    };
+    VojSearchHeader.prototype.searchEvent = function (event) {
+        if (event.keyCode === 13) {
+            this.triggerSearch();
+        }
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('data'),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2__models_search_header_model__["a" /* SearchHeaderData */])
+    ], VojSearchHeader.prototype, "searchHeaderData", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('criteria-mode'),
+        __metadata("design:type", Boolean)
+    ], VojSearchHeader.prototype, "criteriaMode", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
+        __metadata("design:type", Object)
+    ], VojSearchHeader.prototype, "searchType", void 0);
+    VojSearchHeader = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'voj-search-header',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-search-header\voj-search-header.html"*/'<ion-header no-border [ngStyle]="{\'backgroundColor\' : config.isLargeScreen ? \'\' : \'#4c545d\'}">\n\n	<div class="search-header-container" >\n\n		<ion-item *ngIf="!criteriaMode">\n\n			<ion-input type="text" placeholder="{{searchHeaderData.placeholders.main}}"\n\n					   [(ngModel)]="fullText" (keyup)="searchEvent($event)"></ion-input>\n\n		</ion-item>\n\n\n\n		<ion-item *ngIf="criteriaMode">\n\n			<ion-input type="text" placeholder="{{searchHeaderData.placeholders.what}}"\n\n					   [(ngModel)]="job" (keyup)="searchEvent($event)"></ion-input>\n\n		</ion-item>\n\n\n\n		<ion-item *ngIf="criteriaMode">\n\n			<ion-input type="text" placeholder="{{searchHeaderData.placeholders.where}}"\n\n					   [(ngModel)]="location" (keyup)="searchEvent($event)"></ion-input>\n\n		</ion-item>\n\n\n\n		<ion-item *ngIf="criteriaMode">\n\n			<ion-input type="text" onfocus="(this.type = \'date\')"\n\n					   placeholder="{{searchHeaderData.placeholders.when}}"\n\n					   [(ngModel)]="timeslot" (keyup)="searchEvent($event)"></ion-input>\n\n		</ion-item>\n\n\n\n		<ion-item  *ngIf="criteriaMode">\n\n			<ion-input type="text" placeholder="{{searchHeaderData.placeholders.who}}"\n\n					   [(ngModel)]="name" (keyup)="searchEvent($event)"></ion-input>\n\n		</ion-item>\n\n\n\n		<ion-item item class="toggler-text"  >\n\n			<span (click)="toggleSearchMode()">\n\n				{{searchModeLabel}}\n\n			</span>\n\n\n\n		</ion-item>\n\n\n\n		<button ion-button icon-only class="search-header-btn" (click)="triggerSearch()">\n\n			<ion-icon ios="ios-search" md="md-search"></ion-icon>\n\n		</button>\n\n\n\n	</div>\n\n\n\n</ion-header>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-search-header\voj-search-header.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */], __WEBPACK_IMPORTED_MODULE_4__config_voj_configuration__["a" /* Configuration */]])
+    ], VojSearchHeader);
+    return VojSearchHeader;
+}());
+
+//# sourceMappingURL=voj-search-header.js.map
+
+/***/ }),
+
+/***/ 893:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchHeaderData; });
+/**
+ * Search header data is an input model specifying placeholders and the function performing actual search
+ */
+var SearchHeaderData = (function () {
+    function SearchHeaderData() {
+    }
+    return SearchHeaderData;
+}());
+
+//# sourceMappingURL=search-header.model.js.map
+
+/***/ }),
+
+/***/ 894:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchQuery; });
+/**
+ * Encapsulating search arguments
+ */
+var SearchQuery = (function () {
+    function SearchQuery() {
+        this.queryType = '';
+        this.freeText = '';
+        this.job = '';
+        this.location = '';
+        this.timeslot = '';
+        this.name = '';
+    }
+    return SearchQuery;
+}());
+
+//# sourceMappingURL=search-query.model.js.map
+
+/***/ }),
+
+/***/ 895:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojHeaderWeb; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(21);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var VojHeaderWeb = (function () {
+    function VojHeaderWeb(event, platform, storage) {
+        this.event = event;
+        this.platform = platform;
+        this.storage = storage;
+        this.showHeader = false;
+        this.showUserInfo = false;
+        platform.is('core') ? this.showHeader = true : this.showHeader = false;
+        this.getProfileInfo();
+        this.updateUserInfo();
+    }
+    VojHeaderWeb.prototype.getProfileInfo = function () {
+        var _this = this;
+        this.storage.get("currentUser").then(function (data) {
+            if (data !== null) {
+                var parseData = JSON.parse(data);
+                _this.showUserInfo = true;
+                _this.profileInfo = {
+                    firstName: parseData.identity.firstName,
+                    lastName: parseData.identity.lastName,
+                    thumbnail: 'http://www.tii.org/public/plugins/organisations/organsiations/images/default_avatar_male.jpg'
+                };
+            }
+        });
+    };
+    // update information when user update
+    VojHeaderWeb.prototype.updateUserInfo = function () {
+        var _this = this;
+        this.event.subscribe('user:update', function (userUpdate) {
+            _this.profileInfo = {
+                firstName: userUpdate.identity.firstName,
+                lastName: userUpdate.identity.lastName,
+                thumbnail: 'http://www.tii.org/public/plugins/organisations/organsiations/images/default_avatar_male.jpg'
+            };
+        });
+    };
+    VojHeaderWeb.prototype.ngOnInit = function () {
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('data'),
+        __metadata("design:type", Object)
+    ], VojHeaderWeb.prototype, "data", void 0);
+    VojHeaderWeb = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'voj-header-web',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-header-web\voj-header-web.html"*/'<ion-header class="generic voj-web-header" *ngIf="showHeader">\n\n	<ion-row no-padding>\n\n		<ion-col col-5>\n\n			<img *ngIf="data.logo" [src]="data.logo">\n\n		</ion-col>\n\n		<ion-col col-7>\n\n			<!--ion-fab class="fab-notification" >\n\n				<button ion-fab *ngFor="let item of data.menu"\n\n						(click)="item.notificationFunction()" [hidden]="item.badge < 0" >\n\n					{{item.badge}}\n\n				</button>\n\n			</ion-fab-->\n\n			<ion-badge color="danger" *ngFor="let item of data.menu" class="fab-notification" [hidden]="item.badge <= 0">{{item.badge}}</ion-badge>\n\n			<button *ngFor="let item of data.menu" class="top-buttons notifications-button" (click)="item.action()" ion-button icon-right outline item-end>\n\n				{{ item.label }}\n\n			</button>\n\n\n\n\n\n		</ion-col>\n\n	</ion-row>\n\n	<ion-row no-padding>\n\n		<ion-col col-5>\n\n            <div class="user-information" *ngIf="showUserInfo">\n\n                <img src="{{ profileInfo.thumbnail }}" alt="">\n\n                <p class="user-name">{{ profileInfo.lastName.toUpperCase() }} {{ profileInfo.firstName }}</p>\n\n            </div>\n\n        </ion-col>\n\n		<ion-col col-7 vertical-align-top>\n\n			<voj-segment [data]="data.segments" isStats="true"></voj-segment>\n\n		</ion-col>\n\n	</ion-row>\n\n</ion-header>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-header-web\voj-header-web.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Events */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]])
+    ], VojHeaderWeb);
+    return VojHeaderWeb;
+}());
+
+//# sourceMappingURL=voj-header-web.js.map
+
+/***/ }),
+
+/***/ 896:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojHeaderSegment; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var VojHeaderSegment = (function () {
+    function VojHeaderSegment() {
+        this.activeTabChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.enterpriseSearchEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+    }
+    VojHeaderSegment.prototype.setTab = function (tabNam) {
+        this.callEnterpriseSearchPage();
+        this.activeTab = tabNam;
+        this.activeTabChange.emit(tabNam);
+    };
+    VojHeaderSegment.prototype.callEnterpriseSearchPage = function () {
+        this.enterpriseSearchEvent.next();
+    };
+    VojHeaderSegment.prototype.ngOnInit = function () { };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('data'),
+        __metadata("design:type", Object)
+    ], VojHeaderSegment.prototype, "data", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Number)
+    ], VojHeaderSegment.prototype, "activeTab", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
+        __metadata("design:type", Object)
+    ], VojHeaderSegment.prototype, "activeTabChange", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
+        __metadata("design:type", Object)
+    ], VojHeaderSegment.prototype, "enterpriseSearchEvent", void 0);
+    VojHeaderSegment = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'voj-header-segment',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\components\voj-header-segment\voj-header-segment.html"*/'<section class="segmentSection">\n\n    <div class="form-wrap">\n\n        <ul class="segmentList">\n\n            <li *ngFor="let segment of data.segmentsList let i = index" class="segmentListItem"\n\n                [ngClass]="{active:activeTab === i }"\n\n                (click)="setTab(i)">{{segment.title}}\n\n            </li>\n\n        </ul>\n\n    </div>\n\n</section>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\components\voj-header-segment\voj-header-segment.html"*/,
+        }),
+        __metadata("design:paramtypes", [])
+    ], VojHeaderSegment);
+    return VojHeaderSegment;
+}());
+
+//# sourceMappingURL=voj-header-segment.js.map
+
+/***/ }),
+
+/***/ 897:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EmployerStrategy; });
+var EmployerStrategy = (function () {
+    function EmployerStrategy() {
+    }
+    EmployerStrategy.prototype.loadHeaderData = function () {
+        return {
+            title: 'USER_INFORMATION.TITLE_EMPLOYER',
+            actions: [
+                {
+                    id: 'help',
+                    label: '',
+                    icon: 'help',
+                    action: function () {
+                        console.log('Click help button.');
+                    }
+                }
+            ],
+            style: 'any',
+            isCanceled: true
+        };
+    };
+    return EmployerStrategy;
+}());
+
+//# sourceMappingURL=employer.js.map
+
+/***/ }),
+
+/***/ 898:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15587,94 +15449,7 @@ var JobyerStrategy = (function () {
 
 /***/ }),
 
-/***/ 901:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OpenApplication; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the OpenApplicationPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
-var OpenApplication = (function () {
-    function OpenApplication(navCtrl, navParams, platform) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.platform = platform;
-        this.isMobile = false;
-        platform.is('core') ? this.isMobile = false : this.isMobile = true;
-        this.headerData = {
-            title: 'Recevoir des candidatures',
-            style: 'any',
-            actions: [{
-                    id: 'xdcfgvyhubijnkwdwlbhvg',
-                    label: 'help',
-                    icon: 'help',
-                    action: function () {
-                        console.log('button works');
-                    }
-                }],
-            isCanceled: true
-        };
-        this.formData = {
-            fields: [{
-                    type: 'radio',
-                    value: 'Oui',
-                    label: 'Acceptez',
-                    dataset: [
-                        { id: 4, key: 'Oui', value: 'Oui' },
-                        { id: 5, key: 'Non', value: 'Non' },
-                    ],
-                    readonly: false,
-                    visible: true,
-                    id: '111',
-                    name: 'Acceptez'
-                }],
-            submit: {
-                id: 'xdcfgvyhubijnkfwlbhvg',
-                label: 'Valider',
-                icon: '',
-                action: function () {
-                    console.log('button works');
-                }
-            }
-        };
-    }
-    OpenApplication.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad OpenApplicationPage');
-    };
-    OpenApplication = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-open-application',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/open-application/open-application.html"*/'<ion-content>\n    <voj-page-header [data]=\'headerData\'></voj-page-header>\n    <div [ngClass]="isMobile ? \'container\' : \'\'">\n        <div [ngClass]="isMobile ? \'child-container\' : \'\'">\n            <voj-form [data]="formData"></voj-form>\n        </div>\n    </div>\n</ion-content>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/open-application/open-application.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */]])
-    ], OpenApplication);
-    return OpenApplication;
-}());
-
-//# sourceMappingURL=open-application.js.map
-
-/***/ }),
-
-/***/ 902:
+/***/ 899:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15717,7 +15492,7 @@ var CalendarPage = (function () {
     CalendarPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-calendar',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/calendar/calendar.html"*/'<ion-content\n	[class.full-height]="isDesktop"\n	ion-fixed>\n	<div\n		[class.pad]="isDesktop"\n		class="calendar-wrapper">\n		<voj-calendar [data]="calendarData" [type]="calendarMode"></voj-calendar>\n	</div>\n</ion-content>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/calendar/calendar.html"*/,
+            selector: 'page-calendar',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\calendar\calendar.html"*/'<ion-content\n\n	[class.full-height]="isDesktop"\n\n	ion-fixed>\n\n	<div\n\n		[class.pad]="isDesktop"\n\n		class="calendar-wrapper">\n\n		<voj-calendar [data]="calendarData" [type]="calendarMode"></voj-calendar>\n\n	</div>\n\n</ion-content>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\calendar\calendar.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */]])
     ], CalendarPage);
@@ -15850,108 +15625,7 @@ var SLOTS_MOCK = [
 
 /***/ }),
 
-/***/ 903:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OptionsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var OptionsPage = (function () {
-    function OptionsPage(platform) {
-        this.platform = platform;
-        platform.is('core') ? this.isMobile = false : this.isMobile = true;
-        this.headerData = {
-            title: 'Options',
-            style: 'any',
-            isCanceled: true,
-            actions: [{
-                    id: 'xdcfjhkbjvhbnkm',
-                    label: 'help',
-                    icon: 'help',
-                    action: function () {
-                        console.log('button works');
-                    }
-                }]
-        };
-        this.formData = {
-            fields: [{
-                    type: 'text',
-                    label: null,
-                    value: 'Some text 1',
-                    readonly: false,
-                    visible: true,
-                    id: 'tbrf',
-                    name: 'Some text 1'
-                },
-                {
-                    type: 'text',
-                    value: 'Some text 2',
-                    label: null,
-                    readonly: false,
-                    visible: true,
-                    id: '',
-                    name: 'Some text 2'
-                },
-                {
-                    type: 'text',
-                    value: 'Some text 3',
-                    label: null,
-                    readonly: false,
-                    visible: true,
-                    id: '',
-                    name: 'Some text 3'
-                },
-                {
-                    type: 'text',
-                    value: 'Some text 4',
-                    label: null,
-                    readonly: false,
-                    visible: true,
-                    id: '',
-                    name: 'Some text 4'
-                },
-                {
-                    type: 'text',
-                    value: 'Some text 5',
-                    label: null,
-                    readonly: false,
-                    visible: true,
-                    id: '',
-                    name: 'Some text 5'
-                }
-            ]
-        };
-    }
-    OptionsPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad OptionsPage');
-    };
-    OptionsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-options',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/options/options.html"*/'<ion-content>\n    <voj-page-header [data]=\'headerData\'></voj-page-header>\n    <div [ngClass]="isMobile ? \'options-container\' : \'\'">\n        <div [ngClass]="isMobile ? \'options-child-container\' : \'\'">\n            <voj-form [data]=\'formData\'></voj-form>\n        </div>\n    </div>\n</ion-content>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/options/options.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */]])
-    ], OptionsPage);
-    return OptionsPage;
-}());
-
-//# sourceMappingURL=options.js.map
-
-/***/ }),
-
-/***/ 91:
+/***/ 90:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16091,21 +15765,207 @@ var AccountService = (function () {
 
 /***/ }),
 
-/***/ 92:
+/***/ 900:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OpenApplication; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the OpenApplicationPage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var OpenApplication = (function () {
+    function OpenApplication(navCtrl, navParams, platform) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.platform = platform;
+        this.isMobile = false;
+        platform.is('core') ? this.isMobile = false : this.isMobile = true;
+        this.headerData = {
+            title: 'Recevoir des candidatures',
+            style: 'any',
+            actions: [{
+                    id: 'xdcfgvyhubijnkwdwlbhvg',
+                    label: 'help',
+                    icon: 'help',
+                    action: function () {
+                        console.log('button works');
+                    }
+                }],
+            isCanceled: true
+        };
+        this.formData = {
+            fields: [{
+                    type: 'radio',
+                    value: 'Oui',
+                    label: 'Acceptez',
+                    dataset: [
+                        { id: 4, key: 'Oui', value: 'Oui' },
+                        { id: 5, key: 'Non', value: 'Non' },
+                    ],
+                    readonly: false,
+                    visible: true,
+                    id: '111',
+                    name: 'Acceptez'
+                }],
+            submit: {
+                id: 'xdcfgvyhubijnkfwlbhvg',
+                label: 'Valider',
+                icon: '',
+                action: function () {
+                    console.log('button works');
+                }
+            }
+        };
+    }
+    OpenApplication.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad OpenApplicationPage');
+    };
+    OpenApplication = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-open-application',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\account-module\open-application\open-application.html"*/'<ion-content>\n\n    <voj-page-header [data]=\'headerData\'></voj-page-header>\n\n    <div class="voj-content">\n\n        <div class="voj-form-container">\n\n            <voj-form [data]="formData"></voj-form>\n\n        </div>\n\n    </div>\n\n</ion-content>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\account-module\open-application\open-application.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */]])
+    ], OpenApplication);
+    return OpenApplication;
+}());
+
+//# sourceMappingURL=open-application.js.map
+
+/***/ }),
+
+/***/ 901:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OptionsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var OptionsPage = (function () {
+    function OptionsPage(platform) {
+        this.platform = platform;
+        platform.is('core') ? this.isMobile = false : this.isMobile = true;
+        this.headerData = {
+            title: 'Options',
+            style: 'any',
+            isCanceled: true,
+            actions: [{
+                    id: 'xdcfjhkbjvhbnkm',
+                    label: 'help',
+                    icon: 'help',
+                    action: function () {
+                        console.log('button works');
+                    }
+                }]
+        };
+        this.formData = {
+            fields: [{
+                    type: 'text',
+                    label: null,
+                    value: 'Some text 1',
+                    readonly: false,
+                    visible: true,
+                    id: 'tbrf',
+                    name: 'Some text 1'
+                },
+                {
+                    type: 'text',
+                    value: 'Some text 2',
+                    label: null,
+                    readonly: false,
+                    visible: true,
+                    id: '',
+                    name: 'Some text 2'
+                },
+                {
+                    type: 'text',
+                    value: 'Some text 3',
+                    label: null,
+                    readonly: false,
+                    visible: true,
+                    id: '',
+                    name: 'Some text 3'
+                },
+                {
+                    type: 'text',
+                    value: 'Some text 4',
+                    label: null,
+                    readonly: false,
+                    visible: true,
+                    id: '',
+                    name: 'Some text 4'
+                },
+                {
+                    type: 'text',
+                    value: 'Some text 5',
+                    label: null,
+                    readonly: false,
+                    visible: true,
+                    id: '',
+                    name: 'Some text 5'
+                }
+            ]
+        };
+    }
+    OptionsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad OptionsPage');
+    };
+    OptionsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-options',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\options\options.html"*/'<ion-content>\n\n    <voj-page-header [data]=\'headerData\'></voj-page-header>\n\n    <div class="voj-content">\n\n        <div class="voj-form-container">\n\n            <voj-form [data]=\'formData\'></voj-form>\n\n        </div>\n\n    </div>\n\n</ion-content>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\options\options.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */]])
+    ], OptionsPage);
+    return OptionsPage;
+}());
+
+//# sourceMappingURL=options.js.map
+
+/***/ }),
+
+/***/ 91:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IdentityPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_account_service_account_service__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_account_service_account_service__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_modal_service__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__main_address_main_address__ = __webpack_require__(125);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_voj_notification_voj_notification_service__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_navigation_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_utils__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__main_address_main_address__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_navigation_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_utils__ = __webpack_require__(47);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -16124,25 +15984,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-
 var IdentityPage = (function () {
-    function IdentityPage(configurationService, accountService, events, viewCtrl, storage, notification, navigationService, navParams, modalService, alertCtrl) {
+    function IdentityPage(configurationService, accountService, events, viewCtrl, storage, navigationService, navParams, alertCtrl) {
         var _this = this;
         this.configurationService = configurationService;
         this.accountService = accountService;
         this.events = events;
         this.viewCtrl = viewCtrl;
         this.storage = storage;
-        this.notification = notification;
         this.navigationService = navigationService;
         this.navParams = navParams;
-        this.modalService = modalService;
         this.alertCtrl = alertCtrl;
-        this.isMobile = false;
         this.config = this.configurationService.configuration;
         this.isInscription = this.navParams.data.isInscription;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
         // Set page header
         this.dataPageHeader = {
             title: 'Ma civilité',
@@ -16256,7 +16110,7 @@ var IdentityPage = (function () {
             }
             _this.currentUser = JSON.parse(data);
             // Set form data
-            _this.formData.fields.filter(function (f) { return f.name === "civility"; })[0].value = (__WEBPACK_IMPORTED_MODULE_9__utils_utils__["a" /* ObjectUtils */].isEmpty(_this.currentUser.identity.civility) ? "Mme" : _this.currentUser.identity.civility);
+            _this.formData.fields.filter(function (f) { return f.name === "civility"; })[0].value = (__WEBPACK_IMPORTED_MODULE_7__utils_utils__["a" /* ObjectUtils */].isEmpty(_this.currentUser.identity.civility) ? "Mme" : _this.currentUser.identity.civility);
             _this.formData.fields.filter(function (f) { return f.name === "lastName"; })[0].value = _this.currentUser.identity.lastName;
             _this.formData.fields.filter(function (f) { return f.name === "middleName"; })[0].value = _this.currentUser.identity.middleName;
             _this.formData.fields.filter(function (f) { return f.name === "firstName"; })[0].value = _this.currentUser.identity.firstName;
@@ -16265,7 +16119,7 @@ var IdentityPage = (function () {
     IdentityPage.prototype.saveIdentity = function () {
         var _this = this;
         //if all fields are empty, ignore this step and go to the next page
-        var ignoreThisStep = !__WEBPACK_IMPORTED_MODULE_9__utils_utils__["a" /* ObjectUtils */].isFormNotEmpty(this.formData.fields);
+        var ignoreThisStep = !__WEBPACK_IMPORTED_MODULE_7__utils_utils__["a" /* ObjectUtils */].isFormNotEmpty(this.formData.fields);
         if (ignoreThisStep && this.isInscription) {
             this.goToMainAdressPage();
             return;
@@ -16292,14 +16146,13 @@ var IdentityPage = (function () {
                     _this.goToMainAdressPage();
                 }
                 else {
-                    var notif = {
-                        icon: "star",
+                    var alert_1 = _this.alertCtrl.create({
                         title: "Sauvegarde réussie",
-                        message: "Vos informations ont bien été sauvegardées",
-                        buttons: [{ id: "0", icon: "star", label: "OK", action: _this.closeNotif }],
-                        backdropDismiss: true
-                    };
-                    _this.notification.present(notif);
+                        subTitle: 'Vos informations ont bien été sauvegardées',
+                        cssClass: 'identity-message',
+                        buttons: ['Ok']
+                    });
+                    alert_1.present();
                 }
             }
             else {
@@ -16313,11 +16166,8 @@ var IdentityPage = (function () {
      */
     IdentityPage.prototype.goToMainAdressPage = function () {
         this.navigationService.dismiss(this.viewCtrl);
-        var vojPage = { page: __WEBPACK_IMPORTED_MODULE_6__main_address_main_address__["a" /* MainAddressPage */], isWebModal: true, params: { isInscription: this.isInscription } };
+        var vojPage = { page: __WEBPACK_IMPORTED_MODULE_5__main_address_main_address__["a" /* MainAddressPage */], isWebModal: true, params: { isInscription: this.isInscription } };
         this.navigationService.navigate("main", vojPage);
-    };
-    IdentityPage.prototype.closeNotif = function () {
-        // this.viewCtrl.dismiss();
     };
     IdentityPage.prototype.ionViewDidEnter = function () {
         var _this = this;
@@ -16334,17 +16184,15 @@ var IdentityPage = (function () {
     };
     IdentityPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'identity-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/identity/identity.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n<!--<div [ngClass]="!config.isLargeScreen ? \'sign-up-container\' : \'\'">-->\n  <!--<div [ngClass]="!config.isLargeScreen ? \'sign-up-child-container\' : \'\'">-->\n<div [ngClass]="isMobile ? \'identity-parent-container\' : \'\'" class="voj-content">\n  <div [ngClass]="isMobile ? \'identity-child-container\' : \'\'" class="voj-form-container">\n        <voj-form [data]=\'formData\'></voj-form>\n      </div>\n    </div>\n  <!--</div>-->\n<!--</div>-->\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/identity/identity.html"*/,
+            selector: 'identity-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\account-module\identity\identity.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n\n\n<div class="voj-content">\n\n  <div class="voj-form-container">\n\n        <voj-form [data]=\'formData\'></voj-form>\n\n      </div>\n\n </div>\n\n\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\account-module\identity\identity.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__["a" /* Configuration */],
             __WEBPACK_IMPORTED_MODULE_2__providers_account_service_account_service__["a" /* AccountService */],
             __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["d" /* Events */],
             __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["u" /* ViewController */],
             __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */],
-            __WEBPACK_IMPORTED_MODULE_7__components_voj_notification_voj_notification_service__["a" /* VojNotificationService */],
-            __WEBPACK_IMPORTED_MODULE_8__services_navigation_service__["a" /* NavigationService */],
+            __WEBPACK_IMPORTED_MODULE_6__services_navigation_service__["a" /* NavigationService */],
             __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["n" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_5__services_modal_service__["a" /* ModalService */],
             __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["b" /* AlertController */]])
     ], IdentityPage);
     return IdentityPage;
@@ -16354,35 +16202,35 @@ var IdentityPage = (function () {
 
 /***/ }),
 
-/***/ 921:
+/***/ 919:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(633);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(634);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(591);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_test_components_about_about__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(631);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(632);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(588);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_test_components_about_about__ = __webpack_require__(129);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_search_module_search_search__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_core__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_home_home__ = __webpack_require__(235);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_home_home__ = __webpack_require__(234);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_navigation_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__config_environment__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__config_environment__ = __webpack_require__(164);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_voj_events_voj_events__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_landing_page_landing_page__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_modal_service__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_landing_page_landing_page__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_modal_service__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_account_module_login_login__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_account_module_account_account__ = __webpack_require__(236);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_account_module_user_information_user_information__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_account_module_identity_identity__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_search_service_search_service__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__startegy_jobyer__ = __webpack_require__(922);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__startegy_employer__ = __webpack_require__(923);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_account_module_jobs_list_jobs_list__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_account_module_account_account__ = __webpack_require__(235);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_account_module_user_information_user_information__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_account_module_identity_identity__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_search_service_search_service__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__startegy_jobyer__ = __webpack_require__(920);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__startegy_employer__ = __webpack_require__(921);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_account_module_jobs_list_jobs_list__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_information_resume_information_resume__ = __webpack_require__(74);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -16891,7 +16739,7 @@ var MyApp = (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Nav */])
     ], MyApp.prototype, "nav3", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/app/app.html"*/'<ion-split-pane [when]="config.isLargeScreen">\n\n    <!-- main navigation -->\n    <!-- <voj-header [data]="dataHeader"></voj-header> -->\n    <voj-header-web [data]="dataHeader" *ngIf="config.isLargeScreen"></voj-header-web>\n\n    <ion-nav [root]="rootPageList" #contentList name="list" [hidden]="!showList" swipeBackEnabled="false"\n             class="voj-style"></ion-nav>\n    <ion-nav [root]="rootPageDetails" #contentDetails name="details" [hidden]="!showDetails" swipeBackEnabled="false"\n             class="voj-style"></ion-nav>\n    <ion-nav [root]="rootPageMain" main #contentMain name="main" [hidden]="!showMain" swipeBackEnabled="false"\n             class="voj-style"></ion-nav>\n\n    <!-- Bottom Tabs shown in small screens -->\n    <ion-footer *ngIf="!config.isLargeScreen" class="voj-tabs">\n        <ion-toolbar>\n            <ion-segment [(ngModel)]="selectedTab" (ionChange)="tabChanged($event)">\n                <!--ion-fab left height class="fab-notification" >\n                    <button ion-fab (click)="notificationFunction()" >\n                        {{badge}}\n                    </button>\n                </ion-fab-->\n                <ion-segment-button value="searchTab" class="segment-button-tab">\n                    <ion-badge color="danger" class="fab-notification" [hidden]= "badge<=0">{{badge}}</ion-badge>\n                    <div class="segment-tab">\n                        <ion-icon name="search" class="segment-tab-icon"></ion-icon>\n                    </div>\n                    <div class="segment-tab">Recherche</div>\n                </ion-segment-button>\n\n                <ion-segment-button value="advertTab" class="segment-button-tab">\n                    <div class="segment-tab">\n                        <ion-icon name="megaphone" class="segment-tab-icon"></ion-icon>\n                    </div>\n                    <div class="segment-tab">{{annoncesLabel}}</div>\n                </ion-segment-button>\n\n                <ion-segment-button value="missionTab" class="segment-button-tab">\n                    <div class="segment-tab">\n                        <ion-icon name="folder" class="segment-tab-icon"></ion-icon>\n                    </div>\n                    <div class="segment-tab">Missions</div>\n                </ion-segment-button>\n\n                <ion-segment-button value="accountTab" class="segment-button-tab" (click)="goToAccount()">\n                    <div class="segment-tab">\n                        <ion-icon name="contact" class="segment-tab-icon"></ion-icon>\n                    </div>\n                    <div class="segment-tab">{{ compteTab }}</div>\n                </ion-segment-button>\n\n            </ion-segment>\n        </ion-toolbar>\n    </ion-footer>\n\n    <!--<voj-footer *ngIf="!config.isLargeScreen">\n    </voj-footer>-->\n</ion-split-pane>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\app\app.html"*/'<ion-split-pane [when]="config.isLargeScreen">\n\n\n\n    <!-- main navigation -->\n\n    <!-- <voj-header [data]="dataHeader"></voj-header> -->\n\n    <voj-header-web [data]="dataHeader" *ngIf="config.isLargeScreen"></voj-header-web>\n\n\n\n    <ion-nav [root]="rootPageList" #contentList name="list" [hidden]="!showList" swipeBackEnabled="false"\n\n             class="voj-style"></ion-nav>\n\n    <ion-nav [root]="rootPageDetails" #contentDetails name="details" [hidden]="!showDetails" swipeBackEnabled="false"\n\n             class="voj-style"></ion-nav>\n\n    <ion-nav [root]="rootPageMain" main #contentMain name="main" [hidden]="!showMain" swipeBackEnabled="false"\n\n             class="voj-style"></ion-nav>\n\n\n\n    <!-- Bottom Tabs shown in small screens -->\n\n    <ion-footer *ngIf="!config.isLargeScreen" class="voj-tabs">\n\n        <ion-toolbar>\n\n            <ion-segment [(ngModel)]="selectedTab" (ionChange)="tabChanged($event)">\n\n                <!--ion-fab left height class="fab-notification" >\n\n                    <button ion-fab (click)="notificationFunction()" >\n\n                        {{badge}}\n\n                    </button>\n\n                </ion-fab-->\n\n                <ion-segment-button value="searchTab" class="segment-button-tab">\n\n                    <ion-badge color="danger" class="fab-notification" [hidden]= "badge<=0">{{badge}}</ion-badge>\n\n                    <div class="segment-tab">\n\n                        <ion-icon name="search" class="segment-tab-icon"></ion-icon>\n\n                    </div>\n\n                    <div class="segment-tab">Recherche</div>\n\n                </ion-segment-button>\n\n\n\n                <ion-segment-button value="advertTab" class="segment-button-tab">\n\n                    <div class="segment-tab">\n\n                        <ion-icon name="megaphone" class="segment-tab-icon"></ion-icon>\n\n                    </div>\n\n                    <div class="segment-tab">{{annoncesLabel}}</div>\n\n                </ion-segment-button>\n\n\n\n                <ion-segment-button value="missionTab" class="segment-button-tab">\n\n                    <div class="segment-tab">\n\n                        <ion-icon name="folder" class="segment-tab-icon"></ion-icon>\n\n                    </div>\n\n                    <div class="segment-tab">Missions</div>\n\n                </ion-segment-button>\n\n\n\n                <ion-segment-button value="accountTab" class="segment-button-tab" (click)="goToAccount()">\n\n                    <div class="segment-tab">\n\n                        <ion-icon name="contact" class="segment-tab-icon"></ion-icon>\n\n                    </div>\n\n                    <div class="segment-tab">{{ compteTab }}</div>\n\n                </ion-segment-button>\n\n\n\n            </ion-segment>\n\n        </ion-toolbar>\n\n    </ion-footer>\n\n\n\n    <!--<voj-footer *ngIf="!config.isLargeScreen">\n\n    </voj-footer>-->\n\n</ion-split-pane>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */],
@@ -16912,567 +16760,7 @@ var MyApp = (function () {
 
 /***/ }),
 
-/***/ 922:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobyerStrategy; });
-var JobyerStrategy = (function () {
-    function JobyerStrategy() {
-    }
-    JobyerStrategy.prototype.loadHeaderData = function (app, notificationFunction, searchFunction, annonceFunction, missionFunction, accountFunction) {
-        return {
-            menu: [
-                {
-                    icon: 'search',
-                    label: 'Recherche',
-                    badge: 0,
-                    action: function () {
-                        if (app.badge > 0)
-                            notificationFunction(app);
-                        else
-                            searchFunction(app);
-                    },
-                    notificationFunction: function () {
-                        notificationFunction(app);
-                    }
-                },
-                {
-                    icon: 'search',
-                    label: 'Mon CV',
-                    badge: -1,
-                    action: function () {
-                        annonceFunction(app);
-                    }
-                },
-                {
-                    icon: 'search',
-                    label: 'Missions',
-                    badge: -1,
-                    action: function () {
-                        missionFunction(app);
-                    }
-                },
-                {
-                    self: this,
-                    icon: 'search',
-                    label: 'Compte',
-                    badge: -1,
-                    action: function () {
-                        accountFunction(app);
-                    }
-                }
-            ],
-            logo: 'assets/img/vitonjob.png',
-            searchbar: {
-                placeholder: 'string'
-            },
-            segments: [
-                {
-                    title: {
-                        icon: 'string',
-                        label: '0'
-                    },
-                    subtitle: {
-                        icon: 'string',
-                        label: 'Contrats en attente'
-                    },
-                    action: function () {
-                        console.log('works 1');
-                    },
-                    style: 'style2'
-                },
-                {
-                    title: {
-                        icon: 'string',
-                        label: '0'
-                    },
-                    subtitle: {
-                        icon: 'string',
-                        label: 'Pointages à valider'
-                    },
-                    action: function () {
-                        console.log('works 2');
-                    },
-                    style: 'style2'
-                },
-                {
-                    title: {
-                        icon: 'string',
-                        label: '0'
-                    },
-                    subtitle: {
-                        icon: 'string',
-                        label: 'Missions à clôturer'
-                    },
-                    action: function () {
-                        console.log('works 3');
-                    },
-                    style: 'style2'
-                }
-            ]
-        };
-    };
-    return JobyerStrategy;
-}());
-
-//# sourceMappingURL=jobyer.js.map
-
-/***/ }),
-
-/***/ 923:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EmployerStrategy; });
-var EmployerStrategy = (function () {
-    function EmployerStrategy() {
-    }
-    EmployerStrategy.prototype.loadHeaderData = function (app, notificationFunction, searchFunction, annonceFunction, missionFunction, accountFunction) {
-        return {
-            menu: [
-                {
-                    icon: 'search',
-                    label: 'Recherche',
-                    badge: 0,
-                    action: function () { searchFunction(app); },
-                    notificationFunction: notificationFunction
-                },
-                {
-                    icon: 'search',
-                    label: 'Annonces',
-                    badge: -1,
-                    action: function () { annonceFunction(app); }
-                },
-                {
-                    icon: 'search',
-                    label: 'Missions',
-                    badge: -1,
-                    action: function () { missionFunction(app); }
-                },
-                {
-                    self: this,
-                    icon: 'search',
-                    label: 'Compte',
-                    badge: -1,
-                    action: function () { accountFunction(app); }
-                }
-            ],
-            logo: 'assets/img/vitonjob.png',
-            searchbar: {
-                placeholder: 'string'
-            },
-            segments: [
-                {
-                    title: {
-                        icon: 'string',
-                        label: '0'
-                    },
-                    subtitle: {
-                        icon: 'string',
-                        label: 'Contrats en attente'
-                    },
-                    action: function () {
-                        console.log('works 1');
-                    },
-                    style: 'style2'
-                },
-                {
-                    title: {
-                        icon: 'string',
-                        label: '0'
-                    },
-                    subtitle: {
-                        icon: 'string',
-                        label: 'Pointages à valider'
-                    },
-                    action: function () {
-                        console.log('works 2');
-                    },
-                    style: 'style2'
-                },
-                {
-                    title: {
-                        icon: 'string',
-                        label: '0'
-                    },
-                    subtitle: {
-                        icon: 'string',
-                        label: 'Missions à clôturer'
-                    },
-                    action: function () {
-                        console.log('works 3');
-                    },
-                    style: 'style2'
-                }
-            ]
-        };
-    };
-    return EmployerStrategy;
-}());
-
-//# sourceMappingURL=employer.js.map
-
-/***/ }),
-
-/***/ 924:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PagesModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tabs_tabs_module__ = __webpack_require__(590);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home_module__ = __webpack_require__(589);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__test_components_contact_contacts_module__ = __webpack_require__(925);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__test_components_about_about_module__ = __webpack_require__(585);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_module_search_search_module__ = __webpack_require__(577);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__cv_offer_module_jobyer_availability_choice_jobyer_availability_choice_module__ = __webpack_require__(581);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__account_module_user_information_user_information_module__ = __webpack_require__(582);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__details_details_module__ = __webpack_require__(926);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__account_module_open_application_open_application_module__ = __webpack_require__(586);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__account_module_sign_up_sign_up_module__ = __webpack_require__(927);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_voj_components_module__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__account_module_enterprise_details_enterprise_details_module__ = __webpack_require__(587);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__account_module_options_options_module__ = __webpack_require__(584);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__account_module_account_account_module__ = __webpack_require__(928);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__account_module_identity_identity_module__ = __webpack_require__(929);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__account_module_main_address_main_address_module__ = __webpack_require__(930);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__account_module_login_login_module__ = __webpack_require__(931);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__account_module_bank_settings_bank_settings_module__ = __webpack_require__(932);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__account_module_personal_details_identity_personal_details_identity_module__ = __webpack_require__(578);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__cv_offer_module_availabilities_add_days_availabilities_add_days_module__ = __webpack_require__(933);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__cv_offer_module_availabilities_availabilities_module__ = __webpack_require__(934);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__landing_page_landing_page_module__ = __webpack_require__(308);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__cv_offer_module_languages_languages_module__ = __webpack_require__(935);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__account_module_enterprise_search_enterprise_search_module__ = __webpack_require__(936);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__account_module_reset_password_reset_password_module__ = __webpack_require__(937);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__account_module_personal_details_personal_details_module__ = __webpack_require__(579);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__account_module_company_company_module__ = __webpack_require__(580);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__account_module_my_cv_my_cv_module__ = __webpack_require__(938);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__cv_offer_module_qualities_qualities_module__ = __webpack_require__(939);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__information_resume_information_resume_module__ = __webpack_require__(940);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__options_options_module__ = __webpack_require__(593);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__find_job_find_job_module__ = __webpack_require__(941);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__account_module_jobs_list_jobs_list_module__ = __webpack_require__(943);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__availabilities_add_slot_availabilities_add_slot_page_module__ = __webpack_require__(944);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__calendar_calendar_module__ = __webpack_require__(592);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__documents_documents_module__ = __webpack_require__(945);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__registration_message_registration_message_module__ = __webpack_require__(947);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__cv_offer_module_keywords_keywords_module__ = __webpack_require__(309);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__remuneration_remuneration_module__ = __webpack_require__(576);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var PagesModule = (function () {
-    function PagesModule() {
-    }
-    PagesModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [],
-            imports: [],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_1__tabs_tabs_module__["TabsModule"],
-                __WEBPACK_IMPORTED_MODULE_2__home_home_module__["HomeModule"],
-                __WEBPACK_IMPORTED_MODULE_3__test_components_contact_contacts_module__["a" /* ContactModule */],
-                __WEBPACK_IMPORTED_MODULE_4__test_components_about_about_module__["AboutModule"],
-                __WEBPACK_IMPORTED_MODULE_5__search_module_search_search_module__["SearchPageModule"],
-                __WEBPACK_IMPORTED_MODULE_8__details_details_module__["a" /* DetailsPageModule */],
-                __WEBPACK_IMPORTED_MODULE_9__account_module_open_application_open_application_module__["OpenApplicationModule"],
-                __WEBPACK_IMPORTED_MODULE_8__details_details_module__["a" /* DetailsPageModule */],
-                __WEBPACK_IMPORTED_MODULE_16__account_module_main_address_main_address_module__["a" /* MainAddressModule */],
-                __WEBPACK_IMPORTED_MODULE_12__account_module_enterprise_details_enterprise_details_module__["EnterpriseDetailsModule"],
-                __WEBPACK_IMPORTED_MODULE_7__account_module_user_information_user_information_module__["UserInformationModule"],
-                __WEBPACK_IMPORTED_MODULE_6__cv_offer_module_jobyer_availability_choice_jobyer_availability_choice_module__["JobyerAvailabilityChoiceModule"],
-                __WEBPACK_IMPORTED_MODULE_13__account_module_options_options_module__["OptionsModule"],
-                __WEBPACK_IMPORTED_MODULE_15__account_module_identity_identity_module__["a" /* IdentityModule */],
-                __WEBPACK_IMPORTED_MODULE_14__account_module_account_account_module__["a" /* AccountPageModule */],
-                __WEBPACK_IMPORTED_MODULE_19__account_module_personal_details_identity_personal_details_identity_module__["PersonalDetailsIdentityPageModule"],
-                __WEBPACK_IMPORTED_MODULE_17__account_module_login_login_module__["a" /* LoginModule */],
-                __WEBPACK_IMPORTED_MODULE_18__account_module_bank_settings_bank_settings_module__["a" /* BankSettingsPageModule */],
-                __WEBPACK_IMPORTED_MODULE_10__account_module_sign_up_sign_up_module__["a" /* SignUpPageModule */],
-                __WEBPACK_IMPORTED_MODULE_11__components_voj_components_module__["a" /* VojComponentsModule */],
-                __WEBPACK_IMPORTED_MODULE_20__cv_offer_module_availabilities_add_days_availabilities_add_days_module__["a" /* AvailabilitiesAddDaysPageModule */],
-                __WEBPACK_IMPORTED_MODULE_21__cv_offer_module_availabilities_availabilities_module__["a" /* AvailabilitiesPageModule */],
-                __WEBPACK_IMPORTED_MODULE_22__landing_page_landing_page_module__["LandingPageModule"],
-                __WEBPACK_IMPORTED_MODULE_29__cv_offer_module_qualities_qualities_module__["a" /* QualitiesPageModule */],
-                __WEBPACK_IMPORTED_MODULE_23__cv_offer_module_languages_languages_module__["a" /* LanguagesPageModule */],
-                __WEBPACK_IMPORTED_MODULE_24__account_module_enterprise_search_enterprise_search_module__["a" /* EnterpriseSearchPageModule */],
-                __WEBPACK_IMPORTED_MODULE_25__account_module_reset_password_reset_password_module__["a" /* ResetPasswordModule */],
-                __WEBPACK_IMPORTED_MODULE_27__account_module_company_company_module__["CompanyModule"],
-                __WEBPACK_IMPORTED_MODULE_26__account_module_personal_details_personal_details_module__["PersonalDetailsPageModule"],
-                __WEBPACK_IMPORTED_MODULE_28__account_module_my_cv_my_cv_module__["a" /* MyCvPageModule */],
-                __WEBPACK_IMPORTED_MODULE_31__options_options_module__["OptionsPageModule"],
-                __WEBPACK_IMPORTED_MODULE_33__account_module_jobs_list_jobs_list_module__["a" /* JobsListPageModule */],
-                __WEBPACK_IMPORTED_MODULE_32__find_job_find_job_module__["a" /* FindJobPageModule */],
-                __WEBPACK_IMPORTED_MODULE_30__information_resume_information_resume_module__["a" /* InformationResumePageModule */],
-                __WEBPACK_IMPORTED_MODULE_34__availabilities_add_slot_availabilities_add_slot_page_module__["a" /* AvailabilitiesAddSlotPageModule */],
-                __WEBPACK_IMPORTED_MODULE_35__calendar_calendar_module__["CalendarPageModule"],
-                __WEBPACK_IMPORTED_MODULE_36__documents_documents_module__["a" /* DocumentsPageModule */],
-                __WEBPACK_IMPORTED_MODULE_37__registration_message_registration_message_module__["a" /* RegistrationMessagePageModule */],
-                __WEBPACK_IMPORTED_MODULE_38__cv_offer_module_keywords_keywords_module__["KeywordsPageModule"],
-                __WEBPACK_IMPORTED_MODULE_39__remuneration_remuneration_module__["RemunerationPageModule"]
-            ]
-        })
-    ], PagesModule);
-    return PagesModule;
-}());
-
-//# sourceMappingURL=pages.module.js.map
-
-/***/ }),
-
-/***/ 925:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact__ = __webpack_require__(234);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var ContactModule = (function () {
-    function ContactModule() {
-    }
-    ContactModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__contact__["a" /* ContactPage */]
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__contact__["a" /* ContactPage */]), __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__["a" /* VojComponentsModule */]
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_2__contact__["a" /* ContactPage */]
-            ]
-        })
-    ], ContactModule);
-    return ContactModule;
-}());
-
-//# sourceMappingURL=contacts.module.js.map
-
-/***/ }),
-
-/***/ 926:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DetailsPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__details__ = __webpack_require__(214);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_components_module__ = __webpack_require__(8);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-
-var DetailsPageModule = (function () {
-    function DetailsPageModule() {
-    }
-    DetailsPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__details__["a" /* DetailsPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__details__["a" /* DetailsPage */]),
-                __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */].forChild(),
-                __WEBPACK_IMPORTED_MODULE_4__components_voj_components_module__["a" /* VojComponentsModule */]
-            ],
-        })
-    ], DetailsPageModule);
-    return DetailsPageModule;
-}());
-
-//# sourceMappingURL=details.module.js.map
-
-/***/ }),
-
-/***/ 927:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignUpPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sign_up__ = __webpack_require__(218);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_components_module__ = __webpack_require__(8);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-
-var SignUpPageModule = (function () {
-    function SignUpPageModule() {
-    }
-    SignUpPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__sign_up__["a" /* SignUpPage */]
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__sign_up__["a" /* SignUpPage */]),
-                __WEBPACK_IMPORTED_MODULE_4__components_voj_components_module__["a" /* VojComponentsModule */],
-                __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */].forChild(),
-            ],
-        })
-    ], SignUpPageModule);
-    return SignUpPageModule;
-}());
-
-//# sourceMappingURL=sign-up.module.js.map
-
-/***/ }),
-
-/***/ 928:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccountPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__account__ = __webpack_require__(236);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var AccountPageModule = (function () {
-    function AccountPageModule() {
-    }
-    AccountPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__account__["a" /* AccountPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__account__["a" /* AccountPage */]),
-                __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__["a" /* VojComponentsModule */]
-            ],
-        })
-    ], AccountPageModule);
-    return AccountPageModule;
-}());
-
-//# sourceMappingURL=account.module.js.map
-
-/***/ }),
-
-/***/ 929:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IdentityModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__identity__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var IdentityModule = (function () {
-    function IdentityModule() {
-    }
-    IdentityModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__identity__["a" /* IdentityPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__identity__["a" /* IdentityPage */]),
-                __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__["a" /* VojComponentsModule */]
-            ],
-        })
-    ], IdentityModule);
-    return IdentityModule;
-}());
-
-//# sourceMappingURL=identity.module.js.map
-
-/***/ }),
-
-/***/ 93:
+/***/ 92:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17480,7 +16768,7 @@ var IdentityModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__http_request_http_request__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_utils__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_utils__ = __webpack_require__(47);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -17653,14 +16941,574 @@ var ProfileService = (function () {
 
 /***/ }),
 
-/***/ 930:
+/***/ 920:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobyerStrategy; });
+var JobyerStrategy = (function () {
+    function JobyerStrategy() {
+    }
+    JobyerStrategy.prototype.loadHeaderData = function (app, notificationFunction, searchFunction, annonceFunction, missionFunction, accountFunction) {
+        return {
+            menu: [
+                {
+                    icon: 'search',
+                    label: 'Recherche',
+                    badge: 0,
+                    action: function () {
+                        if (app.badge > 0)
+                            notificationFunction(app);
+                        else
+                            searchFunction(app);
+                    },
+                    notificationFunction: function () {
+                        notificationFunction(app);
+                    }
+                },
+                {
+                    icon: 'search',
+                    label: 'Mon CV',
+                    badge: -1,
+                    action: function () {
+                        annonceFunction(app);
+                    }
+                },
+                {
+                    icon: 'search',
+                    label: 'Missions',
+                    badge: -1,
+                    action: function () {
+                        missionFunction(app);
+                    }
+                },
+                {
+                    self: this,
+                    icon: 'search',
+                    label: 'Compte',
+                    badge: -1,
+                    action: function () {
+                        accountFunction(app);
+                    }
+                }
+            ],
+            logo: 'assets/img/vitonjob.png',
+            searchbar: {
+                placeholder: 'string'
+            },
+            segments: [
+                {
+                    title: {
+                        icon: 'string',
+                        label: '0'
+                    },
+                    subtitle: {
+                        icon: 'string',
+                        label: 'Contrats en attente'
+                    },
+                    action: function () {
+                        console.log('works 1');
+                    },
+                    style: 'style2'
+                },
+                {
+                    title: {
+                        icon: 'string',
+                        label: '0'
+                    },
+                    subtitle: {
+                        icon: 'string',
+                        label: 'Pointages à valider'
+                    },
+                    action: function () {
+                        console.log('works 2');
+                    },
+                    style: 'style2'
+                },
+                {
+                    title: {
+                        icon: 'string',
+                        label: '0'
+                    },
+                    subtitle: {
+                        icon: 'string',
+                        label: 'Missions à clôturer'
+                    },
+                    action: function () {
+                        console.log('works 3');
+                    },
+                    style: 'style2'
+                }
+            ]
+        };
+    };
+    return JobyerStrategy;
+}());
+
+//# sourceMappingURL=jobyer.js.map
+
+/***/ }),
+
+/***/ 921:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EmployerStrategy; });
+var EmployerStrategy = (function () {
+    function EmployerStrategy() {
+    }
+    EmployerStrategy.prototype.loadHeaderData = function (app, notificationFunction, searchFunction, annonceFunction, missionFunction, accountFunction) {
+        return {
+            menu: [
+                {
+                    icon: 'search',
+                    label: 'Recherche',
+                    badge: 0,
+                    action: function () { searchFunction(app); },
+                    notificationFunction: notificationFunction
+                },
+                {
+                    icon: 'search',
+                    label: 'Annonces',
+                    badge: -1,
+                    action: function () { annonceFunction(app); }
+                },
+                {
+                    icon: 'search',
+                    label: 'Missions',
+                    badge: -1,
+                    action: function () { missionFunction(app); }
+                },
+                {
+                    self: this,
+                    icon: 'search',
+                    label: 'Compte',
+                    badge: -1,
+                    action: function () { accountFunction(app); }
+                }
+            ],
+            logo: 'assets/img/vitonjob.png',
+            searchbar: {
+                placeholder: 'string'
+            },
+            segments: [
+                {
+                    title: {
+                        icon: 'string',
+                        label: '0'
+                    },
+                    subtitle: {
+                        icon: 'string',
+                        label: 'Contrats en attente'
+                    },
+                    action: function () {
+                        console.log('works 1');
+                    },
+                    style: 'style2'
+                },
+                {
+                    title: {
+                        icon: 'string',
+                        label: '0'
+                    },
+                    subtitle: {
+                        icon: 'string',
+                        label: 'Pointages à valider'
+                    },
+                    action: function () {
+                        console.log('works 2');
+                    },
+                    style: 'style2'
+                },
+                {
+                    title: {
+                        icon: 'string',
+                        label: '0'
+                    },
+                    subtitle: {
+                        icon: 'string',
+                        label: 'Missions à clôturer'
+                    },
+                    action: function () {
+                        console.log('works 3');
+                    },
+                    style: 'style2'
+                }
+            ]
+        };
+    };
+    return EmployerStrategy;
+}());
+
+//# sourceMappingURL=employer.js.map
+
+/***/ }),
+
+/***/ 922:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PagesModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tabs_tabs_module__ = __webpack_require__(587);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home_module__ = __webpack_require__(586);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__test_components_contact_contacts_module__ = __webpack_require__(923);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__test_components_about_about_module__ = __webpack_require__(583);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_module_search_search_module__ = __webpack_require__(575);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__cv_offer_module_jobyer_availability_choice_jobyer_availability_choice_module__ = __webpack_require__(579);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__account_module_user_information_user_information_module__ = __webpack_require__(580);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__details_details_module__ = __webpack_require__(924);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__account_module_open_application_open_application_module__ = __webpack_require__(590);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__account_module_sign_up_sign_up_module__ = __webpack_require__(925);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_voj_components_module__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__account_module_enterprise_details_enterprise_details_module__ = __webpack_require__(584);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__account_module_options_options_module__ = __webpack_require__(582);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__account_module_account_account_module__ = __webpack_require__(926);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__account_module_identity_identity_module__ = __webpack_require__(927);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__account_module_main_address_main_address_module__ = __webpack_require__(928);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__account_module_login_login_module__ = __webpack_require__(929);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__account_module_bank_settings_bank_settings_module__ = __webpack_require__(930);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__account_module_personal_details_identity_personal_details_identity_module__ = __webpack_require__(576);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__cv_offer_module_availabilities_add_days_availabilities_add_days_module__ = __webpack_require__(931);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__cv_offer_module_availabilities_availabilities_module__ = __webpack_require__(932);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__landing_page_landing_page_module__ = __webpack_require__(307);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__cv_offer_module_languages_languages_module__ = __webpack_require__(933);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__account_module_enterprise_search_enterprise_search_module__ = __webpack_require__(934);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__account_module_reset_password_reset_password_module__ = __webpack_require__(935);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__account_module_personal_details_personal_details_module__ = __webpack_require__(577);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__account_module_company_company_module__ = __webpack_require__(578);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__account_module_my_cv_my_cv_module__ = __webpack_require__(936);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__cv_offer_module_qualities_qualities_module__ = __webpack_require__(937);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__information_resume_information_resume_module__ = __webpack_require__(938);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__options_options_module__ = __webpack_require__(591);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__find_job_find_job_module__ = __webpack_require__(939);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__account_module_jobs_list_jobs_list_module__ = __webpack_require__(941);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__availabilities_add_slot_availabilities_add_slot_page_module__ = __webpack_require__(942);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__calendar_calendar_module__ = __webpack_require__(589);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__documents_documents_module__ = __webpack_require__(943);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__registration_message_registration_message_module__ = __webpack_require__(945);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__cv_offer_module_keywords_keywords_module__ = __webpack_require__(308);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__remuneration_remuneration_module__ = __webpack_require__(574);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var PagesModule = (function () {
+    function PagesModule() {
+    }
+    PagesModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [],
+            imports: [],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_1__tabs_tabs_module__["TabsModule"],
+                __WEBPACK_IMPORTED_MODULE_2__home_home_module__["HomeModule"],
+                __WEBPACK_IMPORTED_MODULE_3__test_components_contact_contacts_module__["a" /* ContactModule */],
+                __WEBPACK_IMPORTED_MODULE_4__test_components_about_about_module__["AboutModule"],
+                __WEBPACK_IMPORTED_MODULE_5__search_module_search_search_module__["SearchPageModule"],
+                __WEBPACK_IMPORTED_MODULE_8__details_details_module__["a" /* DetailsPageModule */],
+                __WEBPACK_IMPORTED_MODULE_9__account_module_open_application_open_application_module__["OpenApplicationModule"],
+                __WEBPACK_IMPORTED_MODULE_8__details_details_module__["a" /* DetailsPageModule */],
+                __WEBPACK_IMPORTED_MODULE_16__account_module_main_address_main_address_module__["a" /* MainAddressModule */],
+                __WEBPACK_IMPORTED_MODULE_12__account_module_enterprise_details_enterprise_details_module__["EnterpriseDetailsModule"],
+                __WEBPACK_IMPORTED_MODULE_7__account_module_user_information_user_information_module__["UserInformationModule"],
+                __WEBPACK_IMPORTED_MODULE_6__cv_offer_module_jobyer_availability_choice_jobyer_availability_choice_module__["JobyerAvailabilityChoiceModule"],
+                __WEBPACK_IMPORTED_MODULE_13__account_module_options_options_module__["OptionsModule"],
+                __WEBPACK_IMPORTED_MODULE_15__account_module_identity_identity_module__["a" /* IdentityModule */],
+                __WEBPACK_IMPORTED_MODULE_14__account_module_account_account_module__["a" /* AccountPageModule */],
+                __WEBPACK_IMPORTED_MODULE_19__account_module_personal_details_identity_personal_details_identity_module__["PersonalDetailsIdentityPageModule"],
+                __WEBPACK_IMPORTED_MODULE_17__account_module_login_login_module__["a" /* LoginModule */],
+                __WEBPACK_IMPORTED_MODULE_18__account_module_bank_settings_bank_settings_module__["a" /* BankSettingsPageModule */],
+                __WEBPACK_IMPORTED_MODULE_10__account_module_sign_up_sign_up_module__["a" /* SignUpPageModule */],
+                __WEBPACK_IMPORTED_MODULE_11__components_voj_components_module__["a" /* VojComponentsModule */],
+                __WEBPACK_IMPORTED_MODULE_20__cv_offer_module_availabilities_add_days_availabilities_add_days_module__["a" /* AvailabilitiesAddDaysPageModule */],
+                __WEBPACK_IMPORTED_MODULE_21__cv_offer_module_availabilities_availabilities_module__["a" /* AvailabilitiesPageModule */],
+                __WEBPACK_IMPORTED_MODULE_22__landing_page_landing_page_module__["LandingPageModule"],
+                __WEBPACK_IMPORTED_MODULE_29__cv_offer_module_qualities_qualities_module__["a" /* QualitiesPageModule */],
+                __WEBPACK_IMPORTED_MODULE_23__cv_offer_module_languages_languages_module__["a" /* LanguagesPageModule */],
+                __WEBPACK_IMPORTED_MODULE_24__account_module_enterprise_search_enterprise_search_module__["a" /* EnterpriseSearchPageModule */],
+                __WEBPACK_IMPORTED_MODULE_25__account_module_reset_password_reset_password_module__["a" /* ResetPasswordModule */],
+                __WEBPACK_IMPORTED_MODULE_27__account_module_company_company_module__["CompanyModule"],
+                __WEBPACK_IMPORTED_MODULE_26__account_module_personal_details_personal_details_module__["PersonalDetailsPageModule"],
+                __WEBPACK_IMPORTED_MODULE_28__account_module_my_cv_my_cv_module__["a" /* MyCvPageModule */],
+                __WEBPACK_IMPORTED_MODULE_31__options_options_module__["OptionsPageModule"],
+                __WEBPACK_IMPORTED_MODULE_33__account_module_jobs_list_jobs_list_module__["a" /* JobsListPageModule */],
+                __WEBPACK_IMPORTED_MODULE_32__find_job_find_job_module__["a" /* FindJobPageModule */],
+                __WEBPACK_IMPORTED_MODULE_30__information_resume_information_resume_module__["a" /* InformationResumePageModule */],
+                __WEBPACK_IMPORTED_MODULE_34__availabilities_add_slot_availabilities_add_slot_page_module__["a" /* AvailabilitiesAddSlotPageModule */],
+                __WEBPACK_IMPORTED_MODULE_35__calendar_calendar_module__["CalendarPageModule"],
+                __WEBPACK_IMPORTED_MODULE_36__documents_documents_module__["a" /* DocumentsPageModule */],
+                __WEBPACK_IMPORTED_MODULE_37__registration_message_registration_message_module__["a" /* RegistrationMessagePageModule */],
+                __WEBPACK_IMPORTED_MODULE_38__cv_offer_module_keywords_keywords_module__["KeywordsPageModule"],
+                __WEBPACK_IMPORTED_MODULE_39__remuneration_remuneration_module__["RemunerationPageModule"]
+            ]
+        })
+    ], PagesModule);
+    return PagesModule;
+}());
+
+//# sourceMappingURL=pages.module.js.map
+
+/***/ }),
+
+/***/ 923:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var ContactModule = (function () {
+    function ContactModule() {
+    }
+    ContactModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__contact__["a" /* ContactPage */]
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__contact__["a" /* ContactPage */]), __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__["a" /* VojComponentsModule */]
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__contact__["a" /* ContactPage */]
+            ]
+        })
+    ], ContactModule);
+    return ContactModule;
+}());
+
+//# sourceMappingURL=contacts.module.js.map
+
+/***/ }),
+
+/***/ 924:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DetailsPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__details__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_components_module__ = __webpack_require__(8);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+var DetailsPageModule = (function () {
+    function DetailsPageModule() {
+    }
+    DetailsPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__details__["a" /* DetailsPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__details__["a" /* DetailsPage */]),
+                __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */].forChild(),
+                __WEBPACK_IMPORTED_MODULE_4__components_voj_components_module__["a" /* VojComponentsModule */]
+            ],
+        })
+    ], DetailsPageModule);
+    return DetailsPageModule;
+}());
+
+//# sourceMappingURL=details.module.js.map
+
+/***/ }),
+
+/***/ 925:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignUpPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sign_up__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_components_module__ = __webpack_require__(8);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+var SignUpPageModule = (function () {
+    function SignUpPageModule() {
+    }
+    SignUpPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__sign_up__["a" /* SignUpPage */]
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__sign_up__["a" /* SignUpPage */]),
+                __WEBPACK_IMPORTED_MODULE_4__components_voj_components_module__["a" /* VojComponentsModule */],
+                __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */].forChild(),
+            ],
+        })
+    ], SignUpPageModule);
+    return SignUpPageModule;
+}());
+
+//# sourceMappingURL=sign-up.module.js.map
+
+/***/ }),
+
+/***/ 926:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccountPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__account__ = __webpack_require__(235);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var AccountPageModule = (function () {
+    function AccountPageModule() {
+    }
+    AccountPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__account__["a" /* AccountPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__account__["a" /* AccountPage */]),
+                __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__["a" /* VojComponentsModule */]
+            ],
+        })
+    ], AccountPageModule);
+    return AccountPageModule;
+}());
+
+//# sourceMappingURL=account.module.js.map
+
+/***/ }),
+
+/***/ 927:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IdentityModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__identity__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var IdentityModule = (function () {
+    function IdentityModule() {
+    }
+    IdentityModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__identity__["a" /* IdentityPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__identity__["a" /* IdentityPage */]),
+                __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__["a" /* VojComponentsModule */]
+            ],
+        })
+    ], IdentityModule);
+    return IdentityModule;
+}());
+
+//# sourceMappingURL=identity.module.js.map
+
+/***/ }),
+
+/***/ 928:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainAddressModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__main_address__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__main_address__ = __webpack_require__(124);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -17693,7 +17541,7 @@ var MainAddressModule = (function () {
 
 /***/ }),
 
-/***/ 931:
+/***/ 929:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17736,14 +17584,14 @@ var LoginModule = (function () {
 
 /***/ }),
 
-/***/ 932:
+/***/ 930:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BankSettingsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bank_settings__ = __webpack_require__(128);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bank_settings__ = __webpack_require__(127);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -17776,14 +17624,14 @@ var BankSettingsPageModule = (function () {
 
 /***/ }),
 
-/***/ 933:
+/***/ 931:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AvailabilitiesAddDaysPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__availabilities_add_days__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__availabilities_add_days__ = __webpack_require__(166);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -17816,7 +17664,7 @@ var AvailabilitiesAddDaysPageModule = (function () {
 
 /***/ }),
 
-/***/ 934:
+/***/ 932:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17856,14 +17704,14 @@ var AvailabilitiesPageModule = (function () {
 
 /***/ }),
 
-/***/ 935:
+/***/ 933:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LanguagesPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__languages__ = __webpack_require__(316);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__languages__ = __webpack_require__(315);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -17896,14 +17744,14 @@ var LanguagesPageModule = (function () {
 
 /***/ }),
 
-/***/ 936:
+/***/ 934:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EnterpriseSearchPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enterprise_search__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enterprise_search__ = __webpack_require__(218);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -17936,7 +17784,7 @@ var EnterpriseSearchPageModule = (function () {
 
 /***/ }),
 
-/***/ 937:
+/***/ 935:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17944,7 +17792,7 @@ var EnterpriseSearchPageModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reset_password__ = __webpack_require__(560);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reset_password__ = __webpack_require__(558);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -17979,14 +17827,14 @@ var ResetPasswordModule = (function () {
 
 /***/ }),
 
-/***/ 938:
+/***/ 936:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyCvPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__my_cv__ = __webpack_require__(317);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__my_cv__ = __webpack_require__(316);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -18019,14 +17867,14 @@ var MyCvPageModule = (function () {
 
 /***/ }),
 
-/***/ 939:
+/***/ 937:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QualitiesPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__qualities__ = __webpack_require__(315);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__qualities__ = __webpack_require__(314);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -18059,54 +17907,7 @@ var QualitiesPageModule = (function () {
 
 /***/ }),
 
-/***/ 94:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojNotificationService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_notification__ = __webpack_require__(558);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var VojNotificationService = (function () {
-    function VojNotificationService(modalCtrl) {
-        this.modalCtrl = modalCtrl;
-    }
-    // Present notification
-    VojNotificationService.prototype.present = function (notificationData) {
-        // Options for modal window
-        var modalOptions = {
-            cssClass: 'voj-notification-modal',
-            enableBackdropDismiss: notificationData.backdropDismiss
-        };
-        // Create modal window
-        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_2__voj_notification__["a" /* VojNotification */], { data: notificationData }, modalOptions);
-        // Show modal window
-        modal.present();
-    };
-    VojNotificationService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["k" /* ModalController */]])
-    ], VojNotificationService);
-    return VojNotificationService;
-}());
-
-//# sourceMappingURL=voj-notification.service.js.map
-
-/***/ }),
-
-/***/ 940:
+/***/ 938:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18146,14 +17947,14 @@ var InformationResumePageModule = (function () {
 
 /***/ }),
 
-/***/ 941:
+/***/ 939:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FindJobPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__find_job__ = __webpack_require__(942);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__find_job__ = __webpack_require__(940);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -18186,347 +17987,7 @@ var FindJobPageModule = (function () {
 
 /***/ }),
 
-/***/ 942:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FindJobPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var FindJobPage = (function () {
-    function FindJobPage() {
-        this.initializeJobs();
-    }
-    FindJobPage.prototype.getJobs = function (ev) {
-        // Reset array back to all of the items
-        this.initializeJobs();
-        // set val to the value of the searchbar
-        var val = ev.target.value;
-        // if the value is an empty string don't filter the items
-        if (val && val.trim() != '') {
-            this.jobsList = this.jobsList.filter(function (item) {
-                return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
-            });
-        }
-    };
-    FindJobPage.prototype.initializeJobs = function () {
-        this.jobsList = [
-            'Dentist',
-            'Nurse Practitioner',
-            'Physician Assistant',
-            'Statistician',
-            'Computer Systems Analyst',
-            'Software Developer'
-        ];
-    };
-    FindJobPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad FindJobPage');
-    };
-    FindJobPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'find-job-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/find-job/find-job.html"*/'<div class="voj-content">\n    <div class="voj-form-container">\n        <ion-searchbar (ionInput)="getJobs($event)"></ion-searchbar>\n        <ion-list no-lines>\n            <ion-item *ngFor="let job of jobsList">\n                {{ job }}\n            </ion-item>\n        </ion-list>\n    </div>\n</div>'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/find-job/find-job.html"*/,
-        }),
-        __metadata("design:paramtypes", [])
-    ], FindJobPage);
-    return FindJobPage;
-}());
-
-//# sourceMappingURL=find-job.js.map
-
-/***/ }),
-
-/***/ 943:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobsListPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__jobs_list__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var JobsListPageModule = (function () {
-    function JobsListPageModule() {
-    }
-    JobsListPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__jobs_list__["a" /* JobsListPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__jobs_list__["a" /* JobsListPage */]),
-                __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__["a" /* VojComponentsModule */]
-            ],
-        })
-    ], JobsListPageModule);
-    return JobsListPageModule;
-}());
-
-//# sourceMappingURL=jobs-list.module.js.map
-
-/***/ }),
-
-/***/ 944:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AvailabilitiesAddSlotPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__availabilities_add_slot__ = __webpack_require__(314);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var AvailabilitiesAddSlotPageModule = (function () {
-    function AvailabilitiesAddSlotPageModule() {
-    }
-    AvailabilitiesAddSlotPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__availabilities_add_slot__["a" /* AvailabilitiesAddSlotPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__availabilities_add_slot__["a" /* AvailabilitiesAddSlotPage */]),
-                __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__["a" /* VojComponentsModule */]
-            ],
-        })
-    ], AvailabilitiesAddSlotPageModule);
-    return AvailabilitiesAddSlotPageModule;
-}());
-
-//# sourceMappingURL=availabilities-add-slot-page.module.js.map
-
-/***/ }),
-
-/***/ 945:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DocumentsPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__documents__ = __webpack_require__(946);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var DocumentsPageModule = (function () {
-    function DocumentsPageModule() {
-    }
-    DocumentsPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__documents__["a" /* DocumentsPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__documents__["a" /* DocumentsPage */]),
-                __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__["a" /* VojComponentsModule */]
-            ],
-        })
-    ], DocumentsPageModule);
-    return DocumentsPageModule;
-}());
-
-//# sourceMappingURL=documents.module.js.map
-
-/***/ }),
-
-/***/ 946:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DocumentsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(7);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var DocumentsPage = (function () {
-    function DocumentsPage(configurationService) {
-        this.configurationService = configurationService;
-        this.isMobile = false;
-        this.config = this.configurationService.configuration;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
-        this.headerData = {
-            title: 'My documents',
-            style: 'any',
-            actions: [{
-                    id: 'xdcfgvyhubijnklbhvg',
-                    label: 'help',
-                    icon: 'help',
-                    action: function () {
-                        console.log('button works');
-                    }
-                }],
-            isCanceled: true
-        };
-        this.formData = {
-            fields: [
-                {
-                    type: 'customUploadSelect2',
-                    value: '',
-                    label: 'Add file',
-                    visible: true,
-                    id: '',
-                    name: 'documentsUploadSelect2'
-                },
-            ],
-            submit: {
-                id: 'xdcfgvyhubijnkfwlbhvg',
-                label: 'Validate',
-                icon: 'help',
-                action: function () {
-                    console.log('Navigation to J-S-CV-V1-01 Information Resume');
-                }
-            }
-        };
-    }
-    DocumentsPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad DocumentsPage');
-    };
-    DocumentsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'documents-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/documents/documents.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n<div [ngClass]="isMobile ? \'documents-container\' : \'\'" class="documents-parent">\n    <div [ngClass]="isMobile ? \'documents-child-container\' : \'\'" class="documents-child">\n        <!--<div class="custom-line"></div>-->\n        <voj-form [data]=\'formData\'></voj-form>\n    </div>\n</div>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/documents/documents.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__["a" /* Configuration */]])
-    ], DocumentsPage);
-    return DocumentsPage;
-}());
-
-//# sourceMappingURL=documents.js.map
-
-/***/ }),
-
-/***/ 947:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegistrationMessagePageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__registration_message__ = __webpack_require__(948);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-
-var RegistrationMessagePageModule = (function () {
-    function RegistrationMessagePageModule() {
-    }
-    RegistrationMessagePageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_4__registration_message__["a" /* RegistrationMessagePage */]
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_4__registration_message__["a" /* RegistrationMessagePage */]),
-                __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__["a" /* VojComponentsModule */],
-                __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */].forChild(),
-            ],
-        })
-    ], RegistrationMessagePageModule);
-    return RegistrationMessagePageModule;
-}());
-
-//# sourceMappingURL=registration-message.module.js.map
-
-/***/ }),
-
-/***/ 948:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegistrationMessagePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(1);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var RegistrationMessagePage = (function () {
-    function RegistrationMessagePage(configurationService, viewCtrl) {
-        this.configurationService = configurationService;
-        this.viewCtrl = viewCtrl;
-        this.isMobile = false;
-        this.config = this.configurationService.configuration;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
-    }
-    RegistrationMessagePage.prototype.closeRegistrationMessage = function () {
-        this.viewCtrl.dismiss();
-    };
-    RegistrationMessagePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'registration-message-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/registration-message/registration-message.html"*/'<div [ngClass]="isMobile ? \'registration-message-container\' : \'\'" class="voj-content">\n    <div class="voj-form-container">\n        <ion-grid>\n            <ion-row justify-content-center>\n\n                <label class="registration-message-label">Vous devez vous connecter</label>\n                <ion-col col-4></ion-col>\n                <ion-col col-4>\n                    <button type="button" class="registration-message-btn" ion-button block (click)="closeRegistrationMessage()">Ok</button>\n                </ion-col><ion-col col-4>\n                </ion-col>\n            </ion-row>\n        </ion-grid>\n    </div>\n</div>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/registration-message/registration-message.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__["a" /* Configuration */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["u" /* ViewController */]])
-    ], RegistrationMessagePage);
-    return RegistrationMessagePage;
-}());
-
-//# sourceMappingURL=registration-message.js.map
-
-/***/ }),
-
-/***/ 96:
+/***/ 94:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18535,15 +17996,15 @@ var RegistrationMessagePage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__strategy_employer__ = __webpack_require__(899);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__strategy_jobyer__ = __webpack_require__(900);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__strategy_context__ = __webpack_require__(583);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__strategy_employer__ = __webpack_require__(897);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__strategy_jobyer__ = __webpack_require__(898);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__strategy_context__ = __webpack_require__(581);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_navigation_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__identity_identity__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__main_address_main_address__ = __webpack_require__(125);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__personal_details_personal_details__ = __webpack_require__(126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__personal_details_identity_personal_details_identity__ = __webpack_require__(127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__bank_settings_bank_settings__ = __webpack_require__(128);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__identity_identity__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__main_address_main_address__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__personal_details_personal_details__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__personal_details_identity_personal_details_identity__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__bank_settings_bank_settings__ = __webpack_require__(127);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18623,7 +18084,7 @@ var UserInformationPage = (function () {
     UserInformationPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'user-information-page',template:/*ion-inline-start:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/user-information/user-information.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n<!-- Jobyer info list -->\n<ion-list padding class="voj-user-info-list" *ngIf="userType === \'jobyer\'">\n    <!-- User name -->\n    <ion-item>\n        <h2 class="voj-user-info-item-label">{{userData.name}} {{userData.firstName}}</h2>\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(userData.identityPage)">\n            <ion-icon name="create"></ion-icon>\n        </button>\n    </ion-item>\n\n    <!-- Address -->\n    <ion-item>\n        <h2 class="voj-user-info-item-label">{{userData.no}} {{userData.streetName}}</h2>\n        <p>{{userData.postcode}} {{userData.city}}</p>\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(userData.addressPage)">\n            <ion-icon name="create"></ion-icon>\n        </button>\n    </ion-item>\n\n    <!-- Birth date and Place of birth -->\n    <ion-item>\n        <h2 class="voj-user-info-item-label">{{userData.birthDate}}<br>{{userData.placeOfBirth}}</h2>\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(userData.birthDataPage)">\n            <ion-icon name="create"></ion-icon>\n        </button>\n    </ion-item>\n\n    <!-- Identity document -->\n    <ion-item>\n        <h2 class="voj-user-info-item-label">{{userData.identityDocumentType}} {{userData.docNumber}}</h2>\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(userData.identityCardPage)">\n            <ion-icon name="create"></ion-icon>\n        </button>\n    </ion-item>\n\n    <!-- Bank details -->\n    <ion-item>\n        <h2 class="voj-user-info-item-label">{{userData.bankDetails}}</h2>\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(userData.bankSettingPage)">\n            <ion-icon name="create"></ion-icon>\n        </button>\n    </ion-item>\n\n    <!-- Documents -->\n    <ion-item>\n        <h2 class="voj-user-info-item-label">{{userData.documents}}</h2>\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="test()">\n            <ion-icon name="create"></ion-icon>\n        </button>\n    </ion-item>\n</ion-list>\n\n<!-- Employer info list -->\n<ion-list padding class="voj-user-info-list" *ngIf="userType === \'employer\'">\n    <!-- 1 - Company name -->\n    <ion-item>\n        <h2 class="voj-user-info-item-label">{{userData.companyName}}</h2>\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(\'Enterprise Details 1/2\')">\n            <ion-icon name="create"></ion-icon>\n        </button>\n    </ion-item>\n\n    <!-- 2 - Address -->\n    <ion-item>\n        <h2 class="voj-user-info-item-label">{{userData.no}} {{userData.streetName}}<br>{{userData.postcode}} {{userData.city}}</h2>\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(\'Addresses page\')">\n            <ion-icon name="create"></ion-icon>\n        </button>\n    </ion-item>\n\n    <!-- 3 - Enterprise Details 2/2 -->\n    <ion-item>\n        <h2 class="voj-user-info-item-label">{{\'Collective agreement, organization of occupational medicine, ...\'}}</h2>\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(\'Enterprise Details 2/2\')">\n            <ion-icon name="create"></ion-icon>\n        </button>\n    </ion-item>\n\n    <!-- 4 - Bank details -->\n    <ion-item>\n        <h2 class="voj-user-info-item-label">{{ \'Bank details\' }}</h2>\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(\'Bank Settings\')">\n            <ion-icon name="create"></ion-icon>\n        </button>\n    </ion-item>\n\n    <!-- 5 - My Documents -->\n    <ion-item>\n        <h2 class="voj-user-info-item-label">{{ \'My Documents\' }}</h2>\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(\'Documents page\')">\n            <ion-icon name="create"></ion-icon>\n        </button>\n    </ion-item>\n\n    <!-- 6 - My presentation -->\n    <ion-item>\n        <h2 class="voj-user-info-item-label">{{ \'My presentation\' }}</h2>\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(\'Enterprise Presentation\')">\n            <ion-icon name="create"></ion-icon>\n        </button>\n    </ion-item>\n\n    <!-- 7 - My qualities -->\n    <ion-item>\n        <h2 class="voj-user-info-item-label">{{ \'My qualities\' }}</h2>\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(\'Qualities\')">\n            <ion-icon name="create"></ion-icon>\n        </button>\n    </ion-item>\n\n    <!-- 8 - My languages -->\n    <ion-item>\n        <h2 class="voj-user-info-item-label">{{ \'My languages\' }}</h2>\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(\'Languages\')">\n            <ion-icon name="create"></ion-icon>\n        </button>\n    </ion-item>\n</ion-list>\n'/*ion-inline-end:"/Users/jakjoud/WebstormProjects/vitonjob-v2/src/pages/account-module/user-information/user-information.html"*/
+            selector: 'user-information-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\account-module\user-information\user-information.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n\n\n<!-- Jobyer info list -->\n\n<ion-list padding class="voj-user-info-list" *ngIf="userType === \'jobyer\'">\n\n    <!-- User name -->\n\n    <ion-item>\n\n        <h2 class="voj-user-info-item-label">{{userData.name}} {{userData.firstName}}</h2>\n\n\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(userData.identityPage)">\n\n            <ion-icon name="create"></ion-icon>\n\n        </button>\n\n    </ion-item>\n\n\n\n    <!-- Address -->\n\n    <ion-item>\n\n        <h2 class="voj-user-info-item-label">{{userData.no}} {{userData.streetName}}</h2>\n\n        <p>{{userData.postcode}} {{userData.city}}</p>\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(userData.addressPage)">\n\n            <ion-icon name="create"></ion-icon>\n\n        </button>\n\n    </ion-item>\n\n\n\n    <!-- Birth date and Place of birth -->\n\n    <ion-item>\n\n        <h2 class="voj-user-info-item-label">{{userData.birthDate}}<br>{{userData.placeOfBirth}}</h2>\n\n\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(userData.birthDataPage)">\n\n            <ion-icon name="create"></ion-icon>\n\n        </button>\n\n    </ion-item>\n\n\n\n    <!-- Identity document -->\n\n    <ion-item>\n\n        <h2 class="voj-user-info-item-label">{{userData.identityDocumentType}} {{userData.docNumber}}</h2>\n\n\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(userData.identityCardPage)">\n\n            <ion-icon name="create"></ion-icon>\n\n        </button>\n\n    </ion-item>\n\n\n\n    <!-- Bank details -->\n\n    <ion-item>\n\n        <h2 class="voj-user-info-item-label">{{userData.bankDetails}}</h2>\n\n\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(userData.bankSettingPage)">\n\n            <ion-icon name="create"></ion-icon>\n\n        </button>\n\n    </ion-item>\n\n\n\n    <!-- Documents -->\n\n    <ion-item>\n\n        <h2 class="voj-user-info-item-label">{{userData.documents}}</h2>\n\n\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="test()">\n\n            <ion-icon name="create"></ion-icon>\n\n        </button>\n\n    </ion-item>\n\n</ion-list>\n\n\n\n<!-- Employer info list -->\n\n<ion-list padding class="voj-user-info-list" *ngIf="userType === \'employer\'">\n\n    <!-- 1 - Company name -->\n\n    <ion-item>\n\n        <h2 class="voj-user-info-item-label">{{userData.companyName}}</h2>\n\n\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(\'Enterprise Details 1/2\')">\n\n            <ion-icon name="create"></ion-icon>\n\n        </button>\n\n    </ion-item>\n\n\n\n    <!-- 2 - Address -->\n\n    <ion-item>\n\n        <h2 class="voj-user-info-item-label">{{userData.no}} {{userData.streetName}}<br>{{userData.postcode}} {{userData.city}}</h2>\n\n\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(\'Addresses page\')">\n\n            <ion-icon name="create"></ion-icon>\n\n        </button>\n\n    </ion-item>\n\n\n\n    <!-- 3 - Enterprise Details 2/2 -->\n\n    <ion-item>\n\n        <h2 class="voj-user-info-item-label">{{\'Collective agreement, organization of occupational medicine, ...\'}}</h2>\n\n\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(\'Enterprise Details 2/2\')">\n\n            <ion-icon name="create"></ion-icon>\n\n        </button>\n\n    </ion-item>\n\n\n\n    <!-- 4 - Bank details -->\n\n    <ion-item>\n\n        <h2 class="voj-user-info-item-label">{{ \'Bank details\' }}</h2>\n\n\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(\'Bank Settings\')">\n\n            <ion-icon name="create"></ion-icon>\n\n        </button>\n\n    </ion-item>\n\n\n\n    <!-- 5 - My Documents -->\n\n    <ion-item>\n\n        <h2 class="voj-user-info-item-label">{{ \'My Documents\' }}</h2>\n\n\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(\'Documents page\')">\n\n            <ion-icon name="create"></ion-icon>\n\n        </button>\n\n    </ion-item>\n\n\n\n    <!-- 6 - My presentation -->\n\n    <ion-item>\n\n        <h2 class="voj-user-info-item-label">{{ \'My presentation\' }}</h2>\n\n\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(\'Enterprise Presentation\')">\n\n            <ion-icon name="create"></ion-icon>\n\n        </button>\n\n    </ion-item>\n\n\n\n    <!-- 7 - My qualities -->\n\n    <ion-item>\n\n        <h2 class="voj-user-info-item-label">{{ \'My qualities\' }}</h2>\n\n\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(\'Qualities\')">\n\n            <ion-icon name="create"></ion-icon>\n\n        </button>\n\n    </ion-item>\n\n\n\n    <!-- 8 - My languages -->\n\n    <ion-item>\n\n        <h2 class="voj-user-info-item-label">{{ \'My languages\' }}</h2>\n\n\n\n        <button class="voj-user-info-edit-btn" ion-button icon-only item-end (click)="presentPage(\'Languages\')">\n\n            <ion-icon name="create"></ion-icon>\n\n        </button>\n\n    </ion-item>\n\n</ion-list>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\account-module\user-information\user-information.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__["a" /* Configuration */],
             __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */],
@@ -18635,7 +18096,345 @@ var UserInformationPage = (function () {
 
 //# sourceMappingURL=user-information.js.map
 
+/***/ }),
+
+/***/ 940:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FindJobPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var FindJobPage = (function () {
+    function FindJobPage() {
+        this.initializeJobs();
+    }
+    FindJobPage.prototype.getJobs = function (ev) {
+        // Reset array back to all of the items
+        this.initializeJobs();
+        // set val to the value of the searchbar
+        var val = ev.target.value;
+        // if the value is an empty string don't filter the items
+        if (val && val.trim() != '') {
+            this.jobsList = this.jobsList.filter(function (item) {
+                return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
+            });
+        }
+    };
+    FindJobPage.prototype.initializeJobs = function () {
+        this.jobsList = [
+            'Dentist',
+            'Nurse Practitioner',
+            'Physician Assistant',
+            'Statistician',
+            'Computer Systems Analyst',
+            'Software Developer'
+        ];
+    };
+    FindJobPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad FindJobPage');
+    };
+    FindJobPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'find-job-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\find-job\find-job.html"*/'<div class="voj-content">\n\n    <div class="voj-form-container">\n\n        <ion-searchbar (ionInput)="getJobs($event)"></ion-searchbar>\n\n        <ion-list no-lines>\n\n            <ion-item *ngFor="let job of jobsList">\n\n                {{ job }}\n\n            </ion-item>\n\n        </ion-list>\n\n    </div>\n\n</div>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\find-job\find-job.html"*/,
+        }),
+        __metadata("design:paramtypes", [])
+    ], FindJobPage);
+    return FindJobPage;
+}());
+
+//# sourceMappingURL=find-job.js.map
+
+/***/ }),
+
+/***/ 941:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobsListPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__jobs_list__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var JobsListPageModule = (function () {
+    function JobsListPageModule() {
+    }
+    JobsListPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__jobs_list__["a" /* JobsListPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__jobs_list__["a" /* JobsListPage */]),
+                __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__["a" /* VojComponentsModule */]
+            ],
+        })
+    ], JobsListPageModule);
+    return JobsListPageModule;
+}());
+
+//# sourceMappingURL=jobs-list.module.js.map
+
+/***/ }),
+
+/***/ 942:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AvailabilitiesAddSlotPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__availabilities_add_slot__ = __webpack_require__(313);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var AvailabilitiesAddSlotPageModule = (function () {
+    function AvailabilitiesAddSlotPageModule() {
+    }
+    AvailabilitiesAddSlotPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__availabilities_add_slot__["a" /* AvailabilitiesAddSlotPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__availabilities_add_slot__["a" /* AvailabilitiesAddSlotPage */]),
+                __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__["a" /* VojComponentsModule */]
+            ],
+        })
+    ], AvailabilitiesAddSlotPageModule);
+    return AvailabilitiesAddSlotPageModule;
+}());
+
+//# sourceMappingURL=availabilities-add-slot-page.module.js.map
+
+/***/ }),
+
+/***/ 943:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DocumentsPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__documents__ = __webpack_require__(944);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var DocumentsPageModule = (function () {
+    function DocumentsPageModule() {
+    }
+    DocumentsPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__documents__["a" /* DocumentsPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__documents__["a" /* DocumentsPage */]),
+                __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__["a" /* VojComponentsModule */]
+            ],
+        })
+    ], DocumentsPageModule);
+    return DocumentsPageModule;
+}());
+
+//# sourceMappingURL=documents.module.js.map
+
+/***/ }),
+
+/***/ 944:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DocumentsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(7);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var DocumentsPage = (function () {
+    function DocumentsPage(configurationService) {
+        this.configurationService = configurationService;
+        this.config = this.configurationService.configuration;
+        this.headerData = {
+            title: 'My documents',
+            style: 'any',
+            actions: [{
+                    id: 'xdcfgvyhubijnklbhvg',
+                    label: 'help',
+                    icon: 'help',
+                    action: function () {
+                        console.log('button works');
+                    }
+                }],
+            isCanceled: true
+        };
+        this.formData = {
+            fields: [
+                {
+                    type: 'customUploadSelect2',
+                    value: '',
+                    label: 'Add file',
+                    visible: true,
+                    id: '',
+                    name: 'documentsUploadSelect2'
+                },
+            ],
+            submit: {
+                id: 'xdcfgvyhubijnkfwlbhvg',
+                label: 'Validate',
+                icon: 'help',
+                action: function () {
+                    console.log('Navigation to J-S-CV-V1-01 Information Resume');
+                }
+            }
+        };
+    }
+    DocumentsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad DocumentsPage');
+    };
+    DocumentsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'documents-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\documents\documents.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<div class="voj-content documents-parent">\n\n    <div class="voj-form-container documents-child">\n\n        <!--<div class="custom-line"></div>-->\n\n        <voj-form [data]=\'formData\'></voj-form>\n\n    </div>\n\n</div>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\documents\documents.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__["a" /* Configuration */]])
+    ], DocumentsPage);
+    return DocumentsPage;
+}());
+
+//# sourceMappingURL=documents.js.map
+
+/***/ }),
+
+/***/ 945:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegistrationMessagePageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__registration_message__ = __webpack_require__(946);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+var RegistrationMessagePageModule = (function () {
+    function RegistrationMessagePageModule() {
+    }
+    RegistrationMessagePageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_4__registration_message__["a" /* RegistrationMessagePage */]
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_4__registration_message__["a" /* RegistrationMessagePage */]),
+                __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__["a" /* VojComponentsModule */],
+                __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */].forChild(),
+            ],
+        })
+    ], RegistrationMessagePageModule);
+    return RegistrationMessagePageModule;
+}());
+
+//# sourceMappingURL=registration-message.module.js.map
+
+/***/ }),
+
+/***/ 946:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegistrationMessagePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(1);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var RegistrationMessagePage = (function () {
+    function RegistrationMessagePage(configurationService, viewCtrl) {
+        this.configurationService = configurationService;
+        this.viewCtrl = viewCtrl;
+        this.isMobile = false;
+        this.config = this.configurationService.configuration;
+        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
+    }
+    RegistrationMessagePage.prototype.closeRegistrationMessage = function () {
+        this.viewCtrl.dismiss();
+    };
+    RegistrationMessagePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'registration-message-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\registration-message\registration-message.html"*/'<div class="voj-content">\n\n    <div class="voj-form-container">\n\n        <ion-grid>\n\n            <ion-row justify-content-center>\n\n\n\n                <label class="registration-message-label">Vous devez vous connecter</label>\n\n                <ion-col col-4></ion-col>\n\n                <ion-col col-4>\n\n                    <button type="button" class="registration-message-btn" ion-button block (click)="closeRegistrationMessage()">Ok</button>\n\n                </ion-col><ion-col col-4>\n\n                </ion-col>\n\n            </ion-row>\n\n        </ion-grid>\n\n    </div>\n\n</div>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\registration-message\registration-message.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__["a" /* Configuration */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["u" /* ViewController */]])
+    ], RegistrationMessagePage);
+    return RegistrationMessagePage;
+}());
+
+//# sourceMappingURL=registration-message.js.map
+
 /***/ })
 
-},[635]);
+},[633]);
 //# sourceMappingURL=main.js.map
