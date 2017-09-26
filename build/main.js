@@ -353,7 +353,7 @@ var SignUpPage = (function () {
         // Load phone code list
         this.masterdataService.loadCountriesList().then(function (data) {
             // Set dataset of phone codes of the form
-            _this.formData.fields.filter(function (f) { return f.name === "selectPhoneCode"; })[0].dataset = _this.masterdataService.convertCountriesListToDataset(data);
+            _this.formData.fields.filter(function (f) { return f.name === "selectPhoneCode"; })[0].dataset = _this.masterdataService.convertCountriesListToDataset(data, true);
             // The default phone code is France code (33)
             _this.formData.fields.filter(function (f) { return f.name === "selectPhoneCode"; })[0].value = "33";
         });
@@ -453,7 +453,7 @@ var SignUpPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__personal_details_personal_details__ = __webpack_require__(127);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_navigation_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_utils__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_utils__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_toast_service__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_address_service_address_service__ = __webpack_require__(563);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -609,28 +609,7 @@ var MainAddressPage = (function () {
             _this.initializationMainAddress(_this.currentUser.id);
         });
     };
-    /*checkEditedFields() {
-        if ((this.formData.fields[1].value !== this.fieldNumber || this.formData.fields[2].value !== this.fieldStreet ||
-                this.formData.fields[3].value !== this.fieldZipCode || this.formData.fields[4].value !== this.fieldCity)
-            && (this.fieldNumber !== '' && this.fieldStreet !== '' && this.fieldZipCode !== '' && this.fieldCity !== '')) {
-            return true;
-        }
-        return false
-    }
-
-    checkEnteredFields() {
-        if (this.fieldNumber === '' && this.fieldStreet === '' && this.fieldZipCode === '' && this.fieldCity === '') {
-            return true;
-        }
-        return false
-    }*/
     MainAddressPage.prototype.saveAddress = function () {
-        /*if (this.checkEditedFields())  {
-            this.toast.presentEditingToast();
-        }
-        else if (this.checkEnteredFields()) {
-            this.toast.presentEnteredToast();
-        }*/
         //if all fields are empty, ignore this step and go to the next page
         /*let ignoreThisStep = !ObjectUtils.isFormNotEmpty(this.formData.fields);
         if(ignoreThisStep){
@@ -652,11 +631,11 @@ var MainAddressPage = (function () {
             this.addressService.insertAddress(addressDto, this.currentUser.id).then(function (data) {
                 if (data.status == "success") {
                     //in the case of inscription: we should dismiss the mainAdress modal/page and show the PersonalDetails modal/page
+                    _this.toast.presentEnteredToast();
                     _this.goToPersonalDetailsPage();
                 }
                 else {
-                    //TODO: display a notification of error
-                    console.log("une erreur est survenue lors de l'enregistrement des données");
+                    _this.toast.presentErrorToast();
                     console.log(data.error);
                 }
             });
@@ -665,11 +644,10 @@ var MainAddressPage = (function () {
             //update an existing address
             this.addressService.updateAddress(addressDto).then(function (data) {
                 if (data.status == "success") {
-                    //TODO: display a notification of success
+                    _this.toast.presentEditingToast();
                 }
                 else {
-                    //TODO: display a notification of error
-                    console.log("une erreur est survenue lors de l'enregistrement des données");
+                    _this.toast.presentErrorToast();
                     console.log(data.error);
                 }
             });
@@ -834,8 +812,9 @@ var MainAddressPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_navigation_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_utils__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_utils__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_toast_service__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__numss_constraints__ = __webpack_require__(886);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -845,6 +824,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -871,10 +851,9 @@ var PersonalDetailsPage = (function () {
         this.isInscription = this.navParams.data.isInscription;
         this.headerData = {
             title: 'Mes données sociales',
-            style: 'any',
             isCanceled: true,
             actions: [{
-                    id: 'xdfgchvbjknm',
+                    id: 'help',
                     label: 'help',
                     icon: 'help',
                     action: function () {
@@ -885,26 +864,25 @@ var PersonalDetailsPage = (function () {
         this.formData = {
             fields: [
                 {
-                    required: !this.isInscription,
+                    required: true,
                     type: 'date',
                     label: '',
                     value: null,
                     placeholder: 'Date de naissance',
                     visible: true,
-                    disabled: false,
                     id: 'date-of-birth',
                     max: new Date(),
-                    //validationMsg: 'Date of birth error',
+                    //validationMsg: 'Vous devez avoir plus de 18 ans',
                     name: 'dateOfBirth'
                 },
                 {
-                    required: !this.isInscription,
+                    required: true,
                     type: 'select',
                     value: '',
                     label: 'Pays de naissance',
                     dataset: [],
                     visible: true,
-                    //validationMsg: 'Country of birth error',
+                    validationMsg: 'Veuillez choisir un pays de naissance',
                     id: 'country-of-birth',
                     name: 'countryBirth',
                     action: function () {
@@ -912,14 +890,13 @@ var PersonalDetailsPage = (function () {
                     }
                 },
                 {
-                    required: !this.isInscription,
+                    required: true,
                     type: 'select',
                     value: '',
                     label: 'Département de naissance',
                     dataset: [],
-                    readonly: false,
                     visible: true,
-                    //validationMsg: 'Department of birth error',
+                    validationMsg: 'Veuillez choisir un département de naissance',
                     id: 'department-of-birth',
                     name: 'departmentOfBirth',
                     action: function () {
@@ -927,25 +904,23 @@ var PersonalDetailsPage = (function () {
                     }
                 },
                 {
-                    required: !this.isInscription,
+                    required: true,
                     type: 'select',
                     value: '',
                     label: 'Lieu de naissance',
                     dataset: [],
-                    readonly: false,
                     visible: true,
-                    //validationMsg: 'Place of birth error',
+                    validationMsg: 'Veuillez choisir un lieu de naissance',
                     id: 'place-of-birth',
                     name: 'placeOfBirth'
                 },
                 {
-                    required: !this.isInscription,
+                    required: true,
                     type: 'text',
                     value: '',
                     label: 'Numéro de sécurité sociale',
-                    readonly: false,
                     visible: true,
-                    //validationMsg: 'Social security number error',
+                    validationMsg: 'Veuillez saisir un numéro de sécurité sociale valide',
                     id: 'social-security-number',
                     name: 'socialSecurityNumber'
                 }
@@ -959,8 +934,13 @@ var PersonalDetailsPage = (function () {
                 }
             }
         };
+    }
+    PersonalDetailsPage.prototype.ngOnInit = function () {
+        var _this = this;
+        //TODO: field should not be accessed by index
         this.formData.fields[0].max = this.setMaxBirthDay();
-        // Initialization
+        // initializing departments for french and foreign people
+        this.franceDepartmentList = [];
         this.foreignDepartmentList = [
             {
                 value: '99',
@@ -968,90 +948,56 @@ var PersonalDetailsPage = (function () {
                 id: 99
             }
         ];
-        this.franceDepartmentList = [];
+        //initializing form with current user data
         this.storage.get("currentUser").then(function (val) {
+            if (__WEBPACK_IMPORTED_MODULE_8__utils_utils__["b" /* ObjectUtils */].isEmpty(val)) {
+                return;
+            }
             _this.currentUser = JSON.parse(val);
             _this.initializationPersonalDetails();
         });
-    }
-    PersonalDetailsPage.prototype.checkEditedFields = function () {
-        if ((this.formData.fields[0].value !== this.dateOfBirth || this.formData.fields[1].value !== this.countryBirth ||
-            this.formData.fields[2].value !== this.departmentOfBirth || this.formData.fields[3].value !== this.placeOfBirth
-            || this.formData.fields[4].value !== this.socialSecurityNumber)
-            && (this.dateOfBirth !== null && this.countryBirth !== '' && this.departmentOfBirth !== '' && this.placeOfBirth !== ''
-                && this.socialSecurityNumber !== '')) {
-            return true;
-        }
-        return false;
-    };
-    PersonalDetailsPage.prototype.checkEnteredFields = function () {
-        if (this.dateOfBirth === null && this.countryBirth === '' && this.departmentOfBirth === '' && this.placeOfBirth === ''
-            && this.socialSecurityNumber === '') {
-            return true;
-        }
-        return false;
-    };
-    PersonalDetailsPage.prototype.savePersonalDetails = function () {
-        var _this = this;
-        if (this.checkEditedFields()) {
-            this.toast.presentEditingToast();
-        }
-        else if (this.checkEnteredFields()) {
-            this.toast.presentEnteredToast();
-        }
-        //if all fields are empty, ignore this step and go to the next page
-        var ignoreThisStep = !__WEBPACK_IMPORTED_MODULE_8__utils_utils__["b" /* ObjectUtils */].isFormNotEmpty(this.formData.fields);
-        if (ignoreThisStep) {
-            this.gotoPersonalDetailsIdentity();
-            return;
-        }
-        var countryPhoneCode = this.formData.fields.filter(function (f) { return f.name === "countryBirth"; })[0].value;
-        var birthData;
-        //if the user is french, save his department and municipality, else don't save them
-        if (countryPhoneCode == "33") {
-            birthData = {
-                birthDate: __WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* StringUtils */].preventNull(this.formData.fields.filter(function (f) { return f.name === "dateOfBirth"; })[0].value),
-                country: this.formData.fields[1].dataset.filter(function (c) { return c.value === countryPhoneCode; })[0].id,
-                department: this.formData.fields.filter(function (f) { return f.name === "departmentOfBirth"; })[0].value,
-                municipality: this.formData.fields.filter(function (f) { return f.name === "placeOfBirth"; })[0].value
-            };
-        }
-        else {
-            birthData = {
-                birthDate: this.formData.fields.filter(function (f) { return f.name === "dateOfBirth"; })[0].value,
-                country: this.formData.fields[1].dataset.filter(function (c) { return c.value === countryPhoneCode; })[0].id,
-                department: "",
-                municipality: ""
-            };
-        }
-        var numSS = this.formData.fields.filter(function (f) { return f.name === "socialSecurityNumber"; })[0].value;
-        this.profileService.savePersonalDetails(this.currentUser.id, birthData, numSS).then(function (data) {
-            if (data.status == "success") {
-                if (_this.isInscription) {
-                    _this.gotoPersonalDetailsIdentity();
-                }
-                else {
-                    //TODO: display a notification of success
-                }
-            }
-            else {
-                console.log("une erreur est survenue lors de l'enregistrement des données");
-                console.log(data.error);
-            }
+        /*this.dateOfBirth = this.formData.fields[0].value;
+        this.countryBirth = this.formData.fields[1].value;
+        this.departmentOfBirth = this.formData.fields[2].value;
+        this.placeOfBirth = this.formData.fields[3].value;
+        this.socialSecurityNumber = this.formData.fields[4].value;*/
+        // Show loading spinner
+        //let loading = this.loadingCtrl.create();
+        //loading.present();
+        //loading countries list
+        this.masterdataService.loadCountriesList().then(function (data) {
+            //set dataset of country of birth of the form
+            _this.countries = data;
+            _this.formData.fields.filter(function (f) { return f.name === "countryBirth"; })[0].dataset = _this.masterdataService.convertCountriesListToDataset(data);
+            //TODO: department list should not be loaded in the page initialization. It should be loaded only if the country of birth is France
+            // Get Department List
+            /*this.masterdataService.loadDepartmentList().then((data: DepartmentDto[]) => {
+                this.departments = data;
+                this.franceDepartmentList = this.masterdataService.convertDepartmentsListToDataset(data);
+
+                // Set Department List
+                this.setDepartmentList();
+
+                // Hide loading spinner
+                //loading.dismiss();
+            });*/
         });
     };
-    // Set data for form component
+    // Set data for current user in form component
     PersonalDetailsPage.prototype.initializationPersonalDetails = function () {
         var _this = this;
+        //TODO: Yurii, in case of an error, getPersonalDetails function returns data.status with the value "failure", you should deal with this case and display an alert with an error msg
+        //In case of success, getPersonalDetails function returns a BirthDataDTO object
         this.profileService.getPersonalDetails(this.currentUser.id).then(function (data) {
             var country = '';
             for (var key in data) {
                 key === 'birthDate' ? _this.formData.fields[0].value = new Date(data[key]) : null;
-                key === 'numSS' ? _this.formData.fields[4].value = data[key] : '';
+                key === 'numSS' ? _this.formData.fields[4].value = __WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* StringUtils */].preventNull(data[key]) : '';
                 key === 'birthPlace' ? country = data[key].country.gid : '';
                 key === 'birthPlace' ? _this.formData.fields[2].value = data[key].department.gid : '';
                 key === 'birthPlace' ? _this.formData.fields[3].value = data[key].municipality.id : '';
             }
+            //TODO: this peace of code, what is it for ?
             for (var key in _this.formData.fields[1].dataset) {
                 if (_this.formData.fields[1].dataset[key].id === Number(country)) {
                     _this.formData.fields[1].value = _this.formData.fields[1].dataset[key].value;
@@ -1059,30 +1005,123 @@ var PersonalDetailsPage = (function () {
             }
         });
     };
+    /*checkEditedFields() {
+        if ((this.formData.fields[0].value !== this.dateOfBirth || this.formData.fields[1].value !== this.countryBirth ||
+                this.formData.fields[2].value !== this.departmentOfBirth || this.formData.fields[3].value !== this.placeOfBirth
+                || this.formData.fields[4].value !== this.socialSecurityNumber)
+            && (this.dateOfBirth !== null && this.countryBirth !== '' && this.departmentOfBirth !== '' && this.placeOfBirth !== ''
+                && this.socialSecurityNumber !== '')) {
+            return true;
+        }
+        return false
+    }
+
+    checkEnteredFields() {
+        if (this.dateOfBirth === null && this.countryBirth === '' && this.departmentOfBirth === '' && this.placeOfBirth === ''
+            && this.socialSecurityNumber === '') {
+            return true;
+        }
+        return false
+    }*/
+    PersonalDetailsPage.prototype.savePersonalDetails = function () {
+        /*if (this.checkEditedFields()) {
+            this.toast.presentEditingToast();
+        }
+        else if (this.checkEnteredFields()) {
+            this.toast.presentEnteredToast();
+        }*/
+        //if all fields are empty, ignore this step and go to the next page
+        /*let ignoreThisStep = !ObjectUtils.isFormNotEmpty(this.formData.fields);
+        if (ignoreThisStep) {
+            this.gotoPersonalDetailsIdentity();
+            return;
+        }*/
+        var _this = this;
+        var countryPhoneCode = this.formData.fields.filter(function (f) { return f.name === "countryBirth"; })[0].value;
+        var numSS = this.formData.fields.filter(function (f) { return f.name === "socialSecurityNumber"; })[0].value;
+        //if the user is french, save his department and municipality, else don't save them
+        var birthData = {
+            birthDate: __WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* StringUtils */].preventNull(this.formData.fields.filter(function (f) { return f.name === "dateOfBirth"; })[0].value),
+            country: this.formData.fields[1].dataset.filter(function (c) { return c.value === countryPhoneCode; })[0].id,
+            department: (countryPhoneCode == "33" ? this.formData.fields.filter(function (f) { return f.name === "departmentOfBirth"; })[0].value : ""),
+            municipality: (countryPhoneCode == "33" ? this.formData.fields.filter(function (f) { return f.name === "placeOfBirth"; })[0].value : "")
+        };
+        //TODO: this peace of code should be decommented after adding the validationMsg for numSS field
+        //the validity of numSS should be checked only for french people
+        /*if (countryPhoneCode == "33") {
+            if(!this.isNumSSValid(numSS, birthData)){
+                return;
+            }
+        }*/
+        //if everything is alright, save personal details
+        this.profileService.savePersonalDetails(this.currentUser.id, birthData, numSS).then(function (data) {
+            if (data.status == "success") {
+                if (_this.isInscription) {
+                    _this.toast.presentEnteredToast();
+                    _this.gotoPersonalDetailsIdentity();
+                }
+                else {
+                    _this.toast.presentEditingToast();
+                }
+            }
+            else {
+                _this.toast.presentErrorToast();
+                console.log(data.error);
+            }
+        });
+    };
+    /*
+    Checking if the numSS is valid. if it is not the case a validation msg should be displayed below the field
+     */
+    PersonalDetailsPage.prototype.isNumSSValid = function (numSS, birthData) {
+        var civility = this.currentUser.identity.civility;
+        var selectedMunicipality = this.municipalities.filter(function (m) { return m.id == birthData.municipality; })[0];
+        var numSSValidity = __WEBPACK_IMPORTED_MODULE_10__numss_constraints__["a" /* NumSSConstraints */].checkNumss(numSS, civility, birthData.birthDate, selectedMunicipality);
+        if (!numSSValidity.isValid) {
+            //TODO: Yurii, i want to show the validation msg below the field if numSSValidity.isValid is False. Please how can i do it?
+            this.formData.fields.filter(function (f) { return f.name = 'placeOfBirth'; })[0].validationMsg = numSSValidity.hint;
+            return false;
+        }
+        else {
+            return true;
+        }
+    };
     PersonalDetailsPage.prototype.gotoPersonalDetailsIdentity = function () {
         this.navigationService.dismiss(this.viewCtrl);
-        var vojPage = { page: __WEBPACK_IMPORTED_MODULE_3__personal_details_identity_personal_details_identity__["a" /* PersonalDetailsIdentityPage */], isWebModal: true, params: { isInscription: this.isInscription } };
+        var vojPage = {
+            page: __WEBPACK_IMPORTED_MODULE_3__personal_details_identity_personal_details_identity__["a" /* PersonalDetailsIdentityPage */],
+            isWebModal: true,
+            params: { isInscription: this.isInscription }
+        };
         this.navigationService.navigate("main", vojPage);
     };
+    //TODO: Yurii, please put a small documentation for this function
     PersonalDetailsPage.prototype.setDepartmentList = function () {
-        if (this.franceDepartmentList.length === 0) {
-            return;
-        }
+        var _this = this;
+        //TODO: fields should not be accessed by index
         var chosenCountry = this.formData.fields[1].value;
         // If France
         if (chosenCountry === '33') {
-            this.formData.fields[2].readonly = false;
-            this.formData.fields[3].readonly = false;
-            this.formData.fields[2].dataset = this.franceDepartmentList;
-            this.formData.fields[2].value = this.formData.fields[2].dataset[0].value; // Chosen by default
+            //if the birth country is France, load department list
+            this.masterdataService.loadDepartmentList().then(function (data) {
+                _this.departments = data;
+                _this.franceDepartmentList = _this.masterdataService.convertDepartmentsListToDataset(data);
+                _this.formData.fields[2].readonly = false;
+                _this.formData.fields[2].dataset = _this.franceDepartmentList;
+                _this.formData.fields[3].readonly = true;
+                //this.formData.fields[2].value = this.formData.fields[2].dataset[0].value; // Chosen by default
+            });
         }
         else if (chosenCountry !== '33') {
             this.formData.fields[2].readonly = true;
             this.formData.fields[3].readonly = true;
             this.formData.fields[2].dataset = this.foreignDepartmentList;
+            this.formData.fields[3].dataset = [];
         }
-        this.getMunicipalities(this.formData.fields[2].dataset[0].id);
+        //TODO: municipalities should not be loaded in page initialization. It should be loaded only if the user changes the department
+        //this.getMunicipalities(this.formData.fields[2].dataset[0].id);
     };
+    //TODO: Yurii, please put a small documentation for this function
     PersonalDetailsPage.prototype.setMaxBirthDay = function () {
         var _a = [String(new Date().getDate()), String(new Date().getMonth()),
             String(new Date().getFullYear() - 18)], date = _a[0], month = _a[1], year = _a[2];
@@ -1104,47 +1143,30 @@ var PersonalDetailsPage = (function () {
         //loading.present();
         var _this = this;
         this.profileService.getMunicipalitiesByDepartment(departmentId).then(function (data) {
+            _this.municipalities = data;
+            _this.formData.fields[3].readonly = false;
             _this.formData.fields[3].dataset = _this.profileService.convertMunicipalitiesToDataset(data);
+            //TODO: fields should not be accessed by index
             // If France - first value by default
-            if (_this.formData.fields[1].value === '33') {
-                _this.formData.fields[3].value = _this.formData.fields[3].dataset[0].value;
-            }
+            /*if (this.formData.fields[1].value === '33') {
+                this.formData.fields[3].value = this.formData.fields[3].dataset[0].value;
+            }*/
             // Hide loading spinner
             //loading.dismiss();
         });
     };
     PersonalDetailsPage.prototype.changeDepartment = function () {
         // Get Municipalities for Department
-        for (var key in this.formData.fields[2].dataset) {
+        var departmentId = this.formData.fields.filter(function (f) { return f.name == "departmentOfBirth"; })[0].value;
+        if (!__WEBPACK_IMPORTED_MODULE_8__utils_utils__["b" /* ObjectUtils */].isEmpty(departmentId)) {
+            this.getMunicipalities(departmentId);
+        }
+        //TODO: fields should not be accessed by index
+        /*for (let key in this.formData.fields[2].dataset) {
             if (this.formData.fields[2].dataset[key].value === this.formData.fields[2].value) {
                 this.getMunicipalities(this.formData.fields[2].dataset[key].id);
             }
-        }
-    };
-    PersonalDetailsPage.prototype.ngOnInit = function () {
-        var _this = this;
-        this.dateOfBirth = this.formData.fields[0].value;
-        this.countryBirth = this.formData.fields[1].value;
-        this.departmentOfBirth = this.formData.fields[2].value;
-        this.placeOfBirth = this.formData.fields[3].value;
-        this.socialSecurityNumber = this.formData.fields[4].value;
-        // Show loading spinner
-        //let loading = this.loadingCtrl.create();
-        //loading.present();
-        this.masterdataService.loadCountriesList().then(function (data) {
-            //set dataset of nationalities of the form
-            _this.formData.fields.filter(function (f) { return f.name === "countryBirth"; })[0].dataset = _this.masterdataService.convertCountriesListToDataset(data);
-            //the default nationality is "France"
-            console.log('Countries list dataset:', _this.formData.fields[1].dataset);
-            // Get Department List
-            _this.masterdataService.loadDepartmentList().then(function (data) {
-                _this.franceDepartmentList = _this.masterdataService.convertDepartmentsListToDataset(data);
-                // Set Department List
-                _this.setDepartmentList();
-                // Hide loading spinner
-                //loading.dismiss();
-            });
-        });
+        }*/
     };
     PersonalDetailsPage.prototype.ionViewDidLoad = function () {
         this.showWarningBirthDayMessage();
@@ -1184,7 +1206,7 @@ var PersonalDetailsPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_profile_service_profile_service__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_utils__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_utils__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_toast_service__ = __webpack_require__(67);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1595,7 +1617,7 @@ var PersonalDetailsIdentityPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_profile_service_profile_service__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_utils__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_utils__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_toast_service__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__search_module_search_search__ = __webpack_require__(56);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1815,7 +1837,7 @@ var BankSettingsPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_page_header__ = __webpack_require__(889);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_page_header__ = __webpack_require__(890);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1858,7 +1880,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VojSearchHeaderModule", function() { return VojSearchHeaderModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_search_header__ = __webpack_require__(905);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_search_header__ = __webpack_require__(906);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_segment_voj_segment_module__ = __webpack_require__(91);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2233,9 +2255,9 @@ var NavigationService = (function () {
     };
     NavigationService.prototype.openNewPage = function (navName, vojPage) {
         var targetNav = this.getNavByName(navName);
-        if (vojPage.page != targetNav.last().component || targetNav.getViews().length == 1) {
-            this.event.publish("navigate:" + navName, vojPage);
-        }
+        //if(vojPage.page != targetNav.last().component || targetNav.getViews().length == 1) {
+        this.event.publish("navigate:" + navName, vojPage);
+        //}
     };
     NavigationService.prototype.constructPageMapping = function () {
         return {
@@ -2745,7 +2767,7 @@ var AccountService = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EnterpriseSearchPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_utils__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_utils__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_enterprise_service_enterprise_service__ = __webpack_require__(227);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_navigation_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__company_company__ = __webpack_require__(228);
@@ -2970,7 +2992,7 @@ var EnterpriseService = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dtos_enterprise_dto__ = __webpack_require__(887);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dtos_enterprise_dto__ = __webpack_require__(888);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_enterprise_service_enterprise_service__ = __webpack_require__(227);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -3197,8 +3219,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__voj_form__ = __webpack_require__(894);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_material__ = __webpack_require__(895);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__voj_form__ = __webpack_require__(895);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_material__ = __webpack_require__(896);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3249,7 +3271,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VojTableModule", function() { return VojTableModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_table__ = __webpack_require__(908);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_table__ = __webpack_require__(909);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3607,7 +3629,7 @@ var ContactPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccountPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_utils__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_utils__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_navigation_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__user_information_user_information__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_module_search_search__ = __webpack_require__(56);
@@ -4938,6 +4960,73 @@ var SmartCalendarModule = (function () {
 
 /***/ }),
 
+/***/ 34:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return StringUtils; });
+/* unused harmony export ArrayUtils */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ObjectUtils; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DateUtils; });
+var StringUtils = (function () {
+    function StringUtils() {
+    }
+    StringUtils.preventNull = function (str) {
+        if (ObjectUtils.isEmpty(str)) {
+            return "";
+        }
+        else {
+            return str;
+        }
+    };
+    return StringUtils;
+}());
+
+var ArrayUtils = (function () {
+    function ArrayUtils() {
+    }
+    return ArrayUtils;
+}());
+
+var ObjectUtils = (function () {
+    function ObjectUtils() {
+    }
+    ObjectUtils.isEmpty = function (obj) {
+        if (obj == "" || obj == null || !obj || obj.length == 0 || obj == 'null') {
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
+    /**
+     * Checking if at least one field is filled
+     */
+    ObjectUtils.isFormNotEmpty = function (fields) {
+        return fields.some(this.isFieldNotEmpty);
+    };
+    ObjectUtils.isFieldNotEmpty = function (element, index, array) {
+        return !ObjectUtils.isEmpty(element.value);
+    };
+    return ObjectUtils;
+}());
+
+var DateUtils = (function () {
+    function DateUtils() {
+    }
+    DateUtils.sqlToDisplay = function (sdate) {
+        if (!sdate || sdate.split('-').length < 3)
+            return sdate;
+        var date = sdate.split(' ')[0].split('-');
+        return date[2] + '/' + date[1] + '/' + date[0];
+    };
+    return DateUtils;
+}());
+
+//# sourceMappingURL=utils.js.map
+
+/***/ }),
+
 /***/ 376:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5807,73 +5896,6 @@ var DesktopCalendarModule = (function () {
 
 /***/ }),
 
-/***/ 39:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return StringUtils; });
-/* unused harmony export ArrayUtils */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ObjectUtils; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DateUtils; });
-var StringUtils = (function () {
-    function StringUtils() {
-    }
-    StringUtils.preventNull = function (str) {
-        if (ObjectUtils.isEmpty(str)) {
-            return "";
-        }
-        else {
-            return str;
-        }
-    };
-    return StringUtils;
-}());
-
-var ArrayUtils = (function () {
-    function ArrayUtils() {
-    }
-    return ArrayUtils;
-}());
-
-var ObjectUtils = (function () {
-    function ObjectUtils() {
-    }
-    ObjectUtils.isEmpty = function (obj) {
-        if (obj == "" || obj == null || !obj || obj.length == 0) {
-            return true;
-        }
-        else {
-            return false;
-        }
-    };
-    /**
-     * Checking if at least one field is filled
-     */
-    ObjectUtils.isFormNotEmpty = function (fields) {
-        return fields.some(this.isFieldNotEmpty);
-    };
-    ObjectUtils.isFieldNotEmpty = function (element, index, array) {
-        return !ObjectUtils.isEmpty(element.value);
-    };
-    return ObjectUtils;
-}());
-
-var DateUtils = (function () {
-    function DateUtils() {
-    }
-    DateUtils.sqlToDisplay = function (sdate) {
-        if (!sdate || sdate.split('-').length < 3)
-            return sdate;
-        var date = sdate.split(' ')[0].split('-');
-        return date[2] + '/' + date[1] + '/' + date[0];
-    };
-    return DateUtils;
-}());
-
-//# sourceMappingURL=utils.js.map
-
-/***/ }),
-
 /***/ 44:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -6051,7 +6073,9 @@ var ModalService = (function () {
             enableBackdropDismiss: true
         };
         // If user open modal from login or sign-up pages
-        vojPage.params.closeConfirmation ? modalOptions.enableBackdropDismiss = false : modalOptions.enableBackdropDismiss = true;
+        if (vojPage.params) {
+            vojPage.params.closeConfirmation !== undefined ? modalOptions.enableBackdropDismiss = false : modalOptions.enableBackdropDismiss = true;
+        }
         // Create modal window
         var modal = this.modalCtrl.create(vojPage.page, vojPage.params, modalOptions);
         // Show modal window
@@ -7387,7 +7411,7 @@ var ResetPasswordPage = (function () {
         //load phone code list
         this.masterdataService.loadCountriesList().then(function (data) {
             //set dataset of phone codes of the form
-            _this.phoneFormData.fields.filter(function (f) { return f.name === "code"; })[0].dataset = _this.masterdataService.convertCountriesListToDataset(data);
+            _this.phoneFormData.fields.filter(function (f) { return f.name === "code"; })[0].dataset = _this.masterdataService.convertCountriesListToDataset(data, true);
             //the default phone code is France code (33)
             _this.phoneFormData.fields.filter(function (f) { return f.name === "code"; })[0].value = "33";
         });
@@ -7457,7 +7481,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VojHeaderModule", function() { return VojHeaderModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_header__ = __webpack_require__(892);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_header__ = __webpack_require__(893);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7498,7 +7522,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VojListModule", function() { return VojListModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_list__ = __webpack_require__(893);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_list__ = __webpack_require__(894);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_card_voj_card_module__ = __webpack_require__(90);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -7687,7 +7711,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VojHeaderWebModule", function() { return VojHeaderWebModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_header_web__ = __webpack_require__(906);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_header_web__ = __webpack_require__(907);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_segment_voj_segment_module__ = __webpack_require__(91);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -7731,7 +7755,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VojHeaderSegmentModule", function() { return VojHeaderSegmentModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_header_segment__ = __webpack_require__(907);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_header_segment__ = __webpack_require__(908);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8555,9 +8579,9 @@ var HomeModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__account_module_company_company__ = __webpack_require__(228);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__account_module_enterprise_search_enterprise_search__ = __webpack_require__(226);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__models_voj_table_models_voj_table_model__ = __webpack_require__(579);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__models_voj_table_models_voj_table_output_cell_model__ = __webpack_require__(911);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__models_voj_table_models_voj_table_row__ = __webpack_require__(912);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__models_voj_table_models_voj_table_button_cell_model__ = __webpack_require__(913);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__models_voj_table_models_voj_table_output_cell_model__ = __webpack_require__(912);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__models_voj_table_models_voj_table_row__ = __webpack_require__(913);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__models_voj_table_models_voj_table_button_cell_model__ = __webpack_require__(914);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -9542,7 +9566,7 @@ var MyMissionsListPageModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_mission_service_mission_service__ = __webpack_require__(602);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_search_query_model__ = __webpack_require__(575);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_text_type__ = __webpack_require__(93);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_utils__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_utils__ = __webpack_require__(34);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -9800,7 +9824,7 @@ var MyMissionsListPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__http_request_http_request__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mission_service_factory__ = __webpack_require__(914);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mission_service_factory__ = __webpack_require__(915);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -9844,7 +9868,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OpenApplicationModule", function() { return OpenApplicationModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__open_application__ = __webpack_require__(916);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__open_application__ = __webpack_require__(917);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -9885,7 +9909,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OptionsPageModule", function() { return OptionsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__options__ = __webpack_require__(917);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__options__ = __webpack_require__(918);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -10093,7 +10117,7 @@ var LoginPage = (function () {
         // load phone code list
         this.masterdataService.loadCountriesList().then(function (data) {
             //set dataset of phone codes of the form
-            _this.formData.fields.filter(function (f) { return f.name === "code"; })[0].dataset = _this.masterdataService.convertCountriesListToDataset(data);
+            _this.formData.fields.filter(function (f) { return f.name === "code"; })[0].dataset = _this.masterdataService.convertCountriesListToDataset(data, true);
             //the default phone code is France code (33)
             _this.formData.fields.filter(function (f) { return f.name === "code"; })[0].value = "33";
         });
@@ -10198,11 +10222,11 @@ var LoginPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(935);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(936);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(644);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(645);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_voj_components_module__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_pages_module__ = __webpack_require__(938);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_pages_module__ = __webpack_require__(939);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_angular_calendar__ = __webpack_require__(122);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_http_request_http_request__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_http__ = __webpack_require__(107);
@@ -10210,7 +10234,7 @@ var LoginPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_search_service_search_service__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_navigation_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ngx_translate_core__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ngx_translate_http_loader__ = __webpack_require__(962);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ngx_translate_http_loader__ = __webpack_require__(963);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_voj_events_voj_events__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__models_voj_configuration_model__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__services_modal_service__ = __webpack_require__(51);
@@ -10395,22 +10419,15 @@ var MasterdataService = (function () {
         this.configuration = configuration;
         this.http = http;
         this.config = this.configuration.configuration;
+        this.url = this.config.urls.filter(function (u) { return u.key == "masterdata"; })[0].value;
     }
     MasterdataService.prototype.loadCountriesList = function () {
         var _this = this;
         var payload = {
             "type": "COUNTRIES",
         };
-        var url = "";
-        for (var i = 0; i < this.config.urls.length; i++) {
-            var t = this.config.urls[i];
-            if (t.key == "masterdata") {
-                url = t.value;
-                break;
-            }
-        }
         return new Promise(function (resolve) {
-            _this.http.call(payload, url, "", true).subscribe(function (data) {
+            _this.http.call(payload, _this.url, "", true).subscribe(function (data) {
                 resolve(data);
             });
         });
@@ -10420,16 +10437,8 @@ var MasterdataService = (function () {
         var payload = {
             "type": "NATIONALITIES",
         };
-        var url = "";
-        for (var i = 0; i < this.config.urls.length; i++) {
-            var t = this.config.urls[i];
-            if (t.key == "masterdata") {
-                url = t.value;
-                break;
-            }
-        }
         return new Promise(function (resolve) {
-            _this.http.call(payload, url, "", true).subscribe(function (data) {
+            _this.http.call(payload, _this.url, "", true).subscribe(function (data) {
                 resolve(data);
             });
         });
@@ -10439,16 +10448,8 @@ var MasterdataService = (function () {
         var payload = {
             "type": "DEPARTMENTS",
         };
-        var url = "";
-        for (var i = 0; i < this.config.urls.length; i++) {
-            var t = this.config.urls[i];
-            if (t.key == "masterdata") {
-                url = t.value;
-                break;
-            }
-        }
         return new Promise(function (resolve) {
-            _this.http.call(payload, url, "", true).subscribe(function (data) {
+            _this.http.call(payload, _this.url, "", true).subscribe(function (data) {
                 resolve(data);
             });
         });
@@ -10458,25 +10459,20 @@ var MasterdataService = (function () {
         var payload = {
             "type": "PREFECTURES"
         };
-        //let url = (this.config.urls.filter(tuple => tuple.key === "identity")).value;
-        var url;
-        for (var i = 0; i < this.config.urls.length; i++) {
-            var t = this.config.urls[i];
-            if (t.key == "masterdata") {
-                url = t.value;
-                break;
-            }
-        }
         return new Promise(function (resolve) {
-            _this.http.call(payload, url, "", true).subscribe(function (data) {
+            _this.http.call(payload, _this.url, "", true).subscribe(function (data) {
                 resolve(data);
             });
         });
     };
-    MasterdataService.prototype.convertCountriesListToDataset = function (countries) {
+    MasterdataService.prototype.convertCountriesListToDataset = function (countries, forPhoneCodes) {
         var dataset = [];
         for (var i = 0; i < countries.length; i++) {
-            var ds = { id: countries[i].gid, key: countries[i].name + " (" + countries[i].phoneCode + ")", value: countries[i].phoneCode };
+            var ds = {
+                id: countries[i].gid,
+                key: countries[i].name + (forPhoneCodes ? " (" + countries[i].phoneCode + ")" : ""),
+                value: countries[i].phoneCode
+            };
             dataset.push(ds);
         }
         return dataset;
@@ -10541,7 +10537,6 @@ var ToastService = (function () {
     function ToastService(configurationService, toastCtrl) {
         this.configurationService = configurationService;
         this.toastCtrl = toastCtrl;
-        this.isMobile = false;
         this.config = this.configurationService.configuration;
     }
     ToastService.prototype.presentEditingToast = function () {
@@ -10558,6 +10553,17 @@ var ToastService = (function () {
     ToastService.prototype.presentEnteredToast = function () {
         var toast = this.toastCtrl.create({
             message: 'Vos informations ont bien été enregistrées.',
+            duration: 5000,
+            position: this.config.isLargeScreen ? 'top' : 'mobile',
+            cssClass: this.config.isLargeScreen ? 'toast-top-desktop' : 'toast-bottom-mobile',
+            showCloseButton: true,
+            closeButtonText: 'x'
+        });
+        toast.present();
+    };
+    ToastService.prototype.presentErrorToast = function () {
+        var toast = this.toastCtrl.create({
+            message: 'Une erreur est survenue. Veuillez réessayer',
             duration: 5000,
             position: this.config.isLargeScreen ? 'top' : 'mobile',
             cssClass: this.config.isLargeScreen ? 'toast-top-desktop' : 'toast-bottom-mobile',
@@ -10787,7 +10793,7 @@ var NgCalendarModule = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonthViewComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subscription__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subscription__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subscription___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Subscription__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
@@ -11849,7 +11855,7 @@ var AvailabilitiesPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__voj_calendar_voj_calendar_module__ = __webpack_require__(328);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_card_voj_card_module__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_footer_voj_footer_module__ = __webpack_require__(890);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_footer_voj_footer_module__ = __webpack_require__(891);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__voj_header_voj_header_module__ = __webpack_require__(566);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__voj_list_voj_list_module__ = __webpack_require__(567);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__voj_form_voj_form_module__ = __webpack_require__(229);
@@ -15510,6 +15516,130 @@ var SearchDTOEmployer = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NumSSConstraints; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_utils__ = __webpack_require__(34);
+
+var NumSSConstraints = (function () {
+    function NumSSConstraints() {
+    }
+    NumSSConstraints.checkGender = function (num, title) {
+        var indicator = num.charAt(0);
+        if ((indicator === '1' && title != 'Mme') || (indicator === '2' && title === 'Mme')) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
+    NumSSConstraints.checkBirthYear = function (num, date) {
+        if (__WEBPACK_IMPORTED_MODULE_0__utils_utils__["b" /* ObjectUtils */].isEmpty(date)) {
+            return false;
+        }
+        var indicator = num.charAt(1) + num.charAt(2);
+        var birthYear = "" + date.split('-')[0];
+        birthYear = birthYear.substring(2);
+        if (indicator == birthYear)
+            return true;
+        else
+            return false;
+    };
+    NumSSConstraints.checkBirthMonth = function (num, date) {
+        if (__WEBPACK_IMPORTED_MODULE_0__utils_utils__["b" /* ObjectUtils */].isEmpty(date)) {
+            return false;
+        }
+        var indicator = num.charAt(3) + num.charAt(4);
+        var birthMonth = date.split('-')[1] + "";
+        if (birthMonth.length == 1)
+            birthMonth = "0" + birthMonth;
+        if (indicator == birthMonth)
+            return true;
+        else
+            return false;
+    };
+    NumSSConstraints.checkINSEE = function (num, municipalityDto) {
+        var indicator = num.substring(5, 10);
+        if (municipalityDto.id != 0) {
+            if (indicator != municipalityDto.codeINSEE)
+                return false;
+            else
+                return true;
+        }
+        if (indicator.charAt(0) != '9')
+            return false;
+        else
+            return true;
+    };
+    NumSSConstraints.checkModKey = function (num) {
+        try {
+            var indicator = num.substr(0, 13);
+            var key = num.substr(13);
+            var number = parseInt(indicator);
+            var nkey = parseInt(key);
+            var modulo = number % 97;
+            if (nkey == 97 - modulo)
+                return true;
+            else
+                return false;
+        }
+        catch (err) {
+            return false;
+        }
+    };
+    NumSSConstraints.checkNumss = function (_numSS, title, birthdate, municipalityDto) {
+        var _isValid = true;
+        var _hint = "";
+        if (_numSS.length != 0 && _numSS.length != 15) {
+            _hint = "Veuillez saisir les 15 chiffres du n° SS";
+            _isValid = false;
+        }
+        else if (_numSS.length == 15) {
+            var personalInfoHint = "* Le numéro de sécurité sociale renseigné ne correspond pas aux informations personnelles : ";
+            if (_numSS.length == 15 && !NumSSConstraints.checkGender(_numSS, title)) {
+                personalInfoHint += "Civilité";
+                _hint = personalInfoHint;
+                _isValid = false;
+            }
+            else if (_numSS.length == 15 && !NumSSConstraints.checkBirthYear(_numSS, birthdate)) {
+                personalInfoHint += "Année de naissance";
+                _hint = personalInfoHint;
+                _isValid = false;
+            }
+            else if (_numSS.length == 15 && !NumSSConstraints.checkBirthMonth(_numSS, birthdate)) {
+                personalInfoHint += "Mois de naissance";
+                _hint = personalInfoHint;
+                _isValid = false;
+            }
+            else if (_numSS.length == 15 && !NumSSConstraints.checkINSEE(_numSS, municipalityDto)) {
+                personalInfoHint += "Numéro INSEE";
+                _hint = personalInfoHint;
+                _isValid = false;
+            }
+            else if (_numSS.length == 15 && !NumSSConstraints.checkModKey(_numSS)) {
+                personalInfoHint += "Clé de validation";
+                _hint = personalInfoHint;
+                _isValid = false;
+            }
+            else {
+                _hint = "";
+            }
+        }
+        else {
+            _hint = "";
+        }
+        var fieldVality = { isValid: _isValid, hint: _hint };
+        return fieldVality;
+    };
+    return NumSSConstraints;
+}());
+
+//# sourceMappingURL=numss-constraints.js.map
+
+/***/ }),
+
+/***/ 887:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IdentityDto; });
 var IdentityDto = (function () {
     function IdentityDto() {
@@ -15525,12 +15655,12 @@ var IdentityDto = (function () {
 
 /***/ }),
 
-/***/ 887:
+/***/ 888:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EnterpriseDto; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__employer_dto__ = __webpack_require__(888);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__employer_dto__ = __webpack_require__(889);
 
 var EnterpriseDto = (function () {
     function EnterpriseDto() {
@@ -15548,7 +15678,7 @@ var EnterpriseDto = (function () {
 
 /***/ }),
 
-/***/ 888:
+/***/ 889:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15563,7 +15693,7 @@ var EmployerDto = (function () {
 
 /***/ }),
 
-/***/ 889:
+/***/ 890:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15638,14 +15768,14 @@ var VojPageHeader = (function () {
 
 /***/ }),
 
-/***/ 890:
+/***/ 891:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojFooterModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_footer__ = __webpack_require__(891);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_footer__ = __webpack_require__(892);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -15678,7 +15808,7 @@ var VojFooterModule = (function () {
 
 /***/ }),
 
-/***/ 891:
+/***/ 892:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15723,7 +15853,7 @@ var VojFooter = (function () {
 
 /***/ }),
 
-/***/ 892:
+/***/ 893:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15763,7 +15893,7 @@ var VojHeader = (function () {
 
 /***/ }),
 
-/***/ 893:
+/***/ 894:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15813,7 +15943,7 @@ var VojList = (function () {
 
 /***/ }),
 
-/***/ 894:
+/***/ 895:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16234,7 +16364,7 @@ var VojCardModule = (function () {
 
 /***/ }),
 
-/***/ 905:
+/***/ 906:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16335,7 +16465,7 @@ var VojSearchHeader = (function () {
 
 /***/ }),
 
-/***/ 906:
+/***/ 907:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16413,7 +16543,7 @@ var VojHeaderWeb = (function () {
 
 /***/ }),
 
-/***/ 907:
+/***/ 908:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16475,7 +16605,7 @@ var VojHeaderSegment = (function () {
 
 /***/ }),
 
-/***/ 908:
+/***/ 909:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16516,38 +16646,6 @@ var VojTable = (function () {
 }());
 
 //# sourceMappingURL=voj-table.js.map
-
-/***/ }),
-
-/***/ 909:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EmployerStrategy; });
-var EmployerStrategy = (function () {
-    function EmployerStrategy() {
-    }
-    EmployerStrategy.prototype.loadHeaderData = function () {
-        return {
-            title: 'USER_INFORMATION.TITLE_EMPLOYER',
-            actions: [
-                {
-                    id: 'help',
-                    label: '',
-                    icon: 'help',
-                    action: function () {
-                        console.log('Click help button.');
-                    }
-                }
-            ],
-            style: 'any',
-            isCanceled: true
-        };
-    };
-    return EmployerStrategy;
-}());
-
-//# sourceMappingURL=employer.js.map
 
 /***/ }),
 
@@ -16596,6 +16694,38 @@ var VojSegmentModule = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EmployerStrategy; });
+var EmployerStrategy = (function () {
+    function EmployerStrategy() {
+    }
+    EmployerStrategy.prototype.loadHeaderData = function () {
+        return {
+            title: 'USER_INFORMATION.TITLE_EMPLOYER',
+            actions: [
+                {
+                    id: 'help',
+                    label: '',
+                    icon: 'help',
+                    action: function () {
+                        console.log('Click help button.');
+                    }
+                }
+            ],
+            style: 'any',
+            isCanceled: true
+        };
+    };
+    return EmployerStrategy;
+}());
+
+//# sourceMappingURL=employer.js.map
+
+/***/ }),
+
+/***/ 911:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobyerStrategy; });
 var JobyerStrategy = (function () {
     function JobyerStrategy() {
@@ -16624,7 +16754,7 @@ var JobyerStrategy = (function () {
 
 /***/ }),
 
-/***/ 911:
+/***/ 912:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16656,7 +16786,7 @@ var VojTableOutputCellModel = (function (_super) {
 
 /***/ }),
 
-/***/ 912:
+/***/ 913:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16671,7 +16801,7 @@ var VojTableRow = (function () {
 
 /***/ }),
 
-/***/ 913:
+/***/ 914:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16705,12 +16835,12 @@ var VojTableButtonCellModel = (function (_super) {
 
 /***/ }),
 
-/***/ 914:
+/***/ 915:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MissionServiceFactory; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mission_service_jobyer__ = __webpack_require__(915);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mission_service_jobyer__ = __webpack_require__(916);
 
 var MissionServiceFactory = (function () {
     function MissionServiceFactory(http, config) {
@@ -16729,7 +16859,7 @@ var MissionServiceFactory = (function () {
 
 /***/ }),
 
-/***/ 915:
+/***/ 916:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16770,7 +16900,7 @@ var MissionServiceJobyer = (function () {
 
 /***/ }),
 
-/***/ 916:
+/***/ 917:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16857,7 +16987,7 @@ var OpenApplication = (function () {
 
 /***/ }),
 
-/***/ 917:
+/***/ 918:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17265,7 +17395,7 @@ var TextType = (function () {
 
 /***/ }),
 
-/***/ 935:
+/***/ 936:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17291,8 +17421,8 @@ var TextType = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_account_module_identity_identity__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_calendar_calendar__ = __webpack_require__(599);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_search_service_search_service__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__startegy_jobyer__ = __webpack_require__(936);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__startegy_employer__ = __webpack_require__(937);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__startegy_jobyer__ = __webpack_require__(937);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__startegy_employer__ = __webpack_require__(938);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__angular_compiler__ = __webpack_require__(137);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_missions_my_missions_list_my_missions_list__ = __webpack_require__(601);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_cv_offer_module_jobs_list_jobs_list__ = __webpack_require__(170);
@@ -17876,7 +18006,7 @@ var MyApp = (function () {
 
 /***/ }),
 
-/***/ 936:
+/***/ 937:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17984,7 +18114,7 @@ var JobyerStrategy = (function () {
 
 /***/ }),
 
-/***/ 937:
+/***/ 938:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18079,7 +18209,7 @@ var EmployerStrategy = (function () {
 
 /***/ }),
 
-/***/ 938:
+/***/ 939:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18087,41 +18217,41 @@ var EmployerStrategy = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tabs_tabs_module__ = __webpack_require__(596);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home_module__ = __webpack_require__(593);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__test_components_contact_contacts_module__ = __webpack_require__(939);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__test_components_contact_contacts_module__ = __webpack_require__(940);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__test_components_about_about_module__ = __webpack_require__(590);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_module_search_search_module__ = __webpack_require__(581);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__cv_offer_module_jobyer_availability_choice_jobyer_availability_choice_module__ = __webpack_require__(585);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__account_module_user_information_user_information_module__ = __webpack_require__(586);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__details_details_module__ = __webpack_require__(940);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__details_details_module__ = __webpack_require__(941);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__account_module_open_application_open_application_module__ = __webpack_require__(603);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__account_module_sign_up_sign_up_module__ = __webpack_require__(941);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__account_module_sign_up_sign_up_module__ = __webpack_require__(942);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_voj_components_module__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__account_module_enterprise_details_enterprise_details_module__ = __webpack_require__(591);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__account_module_options_options_module__ = __webpack_require__(589);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__account_module_account_account_module__ = __webpack_require__(942);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__account_module_identity_identity_module__ = __webpack_require__(943);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__account_module_main_address_main_address_module__ = __webpack_require__(944);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__account_module_login_login_module__ = __webpack_require__(945);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__account_module_bank_settings_bank_settings_module__ = __webpack_require__(946);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__account_module_account_account_module__ = __webpack_require__(943);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__account_module_identity_identity_module__ = __webpack_require__(944);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__account_module_main_address_main_address_module__ = __webpack_require__(945);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__account_module_login_login_module__ = __webpack_require__(946);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__account_module_bank_settings_bank_settings_module__ = __webpack_require__(947);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__account_module_personal_details_identity_personal_details_identity_module__ = __webpack_require__(582);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__cv_offer_module_availabilities_add_days_availabilities_add_days_module__ = __webpack_require__(947);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__cv_offer_module_availabilities_availabilities_module__ = __webpack_require__(948);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__cv_offer_module_availabilities_add_days_availabilities_add_days_module__ = __webpack_require__(948);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__cv_offer_module_availabilities_availabilities_module__ = __webpack_require__(949);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__landing_page_landing_page_module__ = __webpack_require__(309);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__cv_offer_module_languages_languages_module__ = __webpack_require__(949);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__account_module_enterprise_search_enterprise_search_module__ = __webpack_require__(950);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__account_module_reset_password_reset_password_module__ = __webpack_require__(951);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__cv_offer_module_languages_languages_module__ = __webpack_require__(950);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__account_module_enterprise_search_enterprise_search_module__ = __webpack_require__(951);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__account_module_reset_password_reset_password_module__ = __webpack_require__(952);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__account_module_personal_details_personal_details_module__ = __webpack_require__(583);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__account_module_company_company_module__ = __webpack_require__(584);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__cv_offer_module_my_cv_my_cv_module__ = __webpack_require__(952);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__cv_offer_module_qualities_qualities_module__ = __webpack_require__(953);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__cv_offer_module_information_resume_information_resume_module__ = __webpack_require__(954);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__cv_offer_module_my_cv_my_cv_module__ = __webpack_require__(953);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__cv_offer_module_qualities_qualities_module__ = __webpack_require__(954);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__cv_offer_module_information_resume_information_resume_module__ = __webpack_require__(955);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__options_options_module__ = __webpack_require__(604);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__cv_offer_module_find_job_find_job_module__ = __webpack_require__(955);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__cv_offer_module_jobs_list_jobs_list_module__ = __webpack_require__(957);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__availabilities_add_slot_availabilities_add_slot_page_module__ = __webpack_require__(958);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__cv_offer_module_find_job_find_job_module__ = __webpack_require__(956);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__cv_offer_module_jobs_list_jobs_list_module__ = __webpack_require__(958);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__availabilities_add_slot_availabilities_add_slot_page_module__ = __webpack_require__(959);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__calendar_calendar_module__ = __webpack_require__(598);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__documents_documents_module__ = __webpack_require__(959);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__registration_message_registration_message_module__ = __webpack_require__(960);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__documents_documents_module__ = __webpack_require__(960);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__registration_message_registration_message_module__ = __webpack_require__(961);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__cv_offer_module_keywords_keywords_module__ = __webpack_require__(310);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__cv_offer_module_remuneration_remuneration_module__ = __webpack_require__(580);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__missions_my_missions_list_my_missions_list_module__ = __webpack_require__(600);
@@ -18231,48 +18361,6 @@ var PagesModule = (function () {
 
 /***/ }),
 
-/***/ 939:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact__ = __webpack_require__(236);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var ContactModule = (function () {
-    function ContactModule() {
-    }
-    ContactModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__contact__["a" /* ContactPage */]
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__contact__["a" /* ContactPage */]), __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__["a" /* VojComponentsModule */]
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_2__contact__["a" /* ContactPage */]
-            ]
-        })
-    ], ContactModule);
-    return ContactModule;
-}());
-
-//# sourceMappingURL=contacts.module.js.map
-
-/***/ }),
-
 /***/ 94:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -18283,9 +18371,9 @@ var ContactModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__main_address_main_address__ = __webpack_require__(126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dtos_identity_dto__ = __webpack_require__(886);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dtos_identity_dto__ = __webpack_require__(887);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_navigation_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_utils__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_utils__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_toast_service__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_profile_service_profile_service__ = __webpack_require__(95);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -18307,9 +18395,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 var IdentityPage = (function () {
-    function IdentityPage(configurationService, profileService, events, viewCtrl, storage, navigationService, navParams, toast, alertCtrl) {
+    function IdentityPage(configurationService, profileService, events, viewCtrl, storage, navigationService, navParams, toast) {
         var _this = this;
         this.configurationService = configurationService;
         this.profileService = profileService;
@@ -18319,7 +18406,6 @@ var IdentityPage = (function () {
         this.navigationService = navigationService;
         this.navParams = navParams;
         this.toast = toast;
-        this.alertCtrl = alertCtrl;
         this.config = this.configurationService.configuration;
         this.isInscription = this.navParams.data.isInscription;
         this.identityDTO = new __WEBPACK_IMPORTED_MODULE_5__dtos_identity_dto__["a" /* IdentityDto */]();
@@ -18365,7 +18451,7 @@ var IdentityPage = (function () {
                     visible: true,
                     //TODO: include apostroph (') in the regex:
                     // for names such as D'Artagnan
-                    regex: '^[A-Za-z- ]*$',
+                    regex: '^[A-Za-z-\' ]*$',
                     id: 'lastname',
                     name: 'lastName',
                     validationMsg: "Veuillez saisir un nom valide"
@@ -18379,7 +18465,7 @@ var IdentityPage = (function () {
                     visible: true,
                     //TODO: include apostroph (') in the regex:
                     // for names such as D'Artagnan
-                    regex: '^[A-Za-z- ]*$',
+                    regex: '^[A-Za-z-\' ]*$',
                     id: 'middlename',
                     name: 'middleName',
                     validationMsg: "Veuillez saisir un nom de jeune fille valide"
@@ -18393,7 +18479,7 @@ var IdentityPage = (function () {
                     visible: true,
                     //TODO: include apostroph (') in the regex:
                     // for names such as D'Artagnan
-                    regex: '^[A-Za-z- ]*$',
+                    regex: '^[A-Za-z-\' ]*$',
                     id: 'firstname',
                     name: 'firstName',
                     validationMsg: "Veuillez saisir un prénom valide"
@@ -18414,6 +18500,8 @@ var IdentityPage = (function () {
         //TODO: prevent accessing to this page in the case of disconnected users
         this.storage.get("currentUser").then(function (data) {
             if (__WEBPACK_IMPORTED_MODULE_7__utils_utils__["b" /* ObjectUtils */].isEmpty(data)) {
+                //TODO: restrict access to this page to logged in users
+                //redirecting to the search page was a bad idea, we should redirect to a landing page or display a notification
                 return;
             }
             _this.currentUser = JSON.parse(data);
@@ -18438,27 +18526,7 @@ var IdentityPage = (function () {
             this.formData.fields.filter(function (f) { return f.name === "middleName"; })[0].visible = false;
         }
     };
-    /*checkEditedFields() {
-        if ((this.formData.fields[1].value !== this.identityDTO.firstName || this.formData.fields[2].value !== this.identityDTO.middleName ||
-            this.formData.fields[3].value !== this.identityDTO.lastName) && (this.identityDTO.firstName !== ''
-                && this.identityDTO.lastName !== '' && this.identityDTO.middleName !== '')) {
-            return true;
-        }
-        return false
-    }*/
-    /*checkEnteredFields() {
-        if (this.identityDTO.firstName === '' && this.identityDTO.lastName === '' && this.identityDTO.middleName === '') {
-            return true;
-        }
-        return false
-    }*/
     IdentityPage.prototype.saveIdentity = function () {
-        /*if (this.checkEditedFields())  {
-            this.toast.presentEditingToast();
-        }
-        else if (this.checkEnteredFields()) {
-            this.toast.presentEnteredToast();
-        }*/
         //if all fields are empty, ignore this step and go to the next page
         /*let ignoreThisStep = !ObjectUtils.isFormNotEmpty(this.formData.fields);
         if(ignoreThisStep && this.isInscription){
@@ -18486,25 +18554,19 @@ var IdentityPage = (function () {
                 //TODO: ask JAKJOUD, alert the user to verify his bank settings
                 //in the case of inscription: we should dismiss the identity modal/page and show the MainAddress modal/page
                 if (_this.isInscription) {
+                    _this.toast.presentEnteredToast();
                     _this.goToMainAddressPage();
+                }
+                else {
+                    _this.toast.presentEditingToast();
                 }
             }
             else {
-                var alert_1 = _this.alertCtrl.create({
-                    title: "Erreur",
-                    subTitle: 'une erreur est survenue lors de l\'enregistrement des données. Veuillez réessayer.',
-                    cssClass: 'identity-message',
-                    buttons: ['Ok']
-                });
-                alert_1.present();
-                console.log("une erreur est survenue lors de l'enregistrement des données");
+                _this.toast.presentErrorToast();
                 console.log(data.error);
             }
         });
     };
-    /*
-     * Dismissing the current modal (in the case of inscription), and going to the MainAddress page
-     */
     IdentityPage.prototype.goToMainAddressPage = function () {
         this.navigationService.dismiss(this.viewCtrl);
         var vojPage = { page: __WEBPACK_IMPORTED_MODULE_4__main_address_main_address__["a" /* MainAddressPage */], isWebModal: true, params: { isInscription: this.isInscription } };
@@ -18521,8 +18583,7 @@ var IdentityPage = (function () {
             __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */],
             __WEBPACK_IMPORTED_MODULE_6__services_navigation_service__["a" /* NavigationService */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["n" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_8__services_toast_service__["a" /* ToastService */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* AlertController */]])
+            __WEBPACK_IMPORTED_MODULE_8__services_toast_service__["a" /* ToastService */]])
     ], IdentityPage);
     return IdentityPage;
 }());
@@ -18532,6 +18593,48 @@ var IdentityPage = (function () {
 /***/ }),
 
 /***/ 940:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var ContactModule = (function () {
+    function ContactModule() {
+    }
+    ContactModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__contact__["a" /* ContactPage */]
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__contact__["a" /* ContactPage */]), __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__["a" /* VojComponentsModule */]
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__contact__["a" /* ContactPage */]
+            ]
+        })
+    ], ContactModule);
+    return ContactModule;
+}());
+
+//# sourceMappingURL=contacts.module.js.map
+
+/***/ }),
+
+/***/ 941:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18574,7 +18677,7 @@ var DetailsPageModule = (function () {
 
 /***/ }),
 
-/***/ 941:
+/***/ 942:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18617,7 +18720,7 @@ var SignUpPageModule = (function () {
 
 /***/ }),
 
-/***/ 942:
+/***/ 943:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18657,7 +18760,7 @@ var AccountPageModule = (function () {
 
 /***/ }),
 
-/***/ 943:
+/***/ 944:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18697,7 +18800,7 @@ var IdentityModule = (function () {
 
 /***/ }),
 
-/***/ 944:
+/***/ 945:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18737,7 +18840,7 @@ var MainAddressModule = (function () {
 
 /***/ }),
 
-/***/ 945:
+/***/ 946:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18780,7 +18883,7 @@ var LoginModule = (function () {
 
 /***/ }),
 
-/***/ 946:
+/***/ 947:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18823,7 +18926,7 @@ var BankSettingsPageModule = (function () {
 
 /***/ }),
 
-/***/ 947:
+/***/ 948:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18866,7 +18969,7 @@ var AvailabilitiesAddDaysPageModule = (function () {
 
 /***/ }),
 
-/***/ 948:
+/***/ 949:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18909,46 +19012,6 @@ var AvailabilitiesPageModule = (function () {
 
 /***/ }),
 
-/***/ 949:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LanguagesPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__languages__ = __webpack_require__(324);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var LanguagesPageModule = (function () {
-    function LanguagesPageModule() {
-    }
-    LanguagesPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__languages__["a" /* LanguagesPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__languages__["a" /* LanguagesPage */]),
-                __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__["a" /* VojComponentsModule */]
-            ],
-        })
-    ], LanguagesPageModule);
-    return LanguagesPageModule;
-}());
-
-//# sourceMappingURL=languages.module.js.map
-
-/***/ }),
-
 /***/ 95:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -18957,7 +19020,7 @@ var LanguagesPageModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__http_request_http_request__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_utils__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_utils__ = __webpack_require__(34);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -19002,17 +19065,8 @@ var ProfileService = (function () {
             "role": this.config.customer == "J" ? "jobyer" : "employeur",
             "accountId": accountId.toString()
         };
-        //let url = (this.config.urls.filter(tuple => tuple.key === "identity")).value;
-        var url;
-        for (var i = 0; i < this.config.urls.length; i++) {
-            var t = this.config.urls[i];
-            if (t.key == "profile") {
-                url = t.value;
-                break;
-            }
-        }
         return new Promise(function (resolve) {
-            _this.http.call(payload, url, "", true).subscribe(function (data) {
+            _this.http.call(payload, _this.url, "", true).subscribe(function (data) {
                 resolve(data);
             });
         });
@@ -19023,16 +19077,8 @@ var ProfileService = (function () {
             "service": "GET_PERSONAL_DETAILS",
             "jobyerId": jobyerId.toString()
         };
-        var url;
-        for (var i = 0; i < this.config.urls.length; i++) {
-            var t = this.config.urls[i];
-            if (t.key == "profile") {
-                url = t.value;
-                break;
-            }
-        }
         return new Promise(function (resolve) {
-            _this.http.call(payload, url, "", true).subscribe(function (data) {
+            _this.http.call(payload, _this.url, "", true).subscribe(function (data) {
                 resolve(data);
             });
         });
@@ -19043,16 +19089,8 @@ var ProfileService = (function () {
             "service": "GET_PERSONAL_DETAILS_IDENTITY",
             "jobyerId": jobyerId.toString()
         };
-        var url;
-        for (var i = 0; i < this.config.urls.length; i++) {
-            var t = this.config.urls[i];
-            if (t.key == "profile") {
-                url = t.value;
-                break;
-            }
-        }
         return new Promise(function (resolve) {
-            _this.http.call(payload, url, "", true).subscribe(function (data) {
+            _this.http.call(payload, _this.url, "", true).subscribe(function (data) {
                 resolve(data);
             });
         });
@@ -19064,16 +19102,8 @@ var ProfileService = (function () {
             "role": this.config.customer == "J" ? "jobyer" : "employeur",
             "roleId": roleId.toString()
         };
-        var url;
-        for (var i = 0; i < this.config.urls.length; i++) {
-            var t = this.config.urls[i];
-            if (t.key == "profile") {
-                url = t.value;
-                break;
-            }
-        }
         return new Promise(function (resolve) {
-            _this.http.call(payload, url, "", true).subscribe(function (data) {
+            _this.http.call(payload, _this.url, "", true).subscribe(function (data) {
                 resolve(data);
             });
         });
@@ -19089,17 +19119,8 @@ var ProfileService = (function () {
             "service": "GET_MUNICIPALITIES_BY_DEPARTMENT",
             "departmentId": departmentId.toString()
         };
-        //let url = (this.config.urls.filter(tuple => tuple.key === "identity")).value;
-        var url;
-        for (var i = 0; i < this.config.urls.length; i++) {
-            var t = this.config.urls[i];
-            if (t.key == "profile") {
-                url = t.value;
-                break;
-            }
-        }
         return new Promise(function (resolve) {
-            _this.http.call(payload, url, "", true).subscribe(function (data) {
+            _this.http.call(payload, _this.url, "", true).subscribe(function (data) {
                 resolve(data);
             });
         });
@@ -19127,17 +19148,8 @@ var ProfileService = (function () {
             "departmentId": birthData.department.toString(),
             "municipalityId": birthData.municipality.toString()
         };
-        //let url = (this.config.urls.filter(tuple => tuple.key === "identity")).value;
-        var url;
-        for (var i = 0; i < this.config.urls.length; i++) {
-            var t = this.config.urls[i];
-            if (t.key == "profile") {
-                url = t.value;
-                break;
-            }
-        }
         return new Promise(function (resolve) {
-            _this.http.call(payload, url, "", true).subscribe(function (data) {
+            _this.http.call(payload, _this.url, "", true).subscribe(function (data) {
                 resolve(data);
             });
         });
@@ -19156,17 +19168,8 @@ var ProfileService = (function () {
             "validFrom": identityCardData.validFrom,
             "validTo": identityCardData.validTo
         };
-        //let url = (this.config.urls.filter(tuple => tuple.key === "identity")).value;
-        var url;
-        for (var i = 0; i < this.config.urls.length; i++) {
-            var t = this.config.urls[i];
-            if (t.key == "profile") {
-                url = t.value;
-                break;
-            }
-        }
         return new Promise(function (resolve) {
-            _this.http.call(payload, url, "", true).subscribe(function (data) {
+            _this.http.call(payload, _this.url, "", true).subscribe(function (data) {
                 resolve(data);
             });
         });
@@ -19182,17 +19185,8 @@ var ProfileService = (function () {
             "bic": __WEBPACK_IMPORTED_MODULE_3__utils_utils__["c" /* StringUtils */].preventNull(bankData.bic),
             "iban": __WEBPACK_IMPORTED_MODULE_3__utils_utils__["c" /* StringUtils */].preventNull(bankData.iban)
         };
-        //let url = (this.config.urls.filter(tuple => tuple.key === "identity")).value;
-        var url;
-        for (var i = 0; i < this.config.urls.length; i++) {
-            var t = this.config.urls[i];
-            if (t.key == "profile") {
-                url = t.value;
-                break;
-            }
-        }
         return new Promise(function (resolve) {
-            _this.http.call(payload, url, "", true).subscribe(function (data) {
+            _this.http.call(payload, _this.url, "", true).subscribe(function (data) {
                 resolve(data);
             });
         });
@@ -19210,6 +19204,46 @@ var ProfileService = (function () {
 /***/ }),
 
 /***/ 950:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LanguagesPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__languages__ = __webpack_require__(324);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var LanguagesPageModule = (function () {
+    function LanguagesPageModule() {
+    }
+    LanguagesPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__languages__["a" /* LanguagesPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__languages__["a" /* LanguagesPage */]),
+                __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__["a" /* VojComponentsModule */]
+            ],
+        })
+    ], LanguagesPageModule);
+    return LanguagesPageModule;
+}());
+
+//# sourceMappingURL=languages.module.js.map
+
+/***/ }),
+
+/***/ 951:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19249,7 +19283,7 @@ var EnterpriseSearchPageModule = (function () {
 
 /***/ }),
 
-/***/ 951:
+/***/ 952:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19292,7 +19326,7 @@ var ResetPasswordModule = (function () {
 
 /***/ }),
 
-/***/ 952:
+/***/ 953:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19332,7 +19366,7 @@ var MyCvPageModule = (function () {
 
 /***/ }),
 
-/***/ 953:
+/***/ 954:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19372,7 +19406,7 @@ var QualitiesPageModule = (function () {
 
 /***/ }),
 
-/***/ 954:
+/***/ 955:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19415,14 +19449,14 @@ var InformationResumePageModule = (function () {
 
 /***/ }),
 
-/***/ 955:
+/***/ 956:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FindJobPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__find_job__ = __webpack_require__(956);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__find_job__ = __webpack_require__(957);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -19455,7 +19489,7 @@ var FindJobPageModule = (function () {
 
 /***/ }),
 
-/***/ 956:
+/***/ 957:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19513,7 +19547,7 @@ var FindJobPage = (function () {
 
 /***/ }),
 
-/***/ 957:
+/***/ 958:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19553,7 +19587,7 @@ var JobsListPageModule = (function () {
 
 /***/ }),
 
-/***/ 958:
+/***/ 959:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19593,7 +19627,7 @@ var AvailabilitiesAddSlotPageModule = (function () {
 
 /***/ }),
 
-/***/ 959:
+/***/ 960:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19633,7 +19667,7 @@ var DocumentsPageModule = (function () {
 
 /***/ }),
 
-/***/ 960:
+/***/ 961:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19642,7 +19676,7 @@ var DocumentsPageModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__registration_message__ = __webpack_require__(961);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__registration_message__ = __webpack_require__(962);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -19676,7 +19710,7 @@ var RegistrationMessagePageModule = (function () {
 
 /***/ }),
 
-/***/ 961:
+/***/ 962:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19730,8 +19764,8 @@ var RegistrationMessagePage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__strategy_employer__ = __webpack_require__(909);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__strategy_jobyer__ = __webpack_require__(910);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__strategy_employer__ = __webpack_require__(910);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__strategy_jobyer__ = __webpack_require__(911);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__strategy_context__ = __webpack_require__(587);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_navigation_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__identity_identity__ = __webpack_require__(94);
