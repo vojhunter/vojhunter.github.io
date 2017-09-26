@@ -870,6 +870,7 @@ var PersonalDetailsPage = (function () {
                     value: null,
                     placeholder: 'Date de naissance',
                     visible: true,
+                    disabled: false,
                     id: 'date-of-birth',
                     max: new Date(),
                     //validationMsg: 'Vous devez avoir plus de 18 ans',
