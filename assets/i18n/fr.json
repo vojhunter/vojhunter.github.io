@@ -9,7 +9,8 @@
     "EMAIL": "Adresse mail",
     "PASSWORD": "Mot de passe",
     "PASSWORD_CONFIRMATION": "Confirmation du mot de passe",
-    "CANCEL_BTN": "Annuler"
+    "CANCEL_BTN": "Annuler",
+    "OK_BTN": "Ok"
   },
 
   "VALIDATION": {
@@ -67,12 +68,127 @@
     "NAME_ERR": "Nom erreur",
     "FIRST_NAME": "Prénom",
     "FIRST_NAME_ERR": "Prénom erreur",
-    "COMPANY_NUMBER": "Siret",
-    "COMPANY_NUMBER_ERR": "Siret erreur",
+    "COMPANY_SIRET": "SIRET",
+    "COMPANY_SIRET_ERR": "Siret erreur",
     "NAF": "Naf",
     "NAF_ERR": "Naf erreur",
     "VALIDATE_BTN": "Valider",
     "MRS": "Mme",
     "MR": "Mr"
+  },
+  "AVAILABILITIES": {
+    "MY_AVAILABILITIES": "Mes disponibilités",
+    "ADD_AVAILABILITY": "Ajouter une disponibilité",
+    "FROM": "De",
+    "TO": "À",
+    "ADD_TO_MY_ALERTS": "Ajouter à mes alertes",
+    "VALIDATE": "Valider"
+  },
+  "AVAILABILITIES_ADD_DAYS": {
+    "ADD_AVAILABILITY": "Ajouter une disponibilité",
+    "MONDAY": "Lundi",
+    "TUESDAY": "Mardi",
+    "WEDNESDAY": "Mercredi",
+    "THURSDAY": "Jeudi",
+    "FRIDAY": "Vendredi",
+    "SATURDAY": "Samedi",
+    "SUNDAY": "Dimanche",
+    "VALIDATE": "Valider"
+  },
+  "JOBYER_AVAILABILITY_CHOICE": {
+    "I_AM_AVAILABLE": "Je suis disponible",
+    "TOTALLY": "Totalement",
+    "PARTIALL": "Partiellement",
+    "ADD_AVAILABILITY": "Ajouter une disponibilité",
+    "NEXT": "Suivant"
+  },
+  "KEYWORDS": {
+    "MY_KEYWORDS": "Mes mots clés",
+    "VALIDATE": "Valider",
+    "ADD_A_KEYWORD": "Ajouter un mot clé",
+    "AVAILABLE": "Disponible",
+    "TRACK_AGENT": "Agent de piste"
+  },
+  "LANGUAGES": {
+    "MY_LANGUAGES": "Mes langues",
+    "ADD_A_LANGUAGE": "Ajouter une langue",
+    "LANGUAGE": "Langue",
+    "LEVEL": "Niveau",
+    "VALIDATE": "Valider"
+  },
+  "QUALITIES": {
+    "MY_QUALITIES": "Mes qualités",
+    "ADD_QUALITY": "Ajouter une qualité",
+    "VALIDATE": "Valider"
+  },
+  "AVAILABILITIES_ADD_SLOT": {
+    "ADD_AVAILABILITY": "Ajouter une disponibilité",
+    "AVAILABLE_FROM": "Disponible du",
+    "AVAILABLE_TILL": "Au",
+    "VALIDATE": "Valider",
+    "FULL_DAY": "Jour entier",
+    "FROM": "De",
+    "TO": "À"
+  },
+  "REMUNERATION": {
+    "MY_REMUNERATION": "Ma rémunération",
+    "VALIDATE": "Valider",
+    "DESIRED_HOURLY_RATE": "Taux horaire souhaité (brut en euros)",
+    "FREQUENCY_OF_REMUNERATION": "Fréquence de rémunération"
+  },
+  "MY_JOBS": {
+    "LABEL": "Ajouter un job qui m'intéresse",
+    "MY_JOBS": "Mes Jobs",
+    "JOB": "Job",
+    "LEVEL": "Niveau",
+    "VALIDATE": "Valider"
+  },
+  "MY_CV": {
+    "MY_CV": "Mon CV",
+    "ADD_FILE": "Ajouter le fichier",
+    "VALIDATE": "Valider"
+  },
+  "INFORMATION_RESUME": {
+    "MY_JOBS": "Mes jobs",
+    "MY_AVAILABILITIES": "Mes disponibilités",
+    "MY_REMUNERATION": "Ma rémunération",
+    "MY_QUALITIES": "Mes qualités",
+    "MY_LANGUAGES": "Mes langues",
+    "MY_KEYWORDS": "Mes mots clés",
+    "MY_CV": "Mon CV"
+  },
+  "DOCUMENTS": {
+    "TITLE": "Mes documents",
+    "TITLEIDDOCUMENT": "Pièce d'identité",
+    "TYPEIDDOCUMENT": "Vous devez charger votre pièce d'identité",
+    "TITLEVITALCARD": "Vous devez charger votre carte vitale",
+    "TYPEVITALCARD": "Carte vitale",
+    "TITLEPROOFOFDOMICILE": "Vous devez charger votre justificatif de domicile",
+    "TYPEPROOFOFDOMICILE": "Justificatif de domicile",
+    "TITLEDOCUMENTLABEL": "Vous pouvez charger un autre document",
+    "TYPEDOCUMENTLABEL": "No du document",
+    "CONFIRMATION_TITLE": "Êtes-vous sûr de vouloir supprimer cette valeur?",
+    "AGREE_BTN": "OUI",
+    "CANCEL_BTN": "NON",
+    "TOAST_DELETE_MSG": "Vos informations ont bien été supprimées"
+  },
+  "BANK_SETTINGS": {
+    "TITLE": "Mes coordonnées bancaires",
+    "BANK_NAME": "Nom de la banque",
+    "OWNER_NAME": "Nom du détenteur",
+    "IBAN": "IBAN",
+    "BIC": "BIC",
+    "VALIDATE_BTN": "Valider",
+    "FOLLOWING_BTN": "Suivant"
+  },
+  "MODAL_SERVICE": {
+    "CLOSE_TOAST_TEXT": "Vous pourrez reprendre la saisie de vos informations depuis votre compte.",
+    "CLOSE_ALERT_TEXT": "Êtes vous sûr de vouloir quitter l'inscription?",
+    "OK_BTN": "Oui",
+    "CANCEL_BTN": "Non"
+  },
+  "CALENDAR": {
+    "JOBYER_TITLE": "Mes disponibilités",
+    "EMPLOYER_TITLE": "Mon calendrier des annonces"
   }
 }
