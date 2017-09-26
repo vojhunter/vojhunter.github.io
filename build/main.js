@@ -2286,8 +2286,8 @@ var NavigationService = (function () {
 var envConfig = {
     cid: "8f3c82e6-12d0-4a86-bb22-c5d30d2c2b2f",
     //cid : "3ml0y3r",
-    server: "http://127.0.0.1:8000/appsettings/",
-    //server : "https://hermes.vitonjob.com/appsettings/",
+    //server : "http://127.0.0.1:8000/appsettings/",
+    server: "https://hermes.vitonjob.com/appsettings/",
     thresholdWidth: 768
 };
 //# sourceMappingURL=environment.js.map
