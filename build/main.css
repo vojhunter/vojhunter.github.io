@@ -30286,6 +30286,29 @@ page-home voj-map #map {
   margin: 0 10px;
 }
 
+page-missions-calendar voj-calendar {
+  background-color: #ffffff !important;
+}
+
+page-missions-calendar .calender-container {
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  background-color: #00c1a9 !important;
+}
+
+page-missions-calendar .calendar-wrapper {
+  height: 100%;
+}
+
+page-missions-calendar .calendar-wrapper.pad {
+  background-color: #00c1a9 !important;
+  padding: 16px;
+}
+
 page-my-missions-list .my-missions-warning-message {
   color: #ffffff;
   width: 100%;
@@ -30362,6 +30385,94 @@ page-my-missions-list ion-card.map.card.card-md {
 }
 
 .my-missions-message .alert-button-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  padding: 8px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+page-pending-missions .pending-missions-warning-message {
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+
+page-pending-missions .pending-missions-info-message {
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+
+page-pending-missions .pending-missions-page-content {
+  background-color: #00c1a9;
+}
+
+page-pending-missions .pending-missions-page-content .scroll-content {
+  padding: 0px !important;
+}
+
+page-pending-missions ion-segment-button {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+page-pending-missions .pending-missions-message {
+  z-index: 1;
+  bottom: 5%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+page-pending-missions .pending-missions-warning-chip {
+  background-color: #f53d3d;
+  color: #ffffff;
+}
+
+page-pending-missions .pending-missions-info-chip {
+  background-color: #14baa6;
+  color: #ffffff;
+}
+
+page-pending-missions #map {
+  position: relative;
+  height: 100%;
+}
+
+page-pending-missions ion-card.map.card.card-md {
+  height: 72%;
+  width: 100% !important;
+  margin: 0;
+}
+
+.pending-missions-message .alert-message {
+  font-size: 16px;
+  text-align: center;
+}
+
+.pending-missions-message .alert-button .button-inner {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.pending-missions-message .alert-button {
+  background-color: #55b7a6;
+  color: #ffffff;
+  text-align: center;
+  font-size: 10px;
+  margin: 15px;
+  width: 100px;
+}
+
+.pending-missions-message .alert-button-group {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
