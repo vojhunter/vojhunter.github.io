@@ -30286,6 +30286,29 @@ page-home voj-map #map {
   margin: 0 10px;
 }
 
+page-missions-calendar voj-calendar {
+  background-color: #ffffff !important;
+}
+
+page-missions-calendar .calender-container {
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  background-color: #00c1a9 !important;
+}
+
+page-missions-calendar .calendar-wrapper {
+  height: 100%;
+}
+
+page-missions-calendar .calendar-wrapper.pad {
+  background-color: #00c1a9 !important;
+  padding: 16px;
+}
+
 page-my-missions-list .my-missions-warning-message {
   color: #ffffff;
   width: 100%;
