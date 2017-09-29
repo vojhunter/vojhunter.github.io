@@ -30000,22 +30000,16 @@ page-calendar ion-content.content-md {
   background-color: var(--voj-color-primary);
 }
 
-page-calendar h1 {
-  font-weight: 400;
-  margin-top: 1rem;
+page-calendar .pad {
+  padding: 16px;
 }
 
 page-calendar .calendar-wrapper {
   height: 85%;
 }
 
-page-calendar .calendar-wrapper.pad {
-  padding: 16px;
-}
-
 page-calendar .calendar-wrapper voj-calendar {
   background-color: #fff;
-  padding: 16px;
   border-radius: 2px;
 }
 
@@ -30159,6 +30153,10 @@ jobs-list-page {
   background-color: var(--voj-color-primary);
 }
 
+jobs-list-page .voj-seciton-card-wrapper {
+  position: relative;
+}
+
 jobs-list-page .jobs-list-container {
   padding: 15px;
   background-color: var(--voj-color-primary);
@@ -30251,13 +30249,6 @@ languages-page {
   background-color: var(--voj-color-primary);
 }
 
-languages-page .custom-btn {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  margin-left: -18%;
-}
-
 languages-page .custom-select-btn-attachment {
   padding-right: 10px !important;
 }
@@ -30292,26 +30283,12 @@ my-cv-page .my-cv-child-container {
   padding-bottom: 50px;
 }
 
-my-cv-page .custom-btn {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  margin-left: -18%;
-}
-
 qualities-page {
   background-color: var(--voj-color-primary);
 }
 
 qualities-page .voj-form-container {
   min-height: 80%;
-}
-
-qualities-page .custom-btn {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  margin-left: -18%;
 }
 
 qualities-page .custom-select-btn-attachment {

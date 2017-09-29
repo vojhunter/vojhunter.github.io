@@ -165,7 +165,7 @@ var VojComponentsModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_landing_page_landing_page__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__modal_service__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__modal_service__ = __webpack_require__(55);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -836,6 +836,21 @@ var VojCardModel = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojPageHeaderType; });
+var VojPageHeaderType = (function () {
+    function VojPageHeaderType() {
+        this.isCanceled = true;
+    }
+    return VojPageHeaderType;
+}());
+
+//# sourceMappingURL=voj-page-header.model.js.map
+
+/***/ }),
+/* 54 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InformationResumePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
@@ -923,14 +938,14 @@ var InformationResumePage = (function () {
         ];
     }
     InformationResumePage.prototype.navigate = function (page) {
-        this.navService.navigate('details', { page: page, isRoot: true });
+        this.navService.navigate('details', { page: page, isRoot: false });
     };
     InformationResumePage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad InformationResumePage');
     };
     InformationResumePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'information-resume-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\information-resume\information-resume.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<div [ngClass]="isMobile ? \'mobile-container\' : \'desktop-container\'" class="information-resume-parent">\n\n    <div class="information-resume-child">\n\n        <ion-card class="information-resume-list-wrapper">\n\n            <ion-list padding class="information-resume-list">\n\n                <ion-item *ngFor="let item of informationResumeData">\n\n                    <span class="information-resume-label">{{ item.label | translate }}</span>\n\n                    <button class="information-resume-edit-btn" ion-button icon-only item-end small\n\n                            (click)="item.action()">\n\n                        <ion-icon name="md-create"></ion-icon>\n\n                    </button>\n\n                </ion-item>\n\n            </ion-list>\n\n        </ion-card>\n\n    </div>\n\n</div>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\information-resume\information-resume.html"*/,
+            selector: 'information-resume-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\information-resume\information-resume.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<div [ngClass]="isMobile ? \'mobile-container\' : \'desktop-container\'" class="information-resume-parent">\n\n    <div class="information-resume-child">\n\n        <ion-card class="information-resume-list-wrapper">\n\n            <ion-list padding class="information-resume-list">\n\n                <ion-item\n\n                    *ngFor="let item of informationResumeData"\n\n                    (click)="item.action()">\n\n                    <span class="information-resume-label">\n\n                        {{ item.label | translate }}\n\n                    </span>\n\n                    <button class="information-resume-edit-btn" ion-button icon-only item-end small>\n\n                        <ion-icon name="md-create"></ion-icon>\n\n                    </button>\n\n                </ion-item>\n\n            </ion-list>\n\n        </ion-card>\n\n    </div>\n\n</div>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\information-resume\information-resume.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__["a" /* Configuration */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */],
@@ -943,7 +958,7 @@ var InformationResumePage = (function () {
 //# sourceMappingURL=information-resume.js.map
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1012,8 +1027,7 @@ var ModalService = (function () {
                                 {
                                     text: translation.OK_BTN,
                                     handler: function () {
-                                        //no need to tell the user that he can pursue entering his data, because he isn't even subscribed
-                                        //this.closeConfirmationModal(modal);
+                                        _this.closeConfirmationModal(modal);
                                     }
                                 }
                             ]
@@ -1025,16 +1039,20 @@ var ModalService = (function () {
         });
     };
     ModalService.prototype.closeConfirmationModal = function (page) {
-        var _this = this;
         page.dismiss();
-        this.translate.get('MODAL_SERVICE').subscribe(function (translation) {
-            var toast = _this.toastCtrl.create({
-                message: translation.CLOSE_TOAST_TEXT,
-                duration: 3000,
-                position: 'top'
-            });
-            toast.present();
-        });
+        //no need to tell the user that he can pursue entering his data, because he isn't even subscribed
+        /*this.translate.get('MODAL_SERVICE').subscribe(
+            translation => {
+
+                let toast = this.toastCtrl.create({
+                    message: translation.CLOSE_TOAST_TEXT,
+                    duration: 3000,
+                    position: 'top'
+                });
+
+                toast.present();
+            }
+        )*/
     };
     ModalService.prototype.setModalHeight = function (header) {
         console.log('setModalHeight');
@@ -1062,11 +1080,11 @@ var ModalService = (function () {
 //# sourceMappingURL=modal.service.js.map
 
 /***/ }),
-/* 55 */,
 /* 56 */,
 /* 57 */,
 /* 58 */,
-/* 59 */
+/* 59 */,
+/* 60 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1080,22 +1098,22 @@ var TextType = (function () {
 //# sourceMappingURL=text-type.js.map
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_page_header_model__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_page_header_model__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_search_service_search_service__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_voj_events_voj_events__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__details_details__ = __webpack_require__(131);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_modal_service__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_modal_service__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_geolocation__ = __webpack_require__(227);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__cv_offer_module_information_resume_information_resume__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__cv_offer_module_information_resume_information_resume__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__config_environment__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__account_module_login_login__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_storage__ = __webpack_require__(20);
@@ -1692,7 +1710,7 @@ var SearchPage = (function () {
 //# sourceMappingURL=search.js.map
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1703,7 +1721,7 @@ var SearchPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_search_query_model__ = __webpack_require__(137);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mission_service_factory__ = __webpack_require__(927);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_voj_card_model__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_text_type__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_text_type__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_utils__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__voj_events_voj_events__ = __webpack_require__(35);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1838,24 +1856,9 @@ var MissionServiceProvider = (function () {
 //# sourceMappingURL=mission-service.js.map
 
 /***/ }),
-/* 62 */,
 /* 63 */,
 /* 64 */,
-/* 65 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojPageHeaderType; });
-var VojPageHeaderType = (function () {
-    function VojPageHeaderType() {
-        this.isCanceled = true;
-    }
-    return VojPageHeaderType;
-}());
-
-//# sourceMappingURL=voj-page-header.model.js.map
-
-/***/ }),
+/* 65 */,
 /* 66 */,
 /* 67 */,
 /* 68 */,
@@ -1919,7 +1922,7 @@ var VojCardModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_account_service_account_service__ = __webpack_require__(229);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_modal_service__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_modal_service__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sign_up_sign_up__ = __webpack_require__(132);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__scripts_md5__ = __webpack_require__(572);
@@ -1927,9 +1930,9 @@ var VojCardModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__reset_password_reset_password__ = __webpack_require__(573);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_navigation_service__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__search_module_search_search__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__search_module_search_search__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_voj_events_voj_events__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__cv_offer_module_information_resume_information_resume__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__cv_offer_module_information_resume_information_resume__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__calendar_calendar__ = __webpack_require__(234);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2467,7 +2470,7 @@ var AvailabilitiesPage = (function () {
     };
     AvailabilitiesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'availabilities-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\availabilities\availabilities.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n\n\n<div class="voj-content">\n\n    <ion-card>\n\n        <div class="voj-form-container">\n\n\n\n            <p\n\n                    (click)="goToJobyerAvailabilityChoice()"\n\n                    class="availabilities-link">\n\n                <!-- Ajouter une disponibilité -->\n\n                {{ \'AVAILABILITIES.MY_AVAILABILITIES\' | translate }}\n\n            </p>\n\n\n\n            <ion-list padding class="availability-list">\n\n                <ion-item *ngFor="let item of testAvailabilitiesData let i = index">\n\n                <span class="availability-label">\n\n                    {{ \'AVAILABILITIES.FROM\' | translate }} {{ item.fromDay | date: \'dd/MM/y\' }} {{ \'AVAILABILITIES.TO\' | translate }} {{ item.toDay | date: \'dd/MM/y\' }}\n\n                </span>\n\n                    <br>\n\n                    <span class="availability-label">\n\n                    {{ \'AVAILABILITIES.FROM\' | translate }} {{ item.fromHour }} {{ \'AVAILABILITIES.TO\' | translate }} {{ item.toHour }}\n\n                </span>\n\n                    <voj-form class="availability-toggle" [data]="{\n\n                    fields: [\n\n                        {\n\n                            type: \'checkbox\',\n\n                            value: \'radio 1\',\n\n                            label: \'AVAILABILITIES.ADD_TO_MY_ALERTS\',\n\n                            required: true,\n\n                            visible: true,\n\n                            id: \'\',\n\n                            name: \'radioTest\'\n\n                        }\n\n                    ]\n\n                }"></voj-form>\n\n\n\n                    <button class="availability-delete-btn" ion-button icon-only item-end\n\n                            (click)="deleteAvailability(i)">\n\n                        <ion-icon name="ios-trash"></ion-icon>\n\n                    </button>\n\n                </ion-item>\n\n            </ion-list>\n\n\n\n            <div class="availabilities-validate-button">\n\n                <button ion-button class="validate-btn titlecase-btn">\n\n                    {{ \'AVAILABILITIES.VALIDATE\' | translate }}\n\n                </button>\n\n            </div>\n\n\n\n        </div>\n\n    </ion-card>\n\n</div>\n\n\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\availabilities\availabilities.html"*/,
+            selector: 'availabilities-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\availabilities\availabilities.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n\n\n\n\n<ion-card>\n\n    <ion-card-content>\n\n        \n\n        <p\n\n            (click)="goToJobyerAvailabilityChoice()"\n\n            class="availabilities-link">\n\n            <!-- Ajouter une disponibilité -->\n\n            {{ \'AVAILABILITIES.MY_AVAILABILITIES\' | translate }}\n\n        </p>\n\n    \n\n        <ion-list padding class="availability-list">\n\n            <ion-item *ngFor="let item of testAvailabilitiesData let i = index">\n\n            <span class="availability-label">\n\n                {{ \'AVAILABILITIES.FROM\' | translate }} {{ item.fromDay | date: \'dd/MM/y\' }} {{ \'AVAILABILITIES.TO\' | translate }} {{ item.toDay | date: \'dd/MM/y\' }}\n\n            </span>\n\n                <br>\n\n                <span class="availability-label">\n\n                {{ \'AVAILABILITIES.FROM\' | translate }} {{ item.fromHour }} {{ \'AVAILABILITIES.TO\' | translate }} {{ item.toHour }}\n\n            </span>\n\n                <voj-form class="availability-toggle" [data]="{\n\n                fields: [\n\n                    {\n\n                        type: \'checkbox\',\n\n                        value: \'radio 1\',\n\n                        label: \'AVAILABILITIES.ADD_TO_MY_ALERTS\',\n\n                        required: true,\n\n                        visible: true,\n\n                        id: \'\',\n\n                        name: \'radioTest\'\n\n                    }\n\n                ]\n\n            }"></voj-form>\n\n    \n\n                <button class="availability-delete-btn" ion-button icon-only item-end\n\n                        (click)="deleteAvailability(i)">\n\n                    <ion-icon name="ios-trash"></ion-icon>\n\n                </button>\n\n            </ion-item>\n\n        </ion-list>\n\n    \n\n        <div class="availabilities-validate-button">\n\n            <button ion-button class="validate-btn titlecase-btn">\n\n                {{ \'AVAILABILITIES.VALIDATE\' | translate }}\n\n            </button>\n\n        </div>\n\n    \n\n    </ion-card-content>\n\n</ion-card>\n\n\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\availabilities\availabilities.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__["a" /* Configuration */],
             __WEBPACK_IMPORTED_MODULE_3__services_navigation_service__["a" /* NavigationService */]])
@@ -2675,7 +2678,7 @@ var VojSegmentModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchServiceProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_storage__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__http_request_http_request__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_voj_configuration__ = __webpack_require__(7);
@@ -4054,7 +4057,7 @@ var VojMapModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_card_model__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_voj_events_voj_events__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_navigation_service__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_voj_page_header_model__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_voj_page_header_model__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_search_service_search_service__ = __webpack_require__(95);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -4978,10 +4981,10 @@ var PersonalDetailsPage = (function () {
             else {
                 var savedBirthData = data;
                 _this.formData.fields.filter(function (f) { return f.name == 'dateOfBirth'; })[0].value = new Date(savedBirthData.birthDate);
-                _this.formData.fields.filter(function (f) { return f.name == 'countryBirth'; })[0].value = savedBirthData.birthPlace.country.name;
-                _this.formData.fields.filter(function (f) { return f.name == 'departmentOfBirth'; })[0].value = savedBirthData.birthPlace.department.name;
-                _this.formData.fields.filter(function (f) { return f.name == 'placeOfBirth'; })[0].value = savedBirthData.birthPlace.municipality.name;
-                _this.formData.fields.filter(function (f) { return f.name == 'socialSecurityNumber'; })[0].value = savedBirthData.numSS;
+                _this.formData.fields.filter(function (f) { return f.name == 'countryBirth'; })[0].value = __WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* StringUtils */].preventNull(savedBirthData.birthPlace.country.name);
+                _this.formData.fields.filter(function (f) { return f.name == 'departmentOfBirth'; })[0].value = __WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* StringUtils */].preventNull(savedBirthData.birthPlace.department.name);
+                _this.formData.fields.filter(function (f) { return f.name == 'placeOfBirth'; })[0].value = __WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* StringUtils */].preventNull(savedBirthData.birthPlace.municipality.name);
+                _this.formData.fields.filter(function (f) { return f.name == 'socialSecurityNumber'; })[0].value = __WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* StringUtils */].preventNull(savedBirthData.numSS);
             }
         });
     };
@@ -5555,7 +5558,7 @@ var PersonalDetailsIdentityPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_profile_service_profile_service__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_toast_service__ = __webpack_require__(72);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__search_module_search_search__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__search_module_search_search__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__bank_constraints__ = __webpack_require__(898);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_utils__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -5788,7 +5791,7 @@ var SearchQuery = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(243);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_voj_page_header_model__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_voj_page_header_model__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_voj_configuration_model__ = __webpack_require__(175);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -6020,7 +6023,7 @@ var AboutPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MissionsCalendarPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_mission_service_mission_service__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_mission_service_mission_service__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_utils__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_voj_calendar_full_calendar_full_calendar_service__ = __webpack_require__(129);
@@ -6189,7 +6192,7 @@ var VojConfiguration = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JobsListPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_modal_service__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_modal_service__ = __webpack_require__(55);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6253,7 +6256,7 @@ var JobsListPage = (function () {
     };
     JobsListPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'jobs-list-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\jobs-list\jobs-list.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<ion-card>\n\n    <div class="voj-content">\n\n        <div class="voj-form-container">\n\n            <voj-form [data]=\'formData\'></voj-form>\n\n        </div>\n\n    </div>\n\n</ion-card>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\jobs-list\jobs-list.html"*/,
+            selector: 'jobs-list-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\jobs-list\jobs-list.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<div class="voj-seciton-card-wrapper">\n\n    <ion-card>\n\n        <ion-card-content>\n\n            <voj-form [data]=\'formData\'></voj-form>\n\n        </ion-card-content>\n\n    </ion-card>\n\n</div>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\jobs-list\jobs-list.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__["a" /* Configuration */],
             __WEBPACK_IMPORTED_MODULE_2__services_modal_service__["a" /* ModalService */]])
@@ -6388,7 +6391,7 @@ var AvailabilitiesAddDaysPage = (function () {
     };
     AvailabilitiesAddDaysPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'availabilities-add-days-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\availabilities-add-days\availabilities-add-days.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<div class="voj-content availabilities-add-days-parent">\n\n    <div class="voj-form-containert availabilities-add-days-child" padding-top padding-bottom>\n\n        <voj-form [data]=\'formData\'></voj-form>\n\n    </div>\n\n</div>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\availabilities-add-days\availabilities-add-days.html"*/,
+            selector: 'availabilities-add-days-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\availabilities-add-days\availabilities-add-days.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<ion-card>\n\n    <ion-card-content>\n\n        <voj-form [data]=\'formData\'></voj-form>\n\n    </ion-card-content>\n\n</ion-card>\n\n<!-- <div class="voj-content availabilities-add-days-parent">\n\n    <div class="voj-form-containert availabilities-add-days-child" padding-top padding-bottom>\n\n    </div>\n\n</div> -->\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\availabilities-add-days\availabilities-add-days.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__["a" /* Configuration */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */],
@@ -6573,7 +6576,7 @@ var AccountService = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignupService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__http_request_http_request__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__ = __webpack_require__(7);
@@ -7158,7 +7161,8 @@ var CalendarPage = (function () {
                 }
             ],
             style: 'any',
-            isCanceled: true
+            isCanceled: true,
+            forceCloseDisabled: true
         };
         this.calendarData = {
             dayClick: function (date, jsEvent, view) {
@@ -7180,7 +7184,7 @@ var CalendarPage = (function () {
     CalendarPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPage */])(),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-calendar',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\calendar\calendar.html"*/'<ion-content\n\n	[class.full-height]="isDesktop"\n\n	ion-fixed>\n\n	<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n	\n\n	<div\n\n		[class.pad]="isDesktop"\n\n		class="calendar-wrapper">\n\n		<voj-calendar [data]="calendarData" [type]="calendarMode"></voj-calendar>\n\n	</div>\n\n	<voj-footer [data]="footerData"></voj-footer>\n\n</ion-content>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\calendar\calendar.html"*/,
+            selector: 'page-calendar',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\calendar\calendar.html"*/'<ion-content\n\n	[class.full-height]="isDesktop"\n\n	ion-fixed>\n\n	<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n	\n\n	<div\n\n		[class.pad]="isDesktop"\n\n		class="calendar-wrapper">\n\n		<voj-calendar\n\n			[class.pad]="isDesktop"\n\n			[data]="calendarData"\n\n			[type]="calendarMode">\n\n		</voj-calendar>\n\n	</div>\n\n	<voj-footer [data]="footerData"></voj-footer>\n\n</ion-content>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\calendar\calendar.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */]])
     ], CalendarPage);
@@ -7436,7 +7440,7 @@ var VojTableModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_navigation_service__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_module_search_search__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_module_search_search__ = __webpack_require__(61);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7750,12 +7754,12 @@ var ContactPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_voj_page_header_model__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_mission_service_mission_service__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_voj_page_header_model__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_mission_service_mission_service__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_voj_card_model__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_search_header_model__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_search_query_model__ = __webpack_require__(137);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_text_type__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_text_type__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_utils__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_navigation_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__mission_signature_mission_signature__ = __webpack_require__(607);
@@ -7938,13 +7942,13 @@ var PendingMissionsPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyMissionsListPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_page_header_model__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_page_header_model__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_search_header_model__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_voj_card_model__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_mission_service_mission_service__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_mission_service_mission_service__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_search_query_model__ = __webpack_require__(137);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_text_type__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_text_type__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_utils__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__details_details__ = __webpack_require__(131);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_navigation_service__ = __webpack_require__(12);
@@ -8265,11 +8269,11 @@ var MyMissionsListPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_utils__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_navigation_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__user_information_user_information__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_module_search_search__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_module_search_search__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__test_components_about_about__ = __webpack_require__(138);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_mission_service_mission_service__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_mission_service_mission_service__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__missions_pending_missions_pending_missions__ = __webpack_require__(244);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__missions_my_missions_list_my_missions_list__ = __webpack_require__(245);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__missions_missions_calendar_missions_calendar__ = __webpack_require__(139);
@@ -8630,7 +8634,7 @@ var map = {
 		241
 	],
 	"../pages/account-module/company/company.module": [
-		596
+		595
 	],
 	"../pages/account-module/enterprise-details/enterprise-details.module": [
 		603
@@ -8642,16 +8646,16 @@ var map = {
 		601
 	],
 	"../pages/account-module/personal-details-identity/personal-details-identity.module": [
-		594
+		593
 	],
 	"../pages/account-module/personal-details/personal-details.module": [
-		595
+		594
 	],
 	"../pages/account-module/user-information/user-information.module": [
 		598
 	],
 	"../pages/calendar/calendar.module": [
-		592
+		596
 	],
 	"../pages/cv-offer-module/jobyer-availability-choice/jobyer-availability-choice.module": [
 		597
@@ -8684,7 +8688,7 @@ var map = {
 		617
 	],
 	"../pages/search-module/search/search.module": [
-		593
+		592
 	],
 	"../pages/tabs/tabs.module": [
 		614
@@ -8795,8 +8799,8 @@ var KeywordsPageModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return KeywordsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_page_header_model__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__information_resume_information_resume__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_page_header_model__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__information_resume_information_resume__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_navigation_service__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -8835,7 +8839,7 @@ var KeywordsPage = (function () {
                     name: 'ajouter-un-mot-clé',
                     id: 'ajouter-un-mot-clé',
                     visible: true,
-                    type: 'customSelect',
+                    type: 'search-select-list',
                     dataset: [
                         {
                             id: 4,
@@ -8951,7 +8955,7 @@ var QualitiesPage = (function () {
     };
     QualitiesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'qualities-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\qualities\qualities.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<ion-card>\n\n    <div class="voj-content">\n\n        <div class="voj-form-container">\n\n            <voj-form [data]=\'formData\'></voj-form>\n\n        </div>\n\n    </div>\n\n</ion-card>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\qualities\qualities.html"*/,
+            selector: 'qualities-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\qualities\qualities.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<ion-card>\n\n    <ion-card-content>\n\n        <voj-form [data]=\'formData\'></voj-form>\n\n    </ion-card-content>\n\n</ion-card>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\qualities\qualities.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__["a" /* Configuration */]])
     ], QualitiesPage);
@@ -8969,7 +8973,7 @@ var QualitiesPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_navigation_service__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__information_resume_information_resume__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__information_resume_information_resume__ = __webpack_require__(54);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -9039,7 +9043,7 @@ var LanguagesPage = (function () {
     };
     LanguagesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'languages-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\languages\languages.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<ion-card>\n\n    <div class="voj-content languages-parent">\n\n        <div class="voj-form-container languages-child">\n\n            <voj-form [data]=\'formData\'></voj-form>\n\n        </div>\n\n    </div>\n\n</ion-card>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\languages\languages.html"*/,
+            selector: 'languages-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\languages\languages.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<ion-card>\n\n    <ion-card-content>\n\n        <voj-form [data]=\'formData\'></voj-form>\n\n    </ion-card-content>\n\n</ion-card>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\cv-offer-module\languages\languages.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__["a" /* Configuration */],
             __WEBPACK_IMPORTED_MODULE_2__services_navigation_service__["a" /* NavigationService */]])
@@ -9058,7 +9062,7 @@ var LanguagesPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__information_resume_information_resume__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__information_resume_information_resume__ = __webpack_require__(54);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -9333,7 +9337,7 @@ var AvailabilitiesAddSlotPage = (function () {
     };
     AvailabilitiesAddSlotPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'availabilities-add-slot-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\availabilities-add-slot\availabilities-add-slot.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<div class="voj-content">\n\n    <div class="voj-form-container">\n\n        <voj-form [data]=\'formData\'></voj-form>\n\n    </div>\n\n</div>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\availabilities-add-slot\availabilities-add-slot.html"*/,
+            selector: 'availabilities-add-slot-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\availabilities-add-slot\availabilities-add-slot.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<ion-card>\n\n    <ion-card-content>\n\n            <voj-form [data]=\'formData\'></voj-form>\n\n    </ion-card-content>\n\n</ion-card>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\availabilities-add-slot\availabilities-add-slot.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__["a" /* Configuration */],
             __WEBPACK_IMPORTED_MODULE_2__services_navigation_service__["a" /* NavigationService */]])
@@ -9504,7 +9508,7 @@ var SmartCalendarModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_date_fns__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_date_fns__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_date_fns___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_date_fns__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Observable__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Observable__);
@@ -11677,53 +11681,10 @@ var RemunerationPageModule = (function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarPageModule", function() { return CalendarPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_voj_components_module__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__calendar__ = __webpack_require__(234);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(15);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-
-var CalendarPageModule = (function () {
-    function CalendarPageModule() {
-    }
-    CalendarPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__calendar__["a" /* CalendarPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__calendar__["a" /* CalendarPage */]),
-                __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__["b" /* TranslateModule */].forChild(),
-                __WEBPACK_IMPORTED_MODULE_2__components_voj_components_module__["a" /* VojComponentsModule */]
-            ],
-        })
-    ], CalendarPageModule);
-    return CalendarPageModule;
-}());
-
-//# sourceMappingURL=calendar.module.js.map
-
-/***/ }),
-/* 593 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchPageModule", function() { return SearchPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_page_header_voj_page_header_module__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_search_header_voj_search_header_module__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_voj_card_voj_card_module__ = __webpack_require__(69);
@@ -11767,7 +11728,7 @@ var SearchPageModule = (function () {
 //# sourceMappingURL=search.module.js.map
 
 /***/ }),
-/* 594 */
+/* 593 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11807,7 +11768,7 @@ var PersonalDetailsIdentityPageModule = (function () {
 //# sourceMappingURL=personal-details-identity.module.js.map
 
 /***/ }),
-/* 595 */
+/* 594 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11847,7 +11808,7 @@ var PersonalDetailsPageModule = (function () {
 //# sourceMappingURL=personal-details.module.js.map
 
 /***/ }),
-/* 596 */
+/* 595 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11888,6 +11849,49 @@ var CompanyModule = (function () {
 }());
 
 //# sourceMappingURL=company.module.js.map
+
+/***/ }),
+/* 596 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarPageModule", function() { return CalendarPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_voj_components_module__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__calendar__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(15);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+var CalendarPageModule = (function () {
+    function CalendarPageModule() {
+    }
+    CalendarPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_3__calendar__["a" /* CalendarPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__calendar__["a" /* CalendarPage */]),
+                __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__["b" /* TranslateModule */].forChild(),
+                __WEBPACK_IMPORTED_MODULE_2__components_voj_components_module__["a" /* VojComponentsModule */]
+            ],
+        })
+    ], CalendarPageModule);
+    return CalendarPageModule;
+}());
+
+//# sourceMappingURL=calendar.module.js.map
 
 /***/ }),
 /* 597 */
@@ -12398,7 +12402,7 @@ var MissionSignaturePageModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_mission_service_mission_service__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_mission_service_mission_service__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_navigation_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__missions_calendar_missions_calendar__ = __webpack_require__(139);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_utils__ = __webpack_require__(24);
@@ -12641,7 +12645,7 @@ var HomeModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_card_model__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_voj_map_model__ = __webpack_require__(566);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_text_type__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_text_type__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_http_request_http_request__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__test_components_contact_contact__ = __webpack_require__(243);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_navigation_service__ = __webpack_require__(12);
@@ -12656,7 +12660,7 @@ var HomeModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__account_module_bank_settings_bank_settings__ = __webpack_require__(136);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__account_module_personal_details_identity_personal_details_identity__ = __webpack_require__(135);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__account_module_sign_up_sign_up__ = __webpack_require__(132);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__services_modal_service__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__services_modal_service__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__cv_offer_module_availabilities_add_days_availabilities_add_days__ = __webpack_require__(184);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__cv_offer_module_availabilities_availabilities__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__account_module_personal_details_personal_details__ = __webpack_require__(134);
@@ -13191,7 +13195,7 @@ var TabsModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__test_components_about_about__ = __webpack_require__(138);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(612);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__search_module_search_search__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__search_module_search_search__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -13441,7 +13445,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ngx_translate_http_loader__ = __webpack_require__(978);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_voj_events_voj_events__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__models_voj_configuration_model__ = __webpack_require__(175);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__services_modal_service__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__services_modal_service__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_signup_service_signup_service__ = __webpack_require__(230);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_storage__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_account_service_account_service__ = __webpack_require__(229);
@@ -13454,7 +13458,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__providers_enterprise_service_enterprise_service__ = __webpack_require__(232);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__services_toast_service__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__providers_address_service_address_service__ = __webpack_require__(571);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__providers_mission_service_mission_service__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__providers_mission_service_mission_service__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__providers_theming_theming__ = __webpack_require__(659);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__ionic_native_in_app_browser__ = __webpack_require__(608);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__ionic_native_file__ = __webpack_require__(578);
@@ -13533,11 +13537,11 @@ var AppModule = (function () {
                         { loadChildren: '../pages/landing-page/landing-page.module#LandingPageModule', name: 'LandingPage', segment: 'landing-page', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/cv-offer-module/keywords/keywords.module#KeywordsPageModule', name: 'KeywordsPage', segment: 'keywords', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/cv-offer-module/remuneration/remuneration.module#RemunerationPageModule', name: 'RemunerationPage', segment: 'remuneration', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/calendar/calendar.module#CalendarPageModule', name: 'CalendarPage', segment: 'calendar', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/search-module/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/account-module/personal-details-identity/personal-details-identity.module#PersonalDetailsIdentityPageModule', name: 'PersonalDetailsIdentityPage', segment: 'personal-details-identity', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/account-module/personal-details/personal-details.module#PersonalDetailsPageModule', name: 'PersonalDetailsPage', segment: 'personal-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/account-module/company/company.module#CompanyModule', name: 'CompanyPage', segment: 'company', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/calendar/calendar.module#CalendarPageModule', name: 'CalendarPage', segment: 'calendar', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/voj-map/voj-map.module#VojMapModule', name: 'VojMap', segment: 'voj-map', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/voj-menu/voj-menu.module#VojMenuModule', name: 'VojMenu', segment: 'voj-menu', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/voj-card/voj-card.module#VojCardModule', name: 'VojCard', segment: 'voj-card', priority: 'low', defaultHistory: [] },
@@ -13879,7 +13883,7 @@ var NgCalendarModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_date_fns__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_date_fns__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_date_fns___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_date_fns__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_empty__ = __webpack_require__(797);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_empty___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_empty__);
@@ -13905,7 +13909,7 @@ var NgCalendarModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_rxjs_add_operator_pluck___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_rxjs_add_operator_pluck__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_add_operator_bufferCount__ = __webpack_require__(817);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_add_operator_bufferCount___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18_rxjs_add_operator_bufferCount__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_rxjs_add_operator_takeUntil__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_rxjs_add_operator_takeUntil__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_rxjs_add_operator_takeUntil___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19_rxjs_add_operator_takeUntil__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_rxjs_add_operator_withLatestFrom__ = __webpack_require__(819);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_rxjs_add_operator_withLatestFrom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20_rxjs_add_operator_withLatestFrom__);
@@ -14925,7 +14929,7 @@ var WeekViewHeaderComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_merge__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_merge__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_date_fns__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_date_fns__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_date_fns___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_date_fns__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__calendar_service__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__weekview_weekview__ = __webpack_require__(385);
@@ -15504,11 +15508,11 @@ var DayViewComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_pairwise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_pairwise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_filter__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_filter__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_map__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_map__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_concatMap__ = __webpack_require__(382);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_concatMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_concatMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_takeUntil__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_takeUntil__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_takeUntil___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_takeUntil__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__calendar_service__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__mode_popover_calendar_mode_popover__ = __webpack_require__(386);
@@ -16092,7 +16096,7 @@ var Pipes = [
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DateFormatPipe; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_date_fns__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_date_fns__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_date_fns___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_date_fns__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -16230,7 +16234,7 @@ var TracePipe = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IsPastPipe; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_date_fns__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_date_fns__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_date_fns___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_date_fns__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -16412,7 +16416,7 @@ var SmartCalendar = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DesktopCalendar; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_date_fns__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_date_fns__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_date_fns___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_date_fns__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__);
@@ -16771,7 +16775,7 @@ var FullCalendarComponentModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_date_fns__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_date_fns__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_date_fns___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_date_fns__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery__ = __webpack_require__(93);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_jquery__);
@@ -17703,7 +17707,7 @@ var VojMap = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchResultDTO; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_voj_card_model__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_text_type__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_text_type__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_map_model__ = __webpack_require__(566);
 
 
@@ -17867,7 +17871,7 @@ var ButtonType = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchDTOJobyer; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_text_type__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_text_type__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_segment_type__ = __webpack_require__(568);
 
 
@@ -18025,7 +18029,7 @@ var SearchDTOJobyer = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchDTOEmployer; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_text_type__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_text_type__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_segment_type__ = __webpack_require__(568);
 
 
@@ -18383,6 +18387,7 @@ var EmployerDto = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_navigation_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_landing_page_landing_page__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_voj_page_header_model__ = __webpack_require__(53);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18392,6 +18397,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -18413,7 +18419,14 @@ var VojPageHeader = (function () {
         this.canGoBack = (!this.viewCtrl.isOverlay && !this.viewCtrl.isFirst() && this.viewCtrl.enableBack());
         //Closing a page is allowed if the page : is a modal OR is first in the stack in large screen
         //only the second and third navs are allowed to be hiding
-        this.canClose = this.viewCtrl.isOverlay || (this.viewCtrl.isFirst() && this.config.isLargeScreen && this.activeNav.name != this.navigationService.getNav1().name);
+        if (this.data.forceCloseDisabled) {
+            this.canClose = false;
+        }
+        else {
+            this.canClose = this.viewCtrl.isOverlay || (this.viewCtrl.isFirst()
+                && this.config.isLargeScreen
+                && this.activeNav.name != this.navigationService.getNav1().name);
+        }
     };
     VojPageHeader.prototype.closePage = function () {
         var _this = this;
@@ -18430,7 +18443,7 @@ var VojPageHeader = (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('data'),
-        __metadata("design:type", Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_5__models_voj_page_header_model__["a" /* VojPageHeaderType */])
     ], VojPageHeader.prototype, "data", void 0);
     VojPageHeader = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
@@ -19831,13 +19844,13 @@ var OptionsPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(615);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_test_components_about_about__ = __webpack_require__(138);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_search_module_search_search__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_search_module_search_search__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_core__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_navigation_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__config_environment__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_voj_events_voj_events__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_landing_page_landing_page__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_modal_service__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_modal_service__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_account_module_login_login__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_storage__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_account_module_account_account__ = __webpack_require__(246);
@@ -19850,9 +19863,9 @@ var OptionsPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__angular_compiler__ = __webpack_require__(144);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_missions_my_missions_list_my_missions_list__ = __webpack_require__(245);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_cv_offer_module_jobs_list_jobs_list__ = __webpack_require__(176);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_cv_offer_module_information_resume_information_resume__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_cv_offer_module_information_resume_information_resume__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_missions_missions_calendar_missions_calendar__ = __webpack_require__(139);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__providers_mission_service_mission_service__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__providers_mission_service_mission_service__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_voj_calendar_full_calendar_full_calendar_service__ = __webpack_require__(129);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_missions_pending_missions_pending_missions__ = __webpack_require__(244);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__providers_theming_theming__ = __webpack_require__(659);
@@ -20705,7 +20718,7 @@ var EmployerStrategy = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home_module__ = __webpack_require__(611);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__test_components_contact_contacts_module__ = __webpack_require__(955);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__test_components_about_about_module__ = __webpack_require__(602);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_module_search_search_module__ = __webpack_require__(593);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_module_search_search_module__ = __webpack_require__(592);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__cv_offer_module_jobyer_availability_choice_jobyer_availability_choice_module__ = __webpack_require__(597);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__account_module_user_information_user_information_module__ = __webpack_require__(598);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__details_details_module__ = __webpack_require__(956);
@@ -20719,15 +20732,15 @@ var EmployerStrategy = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__account_module_main_address_main_address_module__ = __webpack_require__(960);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__account_module_login_login_module__ = __webpack_require__(961);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__account_module_bank_settings_bank_settings_module__ = __webpack_require__(962);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__account_module_personal_details_identity_personal_details_identity_module__ = __webpack_require__(594);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__account_module_personal_details_identity_personal_details_identity_module__ = __webpack_require__(593);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__cv_offer_module_availabilities_add_days_availabilities_add_days_module__ = __webpack_require__(963);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__cv_offer_module_availabilities_availabilities_module__ = __webpack_require__(964);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__landing_page_landing_page_module__ = __webpack_require__(318);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__cv_offer_module_languages_languages_module__ = __webpack_require__(965);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__account_module_enterprise_search_enterprise_search_module__ = __webpack_require__(966);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__account_module_reset_password_reset_password_module__ = __webpack_require__(967);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__account_module_personal_details_personal_details_module__ = __webpack_require__(595);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__account_module_company_company_module__ = __webpack_require__(596);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__account_module_personal_details_personal_details_module__ = __webpack_require__(594);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__account_module_company_company_module__ = __webpack_require__(595);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__cv_offer_module_my_cv_my_cv_module__ = __webpack_require__(968);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__cv_offer_module_qualities_qualities_module__ = __webpack_require__(969);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__cv_offer_module_information_resume_information_resume_module__ = __webpack_require__(970);
@@ -20735,7 +20748,7 @@ var EmployerStrategy = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__cv_offer_module_find_job_find_job_module__ = __webpack_require__(971);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__cv_offer_module_jobs_list_jobs_list_module__ = __webpack_require__(973);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__availabilities_add_slot_availabilities_add_slot_page_module__ = __webpack_require__(974);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__calendar_calendar_module__ = __webpack_require__(592);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__calendar_calendar_module__ = __webpack_require__(596);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__documents_documents_module__ = __webpack_require__(975);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__registration_message_registration_message_module__ = __webpack_require__(976);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__cv_offer_module_keywords_keywords_module__ = __webpack_require__(319);
@@ -21473,7 +21486,7 @@ var QualitiesPageModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InformationResumePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__information_resume__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__information_resume__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(15);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
