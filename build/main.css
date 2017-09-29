@@ -1,4 +1,10 @@
 @charset "UTF-8";
+:root {
+  --voj-color-primary: #fff;
+  --voj-color-danger: #e93a3a;
+  --voj-color-danger-light: #e25757;
+}
+
 .ion-ios-add:before {
   content: "\f102";
 }
@@ -27517,23 +27523,23 @@ ion-navbar.toolbar {
 
 @media screen and (max-width: 768px) {
   .ion-page {
-    background-color: #14baa6;
+    background-color: var(--voj-color-primary);
   }
   .voj-content {
     height: calc(100% - 118px);
     padding: 15px;
-    background-color: #14baa6;
+    background-color: var(--voj-color-primary);
     overflow-y: auto;
   }
   ion-content .voj-content {
     height: calc(100% - 56px);
   }
   .voj-modal .ion-page {
-    background-color: #14baa6;
+    background-color: var(--voj-color-primary);
   }
   .modal-wrapper voj-content {
     padding: 15px;
-    background-color: #14baa6;
+    background-color: var(--voj-color-primary);
   }
   ion-fab[top] {
     top: 80% !important;
@@ -27623,10 +27629,6 @@ Styles for the segments in the footer in small screens (the simulated tabs)
   }
 }
 
-.desktop-header {
-  background-color: #55b7a6;
-}
-
 .voj-tabs ion-toolbar {
   padding: 0;
 }
@@ -27649,15 +27651,15 @@ ion-content {
 }
 
 .fab-notification button {
-  border-color: #e93a3a !important;
-  background-color: #e93a3a !important;
+  border-color: var(--voj-color-danger) !important;
+  background-color: var(--voj-color-danger) !important;
   width: 30px;
   height: 30px;
 }
 
 .fab-notification button:hover {
-  border-color: #e93a3a !important;
-  background-color: #e93a3a !important;
+  border-color: var(--voj-color-danger) !important;
+  background-color: var(--voj-color-danger) !important;
   width: 30px;
   height: 30px;
 }
@@ -27925,7 +27927,7 @@ desktop-calendar mwl-calendar-day-view div.cal-day-view mwl-calendar-day-view-ev
 }
 
 desktop-calendar mwl-calendar-day-view div.cal-day-view mwl-calendar-day-view-event div.cal-starts-within-day, desktop-calendar mwl-calendar-day-view div.cal-day-view mwl-calendar-day-view-event div.cal-ends-within-day {
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
 }
 
 desktop-calendar mwl-calendar-day-view div.cal-day-view mwl-calendar-day-view-event div.cal-starts-within-day mwl-calendar-event-title a, desktop-calendar mwl-calendar-day-view div.cal-day-view mwl-calendar-day-view-event div.cal-ends-within-day mwl-calendar-event-title a {
@@ -27944,6 +27946,10 @@ desktop-calendar mwl-calendar-day-view div.cal-day-view mwl-calendar-day-view-ev
   border-top-right-radius: 0;
 }
 
+full-calendar angular2-fullcalendar > .fc-view-container {
+  overflow-y: scroll;
+}
+
 full-calendar .fc-past:hover {
   cursor: not-allowed;
 }
@@ -27958,6 +27964,7 @@ full-calendar .fc .fc-day-header {
   border: none;
   text-align-last: auto;
   padding: 8px 0;
+  text-transform: capitalize;
 }
 
 full-calendar .fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
@@ -27990,8 +27997,8 @@ full-calendar .fc-toolbar.fc-header-toolbar .fc-left .voj-multiselect-active .fc
 }
 
 full-calendar .fc-toolbar.fc-header-toolbar .fc-left .fc-button-group.voj-weekselect-active .fc-weekSelect-button {
-  background: #14baa6;
-  border-color: #14baa6;
+  background: var(--voj-color-primary);
+  border-color: var(--voj-color-primary);
   color: #fff;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -27999,8 +28006,8 @@ full-calendar .fc-toolbar.fc-header-toolbar .fc-left .fc-button-group.voj-weekse
 }
 
 full-calendar .fc-toolbar.fc-header-toolbar .fc-left .fc-button-group.voj-multiselect-active .fc-multiSelect-button {
-  background: #14baa6;
-  border-color: #14baa6;
+  background: var(--voj-color-primary);
+  border-color: var(--voj-color-primary);
   color: #fff;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -28018,6 +28025,7 @@ full-calendar .fc-toolbar.fc-header-toolbar .fc-center {
 
 full-calendar .fc-toolbar.fc-header-toolbar .fc-center h2 {
   display: inline-block;
+  text-transform: capitalize;
   font-size: 1.5rem;
 }
 
@@ -28295,15 +28303,25 @@ voj-card .cover-50 {
   overflow: hidden;
 }
 
+voj-footer .toolbar-background-md {
+  background-color: #4c545e;
+}
+
+voj-footer button {
+  background-color: #ed6171 !important;
+  color: #fff !important;
+  text-transform: initial !important;
+}
+
 voj-form .calendar-container {
   text-align: center;
 }
 
 voj-form .custom-btn {
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
   text-transform: capitalize;
   color: #fff;
-  border-color: #14baa6;
+  border-color: var(--voj-color-primary);
   border-radius: 4%;
   padding: 0 10%;
 }
@@ -28567,7 +28585,7 @@ voj-form div.custom-select-container ion-list.custom-select-btn .custom-layer {
 voj-form div.custom-select-container button.custom-select-btn-inner {
   margin: 0 0 5px 0;
   height: 2.4rem;
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
 }
 
 voj-form div.custom-select-container button.custom-select-btn-inner ion-icon:before {
@@ -28628,8 +28646,8 @@ voj-form .custom-checkbox .checkbox-icon {
 }
 
 voj-form .custom-checkbox .checkbox-checked {
-  background-color: #14baa6 !important;
-  border-color: #14baa6 !important;
+  background-color: var(--voj-color-primary) !important;
+  border-color: var(--voj-color-primary) !important;
 }
 
 voj-form .inputfile {
@@ -28656,7 +28674,7 @@ voj-form .text-upload-field {
 }
 
 voj-form .custom-upload-button {
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
 }
 
 voj-form .uploaded-items {
@@ -28698,7 +28716,7 @@ voj-form .select-search ion-input:after {
   content: ' ';
   top: 6px;
   right: 20px;
-  color: #14baa6;
+  color: var(--voj-color-primary);
   border-top: 13px solid;
   border-right: 8px solid transparent;
   border-left: 8px solid transparent;
@@ -28715,7 +28733,7 @@ voj-form .custom-line {
   display: inline-block;
   margin-left: calc(50% - 75px);
   border-radius: 1px;
-  background-color: #55b7a6;
+  background-color: var(--voj-color-primary);
   width: 150px;
 }
 
@@ -28767,8 +28785,8 @@ voj-form .custom-select-btn-attachment .custom-select-checkbox-addon ion-checkbo
 }
 
 voj-form .custom-select-btn-attachment .custom-select-checkbox-addon ion-checkbox.checkbox-md .checkbox-icon.checkbox-checked {
-  border-color: #14baa6;
-  background-color: #14baa6;
+  border-color: var(--voj-color-primary);
+  background-color: var(--voj-color-primary);
 }
 
 voj-form .custom-select-btn-attachment .custom-select-checkbox-addon ion-checkbox.checkbox-md .item-cover {
@@ -28777,7 +28795,7 @@ voj-form .custom-select-btn-attachment .custom-select-checkbox-addon ion-checkbo
 
 voj-form .custom-select-btn-attachment .custom-select-checkbox-addon .item-inner {
   border-bottom: none;
-  color: #14baa6;
+  color: var(--voj-color-primary);
 }
 
 voj-form .custom-select-btn-attachment .custom-select-btn-attachment-wrapper {
@@ -28800,12 +28818,12 @@ voj-form .search-select-list-wrapper {
 
 voj-form .select-btn-attachment-inner {
   min-width: 3rem !important;
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
 }
 
 voj-form .select-icon-inner,
 voj-form .select-search input:after {
-  color: #14baa6 !important;
+  color: var(--voj-color-primary) !important;
 }
 
 voj-header .generic {
@@ -28888,7 +28906,7 @@ voj-header-web .voj-style {
 }
 
 voj-header-web .voj-style button {
-  background: #00c1a9;
+  background: var(--voj-color-primary);
   border: none;
   color: #fff;
 }
@@ -28915,12 +28933,12 @@ voj-header-web .generic .row:first-child .col:last-child {
 voj-header-web .generic .row:first-child .col:last-child button {
   margin-left: 15px;
   color: #fff;
-  border: 1px solid #00c1a9;
+  border: 1px solid var(--voj-color-primary);
   text-transform: none;
 }
 
 voj-header-web .generic .row:first-child .col:last-child button:hover {
-  background-color: #00c1a9;
+  background-color: var(--voj-color-primary);
 }
 
 voj-header-web .toolbar-background {
@@ -28935,15 +28953,15 @@ voj-header-web .fab-notification {
 }
 
 voj-header-web .fab-notification button {
-  border-color: #e93a3a !important;
-  background-color: #e93a3a !important;
+  border-color: var(--voj-color-danger) !important;
+  background-color: var(--voj-color-danger) !important;
   width: 30px;
   height: 30px;
 }
 
 voj-header-web .fab-notification button:hover {
-  border-color: #e93a3a !important;
-  background-color: #e93a3a !important;
+  border-color: var(--voj-color-danger) !important;
+  background-color: var(--voj-color-danger) !important;
   width: 30px;
   height: 30px;
 }
@@ -28977,6 +28995,10 @@ voj-header-web .user-information img {
 
 voj-map #map {
   min-height: 250px;
+}
+
+voj-page-header .desktop-header {
+  background-color: var(--voj-color-primary);
 }
 
 voj-page-header .bar-button::after {
@@ -29300,7 +29322,7 @@ voj-search-select .select-search-control {
 }
 
 voj-search-select .select-search-control button {
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
   color: #fff;
   height: 2.4rem;
 }
@@ -29423,6 +29445,10 @@ voj-table .row:last-child .col {
   border-bottom: solid 1px #b1b1b1;
 }
 
+account-page {
+  background-color: var(--voj-color-primary);
+}
+
 account-page .voj-button {
   text-transform: capitalize;
 }
@@ -29432,7 +29458,7 @@ account-page .voj-form-container {
 }
 
 bank-settings-page {
-  background-color: #ffffff;
+  background-color: var(--voj-color-primary);
   overflow-y: auto;
 }
 
@@ -29457,7 +29483,7 @@ enterprise-search-page ion-searchbar {
 enterprise-search-page .select-button {
   height: 30px;
   font-size: 16px;
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
   color: #ffffff;
 }
 
@@ -29501,7 +29527,7 @@ enterprise-search-page .enterprise-search-bar {
 
 identity-page {
   overflow-y: auto;
-  background-color: #ffffff;
+  background-color: var(--voj-color-primary);
 }
 
 identity-page #civility .label.label-md {
@@ -29564,7 +29590,7 @@ identity-page #civility .custom-radio.list.list-md {
 }
 
 .identity-message .alert-button {
-  background-color: #55b7a6;
+  background-color: var(--voj-color-primary);
   color: #ffffff;
   text-align: center;
   font-size: 10px;
@@ -29622,10 +29648,10 @@ login-page .voj-content .voj-form-container #forgotten-password-btn button {
 }
 
 login-page .voj-content .voj-form-container .custom-btn {
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
   text-transform: capitalize;
   color: #fff;
-  border-color: #14baa6;
+  border-color: var(--voj-color-primary);
   border-radius: 4%;
   padding: 0 10%;
 }
@@ -29637,14 +29663,14 @@ login-page .voj-content .voj-form-container .voj-not-registered-title {
 }
 
 main-address-page {
-  background-color: #ffffff;
+  background-color: var(--voj-color-primary);
   overflow-y: auto;
 }
 
 main-address-page .main-adresses-parent-container {
   height: calc(100% - 56px);
   padding: 15px;
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
   overflow-y: auto;
 }
 
@@ -29671,7 +29697,7 @@ main-address-page .voj-content .voj-form-container #add-address-btn button {
 
 page-open-application .container {
   padding: 15px;
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
   height: 100%;
 }
 
@@ -29680,7 +29706,7 @@ page-open-application .child-container {
 }
 
 options-page {
-  background-color: #55b7a6;
+  background-color: var(--voj-color-primary);
 }
 
 options-page .voj-form-container {
@@ -29689,7 +29715,7 @@ options-page .voj-form-container {
 
 options-page .voj-card-buttons button {
   margin-top: 15px;
-  background-color: #55b7a6;
+  background-color: var(--voj-color-primary);
   white-space: pre-wrap;
 }
 
@@ -29698,7 +29724,7 @@ options-page .voj-card-buttons button:first-child {
 }
 
 options-page .voj-card-buttons button:hover {
-  background-color: #55b7a6 !important;
+  background-color: var(--voj-color-primary) !important;
 }
 
 .options-message .alert-message {
@@ -29714,7 +29740,7 @@ options-page .voj-card-buttons button:hover {
 }
 
 .options-message .alert-button {
-  background-color: #55b7a6;
+  background-color: var(--voj-color-primary);
   color: #ffffff;
   text-align: center;
   font-size: 10px;
@@ -29736,6 +29762,7 @@ options-page .voj-card-buttons button:hover {
 }
 
 personal-details-page {
+  background-color: var(--voj-color-primary);
   background-color: #ffffff;
   overflow-y: auto;
 }
@@ -29743,7 +29770,7 @@ personal-details-page {
 personal-details-page .personal-details-container {
   height: calc(100% - 118px);
   padding: 15px;
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
   overflow-y: auto;
 }
 
@@ -29787,6 +29814,7 @@ personal-details-page .voj-warning-msg p {
 }
 
 page-personal-details-identity {
+  background-color: var(--voj-color-primary);
   background-color: #ffffff;
   overflow-y: auto;
 }
@@ -29794,7 +29822,7 @@ page-personal-details-identity {
 page-personal-details-identity .personal-details-container {
   height: calc(100% - 118px);
   padding: 15px;
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
   overflow-y: auto;
 }
 
@@ -29810,6 +29838,12 @@ page-personal-details-identity .voj-content .voj-form-container {
   background-color: #ffffff;
   padding: 20px 0;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  page-personal-details-identity .voj-content {
+    height: calc(100% - 220px);
+  }
 }
 
 reset-password-page {
@@ -29912,7 +29946,7 @@ sign-up-page .voj-content .voj-form-container {
 
 sign-up-page .sign-up-container {
   padding: 15px;
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
   height: calc(100vh - 118px);
   overflow-y: auto;
 }
@@ -29934,13 +29968,13 @@ sign-up-page .connector {
 }
 
 sign-up-page .custom-btn {
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
   color: #fff;
-  border-color: #14baa6;
+  border-color: var(--voj-color-primary);
 }
 
 user-information-page {
-  background-color: #55b7a6;
+  background-color: var(--voj-color-primary);
 }
 
 user-information-page .voj-user-info-list .item-inner {
@@ -29950,11 +29984,11 @@ user-information-page .voj-user-info-list .item-inner {
 user-information-page .voj-user-info-list .voj-user-info-edit-btn {
   width: 35px;
   height: 30px;
-  background-color: #55b7a6;
+  background-color: var(--voj-color-primary);
 }
 
 user-information-page .voj-user-info-list .voj-user-info-edit-btn:hover {
-  background-color: #55b7a6;
+  background-color: var(--voj-color-primary);
 }
 
 user-information-page .voj-user-info-list .voj-user-info-item-label {
@@ -29962,12 +29996,31 @@ user-information-page .voj-user-info-list .voj-user-info-item-label {
   white-space: pre-wrap;
 }
 
+page-calendar ion-content.content-md {
+  background-color: var(--voj-color-primary);
+}
+
+page-calendar h1 {
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
 page-calendar .calendar-wrapper {
-  height: 100%;
+  height: 85%;
 }
 
 page-calendar .calendar-wrapper.pad {
   padding: 16px;
+}
+
+page-calendar .calendar-wrapper voj-calendar {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 2px;
+}
+
+availabilities-page {
+  background-color: var(--voj-color-primary);
 }
 
 availabilities-page .availabilities-link {
@@ -29991,7 +30044,7 @@ availabilities-page .custom-line {
   display: inline-block;
   margin-left: calc(50% - 75px);
   border-radius: 1px;
-  background-color: #55b7a6;
+  background-color: var(--voj-color-primary);
   width: 150px;
 }
 
@@ -30002,11 +30055,11 @@ availabilities-page .availability-list .item-inner {
 availabilities-page .availability-list .availability-delete-btn {
   width: 40px;
   height: 40px;
-  background-color: #e26f57;
+  background-color: var(--voj-color-danger-light);
 }
 
 availabilities-page .availability-list .availability-delete-btn:hover {
-  background-color: #e26f57;
+  background-color: var(--voj-color-danger-light);
 }
 
 availabilities-page .availability-list .availability-label {
@@ -30019,12 +30072,12 @@ availabilities-page .availabilities-validate-button {
 }
 
 availabilities-page .availabilities-validate-button .validate-btn {
-  background-color: #55b7a6;
+  background-color: var(--voj-color-primary);
   margin-bottom: 10px;
 }
 
 availabilities-page .availabilities-validate-button .validate-btn:hover {
-  background-color: #55b7a6;
+  background-color: var(--voj-color-primary);
 }
 
 availabilities-page .availability-toggle .dynamical-form .list > .item {
@@ -30050,6 +30103,10 @@ availabilities-add-days-page .availabilities-add-days-child {
   background-color: #ffffff;
 }
 
+information-resume-page .desktop-container {
+  background-color: var(--voj-color-primary);
+}
+
 information-resume-page .information-resume-parent {
   height: calc(100% - 170px);
   overflow-y: auto;
@@ -30058,7 +30115,6 @@ information-resume-page .information-resume-parent {
 information-resume-page .information-resume-child {
   margin-bottom: 56px;
   position: relative;
-  min-height: 80%;
 }
 
 information-resume-page .information-resume-list .item-inner {
@@ -30066,11 +30122,11 @@ information-resume-page .information-resume-list .item-inner {
 }
 
 information-resume-page .information-resume-list .information-resume-edit-btn {
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
 }
 
 information-resume-page .information-resume-list .information-resume-edit-btn:hover {
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
 }
 
 information-resume-page .information-resume-list .information-resume-label {
@@ -30078,9 +30134,34 @@ information-resume-page .information-resume-list .information-resume-label {
   white-space: initial;
 }
 
+information-resume-page .mobile-container .information-resume-list-wrapper,
+information-resume-page .mobile-container .information-resume-child {
+  height: 100%;
+}
+
+information-resume-page .mobile-container .item-md,
+information-resume-page .desktop-container .item-md {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+information-resume-page .mobile-container .item-inner,
+information-resume-page .desktop-container .item-inner {
+  padding-right: 0 !important;
+}
+
+information-resume-page .mobile-container .information-resume-edit-btn,
+information-resume-page .desktop-container .information-resume-edit-btn {
+  margin-right: 0;
+}
+
+jobs-list-page {
+  background-color: var(--voj-color-primary);
+}
+
 jobs-list-page .jobs-list-container {
   padding: 15px;
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
   height: 100%;
 }
 
@@ -30095,7 +30176,7 @@ jobs-list-page .item-label-stacked .jobs-list-label {
 }
 
 jobyer-availability-choice-page {
-  background-color: #55b7a6;
+  background-color: var(--voj-color-primary);
 }
 
 jobyer-availability-choice-page .radio-md .radio-checked {
@@ -30122,11 +30203,15 @@ jobyer-availability-choice-page .voj-card-buttons {
 
 jobyer-availability-choice-page .voj-card-buttons button {
   margin-top: 30px;
-  background-color: #55b7a6;
+  background-color: var(--voj-color-primary);
 }
 
 jobyer-availability-choice-page .voj-card-buttons button:hover {
-  background-color: #55b7a6;
+  background-color: var(--voj-color-primary);
+}
+
+page-keywords {
+  background-color: var(--voj-color-primary);
 }
 
 page-keywords .keywords-card {
@@ -30162,6 +30247,10 @@ page-keywords voj-form form button.custom-btn {
   margin: 0 auto;
 }
 
+languages-page {
+  background-color: var(--voj-color-primary);
+}
+
 languages-page .custom-btn {
   position: absolute;
   bottom: 10px;
@@ -30171,6 +30260,10 @@ languages-page .custom-btn {
 
 languages-page .custom-select-btn-attachment {
   padding-right: 10px !important;
+}
+
+my-cv-page {
+  background-color: var(--voj-color-primary);
 }
 
 my-cv-page .my-cv-parent {
@@ -30186,7 +30279,7 @@ my-cv-page .my-cv-child {
 }
 
 my-cv-page .my-cv-container {
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
   padding: 20px;
   height: calc(100vh - 62px);
   overflow-y: auto;
@@ -30206,6 +30299,10 @@ my-cv-page .custom-btn {
   margin-left: -18%;
 }
 
+qualities-page {
+  background-color: var(--voj-color-primary);
+}
+
 qualities-page .voj-form-container {
   min-height: 80%;
 }
@@ -30222,11 +30319,10 @@ qualities-page .custom-select-btn-attachment {
 }
 
 page-remuneration {
-  background-color: #55b7a6;
+  background-color: var(--voj-color-primary);
 }
 
 page-remuneration voj-form {
-  margin: 15px;
   background-color: #fff;
   display: block;
 }
@@ -30236,16 +30332,26 @@ page-remuneration #voj-remuneration-submit {
   margin-bottom: 40px;
 }
 
+page-details {
+  overflow-y: auto;
+}
+
 page-details ion-header {
-  background-color: #00c1a9 !important;
+  background-color: var(--voj-color-primary) !important;
 }
 
 page-details ion-content {
-  background-color: #00c1a9 !important;
+  background-color: var(--voj-color-primary) !important;
+}
+
+@media screen and (min-width: 768px) {
+  page-details .voj-content {
+    height: calc(100% - 220px);
+  }
 }
 
 documents-page {
-  background-color: #ffffff;
+  background-color: var(--voj-color-primary);
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -30265,7 +30371,7 @@ documents-page .documents-child {
 
 documents-page .documents-container {
   padding: 15px;
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
   height: calc(100% - 120px);
   overflow-y: auto;
   overflow-x: hidden;
@@ -30297,7 +30403,7 @@ page-missions-calendar .calender-container {
   padding-top: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
-  background-color: #00c1a9 !important;
+  background-color: var(--voj-color-primary) !important;
 }
 
 page-missions-calendar .calendar-wrapper {
@@ -30305,7 +30411,7 @@ page-missions-calendar .calendar-wrapper {
 }
 
 page-missions-calendar .calendar-wrapper.pad {
-  background-color: #00c1a9 !important;
+  background-color: var(--voj-color-primary) !important;
   padding: 16px;
 }
 
@@ -30322,7 +30428,7 @@ page-my-missions-list .my-missions-info-message {
 }
 
 page-my-missions-list .my-missions-page-content {
-  background-color: #00c1a9;
+  background-color: var(--voj-color-primary);
 }
 
 page-my-missions-list .my-missions-page-content .scroll-content {
@@ -30348,7 +30454,7 @@ page-my-missions-list .my-missions-warning-chip {
 }
 
 page-my-missions-list .my-missions-info-chip {
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
   color: #ffffff;
 }
 
@@ -30376,7 +30482,7 @@ page-my-missions-list ion-card.map.card.card-md {
 }
 
 .my-missions-message .alert-button {
-  background-color: #55b7a6;
+  background-color: var(--voj-color-primary);
   color: #ffffff;
   text-align: center;
   font-size: 10px;
@@ -30410,7 +30516,7 @@ page-pending-missions .pending-missions-info-message {
 }
 
 page-pending-missions .pending-missions-page-content {
-  background-color: #00c1a9;
+  background-color: var(--voj-color-primary);
 }
 
 page-pending-missions .pending-missions-page-content .scroll-content {
@@ -30436,7 +30542,7 @@ page-pending-missions .pending-missions-warning-chip {
 }
 
 page-pending-missions .pending-missions-info-chip {
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
   color: #ffffff;
 }
 
@@ -30464,7 +30570,7 @@ page-pending-missions ion-card.map.card.card-md {
 }
 
 .pending-missions-message .alert-button {
-  background-color: #55b7a6;
+  background-color: var(--voj-color-primary);
   color: #ffffff;
   text-align: center;
   font-size: 10px;
@@ -30499,7 +30605,7 @@ registration-message-page .registration-message-btn {
   font-size: 14px;
   margin-top: 40px;
   margin-bottom: 20px;
-  background-color: #55b7a6;
+  background-color: var(--voj-color-primary);
 }
 
 registration-message-page .registration-message-label {
@@ -30521,7 +30627,7 @@ page-search .search-info-message {
 }
 
 page-search .search-page-content {
-  background-color: #00c1a9;
+  background-color: var(--voj-color-primary);
 }
 
 page-search .search-page-content .scroll-content {
@@ -30547,7 +30653,7 @@ page-search .search-warning-chip {
 }
 
 page-search .search-info-chip {
-  background-color: #14baa6;
+  background-color: var(--voj-color-primary);
   color: #ffffff;
 }
 
@@ -30575,7 +30681,7 @@ page-search ion-card.map.card.card-md {
 }
 
 .search-message .alert-button {
-  background-color: #55b7a6;
+  background-color: var(--voj-color-primary);
   color: #ffffff;
   text-align: center;
   font-size: 10px;
@@ -30597,11 +30703,11 @@ page-search ion-card.map.card.card-md {
 }
 
 page-about ion-header {
-  background-color: #00c1a9 !important;
+  background-color: var(--voj-color-primary) !important;
 }
 
 page-about ion-content {
-  background-color: #00c1a9 !important;
+  background-color: var(--voj-color-primary) !important;
 }
 
 page-about voj-map #map {
