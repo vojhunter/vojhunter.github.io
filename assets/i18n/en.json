@@ -188,7 +188,47 @@
     "CANCEL_BTN": "No"
   },
   "CALENDAR": {
+    "TITLE": "My calendar",
     "JOBYER_TITLE": "My availabilities",
     "EMPLOYER_TITLE": "My offers' calendar"
+  },
+  "SEARCH_SELECT": {
+    "COUNTRIES_LIST": "List of countries",
+    "DEPARTMENT_LISTS": "List of departments",
+    "MUNICIPALITIES_LIST": "List of municipalities"
+  },
+  "MAIN_ADDRESS": {
+    "TITLE": "My address",
+    "GEOLOCATION_BTN": "Me geolocate",
+    "NUMBER_LABEL": "N°",
+    "NUMBER_ERR": "Please enter a valid street number",
+    "STREET_LABEL": "Street",
+    "STREET_ERR": "Please enter a valid street",
+    "CODE_POSTAL_LABEL": "Postal code",
+    "CODE_POSTAL_ERR": "Please enter a valid postal code",
+    "CITY_LABEL": "City",
+    "CITY_ERR": "Please enter a valid city",
+    "ADD_ADDRESS_BTN": "Add an address",
+    "VALIDATE_BTN": "Validate",
+    "FOLLOWING_BTN": "Following"
+  },
+  "GEOLOCATION": {
+    "GEOLOCATION_ERR": "User denied Geolocation"
+  },
+  "PERSONAL_DETAILS": {
+    "TITLE": "My social data",
+    "DATE_OF_BIRTH": "Birth date",
+    "DATE_OF_BIRTH_ERR": "Vous devez avoir plus de 18 ans",
+    "COUNTRY_OF_BIRTH": "You must be over 18 years of age",
+    "COUNTRY_OF_BIRTH_ERR": "Please choose a country of birth",
+    "DEPARTMENT_OF_BIRTH": "Department of birth",
+    "DEPARTMENT_OF_BIRTH_ERR": "lease choose a department of birth",
+    "PLACE_OF_BIRTH": "Place of birth",
+    "PLACE_OF_BIRTH_ERR": "Please choose a place of birth",
+    "SOCIAL_SECURITY_NUMBER": "Social Security number",
+    "SOCIAL_SECURITY_NUMBER_ERR": "Please enter a valid Social Security Number",
+    "VALIDATE_BTN": "Validate",
+    "FOLLOWING_BTN": "Following",
+    "WARNING_BIRTH_MESSAGE": "You must be over 18 years of age"
   }
 }

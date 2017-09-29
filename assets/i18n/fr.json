@@ -43,7 +43,7 @@
   "SIGNUP": {
     "TITLE": "Inscription",
     "REGISTERED": "Vous avez déjà un compte?",
-    "VALIDATE": "S'inscrire",
+    "VALIDATE": "Suivant",
     "LOGIN": "Se connecter"
   },
 
@@ -188,7 +188,47 @@
     "CANCEL_BTN": "Non"
   },
   "CALENDAR": {
+    "TITLE": "Mon calendrier",
     "JOBYER_TITLE": "Mes disponibilités",
     "EMPLOYER_TITLE": "Mon calendrier des annonces"
+  },
+  "SEARCH_SELECT": {
+    "COUNTRIES_LIST": "Liste des pays",
+    "DEPARTMENT_LISTS": "Liste des départements",
+    "MUNICIPALITIES_LIST": "Liste des communes"
+  },
+  "MAIN_ADDRESS": {
+    "TITLE": "Mon adresse",
+    "GEOLOCATION_BTN": "Me géolocaliser",
+    "NUMBER_LABEL": "N°",
+    "NUMBER_ERR": "Veuillez saisir un numéro de rue valide",
+    "STREET_LABEL": "Rue",
+    "STREET_ERR": "Veuillez saisir une rue valide",
+    "CODE_POSTAL_LABEL": "Code postal",
+    "CODE_POSTAL_ERR": "Veuillez saisir un code postal valide",
+    "CITY_LABEL": "Ville",
+    "CITY_ERR": "Veuillez saisir une ville valide",
+    "ADD_ADDRESS_BTN": "Ajoutez un adresse",
+    "VALIDATE_BTN": "Valider",
+    "FOLLOWING_BTN": "Suivant"
+  },
+  "GEOLOCATION": {
+    "GEOLOCATION_ERR": "Utilisateur refusé Géolocalisation"
+  },
+  "PERSONAL_DETAILS": {
+    "TITLE": "Mes données sociales",
+    "DATE_OF_BIRTH": "Date de naissance",
+    "DATE_OF_BIRTH_ERR": "Vous devez avoir plus de 18 ans",
+    "COUNTRY_OF_BIRTH": "Pays de naissance",
+    "COUNTRY_OF_BIRTH_ERR": "Veuillez choisir un pays de naissance",
+    "DEPARTMENT_OF_BIRTH": "Département de naissance",
+    "DEPARTMENT_OF_BIRTH_ERR": "Veuillez choisir un département de naissance",
+    "PLACE_OF_BIRTH": "Lieu de naissance",
+    "PLACE_OF_BIRTH_ERR": "Veuillez choisir un lieu de naissance",
+    "SOCIAL_SECURITY_NUMBER": "Numéro de sécurité sociale",
+    "SOCIAL_SECURITY_NUMBER_ERR": "Veuillez saisir un numéro de sécurité sociale valide",
+    "VALIDATE_BTN": "Valider",
+    "FOLLOWING_BTN": "Suivant",
+    "WARNING_BIRTH_MESSAGE": "Vous devez avoir plus de 18 ans"
   }
 }
