@@ -30384,6 +30384,173 @@ page-my-interests ion-card.map.card.card-md {
   justify-content: center;
 }
 
+page-my-offers-calendar voj-calendar {
+  background-color: #ffffff !important;
+}
+
+page-my-offers-calendar .calender-container {
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  background-color: var(--voj-color-primary) !important;
+}
+
+page-my-offers-calendar .calendar-wrapper {
+  height: 100%;
+}
+
+page-my-offers-calendar .calendar-wrapper.pad {
+  background-color: var(--voj-color-primary) !important;
+  padding: 16px;
+}
+
+page-my-offers-list .my-offers-warning-message {
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+
+page-my-offers-list .my-offers-info-message {
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+
+page-my-offers-list .my-offers-page-content {
+  background-color: var(--voj-color-primary);
+}
+
+page-my-offers-list .my-offers-page-content .scroll-content {
+  padding: 0px !important;
+}
+
+page-my-offers-list ion-segment-button {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+page-my-offers-list .my-offers-message {
+  z-index: 1;
+  bottom: 5%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+page-my-offers-list .my-offers-warning-chip {
+  background-color: #f53d3d;
+  color: #ffffff;
+}
+
+page-my-offers-list .my-offers-info-chip {
+  background-color: var(--voj-color-primary);
+  color: #ffffff;
+}
+
+page-my-offers-list #map {
+  position: relative;
+  height: 100%;
+}
+
+page-my-offers-list ion-card.map.card.card-md {
+  height: 72%;
+  width: 100% !important;
+  margin: 0;
+}
+
+.my-offers-message .alert-message {
+  font-size: 16px;
+  text-align: center;
+}
+
+.my-offers-message .alert-button .button-inner {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.my-offers-message .alert-button {
+  background-color: var(--voj-color-primary);
+  color: #ffffff;
+  text-align: center;
+  font-size: 10px;
+  margin: 15px;
+  width: 100px;
+}
+
+.my-offers-message .alert-button-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  padding: 8px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+page-offer-detail .voj-detail-button {
+  width: 100% !important;
+}
+
+page-offer-detail .desktop-container {
+  background-color: var(--voj-color-primary);
+}
+
+page-offer-detail .information-resume-parent {
+  height: calc(100% - 170px);
+  overflow-y: auto;
+}
+
+page-offer-detail .information-resume-child {
+  margin-bottom: 56px;
+  position: relative;
+}
+
+page-offer-detail .information-resume-list .item-inner {
+  border-bottom: none !important;
+}
+
+page-offer-detail .information-resume-list .information-resume-edit-btn {
+  background-color: var(--voj-color-primary);
+}
+
+page-offer-detail .information-resume-list .information-resume-edit-btn:hover {
+  background-color: var(--voj-color-primary);
+}
+
+page-offer-detail .information-resume-list .information-resume-label {
+  margin: 0;
+  white-space: initial;
+}
+
+page-offer-detail .mobile-container .information-resume-list-wrapper,
+page-offer-detail .mobile-container .information-resume-child {
+  height: 100%;
+}
+
+page-offer-detail .mobile-container .item-md,
+page-offer-detail .desktop-container .item-md {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+page-offer-detail .mobile-container .item-inner,
+page-offer-detail .desktop-container .item-inner {
+  padding-right: 0 !important;
+}
+
+page-offer-detail .mobile-container .information-resume-edit-btn,
+page-offer-detail .desktop-container .information-resume-edit-btn {
+  margin-right: 0;
+}
+
 qualities-page {
   background-color: var(--voj-color-primary);
 }

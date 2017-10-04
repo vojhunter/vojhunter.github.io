@@ -156,7 +156,7 @@
     "MY_LANGUAGES": "Mes langues",
     "MY_KEYWORDS": "Mes mots clés",
     "MY_CV": "Mon CV",
-    "MY_INTERESTS":"Annonces qui m'intéresses"
+    "MY_INTERESTS":"Offres qui m'intéressent"
   },
   "DOCUMENTS": {
     "TITLE": "Mes documents",
@@ -176,9 +176,13 @@
   "BANK_SETTINGS": {
     "TITLE": "Mes coordonnées bancaires",
     "BANK_NAME": "Nom de la banque",
+    "BANK_NAME_ERR": "Veuillez saisir un nom de banque valide",
     "OWNER_NAME": "Nom du détenteur",
+    "OWNER_NAME_ERR": "Veuillez remplir vos données de civilité",
     "IBAN": "IBAN",
+    "IBAN_ERR": "Veuillez saisir un IBAN valide",
     "BIC": "BIC",
+    "BIC_ERR": "Veuillez saisir un BIC valide",
     "VALIDATE_BTN": "Valider",
     "FOLLOWING_BTN": "Suivant"
   },
@@ -195,7 +199,7 @@
   },
   "SEARCH_SELECT": {
     "COUNTRIES_LIST": "Liste des pays",
-    "DEPARTMENT_LISTS": "Liste des départements",
+    "DEPARTMENTS_LIST": "Liste des départements",
     "MUNICIPALITIES_LIST": "Liste des communes"
   },
   "MAIN_ADDRESS": {

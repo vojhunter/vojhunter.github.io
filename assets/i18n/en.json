@@ -176,9 +176,13 @@
   "BANK_SETTINGS": {
     "TITLE": "My bank details",
     "BANK_NAME": "Name of the bank",
+    "BANK_NAME_ERR": "Please enter a valid bank name",
     "OWNER_NAME": "Name of the holder",
+    "OWNER_NAME_ERR": "Please fill in your civility information",
     "IBAN": "IBAN",
+    "IBAN_ERR": "Please enter a valid IBAN",
     "BIC": "BIC",
+    "BIC_ERR": "Please enter a valid BIC",
     "VALIDATE_BTN": "Validate",
     "FOLLOWING_BTN": "Following"
   },
@@ -195,7 +199,7 @@
   },
   "SEARCH_SELECT": {
     "COUNTRIES_LIST": "List of countries",
-    "DEPARTMENT_LISTS": "List of departments",
+    "DEPARTMENTS_LIST": "List of departments",
     "MUNICIPALITIES_LIST": "List of municipalities"
   },
   "MAIN_ADDRESS": {
