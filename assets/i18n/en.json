@@ -44,9 +44,10 @@
     "TITLE": "SIGN UP",
     "REGISTERED": "Do you have an account?",
     "VALIDATE": "Sign up",
-    "LOGIN": "Sign in"
+    "LOGIN": "Sign in",
+    "NOTIFICATION_TITLE": "Warning!",
+    "NOTIFICATION_SUBTITLE": "This credential is already registered. Enter a different phone number and an email."
   },
-
   "RESET_PASSWORD": {
     "MESSAGE": "Your password is about to be reset. How would you like to receive it?",
     "SMS_BTN": "By sms",
@@ -56,7 +57,8 @@
     "SEND_AGAIN_BTN": "I have not received any code, send again",
     "VALIDATE_BTN": "Validate",
     "GENERAL_ERROR": "An error occured while sending the password. Please retry again.",
-    "NO_ACCOUNT": "There is no account associated with these credentials."
+    "NO_ACCOUNT": "There is no account associated with these credentials.",
+    "CONFIRMATION_TXT": "You will receive a new password by sms."
   },
   "COMPANY": {
     "TITLE": "Mon Kbis",
@@ -247,7 +249,9 @@
     "VALID_FROM": "Valid from",
     "VALID_TO": "Au",
     "VALIDATE_BTN": "Validate",
-    "FOLLOWING_BTN": "Following"
+    "FOLLOWING_BTN": "Following",
+    "NATIONALITIES_LIST": "List of nationalities",
+    "PREFECTURE_LIST": "List of prefectures"
   },
   "DOCUMENT_TYPE_LIST": {
     "CNI": "CNI",

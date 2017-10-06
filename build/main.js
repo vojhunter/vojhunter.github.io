@@ -15,7 +15,7 @@ webpackJsonp([0],[
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environment__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_configuration_model__ = __webpack_require__(177);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_http_request_http_request__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_voj_tuple_model__ = __webpack_require__(709);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_voj_tuple_model__ = __webpack_require__(710);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_voj_events_voj_events__ = __webpack_require__(35);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -84,20 +84,20 @@ var Configuration = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojComponentsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__voj_calendar_voj_calendar_module__ = __webpack_require__(345);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__voj_calendar_voj_calendar_module__ = __webpack_require__(346);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_card_voj_card_module__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_footer_voj_footer_module__ = __webpack_require__(919);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__voj_header_voj_header_module__ = __webpack_require__(578);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__voj_list_voj_list_module__ = __webpack_require__(579);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__voj_header_voj_header_module__ = __webpack_require__(579);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__voj_list_voj_list_module__ = __webpack_require__(580);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__voj_form_voj_form_module__ = __webpack_require__(238);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__voj_map_voj_map_module__ = __webpack_require__(131);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__voj_menu_voj_menu_module__ = __webpack_require__(228);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__voj_search_header_voj_search_header_module__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__voj_segment_voj_segment_module__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__voj_header_web_voj_header_web_module__ = __webpack_require__(591);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__voj_header_web_voj_header_web_module__ = __webpack_require__(592);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__voj_page_header_voj_page_header_module__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__voj_header_segment_voj_header_segment_module__ = __webpack_require__(592);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__voj_search_select_voj_search_select_module__ = __webpack_require__(593);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__voj_header_segment_voj_header_segment_module__ = __webpack_require__(593);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__voj_search_select_voj_search_select_module__ = __webpack_require__(594);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__voj_table_voj_table_module__ = __webpack_require__(244);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -155,8 +155,7 @@ var VojComponentsModule = (function () {
 /***/ }),
 /* 9 */,
 /* 10 */,
-/* 11 */,
-/* 12 */
+/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -305,6 +304,7 @@ var NavigationService = (function () {
 //# sourceMappingURL=navigation.service.js.map
 
 /***/ }),
+/* 12 */,
 /* 13 */,
 /* 14 */,
 /* 15 */,
@@ -318,10 +318,11 @@ var NavigationService = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return StringUtils; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return StringUtils; });
 /* unused harmony export ArrayUtils */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ObjectUtils; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return ObjectUtils; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DateUtils; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return FieldValidate; });
 var StringUtils = (function () {
     function StringUtils() {
     }
@@ -388,6 +389,16 @@ var DateUtils = (function () {
     return DateUtils;
 }());
 
+var FieldValidate = (function () {
+    function FieldValidate() {
+    }
+    FieldValidate.isValid = function (str) {
+        var regCity = /^[A-Za-zÀ-ú.' \-\p{L}\p{Zs}\p{Lu}\p{Ll}']+$/;
+        return regCity.test(str);
+    };
+    return FieldValidate;
+}());
+
 //# sourceMappingURL=utils.js.map
 
 /***/ }),
@@ -401,11 +412,11 @@ var DateUtils = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HttpRequestProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_timeout__ = __webpack_require__(700);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_timeout__ = __webpack_require__(701);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_timeout___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_timeout__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(707);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(708);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_finally__ = __webpack_require__(708);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_finally__ = __webpack_require__(709);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_finally___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_finally__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(1);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -670,7 +681,7 @@ var HttpRequestProvider = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EventBusProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_event_model__ = __webpack_require__(710);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_event_model__ = __webpack_require__(711);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -972,7 +983,7 @@ var VojPageHeaderModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__my_cv_my_cv__ = __webpack_require__(337);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__keywords_keywords__ = __webpack_require__(323);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__remuneration_remuneration__ = __webpack_require__(338);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__availabilities_availabilities__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__my_interests_my_interests__ = __webpack_require__(340);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1213,7 +1224,7 @@ var ModalService = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dtos_offer_interest_dto__ = __webpack_require__(719);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dtos_offer_interest_dto__ = __webpack_require__(720);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__offer_service_strategy_offer_interest_factory__ = __webpack_require__(341);
@@ -1336,20 +1347,302 @@ var TextType = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_account_service_account_service__ = __webpack_require__(231);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_modal_service__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sign_up_sign_up__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__scripts_md5__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_masterdata_service_masterdata_service__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__reset_password_reset_password__ = __webpack_require__(578);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__config_voj_configuration__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_navigation_service__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__search_module_search_search__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_voj_events_voj_events__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__cv_offer_module_information_resume_information_resume__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__calendar_calendar__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_offer_service_offer_interest_service_offer_interest_service__ = __webpack_require__(59);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var LoginPage = (function () {
+    function LoginPage(accountService, eventBus, storage, modalService, viewCtrl, alertCtrl, masterdataService, interestService, configuration, navigationService, toastCtrl, events, navParams) {
+        var _this = this;
+        this.accountService = accountService;
+        this.eventBus = eventBus;
+        this.storage = storage;
+        this.modalService = modalService;
+        this.viewCtrl = viewCtrl;
+        this.alertCtrl = alertCtrl;
+        this.masterdataService = masterdataService;
+        this.interestService = interestService;
+        this.configuration = configuration;
+        this.navigationService = navigationService;
+        this.toastCtrl = toastCtrl;
+        this.events = events;
+        this.navParams = navParams;
+        this.config = this.configuration.configuration;
+        this.card = this.navParams.get('card');
+        this.previousPage = this.navParams.get('previousPage');
+        // Set form data
+        this.formData = {
+            title: '',
+            fields: [
+                // Phone code
+                {
+                    type: 'select',
+                    value: null,
+                    label: 'FORM.COUNTRY_CODE',
+                    dataset: [],
+                    required: true,
+                    visible: true,
+                    id: 'phone-code-field',
+                    name: 'code'
+                },
+                // Phone
+                {
+                    placeholder: '',
+                    type: 'tel',
+                    value: '',
+                    label: 'FORM.PHONE',
+                    required: true,
+                    readonly: false,
+                    visible: true,
+                    min: 9,
+                    max: 10,
+                    regex: '^((06)|(07))[0-9]*$',
+                    validationMsg: 'VALIDATION.PHONE_VALIDATION_MSG',
+                    id: 'phone-field',
+                    name: 'phone'
+                },
+                // Password
+                {
+                    placeholder: '',
+                    type: 'password',
+                    value: '',
+                    label: 'FORM.PASSWORD',
+                    required: true,
+                    readonly: false,
+                    visible: true,
+                    min: 6,
+                    max: 100,
+                    regex: '',
+                    validationMsg: 'VALIDATION.PASSWORD_VALIDATION_MSG',
+                    id: 'password-field',
+                    name: 'password'
+                },
+                // Forgotten password button
+                {
+                    type: 'button',
+                    label: 'LOGIN.FORGOTTEN_PASSWORD',
+                    visible: true,
+                    id: 'forgotten-password-btn',
+                    action: function () {
+                        //display password forgotten modal
+                        _this.gotoPasswordForgotten();
+                    }
+                }
+            ],
+            submit: {
+                id: '',
+                icon: '',
+                label: 'LOGIN.VALIDATE',
+                action: function () {
+                    console.log('Click validate button.');
+                    _this.authenticate();
+                }
+            }
+        };
+        // Set page header
+        this.dataPageHeader = {
+            title: 'LOGIN.TITLE',
+            actions: [
+                {
+                    id: 'help',
+                    label: '',
+                    icon: 'help',
+                    action: function () {
+                        console.log('Click help button.');
+                    }
+                }
+            ],
+            style: 'any',
+            isCanceled: true
+        };
+    }
+    LoginPage.prototype.ngOnInit = function () {
+        var _this = this;
+        // load phone code list
+        this.masterdataService.loadCountriesList().then(function (data) {
+            //set dataset of phone codes of the form
+            _this.formData.fields.filter(function (f) { return f.name === "code"; })[0].dataset = _this.masterdataService.convertCountriesListToDataset(data, true);
+            //the default phone code is France code (33)
+            _this.formData.fields.filter(function (f) { return f.name === "code"; })[0].value = "33";
+        });
+    };
+    LoginPage.prototype.authenticate = function () {
+        var _this = this;
+        //prepare credentials data
+        var code = this.formData.fields.filter(function (f) { return f.name === "code"; })[0].value;
+        var phone = this.formData.fields.filter(function (f) { return f.name === "phone"; })[0].value;
+        var password = Object(__WEBPACK_IMPORTED_MODULE_6__scripts_md5__["a" /* md5 */])(this.formData.fields.filter(function (f) { return f.name === "password"; })[0].value);
+        var phoneWithCode = "+" + code + phone.substr(phone.length - 9);
+        //call web service method
+        this.accountService.authenticate(phoneWithCode, password).then(function (data) {
+            if (data.status == "passwordError") {
+                var msg = 'Le mot de passe est incorrect. Veuillez réessayer.';
+                _this.displayErrorNotification(msg);
+                return;
+            }
+            if (data.found == false) {
+                var msg = 'Aucun compte associé à ce numéro de téléphone.';
+                _this.displayErrorNotification(msg);
+                return;
+            }
+            if (data.id != 0) {
+                var account_1 = data;
+                // show toasy with first name
+                var toast = _this.toastCtrl.create({
+                    message: "Bienvenue " + account_1.identity.firstName + ", vous venez de vous connecter.",
+                    duration: 3000,
+                    position: 'top'
+                });
+                toast.present();
+                _this.storage.set("currentUser", JSON.stringify(account_1)).then(function () {
+                    _this.events.publish('currentUser:logged-in');
+                    //publish event to show username in the web header
+                    _this.events.publish('user:update', account_1);
+                    if (_this.config.isLargeScreen) {
+                        _this.viewCtrl
+                            .dismiss()
+                            .then(function () {
+                            var vojInformationResumePage = {
+                                page: __WEBPACK_IMPORTED_MODULE_13__cv_offer_module_information_resume_information_resume__["a" /* InformationResumePage */],
+                                isRoot: true,
+                                isWebModal: false
+                            };
+                            var vojCalendarPage = {
+                                page: __WEBPACK_IMPORTED_MODULE_14__calendar_calendar__["a" /* CalendarPage */],
+                                isRoot: true,
+                                isWebModal: false
+                            };
+                            _this.navigationService.navigate('main', vojCalendarPage);
+                            _this.navigationService.navigate('list', vojInformationResumePage);
+                        });
+                    }
+                    else {
+                        var vojPage = { page: __WEBPACK_IMPORTED_MODULE_11__search_module_search_search__["a" /* SearchPage */], isRoot: true };
+                        _this.navigationService.navigate("list", vojPage);
+                    }
+                    _this.eventBus.publishAppEventUpdate();
+                    _this.interestService.getInterests();
+                });
+                if (_this.previousPage) {
+                    var vojNav = { page: _this.previousPage, params: { card: _this.card }, isRoot: true };
+                    _this.navigationService.navigate('details', vojNav);
+                    _this.eventBus.publishDetails(_this.card);
+                }
+            }
+        });
+    };
+    LoginPage.prototype.gotoPasswordForgotten = function () {
+        this.navigationService.dismiss(this.viewCtrl);
+        // this.modalService.present({page: ResetPasswordPage}, true);
+        var vojNav = { page: __WEBPACK_IMPORTED_MODULE_8__reset_password_reset_password__["a" /* ResetPasswordPage */], isRoot: false };
+        // this.navigationService.navigate('list', vojNav);
+        this.config.isLargeScreen ? this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_8__reset_password_reset_password__["a" /* ResetPasswordPage */] }, true) : this.navigationService.navigate('list', vojNav);
+    };
+    LoginPage.prototype.goToSignup = function () {
+        if (this.config.isLargeScreen) {
+            this.viewCtrl.dismiss();
+        }
+        var loginFields = {
+            tel: this.formData.fields[1].value,
+            password: this.formData.fields[2].value
+        };
+        var vojPage = {
+            page: __WEBPACK_IMPORTED_MODULE_4__sign_up_sign_up__["a" /* SignUpPage */],
+            isRoot: true,
+            params: { loginData: loginFields, },
+            isWebModal: true,
+            options: { closeConfirmation: true }
+        };
+        this.navigationService.navigate("list", vojPage);
+    };
+    LoginPage.prototype.displayErrorNotification = function (msg) {
+        var alert = this.alertCtrl.create({
+            title: 'Attention!',
+            subTitle: msg,
+            buttons: ['OK']
+        });
+        alert.present();
+    };
+    LoginPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'login-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\account-module\login\login.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n\n\n<div class="voj-content">\n\n  <div class="voj-form-container">\n\n    <voj-form [data]=\'formData\'></voj-form>\n\n\n\n    <!-- Create an account -->\n\n    <h2 class="voj-not-registered-title">{{ \'LOGIN.NOT_REGISTERED\' | translate }}</h2>\n\n    <button ion-button class="custom-btn" (click)="goToSignup()">\n\n      {{ \'LOGIN.CREATE_ACCOUNT\' | translate }}\n\n    </button>\n\n  </div>\n\n</div>\n\n\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\account-module\login\login.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_account_service_account_service__["a" /* AccountService */],
+            __WEBPACK_IMPORTED_MODULE_12__providers_voj_events_voj_events__["a" /* EventBusProvider */],
+            __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */],
+            __WEBPACK_IMPORTED_MODULE_3__services_modal_service__["a" /* ModalService */],
+            __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["u" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["b" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_7__providers_masterdata_service_masterdata_service__["a" /* MasterdataService */],
+            __WEBPACK_IMPORTED_MODULE_15__providers_offer_service_offer_interest_service_offer_interest_service__["a" /* OfferInterestServiceProvider */],
+            __WEBPACK_IMPORTED_MODULE_9__config_voj_configuration__["a" /* Configuration */],
+            __WEBPACK_IMPORTED_MODULE_10__services_navigation_service__["a" /* NavigationService */],
+            __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["t" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["d" /* Events */],
+            __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["n" /* NavParams */]])
+    ], LoginPage);
+    return LoginPage;
+}());
+
+//# sourceMappingURL=login.js.map
+
+/***/ }),
+/* 65 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_page_header_model__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_search_service_search_service__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_search_service_search_service__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_voj_events_voj_events__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__details_details__ = __webpack_require__(132);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_modal_service__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_geolocation__ = __webpack_require__(229);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__cv_offer_module_information_resume_information_resume__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__config_environment__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__account_module_login_login__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__account_module_login_login__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_storage__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__account_module_sign_up_sign_up__ = __webpack_require__(133);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_offer_service_offer_interest_service_offer_interest_service__ = __webpack_require__(59);
@@ -1579,7 +1872,6 @@ var SearchPage = (function () {
                 });
                 for (var j = 0; j < c.actions.length; j++) {
                     var action = c.actions[j];
-                    // FIXME: temporarily removed due to https://app.asana.com/0/404438886620813/428613916108003 by nickpe
                     if (action.id == "details") {
                         action.action = function () {
                             _this.gotoDetails(c);
@@ -1590,7 +1882,11 @@ var SearchPage = (function () {
                             _this.switchInterest(c);
                         };
                     }
-                    // action.action = () => this.gotoDetails(c);
+                    else if (action.id === 'plan_recruit') {
+                        action.action = function () {
+                            _this.planRecruitement(c);
+                        };
+                    }
                 }
             };
             for (var i = 0; i < _this.cards.length; i++) {
@@ -1632,6 +1928,11 @@ var SearchPage = (function () {
                         _this.switchInterest(c);
                     };
                 }
+                else if (action.id === 'plan_recruit') {
+                    action.action = function () {
+                        _this.planRecruitement(c);
+                    };
+                }
             }
         };
         var this_1 = this;
@@ -1650,8 +1951,6 @@ var SearchPage = (function () {
         this.eventsMode = false;
         if (q.queryType == 'full_text' && q.freeText && q.freeText != '') {
             this.searchMode = "full_text";
-            //TODO TIM: Data should have an Array<VojCardType> as type
-            //TODO ABDESLAM: If data is of VojCardType type it will be too specific and unusable for other apps and services
             this.searchService.semanticSearch(q.freeText, false).then(function (data) {
                 _this.sortType = 'pertinence';
                 _this.cards = data;
@@ -1661,7 +1960,7 @@ var SearchPage = (function () {
                     console.log(c.id);
                     for (var j = 0; j < c.actions.length; j++) {
                         var action = c.actions[j];
-                        if (action.id == "details") {
+                        if (action.id === "details") {
                             action.action = function () {
                                 _this.gotoDetails(c);
                             };
@@ -1672,17 +1971,16 @@ var SearchPage = (function () {
                                 _this.switchInterest(c);
                             };
                         }
+                        else if (action.id === 'plan_recruit') {
+                            action.action = function () {
+                                _this.planRecruitement(c);
+                            };
+                        }
                     }
                 };
                 for (var i = 0; i < _this.cards.length; i++) {
                     _loop_3(i);
                 }
-                //TODO TIM: an event service that defines an event for every data structure and then verify types of sent objects
-                //TODO TIM: All maps will be updated. We should define witch map to update, if we have more than one..
-                // sending values to map component in other pages
-                /*let mapPassenger: eBusType = this.eventBus.passenger.type.get('map');
-                mapPassenger.data = this.cards;
-                this.eventBus.set(mapPassenger);*/
                 _this.eventBus.publishMap(_this.cards);
                 if (_this.position && _this.position.coords)
                     _this.saveProximityOrder(_this.position.coords.latitude, _this.position.coords.longitude);
@@ -1698,7 +1996,7 @@ var SearchPage = (function () {
                     c.scoreOrder = i;
                     for (var j = 0; j < c.actions.length; j++) {
                         var action = c.actions[j];
-                        if (action.id == "details") {
+                        if (action.id === "details") {
                             action.action = function () {
                                 _this.gotoDetails(c);
                             };
@@ -1707,6 +2005,11 @@ var SearchPage = (function () {
                         else if (action.id === 'recruite') {
                             action.action = function () {
                                 _this.switchInterest(c);
+                            };
+                        }
+                        else if (action.id === 'plan_recruit') {
+                            action.action = function () {
+                                _this.planRecruitement(c);
                             };
                         }
                     }
@@ -1722,6 +2025,44 @@ var SearchPage = (function () {
                     _this.saveProximityOrder(_this.position.coords.latitude, _this.position.coords.longitude);
             });
         }
+    };
+    SearchPage.prototype.planRecruitement = function (c) {
+        var _this = this;
+        this.storage.get("currentUser").then(function (sdata) {
+            if (!sdata) {
+                //  Not connected
+                var loginFields_1 = {
+                    tel: '',
+                    password: ''
+                };
+                var alert_1 = _this.alertCtrl.create({
+                    message: 'Vous devez vous connecter',
+                    cssClass: 'search-message',
+                    buttons: [
+                        {
+                            text: 'Se connecter',
+                            handler: function () {
+                                var vojPageList = { page: __WEBPACK_IMPORTED_MODULE_12__account_module_login_login__["a" /* LoginPage */], isRoot: true, isWebModal: true };
+                                _this.navigationService.navigate("list", vojPageList);
+                            }
+                        },
+                        {
+                            text: 'S\'inscrire',
+                            handler: function () {
+                                var vojPage = { page: __WEBPACK_IMPORTED_MODULE_14__account_module_sign_up_sign_up__["a" /* SignUpPage */], isRoot: true, params: { loginData: loginFields_1 }, isWebModal: true };
+                                _this.navigationService.navigate("list", vojPage);
+                            }
+                        }
+                    ]
+                });
+                alert_1.present();
+            }
+            else {
+                var data = JSON.parse(sdata);
+                //  connected
+                _this.searchService.planRecruitement(c.id, data.id);
+            }
+        });
     };
     SearchPage.prototype.saveProximityOrder = function (x0, y0) {
         for (var i = 0; i < this.cards.length; i++) {
@@ -1764,7 +2105,7 @@ var SearchPage = (function () {
                 return;
             }
             if (data && data.account) {
-                var vojNav = { page: __WEBPACK_IMPORTED_MODULE_6__details_details__["a" /* DetailsPage */], params: { card: c }, isRoot: true };
+                var vojNav = { page: __WEBPACK_IMPORTED_MODULE_6__details_details__["a" /* DetailsPage */], params: { card: c, mode: 'search' }, isRoot: true };
                 _this.navigationService.navigate('details', vojNav);
                 _this.eventBus.publishDetails(c);
             }
@@ -1780,11 +2121,11 @@ var SearchPage = (function () {
         this.storage.get("currentUser").then(function (sdata) {
             //  Not connected
             if (!sdata) {
-                var loginFields_1 = {
+                var loginFields_2 = {
                     tel: '',
                     password: ''
                 };
-                var alert_1 = _this.alertCtrl.create({
+                var alert_2 = _this.alertCtrl.create({
                     message: 'Vous devez vous connecter',
                     cssClass: 'search-message',
                     buttons: [
@@ -1798,13 +2139,13 @@ var SearchPage = (function () {
                         {
                             text: 'S\'inscrire',
                             handler: function () {
-                                var vojPage = { page: __WEBPACK_IMPORTED_MODULE_14__account_module_sign_up_sign_up__["a" /* SignUpPage */], isRoot: true, params: { loginData: loginFields_1 }, isWebModal: true };
+                                var vojPage = { page: __WEBPACK_IMPORTED_MODULE_14__account_module_sign_up_sign_up__["a" /* SignUpPage */], isRoot: true, params: { loginData: loginFields_2 }, isWebModal: true };
                                 _this.navigationService.navigate("list", vojPage);
                             }
                         }
                     ]
                 });
-                alert_1.present();
+                alert_2.present();
             }
             else {
                 //  connected
@@ -1848,7 +2189,7 @@ var SearchPage = (function () {
                         for (var j = 0; j < c.actions.length; j++) {
                             var action = c.actions[j];
                             // FIXME: temporarily removed due to https://app.asana.com/0/404438886620813/428613916108003 by nickpe
-                            if (action.id == "details") {
+                            if (action.id === "details") {
                                 action.action = function () {
                                     _this.gotoDetails(c);
                                 };
@@ -1857,6 +2198,11 @@ var SearchPage = (function () {
                             else if (action.id === 'recruite') {
                                 action.action = function () {
                                     _this.switchInterest(c);
+                                };
+                            }
+                            else if (action.id === 'plan_recruit') {
+                                action.action = function () {
+                                    _this.planRecruitement(c);
                                 };
                             }
                         }
@@ -1881,7 +2227,7 @@ var SearchPage = (function () {
                         c.scoreOrder = i;
                         for (var j = 0; j < c.actions.length; j++) {
                             var action = c.actions[j];
-                            if (action.id == "details") {
+                            if (action.id === "details") {
                                 action.action = function () {
                                     _this.gotoDetails(c);
                                 };
@@ -1890,6 +2236,11 @@ var SearchPage = (function () {
                             else if (action.id === 'recruite') {
                                 action.action = function () {
                                     _this.switchInterest(c);
+                                };
+                            }
+                            else if (action.id === 'plan_recruit') {
+                                action.action = function () {
+                                    _this.planRecruitement(c);
                                 };
                             }
                         }
@@ -1914,7 +2265,7 @@ var SearchPage = (function () {
                         c.scoreOrder = i;
                         for (var j = 0; j < c.actions.length; j++) {
                             var action = c.actions[j];
-                            if (action.id == "details") {
+                            if (action.id === "details") {
                                 action.action = function () {
                                     _this.gotoDetails(c);
                                 };
@@ -1923,6 +2274,11 @@ var SearchPage = (function () {
                             else if (action.id === 'recruite') {
                                 action.action = function () {
                                     _this.switchInterest(c);
+                                };
+                            }
+                            else if (action.id === 'plan_recruit') {
+                                action.action = function () {
+                                    _this.planRecruitement(c);
                                 };
                             }
                         }
@@ -1960,7 +2316,7 @@ var SearchPage = (function () {
 //# sourceMappingURL=search.js.map
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2106,11 +2462,11 @@ var MissionServiceProvider = (function () {
 //# sourceMappingURL=mission-service.js.map
 
 /***/ }),
-/* 66 */,
 /* 67 */,
 /* 68 */,
 /* 69 */,
-/* 70 */
+/* 70 */,
+/* 71 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2121,10 +2477,10 @@ var MissionServiceProvider = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__http_request_http_request__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dtos_search_result_dto__ = __webpack_require__(721);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dtos_search_result_dto__ = __webpack_require__(722);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__voj_events_voj_events__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_button_type_model__ = __webpack_require__(722);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__dtos_dto_strategy_search_search_dto_factory__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_button_type_model__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__dtos_dto_strategy_search_search_dto_factory__ = __webpack_require__(344);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__offer_service_offer_service_strategy_offer_interest_factory__ = __webpack_require__(341);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2419,6 +2775,71 @@ var SearchServiceProvider = (function () {
             });
         });
     };
+    SearchServiceProvider.prototype.loadFavData = function (idJobyer, idEmployer) {
+        var _this = this;
+        var payload = {
+            service: 'GET_FAV',
+            employer: idEmployer,
+            jobyer: idJobyer
+        };
+        var url = "";
+        for (var i = 0; i < this.configuration.configuration.urls.length; i++) {
+            var t = this.configuration.configuration.urls[i];
+            if (t.key == "search") {
+                url = t.value;
+                break;
+            }
+        }
+        return new Promise(function (resolve) {
+            _this.http.call(payload, url, "", true).subscribe(function (data) {
+                resolve(data.fav);
+            });
+        });
+    };
+    SearchServiceProvider.prototype.switchFav = function (idJobyer, idEmployer) {
+        var _this = this;
+        var payload = {
+            service: 'SWITCH_FAV',
+            employer: idEmployer,
+            jobyer: idJobyer
+        };
+        var url = "";
+        for (var i = 0; i < this.configuration.configuration.urls.length; i++) {
+            var t = this.configuration.configuration.urls[i];
+            if (t.key == "search") {
+                url = t.value;
+                break;
+            }
+        }
+        console.clear();
+        console.log(JSON.stringify(payload));
+        return new Promise(function (resolve) {
+            _this.http.call(payload, url, "", true).subscribe(function (data) {
+                resolve(data);
+            });
+        });
+    };
+    SearchServiceProvider.prototype.planRecruitement = function (idJobyer, idEmployer) {
+        var _this = this;
+        var payload = {
+            service: 'PLAN_RECRUITE',
+            employer: idEmployer,
+            jobyer: idJobyer
+        };
+        var url = "";
+        for (var i = 0; i < this.configuration.configuration.urls.length; i++) {
+            var t = this.configuration.configuration.urls[i];
+            if (t.key == "search") {
+                url = t.value;
+                break;
+            }
+        }
+        return new Promise(function (resolve) {
+            _this.http.call(payload, url, "", true).subscribe(function (data) {
+                resolve(data);
+            });
+        });
+    };
     SearchServiceProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__http_request_http_request__["a" /* HttpRequestProvider */],
@@ -2433,290 +2854,8 @@ var SearchServiceProvider = (function () {
 //# sourceMappingURL=search-service.js.map
 
 /***/ }),
-/* 71 */,
 /* 72 */,
-/* 73 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_account_service_account_service__ = __webpack_require__(231);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_modal_service__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sign_up_sign_up__ = __webpack_require__(133);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__scripts_md5__ = __webpack_require__(233);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_masterdata_service_masterdata_service__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__reset_password_reset_password__ = __webpack_require__(577);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_navigation_service__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__search_module_search_search__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_voj_events_voj_events__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__cv_offer_module_information_resume_information_resume__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__calendar_calendar__ = __webpack_require__(237);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_offer_service_offer_interest_service_offer_interest_service__ = __webpack_require__(59);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var LoginPage = (function () {
-    function LoginPage(accountService, eventBus, storage, modalService, viewCtrl, alertCtrl, masterdataService, interestService, configuration, navigationService, toastCtrl, events, navParams) {
-        var _this = this;
-        this.accountService = accountService;
-        this.eventBus = eventBus;
-        this.storage = storage;
-        this.modalService = modalService;
-        this.viewCtrl = viewCtrl;
-        this.alertCtrl = alertCtrl;
-        this.masterdataService = masterdataService;
-        this.interestService = interestService;
-        this.configuration = configuration;
-        this.navigationService = navigationService;
-        this.toastCtrl = toastCtrl;
-        this.events = events;
-        this.navParams = navParams;
-        this.config = this.configuration.configuration;
-        this.card = this.navParams.get('card');
-        this.previousPage = this.navParams.get('previousPage');
-        // Set form data
-        this.formData = {
-            title: '',
-            fields: [
-                // Phone code
-                {
-                    type: 'select',
-                    value: null,
-                    label: 'FORM.COUNTRY_CODE',
-                    dataset: [],
-                    required: true,
-                    visible: true,
-                    id: 'phone-code-field',
-                    name: 'code'
-                },
-                // Phone
-                {
-                    placeholder: '',
-                    type: 'tel',
-                    value: '',
-                    label: 'FORM.PHONE',
-                    required: true,
-                    readonly: false,
-                    visible: true,
-                    min: 9,
-                    max: 10,
-                    regex: '^((06)|(07))[0-9]*$',
-                    validationMsg: 'VALIDATION.PHONE_VALIDATION_MSG',
-                    id: 'phone-field',
-                    name: 'phone'
-                },
-                // Password
-                {
-                    placeholder: '',
-                    type: 'password',
-                    value: '',
-                    label: 'FORM.PASSWORD',
-                    required: true,
-                    readonly: false,
-                    visible: true,
-                    min: 6,
-                    max: 100,
-                    regex: '',
-                    validationMsg: 'VALIDATION.PASSWORD_VALIDATION_MSG',
-                    id: 'password-field',
-                    name: 'password'
-                },
-                // Forgotten password button
-                {
-                    type: 'button',
-                    label: 'LOGIN.FORGOTTEN_PASSWORD',
-                    visible: true,
-                    id: 'forgotten-password-btn',
-                    action: function () {
-                        //display password forgotten modal
-                        _this.gotoPasswordForgotten();
-                    }
-                }
-            ],
-            submit: {
-                id: '',
-                icon: '',
-                label: 'LOGIN.VALIDATE',
-                action: function () {
-                    console.log('Click validate button.');
-                    _this.authenticate();
-                }
-            }
-        };
-        // Set page header
-        this.dataPageHeader = {
-            title: 'LOGIN.TITLE',
-            actions: [
-                {
-                    id: 'help',
-                    label: '',
-                    icon: 'help',
-                    action: function () {
-                        console.log('Click help button.');
-                    }
-                }
-            ],
-            style: 'any',
-            isCanceled: true
-        };
-    }
-    LoginPage.prototype.ngOnInit = function () {
-        var _this = this;
-        // load phone code list
-        this.masterdataService.loadCountriesList().then(function (data) {
-            //set dataset of phone codes of the form
-            _this.formData.fields.filter(function (f) { return f.name === "code"; })[0].dataset = _this.masterdataService.convertCountriesListToDataset(data, true);
-            //the default phone code is France code (33)
-            _this.formData.fields.filter(function (f) { return f.name === "code"; })[0].value = "33";
-        });
-    };
-    LoginPage.prototype.authenticate = function () {
-        var _this = this;
-        //prepare credentials data
-        var code = this.formData.fields.filter(function (f) { return f.name === "code"; })[0].value;
-        var phone = this.formData.fields.filter(function (f) { return f.name === "phone"; })[0].value;
-        var password = Object(__WEBPACK_IMPORTED_MODULE_6__scripts_md5__["a" /* md5 */])(this.formData.fields.filter(function (f) { return f.name === "password"; })[0].value);
-        var phoneWithCode = "+" + code + phone.substr(phone.length - 9);
-        //call web service method
-        this.accountService.authenticate(phoneWithCode, password).then(function (data) {
-            if (data.status == "passwordError") {
-                var msg = 'Le mot de passe est incorrect. Veuillez réessayer.';
-                _this.displayErrorNotification(msg);
-                return;
-            }
-            if (data.found == false) {
-                var msg = 'Aucun compte associé à ce numéro de téléphone.';
-                _this.displayErrorNotification(msg);
-                return;
-            }
-            if (data.id != 0) {
-                var account_1 = data;
-                // show toasy with first name
-                var toast = _this.toastCtrl.create({
-                    message: "Bienvenue " + account_1.identity.firstName + ", vous venez de vous connecter.",
-                    duration: 3000,
-                    position: 'top'
-                });
-                toast.present();
-                _this.storage.set("currentUser", JSON.stringify(account_1)).then(function () {
-                    _this.events.publish('currentUser:logged-in');
-                    //publish event to show username in the web header
-                    _this.events.publish('user:update', account_1);
-                    if (_this.config.isLargeScreen) {
-                        _this.viewCtrl
-                            .dismiss()
-                            .then(function () {
-                            var vojInformationResumePage = {
-                                page: __WEBPACK_IMPORTED_MODULE_13__cv_offer_module_information_resume_information_resume__["a" /* InformationResumePage */],
-                                isRoot: true,
-                                isWebModal: false
-                            };
-                            var vojCalendarPage = {
-                                page: __WEBPACK_IMPORTED_MODULE_14__calendar_calendar__["a" /* CalendarPage */],
-                                isRoot: true,
-                                isWebModal: false
-                            };
-                            _this.navigationService.navigate('main', vojCalendarPage);
-                            _this.navigationService.navigate('list', vojInformationResumePage);
-                        });
-                    }
-                    else {
-                        var vojPage = { page: __WEBPACK_IMPORTED_MODULE_11__search_module_search_search__["a" /* SearchPage */], isRoot: true };
-                        _this.navigationService.navigate("list", vojPage);
-                    }
-                    _this.eventBus.publishAppEventUpdate();
-                    _this.interestService.getInterests();
-                });
-                if (_this.previousPage) {
-                    var vojNav = { page: _this.previousPage, params: { card: _this.card }, isRoot: true };
-                    _this.navigationService.navigate('details', vojNav);
-                    _this.eventBus.publishDetails(_this.card);
-                }
-            }
-        });
-    };
-    LoginPage.prototype.gotoPasswordForgotten = function () {
-        this.navigationService.dismiss(this.viewCtrl);
-        // this.modalService.present({page: ResetPasswordPage}, true);
-        var vojNav = { page: __WEBPACK_IMPORTED_MODULE_8__reset_password_reset_password__["a" /* ResetPasswordPage */], isRoot: false };
-        // this.navigationService.navigate('list', vojNav);
-        this.config.isLargeScreen ? this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_8__reset_password_reset_password__["a" /* ResetPasswordPage */] }, true) : this.navigationService.navigate('list', vojNav);
-    };
-    LoginPage.prototype.goToSignup = function () {
-        if (this.config.isLargeScreen) {
-            this.viewCtrl.dismiss();
-        }
-        var loginFields = {
-            tel: this.formData.fields[1].value,
-            password: this.formData.fields[2].value
-        };
-        var vojPage = {
-            page: __WEBPACK_IMPORTED_MODULE_4__sign_up_sign_up__["a" /* SignUpPage */],
-            isRoot: true,
-            params: { loginData: loginFields, },
-            isWebModal: true,
-            options: { closeConfirmation: true }
-        };
-        this.navigationService.navigate("list", vojPage);
-    };
-    LoginPage.prototype.displayErrorNotification = function (msg) {
-        var alert = this.alertCtrl.create({
-            title: 'Attention!',
-            subTitle: msg,
-            buttons: ['OK']
-        });
-        alert.present();
-    };
-    LoginPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'login-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\account-module\login\login.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n\n\n<div class="voj-content">\n\n  <div class="voj-form-container">\n\n    <voj-form [data]=\'formData\'></voj-form>\n\n\n\n    <!-- Create an account -->\n\n    <h2 class="voj-not-registered-title">{{ \'LOGIN.NOT_REGISTERED\' | translate }}</h2>\n\n    <button ion-button class="custom-btn" (click)="goToSignup()">\n\n      {{ \'LOGIN.CREATE_ACCOUNT\' | translate }}\n\n    </button>\n\n  </div>\n\n</div>\n\n\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\account-module\login\login.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_account_service_account_service__["a" /* AccountService */],
-            __WEBPACK_IMPORTED_MODULE_12__providers_voj_events_voj_events__["a" /* EventBusProvider */],
-            __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */],
-            __WEBPACK_IMPORTED_MODULE_3__services_modal_service__["a" /* ModalService */],
-            __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["u" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["b" /* AlertController */],
-            __WEBPACK_IMPORTED_MODULE_7__providers_masterdata_service_masterdata_service__["a" /* MasterdataService */],
-            __WEBPACK_IMPORTED_MODULE_15__providers_offer_service_offer_interest_service_offer_interest_service__["a" /* OfferInterestServiceProvider */],
-            __WEBPACK_IMPORTED_MODULE_9__config_voj_configuration__["a" /* Configuration */],
-            __WEBPACK_IMPORTED_MODULE_10__services_navigation_service__["a" /* NavigationService */],
-            __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["t" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["d" /* Events */],
-            __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["n" /* NavParams */]])
-    ], LoginPage);
-    return LoginPage;
-}());
-
-//# sourceMappingURL=login.js.map
-
-/***/ }),
+/* 73 */,
 /* 74 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2944,7 +3083,7 @@ var ToastService = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__jobyer_availability_choice_jobyer_availability_choice__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_navigation_service__ = __webpack_require__(11);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3175,7 +3314,7 @@ var CalendarService = (function () {
 /* unused harmony export MultiSelect */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FullCalendarService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__);
@@ -3439,7 +3578,7 @@ var VojSegmentModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__main_address_main_address__ = __webpack_require__(134);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dtos_identity_dto__ = __webpack_require__(915);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_utils__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_toast_service__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_profile_service_profile_service__ = __webpack_require__(100);
@@ -3564,7 +3703,7 @@ var IdentityPage = (function () {
     IdentityPage.prototype.ngOnInit = function () {
         var _this = this;
         this.storage.get("currentUser").then(function (data) {
-            if (__WEBPACK_IMPORTED_MODULE_7__utils_utils__["b" /* ObjectUtils */].isEmpty(data)) {
+            if (__WEBPACK_IMPORTED_MODULE_7__utils_utils__["c" /* ObjectUtils */].isEmpty(data)) {
                 //TODO: restrict access to this page to logged in users
                 //redirecting to the search page was a bad idea, we should redirect to a landing page or display a notification
                 return;
@@ -3575,7 +3714,7 @@ var IdentityPage = (function () {
     };
     IdentityPage.prototype.initializingFormData = function () {
         // Set form data in the case of connected users
-        this.formData.fields.filter(function (f) { return f.name === "civility"; })[0].value = (__WEBPACK_IMPORTED_MODULE_7__utils_utils__["b" /* ObjectUtils */].isEmpty(this.currentUser.identity.civility) ? "Mme" : this.currentUser.identity.civility);
+        this.formData.fields.filter(function (f) { return f.name === "civility"; })[0].value = (__WEBPACK_IMPORTED_MODULE_7__utils_utils__["c" /* ObjectUtils */].isEmpty(this.currentUser.identity.civility) ? "Mme" : this.currentUser.identity.civility);
         this.formData.fields.filter(function (f) { return f.name === "lastName"; })[0].value = this.currentUser.identity.lastName;
         this.formData.fields.filter(function (f) { return f.name === "middleName"; })[0].value = this.currentUser.identity.middleName;
         this.formData.fields.filter(function (f) { return f.name === "firstName"; })[0].value = this.currentUser.identity.firstName;
@@ -3848,10 +3987,10 @@ var ProfileService = (function () {
             "role": this.config.customer == "J" ? "jobyer" : "employeur",
             "roleId": roleId.toString(),
             "bankDetailsId": bankData.id.toString(),
-            "bankName": __WEBPACK_IMPORTED_MODULE_3__utils_utils__["c" /* StringUtils */].preventNull(bankData.bankName),
-            "accountOwner": __WEBPACK_IMPORTED_MODULE_3__utils_utils__["c" /* StringUtils */].preventNull(bankData.accountOwner),
-            "bic": __WEBPACK_IMPORTED_MODULE_3__utils_utils__["c" /* StringUtils */].preventNull(bankData.bic),
-            "iban": __WEBPACK_IMPORTED_MODULE_3__utils_utils__["c" /* StringUtils */].preventNull(bankData.iban)
+            "bankName": __WEBPACK_IMPORTED_MODULE_3__utils_utils__["d" /* StringUtils */].preventNull(bankData.bankName),
+            "accountOwner": __WEBPACK_IMPORTED_MODULE_3__utils_utils__["d" /* StringUtils */].preventNull(bankData.accountOwner),
+            "bic": __WEBPACK_IMPORTED_MODULE_3__utils_utils__["d" /* StringUtils */].preventNull(bankData.bic),
+            "iban": __WEBPACK_IMPORTED_MODULE_3__utils_utils__["d" /* StringUtils */].preventNull(bankData.iban)
         };
         return new Promise(function (resolve) {
             _this.http.call(payload, _this.url, "", true).subscribe(function (data) {
@@ -3925,14 +4064,14 @@ var VojSearchHeaderModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__strategy_employer__ = __webpack_require__(940);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__strategy_jobyer__ = __webpack_require__(941);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__strategy_context__ = __webpack_require__(604);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__strategy_context__ = __webpack_require__(605);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__identity_identity__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__main_address_main_address__ = __webpack_require__(134);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__personal_details_personal_details__ = __webpack_require__(135);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__personal_details_identity_personal_details_identity__ = __webpack_require__(136);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__bank_settings_bank_settings__ = __webpack_require__(137);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__documents_documents__ = __webpack_require__(605);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__documents_documents__ = __webpack_require__(606);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4260,11 +4399,13 @@ var VojMapModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_card_model__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_voj_events_voj_events__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_voj_page_header_model__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_search_service_search_service__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_search_service_search_service__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_offer_service_offer_interest_service_offer_interest_service__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_storage__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__models_button_type_model__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__config_voj_configuration__ = __webpack_require__(7);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4283,12 +4424,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
 var DetailsPage = (function () {
-    function DetailsPage(navParams, searchService, eventBus, storage, interestService, navigationService) {
+    function DetailsPage(navParams, searchService, eventBus, storage, configuration, interestService, navigationService) {
+        var _this = this;
         this.navParams = navParams;
         this.searchService = searchService;
         this.eventBus = eventBus;
         this.storage = storage;
+        this.configuration = configuration;
         this.interestService = interestService;
         this.navigationService = navigationService;
         this.headerData = new __WEBPACK_IMPORTED_MODULE_5__models_voj_page_header_model__["a" /* VojPageHeaderType */]();
@@ -4309,9 +4454,61 @@ var DetailsPage = (function () {
                     }
             }
             this.updateCardInterest();
+            if (navParams.data.mode && navParams.data.mode == 'search' && this.configuration.configuration.customer == 'E') {
+                this.storage.get('currentUser').then(function (sdata) {
+                    if (sdata && sdata.length > 0) {
+                        var data = JSON.parse(sdata);
+                        var idEmployer = data.id;
+                        _this.searchService.loadFavData(_this.card.id, idEmployer).then(function (fav) {
+                            if (fav == true) {
+                                _this.loadUnfavButton();
+                            }
+                            else {
+                                _this.loadFavButton();
+                            }
+                        });
+                    }
+                });
+            }
         }
         this.eventBus.subscribeDetails(this);
     }
+    DetailsPage.prototype.loadUnfavButton = function () {
+        var _this = this;
+        var b = new __WEBPACK_IMPORTED_MODULE_9__models_button_type_model__["a" /* ButtonType */]();
+        b.icon = 'heart';
+        b.id = 'fav';
+        b.action = function () {
+            _this.storage.get('currentUser').then(function (sdata) {
+                if (sdata && sdata.length > 0) {
+                    var data = JSON.parse(sdata);
+                    var idEmployer = data.id;
+                    _this.searchService.switchFav(_this.card.id, idEmployer);
+                    _this.card.socialButtons[0].icon = _this.card.socialButtons[0].icon == 'heart-outline' ? 'heart' : 'heart-outline';
+                }
+            });
+        };
+        this.card.socialButtons = [];
+        this.card.socialButtons.push(b);
+    };
+    DetailsPage.prototype.loadFavButton = function () {
+        var _this = this;
+        var b = new __WEBPACK_IMPORTED_MODULE_9__models_button_type_model__["a" /* ButtonType */]();
+        b.icon = 'heart-outline';
+        b.id = 'fav';
+        b.action = function () {
+            _this.storage.get('currentUser').then(function (sdata) {
+                if (sdata && sdata.length > 0) {
+                    var data = JSON.parse(sdata);
+                    var idEmployer = data.id;
+                    _this.searchService.switchFav(_this.card.id, idEmployer);
+                    _this.card.socialButtons[0].icon = _this.card.socialButtons[0].icon == 'heart-outline' ? 'heart' : 'heart-outline';
+                }
+            });
+        };
+        this.card.socialButtons = [];
+        this.card.socialButtons.push(b);
+    };
     DetailsPage.prototype.ionViewDidLoad = function () {
     };
     DetailsPage.prototype.updateCard = function (c) {
@@ -4364,6 +4561,7 @@ var DetailsPage = (function () {
             __WEBPACK_IMPORTED_MODULE_6__providers_search_service_search_service__["a" /* SearchServiceProvider */],
             __WEBPACK_IMPORTED_MODULE_3__providers_voj_events_voj_events__["a" /* EventBusProvider */],
             __WEBPACK_IMPORTED_MODULE_8__ionic_storage__["b" /* Storage */],
+            __WEBPACK_IMPORTED_MODULE_10__config_voj_configuration__["a" /* Configuration */],
             __WEBPACK_IMPORTED_MODULE_7__providers_offer_service_offer_interest_service_offer_interest_service__["a" /* OfferInterestServiceProvider */],
             __WEBPACK_IMPORTED_MODULE_4__services_navigation_service__["a" /* NavigationService */]])
     ], DetailsPage);
@@ -4383,11 +4581,12 @@ var DetailsPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_signup_service_signup_service__ = __webpack_require__(232);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identity_identity__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__login_login__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__login_login__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__scripts_md5__ = __webpack_require__(233);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_masterdata_service_masterdata_service__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__enterprise_search_enterprise_search__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ngx_translate_core__ = __webpack_require__(13);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4407,8 +4606,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var SignUpPage = (function () {
-    function SignUpPage(params, configurationService, signupService, viewCtrl, alertCtrl, masterdataService, navigationService, navParams) {
+    function SignUpPage(params, configurationService, signupService, viewCtrl, alertCtrl, masterdataService, navigationService, navParams, translate) {
         var _this = this;
         this.params = params;
         this.configurationService = configurationService;
@@ -4418,6 +4618,7 @@ var SignUpPage = (function () {
         this.masterdataService = masterdataService;
         this.navigationService = navigationService;
         this.navParams = navParams;
+        this.translate = translate;
         this.config = this.configurationService.configuration;
         this.formData = {
             fields: [
@@ -4569,12 +4770,10 @@ var SignUpPage = (function () {
     SignUpPage.prototype.signUp = function () {
         var _this = this;
         //prepare credentials data
-        //TODO: code variable should have only the phone code as value. it means code variable should have "33" as value instead of "France (33)"
-        var code = this.formData.fields.filter(function (f) { return f.name === "selectPhoneCode"; })[0].value;
+        var code = this.formData.fields.filter(function (f) { return f.name === "selectPhoneCode"; })[0].value.replace(/[A-Za-zÀ-ú- ().']/g, '');
         var phone = this.formData.fields.filter(function (f) { return f.name === "userPhone"; })[0].value;
         var email = this.formData.fields.filter(function (f) { return f.name === "userEmail"; })[0].value;
         var password = Object(__WEBPACK_IMPORTED_MODULE_6__scripts_md5__["a" /* md5 */])(this.formData.fields.filter(function (f) { return f.name === "userPassword"; })[0].value);
-        //TODO: so here phoneWithCode should have as a value "+33xxxxxxxxx" instead of "+France (33)xxxxxxxxx"
         var phoneWithCode = "+" + code + phone.substr(phone.length - 9);
         var accountToSave = {
             id: 0,
@@ -4615,12 +4814,15 @@ var SignUpPage = (function () {
     };
     //TODO: this error msg should be displayed in the form
     SignUpPage.prototype.displayNotificationForUsedCredentials = function () {
-        var alert = this.alertCtrl.create({
-            title: 'Attention!',
-            subTitle: 'Ces informations d\'identification sont déjà enregistrées. Entrez un autre numéro de téléphone et un email.',
-            buttons: ['OK']
+        var _this = this;
+        this.translate.get('SIGNUP').subscribe(function (translation) {
+            var alert = _this.alertCtrl.create({
+                title: translation.NOTIFICATION_TITLE,
+                subTitle: translation.NOTIFICATION_SUBTITLE,
+                buttons: ['OK']
+            });
+            alert.present();
         });
-        alert.present();
     };
     SignUpPage.prototype.goToLogin = function () {
         this.navigationService.dismiss(this.viewCtrl);
@@ -4645,7 +4847,8 @@ var SignUpPage = (function () {
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */],
             __WEBPACK_IMPORTED_MODULE_7__providers_masterdata_service_masterdata_service__["a" /* MasterdataService */],
             __WEBPACK_IMPORTED_MODULE_8__services_navigation_service__["a" /* NavigationService */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_10__ngx_translate_core__["c" /* TranslateService */]])
     ], SignUpPage);
     return SignUpPage;
 }());
@@ -4665,11 +4868,11 @@ var SignUpPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__personal_details_personal_details__ = __webpack_require__(135);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_utils__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_toast_service__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_address_service_address_service__ = __webpack_require__(576);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_address_service_address_service__ = __webpack_require__(577);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__config_environment__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ngx_translate_core__ = __webpack_require__(13);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -4799,10 +5002,12 @@ var MainAddressPage = (function () {
                     label: 'MAIN_ADDRESS.CITY_LABEL',
                     required: true,
                     visible: true,
-                    regex: '^[A-Za-z0-9\']*$',
                     validationMsg: 'MAIN_ADDRESS.CITY_ERR',
                     id: 'city',
-                    name: 'city'
+                    name: 'city',
+                    action: function () {
+                        _this.checkCityField(_this.formData.fields.filter(function (f) { return f.name === 'city'; })[0].value);
+                    }
                 },
             ],
             submit: {
@@ -4818,7 +5023,7 @@ var MainAddressPage = (function () {
         var _this = this;
         //TODO: prevent access to this page for disconnected users
         this.storage.get("currentUser").then(function (val) {
-            if (__WEBPACK_IMPORTED_MODULE_8__utils_utils__["b" /* ObjectUtils */].isEmpty(val)) {
+            if (__WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* ObjectUtils */].isEmpty(val)) {
                 return;
             }
             _this.currentUser = JSON.parse(val);
@@ -4826,13 +5031,17 @@ var MainAddressPage = (function () {
         });
     };
     MainAddressPage.prototype.saveAddress = function () {
+        var _this = this;
         //if all fields are empty, ignore this step and go to the next page
         /*let ignoreThisStep = !ObjectUtils.isFormNotEmpty(this.formData.fields);
         if(ignoreThisStep){
             this.goToPersonalDetailsPage();
             return;
         }*/
-        var _this = this;
+        var isFormValid = this.checkCityField(this.formData.fields.filter(function (f) { return f.name === 'city'; })[0].value);
+        if (!isFormValid) {
+            return;
+        }
         var addressDto = {
             id: this.addressId,
             name: this.addressName,
@@ -4842,7 +5051,7 @@ var MainAddressPage = (function () {
             city: this.formData.fields.filter(function (f) { return f.name === "city"; })[0].value,
             adressType: "personal"
         };
-        var isNewAddress = (addressDto.id == 0 || __WEBPACK_IMPORTED_MODULE_8__utils_utils__["b" /* ObjectUtils */].isEmpty(addressDto.id));
+        var isNewAddress = (addressDto.id == 0 || __WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* ObjectUtils */].isEmpty(addressDto.id));
         //save a new address
         if (this.isInscription || isNewAddress) {
             this.addressService.insertAddress(addressDto, this.currentUser.id).then(function (data) {
@@ -5006,9 +5215,31 @@ var MainAddressPage = (function () {
             this.presentError(key.id);
         }
     };
+    MainAddressPage.prototype.checkCityField = function (str) {
+        if (!__WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* ObjectUtils */].isEmpty(str)) {
+            var isFormValid = true;
+            var errorStatus = __WEBPACK_IMPORTED_MODULE_8__utils_utils__["b" /* FieldValidate */].isValid(str);
+            var city = this.formData.fields.filter(function (f) { return f.name === 'city'; })[0].id;
+            errorStatus === false ? isFormValid = false : isFormValid = true;
+            if (errorStatus === false) {
+                isFormValid = false;
+            }
+            errorStatus === false ? this.presentError(city) : this.hideError((city));
+            return isFormValid;
+        }
+    };
     // Show validation message
     MainAddressPage.prototype.presentError = function (parentId) {
-        document.getElementById(parentId).getElementsByClassName('voj-validation-error-msg')[0].removeAttribute('hidden');
+        if (document.getElementById(parentId).getElementsByClassName('voj-validation-error-msg').length) {
+            document.getElementById(parentId).getElementsByClassName('voj-validation-error-msg')[0].removeAttribute('hidden');
+            document.getElementById(parentId).getElementsByClassName('voj-validation-error-msg')[0].style.display = 'block';
+        }
+    };
+    // Hide validate msg
+    MainAddressPage.prototype.hideError = function (parentId) {
+        if (document.getElementById(parentId).getElementsByClassName('voj-validation-error-msg').length) {
+            document.getElementById(parentId).getElementsByClassName('voj-validation-error-msg')[0].style.display = 'none';
+        }
     };
     MainAddressPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
@@ -5043,7 +5274,7 @@ var MainAddressPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__personal_details_identity_personal_details_identity__ = __webpack_require__(136);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_profile_service_profile_service__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_storage__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_utils__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_toast_service__ = __webpack_require__(75);
@@ -5201,7 +5432,7 @@ var PersonalDetailsPage = (function () {
         });
         //initializing form with current user data
         this.storage.get("currentUser").then(function (val) {
-            if (__WEBPACK_IMPORTED_MODULE_8__utils_utils__["b" /* ObjectUtils */].isEmpty(val)) {
+            if (__WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* ObjectUtils */].isEmpty(val)) {
                 return;
             }
             _this.currentUser = JSON.parse(val);
@@ -5220,12 +5451,12 @@ var PersonalDetailsPage = (function () {
             else {
                 var savedBirthData = data;
                 _this.formData.fields.filter(function (f) { return f.name == 'dateOfBirth'; })[0].value = new Date(savedBirthData.birthDate);
-                _this.formData.fields.filter(function (f) { return f.name == 'countryBirth'; })[0].value = __WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* StringUtils */].preventNull(savedBirthData.birthPlace.country.name);
-                _this.formData.fields.filter(function (f) { return f.name == 'departmentOfBirth'; })[0].value = __WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* StringUtils */].preventNull(savedBirthData.birthPlace.department.name);
-                _this.formData.fields.filter(function (f) { return f.name == 'placeOfBirth'; })[0].value = __WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* StringUtils */].preventNull(savedBirthData.birthPlace.municipality.name);
-                _this.formData.fields.filter(function (f) { return f.name == 'socialSecurityNumber'; })[0].value = __WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* StringUtils */].preventNull(savedBirthData.numSS);
+                _this.formData.fields.filter(function (f) { return f.name == 'countryBirth'; })[0].value = __WEBPACK_IMPORTED_MODULE_8__utils_utils__["d" /* StringUtils */].preventNull(savedBirthData.birthPlace.country.name);
+                _this.formData.fields.filter(function (f) { return f.name == 'departmentOfBirth'; })[0].value = __WEBPACK_IMPORTED_MODULE_8__utils_utils__["d" /* StringUtils */].preventNull(savedBirthData.birthPlace.department.name);
+                _this.formData.fields.filter(function (f) { return f.name == 'placeOfBirth'; })[0].value = __WEBPACK_IMPORTED_MODULE_8__utils_utils__["d" /* StringUtils */].preventNull(savedBirthData.birthPlace.municipality.name);
+                _this.formData.fields.filter(function (f) { return f.name == 'socialSecurityNumber'; })[0].value = __WEBPACK_IMPORTED_MODULE_8__utils_utils__["d" /* StringUtils */].preventNull(savedBirthData.numSS);
                 var placeOfBirth = _this.formData.fields.filter(function (f) { return f.name == 'placeOfBirth'; })[0].value;
-                if (!__WEBPACK_IMPORTED_MODULE_8__utils_utils__["b" /* ObjectUtils */].isEmpty(placeOfBirth)) {
+                if (!__WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* ObjectUtils */].isEmpty(placeOfBirth)) {
                     _this.initializationDepartments();
                 }
             }
@@ -5248,7 +5479,7 @@ var PersonalDetailsPage = (function () {
         var isFrench = (countryName == 'France');
         //if the user is french, save his department and municipality, else don't save them
         var birthData = {
-            birthDate: __WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* StringUtils */].preventNull(this.formData.fields.filter(function (f) { return f.name === "dateOfBirth"; })[0].value),
+            birthDate: __WEBPACK_IMPORTED_MODULE_8__utils_utils__["d" /* StringUtils */].preventNull(this.formData.fields.filter(function (f) { return f.name === "dateOfBirth"; })[0].value),
             country: this.countries.filter(function (c) { return c.name == countryName; })[0].gid,
             department: (isFrench ? this.departments.filter(function (c) { return c.name == departmentName; })[0].gid : ""),
             municipality: (isFrench ? this.municipalities.filter(function (c) { return c.name == municipalityName; })[0].id : ""),
@@ -5307,7 +5538,7 @@ var PersonalDetailsPage = (function () {
     PersonalDetailsPage.prototype.countryChanged = function () {
         var _this = this;
         var chosenCountry = this.formData.fields.filter(function (f) { return f.name === "countryBirth"; })[0].value;
-        if (!__WEBPACK_IMPORTED_MODULE_8__utils_utils__["b" /* ObjectUtils */].isEmpty(chosenCountry)) {
+        if (!__WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* ObjectUtils */].isEmpty(chosenCountry)) {
             // If France
             if (chosenCountry === 'France') {
                 //if the birth country is France, load department list, and disable municipalities list
@@ -5344,7 +5575,7 @@ var PersonalDetailsPage = (function () {
         var _this = this;
         // Get Municipalities for Department
         var departmentName = this.formData.fields.filter(function (f) { return f.name == "departmentOfBirth"; })[0].value;
-        if (!__WEBPACK_IMPORTED_MODULE_8__utils_utils__["b" /* ObjectUtils */].isEmpty(departmentName) && !__WEBPACK_IMPORTED_MODULE_8__utils_utils__["b" /* ObjectUtils */].isEmpty(this.departments) && departmentName !== ' ') {
+        if (!__WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* ObjectUtils */].isEmpty(departmentName) && !__WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* ObjectUtils */].isEmpty(this.departments) && departmentName !== ' ') {
             var departmentId = this.departments.filter(function (d) { return d.name == departmentName; })[0].gid;
             this.profileService.getMunicipalitiesByDepartment(departmentId).then(function (data) {
                 _this.municipalities = data;
@@ -5439,7 +5670,7 @@ var PersonalDetailsPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_masterdata_service_masterdata_service__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bank_settings_bank_settings__ = __webpack_require__(137);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_profile_service_profile_service__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_storage__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_utils__ = __webpack_require__(22);
@@ -5485,6 +5716,7 @@ var PersonalDetailsIdentityPage = (function () {
         this.storage = storage;
         this.toast = toast;
         this.translate = translate;
+        this.disabledChooseValid = false;
         this.config = this.configurationService.configuration;
         this.isInscription = this.navParams.data.isInscription;
         this.formData = {
@@ -5498,6 +5730,7 @@ var PersonalDetailsIdentityPage = (function () {
                     visible: true,
                     id: 'nationality',
                     name: 'nationality',
+                    selectTitle: 'PERSONAL_DETAILS_IDENTITY.NATIONALITIES_LIST',
                     action: function () {
                         _this.checkNationalities();
                     }
@@ -5548,6 +5781,7 @@ var PersonalDetailsIdentityPage = (function () {
                     visible: true,
                     id: 'prefecture',
                     name: 'prefecture',
+                    selectTitle: 'PERSONAL_DETAILS_IDENTITY.PREFECTURE_LIST'
                 },
                 {
                     type: 'date',
@@ -5579,8 +5813,7 @@ var PersonalDetailsIdentityPage = (function () {
             ],
             submit: {
                 id: 'submit',
-                //TODO: the button names should be switched : the button name should be "Suivant" in the case of inscription and should be "Valider" in the case of data modification
-                label: (this.isInscription ? 'PERSONAL_DETAILS_IDENTITY.VALIDATE_BTN' : 'PERSONAL_DETAILS_IDENTITY.FOLLOWING_BTN'),
+                label: (this.isInscription ? 'PERSONAL_DETAILS_IDENTITY.FOLLOWING_BTN' : 'PERSONAL_DETAILS_IDENTITY.VALIDATE_BTN'),
                 action: function (event) {
                     _this.savePersonalDetailsIdentity();
                 }
@@ -5643,17 +5876,21 @@ var PersonalDetailsIdentityPage = (function () {
             }
             else {
                 var savedPersonalIdentityDetails = data;
-                _this.formData.fields.filter(function (f) { return f.name == "nationality"; })[0].value = __WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* StringUtils */].preventNull(savedPersonalIdentityDetails.nationality.name);
+                _this.formData.fields.filter(function (f) { return f.name == "nationality"; })[0].value = __WEBPACK_IMPORTED_MODULE_8__utils_utils__["d" /* StringUtils */].preventNull(savedPersonalIdentityDetails.nationality.name);
                 _this.formData.fields.filter(function (f) { return f.name == "typeCard"; })[0].value = +savedPersonalIdentityDetails.typeIDCard;
-                _this.formData.fields.filter(function (f) { return f.name == "cardNumber"; })[0].value = __WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* StringUtils */].preventNull(savedPersonalIdentityDetails.numberIDCard);
+                _this.formData.fields.filter(function (f) { return f.name == "cardNumber"; })[0].value = __WEBPACK_IMPORTED_MODULE_8__utils_utils__["d" /* StringUtils */].preventNull(savedPersonalIdentityDetails.numberIDCard);
                 _this.formData.fields.filter(function (f) { return f.name == "deliveredDate"; })[0].value = new Date(savedPersonalIdentityDetails.deliveredDate);
-                _this.formData.fields.filter(function (f) { return f.name == "prefecture"; })[0].value = __WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* StringUtils */].preventNull(savedPersonalIdentityDetails.prefecture.name);
+                _this.formData.fields.filter(function (f) { return f.name == "prefecture"; })[0].value = __WEBPACK_IMPORTED_MODULE_8__utils_utils__["d" /* StringUtils */].preventNull(savedPersonalIdentityDetails.prefecture.name);
                 _this.formData.fields.filter(function (f) { return f.name == "validFrom"; })[0].value = new Date(savedPersonalIdentityDetails.validFrom);
                 _this.formData.fields.filter(function (f) { return f.name == "validTo"; })[0].value = new Date(savedPersonalIdentityDetails.validTo);
+                __WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* ObjectUtils */].isEmpty(savedPersonalIdentityDetails.validTo) === true ? _this.disabledChooseValid = true : _this.disabledChooseValid = false;
             }
         });
     };
     PersonalDetailsIdentityPage.prototype.chooseDeliveredDate = function () {
+        if (this.disabledChooseValid === false) {
+            return;
+        }
         // Change Delivered Date
         var deliveredDate = this.formData.fields.filter(function (f) { return f.name == "deliveredDate"; })[0].value;
         if (deliveredDate !== null) {
@@ -5689,7 +5926,7 @@ var PersonalDetailsIdentityPage = (function () {
     PersonalDetailsIdentityPage.prototype.checkNationalities = function () {
         this.formData.fields.filter(function (f) { return f.name == "typeCard"; })[0].dataset = [];
         var selectedNationalityId = this.formData.fields.filter(function (f) { return f.name == "nationality"; })[0].value;
-        if (!__WEBPACK_IMPORTED_MODULE_8__utils_utils__["b" /* ObjectUtils */].isEmpty(selectedNationalityId)) {
+        if (!__WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* ObjectUtils */].isEmpty(selectedNationalityId)) {
             var selectedCodeRegion = this.getCountryRegionCode(selectedNationalityId);
             if (selectedCodeRegion === 3) {
                 this.formData.fields.filter(function (f) { return f.name == "typeCard"; })[0].dataset = this.foreignDocsList;
@@ -5779,7 +6016,7 @@ var PersonalDetailsIdentityPage = (function () {
             _this.formData.fields[4].dataset = _this.masterdataService.convertPrefectureListToDataset(data);
         });
         this.storage.get("currentUser").then(function (val) {
-            if (__WEBPACK_IMPORTED_MODULE_8__utils_utils__["b" /* ObjectUtils */].isEmpty(val)) {
+            if (__WEBPACK_IMPORTED_MODULE_8__utils_utils__["c" /* ObjectUtils */].isEmpty(val)) {
                 return;
             }
             _this.currentUser = JSON.parse(val);
@@ -5817,9 +6054,9 @@ var PersonalDetailsIdentityPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_profile_service_profile_service__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_toast_service__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__search_module_search_search__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__search_module_search_search__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__bank_constraints__ = __webpack_require__(912);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_utils__ = __webpack_require__(22);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -5928,7 +6165,7 @@ var BankSettingsPage = (function () {
     BankSettingsPage.prototype.ngOnInit = function () {
         var _this = this;
         this.storage.get("currentUser").then(function (val) {
-            if (__WEBPACK_IMPORTED_MODULE_9__utils_utils__["b" /* ObjectUtils */].isEmpty(val)) {
+            if (__WEBPACK_IMPORTED_MODULE_9__utils_utils__["c" /* ObjectUtils */].isEmpty(val)) {
                 return;
             }
             _this.currentUser = JSON.parse(val);
@@ -6078,9 +6315,9 @@ var SearchQuery = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_navigation_service__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_module_search_search__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__new_password_new_password__ = __webpack_require__(607);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_navigation_service__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_module_search_search__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__new_password_new_password__ = __webpack_require__(608);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6422,7 +6659,7 @@ var AboutPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MissionsCalendarPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_mission_service_mission_service__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_mission_service_mission_service__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_utils__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_voj_calendar_full_calendar_full_calendar_service__ = __webpack_require__(97);
@@ -6851,7 +7088,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VojMenuModule", function() { return VojMenuModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_menu__ = __webpack_require__(573);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_menu__ = __webpack_require__(574);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7276,7 +7513,7 @@ var md5 = function (string) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_utils__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_enterprise_service_enterprise_service__ = __webpack_require__(235);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__company_company__ = __webpack_require__(236);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ionic_angular__ = __webpack_require__(1);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -7335,7 +7572,7 @@ var EnterpriseSearchPage = (function () {
         this.enterpriseService.getCompanies("company", this.searchInput).then(function (data) {
             if (data.status == "failure") {
                 //TODO: display the error msg in the form
-                console.log(__WEBPACK_IMPORTED_MODULE_2__utils_utils__["b" /* ObjectUtils */].isEmpty(data.error) ? "Une erreur est survenue. Veuillez réessayer." : data.error);
+                console.log(__WEBPACK_IMPORTED_MODULE_2__utils_utils__["c" /* ObjectUtils */].isEmpty(data.error) ? "Une erreur est survenue. Veuillez réessayer." : data.error);
             }
             else {
                 _this.enterpriseData = data;
@@ -7344,12 +7581,12 @@ var EnterpriseSearchPage = (function () {
     };
     EnterpriseSearchPage.prototype.getCompanyBySIREN = function (siren) {
         var _this = this;
-        var isDirectSearch = __WEBPACK_IMPORTED_MODULE_2__utils_utils__["b" /* ObjectUtils */].isEmpty(siren);
+        var isDirectSearch = __WEBPACK_IMPORTED_MODULE_2__utils_utils__["c" /* ObjectUtils */].isEmpty(siren);
         siren = (isDirectSearch ? this.siren1 + "" + this.siren2 + "" + this.siren3 : siren);
         this.enterpriseService.getCompanies("siren", siren).then(function (data) {
             if (data.status == "failure") {
                 //TODO: display the error msg in the form
-                console.log(__WEBPACK_IMPORTED_MODULE_2__utils_utils__["b" /* ObjectUtils */].isEmpty(data.error) ? "Une erreur est survenue. Veuillez réessayer." : data.error);
+                console.log(__WEBPACK_IMPORTED_MODULE_2__utils_utils__["c" /* ObjectUtils */].isEmpty(data.error) ? "Une erreur est survenue. Veuillez réessayer." : data.error);
             }
             else {
                 _this.enterpriseData = [data];
@@ -7378,10 +7615,10 @@ var EnterpriseSearchPage = (function () {
         this.navigationService.navigate("main", vojPage);
     };
     EnterpriseSearchPage.prototype.isEmpty = function (str) {
-        return __WEBPACK_IMPORTED_MODULE_2__utils_utils__["b" /* ObjectUtils */].isEmpty(str);
+        return __WEBPACK_IMPORTED_MODULE_2__utils_utils__["c" /* ObjectUtils */].isEmpty(str);
     };
     EnterpriseSearchPage.prototype.preventNull = function (str) {
-        return __WEBPACK_IMPORTED_MODULE_2__utils_utils__["c" /* StringUtils */].preventNull(str);
+        return __WEBPACK_IMPORTED_MODULE_2__utils_utils__["d" /* StringUtils */].preventNull(str);
     };
     EnterpriseSearchPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
@@ -8257,14 +8494,14 @@ var ContactPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_voj_page_header_model__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_mission_service_mission_service__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_mission_service_mission_service__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_voj_card_model__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_search_header_model__ = __webpack_require__(243);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_search_query_model__ = __webpack_require__(138);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_text_type__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_utils__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_navigation_service__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__mission_signature_mission_signature__ = __webpack_require__(613);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_navigation_service__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__mission_signature_mission_signature__ = __webpack_require__(614);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8448,12 +8685,12 @@ var PendingMissionsPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_search_header_model__ = __webpack_require__(243);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_voj_card_model__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_mission_service_mission_service__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_mission_service_mission_service__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_search_query_model__ = __webpack_require__(138);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_text_type__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_utils__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__details_details__ = __webpack_require__(132);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_voj_events_voj_events__ = __webpack_require__(35);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -8769,13 +9006,13 @@ var MyMissionsListPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_storage__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_utils__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__user_information_user_information__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_module_search_search__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_module_search_search__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__test_components_about_about__ = __webpack_require__(140);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_mission_service_mission_service__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_mission_service_mission_service__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__missions_pending_missions_pending_missions__ = __webpack_require__(246);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__missions_my_missions_list_my_missions_list__ = __webpack_require__(247);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__missions_missions_calendar_missions_calendar__ = __webpack_require__(141);
@@ -8844,7 +9081,7 @@ var AccountPage = (function () {
                 cover: 'http://www.turfgrass.ie/wp-content/uploads/2014/07/T-Projects-Lubker-1.jpg',
                 thumbnail: _this.currentUser.identity.civility,
                 title: {
-                    label: (__WEBPACK_IMPORTED_MODULE_2__utils_utils__["b" /* ObjectUtils */].isEmpty(_this.currentUser.identity.firstName) ? "Nous vous invitons à saisir vos informations d'identité." : _this.currentUser.identity.civility + " " + _this.currentUser.identity.firstName + " " + _this.currentUser.identity.middleName + " " + _this.currentUser.identity.lastName)
+                    label: (__WEBPACK_IMPORTED_MODULE_2__utils_utils__["c" /* ObjectUtils */].isEmpty(_this.currentUser.identity.firstName) ? "Nous vous invitons à saisir vos informations d'identité." : _this.currentUser.identity.civility + " " + _this.currentUser.identity.firstName + " " + _this.currentUser.identity.middleName + " " + _this.currentUser.identity.lastName)
                 },
                 subtitles: [
                     {
@@ -8975,13 +9212,13 @@ var AccountPage = (function () {
     AccountPage.prototype.updateUserInfo = function () {
         var _this = this;
         this.event.subscribe('user:update', function (userUpdate) {
-            if (__WEBPACK_IMPORTED_MODULE_2__utils_utils__["b" /* ObjectUtils */].isEmpty(userUpdate)) {
+            if (__WEBPACK_IMPORTED_MODULE_2__utils_utils__["c" /* ObjectUtils */].isEmpty(userUpdate)) {
                 _this.profileData.thumbnail = "";
                 _this.profileData.title.label = "";
             }
             else {
                 _this.profileData.thumbnail = userUpdate.identity.civility;
-                _this.profileData.title.label = (__WEBPACK_IMPORTED_MODULE_2__utils_utils__["b" /* ObjectUtils */].isEmpty(userUpdate.identity.firstName) ? "Nous vous invitons à saisir vos informations d'identité." : userUpdate.identity.civility + " " + userUpdate.identity.firstName + " " + userUpdate.identity.middleName + " " + userUpdate.identity.lastName);
+                _this.profileData.title.label = (__WEBPACK_IMPORTED_MODULE_2__utils_utils__["c" /* ObjectUtils */].isEmpty(userUpdate.identity.firstName) ? "Nous vous invitons à saisir vos informations d'identité." : userUpdate.identity.civility + " " + userUpdate.identity.firstName + " " + userUpdate.identity.middleName + " " + userUpdate.identity.lastName);
             }
         });
     };
@@ -9176,13 +9413,13 @@ webpackEmptyAsyncContext.id = 278;
 
 var map = {
 	"../components/voj-calendar/desktop-calendar/desktop-calendar.module": [
-		399
+		400
 	],
 	"../components/voj-calendar/smart-calendar/smart-calendar.module": [
-		346
+		347
 	],
 	"../components/voj-calendar/voj-calendar.module": [
-		345
+		346
 	],
 	"../components/voj-card/voj-card.module": [
 		51
@@ -9191,16 +9428,16 @@ var map = {
 		238
 	],
 	"../components/voj-header-segment/voj-header-segment.module": [
-		592
+		593
 	],
 	"../components/voj-header-web/voj-header-web.module": [
-		591
+		592
 	],
 	"../components/voj-header/voj-header.module": [
-		578
+		579
 	],
 	"../components/voj-list/voj-list.module": [
-		579
+		580
 	],
 	"../components/voj-map/voj-map.module": [
 		131
@@ -9212,7 +9449,7 @@ var map = {
 		102
 	],
 	"../components/voj-search-select/voj-search-select.module": [
-		593
+		594
 	],
 	"../components/voj-segment/voj-segment.module": [
 		98
@@ -9221,79 +9458,79 @@ var map = {
 		244
 	],
 	"../pages/account-module/company/company.module": [
-		600
-	],
-	"../pages/account-module/enterprise-details/enterprise-details.module": [
-		609
-	],
-	"../pages/account-module/open-application/open-application.module": [
-		628
-	],
-	"../pages/account-module/options/options.module": [
-		606
-	],
-	"../pages/account-module/personal-details-identity/personal-details-identity.module": [
-		598
-	],
-	"../pages/account-module/personal-details/personal-details.module": [
-		599
-	],
-	"../pages/account-module/user-information/user-information.module": [
-		603
-	],
-	"../pages/calendar/calendar.module": [
 		601
 	],
-	"../pages/cv-offer-module/jobyer-availability-choice/jobyer-availability-choice.module": [
+	"../pages/account-module/enterprise-details/enterprise-details.module": [
+		610
+	],
+	"../pages/account-module/open-application/open-application.module": [
+		629
+	],
+	"../pages/account-module/options/options.module": [
+		607
+	],
+	"../pages/account-module/personal-details-identity/personal-details-identity.module": [
+		599
+	],
+	"../pages/account-module/personal-details/personal-details.module": [
+		600
+	],
+	"../pages/account-module/user-information/user-information.module": [
+		604
+	],
+	"../pages/calendar/calendar.module": [
 		602
+	],
+	"../pages/cv-offer-module/jobyer-availability-choice/jobyer-availability-choice.module": [
+		603
 	],
 	"../pages/cv-offer-module/keywords/keywords.module": [
 		322
 	],
 	"../pages/cv-offer-module/my-interests/my-interests.module": [
-		596
+		597
 	],
 	"../pages/cv-offer-module/my-offers-calendar/my-offers-calendar.module": [
-		626
+		627
 	],
 	"../pages/cv-offer-module/my-offers-list/my-offers-list.module": [
-		624
+		625
 	],
 	"../pages/cv-offer-module/offer-detail/offer-detail.module": [
-		622
+		623
 	],
 	"../pages/cv-offer-module/remuneration/remuneration.module": [
-		595
+		596
 	],
 	"../pages/home/home.module": [
-		617
+		618
 	],
 	"../pages/landing-page/landing-page.module": [
 		321
 	],
 	"../pages/missions/mission-signature/mission-signature.module": [
-		612
+		613
 	],
 	"../pages/missions/missions-calendar/missions-calendar.module": [
-		611
+		612
 	],
 	"../pages/missions/my-missions-list/my-missions-list.module": [
-		616
+		617
 	],
 	"../pages/missions/pending-missions/pending-missions.module": [
-		615
+		616
 	],
 	"../pages/options/options.module": [
-		629
+		630
 	],
 	"../pages/search-module/search/search.module": [
-		597
+		598
 	],
 	"../pages/tabs/tabs.module": [
-		620
+		621
 	],
 	"../pages/test-components/about/about.module": [
-		608
+		609
 	]
 };
 function webpackAsyncContext(req) {
@@ -9400,7 +9637,7 @@ var KeywordsPageModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_page_header_model__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__information_resume_information_resume__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_navigation_service__ = __webpack_require__(11);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -9571,7 +9808,7 @@ var QualitiesPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LanguagesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__information_resume_information_resume__ = __webpack_require__(57);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -9817,7 +10054,7 @@ var RemunerationPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AvailabilitiesAddSlotPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cv_offer_module_availabilities_availabilities__ = __webpack_require__(86);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -9956,7 +10193,7 @@ var AvailabilitiesAddSlotPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_storage__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_offer_service_offer_interest_service_offer_interest_service__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_search_service_search_service__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_search_service_search_service__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_voj_page_header_model__ = __webpack_require__(40);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -10042,7 +10279,7 @@ var MyInterestsPage = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OfferInterestFactory; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__offer_interest_jobyer__ = __webpack_require__(720);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__offer_interest_jobyer__ = __webpack_require__(721);
 
 var OfferInterestFactory = (function () {
     function OfferInterestFactory(http, configuration) {
@@ -10075,6 +10312,20 @@ var VojMapModel = (function () {
 
 /***/ }),
 /* 343 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ButtonType; });
+var ButtonType = (function () {
+    function ButtonType() {
+    }
+    return ButtonType;
+}());
+
+//# sourceMappingURL=button-type.model.js.map
+
+/***/ }),
+/* 344 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10120,7 +10371,7 @@ var SearchDTOFactory = (function () {
 //# sourceMappingURL=search-dto-factory.js.map
 
 /***/ }),
-/* 344 */
+/* 345 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10134,7 +10385,7 @@ var SegmentType = (function () {
 //# sourceMappingURL=segment-type.js.map
 
 /***/ }),
-/* 345 */
+/* 346 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10144,8 +10395,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_calendar__ = __webpack_require__(725);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__smart_calendar_smart_calendar_module__ = __webpack_require__(346);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__desktop_calendar_desktop_calendar_module__ = __webpack_require__(399);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__smart_calendar_smart_calendar_module__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__desktop_calendar_desktop_calendar_module__ = __webpack_require__(400);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__full_calendar_full_calendar_module__ = __webpack_require__(897);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -10187,7 +10438,7 @@ var VojCalendarModule = (function () {
 //# sourceMappingURL=voj-calendar.module.js.map
 
 /***/ }),
-/* 346 */
+/* 347 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10196,7 +10447,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__calendar_calendar_module__ = __webpack_require__(726);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_popover_page__ = __webpack_require__(396);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_popover_page__ = __webpack_require__(397);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__smart_calendar__ = __webpack_require__(854);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -10239,7 +10490,6 @@ var SmartCalendarModule = (function () {
 //# sourceMappingURL=smart-calendar.module.js.map
 
 /***/ }),
-/* 347 */,
 /* 348 */,
 /* 349 */,
 /* 350 */,
@@ -10285,7 +10535,8 @@ var SmartCalendarModule = (function () {
 /* 390 */,
 /* 391 */,
 /* 392 */,
-/* 393 */
+/* 393 */,
+/* 394 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10982,7 +11233,7 @@ var WeekViewComponent = (function () {
 //# sourceMappingURL=weekview.js.map
 
 /***/ }),
-/* 394 */
+/* 395 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11030,7 +11281,7 @@ var CalendarModePopoverPage = (function () {
 //# sourceMappingURL=calendar-mode.popover.js.map
 
 /***/ }),
-/* 395 */
+/* 396 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11044,7 +11295,7 @@ var Step;
 //# sourceMappingURL=calendar.models.js.map
 
 /***/ }),
-/* 396 */
+/* 397 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11080,9 +11331,9 @@ var PopoverPage = (function () {
 //# sourceMappingURL=voj-popover.page.js.map
 
 /***/ }),
-/* 397 */,
 /* 398 */,
-/* 399 */
+/* 399 */,
+/* 400 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11151,7 +11402,6 @@ var DesktopCalendarModule = (function () {
 //# sourceMappingURL=desktop-calendar.module.js.map
 
 /***/ }),
-/* 400 */,
 /* 401 */,
 /* 402 */,
 /* 403 */,
@@ -11324,7 +11574,8 @@ var DesktopCalendarModule = (function () {
 /* 570 */,
 /* 571 */,
 /* 572 */,
-/* 573 */
+/* 573 */,
+/* 574 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11362,9 +11613,9 @@ var VojMenu = (function () {
 //# sourceMappingURL=voj-menu.js.map
 
 /***/ }),
-/* 574 */,
 /* 575 */,
-/* 576 */
+/* 576 */,
+/* 577 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11455,7 +11706,7 @@ var AddressService = (function () {
 //# sourceMappingURL=address-service.js.map
 
 /***/ }),
-/* 577 */
+/* 578 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11465,6 +11716,9 @@ var AddressService = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_masterdata_service_masterdata_service__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__login_login__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(13);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -11479,14 +11733,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
+
 var ResetPasswordPage = (function () {
-    function ResetPasswordPage(accountService, configurationService, masterdataService, viewCtrl, alertCtrl) {
+    function ResetPasswordPage(accountService, configurationService, masterdataService, viewCtrl, alertCtrl, navigationService, translate) {
         var _this = this;
         this.accountService = accountService;
         this.configurationService = configurationService;
         this.masterdataService = masterdataService;
         this.viewCtrl = viewCtrl;
         this.alertCtrl = alertCtrl;
+        this.navigationService = navigationService;
+        this.translate = translate;
         this.config = this.configurationService.configuration;
         this.dataPageHeader = {
             title: 'Mot de passe oublié',
@@ -11659,14 +11918,28 @@ var ResetPasswordPage = (function () {
         this.isErrorShown = false;
     };
     ResetPasswordPage.prototype.presentConfirmation = function (method) {
-        console.log('Show Present Confirmation modal.');
-        //TODO: this should be translated
-        var alert = this.alertCtrl.create({
-            subTitle: 'Votre mot de passe a bien été réinitialisé. Dans quelques minutes, vous recevrez un mot de passe temporaire.',
-            cssClass: '',
-            buttons: ['OK']
+        var _this = this;
+        this.translate.get('RESET_PASSWORD').subscribe(function (translation) {
+            var alert = _this.alertCtrl.create({
+                subTitle: translation.CONFIRMATION_TXT,
+                cssClass: '',
+                buttons: [
+                    {
+                        text: 'OK',
+                        role: 'OK',
+                        handler: function () {
+                            _this.presentLoginPage();
+                        }
+                    }
+                ]
+            });
+            alert.present();
         });
-        alert.present();
+    };
+    //Present login page
+    ResetPasswordPage.prototype.presentLoginPage = function () {
+        var vojPage = { page: __WEBPACK_IMPORTED_MODULE_6__login_login__["a" /* LoginPage */], isRoot: true, isWebModal: true };
+        this.navigationService.navigate("list", vojPage);
     };
     ResetPasswordPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
@@ -11676,7 +11949,9 @@ var ResetPasswordPage = (function () {
             __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__["a" /* Configuration */],
             __WEBPACK_IMPORTED_MODULE_2__providers_masterdata_service_masterdata_service__["a" /* MasterdataService */],
             __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["u" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["b" /* AlertController */]])
+            __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["b" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__["a" /* NavigationService */],
+            __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__["c" /* TranslateService */]])
     ], ResetPasswordPage);
     return ResetPasswordPage;
 }());
@@ -11684,7 +11959,7 @@ var ResetPasswordPage = (function () {
 //# sourceMappingURL=reset-password.js.map
 
 /***/ }),
-/* 578 */
+/* 579 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11724,7 +11999,7 @@ var VojHeaderModule = (function () {
 //# sourceMappingURL=voj-header.module.js.map
 
 /***/ }),
-/* 579 */
+/* 580 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11767,7 +12042,7 @@ var VojListModule = (function () {
 //# sourceMappingURL=voj-list.module.js.map
 
 /***/ }),
-/* 580 */
+/* 581 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11870,16 +12145,16 @@ var VojSearchSelect = (function () {
 //# sourceMappingURL=voj-search-select.js.map
 
 /***/ }),
-/* 581 */
+/* 582 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NativeProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_file__ = __webpack_require__(582);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_image_picker__ = __webpack_require__(583);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_image_resizer__ = __webpack_require__(584);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_camera__ = __webpack_require__(585);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_file__ = __webpack_require__(583);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_image_picker__ = __webpack_require__(584);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_image_resizer__ = __webpack_require__(585);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_camera__ = __webpack_require__(586);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_filename_regex__ = __webpack_require__(924);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_filename_regex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_filename_regex__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_dirname_regex__ = __webpack_require__(925);
@@ -11991,7 +12266,6 @@ var NativeProvider = (function () {
 //# sourceMappingURL=native.js.map
 
 /***/ }),
-/* 582 */,
 /* 583 */,
 /* 584 */,
 /* 585 */,
@@ -12000,7 +12274,8 @@ var NativeProvider = (function () {
 /* 588 */,
 /* 589 */,
 /* 590 */,
-/* 591 */
+/* 591 */,
+/* 592 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12043,7 +12318,7 @@ var VojHeaderWebModule = (function () {
 //# sourceMappingURL=voj-header-web.module.js.map
 
 /***/ }),
-/* 592 */
+/* 593 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12083,7 +12358,7 @@ var VojHeaderSegmentModule = (function () {
 //# sourceMappingURL=voj-header-segment.module.js.map
 
 /***/ }),
-/* 593 */
+/* 594 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12091,7 +12366,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VojSearchSelectModule", function() { return VojSearchSelectModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_search_select__ = __webpack_require__(580);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_search_select__ = __webpack_require__(581);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_form_voj_form_module__ = __webpack_require__(238);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -12129,7 +12404,7 @@ var VojSearchSelectModule = (function () {
 //# sourceMappingURL=voj-search-select.module.js.map
 
 /***/ }),
-/* 594 */
+/* 595 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12143,7 +12418,7 @@ var VojTableModel = (function () {
 //# sourceMappingURL=voj-table.model.js.map
 
 /***/ }),
-/* 595 */
+/* 596 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12183,7 +12458,7 @@ var RemunerationPageModule = (function () {
 //# sourceMappingURL=remuneration.module.js.map
 
 /***/ }),
-/* 596 */
+/* 597 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12226,7 +12501,7 @@ var MyInterestsPageModule = (function () {
 //# sourceMappingURL=my-interests.module.js.map
 
 /***/ }),
-/* 597 */
+/* 598 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12234,7 +12509,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchPageModule", function() { return SearchPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_page_header_voj_page_header_module__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_search_header_voj_search_header_module__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_voj_card_voj_card_module__ = __webpack_require__(51);
@@ -12278,7 +12553,7 @@ var SearchPageModule = (function () {
 //# sourceMappingURL=search.module.js.map
 
 /***/ }),
-/* 598 */
+/* 599 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12318,7 +12593,7 @@ var PersonalDetailsIdentityPageModule = (function () {
 //# sourceMappingURL=personal-details-identity.module.js.map
 
 /***/ }),
-/* 599 */
+/* 600 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12358,7 +12633,7 @@ var PersonalDetailsPageModule = (function () {
 //# sourceMappingURL=personal-details.module.js.map
 
 /***/ }),
-/* 600 */
+/* 601 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12401,7 +12676,7 @@ var CompanyModule = (function () {
 //# sourceMappingURL=company.module.js.map
 
 /***/ }),
-/* 601 */
+/* 602 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12444,7 +12719,7 @@ var CalendarPageModule = (function () {
 //# sourceMappingURL=calendar.module.js.map
 
 /***/ }),
-/* 602 */
+/* 603 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12490,7 +12765,7 @@ var JobyerAvailabilityChoiceModule = (function () {
 //# sourceMappingURL=jobyer-availability-choice.module.js.map
 
 /***/ }),
-/* 603 */
+/* 604 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12533,7 +12808,7 @@ var UserInformationModule = (function () {
 //# sourceMappingURL=user-information.module.js.map
 
 /***/ }),
-/* 604 */
+/* 605 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12550,7 +12825,7 @@ var Context = (function () {
 //# sourceMappingURL=context.js.map
 
 /***/ }),
-/* 605 */
+/* 606 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12628,7 +12903,7 @@ var DocumentsPage = (function () {
 //# sourceMappingURL=documents.js.map
 
 /***/ }),
-/* 606 */
+/* 607 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12671,13 +12946,13 @@ var OptionsModule = (function () {
 //# sourceMappingURL=options.module.js.map
 
 /***/ }),
-/* 607 */
+/* 608 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewPasswordPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__account_module_options_options__ = __webpack_require__(139);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scripts_md5__ = __webpack_require__(233);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(14);
@@ -12812,7 +13087,7 @@ var NewPasswordPage = (function () {
 //# sourceMappingURL=new-password.js.map
 
 /***/ }),
-/* 608 */
+/* 609 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12855,7 +13130,7 @@ var AboutModule = (function () {
 //# sourceMappingURL=about.module.js.map
 
 /***/ }),
-/* 609 */
+/* 610 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12863,7 +13138,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EnterpriseDetailsModule", function() { return EnterpriseDetailsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enterprise_details__ = __webpack_require__(610);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enterprise_details__ = __webpack_require__(611);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -12895,7 +13170,7 @@ var EnterpriseDetailsModule = (function () {
 //# sourceMappingURL=enterprise-details.module.js.map
 
 /***/ }),
-/* 610 */
+/* 611 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13005,7 +13280,7 @@ var EnterpriseDetails = (function () {
 //# sourceMappingURL=enterprise-details.js.map
 
 /***/ }),
-/* 611 */
+/* 612 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13045,7 +13320,7 @@ var MissionsCalendarPageModule = (function () {
 //# sourceMappingURL=missions-calendar.module.js.map
 
 /***/ }),
-/* 612 */
+/* 613 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13053,7 +13328,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MissionSignaturePageModule", function() { return MissionSignaturePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mission_signature__ = __webpack_require__(613);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mission_signature__ = __webpack_require__(614);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13082,19 +13357,19 @@ var MissionSignaturePageModule = (function () {
 //# sourceMappingURL=mission-signature.module.js.map
 
 /***/ }),
-/* 613 */
+/* 614 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MissionSignaturePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__ = __webpack_require__(614);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__ = __webpack_require__(615);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_mission_service_mission_service__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_mission_service_mission_service__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__missions_calendar_missions_calendar__ = __webpack_require__(141);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_utils__ = __webpack_require__(22);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -13185,8 +13460,8 @@ var MissionSignaturePage = (function () {
 //# sourceMappingURL=mission-signature.js.map
 
 /***/ }),
-/* 614 */,
-/* 615 */
+/* 615 */,
+/* 616 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13232,7 +13507,7 @@ var PendingMissionsPageModule = (function () {
 //# sourceMappingURL=pending-missions.module.js.map
 
 /***/ }),
-/* 616 */
+/* 617 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13278,7 +13553,7 @@ var MyMissionsListPageModule = (function () {
 //# sourceMappingURL=my-missions-list.module.js.map
 
 /***/ }),
-/* 617 */
+/* 618 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13286,7 +13561,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeModule", function() { return HomeModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home__ = __webpack_require__(618);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home__ = __webpack_require__(619);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_components_module__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_voj_table_voj_table_module__ = __webpack_require__(244);
@@ -13327,7 +13602,7 @@ var HomeModule = (function () {
 //# sourceMappingURL=home.module.js.map
 
 /***/ }),
-/* 618 */
+/* 619 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13339,15 +13614,15 @@ var HomeModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_text_type__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_http_request_http_request__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__test_components_contact_contact__ = __webpack_require__(245);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__account_module_identity_identity__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__cv_offer_module_jobyer_availability_choice_jobyer_availability_choice__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__account_module_user_information_user_information__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__account_module_enterprise_details_enterprise_details__ = __webpack_require__(610);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__account_module_enterprise_details_enterprise_details__ = __webpack_require__(611);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__account_module_options_options__ = __webpack_require__(139);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__account_module_account_account__ = __webpack_require__(248);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__account_module_main_address_main_address__ = __webpack_require__(134);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__account_module_login_login__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__account_module_login_login__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__account_module_bank_settings_bank_settings__ = __webpack_require__(137);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__account_module_personal_details_identity_personal_details_identity__ = __webpack_require__(136);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__account_module_sign_up_sign_up__ = __webpack_require__(133);
@@ -13357,7 +13632,7 @@ var HomeModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__account_module_personal_details_personal_details__ = __webpack_require__(135);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__account_module_company_company__ = __webpack_require__(236);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__account_module_enterprise_search_enterprise_search__ = __webpack_require__(234);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__models_voj_table_models_voj_table_model__ = __webpack_require__(594);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__models_voj_table_models_voj_table_model__ = __webpack_require__(595);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__models_voj_table_models_voj_table_output_cell_model__ = __webpack_require__(944);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__models_voj_table_models_voj_table_row__ = __webpack_require__(945);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__models_voj_table_models_voj_table_button_cell_model__ = __webpack_require__(946);
@@ -13823,7 +14098,7 @@ var HomePage = (function () {
 //# sourceMappingURL=home.js.map
 
 /***/ }),
-/* 619 */
+/* 620 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13837,7 +14112,7 @@ var VojTableCellModel = (function () {
 //# sourceMappingURL=voj-table-cell.model.js.map
 
 /***/ }),
-/* 620 */
+/* 621 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13845,7 +14120,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TabsModule", function() { return TabsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs__ = __webpack_require__(621);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tabs__ = __webpack_require__(622);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13877,7 +14152,7 @@ var TabsModule = (function () {
 //# sourceMappingURL=tabs.module.js.map
 
 /***/ }),
-/* 621 */
+/* 622 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13885,9 +14160,9 @@ var TabsModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__test_components_about_about__ = __webpack_require__(140);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(618);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__search_module_search_search__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(619);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__search_module_search_search__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(11);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13936,7 +14211,7 @@ var TabsPage = (function () {
 //# sourceMappingURL=tabs.js.map
 
 /***/ }),
-/* 622 */
+/* 623 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13944,7 +14219,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OfferDetailPageModule", function() { return OfferDetailPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__offer_detail__ = __webpack_require__(623);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__offer_detail__ = __webpack_require__(624);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_page_header_voj_page_header_module__ = __webpack_require__(53);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -13976,7 +14251,7 @@ var OfferDetailPageModule = (function () {
 //# sourceMappingURL=offer-detail.module.js.map
 
 /***/ }),
-/* 623 */
+/* 624 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14077,7 +14352,7 @@ var OfferDetailPage = (function () {
 //# sourceMappingURL=offer-detail.js.map
 
 /***/ }),
-/* 624 */
+/* 625 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14085,7 +14360,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyOffersListPageModule", function() { return MyOffersListPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__my_offers_list__ = __webpack_require__(625);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__my_offers_list__ = __webpack_require__(626);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_card_voj_card_module__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_page_header_voj_page_header_module__ = __webpack_require__(53);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -14120,7 +14395,7 @@ var MyOffersListPageModule = (function () {
 //# sourceMappingURL=my-offers-list.module.js.map
 
 /***/ }),
-/* 625 */
+/* 626 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14131,8 +14406,8 @@ var MyOffersListPageModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_offer_service_offer_interest_service_offer_service__ = __webpack_require__(249);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_voj_page_header_model__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_navigation_service__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__offer_detail_offer_detail__ = __webpack_require__(623);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_navigation_service__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__offer_detail_offer_detail__ = __webpack_require__(624);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -14254,7 +14529,7 @@ var MyOffersListPage = (function () {
 //# sourceMappingURL=my-offers-list.js.map
 
 /***/ }),
-/* 626 */
+/* 627 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14262,7 +14537,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyOffersCalendarPageModule", function() { return MyOffersCalendarPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__my_offers_calendar__ = __webpack_require__(627);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__my_offers_calendar__ = __webpack_require__(628);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -14294,7 +14569,7 @@ var MyOffersCalendarPageModule = (function () {
 //# sourceMappingURL=my-offers-calendar.module.js.map
 
 /***/ }),
-/* 627 */
+/* 628 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14416,7 +14691,7 @@ var MyOffersCalendarPage = (function () {
 //# sourceMappingURL=my-offers-calendar.js.map
 
 /***/ }),
-/* 628 */
+/* 629 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14456,7 +14731,7 @@ var OpenApplicationModule = (function () {
 //# sourceMappingURL=open-application.module.js.map
 
 /***/ }),
-/* 629 */
+/* 630 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14496,7 +14771,6 @@ var OptionsPageModule = (function () {
 //# sourceMappingURL=options.module.js.map
 
 /***/ }),
-/* 630 */,
 /* 631 */,
 /* 632 */,
 /* 633 */,
@@ -14537,7 +14811,8 @@ var OptionsPageModule = (function () {
 /* 668 */,
 /* 669 */,
 /* 670 */,
-/* 671 */
+/* 671 */,
+/* 672 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14572,27 +14847,27 @@ var ThemingProvider = (function () {
 //# sourceMappingURL=theming.js.map
 
 /***/ }),
-/* 672 */
+/* 673 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(673);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(680);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(674);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(681);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
 
 /***/ }),
-/* 673 */,
 /* 674 */,
 /* 675 */,
 /* 676 */,
 /* 677 */,
 /* 678 */,
 /* 679 */,
-/* 680 */
+/* 680 */,
+/* 681 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14602,16 +14877,16 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(967);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(669);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(670);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(670);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(671);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_voj_components_module__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_pages_module__ = __webpack_require__(970);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_angular_calendar__ = __webpack_require__(129);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_http_request_http_request__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_http__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_search_service_search_service__ = __webpack_require__(70);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_search_service_search_service__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ngx_translate_core__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ngx_translate_http_loader__ = __webpack_require__(995);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_voj_events_voj_events__ = __webpack_require__(35);
@@ -14623,20 +14898,20 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_native_geolocation__ = __webpack_require__(229);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__providers_masterdata_service_masterdata_service__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__providers_profile_service_profile_service__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_account_module_user_information_strategy_context__ = __webpack_require__(604);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__dtos_dto_strategy_search_search_dto_factory__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_account_module_user_information_strategy_context__ = __webpack_require__(605);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__dtos_dto_strategy_search_search_dto_factory__ = __webpack_require__(344);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__angular_compiler__ = __webpack_require__(146);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__providers_enterprise_service_enterprise_service__ = __webpack_require__(235);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__services_toast_service__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__providers_address_service_address_service__ = __webpack_require__(576);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__providers_mission_service_mission_service__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__providers_theming_theming__ = __webpack_require__(671);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__ionic_native_in_app_browser__ = __webpack_require__(614);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__ionic_native_file__ = __webpack_require__(582);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__ionic_native_image_picker__ = __webpack_require__(583);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__ionic_native_image_resizer__ = __webpack_require__(584);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__ionic_native_camera__ = __webpack_require__(585);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__providers_native_native__ = __webpack_require__(581);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__providers_address_service_address_service__ = __webpack_require__(577);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__providers_mission_service_mission_service__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__providers_theming_theming__ = __webpack_require__(672);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__ionic_native_in_app_browser__ = __webpack_require__(615);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__ionic_native_file__ = __webpack_require__(583);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__ionic_native_image_picker__ = __webpack_require__(584);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__ionic_native_image_resizer__ = __webpack_require__(585);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__ionic_native_camera__ = __webpack_require__(586);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__providers_native_native__ = __webpack_require__(582);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__providers_offer_service_offer_interest_service_offer_interest_service__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__providers_offer_service_offer_interest_service_offer_service__ = __webpack_require__(249);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -14806,7 +15081,6 @@ var AppModule = (function () {
 //# sourceMappingURL=app.module.js.map
 
 /***/ }),
-/* 681 */,
 /* 682 */,
 /* 683 */,
 /* 684 */,
@@ -14834,7 +15108,8 @@ var AppModule = (function () {
 /* 706 */,
 /* 707 */,
 /* 708 */,
-/* 709 */
+/* 709 */,
+/* 710 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14848,7 +15123,7 @@ var VojTuple = (function () {
 //# sourceMappingURL=voj-tuple.model.js.map
 
 /***/ }),
-/* 710 */
+/* 711 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14881,7 +15156,6 @@ var Passenger = (function () {
 //# sourceMappingURL=voj-event.model.js.map
 
 /***/ }),
-/* 711 */,
 /* 712 */,
 /* 713 */,
 /* 714 */,
@@ -14889,7 +15163,8 @@ var Passenger = (function () {
 /* 716 */,
 /* 717 */,
 /* 718 */,
-/* 719 */
+/* 719 */,
+/* 720 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14903,7 +15178,7 @@ var OfferInterest = (function () {
 //# sourceMappingURL=offer-interest.dto.js.map
 
 /***/ }),
-/* 720 */
+/* 721 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14950,7 +15225,7 @@ var OfferInterestJobyer = (function () {
 //# sourceMappingURL=offer-interest-jobyer.js.map
 
 /***/ }),
-/* 721 */
+/* 722 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15066,28 +15341,7 @@ var SearchResultDTO = (function () {
             });
         }
         result.actions = result.actions = this.factory.create().generateDetailedCardButtons(this.id);
-        result.socialButtons = [{
-                id: 'mail',
-                icon: 'mail',
-                label: '',
-                action: function () {
-                    console.log('SMS');
-                }
-            }, {
-                id: 'call',
-                icon: 'call',
-                label: '',
-                action: function () {
-                    console.log('PHONE');
-                }
-            }, {
-                id: 'fav',
-                icon: 'star',
-                label: '',
-                action: function () {
-                    console.log('FAV');
-                }
-            }];
+        result.socialButtons = [];
         result.address = new __WEBPACK_IMPORTED_MODULE_2__models_voj_map_model__["a" /* VojMapModel */]();
         result.address.title = this.name;
         result.badges = this.badges;
@@ -15103,27 +15357,13 @@ var SearchResultDTO = (function () {
 //# sourceMappingURL=search-result.dto.js.map
 
 /***/ }),
-/* 722 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ButtonType; });
-var ButtonType = (function () {
-    function ButtonType() {
-    }
-    return ButtonType;
-}());
-
-//# sourceMappingURL=button-type.model.js.map
-
-/***/ }),
 /* 723 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchDTOJobyer; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_text_type__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_segment_type__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_segment_type__ = __webpack_require__(345);
 
 
 var SearchDTOJobyer = (function () {
@@ -15290,7 +15530,7 @@ var SearchDTOJobyer = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchDTOEmployer; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_text_type__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_segment_type__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_segment_type__ = __webpack_require__(345);
 
 
 var SearchDTOEmployer = (function () {
@@ -15299,11 +15539,10 @@ var SearchDTOEmployer = (function () {
     }
     SearchDTOEmployer.prototype.generateCardButtons = function (idCard) {
         return [{
-                id: 'contract',
+                id: 'plan_recruit',
                 icon: '',
-                label: 'Recruter',
+                label: 'Planifier pour recrutement',
                 action: function () {
-                    console.log('REC');
                 },
                 style: { 'background-color': '#eca613', 'color': '#ffffff' }
             }, {
@@ -15317,11 +15556,10 @@ var SearchDTOEmployer = (function () {
     };
     SearchDTOEmployer.prototype.generateDetailedCardButtons = function (idCard) {
         return [{
-                id: 'contract',
+                id: 'plan_recruit',
                 icon: '',
                 label: 'Recruter',
                 action: function () {
-                    console.log('REC');
                 },
                 style: { 'background-color': '#eca613', 'color': '#ffffff' }
             }];
@@ -15508,12 +15746,12 @@ var VojCalendar = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_intl_locale_data_jsonp_fr__ = __webpack_require__(731);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_intl_locale_data_jsonp_fr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_intl_locale_data_jsonp_fr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__monthview_monthview__ = __webpack_require__(732);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__weekview_weekview__ = __webpack_require__(393);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__weekview_weekview__ = __webpack_require__(394);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__weekview_header_weekview_header__ = __webpack_require__(842);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__dayview_dayview__ = __webpack_require__(843);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__calendar__ = __webpack_require__(844);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__init_position_scroll__ = __webpack_require__(847);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__mode_popover_calendar_mode_popover__ = __webpack_require__(394);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__mode_popover_calendar_mode_popover__ = __webpack_require__(395);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pipes__ = __webpack_require__(848);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -15580,7 +15818,7 @@ var NgCalendarModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subscription___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Subscription__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(1);
@@ -15590,17 +15828,17 @@ var NgCalendarModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_empty___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_empty__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_of__ = __webpack_require__(327);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_observable_fromEvent__ = __webpack_require__(387);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_observable_fromEvent__ = __webpack_require__(388);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_observable_fromEvent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_add_observable_fromEvent__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_observable_from__ = __webpack_require__(821);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_observable_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_rxjs_add_observable_from__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_add_observable_timer__ = __webpack_require__(828);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_add_observable_timer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_rxjs_add_observable_timer__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__(390);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_distinctUntilChanged___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_distinctUntilChanged__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_add_operator_switchMap__ = __webpack_require__(330);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_add_operator_switchMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_rxjs_add_operator_switchMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_add_operator_concatMap__ = __webpack_require__(390);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_add_operator_concatMap__ = __webpack_require__(391);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_add_operator_concatMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_rxjs_add_operator_concatMap__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_add_operator_debounceTime__ = __webpack_require__(833);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_rxjs_add_operator_debounceTime__);
@@ -15610,7 +15848,7 @@ var NgCalendarModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_rxjs_add_operator_pluck___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_rxjs_add_operator_pluck__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_add_operator_bufferCount__ = __webpack_require__(838);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_add_operator_bufferCount___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18_rxjs_add_operator_bufferCount__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_rxjs_add_operator_takeUntil__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_rxjs_add_operator_takeUntil__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_rxjs_add_operator_takeUntil___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19_rxjs_add_operator_takeUntil__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_rxjs_add_operator_withLatestFrom__ = __webpack_require__(840);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_rxjs_add_operator_withLatestFrom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20_rxjs_add_operator_withLatestFrom__);
@@ -16633,7 +16871,7 @@ var WeekViewHeaderComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_date_fns__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_date_fns___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_date_fns__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__calendar_service__ = __webpack_require__(93);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__weekview_weekview__ = __webpack_require__(393);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__weekview_weekview__ = __webpack_require__(394);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -17200,7 +17438,7 @@ var DayViewComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_do__ = __webpack_require__(845);
@@ -17211,13 +17449,13 @@ var DayViewComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_filter__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_map__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_concatMap__ = __webpack_require__(390);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_concatMap__ = __webpack_require__(391);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_concatMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_concatMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_takeUntil__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_takeUntil__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_takeUntil___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_takeUntil__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__calendar_service__ = __webpack_require__(93);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__mode_popover_calendar_mode_popover__ = __webpack_require__(394);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__calendar_models__ = __webpack_require__(395);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__mode_popover_calendar_mode_popover__ = __webpack_require__(395);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__calendar_models__ = __webpack_require__(396);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__models_shared__ = __webpack_require__(125);
 /* unused harmony namespace reexport */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -17968,10 +18206,10 @@ var IsPastPipe = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SmartCalendar; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash__ = __webpack_require__(397);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash__ = __webpack_require__(398);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_lodash__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_popover_page__ = __webpack_require__(396);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_popover_page__ = __webpack_require__(397);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18419,7 +18657,7 @@ var DemoUtilsModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__full_calendar__ = __webpack_require__(898);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ap_angular2_fullcalendar__ = __webpack_require__(456);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ap_angular2_fullcalendar__ = __webpack_require__(457);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ap_angular2_fullcalendar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ap_angular2_fullcalendar__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_fullcalendar_dist_locale_fr__ = __webpack_require__(902);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_fullcalendar_dist_locale_fr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_fullcalendar_dist_locale_fr__);
@@ -18468,11 +18706,11 @@ var FullCalendarComponentModule = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FullCalendarComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ap_angular2_fullcalendar__ = __webpack_require__(456);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ap_angular2_fullcalendar__ = __webpack_require__(457);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ap_angular2_fullcalendar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_ap_angular2_fullcalendar__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_moment__);
@@ -18782,236 +19020,236 @@ var FullCalendarComponent = (function () {
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./af": 458,
-	"./af.js": 458,
-	"./ar": 459,
-	"./ar-dz": 460,
-	"./ar-dz.js": 460,
-	"./ar-kw": 461,
-	"./ar-kw.js": 461,
-	"./ar-ly": 462,
-	"./ar-ly.js": 462,
-	"./ar-ma": 463,
-	"./ar-ma.js": 463,
-	"./ar-sa": 464,
-	"./ar-sa.js": 464,
-	"./ar-tn": 465,
-	"./ar-tn.js": 465,
-	"./ar.js": 459,
-	"./az": 466,
-	"./az.js": 466,
-	"./be": 467,
-	"./be.js": 467,
-	"./bg": 468,
-	"./bg.js": 468,
-	"./bn": 469,
-	"./bn.js": 469,
-	"./bo": 470,
-	"./bo.js": 470,
-	"./br": 471,
-	"./br.js": 471,
-	"./bs": 472,
-	"./bs.js": 472,
-	"./ca": 473,
-	"./ca.js": 473,
-	"./cs": 474,
-	"./cs.js": 474,
-	"./cv": 475,
-	"./cv.js": 475,
-	"./cy": 476,
-	"./cy.js": 476,
-	"./da": 477,
-	"./da.js": 477,
-	"./de": 478,
-	"./de-at": 479,
-	"./de-at.js": 479,
-	"./de-ch": 480,
-	"./de-ch.js": 480,
-	"./de.js": 478,
-	"./dv": 481,
-	"./dv.js": 481,
-	"./el": 482,
-	"./el.js": 482,
-	"./en-au": 483,
-	"./en-au.js": 483,
-	"./en-ca": 484,
-	"./en-ca.js": 484,
-	"./en-gb": 485,
-	"./en-gb.js": 485,
-	"./en-ie": 486,
-	"./en-ie.js": 486,
-	"./en-nz": 487,
-	"./en-nz.js": 487,
-	"./eo": 488,
-	"./eo.js": 488,
-	"./es": 489,
-	"./es-do": 490,
-	"./es-do.js": 490,
-	"./es.js": 489,
-	"./et": 491,
-	"./et.js": 491,
-	"./eu": 492,
-	"./eu.js": 492,
-	"./fa": 493,
-	"./fa.js": 493,
-	"./fi": 494,
-	"./fi.js": 494,
-	"./fo": 495,
-	"./fo.js": 495,
-	"./fr": 496,
-	"./fr-ca": 497,
-	"./fr-ca.js": 497,
-	"./fr-ch": 498,
-	"./fr-ch.js": 498,
-	"./fr.js": 496,
-	"./fy": 499,
-	"./fy.js": 499,
-	"./gd": 500,
-	"./gd.js": 500,
-	"./gl": 501,
-	"./gl.js": 501,
-	"./gom-latn": 502,
-	"./gom-latn.js": 502,
-	"./he": 503,
-	"./he.js": 503,
-	"./hi": 504,
-	"./hi.js": 504,
-	"./hr": 505,
-	"./hr.js": 505,
-	"./hu": 506,
-	"./hu.js": 506,
-	"./hy-am": 507,
-	"./hy-am.js": 507,
-	"./id": 508,
-	"./id.js": 508,
-	"./is": 509,
-	"./is.js": 509,
-	"./it": 510,
-	"./it.js": 510,
-	"./ja": 511,
-	"./ja.js": 511,
-	"./jv": 512,
-	"./jv.js": 512,
-	"./ka": 513,
-	"./ka.js": 513,
-	"./kk": 514,
-	"./kk.js": 514,
-	"./km": 515,
-	"./km.js": 515,
-	"./kn": 516,
-	"./kn.js": 516,
-	"./ko": 517,
-	"./ko.js": 517,
-	"./ky": 518,
-	"./ky.js": 518,
-	"./lb": 519,
-	"./lb.js": 519,
-	"./lo": 520,
-	"./lo.js": 520,
-	"./lt": 521,
-	"./lt.js": 521,
-	"./lv": 522,
-	"./lv.js": 522,
-	"./me": 523,
-	"./me.js": 523,
-	"./mi": 524,
-	"./mi.js": 524,
-	"./mk": 525,
-	"./mk.js": 525,
-	"./ml": 526,
-	"./ml.js": 526,
-	"./mr": 527,
-	"./mr.js": 527,
-	"./ms": 528,
-	"./ms-my": 529,
-	"./ms-my.js": 529,
-	"./ms.js": 528,
-	"./my": 530,
-	"./my.js": 530,
-	"./nb": 531,
-	"./nb.js": 531,
-	"./ne": 532,
-	"./ne.js": 532,
-	"./nl": 533,
-	"./nl-be": 534,
-	"./nl-be.js": 534,
-	"./nl.js": 533,
-	"./nn": 535,
-	"./nn.js": 535,
-	"./pa-in": 536,
-	"./pa-in.js": 536,
-	"./pl": 537,
-	"./pl.js": 537,
-	"./pt": 538,
-	"./pt-br": 539,
-	"./pt-br.js": 539,
-	"./pt.js": 538,
-	"./ro": 540,
-	"./ro.js": 540,
-	"./ru": 541,
-	"./ru.js": 541,
-	"./sd": 542,
-	"./sd.js": 542,
-	"./se": 543,
-	"./se.js": 543,
-	"./si": 544,
-	"./si.js": 544,
-	"./sk": 545,
-	"./sk.js": 545,
-	"./sl": 546,
-	"./sl.js": 546,
-	"./sq": 547,
-	"./sq.js": 547,
-	"./sr": 548,
-	"./sr-cyrl": 549,
-	"./sr-cyrl.js": 549,
-	"./sr.js": 548,
-	"./ss": 550,
-	"./ss.js": 550,
-	"./sv": 551,
-	"./sv.js": 551,
-	"./sw": 552,
-	"./sw.js": 552,
-	"./ta": 553,
-	"./ta.js": 553,
-	"./te": 554,
-	"./te.js": 554,
-	"./tet": 555,
-	"./tet.js": 555,
-	"./th": 556,
-	"./th.js": 556,
-	"./tl-ph": 557,
-	"./tl-ph.js": 557,
-	"./tlh": 558,
-	"./tlh.js": 558,
-	"./tr": 559,
-	"./tr.js": 559,
-	"./tzl": 560,
-	"./tzl.js": 560,
-	"./tzm": 561,
-	"./tzm-latn": 562,
-	"./tzm-latn.js": 562,
-	"./tzm.js": 561,
-	"./uk": 563,
-	"./uk.js": 563,
-	"./ur": 564,
-	"./ur.js": 564,
-	"./uz": 565,
-	"./uz-latn": 566,
-	"./uz-latn.js": 566,
-	"./uz.js": 565,
-	"./vi": 567,
-	"./vi.js": 567,
-	"./x-pseudo": 568,
-	"./x-pseudo.js": 568,
-	"./yo": 569,
-	"./yo.js": 569,
-	"./zh-cn": 570,
-	"./zh-cn.js": 570,
-	"./zh-hk": 571,
-	"./zh-hk.js": 571,
-	"./zh-tw": 572,
-	"./zh-tw.js": 572
+	"./af": 459,
+	"./af.js": 459,
+	"./ar": 460,
+	"./ar-dz": 461,
+	"./ar-dz.js": 461,
+	"./ar-kw": 462,
+	"./ar-kw.js": 462,
+	"./ar-ly": 463,
+	"./ar-ly.js": 463,
+	"./ar-ma": 464,
+	"./ar-ma.js": 464,
+	"./ar-sa": 465,
+	"./ar-sa.js": 465,
+	"./ar-tn": 466,
+	"./ar-tn.js": 466,
+	"./ar.js": 460,
+	"./az": 467,
+	"./az.js": 467,
+	"./be": 468,
+	"./be.js": 468,
+	"./bg": 469,
+	"./bg.js": 469,
+	"./bn": 470,
+	"./bn.js": 470,
+	"./bo": 471,
+	"./bo.js": 471,
+	"./br": 472,
+	"./br.js": 472,
+	"./bs": 473,
+	"./bs.js": 473,
+	"./ca": 474,
+	"./ca.js": 474,
+	"./cs": 475,
+	"./cs.js": 475,
+	"./cv": 476,
+	"./cv.js": 476,
+	"./cy": 477,
+	"./cy.js": 477,
+	"./da": 478,
+	"./da.js": 478,
+	"./de": 479,
+	"./de-at": 480,
+	"./de-at.js": 480,
+	"./de-ch": 481,
+	"./de-ch.js": 481,
+	"./de.js": 479,
+	"./dv": 482,
+	"./dv.js": 482,
+	"./el": 483,
+	"./el.js": 483,
+	"./en-au": 484,
+	"./en-au.js": 484,
+	"./en-ca": 485,
+	"./en-ca.js": 485,
+	"./en-gb": 486,
+	"./en-gb.js": 486,
+	"./en-ie": 487,
+	"./en-ie.js": 487,
+	"./en-nz": 488,
+	"./en-nz.js": 488,
+	"./eo": 489,
+	"./eo.js": 489,
+	"./es": 490,
+	"./es-do": 491,
+	"./es-do.js": 491,
+	"./es.js": 490,
+	"./et": 492,
+	"./et.js": 492,
+	"./eu": 493,
+	"./eu.js": 493,
+	"./fa": 494,
+	"./fa.js": 494,
+	"./fi": 495,
+	"./fi.js": 495,
+	"./fo": 496,
+	"./fo.js": 496,
+	"./fr": 497,
+	"./fr-ca": 498,
+	"./fr-ca.js": 498,
+	"./fr-ch": 499,
+	"./fr-ch.js": 499,
+	"./fr.js": 497,
+	"./fy": 500,
+	"./fy.js": 500,
+	"./gd": 501,
+	"./gd.js": 501,
+	"./gl": 502,
+	"./gl.js": 502,
+	"./gom-latn": 503,
+	"./gom-latn.js": 503,
+	"./he": 504,
+	"./he.js": 504,
+	"./hi": 505,
+	"./hi.js": 505,
+	"./hr": 506,
+	"./hr.js": 506,
+	"./hu": 507,
+	"./hu.js": 507,
+	"./hy-am": 508,
+	"./hy-am.js": 508,
+	"./id": 509,
+	"./id.js": 509,
+	"./is": 510,
+	"./is.js": 510,
+	"./it": 511,
+	"./it.js": 511,
+	"./ja": 512,
+	"./ja.js": 512,
+	"./jv": 513,
+	"./jv.js": 513,
+	"./ka": 514,
+	"./ka.js": 514,
+	"./kk": 515,
+	"./kk.js": 515,
+	"./km": 516,
+	"./km.js": 516,
+	"./kn": 517,
+	"./kn.js": 517,
+	"./ko": 518,
+	"./ko.js": 518,
+	"./ky": 519,
+	"./ky.js": 519,
+	"./lb": 520,
+	"./lb.js": 520,
+	"./lo": 521,
+	"./lo.js": 521,
+	"./lt": 522,
+	"./lt.js": 522,
+	"./lv": 523,
+	"./lv.js": 523,
+	"./me": 524,
+	"./me.js": 524,
+	"./mi": 525,
+	"./mi.js": 525,
+	"./mk": 526,
+	"./mk.js": 526,
+	"./ml": 527,
+	"./ml.js": 527,
+	"./mr": 528,
+	"./mr.js": 528,
+	"./ms": 529,
+	"./ms-my": 530,
+	"./ms-my.js": 530,
+	"./ms.js": 529,
+	"./my": 531,
+	"./my.js": 531,
+	"./nb": 532,
+	"./nb.js": 532,
+	"./ne": 533,
+	"./ne.js": 533,
+	"./nl": 534,
+	"./nl-be": 535,
+	"./nl-be.js": 535,
+	"./nl.js": 534,
+	"./nn": 536,
+	"./nn.js": 536,
+	"./pa-in": 537,
+	"./pa-in.js": 537,
+	"./pl": 538,
+	"./pl.js": 538,
+	"./pt": 539,
+	"./pt-br": 540,
+	"./pt-br.js": 540,
+	"./pt.js": 539,
+	"./ro": 541,
+	"./ro.js": 541,
+	"./ru": 542,
+	"./ru.js": 542,
+	"./sd": 543,
+	"./sd.js": 543,
+	"./se": 544,
+	"./se.js": 544,
+	"./si": 545,
+	"./si.js": 545,
+	"./sk": 546,
+	"./sk.js": 546,
+	"./sl": 547,
+	"./sl.js": 547,
+	"./sq": 548,
+	"./sq.js": 548,
+	"./sr": 549,
+	"./sr-cyrl": 550,
+	"./sr-cyrl.js": 550,
+	"./sr.js": 549,
+	"./ss": 551,
+	"./ss.js": 551,
+	"./sv": 552,
+	"./sv.js": 552,
+	"./sw": 553,
+	"./sw.js": 553,
+	"./ta": 554,
+	"./ta.js": 554,
+	"./te": 555,
+	"./te.js": 555,
+	"./tet": 556,
+	"./tet.js": 556,
+	"./th": 557,
+	"./th.js": 557,
+	"./tl-ph": 558,
+	"./tl-ph.js": 558,
+	"./tlh": 559,
+	"./tlh.js": 559,
+	"./tr": 560,
+	"./tr.js": 560,
+	"./tzl": 561,
+	"./tzl.js": 561,
+	"./tzm": 562,
+	"./tzm-latn": 563,
+	"./tzm-latn.js": 563,
+	"./tzm.js": 562,
+	"./uk": 564,
+	"./uk.js": 564,
+	"./ur": 565,
+	"./ur.js": 565,
+	"./uz": 566,
+	"./uz-latn": 567,
+	"./uz-latn.js": 567,
+	"./uz.js": 566,
+	"./vi": 568,
+	"./vi.js": 568,
+	"./x-pseudo": 569,
+	"./x-pseudo.js": 569,
+	"./yo": 570,
+	"./yo.js": 570,
+	"./zh-cn": 571,
+	"./zh-cn.js": 571,
+	"./zh-hk": 572,
+	"./zh-hk.js": 572,
+	"./zh-tw": 573,
+	"./zh-tw.js": 573
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -19039,7 +19277,7 @@ webpackContext.id = 900;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojCard; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_menu_voj_menu__ = __webpack_require__(573);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_menu_voj_menu__ = __webpack_require__(574);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_voj_card_model__ = __webpack_require__(41);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -19192,12 +19430,12 @@ var VojSegment = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_voj_events_voj_events__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_search_service_search_service__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_search_service_search_service__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_details_details__ = __webpack_require__(132);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_geolocation__ = __webpack_require__(229);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_storage__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_account_module_login_login__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_account_module_login_login__ = __webpack_require__(64);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -19503,7 +19741,7 @@ var NumSSConstraints = (function () {
         }
     };
     NumSSConstraints.checkBirthYear = function (num, date) {
-        if (__WEBPACK_IMPORTED_MODULE_0__utils_utils__["b" /* ObjectUtils */].isEmpty(date)) {
+        if (__WEBPACK_IMPORTED_MODULE_0__utils_utils__["c" /* ObjectUtils */].isEmpty(date)) {
             return false;
         }
         var indicator = num.charAt(1) + num.charAt(2);
@@ -19514,7 +19752,7 @@ var NumSSConstraints = (function () {
             return false;
     };
     NumSSConstraints.checkBirthMonth = function (num, date) {
-        if (__WEBPACK_IMPORTED_MODULE_0__utils_utils__["b" /* ObjectUtils */].isEmpty(date)) {
+        if (__WEBPACK_IMPORTED_MODULE_0__utils_utils__["c" /* ObjectUtils */].isEmpty(date)) {
             return false;
         }
         var indicator = num.charAt(3) + num.charAt(4);
@@ -19667,7 +19905,7 @@ var EmployerDto = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_landing_page_landing_page__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_voj_page_header_model__ = __webpack_require__(40);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -19921,12 +20159,12 @@ var VojList = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(397);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(398);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_lodash__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_search_select_voj_search_select__ = __webpack_require__(580);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_search_select_voj_search_select__ = __webpack_require__(581);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_native_native__ = __webpack_require__(581);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_native_native__ = __webpack_require__(582);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20486,7 +20724,7 @@ var VojHeaderWeb = (function () {
     VojHeaderWeb.prototype.updateUserInfo = function () {
         var _this = this;
         this.event.subscribe('user:update', function (userUpdate) {
-            if (__WEBPACK_IMPORTED_MODULE_3__utils_utils__["b" /* ObjectUtils */].isEmpty(userUpdate)) {
+            if (__WEBPACK_IMPORTED_MODULE_3__utils_utils__["c" /* ObjectUtils */].isEmpty(userUpdate)) {
                 _this.profileInfo = { firstName: "", lastName: "", thumbnail: "" };
             }
             else {
@@ -20588,7 +20826,7 @@ var VojHeaderSegment = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojTable; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_table_models_voj_table_model__ = __webpack_require__(594);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_table_models_voj_table_model__ = __webpack_require__(595);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20838,7 +21076,7 @@ var MissionServiceJobyer = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojTableOutputCellModel; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__voj_table_cell_model__ = __webpack_require__(619);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__voj_table_cell_model__ = __webpack_require__(620);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -20883,7 +21121,7 @@ var VojTableRow = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojTableButtonCellModel; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__voj_table_cell_model__ = __webpack_require__(619);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__voj_table_cell_model__ = __webpack_require__(620);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -21314,25 +21552,25 @@ var OptionsPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(669);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(670);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(621);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(670);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(671);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(622);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_test_components_about_about__ = __webpack_require__(140);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__config_voj_configuration__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_search_module_search_search__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_search_module_search_search__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_core__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_navigation_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_navigation_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__config_environment__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_voj_events_voj_events__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_landing_page_landing_page__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_modal_service__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_account_module_login_login__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_account_module_login_login__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_storage__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_account_module_account_account__ = __webpack_require__(248);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_account_module_user_information_user_information__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_account_module_identity_identity__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_calendar_calendar__ = __webpack_require__(237);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_search_service_search_service__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_search_service_search_service__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__startegy_jobyer__ = __webpack_require__(968);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__startegy_employer__ = __webpack_require__(969);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__angular_compiler__ = __webpack_require__(146);
@@ -21340,14 +21578,14 @@ var OptionsPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_cv_offer_module_jobs_list_jobs_list__ = __webpack_require__(178);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_cv_offer_module_information_resume_information_resume__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_missions_missions_calendar_missions_calendar__ = __webpack_require__(141);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__providers_mission_service_mission_service__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__providers_mission_service_mission_service__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_voj_calendar_full_calendar_full_calendar_service__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_missions_pending_missions_pending_missions__ = __webpack_require__(246);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__providers_theming_theming__ = __webpack_require__(671);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__providers_theming_theming__ = __webpack_require__(672);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__utils_utils__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__providers_offer_service_offer_interest_service_offer_interest_service__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__pages_cv_offer_module_my_offers_list_my_offers_list__ = __webpack_require__(625);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__pages_cv_offer_module_my_offers_calendar_my_offers_calendar__ = __webpack_require__(627);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__pages_cv_offer_module_my_offers_list_my_offers_list__ = __webpack_require__(626);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__pages_cv_offer_module_my_offers_calendar_my_offers_calendar__ = __webpack_require__(628);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -21680,7 +21918,7 @@ var MyApp = (function () {
         this.annoncesLabel = this.dataHeader.menu[1].label;
     };
     MyApp.prototype.setUserInfo = function (user) {
-        if (__WEBPACK_IMPORTED_MODULE_32__utils_utils__["b" /* ObjectUtils */].isEmpty(user)) {
+        if (__WEBPACK_IMPORTED_MODULE_32__utils_utils__["c" /* ObjectUtils */].isEmpty(user)) {
             this.compteTab = "Compte";
         }
         else {
@@ -22215,54 +22453,54 @@ var EmployerStrategy = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PagesModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tabs_tabs_module__ = __webpack_require__(620);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home_module__ = __webpack_require__(617);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tabs_tabs_module__ = __webpack_require__(621);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home_module__ = __webpack_require__(618);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__test_components_contact_contacts_module__ = __webpack_require__(971);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__test_components_about_about_module__ = __webpack_require__(608);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_module_search_search_module__ = __webpack_require__(597);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__cv_offer_module_jobyer_availability_choice_jobyer_availability_choice_module__ = __webpack_require__(602);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__account_module_user_information_user_information_module__ = __webpack_require__(603);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__test_components_about_about_module__ = __webpack_require__(609);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_module_search_search_module__ = __webpack_require__(598);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__cv_offer_module_jobyer_availability_choice_jobyer_availability_choice_module__ = __webpack_require__(603);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__account_module_user_information_user_information_module__ = __webpack_require__(604);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__details_details_module__ = __webpack_require__(972);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__account_module_open_application_open_application_module__ = __webpack_require__(628);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__account_module_open_application_open_application_module__ = __webpack_require__(629);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__account_module_sign_up_sign_up_module__ = __webpack_require__(973);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_voj_components_module__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__account_module_enterprise_details_enterprise_details_module__ = __webpack_require__(609);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__account_module_options_options_module__ = __webpack_require__(606);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__account_module_enterprise_details_enterprise_details_module__ = __webpack_require__(610);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__account_module_options_options_module__ = __webpack_require__(607);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__account_module_account_account_module__ = __webpack_require__(974);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__account_module_identity_identity_module__ = __webpack_require__(975);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__account_module_main_address_main_address_module__ = __webpack_require__(976);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__account_module_login_login_module__ = __webpack_require__(977);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__account_module_bank_settings_bank_settings_module__ = __webpack_require__(978);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__account_module_personal_details_identity_personal_details_identity_module__ = __webpack_require__(598);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__account_module_personal_details_identity_personal_details_identity_module__ = __webpack_require__(599);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__cv_offer_module_availabilities_add_days_availabilities_add_days_module__ = __webpack_require__(979);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__cv_offer_module_availabilities_availabilities_module__ = __webpack_require__(980);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__landing_page_landing_page_module__ = __webpack_require__(321);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__cv_offer_module_languages_languages_module__ = __webpack_require__(981);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__account_module_enterprise_search_enterprise_search_module__ = __webpack_require__(982);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__account_module_reset_password_reset_password_module__ = __webpack_require__(983);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__account_module_personal_details_personal_details_module__ = __webpack_require__(599);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__account_module_company_company_module__ = __webpack_require__(600);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__account_module_personal_details_personal_details_module__ = __webpack_require__(600);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__account_module_company_company_module__ = __webpack_require__(601);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__cv_offer_module_my_cv_my_cv_module__ = __webpack_require__(984);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__cv_offer_module_qualities_qualities_module__ = __webpack_require__(985);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__cv_offer_module_information_resume_information_resume_module__ = __webpack_require__(986);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__options_options_module__ = __webpack_require__(629);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__options_options_module__ = __webpack_require__(630);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__cv_offer_module_find_job_find_job_module__ = __webpack_require__(987);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__cv_offer_module_jobs_list_jobs_list_module__ = __webpack_require__(989);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__availabilities_add_slot_availabilities_add_slot_page_module__ = __webpack_require__(990);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__calendar_calendar_module__ = __webpack_require__(601);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__calendar_calendar_module__ = __webpack_require__(602);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__documents_documents_module__ = __webpack_require__(991);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__registration_message_registration_message_module__ = __webpack_require__(992);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__cv_offer_module_keywords_keywords_module__ = __webpack_require__(322);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__cv_offer_module_remuneration_remuneration_module__ = __webpack_require__(595);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__missions_my_missions_list_my_missions_list_module__ = __webpack_require__(616);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__missions_missions_calendar_missions_calendar_module__ = __webpack_require__(611);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__missions_pending_missions_pending_missions_module__ = __webpack_require__(615);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__cv_offer_module_remuneration_remuneration_module__ = __webpack_require__(596);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__missions_my_missions_list_my_missions_list_module__ = __webpack_require__(617);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__missions_missions_calendar_missions_calendar_module__ = __webpack_require__(612);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__missions_pending_missions_pending_missions_module__ = __webpack_require__(616);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__new_password_new_password_module__ = __webpack_require__(994);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__missions_mission_signature_mission_signature_module__ = __webpack_require__(612);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__cv_offer_module_my_interests_my_interests_module__ = __webpack_require__(596);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__cv_offer_module_my_offers_list_my_offers_list_module__ = __webpack_require__(624);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__cv_offer_module_my_offers_calendar_my_offers_calendar_module__ = __webpack_require__(626);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__cv_offer_module_offer_detail_offer_detail_module__ = __webpack_require__(622);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__missions_mission_signature_mission_signature_module__ = __webpack_require__(613);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__cv_offer_module_my_interests_my_interests_module__ = __webpack_require__(597);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__cv_offer_module_my_offers_list_my_offers_list_module__ = __webpack_require__(625);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__cv_offer_module_my_offers_calendar_my_offers_calendar_module__ = __webpack_require__(627);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__cv_offer_module_offer_detail_offer_detail_module__ = __webpack_require__(623);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -22637,7 +22875,7 @@ var MainAddressModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -22883,7 +23121,7 @@ var EnterpriseSearchPageModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reset_password__ = __webpack_require__(577);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reset_password__ = __webpack_require__(578);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -23218,7 +23456,7 @@ var AvailabilitiesAddSlotPageModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DocumentsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__documents__ = __webpack_require__(605);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__documents__ = __webpack_require__(606);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -23343,7 +23581,7 @@ var RegistrationMessagePage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewPasswordModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__new_password__ = __webpack_require__(607);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__new_password__ = __webpack_require__(608);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_voj_components_module__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -23375,5 +23613,5 @@ var NewPasswordModule = (function () {
 //# sourceMappingURL=new-password.module.js.map
 
 /***/ })
-],[672]);
+],[673]);
 //# sourceMappingURL=main.js.map

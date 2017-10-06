@@ -44,9 +44,10 @@
     "TITLE": "Inscription",
     "REGISTERED": "Vous avez déjà un compte?",
     "VALIDATE": "Suivant",
-    "LOGIN": "Se connecter"
+    "LOGIN": "Se connecter",
+    "NOTIFICATION_TITLE": "Attention!",
+    "NOTIFICATION_SUBTITLE": "Ces informations d'identification sont déjà enregistrées. Entrez un autre numéro de téléphone et un email."
   },
-
   "RESET_PASSWORD": {
     "MESSAGE": "Votre mot de passe est sur le point d'être réinitialisé. Comment souhaitez-vous le recevoir?",
     "SMS_BTN": "Par sms",
@@ -56,7 +57,8 @@
     "SEND_AGAIN_BTN": "Je n'ai reçu aucun code, envoyez-le à nouveau",
     "VALIDATE_BTN": "Valider",
     "GENERAL_ERROR": "Une erreur est survenue lors de l'envoi du mot de passe. Veuillez réessayer.",
-    "NO_ACCOUNT": "Les coordonnées saisies ne correspondent à aucun compte."
+    "NO_ACCOUNT": "Les coordonnées saisies ne correspondent à aucun compte.",
+    "CONFIRMATION_TXT": "Vous allez recevoir un nouveau mot de passe par sms."
   },
   "COMPANY": {
     "TITLE": "Mon entreprise",
@@ -247,7 +249,9 @@
     "VALID_FROM": "Valable du",
     "VALID_TO": "Au",
     "VALIDATE_BTN": "Valider",
-    "FOLLOWING_BTN": "Suivant"
+    "FOLLOWING_BTN": "Suivant",
+    "NATIONALITIES_LIST": "Liste des nationalités",
+    "PREFECTURE_LIST": "Liste des préfectures"
   },
   "DOCUMENT_TYPE_LIST": {
     "CNI": "CNI",
