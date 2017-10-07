@@ -4216,7 +4216,7 @@ var LandingPage = (function () {
 var envConfig = {
     cid: "8f3c82e6-12d0-4a86-bb22-c5d30d2c2b2f",
     //cid : "3mpl0y3r",
-    //server : "http://127.0.0.1:8000/appsettings/",
+    //server : "http://localhost:8000/appsettings/",
     server: "https://hermes.vitonjob.com/appsettings/",
     thresholdWidth: 768,
     googleKey: 'AIzaSyAiXwdHbyWYjC63gTo1X3IUKTKf64oiAgI'
@@ -4526,6 +4526,8 @@ var DetailsPage = (function () {
     };
     DetailsPage.prototype.updateCardInterest = function () {
         var _this = this;
+        if (!this.card.actions || this.card.actions.length == 0)
+            return;
         for (var i = 0; i < this.card.actions.length; i++) {
             var action = this.card.actions[i];
             if (action.id == 'recruite') {
