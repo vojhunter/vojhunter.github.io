@@ -27802,6 +27802,11 @@ button[clear].button.secondary-btn:hover {
   overflow-y: auto;
 }
 
+.full-height-content.voj-content {
+  position: relative;
+  padding: 0;
+}
+
 voj-calendar {
   display: block;
 }
@@ -29500,6 +29505,8 @@ voj-page-header .page-header-title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 100%;
+  padding-left: 30px;
 }
 
 voj-page-header ion-navbar.toolbar {
@@ -29512,12 +29519,27 @@ voj-page-header ion-navbar.toolbar {
 voj-page-header ion-navbar.toolbar .toolbar-content {
   position: relative;
   color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 voj-page-header ion-navbar.toolbar .toolbar-content .header-back {
-  position: absolute;
-  right: 10px;
-  top: -8px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  max-width: 30px;
   font-size: 30px;
   color: #ffffff;
   background-color: transparent;
@@ -30087,6 +30109,11 @@ enterprise-search-page .enterprise-search-bar {
   justify-content: center;
 }
 
+.platform-mobile login-page .voj-content .voj-form-container {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
 login-page {
   background-color: #ffffff;
 }
@@ -30319,7 +30346,7 @@ sign-up-page .voj-content {
 
 sign-up-page .voj-content .voj-form-container {
   background-color: #ffffff;
-  padding: 20px 0;
+  padding: 20px 16px;
   text-align: center;
 }
 

@@ -157,8 +157,8 @@
     "MY_QUALITIES": "Mes qualités",
     "MY_LANGUAGES": "Mes langues",
     "MY_KEYWORDS": "Mes mots clés",
-    "MY_CV": "Charger mon CV",
-    "MY_INTERESTS":"Les offres qui m'intéressent"
+    "MY_CV": "Mon CV",
+    "MY_INTERESTS":"Offres qui m'intéressent"
   },
   "DOCUMENTS": {
     "TITLE": "Mes documents",
