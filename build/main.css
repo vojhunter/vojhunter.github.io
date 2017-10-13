@@ -2,6 +2,7 @@
 :root {
   --voj-color-secondary: #d339f8;
   --voj-color-primary: #fff;
+  --voj-color-warn: #eca603;
   --voj-color-danger: #e93a3a;
   --voj-color-danger-light: #e25757;
 }
@@ -27717,6 +27718,16 @@ button[clear].button.secondary-btn:hover {
   color: var(--voj-color-secondary);
 }
 
+button.button.warn-btn:not([clear]),
+button.button.warn-btn:not([clear]):hover {
+  background-color: var(--voj-color-warn);
+}
+
+button[clear].button.warn-btn,
+button[clear].button.warn-btn:hover {
+  color: var(--voj-color-warn);
+}
+
 @media screen and (min-width: 768px) {
   .split-pane-main .voj-content {
     height: calc(100% - 220px);
@@ -27805,6 +27816,13 @@ button[clear].button.secondary-btn:hover {
 .full-height-content.voj-content {
   position: relative;
   padding: 0;
+}
+
+.full-height-content .custom-a-right {
+  float: right;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
 }
 
 voj-calendar {
