@@ -31003,42 +31003,6 @@ page-details ion-content {
   }
 }
 
-documents-page {
-  background-color: var(--voj-color-primary);
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-documents-page .documents-parent {
-  height: calc(100% - 230px);
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-documents-page .documents-child {
-  overflow-y: auto;
-  overflow-x: hidden;
-  background-color: #ffffff;
-  padding: 0 0 10px 0;
-}
-
-documents-page .documents-container {
-  padding: 15px;
-  background-color: var(--voj-color-primary);
-  height: calc(100% - 120px);
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-documents-page .documents-child-container {
-  padding: 5px;
-  position: relative;
-}
-
-documents-page .custom-select-btn-attachment {
-  padding-right: 10px !important;
-}
-
 page-home voj-map #map {
   height: 400px;
   width: calc(100% - 20px);

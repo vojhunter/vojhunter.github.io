@@ -175,7 +175,7 @@
     "TYPEPROOFOFDOMICILE": "Justificatif de domicile",
     "TITLEDOCUMENTLABEL": "Vous pouvez charger un autre document",
     "TYPEDOCUMENTLABEL": "No du document",
-    "CONFIRMATION_TITLE": "Êtes-vous sûr de vouloir supprimer cette valeur?",
+    "CONFIRMATION_TITLE": "Cette action est irréversible. Êtes-vous sûr de vouloir supprimer ce document?",
     "AGREE_BTN": "OUI",
     "CANCEL_BTN": "NON",
     "TOAST_DELETE_MSG": "Vos informations ont bien été supprimées"
