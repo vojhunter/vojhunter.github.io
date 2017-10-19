@@ -48,6 +48,11 @@
     "NOTIFICATION_TITLE": "Attention!",
     "NOTIFICATION_SUBTITLE": "Ces informations d'identification sont déjà enregistrées. Entrez un autre numéro de téléphone et un email."
   },
+  "SIGNUP_CLOSE_CONFIRMATION_ALERT": {
+    "MESSAGE": "Vous quittez votre inscription ?",
+    "OK": "Continuer",
+    "CANCEL": "Quitter"
+  },
   "RESET_PASSWORD": {
     "MESSAGE": "Votre mot de passe est sur le point d'être réinitialisé. Comment souhaitez-vous le recevoir?",
     "SMS_BTN": "Par sms",
@@ -181,7 +186,7 @@
     "TOAST_DELETE_MSG": "Vos informations ont bien été supprimées"
   },
   "BANK_SETTINGS": {
-    "TITLE": "Mes coordonnées bancaires",
+    "TITLE": "Mon RIB",
     "BANK_NAME": "Nom de la banque",
     "BANK_NAME_ERR": "Veuillez saisir un nom de banque valide",
     "OWNER_NAME": "Nom du détenteur",
@@ -234,6 +239,7 @@
     "COUNTRY_OF_BIRTH": "Pays de naissance",
     "COUNTRY_OF_BIRTH_ERR": "Veuillez choisir un pays de naissance",
     "DEPARTMENT_OF_BIRTH": "Département de naissance",
+    "DEPARTMENT_OF_BIRTH_DEFAULT": "99 - étranger",
     "DEPARTMENT_OF_BIRTH_ERR": "Veuillez choisir un département de naissance",
     "PLACE_OF_BIRTH": "Lieu de naissance",
     "PLACE_OF_BIRTH_ERR": "Veuillez choisir un lieu de naissance",
@@ -250,9 +256,12 @@
     "CARD_NUMBER": "Numéro de pièce d'identité",
     "CARD_NUMBER_ERR": "Veuillez saisir un numéro de pièce d'identité valide",
     "DELIVERED_DATE": "Délivrée le",
+    "DELIVERED_DATE_ERR": "Veuillez saisir une date inférieure à la date de début de validité",
     "PREFECTURE": "Par",
     "VALID_FROM": "Valable du",
+    "VALID_FROM_ERR": "Veuillez saisir une date supérieure à la date de délivrance",
     "VALID_TO": "Au",
+    "VALID_TO_ERR": "Veuillez saisir une date supériure à la date de début de validité",
     "VALIDATE_BTN": "Valider",
     "FOLLOWING_BTN": "Suivant",
     "NATIONALITIES_LIST": "Liste des nationalités",
@@ -275,6 +284,13 @@
   "TOASTS": {
     "EDITINGMESSAGE": "Vos informations ont bien été modifiées",
     "ENTERINGMESSAGE": "Vos informations ont bien été enregistrées.",
-    "ERRORMESSAGE": "Une erreur est survenue. Veuillez réessayer"
+    "ERRORMESSAGE": "Une erreur est survenue. Veuillez réessayer",
+    "OFFER_ADDED": "Offre ajoutée à votre liste dans la partie CV"
+  },
+  "OFFER_SET_JOB": {
+    "SECTOR":"Secteur",
+    "WAGE":"Taux horaire",
+    "JOB":"Job",
+    "VALIDATE":"Valider"
   }
 }

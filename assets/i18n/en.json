@@ -48,6 +48,11 @@
     "NOTIFICATION_TITLE": "Warning!",
     "NOTIFICATION_SUBTITLE": "This credential is already registered. Enter a different phone number and an email."
   },
+  "SIGNUP_CLOSE_CONFIRMATION_ALERT": {
+    "MESSAGE": "You leave your registration?",
+    "OK": "Continue",
+    "CANCEL": "Leave"
+  },
   "RESET_PASSWORD": {
     "MESSAGE": "Your password is about to be reset. How would you like to receive it?",
     "SMS_BTN": "By sms",
@@ -234,6 +239,7 @@
     "COUNTRY_OF_BIRTH": "You must be over 18 years of age",
     "COUNTRY_OF_BIRTH_ERR": "Please choose a country of birth",
     "DEPARTMENT_OF_BIRTH": "Department of birth",
+    "DEPARTMENT_OF_BIRTH_DEFAULT": "99 - foreign",
     "DEPARTMENT_OF_BIRTH_ERR": "lease choose a department of birth",
     "PLACE_OF_BIRTH": "Place of birth",
     "PLACE_OF_BIRTH_ERR": "Please choose a place of birth",
@@ -250,9 +256,12 @@
     "CARD_NUMBER": "ID number",
     "CARD_NUMBER_ERR": "Please enter a valid ID number",
     "DELIVERED_DATE": "Issued on",
+    "DELIVERED_DATE_ERR": "Please enter a valid date",
     "PREFECTURE": "By",
     "VALID_FROM": "Valid from",
+    "VALID_FROM_ERR": "Please enter a valid date",
     "VALID_TO": "Au",
+    "VALID_TO_ERR": "Please enter a valid date",
     "VALIDATE_BTN": "Validate",
     "FOLLOWING_BTN": "Following",
     "NATIONALITIES_LIST": "List of nationalities",
@@ -275,6 +284,13 @@
   "TOASTS": {
     "EDITINGMESSAGE": "Test Editing toast ENG",
     "ENTERINGMESSAGE": "Test Entering toast ENG",
-    "ERRORMESSAGE": "Test Error toast ENG"
+    "ERRORMESSAGE": "Test Error toast ENG",
+    "OFFER_ADDED": "Offer added to your list in the CV section"
+  },
+  "OFFER_SET_JOB": {
+    "SECTOR":"Sector",
+    "WAGE":"Hourly wage",
+    "JOB":"Job",
+    "VALIDATE":"Validate"
   }
 }
