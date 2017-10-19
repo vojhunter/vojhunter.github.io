@@ -27825,6 +27825,10 @@ button[clear].button.warn-btn:hover {
   font-weight: 500;
 }
 
+.gm-style > div:nth-child(7) {
+  display: none;
+}
+
 voj-calendar {
   display: block;
 }
@@ -30731,9 +30735,11 @@ my-cv-page .my-cv-child-container {
 }
 
 page-my-interests .interests-warning-message {
-  color: #00c1a9;
+  color: #fff;
   width: 100%;
   text-align: center;
+  margin-left: 8px;
+  margin-top: 10px;
 }
 
 page-my-interests .interests-info-message {
@@ -30744,10 +30750,23 @@ page-my-interests .interests-info-message {
 
 page-my-interests .interests-page-content {
   background-color: var(--voj-color-primary);
+  height: 100%;
 }
 
 page-my-interests .interests-page-content .scroll-content {
-  padding: 0px !important;
+  padding: 0 !important;
+}
+
+@media screen and (min-width: 768px) {
+  page-my-interests .interests-page-content .scroll-content {
+    margin-bottom: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  page-my-interests .interests-page-content .scroll-content {
+    margin-bottom: 61px;
+  }
 }
 
 page-my-interests ion-segment-button {
@@ -30839,6 +30858,18 @@ page-my-offers-calendar .calendar-wrapper {
 page-my-offers-calendar .calendar-wrapper.pad {
   background-color: var(--voj-color-primary) !important;
   padding: 16px;
+}
+
+page-my-offers-list .danger-button {
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 97%;
+  background-color: #f53d3d;
+}
+
+page-my-offers-list .danger-button:hover {
+  background-color: #f53d3d !important;
 }
 
 page-my-offers-list .my-offers-warning-message {
@@ -31007,6 +31038,22 @@ page-home voj-map #map {
   height: 400px;
   width: calc(100% - 20px);
   margin: 0 10px;
+}
+
+page-about ion-header {
+  background-color: var(--voj-color-primary) !important;
+}
+
+page-about ion-content {
+  background-color: var(--voj-color-primary) !important;
+}
+
+page-about voj-map #map {
+  position: inherit !important;
+}
+
+page-about .no-scroll .scroll-content {
+  overflow: hidden;
 }
 
 page-missions-calendar voj-calendar {
@@ -31322,16 +31369,4 @@ page-search ion-card.map.card.card-md {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-page-about ion-header {
-  background-color: var(--voj-color-primary) !important;
-}
-
-page-about ion-content {
-  background-color: var(--voj-color-primary) !important;
-}
-
-page-about voj-map #map {
-  position: inherit !important;
 }
