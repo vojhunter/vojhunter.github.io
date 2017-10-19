@@ -28493,6 +28493,16 @@ voj-form .input-shape-default .input-field {
   width: 100%;
   height: 38px;
   display: inline-block;
+  background-color: #fff;
+}
+
+voj-form .input-shape-default .input-field.disabled {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #efefef;
 }
 
 voj-form .input-shape-default .input-select-field {

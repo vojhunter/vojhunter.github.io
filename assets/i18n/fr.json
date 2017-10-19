@@ -6,6 +6,7 @@
   "FORM": {
     "PHONE": "Numéro de téléphone",
     "COUNTRY_CODE": "Indicatif",
+    "COUNTRY_CODE_PICKER_TITLE": "Liste des indicatifs",
     "EMAIL": "Adresse mail",
     "PASSWORD": "Mot de passe",
     "PASSWORD_CONFIRMATION": "Confirmation du mot de passe",

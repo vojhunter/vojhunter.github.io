@@ -6,6 +6,7 @@
   "FORM": {
     "PHONE": "Phone number",
     "COUNTRY_CODE": "Country code",
+    "COUNTRY_CODE_PICKER_TITLE": "List of country codes",
     "EMAIL": "Email",
     "PASSWORD": "Password",
     "PASSWORD_CONFIRMATION": "Password confirmation",
