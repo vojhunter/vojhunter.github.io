@@ -31338,7 +31338,7 @@ page-search .search-info-chip {
 
 page-search #map {
   position: relative;
-  height: 100%;
+  height: calc(100vh - 300px);
 }
 
 page-search ion-card.map.card.card-md {
