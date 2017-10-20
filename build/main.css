@@ -28507,6 +28507,7 @@ voj-form .input-shape-default .input-field.disabled {
 
 voj-form .input-shape-default .input-select-field {
   position: relative;
+  width: 100%;
 }
 
 voj-form .input-shape-default .input-select-field .input-field {
@@ -29551,6 +29552,11 @@ voj-map #map {
 
 voj-page-header .desktop-header {
   background-color: var(--voj-color-primary);
+}
+
+voj-page-header .header-back {
+  padding: 0 5px;
+  color: #fff;
 }
 
 voj-page-header .bar-button::after {
