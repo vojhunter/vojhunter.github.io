@@ -27825,7 +27825,7 @@ button[clear].button.warn-btn:hover {
   font-weight: 500;
 }
 
-ion-modal .full-height-content .voj-full-height-content {
+.platform-mobile ion-modal .full-height-content .voj-full-height-content {
   height: calc(100vh - 56px);
 }
 
