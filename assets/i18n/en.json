@@ -292,6 +292,9 @@
     "SECTOR":"Sector",
     "WAGE":"Hourly wage",
     "JOB":"Job",
-    "VALIDATE":"Validate"
+    "VALIDATE":"Validate",
+    "SHOW_CONVENTION_PARAMETERS":"Access job classification",
+    "HIDE_CONVENTION_PARAMETERS":"Hide job classification",
+    "LEVEL":"Level"
   }
 }

@@ -31032,6 +31032,28 @@ page-offer-detail .desktop-container .information-resume-edit-btn {
   margin-right: 0;
 }
 
+page-offer-set-job .wage-warning {
+  color: #ff0000;
+}
+
+page-offer-set-job .convention-link {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 20px;
+  color: #000000;
+  text-decoration: underline;
+}
+
+page-offer-set-job .validation-button {
+  background-color: #d339f8;
+  text-transform: capitalize;
+  color: #fff;
+  border-color: #d339f8;
+  border-radius: 4%;
+  padding: 0 10%;
+  width: 100%;
+}
+
 page-details {
   overflow-y: auto;
 }

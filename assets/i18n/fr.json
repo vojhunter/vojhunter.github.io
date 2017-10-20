@@ -292,6 +292,9 @@
     "SECTOR":"Secteur",
     "WAGE":"Taux horaire",
     "JOB":"Job",
-    "VALIDATE":"Valider"
+    "VALIDATE":"Valider",
+    "SHOW_CONVENTION_PARAMETERS":"Accéder à la classification du poste",
+    "HIDE_CONVENTION_PARAMETERS":"Cacher la classification du poste",
+    "LEVEL":"Niveau"
   }
 }
