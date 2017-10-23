@@ -296,5 +296,15 @@
     "SHOW_CONVENTION_PARAMETERS":"Access job classification",
     "HIDE_CONVENTION_PARAMETERS":"Hide job classification",
     "LEVEL":"Level"
+  },
+  "LOGOUT_CONFIRMATION_ALERT": {
+    "MESSAGE": "Log out?",
+    "OK": "Yes",
+    "CANCEL": "No"
+  },
+  "CV_MODULE_ACCESS_ALERT": {
+    "MESSAGE": "You must log in",
+    "OK": "Login",
+    "CANCEL": "Sign up"
   }
 }

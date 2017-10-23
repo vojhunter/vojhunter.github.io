@@ -27837,6 +27837,56 @@ button[clear].button.warn-btn:hover {
   display: none;
 }
 
+.alert-md {
+  /*.alert-button {
+		background-color: voj-color(primary);
+		color: #ffffff;
+		text-align: center;
+		font-size: 10px;
+
+	}*/
+}
+
+.alert-md .alert-message {
+  font-size: 16px !important;
+  text-align: center !important;
+  color: #000 !important;
+}
+
+.alert-md .alert-button {
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #488aff !important;
+  color: #488aff !important;
+  background-color: transparent !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  font-size: 1rem !important;
+  text-align: center !important;
+  margin: 15px !important;
+  width: 100px !important;
+}
+
+.alert-md .alert-button-group {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  margin-bottom: 10px !important;
+  padding: 8px !important;
+  -webkit-box-pack: center !important;
+  -webkit-justify-content: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+.alert-md .alert-button .button-inner {
+  -webkit-box-pack: center !important;
+  -webkit-justify-content: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
 voj-calendar {
   display: block;
 }
@@ -31396,36 +31446,32 @@ page-search ion-card.map.card.card-md {
   margin: 0;
 }
 
-.search-message .alert-message {
-  font-size: 16px;
-  text-align: center;
-}
-
-.search-message .alert-button .button-inner {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.search-message .alert-button {
-  background-color: var(--voj-color-primary);
-  color: #ffffff;
-  text-align: center;
-  font-size: 10px;
-  margin: 15px;
-  width: 100px;
-}
-
-.search-message .alert-button-group {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 10px;
-  padding: 8px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+.search-message {
+  /*.alert-message {
+    font-size: 16px;
+    text-align: center;
+    //font-weight: bolder;
+    color: #000;
+  }
+  .alert-button .button-inner {
+    justify-content: center;
+  }*/
+  /*.alert-button {
+    background-color: voj-color(primary);
+    color: #ffffff;
+    text-align: center;
+    font-size: 10px;
+    margin: 15px;
+    width: 100px;
+  }*/
+  /*.alert-button {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #488aff;
+    color: #488aff;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-weight:bolder;
+  }*/
 }
