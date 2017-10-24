@@ -27839,11 +27839,17 @@ button[clear].button.warn-btn:hover {
 
 .alert-md {
   /*.alert-button {
-		background-color: voj-color(primary);
-		color: #ffffff;
-		text-align: center;
-		font-size: 10px;
-
+		border-width: 1px !important;
+		border-style: solid !important;
+		border-color: #488aff !important;
+		color: #488aff !important;
+		background-color: transparent !important;
+		-webkit-box-shadow: none !important;
+		box-shadow: none !important;
+		font-size: 1rem !important;
+		text-align: center !important;
+		margin: 15px !important;
+		width: 100px !important;
 	}*/
 }
 
@@ -27854,17 +27860,13 @@ button[clear].button.warn-btn:hover {
 }
 
 .alert-md .alert-button {
-  border-width: 1px !important;
-  border-style: solid !important;
-  border-color: #488aff !important;
-  color: #488aff !important;
-  background-color: transparent !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  font-size: 1rem !important;
-  text-align: center !important;
-  margin: 15px !important;
-  width: 100px !important;
+  background-color: var(--voj-color-primary);
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  margin: 15px;
+  width: 100px;
 }
 
 .alert-md .alert-button-group {

@@ -38,7 +38,8 @@
     "NOT_REGISTERED": "Not registered ?",
     "CREATE_ACCOUNT": "Create an account",
     "FORGOTTEN_PASSWORD": "Forgotten password ?",
-    "VALIDATE": "Validate"
+    "VALIDATE": "Validate",
+    "UNRECOGNAZIED_NUMBER": "No account is associated with this phone number"
   },
 
   "SIGNUP": {
