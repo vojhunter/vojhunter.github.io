@@ -27,6 +27,6 @@ rm index.html-e
 echo "••••••••• Mettre à jour la recette sur github"
 git add .
 git commit -m 'Vit-On-Job • '$version
-#git push origin server
+git push origin server
 
 echo "••••••••• Mise en recette bien passée!"
