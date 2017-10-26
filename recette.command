@@ -16,8 +16,8 @@ git pull origin master
 echo"•••••••••• Copier le dossier build de la nouvelle version :"
 sudo cp -R ../vitonjob-v2/www/build/ build/
 
-echo "•••••••••• Copier le dossier assets/i18n de la nouvelle version :"
-sudo cp -R ../vitonjob-v2/www/assets/i18n/ assets/i18n
+echo "••••••••• Copier le dossier assets/i18n de la nouvelle version :"
+sudo cp -R ../vitonjob-v2/www/assets/i18n/ assets/i18n/
 
 echo "••••••••• Mettre à jour l'entête avec la version Vit-On-Job • $version"
 version=$(date +'%d%m%Y-%H%M')
