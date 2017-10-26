@@ -5,6 +5,7 @@ echo "••••••••• Récupérer la dernière version du code:"
 cd /Users/tim/Documents/vitonjob/vitonjob-v2
 pwd
 git pull origin master
+ionic build
 
 echo "••••••••• Se déplacer vers le répertoire de la recette:"
 cd /Users/tim/Documents/vitonjob/jobyer.github.io
