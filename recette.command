@@ -2,13 +2,13 @@
 echo "••••••••• Script de mise en recette…"
 
 echo "••••••••• Récupérer la dernière version du code:"
-cd /Users/PM/vitonjob-v2
+cd vitonjob-v2
 pwd
 git pull origin master
 ionic build
 
 echo "••••••••• Se déplacer vers le répertoire de la recette:"
-cd /Users/PM/jobyer.github.io
+cd ../jobyer.github.io
 pwd
 
 echo "••••••••• Preparer le répertoire local de la recette:"
