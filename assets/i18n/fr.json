@@ -255,7 +255,7 @@
   "PERSONAL_DETAILS_IDENTITY": {
     "TITLE": "Mon identité",
     "NATIONALITY": "Nationalité",
-    "TYPE_CARD": "Type de pièce d'identité",
+    "TYPE_CARD": "Type de document",
     "CARD_NUMBER": "Numéro de pièce d'identité",
     "CARD_NUMBER_ERR": "Veuillez saisir un numéro de pièce d'identité valide",
     "DELIVERED_DATE": "Délivrée le",
