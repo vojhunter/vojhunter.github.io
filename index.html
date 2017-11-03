@@ -41,7 +41,16 @@
 		    var OneSignal = window.OneSignal || [];
 		    OneSignal.push(["init", {
 		      appId: "21b3d83d-b046-44c0-b561-f19a32521b90",
-		      autoRegister: true
+		      autoRegister: true,
+			promptOptions: {
+        			/* These prompt options values configure both the HTTP prompt and the HTTP popup. */
+        			/* actionMessage limited to 90 characters */
+        			actionMessage: "Pour recevoir les dernières nouveautés, activer vos notifications!",
+        			/* acceptButtonText limited to 15 characters */
+        			acceptButtonText: "J'accèpte!",
+        			/* cancelButtonText limited to 15 characters */
+        			cancelButtonText: "Non merci!"
+    			}
 		      /*notifyButton: {
 			enable: false // Set to false to hide 
 		      }*/
