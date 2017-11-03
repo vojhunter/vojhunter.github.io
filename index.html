@@ -35,6 +35,19 @@
 		  }
 		</script>
 		-->
+		<!-- Web Push Script -->
+		<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+		  <script>
+		    var OneSignal = window.OneSignal || [];
+		    OneSignal.push(["init", {
+		      appId: "21b3d83d-b046-44c0-b561-f19a32521b90",
+		      autoRegister: false,
+		      notifyButton: {
+			enable: true /* Set to false to hide */
+		      }
+		    }]);
+		  </script>
+		
 		<link href="build/main.css" rel="stylesheet">
 		<link href="./assets/angular-material-styles/indigo-pink.css" rel="stylesheet">
 		<!--<link rel="stylesheet" href="../node_modules/angular-calendar/dist/css/angular-calendar.css">-->
