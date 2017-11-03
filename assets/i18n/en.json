@@ -48,10 +48,13 @@
     "VALIDATE": "Sign up",
     "LOGIN": "Sign in",
     "NOTIFICATION_TITLE": "Warning!",
-    "NOTIFICATION_SUBTITLE": "This credential is already registered. Enter a different phone number and an email."
+    "NOTIFICATION_SUBTITLE": "This credential is already registered. Enter a different phone number and an email.",
+    "PHONE_ALREADY_USED": "Phone number already used",
+    "EMAIL_ALREADY_USED": "Email address already used",
+    "CREDENTIALS_ALREADY_USED": "Email address and phone number already used"
   },
   "SIGNUP_CLOSE_CONFIRMATION_ALERT": {
-    "MESSAGE": "You leave your registration?",
+    "MESSAGE": "You cancel your registration?",
     "OK": "Continue",
     "CANCEL": "Leave"
   },
@@ -308,5 +311,11 @@
     "MESSAGE": "You must log in",
     "OK": "Login",
     "CANCEL": "Sign up"
-  }
+  },
+"NOTIFICATION": {
+  "PROMPT_MESSAGE":"We'd like to show you notifications for the latest news and updates.",
+  "PROMPT_OK_BUTTON":"Allow",
+  "PROMPT_NO_BUTTON":"Cancel"
+}
+
 }

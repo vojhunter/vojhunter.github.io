@@ -48,10 +48,13 @@
     "VALIDATE": "Suivant",
     "LOGIN": "Se connecter",
     "NOTIFICATION_TITLE": "Attention!",
-    "NOTIFICATION_SUBTITLE": "Ces informations d'identification sont déjà enregistrées. Entrez un autre numéro de téléphone et un email."
+    "NOTIFICATION_SUBTITLE": "Ces informations d'identification sont déjà enregistrées. Entrez un autre numéro de téléphone et un email.",
+    "PHONE_ALREADY_USED": "Numéro de téléphone déjà utilisé",
+    "EMAIL_ALREADY_USED": "Adresse mail déjà utilisée",
+    "CREDENTIALS_ALREADY_USED": "Adresse mail et numéro de téléphone déjà utilisés"
   },
   "SIGNUP_CLOSE_CONFIRMATION_ALERT": {
-    "MESSAGE": "Vous quittez votre inscription ?",
+    "MESSAGE": "Vous annulez votre inscription ?",
     "OK": "Continuer",
     "CANCEL": "Quitter"
   },
@@ -308,5 +311,10 @@
     "MESSAGE": "Vous devez vous connecter",
     "OK": "Se connecter",
     "CANCEL": "S'inscrire"
+  },
+  "NOTIFICATION": {
+    "PROMPT_MESSAGE":"Pour recevoir les dernières nouveautés, activer vos notifications!",
+    "PROMPT_OK_BUTTON":"Accepter",
+    "PROMPT_NO_BUTTON":"Ignorer"
   }
 }

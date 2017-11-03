@@ -27945,7 +27945,9 @@ Styles for the segments in the footer in small screens (the simulated tabs)
 }
 
 .voj-tabs ion-toolbar {
-  padding: 0;
+  min-height: 56px !important;
+  height: 62px !important;
+  padding: 0 !important;
 }
 
 .voj-tabs ion-toolbar ion-segment-button {
@@ -28122,8 +28124,19 @@ button[clear].button.warn-btn:hover {
 
 .full-height-content .voj-scrollable-content-wrapper .voj-scrollable-content {
   padding: 0 1.6rem;
-  height: 100%;
   overflow-y: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .full-height-content .voj-scrollable-content-wrapper .voj-scrollable-content {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .full-height-content .voj-scrollable-content-wrapper .voj-scrollable-content {
+    height: calc(100% - 150px);
+  }
 }
 
 .full-height-content.voj-content {
@@ -28150,22 +28163,6 @@ button[clear].button.warn-btn:hover {
   display: none;
 }
 
-.alert-md {
-  /*.alert-button {
-		border-width: 1px !important;
-		border-style: solid !important;
-		border-color: #488aff !important;
-		color: #488aff !important;
-		background-color: transparent !important;
-		-webkit-box-shadow: none !important;
-		box-shadow: none !important;
-		font-size: 1rem !important;
-		text-align: center !important;
-		margin: 15px !important;
-		width: 100px !important;
-	}*/
-}
-
 .alert-md .alert-message {
   font-size: 16px !important;
   text-align: center !important;
@@ -28177,9 +28174,17 @@ button[clear].button.warn-btn:hover {
   color: #ffffff;
   text-align: center;
   font-size: 1.3rem;
-  text-transform: capitalize;
   margin: 15px;
+  text-transform: lowercase;
   width: 100px;
+}
+
+.alert-md .alert-button span {
+  display: block;
+}
+
+.alert-md .alert-button span::first-letter {
+  text-transform: capitalize !important;
 }
 
 .alert-md .alert-button-group {
@@ -29217,8 +29222,8 @@ voj-form .input-shape-file .custom-line {
 }
 
 voj-form .form-search-box {
-  padding-left: 16px !important;
-  padding-right: 12px !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
 }
 
 voj-form .voj-validation-error-msg {
@@ -31491,8 +31496,122 @@ page-prerequisites .prerequisites-list .prerequisites-list-item ion-label ion-ic
   border-radius: 2px;
 }
 
+page-work-conditions .validation-button {
+  background-color: #d339f8;
+  text-transform: capitalize;
+  color: #fff;
+  border-color: #d339f8;
+  border-radius: 4%;
+  padding: 0 10%;
+  width: 100%;
+}
+
+page-work-conditions .input-field {
+  padding: 1rem;
+  border: 1px solid #c3c3c3;
+  width: 100%;
+  height: 38px;
+  display: inline-block;
+  background-color: #fff;
+}
+
+page-work-conditions .input-field.disabled {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #efefef;
+}
+
+page-work-conditions .input-select-field {
+  position: relative;
+  width: 100%;
+}
+
+page-work-conditions .input-select-field .input-field {
+  cursor: pointer;
+}
+
+page-work-conditions .input-select-icon {
+  position: absolute;
+  content: ' ';
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 1rem;
+  right: 1rem;
+  color: var(--voj-color-primary);
+  border-top: 13px solid;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+
+page-work-conditions ion-select {
+  margin: 0;
+  max-width: 100%;
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  position: relative;
+}
+
+page-work-conditions ion-select .item-cover {
+  bottom: 0;
+  padding: 0;
+}
+
+page-work-conditions ion-select .select-text {
+  font-size: 14px;
+}
+
+page-work-conditions ion-select .select-icon {
+  width: 16px;
+  position: relative;
+}
+
+page-work-conditions ion-select .select-icon .select-icon-inner {
+  color: var(--voj-color-primary);
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  border-top: 13px solid;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+
 page-work-conditions ion-content {
   background-color: #00c1a9 !important;
+}
+
+page-work-conditions .maj-card-title {
+  position: relative;
+  top: 4px;
+}
+
+page-work-conditions .maj-card-header {
+  background-color: #51a7e8;
+  color: #ffffff;
+  padding-top: 3px;
+  padding-bottom: 6px;
+}
+
+page-work-conditions .maj-card-span {
+  position: relative;
+  top: 22%;
+}
+
+page-work-conditions .activation-link {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 20px;
+  color: #000000;
+  text-decoration: underline;
+}
+
+page-work-conditions .danger {
+  background-color: #e93a3a;
 }
 
 page-offer-detail .voj-detail-button {
