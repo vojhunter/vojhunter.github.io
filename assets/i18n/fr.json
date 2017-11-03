@@ -54,7 +54,7 @@
     "CREDENTIALS_ALREADY_USED": "Adresse mail et numéro de téléphone déjà utilisés"
   },
   "SIGNUP_CLOSE_CONFIRMATION_ALERT": {
-    "MESSAGE": "Vous annulez votre inscription ?",
+    "MESSAGE": "Vous quittez votre inscription ?",
     "OK": "Continuer",
     "CANCEL": "Quitter"
   },
@@ -311,10 +311,5 @@
     "MESSAGE": "Vous devez vous connecter",
     "OK": "Se connecter",
     "CANCEL": "S'inscrire"
-  },
-  "NOTIFICATION": {
-    "PROMPT_MESSAGE":"Pour recevoir les dernières nouveautés, activer vos notifications!",
-    "PROMPT_OK_BUTTON":"Accepter",
-    "PROMPT_NO_BUTTON":"Ignorer"
   }
 }
