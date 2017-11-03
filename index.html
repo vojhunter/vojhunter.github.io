@@ -41,11 +41,14 @@
 		    var OneSignal = window.OneSignal || [];
 		    OneSignal.push(["init", {
 		      appId: "21b3d83d-b046-44c0-b561-f19a32521b90",
-		      autoRegister: true,
-		      notifyButton: {
-			enable: false /* Set to false to hide */
-		      }
+		      autoRegister: true
+		      /*notifyButton: {
+			enable: false // Set to false to hide 
+		      }*/
 		    }]);
+		  OneSignal.push(function() {
+			OneSignal.showHttpPrompt();
+            	  });
 		  </script>
 		
 		<link href="build/main.css" rel="stylesheet">
