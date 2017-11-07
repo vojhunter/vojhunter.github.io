@@ -30112,11 +30112,6 @@ account-page .voj-form-container {
   background: none !important;
 }
 
-company-page {
-  background-color: #ffffff;
-  overflow-y: auto;
-}
-
 enterprise-search-page {
   background-color: #ffffff;
   overflow-y: auto;
@@ -30169,6 +30164,12 @@ enterprise-search-page .enterprise-search {
 
 enterprise-search-page .enterprise-search-bar {
   margin-top: 50px;
+}
+
+enterprise-search-page input[type=number]::-webkit-inner-spin-button,
+enterprise-search-page input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .toast-bottom-mobile .toast-wrapper.toast-bottom {
