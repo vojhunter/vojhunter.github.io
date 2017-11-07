@@ -395,7 +395,7 @@ eval("/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"a\", function() { return envConfig; });\nvar envConfig = {\r\n    cid: \"8f3c82e6-12d0-4a86-bb22-c5d30d2c2b2f\",\r\n    //cid : \"prod-jobyer-46dad4a8d4a\",\r\n    //cid : \"3mpl0y3r\",\r\n    server: \"http://127.0.0.1:8000/appsettings/\",\r\n    //server : \"https://hermes.vitonjob.com/appsettings/\",\r\n    thresholdWidth: 768,\r\n    googleKey: 'AIzaSyAiXwdHbyWYjC63gTo1X3IUKTKf64oiAgI'\r\n};\r\n//# sourceMappingURL=environment.js.map\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/config/environment.ts\n// module id = 128\n// module chunks = 0\n\n//# sourceURL=F:/Ionic/vitonjob-v2/src/config/environment.ts");
+eval("/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"a\", function() { return envConfig; });\nvar envConfig = {\r\n    cid: \"8f3c82e6-12d0-4a86-bb22-c5d30d2c2b2f\",\r\n    //cid : \"prod-jobyer-46dad4a8d4a\",\r\n    //cid : \"3mpl0y3r\",\r\n    //server : \"http://127.0.0.1:8000/appsettings/\",\r\n    server: \"https://hermes.vitonjob.com/appsettings/\",\r\n    thresholdWidth: 768,\r\n    googleKey: 'AIzaSyAiXwdHbyWYjC63gTo1X3IUKTKf64oiAgI'\r\n};\r\n//# sourceMappingURL=environment.js.map\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/config/environment.ts\n// module id = 128\n// module chunks = 0\n\n//# sourceURL=F:/Ionic/vitonjob-v2/src/config/environment.ts");
 
 /***/ }),
 /* 129 */,
