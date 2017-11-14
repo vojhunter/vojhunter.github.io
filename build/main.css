@@ -27981,6 +27981,12 @@ ion-content {
   height: 30px;
 }
 
+.fab-notification.interests-badge {
+  padding: 8px;
+  border-radius: 50%;
+  right: 28px;
+}
+
 ion-label {
   font-size: 14px !important;
   margin-bottom: 5px !important;
@@ -28202,16 +28208,16 @@ voj-calendar {
 
 voj-calendar,
 voj-calendar full-calendar,
-voj-calendar full-calendar angular2-fullcalendar,
-voj-calendar full-calendar angular2-fullcalendar .fc-view-container,
-voj-calendar full-calendar angular2-fullcalendar .fc-view-container .fc-view,
-voj-calendar full-calendar angular2-fullcalendar .fc-view-container .fc-view table,
-voj-calendar full-calendar angular2-fullcalendar .fc-view-container .fc-view table .fc-day-grid-container,
-voj-calendar full-calendar angular2-fullcalendar .fc-view-container .fc-view table .fc-day-grid {
+voj-calendar full-calendar fullcalendar-wrapper,
+voj-calendar full-calendar fullcalendar-wrapper .fc-view-container,
+voj-calendar full-calendar fullcalendar-wrapper .fc-view-container .fc-view,
+voj-calendar full-calendar fullcalendar-wrapper .fc-view-container .fc-view table,
+voj-calendar full-calendar fullcalendar-wrapper .fc-view-container .fc-view table .fc-day-grid-container,
+voj-calendar full-calendar fullcalendar-wrapper .fc-view-container .fc-view table .fc-day-grid {
   height: 100% !important;
 }
 
-voj-calendar full-calendar angular2-fullcalendar .fc-view-container .fc-view table .fc-day-grid {
+voj-calendar full-calendar fullcalendar-wrapper .fc-view-container .fc-view table .fc-day-grid {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -28225,7 +28231,7 @@ voj-calendar full-calendar angular2-fullcalendar .fc-view-container .fc-view tab
   align-items: stretch;
 }
 
-voj-calendar full-calendar angular2-fullcalendar {
+voj-calendar full-calendar fullcalendar-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -28237,14 +28243,14 @@ voj-calendar full-calendar angular2-fullcalendar {
   flex-direction: column;
 }
 
-voj-calendar full-calendar angular2-fullcalendar .fc-header-toolbar {
+voj-calendar full-calendar fullcalendar-wrapper .fc-header-toolbar {
   -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
   -ms-flex-positive: 0;
   flex-grow: 0;
 }
 
-voj-calendar full-calendar angular2-fullcalendar .fc-view-container {
+voj-calendar full-calendar fullcalendar-wrapper .fc-view-container {
   height: auto !important;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -28253,7 +28259,7 @@ voj-calendar full-calendar angular2-fullcalendar .fc-view-container {
   position: relative;
 }
 
-voj-calendar full-calendar angular2-fullcalendar .fc-view-container .fc-view.fc-month-view.fc-basic-view {
+voj-calendar full-calendar fullcalendar-wrapper .fc-view-container .fc-view.fc-month-view.fc-basic-view {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -28261,7 +28267,7 @@ voj-calendar full-calendar angular2-fullcalendar .fc-view-container .fc-view.fc-
   right: 0;
 }
 
-voj-calendar full-calendar angular2-fullcalendar .fc-view-container .fc-view table .fc-day-grid {
+voj-calendar full-calendar fullcalendar-wrapper .fc-view-container .fc-view table .fc-day-grid {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -28275,7 +28281,7 @@ voj-calendar full-calendar angular2-fullcalendar .fc-view-container .fc-view tab
   align-items: stretch;
 }
 
-voj-calendar full-calendar angular2-fullcalendar .fc-view-container .fc-view table .fc-day-grid .fc-row {
+voj-calendar full-calendar fullcalendar-wrapper .fc-view-container .fc-view table .fc-day-grid .fc-row {
   width: 100%;
 }
 
@@ -28573,6 +28579,18 @@ full-calendar .voj-range-selected-event {
 
 .container-calendar {
   height: 100%;
+}
+
+voj-card .select-card-fab {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: var(--voj-color-primary);
+  color: var(--voj-color-primary);
+}
+
+voj-card .select-card-fab .button-inner > ion-icon {
+  font-size: 5.1rem;
 }
 
 voj-card .small-rating {
@@ -29237,528 +29255,6 @@ voj-footer button {
   text-transform: initial !important;
 }
 
-voj-form-old .form-search-box {
-  padding-left: 16px !important;
-  padding-right: 12px !important;
-}
-
-voj-form-old .calendar-container {
-  text-align: center;
-}
-
-voj-form-old .dynamical-form .list-md {
-  margin-top: 0 !important;
-}
-
-voj-form-old .custom-btn {
-  background-color: var(--voj-color-primary);
-  text-transform: capitalize;
-  color: #fff;
-  border-color: var(--voj-color-primary);
-  border-radius: 4%;
-  padding: 0 10%;
-}
-
-voj-form-old ion-label {
-  font-size: 1.4rem;
-}
-
-voj-form-old .list-md .item-block .item-inner, voj-form-old .list-md .item-input:last-child {
-  border: none;
-}
-
-voj-form-old .custom-input {
-  border-bottom: none !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-}
-
-voj-form-old .custom-input.item-input.ng-valid.input-has-value:not(.input-has-focus) .item-inner, voj-form-old .custom-input.item-input.input-has-focus .item-inner {
-  border: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-voj-form-old .custom-input.input-has-focus .label-md[stacked], voj-form-old .custom-input.input-has-focus .label-md[floating] {
-  color: #999 !important;
-}
-
-voj-form-old .custom-input.item-input.ng-valid.input-has-value:not(.input-has-focus):last-child, voj-form-old .custom-input.item-input.input-has-focus:last-child, voj-form-old .custom-input.item-input.ng-invalid.ng-touched:not(.input-has-focus):last-child {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: none;
-}
-
-voj-form-old .custom-input ion-input input {
-  border: 1px solid #c3c3c3;
-  padding: 1px 4px;
-}
-
-voj-form-old .custom-input .item-inner {
-  border-bottom: none !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-}
-
-voj-form-old ion-list .input-autocomplete ion-list {
-  cursor: pointer;
-}
-
-voj-form-old ion-item.custom-input-password {
-  position: relative;
-}
-
-voj-form-old ion-item.custom-input-password div.item-inner button {
-  margin-right: 15px;
-  position: absolute;
-  right: 2%;
-  top: 40%;
-  background-color: transparent;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-voj-form-old ion-item.custom-input-password div.item-inner button.activated {
-  background-color: transparent;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-voj-form-old ion-item.custom-input-password div.item-inner button:hover:not(.disable-hover) {
-  background-color: transparent;
-}
-
-voj-form-old ion-item.custom-input-password div.item-inner button span {
-  color: #000;
-}
-
-voj-form-old .custom-select .item-inner .input-wrapper {
-  display: block;
-}
-
-voj-form-old .custom-select .item-inner .input-wrapper ion-label {
-  margin: 5px 0px;
-}
-
-voj-form-old .custom-select .item-inner .input-wrapper ion-select {
-  max-width: 99%;
-  padding: 1px 4px;
-  border: 1px solid #c3c3c3;
-}
-
-voj-form-old .custom-select .item-inner .input-wrapper ion-select .select-icon {
-  width: 25px;
-  position: relative;
-  bottom: 3px;
-}
-
-voj-form-old .custom-select .item-inner .input-wrapper ion-select .select-icon .select-icon-inner {
-  right: 5px;
-  left: 0;
-  border-top: 13px solid;
-  border-right: 8px solid transparent;
-  border-left: 8px solid transparent;
-}
-
-voj-form-old ion-list.custom-radio {
-  /*ion-list-header {
-			border: none;
-			margin-top: 0px;
-			margin-bottom: 0px;
-			width: 20%;
-			float: left;
-			min-width: 65px;
-			.item-inner {
-				.input-wrapper {
-					text-align: left;
-				}
-			}
-		}
-		&.list-md .item-block .item-inner {
-			border: none;
-		}
-		ion-item {
-			padding-left: 0px;
-			width: 80%;
-			.item-inner {
-				position: relative;
-				border: none;
-				.input-wrapper {
-					text-align: left;
-					padding-left: 10%;
-					ion-label {
-						color: #999;
-					}
-				}
-				ion-radio {
-					position: absolute;
-					//margin-left: 0px;
-					top: 7px;
-					.radio-checked {
-						border-color: #999;
-						.radio-inner {
-							background-color: #999;
-						}
-					}
-				}
-			}
-		}*/
-}
-
-voj-form-old ion-list.custom-radio .voj-radio-label {
-  border-top: none;
-  margin: 25px 0 10px 0;
-  min-height: 20px;
-}
-
-voj-form-old ion-list.custom-radio .voj-radio-button {
-  margin-left: 20px;
-  position: relative;
-  width: calc(100% - 40px);
-}
-
-voj-form-old ion-list.custom-radio .voj-radio-button ion-label {
-  margin-left: 10px;
-}
-
-voj-form-old ion-list.custom-radio .voj-radio-button ion-radio {
-  position: absolute;
-  left: 0;
-  top: 6px;
-  width: 100%;
-}
-
-voj-form-old ion-list.custom-radio.list-ios {
-  border-top: 0.55px solid #c8c7cc;
-  border-bottom: 0.55px solid #c8c7cc;
-}
-
-voj-form-old ion-list.custom-radio.list-ios .list-header-ios {
-  border-bottom: none;
-  margin-bottom: 5px;
-  margin-top: 10px;
-}
-
-voj-form-old ion-list.custom-radio.list-ios .item-ios {
-  border-bottom: none !important;
-}
-
-voj-form-old ion-list.custom-radio.list-ios .item-ios .item-inner {
-  border-bottom: none;
-}
-
-voj-form-old ion-list.custom-radio + .list-md {
-  margin-bottom: 0px;
-}
-
-voj-form-old ion-list.custom-radio-with-inputs {
-  padding: 10px;
-}
-
-voj-form-old ion-list.custom-radio-with-inputs .custom-radio-wrap {
-  text-align: left;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-voj-form-old ion-list.custom-radio-with-inputs .custom-radio-icon {
-  padding-top: 10px;
-}
-
-voj-form-old ion-list.custom-radio-with-inputs .custom-radio-label-1 {
-  font-size: 18px;
-  padding-left: 5px;
-}
-
-voj-form-old ion-list.custom-radio-with-inputs .radio-field-wrap {
-  margin-top: 10px;
-}
-
-voj-form-old ion-list.custom-radio-with-inputs .custom-radio-label-2 {
-  width: 60px;
-  padding-left: 5px;
-  display: inline-block;
-  font-size: 18px;
-}
-
-voj-form-old ion-list.custom-radio-with-inputs .custom-radio-input {
-  border: 1px solid #cccccc;
-  width: 70px;
-  padding: 2px;
-  text-align: center;
-}
-
-voj-form-old ion-list.custom-radio-with-inputs .selectedItem {
-  opacity: 0.4;
-}
-
-voj-form-old div.custom-select-container ion-label {
-  margin-right: 0;
-}
-
-voj-form-old div.custom-select-container > div:first-child {
-  margin: 5px 0px 10px 15px;
-  text-align: left;
-  color: #807e7e;
-}
-
-voj-form-old div.custom-select-container ion-list.custom-select-btn {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-voj-form-old div.custom-select-container ion-list.custom-select-btn .custom-layer {
-  width: 95%;
-}
-
-voj-form-old div.custom-select-container button.custom-select-btn-inner {
-  margin: 0 0 5px 0;
-  height: 2.4rem;
-  background-color: var(--voj-color-primary);
-}
-
-voj-form-old div.custom-select-container button.custom-select-btn-inner ion-icon:before {
-  font-weight: bold;
-  font-size: x-large;
-}
-
-voj-form-old div.custom-select2 .item-block {
-  min-height: 2.5rem;
-}
-
-voj-form-old div.custom-select-btn-attachment {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  padding: 0 0 0 16px;
-  color: #999;
-}
-
-voj-form-old div.custom-select-btn-attachment div {
-  width: 100%;
-  text-align: left;
-}
-
-voj-form-old div.custom-select-btn-attachment button.custom-select-btn-attachment-inner {
-  margin: 1px 0px;
-  height: 2.4rem;
-  background-color: #f2674e;
-}
-
-voj-form-old div.custom-select-btn-attachment button.custom-select-btn-attachment-inner ion-icon:before {
-  font-weight: bold;
-  font-size: x-large;
-}
-
-voj-form-old .voj-validation-error-msg {
-  margin-bottom: 8px;
-}
-
-voj-form-old .voj-validation-error-msg p {
-  color: #e15e7c;
-  text-align: left;
-  margin: 0 20px;
-}
-
-voj-form-old .custom-checkbox-checked {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-voj-form-old .custom-checkbox ion-label {
-  margin-top: 6px;
-}
-
-voj-form-old .custom-checkbox .checkbox-icon {
-  border-color: #ddd;
-}
-
-voj-form-old .custom-checkbox .checkbox-checked {
-  background-color: var(--voj-color-primary) !important;
-  border-color: var(--voj-color-primary) !important;
-}
-
-voj-form-old .inputfile {
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-}
-
-voj-form-old .text-upload-field {
-  display: block;
-  border: 1px solid #cccccc;
-  height: 35px;
-  padding: 5px;
-  font-size: 18px;
-  color: #999999;
-  text-align: left;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  cursor: pointer;
-}
-
-voj-form-old .custom-upload-button {
-  background-color: var(--voj-color-primary);
-}
-
-voj-form-old .uploaded-items {
-  margin-bottom: 10px;
-}
-
-voj-form-old .uploaded-item {
-  color: #999999;
-}
-
-voj-form-old .delete-uploaded-item-btn {
-  margin: 1px 0px;
-  height: 2.4rem;
-  background-color: #f2674e;
-}
-
-voj-form-old .delete-uploaded-item-btn ion-icon:before {
-  font-weight: bold;
-  font-size: x-large;
-}
-
-voj-form-old .download-uploaded-item-btn {
-  margin: 1px 0px;
-  height: 2.4rem;
-  color: #999999;
-}
-
-voj-form-old .download-uploaded-item-btn ion-icon:before {
-  font-weight: bold;
-  font-size: x-large;
-}
-
-voj-form-old .select-search ion-input {
-  position: relative;
-}
-
-voj-form-old .select-search ion-input:after {
-  position: absolute;
-  content: ' ';
-  top: 6px;
-  right: 20px;
-  color: var(--voj-color-primary);
-  border-top: 13px solid;
-  border-right: 8px solid transparent;
-  border-left: 8px solid transparent;
-}
-
-voj-form-old .asterisk {
-  color: red;
-}
-
-voj-form-old .custom-line {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  height: 5px;
-  display: inline-block;
-  margin-left: calc(50% - 75px);
-  border-radius: 1px;
-  background-color: var(--voj-color-primary);
-  width: 150px;
-}
-
-voj-form-old .documents-title {
-  margin-top: 5px;
-}
-
-voj-form-old .documents-type {
-  text-align: left;
-  padding-left: 5px;
-  margin-top: 20px;
-}
-
-voj-form-old .mat-form-field {
-  width: 100%;
-}
-
-voj-form-old .mat-form-field .mat-button-wrapper {
-  font-size: 24px;
-  color: #999;
-}
-
-voj-form-old .mat-form-field button[disabled] {
-  opacity: 1;
-}
-
-voj-form-old .date-label {
-  margin-bottom: 0 !important;
-  padding: 0 16px;
-  text-align: left;
-}
-
-voj-form-old .mat-form-field-wrapper {
-  padding-right: 10px;
-}
-
-voj-form-old .custom-select-btn-attachment .selected-item {
-  color: #444;
-}
-
-voj-form-old .custom-select-btn-attachment .custom-select-checkbox-addon {
-  padding-left: 0;
-}
-
-voj-form-old .custom-select-btn-attachment .custom-select-checkbox-addon ion-checkbox.checkbox-md {
-  margin-left: 0;
-  margin-bottom: 0;
-  margin-right: 12px;
-}
-
-voj-form-old .custom-select-btn-attachment .custom-select-checkbox-addon ion-checkbox.checkbox-md .checkbox-icon.checkbox-checked {
-  border-color: var(--voj-color-primary);
-  background-color: var(--voj-color-primary);
-}
-
-voj-form-old .custom-select-btn-attachment .custom-select-checkbox-addon ion-checkbox.checkbox-md .item-cover {
-  padding: 0;
-}
-
-voj-form-old .custom-select-btn-attachment .custom-select-checkbox-addon .item-inner {
-  border-bottom: none;
-  color: var(--voj-color-primary);
-}
-
-voj-form-old .custom-select-btn-attachment .custom-select-btn-attachment-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-voj-form-old .search-select-list-wrapper {
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-}
-
-voj-form-old .select-btn-attachment-inner {
-  min-width: 3rem !important;
-  background-color: var(--voj-color-primary);
-}
-
-voj-form-old .select-icon-inner,
-voj-form-old .select-search input:after {
-  color: var(--voj-color-primary) !important;
-}
-
 voj-header .generic {
   height: 180px;
 }
@@ -29864,7 +29360,6 @@ voj-header-web .generic .row:first-child .col:last-child {
 }
 
 voj-header-web .generic .row:first-child .col:last-child button {
-  margin-left: 15px;
   color: #fff;
   border: 1px solid var(--voj-color-primary);
   text-transform: none;
@@ -29876,27 +29371,6 @@ voj-header-web .generic .row:first-child .col:last-child button:hover {
 
 voj-header-web .toolbar-background {
   background-color: #4b545e;
-}
-
-voj-header-web .fab-notification {
-  margin-top: -4px;
-  /* margin-left: 0px; */
-  position: absolute;
-  z-index: 1;
-}
-
-voj-header-web .fab-notification button {
-  border-color: var(--voj-color-danger) !important;
-  background-color: var(--voj-color-danger) !important;
-  width: 30px;
-  height: 30px;
-}
-
-voj-header-web .fab-notification button:hover {
-  border-color: var(--voj-color-danger) !important;
-  background-color: var(--voj-color-danger) !important;
-  width: 30px;
-  height: 30px;
 }
 
 voj-header-web .user-information {
@@ -29924,6 +29398,28 @@ voj-header-web .user-information img {
   max-height: 40px;
   border-radius: 50%;
   border: 1px solid #c3c3c3;
+}
+
+voj-header-web .menu-wrapper {
+  padding-top: 2rem;
+}
+
+voj-header-web .menu-wrapper .menu-item {
+  position: relative;
+  display: inline-block;
+}
+
+voj-header-web .menu-wrapper .menu-item .fab-notification {
+  position: absolute;
+  z-index: 1;
+  top: -7px;
+  right: -9px;
+  border-radius: 50%;
+  padding: 4px 8px;
+}
+
+voj-header-web .menu-wrapper .menu-item + .menu-item {
+  margin-left: 14px;
 }
 
 voj-map #map {
@@ -31357,6 +30853,62 @@ page-my-offers-list ion-card.map.card.card-md {
   justify-content: center;
 }
 
+page-offer-detail .voj-detail-button {
+  width: 100% !important;
+}
+
+page-offer-detail .desktop-container {
+  background-color: var(--voj-color-primary);
+}
+
+page-offer-detail .information-resume-parent {
+  height: calc(100% - 170px);
+  overflow-y: auto;
+}
+
+page-offer-detail .information-resume-child {
+  margin-bottom: 56px;
+  position: relative;
+}
+
+page-offer-detail .information-resume-list .item-inner {
+  border-bottom: none !important;
+}
+
+page-offer-detail .information-resume-list .information-resume-edit-btn {
+  background-color: var(--voj-color-primary);
+}
+
+page-offer-detail .information-resume-list .information-resume-edit-btn:hover {
+  background-color: var(--voj-color-primary);
+}
+
+page-offer-detail .information-resume-list .information-resume-label {
+  margin: 0;
+  white-space: initial;
+}
+
+page-offer-detail .mobile-container .information-resume-list-wrapper,
+page-offer-detail .mobile-container .information-resume-child {
+  height: 100%;
+}
+
+page-offer-detail .mobile-container .item-md,
+page-offer-detail .desktop-container .item-md {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+page-offer-detail .mobile-container .item-inner,
+page-offer-detail .desktop-container .item-inner {
+  padding-right: 0 !important;
+}
+
+page-offer-detail .mobile-container .information-resume-edit-btn,
+page-offer-detail .desktop-container .information-resume-edit-btn {
+  margin-right: 0;
+}
+
 page-offer-set-job .wage-warning {
   color: #ff0000;
 }
@@ -31604,60 +31156,25 @@ page-work-conditions .danger {
   background-color: #e93a3a;
 }
 
-page-offer-detail .voj-detail-button {
-  width: 100% !important;
-}
-
-page-offer-detail .desktop-container {
+page-scheduling-offers-jobyers .schedule-jobyers-page-content {
   background-color: var(--voj-color-primary);
 }
 
-page-offer-detail .information-resume-parent {
-  height: calc(100% - 170px);
-  overflow-y: auto;
+page-scheduling-offers-jobyers .schedule-jobyers-page-content .scroll-content {
+  padding: 0px !important;
 }
 
-page-offer-detail .information-resume-child {
-  margin-bottom: 56px;
-  position: relative;
+page-scheduling-offers-jobyers ion-segment-button {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
 }
 
-page-offer-detail .information-resume-list .item-inner {
-  border-bottom: none !important;
-}
-
-page-offer-detail .information-resume-list .information-resume-edit-btn {
+page-scheduling-offers-list .my-offers-page-content {
   background-color: var(--voj-color-primary);
 }
 
-page-offer-detail .information-resume-list .information-resume-edit-btn:hover {
-  background-color: var(--voj-color-primary);
-}
-
-page-offer-detail .information-resume-list .information-resume-label {
-  margin: 0;
-  white-space: initial;
-}
-
-page-offer-detail .mobile-container .information-resume-list-wrapper,
-page-offer-detail .mobile-container .information-resume-child {
-  height: 100%;
-}
-
-page-offer-detail .mobile-container .item-md,
-page-offer-detail .desktop-container .item-md {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-page-offer-detail .mobile-container .item-inner,
-page-offer-detail .desktop-container .item-inner {
-  padding-right: 0 !important;
-}
-
-page-offer-detail .mobile-container .information-resume-edit-btn,
-page-offer-detail .desktop-container .information-resume-edit-btn {
-  margin-right: 0;
+page-scheduling-offers-list .my-offers-page-content .scroll-content {
+  padding: 0px !important;
 }
 
 page-details {

@@ -300,7 +300,8 @@
     "VALIDATE":"Validate",
     "SHOW_CONVENTION_PARAMETERS":"Access job classification",
     "HIDE_CONVENTION_PARAMETERS":"Hide job classification",
-    "LEVEL":"Level"
+    "LEVEL":"Level",
+    "JOB_ADDED_TOAST_MESSAGE": "Job(s) added"
   },
   "LOGOUT_CONFIRMATION_ALERT": {
     "MESSAGE": "Log out?",
@@ -311,5 +312,8 @@
     "MESSAGE": "You must log in",
     "OK": "Login",
     "CANCEL": "Sign up"
+  },
+  "WORK_CONDITIONS": {
+    "PERIOD_SELECT_TITLE": "Period"
   }
 }
