@@ -31444,6 +31444,68 @@ registration-message-page .registration-message-label {
   color: #cccccc;
 }
 
+.platform-mobile page-event-instantiate .voj-content .voj-form-container {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+page-event-instantiate {
+  background-color: #ffffff;
+}
+
+page-event-instantiate .voj-content {
+  overflow-y: auto;
+}
+
+page-event-instantiate .voj-content .voj-form-container {
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+page-event-instantiate .voj-content .voj-form-container .custom-btn {
+  background-color: var(--voj-color-primary);
+  text-transform: capitalize;
+  color: #fff;
+  border-color: var(--voj-color-primary);
+  border-radius: 4%;
+  padding: 0 10%;
+}
+
+.platform-mobile page-plan-recruite .voj-content .voj-form-container {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+page-plan-recruite {
+  background-color: #ffffff;
+}
+
+page-plan-recruite .voj-content {
+  overflow-y: auto;
+}
+
+page-plan-recruite .voj-content .voj-form-container {
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+page-plan-recruite .voj-content .voj-form-container .custom-btn {
+  background-color: var(--voj-color-primary);
+  text-transform: capitalize;
+  color: #fff;
+  border-color: var(--voj-color-primary);
+  border-radius: 4%;
+  padding: 0 10%;
+  width: 100%;
+}
+
+page-plan-recruite .voj-content .voj-form-container .voj-message-recruite {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
 page-search .search-warning-message {
   color: #ffffff;
   width: 100%;
