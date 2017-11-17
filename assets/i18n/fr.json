@@ -315,5 +315,13 @@
   },
   "WORK_CONDITIONS": {
     "PERIOD_SELECT_TITLE": "Période"
+  },
+  "REMOVE_JOBS_CONFIRMATION_ALERT": {
+    "MESSAGE": "Supprimer?",
+    "OK": "Oui",
+    "CANCEL": "Non"
+  },
+  "OFFER_PERFECT_JOBYER": {
+    "QUALITIES": "Qualités"
   }
 }
