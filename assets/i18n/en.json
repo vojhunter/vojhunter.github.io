@@ -131,7 +131,8 @@
     "LANGUAGE": "Language",
     "LIST": "List of languages",
     "LEVEL": "Level",
-    "VALIDATE": "Validate"
+    "VALIDATE": "Validate",
+    "UPDATED": "Language(s) updated"
   },
   "QUALITIES": {
     "MY_QUALITIES": "My qualities",
@@ -295,13 +296,14 @@
   },
   "OFFER_SET_JOB": {
     "SECTOR":"Sector",
+    "SECTOR_SELECT_TITLE": "Sector",
     "WAGE":"Hourly wage",
     "JOB":"Job",
     "VALIDATE":"Validate",
     "SHOW_CONVENTION_PARAMETERS":"Access job classification",
     "HIDE_CONVENTION_PARAMETERS":"Hide job classification",
     "LEVEL":"Level",
-    "JOB_ADDED_TOAST_MESSAGE": "Job(s) added"
+    "JOB_UPDATED": "job(s) updated"
   },
   "LOGOUT_CONFIRMATION_ALERT": {
     "MESSAGE": "Log out?",
@@ -323,5 +325,10 @@
   },
   "OFFER_PERFECT_JOBYER": {
     "QUALITIES": "Qualities"
+  },
+  "REMOVE_CONFIRMATION_ALERT": {
+    "MESSAGE": "Remove?",
+    "OK": "Yes",
+    "CANCEL": "No"
   }
 }
