@@ -94,7 +94,8 @@
     "FROM": "From",
     "TO": "To",
     "ADD_TO_MY_ALERTS": "Add to my alerts",
-    "VALIDATE": "Validate"
+    "VALIDATE": "Validate",
+    "UPDATED": "Availability updated"
   },
   "AVAILABILITIES_ADD_DAYS": {
     "ADD_AVAILABILITY": "Add availability",
@@ -292,7 +293,8 @@
     "EDITINGMESSAGE": "Test Editing toast ENG",
     "ENTERINGMESSAGE": "Test Entering toast ENG",
     "ERRORMESSAGE": "Test Error toast ENG",
-    "OFFER_ADDED": "Offer added to your list in the CV section"
+    "OFFER_ADDED": "Offer added to your list in the CV section",
+    "OFFER_REMOVED": "Offer withdrawn from your list in the CV part"
   },
   "OFFER_SET_JOB": {
     "SECTOR":"Sector",
@@ -330,5 +332,8 @@
     "MESSAGE": "Remove?",
     "OK": "Yes",
     "CANCEL": "No"
+  },
+  "LOADING": {
+    "WAITING": "Thank you for waiting"
   }
 }

@@ -94,7 +94,8 @@
     "FROM": "De",
     "TO": "À",
     "ADD_TO_MY_ALERTS": "Ajouter à mes alertes",
-    "VALIDATE": "Valider"
+    "VALIDATE": "Valider",
+    "UPDATED": "Disponibilité(s) mise(s) à jour"
   },
   "AVAILABILITIES_ADD_DAYS": {
     "ADD_AVAILABILITY": "Ajouter une disponibilité",
@@ -292,7 +293,8 @@
     "EDITINGMESSAGE": "Vos informations ont bien été modifiées",
     "ENTERINGMESSAGE": "Vos informations ont bien été enregistrées.",
     "ERRORMESSAGE": "Une erreur est survenue. Veuillez réessayer",
-    "OFFER_ADDED": "Offre ajoutée à votre liste dans la partie CV"
+    "OFFER_ADDED": "Offre ajoutée à votre liste dans la partie CV",
+    "OFFER_REMOVED": "Offre retirée de votre liste dans la partie CV"
   },
   "OFFER_SET_JOB": {
     "SECTOR":"Secteur",
@@ -330,5 +332,8 @@
     "MESSAGE": "Supprimer?",
     "OK": "Oui",
     "CANCEL": "Non"
+  },
+  "LOADING": {
+    "WAITING": "Merci de patienter"
   }
 }

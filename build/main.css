@@ -28132,12 +28132,13 @@ button[clear].button.warn-btn:hover {
 }
 
 .full-height-content .voj-scrollable-content-wrapper {
-  padding: 2rem 0;
+  padding: 0;
   height: 100%;
 }
 
 .full-height-content .voj-scrollable-content-wrapper .voj-scrollable-content {
-  padding: 0 1.6rem;
+  padding: 1.6rem;
+  padding-top: 2rem;
   height: 100%;
   overflow-y: auto;
 }
@@ -30968,6 +30969,10 @@ page-offer-set-job .validation-button {
   border-radius: 4%;
   padding: 0 10%;
   width: 100%;
+}
+
+page-offer-set-slots {
+  background-color: var(--voj-color-primary);
 }
 
 page-offer-set-slots .desktop-container {
