@@ -160,7 +160,9 @@
     "MY_JOBS": "Mes Jobs",
     "JOB": "Job",
     "LEVEL": "Niveau",
-    "VALIDATE": "Valider"
+    "VALIDATE": "Valider",
+    "SELECT_LEVEL": "Sélectionnez un niveau",
+    "SELECT_JOB": "Sélectionnez un job"
   },
   "MY_CV": {
     "MY_CV": "Charger mon CV",
@@ -215,7 +217,8 @@
   "CALENDAR": {
     "TITLE": "Mon calendrier",
     "JOBYER_TITLE": "Mes disponibilités",
-    "EMPLOYER_TITLE": "Mon calendrier des annonces"
+    "EMPLOYER_TITLE": "Mon calendrier des annonces",
+    "MISSION_CALENDAR_TITLE": "Mon calendrier de travail"
   },
   "SEARCH_SELECT": {
     "COUNTRIES_LIST": "Liste des pays",
@@ -299,7 +302,7 @@
   "OFFER_SET_JOB": {
     "SECTOR":"Secteur",
     "SECTOR_SELECT_TITLE": "Secteur",
-    "WAGE":"Taux horaire",
+    "WAGE":"Taux horaire brut en euro",
     "JOB":"Job",
     "VALIDATE":"Valider",
     "SHOW_CONVENTION_PARAMETERS":"Accéder à la classification du poste",

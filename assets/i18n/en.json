@@ -160,7 +160,9 @@
     "MY_JOBS": "My Jobs",
     "JOB": "Job",
     "LEVEL": "Level",
-    "VALIDATE": "Validate"
+    "VALIDATE": "Validate",
+    "SELECT_LEVEL": "Select a level",
+    "SELECT_JOB": "Select a job"
   },
   "MY_CV": {
     "MY_CV": "My CV",
@@ -215,7 +217,8 @@
   "CALENDAR": {
     "TITLE": "My calendar",
     "JOBYER_TITLE": "My availabilities",
-    "EMPLOYER_TITLE": "My offers' calendar"
+    "EMPLOYER_TITLE": "My offers' calendar",
+    "MISSION_CALENDAR_TITLE": "Work schedule"
   },
   "SEARCH_SELECT": {
     "COUNTRIES_LIST": "List of countries",
@@ -299,7 +302,7 @@
   "OFFER_SET_JOB": {
     "SECTOR":"Sector",
     "SECTOR_SELECT_TITLE": "Sector",
-    "WAGE":"Hourly wage",
+    "WAGE":"Gross hourly rate in euros",
     "JOB":"Job",
     "VALIDATE":"Validate",
     "SHOW_CONVENTION_PARAMETERS":"Access job classification",

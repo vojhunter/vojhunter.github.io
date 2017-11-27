@@ -31307,12 +31307,13 @@ page-missions-calendar .calender-container {
 }
 
 page-missions-calendar .calendar-wrapper {
-  height: 100%;
+  height: 75%;
 }
 
 page-missions-calendar .calendar-wrapper.pad {
   background-color: var(--voj-color-primary) !important;
   padding: 16px;
+  padding-top: 0;
 }
 
 page-my-missions-list .my-missions-warning-message {
