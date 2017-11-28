@@ -338,5 +338,13 @@
   },
   "LOADING": {
     "WAITING": "Thank you for waiting"
+  },
+  "OFFER_DETAIL": {
+    "SAVE_NEW_AD": "Save the ad",
+    "CREATE_PREFILLED_AD": "Create a pre-filled ad",
+    "INFORMATION_SAVED": "Saved information",
+    "INFORMATION_UPDATED": "Updated information",
+    "AD_SAVED": "Saved ad",
+    "AD_UPDATED": "Modified ad"
   }
 }

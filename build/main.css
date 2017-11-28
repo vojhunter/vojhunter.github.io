@@ -5,6 +5,9 @@
   --voj-color-warn: #eca603;
   --voj-color-danger: #e93a3a;
   --voj-color-danger-light: #e25757;
+  --voj-color-pink: #ef0e4a;
+  --voj-color-green: #4fae32;
+  --voj-color-purple: #a118d3;
 }
 
 .ion-ios-add:before {
@@ -28057,6 +28060,36 @@ button[clear].button.warn-btn:hover {
   color: var(--voj-color-warn);
 }
 
+button.button.pink-btn:not([clear]),
+button.button.pink-btn:not([clear]):hover {
+  background-color: var(--voj-color-pink);
+}
+
+button[clear].button.pink-btn,
+button[clear].button.pink-btn:hover {
+  color: var(--voj-color-pink);
+}
+
+button.button.green-btn:not([clear]),
+button.button.green-btn:not([clear]):hover {
+  background-color: var(--voj-color-green);
+}
+
+button[clear].button.green-btn,
+button[clear].button.green-btn:hover {
+  color: var(--voj-color-green);
+}
+
+button.button.purple-btn:not([clear]),
+button.button.purple-btn:not([clear]):hover {
+  background-color: var(--voj-color-purple);
+}
+
+button[clear].button.purple-btn,
+button[clear].button.purple-btn:hover {
+  color: var(--voj-color-purple);
+}
+
 @media screen and (min-width: 768px) {
   .split-pane-main .voj-content {
     height: calc(100% - 220px);
@@ -29935,6 +29968,18 @@ account-page .voj-form-container {
   background: none !important;
 }
 
+account-page .company-select {
+  margin: 10px;
+  padding: 4px 16px;
+  width: auto;
+  border-radius: 2px;
+}
+
+account-page .company-select .item-inner {
+  padding-right: 0 !important;
+  border-bottom: none !important;
+}
+
 avatar-page .rounded {
   border-radius: 50%;
   border: 1px #bdbdbd solid;
@@ -29995,10 +30040,6 @@ enterprise-search-page .search-btn {
 
 enterprise-search-page .enterprise-search-bar2 {
   margin-top: 50px;
-}
-
-enterprise-search-page .enterprise-data {
-  padding-bottom: 40px;
 }
 
 enterprise-search-page .enterprise-search .text-input {
