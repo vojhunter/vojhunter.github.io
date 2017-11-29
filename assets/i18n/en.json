@@ -345,6 +345,7 @@
     "INFORMATION_SAVED": "Saved information",
     "INFORMATION_UPDATED": "Updated information",
     "AD_SAVED": "Saved ad",
-    "AD_UPDATED": "Modified ad"
+    "AD_UPDATED": "Modified ad",
+    "AD_REMOVED": "Deleted ad"
   }
 }
