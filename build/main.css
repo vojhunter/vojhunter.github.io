@@ -29556,7 +29556,6 @@ notification .notification notification-item ion-avatar img:after {
 
 notification .notification notification-item img {
   border-radius: 50%;
-  width: auto;
 }
 
 notification .notification notification-item ion-icon {
