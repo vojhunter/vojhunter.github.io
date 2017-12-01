@@ -94,8 +94,7 @@
     "FROM": "From",
     "TO": "To",
     "ADD_TO_MY_ALERTS": "Add to my alerts",
-    "VALIDATE": "Validate",
-    "UPDATED": "Availability updated"
+    "VALIDATE": "Validate"
   },
   "AVAILABILITIES_ADD_DAYS": {
     "ADD_AVAILABILITY": "Add availability",
@@ -160,9 +159,7 @@
     "MY_JOBS": "My Jobs",
     "JOB": "Job",
     "LEVEL": "Level",
-    "VALIDATE": "Validate",
-    "SELECT_LEVEL": "Select a level",
-    "SELECT_JOB": "Select a job"
+    "VALIDATE": "Validate"
   },
   "MY_CV": {
     "MY_CV": "My CV",
@@ -217,8 +214,7 @@
   "CALENDAR": {
     "TITLE": "My calendar",
     "JOBYER_TITLE": "My availabilities",
-    "EMPLOYER_TITLE": "My offers' calendar",
-    "MISSION_CALENDAR_TITLE": "Work schedule"
+    "EMPLOYER_TITLE": "My offers' calendar"
   },
   "SEARCH_SELECT": {
     "COUNTRIES_LIST": "List of countries",
@@ -296,13 +292,12 @@
     "EDITINGMESSAGE": "Test Editing toast ENG",
     "ENTERINGMESSAGE": "Test Entering toast ENG",
     "ERRORMESSAGE": "Test Error toast ENG",
-    "OFFER_ADDED": "Offer added to your list in the CV section",
-    "OFFER_REMOVED": "Offer withdrawn from your list in the CV part"
+    "OFFER_ADDED": "Offer added to your list in the CV section"
   },
   "OFFER_SET_JOB": {
     "SECTOR":"Sector",
     "SECTOR_SELECT_TITLE": "Sector",
-    "WAGE":"Gross hourly rate in euros",
+    "WAGE":"Hourly wage",
     "JOB":"Job",
     "VALIDATE":"Validate",
     "SHOW_CONVENTION_PARAMETERS":"Access job classification",
@@ -336,16 +331,24 @@
     "OK": "Yes",
     "CANCEL": "No"
   },
+  "NOTIFICATION":{
+    "BUTTON_TITLE": "My notifications"
+  },
   "LOADING": {
     "WAITING": "Thank you for waiting"
+  },
+  "OFFER_LIST": {
+    "NO_RESULTS": "No result found"
   },
   "OFFER_DETAIL": {
     "SAVE_NEW_AD": "Save the ad",
     "CREATE_PREFILLED_AD": "Create a pre-filled ad",
     "INFORMATION_SAVED": "Saved information",
     "INFORMATION_UPDATED": "Updated information",
+    "AD_PRIVATED": "Ad made private",
     "AD_SAVED": "Saved ad",
     "AD_UPDATED": "Modified ad",
-    "AD_REMOVED": "Deleted ad"
+    "AD_REMOVED": "Deleted ad",
+    "AD_PUBLISHED": "Ad posted online"
   }
 }

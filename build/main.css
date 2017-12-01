@@ -29473,6 +29473,220 @@ voj-map #map {
   min-height: 250px;
 }
 
+notification .blank {
+  width: 200vh;
+  display: initial;
+}
+
+notification .notification {
+  margin: 30px 0 0 0;
+  padding: 0;
+  position: relative;
+}
+
+notification .notification:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background: #afdcf8;
+  left: 20%;
+  margin-left: -10px;
+}
+
+notification .notification notification-item {
+  position: relative;
+  display: inline-block;
+  /* Right content */
+}
+
+notification .notification notification-item notification-time {
+  display: block;
+  width: 20%;
+  padding-right: 50px;
+  position: absolute;
+}
+
+notification .notification notification-item notification-time span {
+  display: block;
+  text-align: right;
+}
+
+notification .notification notification-item notification-time span:last-child {
+  font-size: 1.9em;
+  color: #3594cb;
+}
+
+notification .notification notification-item ion-card {
+  margin-left: 25% !important;
+  width: 75% !important;
+  position: relative;
+}
+
+notification .notification notification-item ion-avatar img {
+  width: 40px;
+  height: 40px;
+  font-size: 1.4em;
+  position: absolute;
+  color: #fff;
+  background: #46a4da;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 8px #afdcf8;
+  box-shadow: 0 0 0 8px #afdcf8;
+  text-align: center;
+  left: 20%;
+  top: 0;
+  margin: 0 0 0 -25px;
+  line-height: 40px;
+}
+
+notification .notification notification-item ion-avatar img:after {
+  left: 46px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-left-color: #afdcf8;
+  border-width: 10px;
+  top: 10px;
+}
+
+notification .notification notification-item img {
+  border-radius: 50%;
+  width: auto;
+}
+
+notification .notification notification-item ion-icon {
+  width: 40px;
+  height: 40px;
+  font-size: 1.4em;
+  position: absolute;
+  color: yellow;
+  background: #46a4da;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 8px #afdcf8;
+  box-shadow: 0 0 0 8px #afdcf8;
+  text-align: center;
+  left: 20%;
+  top: 0;
+  margin: 0 0 0 -25px;
+  line-height: 40px;
+}
+
+notification .notification notification-item ion-icon:after {
+  left: 46px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-left-color: #afdcf8;
+  border-width: 10px;
+  top: 10px;
+}
+
+notification .notification notification-item:last-child {
+  width: 100%;
+}
+
+notification .notification notification-item:last-child ion-avatar img {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+notification .notification notification-item:last-child ion-avatar img:after {
+  border-width: 0;
+}
+
+notification .notification notification-item:last-child ion-icon {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+notification .notification notification-item:last-child ion-icon:after {
+  border-width: 0;
+}
+
+@media screen and (max-width: 992px) {
+  notification .notification notification-item notification-time {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  notification .notification:before {
+    left: 30px;
+  }
+  notification .notification notification-item ion-card {
+    margin-left: 80px !important;
+  }
+  notification .notification notification-item ion-avatar img {
+    left: 30px;
+  }
+  notification .notification notification-item ion-icon {
+    left: 30px;
+  }
+  notification .notification notification-item notification-time {
+    font-size: 0.8em;
+    width: 100%;
+    left: 80px;
+    position: relative;
+  }
+  notification .notification notification-item notification-time span {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  notification .notification:before {
+    display: none;
+  }
+  notification .notification notification-item:last-child {
+    visibility: hidden;
+  }
+  notification .notification notification-item ion-avatar img {
+    position: relative;
+    float: right;
+    left: auto;
+    margin: -55px 5px 0 0;
+  }
+  notification .notification notification-item ion-avatar img:after {
+    border-left-color: transparent;
+    border-top-color: #afdcf8;
+    top: 46px;
+    left: 10px;
+  }
+  notification .notification notification-item ion-icon {
+    position: relative;
+    float: right;
+    left: auto;
+    margin: -55px 5px 0 0;
+  }
+  notification .notification notification-item ion-icon:after {
+    border-left-color: transparent;
+    border-top-color: #afdcf8;
+    top: 46px;
+    left: 10px;
+  }
+  notification .notification notification-item notification-time {
+    width: 100%;
+    position: relative;
+    padding: 0 0 20px 0;
+    left: 20px;
+  }
+  notification .notification notification-item notification-time span {
+    text-align: left;
+  }
+  notification .notification notification-item ion-card {
+    width: calc(100% - 20px) !important;
+    margin-left: 10px !important;
+  }
+}
+
 voj-page-header .desktop-header {
   background-color: var(--voj-color-primary);
 }
@@ -30185,6 +30399,10 @@ login-page .voj-content .voj-form-container .voj-not-registered-title {
   margin-top: 70px;
 }
 
+page-notification {
+  background-color: var(--voj-color-primary);
+}
+
 page-open-application .container {
   padding: 15px;
   background-color: var(--voj-color-primary);
@@ -30811,6 +31029,7 @@ page-my-interests ion-card.map.card.card-md {
   justify-content: center;
 }
 
+page-my-offers-calendar,
 page-my-offers-calendar voj-calendar {
   background-color: #ffffff !important;
 }
@@ -30826,12 +31045,13 @@ page-my-offers-calendar .calender-container {
 }
 
 page-my-offers-calendar .calendar-wrapper {
-  height: 100%;
+  height: 92%;
 }
 
 page-my-offers-calendar .calendar-wrapper.pad {
   background-color: var(--voj-color-primary) !important;
   padding: 16px;
+  padding-top: 0;
 }
 
 page-my-offers-list .danger-button {
@@ -31331,6 +31551,16 @@ page-about voj-map #map {
 
 page-about .no-scroll .scroll-content {
   overflow: hidden;
+}
+
+page-contract-form .full-btn {
+  width: 100%;
+  background-color: #d339f8 !important;
+}
+
+page-contract-form .recall-btn {
+  width: 100%;
+  background-color: #eca613 !important;
 }
 
 page-missions-calendar voj-calendar {

@@ -336,16 +336,24 @@
     "OK": "Oui",
     "CANCEL": "Non"
   },
+  "NOTIFICATION":{
+    "BUTTON_TITLE": "Mes notifications"
+  },
   "LOADING": {
     "WAITING": "Merci de patienter"
+  },
+  "OFFER_LIST": {
+    "NO_RESULTS": "Aucun résultat trouvé"
   },
   "OFFER_DETAIL": {
     "SAVE_NEW_AD": "Enregistrer l'annonce",
     "CREATE_PREFILLED_AD": "Créer une annonce pré-remplie",
     "INFORMATION_SAVED": "Information(s) enregistrée(s)",
     "INFORMATION_UPDATED": "Information(s) mise(s) à jour",
+    "AD_PRIVATED": "Annonce rendue privée",
     "AD_SAVED": "Annonce enregistrée",
     "AD_UPDATED": "Annonce modifiée",
-    "AD_REMOVED": "Annonce supprimée"
+    "AD_REMOVED": "Annonce supprimée",
+    "AD_PUBLISHED": "Annonce mise en ligne"
   }
 }
