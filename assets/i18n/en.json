@@ -54,7 +54,7 @@
     "CREDENTIALS_ALREADY_USED": "Email address and phone number already used"
   },
   "SIGNUP_CLOSE_CONFIRMATION_ALERT": {
-    "MESSAGE": "You leave your registration?",
+    "MESSAGE": "Are you sure you want to cancel your registration?",
     "OK": "Continue",
     "CANCEL": "Leave"
   },

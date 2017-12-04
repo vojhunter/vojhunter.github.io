@@ -27937,7 +27937,7 @@ Styles for the segments in the footer in small screens (the simulated tabs)
 .voj-modal .modal-wrapper {
   width: 100%;
   height: 100%;
-  min-height: 600px;
+  min-height: 200px;
   min-width: 300px;
   position: absolute;
   border-radius: 2px;
@@ -31276,11 +31276,6 @@ page-offer-set-slots ion-content {
 page-offer-set-slots .calender-container {
   height: 100%;
   width: 100%;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  background-color: var(--voj-color-primary) !important;
 }
 
 page-offer-set-slots .calendar-wrapper {
@@ -31289,11 +31284,6 @@ page-offer-set-slots .calendar-wrapper {
 
 page-offer-set-slots .calendar-wrapper.mobile {
   height: 80%;
-}
-
-page-offer-set-slots .calendar-wrapper.pad {
-  background-color: var(--voj-color-primary) !important;
-  padding: 16px;
 }
 
 page-offer-slot-parameters {
@@ -31516,10 +31506,9 @@ page-details {
   overflow-y: auto;
 }
 
-page-details ion-header {
-  background-color: var(--voj-color-primary) !important;
-}
-
+page-details .voj-content,
+page-details .voj-form-container,
+page-details ion-header,
 page-details ion-content {
   background-color: var(--voj-color-primary) !important;
 }
@@ -31577,7 +31566,7 @@ page-missions-calendar .calender-container {
 }
 
 page-missions-calendar .calendar-wrapper {
-  height: 75%;
+  height: 92%;
 }
 
 page-missions-calendar .calendar-wrapper.pad {
@@ -31760,6 +31749,22 @@ page-pending-missions ion-card.map.card.card-md {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+timesheet .timesheet-content {
+  background-color: var(--voj-color-primary);
+}
+
+timesheet .card-content {
+  margin: 10px;
+  padding: 20px;
+}
+
+timesheet .validate-button {
+  height: 30px;
+  font-size: 14px;
+  background-color: var(--voj-color-primary);
+  color: #ffffff;
 }
 
 new-password-page {

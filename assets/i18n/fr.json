@@ -54,7 +54,7 @@
     "CREDENTIALS_ALREADY_USED": "Adresse mail et numéro de téléphone déjà utilisés"
   },
   "SIGNUP_CLOSE_CONFIRMATION_ALERT": {
-    "MESSAGE": "Vous quittez votre inscription ?",
+    "MESSAGE": "Êtes vous sûr de vouloir quitter votre inscription?",
     "OK": "Continuer",
     "CANCEL": "Quitter"
   },
