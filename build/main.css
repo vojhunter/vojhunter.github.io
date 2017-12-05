@@ -31502,6 +31502,16 @@ page-scheduling-offers-list .my-offers-page-content .scroll-content {
   padding: 0px !important;
 }
 
+cv-software-page .custom-btn {
+  background-color: var(--voj-color-primary);
+  text-transform: capitalize;
+  color: #fff;
+  border-color: var(--voj-color-primary);
+  border-radius: 4%;
+  padding: 0 10%;
+  width: 100%;
+}
+
 page-details {
   overflow-y: auto;
 }
