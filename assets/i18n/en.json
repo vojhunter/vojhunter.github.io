@@ -11,7 +11,8 @@
     "PASSWORD": "Password",
     "PASSWORD_CONFIRMATION": "Password confirmation",
     "CANCEL_BTN": "Cancel",
-    "OK_BTN": "Ok"
+    "OK_BTN": "Ok",
+    "VALIDATE": "Validate"
   },
 
   "VALIDATION": {
@@ -159,7 +160,8 @@
     "MY_JOBS": "My Jobs",
     "JOB": "Job",
     "LEVEL": "Level",
-    "VALIDATE": "Validate"
+    "VALIDATE": "Validate",
+    "SELECT_LEVEL_AND_JOB": "Select a job and a level"
   },
   "MY_CV": {
     "MY_CV": "My CV",

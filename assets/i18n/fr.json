@@ -11,7 +11,8 @@
     "PASSWORD": "Mot de passe",
     "PASSWORD_CONFIRMATION": "Confirmation du mot de passe",
     "CANCEL_BTN": "Annuler",
-    "OK_BTN": "Ok"
+    "OK_BTN": "Ok",
+    "VALIDATE": "Valider"
   },
 
   "VALIDATION": {
@@ -162,7 +163,8 @@
     "LEVEL": "Niveau",
     "VALIDATE": "Valider",
     "SELECT_LEVEL": "Sélectionnez un niveau",
-    "SELECT_JOB": "Sélectionnez un job"
+    "SELECT_JOB": "Sélectionnez un job",
+    "SELECT_LEVEL_AND_JOB": "Sélectionnez un job et un niveau"
   },
   "MY_CV": {
     "MY_CV": "Charger mon CV",
