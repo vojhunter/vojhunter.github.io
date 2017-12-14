@@ -34128,6 +34128,110 @@ page-home voj-map #map {
   margin: 0 10px;
 }
 
+jobyer-resume-page .desktop-container {
+  background-color: var(--voj-color-primary);
+}
+
+jobyer-resume-page .information-resume-parent {
+  height: calc(100% - 170px);
+  overflow-y: auto;
+}
+
+jobyer-resume-page .information-resume-child {
+  margin-bottom: 56px;
+  position: relative;
+}
+
+jobyer-resume-page .information-resume-list .item-inner {
+  border-bottom: none !important;
+}
+
+jobyer-resume-page .information-resume-list .information-resume-edit-btn {
+  background-color: var(--voj-color-primary);
+}
+
+jobyer-resume-page .information-resume-list .information-resume-edit-btn:hover {
+  background-color: var(--voj-color-primary);
+}
+
+jobyer-resume-page .information-resume-list .information-resume-label {
+  margin: 0;
+  white-space: initial;
+}
+
+jobyer-resume-page .mobile-container .information-resume-list-wrapper,
+jobyer-resume-page .mobile-container .information-resume-child {
+  height: 100%;
+}
+
+jobyer-resume-page .mobile-container .item-md,
+jobyer-resume-page .desktop-container .item-md {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+jobyer-resume-page .mobile-container .item-inner,
+jobyer-resume-page .desktop-container .item-inner {
+  padding-right: 0 !important;
+}
+
+jobyer-resume-page .mobile-container .information-resume-edit-btn,
+jobyer-resume-page .desktop-container .information-resume-edit-btn {
+  margin-right: 0;
+}
+
+jobyer-resume-page .desktop-container {
+  background-color: var(--voj-color-primary);
+}
+
+jobyer-resume-page .information-resume-parent {
+  height: calc(100% - 170px);
+  overflow-y: auto;
+}
+
+jobyer-resume-page .information-resume-child {
+  margin-bottom: 56px;
+  position: relative;
+}
+
+jobyer-resume-page .information-resume-list .item-inner {
+  border-bottom: none !important;
+}
+
+jobyer-resume-page .information-resume-list .information-resume-edit-btn {
+  background-color: var(--voj-color-primary);
+}
+
+jobyer-resume-page .information-resume-list .information-resume-edit-btn:hover {
+  background-color: var(--voj-color-primary);
+}
+
+jobyer-resume-page .information-resume-list .information-resume-label {
+  margin: 0;
+  white-space: initial;
+}
+
+jobyer-resume-page .mobile-container .information-resume-list-wrapper,
+jobyer-resume-page .mobile-container .information-resume-child {
+  height: 100%;
+}
+
+jobyer-resume-page .mobile-container .item-md,
+jobyer-resume-page .desktop-container .item-md {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+jobyer-resume-page .mobile-container .item-inner,
+jobyer-resume-page .desktop-container .item-inner {
+  padding-right: 0 !important;
+}
+
+jobyer-resume-page .mobile-container .information-resume-edit-btn,
+jobyer-resume-page .desktop-container .information-resume-edit-btn {
+  margin-right: 0;
+}
+
 page-about ion-header {
   background-color: var(--voj-color-primary) !important;
 }
