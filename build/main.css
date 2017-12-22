@@ -32484,7 +32484,7 @@ ion-input > input {
 }
 
 .ios voj-search-header ion-header .search-header-container button.search-header-btn ion-icon, .md voj-search-header ion-header .search-header-container button.search-header-btn ion-icon {
-  padding: 5;
+  padding: 0;
   font-size: 1.2em;
 }
 
@@ -34310,6 +34310,103 @@ button h1 {
 
 button label {
   display: block;
+}
+
+.vitbox-validated {
+  background-color: lightyellow;
+}
+
+.item-ribbon {
+  background-color: #fff;
+  position: relative;
+  -webkit-filter: none;
+  filter: none;
+  opacity: 1;
+}
+
+.item-ribbon .ribbon {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  z-index: 2;
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+  text-align: right;
+}
+
+.item-ribbon .ribbon span {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 100px;
+  display: block;
+  background: #f53d3d;
+  position: absolute;
+  top: 19px;
+  right: -21px;
+}
+
+.item-ribbon .ribbon span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid #f53d3d;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #f53d3d;
+}
+
+.item-ribbon .ribbon span::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #f53d3d;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #f53d3d;
+}
+
+.ribbon.cruzeiro span {
+  color: white;
+  background: #f53d3d;
+}
+
+.ribbon.cruzeiro span::before {
+  border-left: 3px solid #f53d3d;
+  border-top: 3px solid #f53d3d;
+}
+
+.ribbon.cruzeiro span::after {
+  border-right: 3px solid #f53d3d;
+  border-top: 3px solid #f53d3d;
+}
+
+ion-spinner * {
+  width: 28px;
+  height: 28px;
+  stroke: #fff !important;
+  fill: #fff;
+}
+
+page-vitbox-details .col-header {
+  background-color: #3f51b5;
+  color: #ffffff;
+}
+
+ion-spinner * {
+  width: 28px;
+  height: 28px;
+  stroke: #444 !important;
 }
 
 page-about ion-header {
