@@ -34321,6 +34321,10 @@ ion-card-header h1 {
   color: #ffffff !important;
 }
 
+ion-card.card-vitbox.card.card-md {
+  margin-top: 0;
+}
+
 .search-page-content {
   background-color: var(--voj-color-primary);
 }
@@ -34626,6 +34630,10 @@ ion-spinner * {
   width: 28px;
   height: 28px;
   stroke: #444 !important;
+}
+
+.voj-scrollable-content-wrapper.card-content.card-content-md {
+  height: calc( 100% - 56px);
 }
 
 page-about ion-header {
